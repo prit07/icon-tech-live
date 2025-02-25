@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Responsible Betting Page|| Betworthy</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/responsible-betting-page.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+		integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+		crossorigin="anonymous"></script>
+
+	<script src="js/header-footer.js"></script>
+	<script src="js/responsible-betting-page.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header html start -->
+	<header class="header-wapper">
+		<div class="top-header-wapper">
+			<div class="container w-1170">
+				<div class="top-header-card">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/header-logo.svg" alt="">
+						</a>
+					</div>
+					<div class="header-top-menu">
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Log In/Sing Up</a></li>
+						</ul>
+					</div>
+					<div class="header-right-side">
+						<div class="header-search-icon">
+							<span><img src="img/search-sm.svg" alt=""></span>
+						</div>
+						<div class="m-toggle-btn" id="m-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header-wapper">
+			<div class="container w-1170">
+				<div class="bottom-header-menu">
+					<ul>
+						<li><a href="#">Legalization Tracker</a></li>
+						<li><a href="#">Responsible Betting</a></li>
+						<li><a href="#">Betting Academy</a></li>
+						<li class="sub-menu-card">
+							<a href="#">Resources</a>
+							<div class="submenu-wapper">
+								<ul>
+									<li><a href="#">Legalization</a></li>
+									<li><a href="#">Responsible</a></li>
+									<li><a href="#">Betting</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<span>|</span>
+					<ul>
+						<li><a href="#">random</a></li>
+						<li><a href="#">top viewed</a></li>
+						<li><a href="#">top commented</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- mobile header sidebar html start -->
+		<div class="m-sidebar-wrapper" id="m-sidebar-wrapper">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Log In/Sing Up</a></li>
+				<li><a href="#">Legalization Tracker</a></li>
+				<li><a href="#">Responsible Betting</a></li>
+				<li><a href="#">Betting Academy</a></li>
+				<li class="sub-menu-card">
+					<a href="#">Resources</a>
+					<div class="submenu-wapper">
+						<ul>
+							<li><a href="#">Legalization</a></li>
+							<li><a href="#">Responsible</a></li>
+							<li><a href="#">Betting</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">random</a></li>
+				<li><a href="#">top viewed</a></li>
+				<li><a href="#">top commented</a></li>
+			</ul>
+		</div>
+		<!-- mobile header sidebar html end -->
+		<!-- search popup html start -->
+		<div class="dd32-search-popup">
+			<div class="dd32-search-bg"></div>
+			<div class="dd32-search-form">
+				<form method="get" action="#">
+					<div class="dd32-form">
+						<input type="text" id="dd32-search" placeholder="search" name="s">
+						<label for="search"><i class="fa fa-search"></i></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search popup html end -->
+	</header>
+	<!-- header html end -->
+
+	<!-- Responsible Betting start-->
+	<section class="rbp-betting" style="background: url(img/jion-us.png) no-repeat;">
+		<div class="container w-1170">
+			<div class="rbp-betting-text" >
+				<h4>guide</h4>
+				<h1>Responsible Betting</h1>
+				<p>As adults, it’s perfectly fine to indulge in gambling as a fun activity as long as it is kept in
+					moderation and you don’t overstep your boundaries. There can be a lot of misconceptions regarding
+					the topic of gambling addiction, and for victims, it can be difficult to identify when they have a
+					problem or not.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Responsible Betting end  -->
+
+	<!-- A Self-Help Guide To Responsible Betting start -->
+	<section class="rbp-self-help">
+		<div class="container w-1170">
+			<div class="row">
+				<div class="col-lg-3 mb-5">
+					<div class="rbp-left mt-3">
+						<ul>
+							<li>
+								<h4>0</h4> <a>Before You Start</a>
+							</li>
+							<li>
+								<h4>1</h4> <a>Advice For Safe Betting</a>
+							</li>
+							<li>
+								<h4>2</h4> <a>How To Help Yourself</a>
+							</li>
+							<li>
+								<h4>3</h4> <a>Find The Right Support</a>
+							</li>
+							<li>
+								<h4>4</h4> <a>How To Help Someone Who Gambles</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="rbp-right">
+						<div class="rbp-wapper-right">
+							<h3>A Self-Help Guide To Responsible Betting </h3>
+							<p>As adults, it’s perfectly fine to indulge in gambling as a fun activity as long as it is
+								kept in moderation and you don’t overstep your boundaries. There can be a lot of
+								misconceptions regarding the topic of gambling addiction, and for victims, it can be
+								difficult to identify when they have a problem or not.</p>
+							<p>Gambling addiction doesn’t come in one shape or size. It’s a multifaceted problem that
+								requires a unique approach depending on the person. An individual may be addicted to
+								sports betting, or they may be addicted to table games or slots. It is essential to
+								fully understand the person’s problem, identify if it truly is a problem, and then seek
+								help from them. Compulsive and dangerous gambling is a problem, but that does not mean
+								that gambling itself is the issue. It is entirely possible to enjoy safe and healthy
+								gambling and have a great time</p>
+							<p>This article will provide readers with an authoritative voice on how to approach gambling
+								and how to engage in it safely. Here, you’ll find tips on how to gamble responsibly and
+								what to do if you feel yourself getting out of hand. If you’re reading this article as a
+								third-party, concerned about a loved one, then this article will be equally as helpful
+								to you as well.</p>
+							<p>Read on below to see how you can learn more about responsible gambling.</p>
+						</div>
+						<div class="rbp-self-main">
+							<div class="rbp-self-titel"
+								style="background: url(img/rbp-self.png) no-repeat no-repeat center;">
+								<h2>Advice For Safe and Responsible Betting</h2>
+							</div>
+							<div class="rbp-right-text">
+								<p>If you feel like you have a gambling problem, you shouldn’t be fighting the battle
+									alone. Researching the problemand learning how to bet responsibly will help
+									incredibly for those looking to take control of their hobby.</p>
+								<P>Responsible betting does not have to mean cold turkey quitting. There are effective
+									ways to control yourself andgamble responsibly, and the section below will give you
+									the best advice on how to do just that.</P>
+							</div>
+							<div class="rbp-right-top-items">
+								<div class="scroll-bar">
+									<p style="background: #1A6C83; width: 4px; height: 328px;"> </p>
+								</div>
+								<div class="row ">
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>1. Make Sure You’re In Control</h3>
+											<p>There are multiple ways to ensure you stay in control of your gambling
+												habits, and once you can self-identify a potential problem that
+												jeopardizes that control, it will be much easier to solve.</p>
+											<p>Many consider gambling as a hobby or a form of entertainment, but
+												gambling can come with intense emotions and high stakes when not
+												properly kept in check.<span>It’s important for the gambler to assess
+													how
+													much money they are willing to lose and how much time they are
+													willing to spend.</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-top.png">
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main mb-3">
+										<div class="rbp-right-bottom-center">
+											<ul>
+												<li> Does gambling directly impact your finances?
+												</li>
+												<li>Are you struggling with making payments, or
+													are you having general struggles with day-to-day purchases?</li>
+												<li>Are you neglecting friends and family in
+													favor of gambling?</li>
+												<li>Have your relationships deteriorated due to
+													gambling-related issues?</li>
+											</ul>
+										</div>
+										<div class="rbp-right-top-bottom mb-4">
+											<P>These are all valid questions one must ask themselves if they feel that
+												they are losing control, and ifyou answer “yes” to any of these
+												questions, you may have to reign in the amount of time or money youspend
+												on your hobby.</P>
+										</div>
+									</div>
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>2.The Prove-It Test</h3>
+											<p>The “Prove-It” test is an objective way to assess how you are coping with
+												gambling in your life. The basic premise of the test is that <span>you
+													should
+													try to monitor yourself while gambling </span> and address important
+												questions
+												related to it. A big concern in terms of coping with addiction is the
+												denial stage. Often, an individual who is in the denial stage of coping
+												with a gambling addiction will become defensive and deny they have a
+												problem. Phrases such as <span> “I can quit anytime, it’s just that ___”
+												</span>become
+												quite commonplace, and family and friends can help an individual take a
+												step back and change their perspective.</p>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-center.png">
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main mb-3">
+										<div class="rbp-right-bottom-center">
+											<ul>
+												<li> Does gambling directly impact your finances?
+												</li>
+												<li> Are you struggling with making payments, or
+													are you having general struggles with day-to-day purchases?</li>
+												<li> Are you neglecting friends and family in
+													favor of gambling?</li>
+												<li> Have your relationships deteriorated due to
+													gambling-related issues?</li>
+											</ul>
+										</div>
+										<div class="rbp-right-top-bottom mb-4">
+											<P>A way to “prove-it” is to write down everything regarding your gambling
+												hobby on a piece of paper: how much you’ve spent, how much you’ve lost,
+												how many times you deposit a day, and so on. The key here is, to be
+												honest with yourself and as objective as possible. Get a friend or
+												family member to help you out with this process if you feel like you’re
+												obfuscating facts.</P>
+										</div>
+									</div>
+									<div class="col-lg-8">
+										<div class="rbp-right-top-text">
+											<h3>3. Take The Self-Assessment Quiz</h3>
+											<p>In addition to the “Prove-It” test, you can take the quiz below to
+												determine whether you may have a problem or not. This test does not
+												serve as a means of formal diagnosis but more of a guide to help realize
+												your current state and <span>whether you may be addicted to gambling or
+													not.</span>
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-bottom.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rbp-self-main">
+							<div class="rbp-self-titel"
+								style="background: url(img/rbp-self.png) no-repeat no-repeat center;">
+								<h2>How To Help Yourself</h2>
+							</div>
+							<div class="rbp-right-text">
+								<p>There are a lot of resources out there to help you control your gambling if you feel
+									it’s getting out of hand. These tools can be used individually to target a problem
+									area, or can be used in conjunction to try and provide a blanketed support to try
+									and control how you gamble online. There are also a lot of tools to help you with
+									gambling addiction on the casino’s help page.</p>
+								<P>If you’re seeking help through a healthy discussion regarding a gambling addiction,
+									feel free to contact Gambler’sAnonymous – you can either talk to a representative on
+									the phone or attend a meeting.</P>
+							</div>
+							<div class="rbp-right-top-items">
+								<div class="scroll-bar ">
+									<p style="background: #1A6C83; width: 4px; height: 328px;"> </p>
+								</div>
+								<div class="row ">
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>1. Help With Budgeting and Spending Control</h3>
+											<p>Every online casino will have the option to set a deposit limit to
+												control how much you spend. Many casinos have the “unlimited” option set
+												as the default, and it can be easy to fall into the trap of not setting
+												a deposit limit and losing control. However, the deposit limit tool is
+												very useful in preventing individuals from spending out of their budget.
+											</p>
+											<p>When someone is addicted to gambling, it is common to attempt to try and
+												amend their set deposit limit. Typically, casinos make it as hard as
+												possible to change this, but they are not allowed to completely restrict
+												you from changing it. This can be an area of concern for those that may
+												relapse and go back to betting uncomfortable amounts.
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp01.png">
+										</div>
+									</div>
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text ">	
+											<h3>2. Self-exclusion</h3>
+											<p>Self-Exclusion is a very effective way of trying to control your gambling
+												habits. It’s not the most extreme measure you can take, but it can
+												certainly be hard for compulsive gamblers to restrict themselves with
+												the self-exclusion tool.</p>
+											<p>If you feel like you need to do a short to medium-term break from
+												gambling, the self-exclusion tool is available at all online casinos.
+												You can choose how long you want to stop gambling, and then the casino
+												will block your account for that set period of time</p>
+											<p>During the self-exclusion period, gambling addicts may face withdrawal
+												symptoms and try to relapse. They can do this either by signing up for a
+												new casino, asking friends to proxy gamble for them, or find other
+												outlets to gamble their money. It is important to take this period of
+												time as a way to grow and get used to life without gambling. Then, when
+												you’re ready to return, then you can have a more balanced relationship
+												with it.</p>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img ">
+											<img src="img/rbp-center.png">
+										</div>
+									</div>
+
+									<div class="rbp-right-bottom-main ">
+										<div class="rbp-right-top-text">
+											<h3>3. Gambling Blocking Software</h3>
+											<p>Gambling blocking software is the most extreme measure one can take to
+												try and curb their compulsive gambling habits. There are multiple
+												software, web browser extensions, and apps that can completely ban and
+												block the user from accessing online casinos.</p>
+											<p>There are two different types of software options available to you when
+												you decide to install a gambling blocking software:</p>
+											<p>Much like self-exclusion, compulsive gamblers can display withdrawal
+												symptoms very early on. If you are a loved one, you should stay diligent
+												and keep an eye on the gambler’s habits post-block. They may be more
+												irritable and display compulsive behavior. If they continue to
+												deteriorate, consider contacting Gambler’s Anonymous or other therapy
+												options.</p>
+										</div>
+										<div class="rbp-right-bottom-center">
+											<ul>
+												<li>Those that block specific websites that the user specifies
+												</li>
+												<li>Those that block all gambling websites</li>
+											</ul>
+										</div>
+										<div class="rbp-right-top-text">
+											<h3>4. Limiting Gambling Ads Online</h3>
+											<h5><img src="img/rbp-facebook.png"> Facebook/Instagram</h5>
+											<p>Although there is no way to block specific categories of apps on Facebook
+												or Instagram currently, you can hide ads by clicking on the “x” next to
+												the ad. This will help the algorithm learn your preferences, and after a
+												while, gambling ads will be filtered out.</p>
+											<p>Alternatively, try clearing your browsing data and cookies so that any
+												history of your gambling tendencies won’t be remembered by Facebook. The
+												same would work with your mobile phone and Instagram.</p>
+											<p>Much like self-exclusion, compulsive gamblers can display withdrawal
+												symptoms very early on. If you are a loved one, you should stay diligent
+												and keep an eye on the gambler’s habits post-block. They may be more
+												irritable and display compulsive behavior. If they continue to
+												deteriorate, consider contacting Gambler’s Anonymous or other therapy
+												options.</p>
+
+											<h5> <img src="img/rbp-twitter.png"> Twitter</h5>
+											<p>Like Facebook, there is no direct way to block gambling ads completely.
+												The same tactics of clearing cookies and browsing data will work.
+												However, you may need to interact with the algorithm and continue to
+												close ads or press “I don’t like this ad”.</p>
+											<p>You can click this link to personalize the content you see on Twitter.
+												De-selecting gambling will remove significant amounts of gambling
+												content on your feed. However, de-selecting other related categories
+												like sports or fantasy leagues may also help curate a safer environment
+												for you online.</p>
+
+											<h5><img src="img/rbp-google.png"> Google </h5>
+											<p>Like Facebook, there is no direct way to block gambling ads completely.
+												The same tactics of clearing cookies and browsing data will work.
+												However, you may need to interact with the algorithm and continue to
+												close ads or press “I don’t like this ad”.</p>
+											<p>You can click this link to personalize the content you see on Twitter.
+												De-selecting gambling will remove significant amounts of gambling
+												content on your feed. However, de-selecting other related categories
+												like sports or fantasy leagues may also help curate a safer environment
+												for you online.</p>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="rbp-self-main">
+							<div class="rbp-self-titel"
+								style="background: url(img/rbp-self.png) no-repeat no-repeat center;">
+								<h2>Find The Right Support</h2>
+							</div>
+							<div class="rbp-right-text">
+								<p>Sometimes fighting the struggle alone is not enough, and external help is required.
+									Family and friends can provide a great deal of help, but having professional help
+									could be a much better solution instead of relying completely on family, who may not
+									know how to help effectively.</p>
+								<P>Below you can find the necessary resources you can access for help if you ever feel
+									like you need it.</P>
+							</div>
+							<div class="rbp-right-top-items">
+								<div class="scroll-bar ">
+									<p style="background: #1A6C83; width: 4px; height: 328px;"> </p>
+								</div>
+								<div class="rbp-find-the-right">
+									<div class="rbp-right-top-text">
+										<h6><img src="img/rbp-usa.png">USA</h6>
+										<button>Gambler’s Anonymous</button>
+										<p>Gambler’s Anonymous is a non-profit organization that specializes in helping
+											individuals find comfort with others that have the same issues. You can
+											either
+											call a hotline for a 1:1 talk, or you can join a meeting.</p>
+
+										<button>National Council on Problem Gaming (NCPG)</button>
+										<p>Another extremely useful hotline resource where you can call for more help
+											regarding gambling issues. You can join the council and receive training to
+											help
+											improve yourself and others as well.</p>
+
+
+										<button>Gambling Therapy</button>
+										<p>Gambling Therapy is a global resource that is dedicated to providing
+											emotional
+											support to thoseaffected by gambling.</p>
+									</div>
+									<div class="rbp-right-top-text">
+										<h6><img src="img/rbp-canada.png">Canada</h6>
+										<button>Gambler’s Anonymous (Canada)</button>
+										<p>Gambler’s Anonymous is a non-profit organization thatspecializes in helping
+											individuals find comfort with othersthat have the same issues. You can
+											either
+											call a hotlinefor a 1:1 talk, or you can join a meeting.</p>
+
+										<button>Canadian Partnership for Responsible Gaming (CPRG)</button>
+										<p>The CPRG is a collective non-profit effort by gaming providers, research
+											centers,
+											and helpful resourcesto find ways to help curb problem gambling.</p>
+
+
+										<button> Responsible Gaming Council (RGC) </button>
+										<p>The RGC is a reliable non-profit organization dedicated to helping those with
+											compulsive gamblingissues. They have support lines and resources to help
+											people
+											emotionally and practically.</p>
+									</div>
+									<div class="rbp-right-top-text">
+										<h6><img src="img/rbp-uk.png">UK</h6>
+
+										<button>BeGambleAware</button>
+										<p>BeGambleAware is an extensive resource that provides information regarding
+											responsible betting, and educates problem gamblers, loved ones, or trained
+											professionals on what they can do to help.</p>
+
+										<button>Gambler’s Anonymous (UK)</button>
+										<p>Gambler’s Anonymous is a non-profit organization that specializes in helping
+											individuals find comfortwith others that have the same issues. You can
+											either
+											call a hotline for a 1:1 talk, or you can join ameeting.</p>
+
+										<button>GamCare</button>
+										<p>GamCare is an extremely helpful resource for those struggling with gambling,
+											or
+											for those with a lovedone that is struggling. Here, you can receive free
+											treatment, call their hotline, or read more on self-help.</p>
+									</div>
+
+									<div class="rbp-right-top-text">
+
+										<h6><img src="img/rbp-european-union.png">European Union</h6>
+										<button>European Casino Association (ECA)</button>
+										<p>The ECA is a non-profit organization dedicated to helpingthose afflicted by
+											gambling. There, you can find helplinesfor all EU countries so you always
+											have
+											someone reliableto talk to for professional help.</p>
+									</div>
+
+									<div class="rbp-right-top-text">
+										<h6><img src="img/rbp-australia.png">Australia</h6>
+										<button>Gambling Help Online (AU)</button>
+										<p>Gambling Help is an extensive resource for thosestruggling with gambling.
+											Talk to
+											a professional, findresources to help yourself or a loved one, or talk to
+											otherlike-minded individuals on their online forum.</p>
+
+										<button>Lifeline</button>
+										<p>Lifeline is an organization dedicated to helping individuals with any mental
+											health issue, not specificallygambling. However, they do provide extensive
+											support to those who are affected by gamblingaddiction. Find out relevant
+											information pertaining to the emotional stresses that problem gamblingcan
+											invoke.</p>
+
+										<button>Gambler’s Help (AU)</button>
+										<p>Gambler’s Help is another non-profit organization that specializes in
+											providing
+											gamblers that need helpwith a professional resource for just that. Get help
+											and
+											support, call a professional, or read up oninformation regarding problem
+											gambling.</p>
+									</div>
+									<div class="rbp-right-top-text">
+										<h6><img src="img/rbp-brazil.png">Brazil</h6>
+										<button>Gambling Therapy (BR)</button>
+										<p>Gambling Therapy is a global resource that is dedicatedto providing emotional
+											support to those affected bygambling.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rbp-self-main">
+							<div class="rbp-self-titel"
+								style="background: url(img/rbp-self.png) no-repeat no-repeat center;">
+								<h2>How To Help Someone Who Gambles</h2>
+							</div>
+							<div class="rbp-right-text">
+								<p>Sometimes fighting the struggle alone is not enough, and external help is
+									required.
+									Family and friends can provide a great deal of help, but having professional
+									help
+									could be a much better solution instead of relying completely on family, who may
+									not
+									know how to help effectively.</p>
+								<P>Below you can find the necessary resources you can access for help if you ever
+									feel
+									like you need it.</P>
+							</div>
+							<div class="rbp-right-top-items">
+								<div class="scroll-bar ">
+									<p style="background: #1A6C83; width: 4px; height: 328px;"> </p>
+								</div>
+								<div class="row ">
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>1. Helping someone who gambles</h3>
+											<p>Helping someone who may have a gambling addiction can be a daunting
+												prospect, especially if the individual isn’t aware of their problem
+												yet.
+												The conversation may turn into a confrontational affair that does
+												more
+												harm than good, so it’s important to have a solid plan when
+												approaching
+												the individual in question.
+											</p>
+											<p>Below is a strategy guide on how to help your friends, lovedones, or
+												others.
+											</p>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-someon.png">
+										</div>
+									</div>
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>2. How To Help a Friend or Loved One</h3>
+											<button>Start the Conversation</button>
+											<p>The most important thing you can do when trying to help someone who
+												is
+												struggling with a gambling addiction is to take the first step.
+												Bring up
+												the prospect and gauge how they may feel about their habits. If the
+												conversation turns hostile, use gentle language to reinforce the
+												fact
+												that you’re looking out for them and here to help.</p>
+											<p>Remind them that they’re a loved one or a close friend and that
+												you’re
+												worried for them and looking out for them. Then, once they open up a
+												bit
+												more about the issue, you can begin to try and understand the state
+												of
+												their mental health and how gambling may be affecting them.</p>
+
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-center.png">
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main mb-4">
+										<div class="rbp-right-top-text">
+											<button>Support the Initiative</button>
+											<p>Controlling one’s gambling habits can be extremely difficult, and
+												they
+												will need your help and support. If you see them struggling, suggest
+												effective tools such as spending control tools, self-exclusion
+												tools, or
+												outright gambling blocks. These tools, plus your emotional support,
+												can
+												help immensely.</p>
+											<button>Encourage Positive Step</button>
+											<p>You don’t need to go over-the-top with showings of support, even the
+												littlest gesture can really encourage your friend to continue their
+												journey with gambling addiction. Phrases such as these can help
+												invigorate an individual who is struggling with addiction:</p>
+										</div>
+										<div class="rbp-right-bottom-center">
+											<ul>
+												<li>“You’re doing well, keep it up.”
+												</li>
+												<li>“I’m proud of you.”</li>
+												<li>“I was worried about you before, but I’m glad you’re doing
+													this.”
+												</li>
+											</ul>
+										</div>
+										<div class="rbp-right-top-text">
+											<p>Variations of these phrases can be adapted depending on the needs of
+												the
+												individual.</p>
+										</div>
+									</div>
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text">
+											<h3>3. How To Help a Young Person</h3>
+											<button>Initiate An Open Conversation</button>
+											<p>When discussing gambling with a young person, the strategy behind the
+												conversation is a bit different than when talking to an adult.
+												Oftentimes, unless the child has his or her own income source, the
+												child
+												is gambling with funds given to them by the parents. It is crucial
+												you
+												do not take extreme measures to ostracize them and create a bad
+												atmosphere between you.</p>
+											<p>Open the conversation by imploring their thoughts on the issue. What
+												do
+												they think of gambling, and do they think it could be a problem?
+												Then,
+												gently press your opinion and ensure them that you’ll be there to
+												help
+												them through their journey.</p>
+
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-center.png">
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main mb-4">
+										<div class="rbp-right-top-text">
+											<button>Understanding the Link Between Gaming and Gambling</button>
+											<p>Many video games these days blur the lines between what is seen as
+												virtual rewards and what is gambling. Players can receive “loot
+												boxes”
+												as a reward for playing the game or completely certain achievements,
+												and
+												the probability of receiving rare items that may be worth real money
+												is
+												akin to that of slot machines and other games of chance. This online
+												marketplace of trading game items as a digital currency serves as a
+												gateway for many young people into gambling.</p>
+											<button>Encourage Positive Step</button>
+											<p>You don’t need to go over-the-top with showings of support, even the
+												littlest gesture can really encourage your friend to continue their
+												journey with gambling addiction. Phrases such as these can help
+												invigorate an individual who is struggling with addiction:</p>
+										</div>
+										<div class="rbp-right-bottom-center">
+											<ul>
+												<li>“You’re doing well, keep it up.”
+												</li>
+												<li>“I’m proud of you.”</li>
+												<li>“I was worried about you before, but I’m glad you’re doing
+													this.”
+												</li>
+											</ul>
+										</div>
+										<div class="rbp-right-top-text">
+											<p>Variations of these phrases can be adapted depending on the needs of
+												the
+												individual.</p>
+											<button>Control Gambling Adverts</button>
+											<p>If a young person has a gambling problem, they may be seeing gambling
+												adverts on their social mediaapplications. Children are more
+												susceptible
+												to advertising tactics, so it is important that you discussthe
+												prospect
+												of hiding and blocking gambling adverts. You can see how to do that
+												on
+												our resourcepage here.</p>
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main mb-4">
+										<div class="rbp-right-top-text">
+											<h3>4 .Limiting Gambling Ads Online</h3>
+											<button>Control Your Finances</button>
+											<p>The most important thing when helping someone else is to keep your
+												own
+												finances safe. Never lend money to someone who is addicted to
+												gambling
+												if you think they will just gamble with it – this only enables and
+												encourages their behavior. If you do lend money, make sure it is to
+												help
+												deal with necessities.</p>
+											<button>Seek Help</button>
+											<p>If you are dealing with overwhelming emotional stress, whether it be
+												directly because of the affected gambler or not, there are many
+												helplines to help get you through the ordeal. Never feel afraid to
+												talk
+												to a professional, as it’s their job, and they are always happy to
+												help.
+												Also, never feel like your problems are not worth talking about.
+												They
+												always are.</p>
+											<button>Set Boundaries</button>
+											<p>You may become frustrated with helping out a gambling addict due to
+												conflicts and confrontations, and you may lose sight of the goal.
+												Relationships may deteriorate, unfortunately, and you may try to
+												overcompensate to help the individual. It is important you do not
+												risk
+												anything valuable of your own and to set boundaries regarding what
+												behavior is acceptable. It is important to keep your self-respect
+												even
+												when helping an individual go through their journey of problem
+												gambling
+												recovery.</p>
+										</div>
+									</div>
+									<div class="col-lg-8 mb-4">
+										<div class="rbp-right-top-text mb-4">
+											<h3>5. Understanding Someone Who Gambles</h3>
+											<button>Watch For Certain Signs</button>
+										</div>
+										<div class="rbp-right-bottom-center ">
+											<ul>
+												<li>Increasing the amount they are gambling with.
+												</li>
+												<li>“Chasing their losses” – when they lose a bet, they increase the
+													amount they gamble straight away.</li>
+												<li>There are inter-relational tensions regarding money or gambling.
+												</li>
+												<li>They lie about gambling.</li>
+												<li>They borrow money or sell possessions to gamble.</li>
+												<li>They neglect certain responsibilities.</li>
+												<li>Their mood changes to irritable, anxious, or frustrated.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-lg-4 mb-4">
+										<div class="rbp-right-top-img">
+											<img src="img/rbp-center.png">
+										</div>
+									</div>
+									<div class="rbp-right-bottom-main ">
+										<div class="rbp-right-top-text">
+											<button>Understand the Stages of Problem Gambling</button>
+											<ul>
+												<li>Satisfied With The Status Quo:</li>
+											</ul>
+											<p>You may become frustrated with helping out a gambling addict due to
+												conflicts and confrontations, and you may lose sight of the goal.
+												Relationships may deteriorate, unfortunately, and you may try to
+												overcompensate to help the individual. It is important you do not
+												risk anything valuable of your own and to set boundaries regarding
+												what behavior is acceptable. It is important to keep your
+												self-respect even when helping an individual go through their
+												journey of problem gambling recovery.</p>
+
+											<ul>
+												<li>Consideration:</li>
+											</ul>
+											<p>In this stage, individuals still enjoy gambling but they are having
+												second thoughts on how it impacts their lives. Maybe they’ve lost a
+												considerable amount of money but are still financially stable at
+												this point.</p>
+
+											<ul>
+												<li>Preparation:</li>
+											</ul>
+											<p>In the preparation stage, individuals are now convinced they need to
+												stop gambling andare mentally preparing themselves for the
+												eventuality.</p>
+
+											<ul>
+												<li>Affirmative Action:</li>
+											</ul>
+											<p>During this stage, they are taking their first steps to a more
+												positive relationship with gambling. It is imperative that they are
+												supported by their family and friends during this time as it is the
+												most crucial stage.</p>
+
+											<ul>
+												<li>Perseverance:</li>
+											</ul>
+											<p>This stage can be the hardest as it is easy to relapse and go back to
+												their old ways. To maintain affirmative action, an individual must
+												go through a series of challenges every day to get over the hurdle
+												and control their gambling for good.</p>
+
+											<ul>
+												<li>Recovery:</li>
+											</ul>
+											<p>This can look different depending on the person, but generally, those
+												in this stage are comfortable with their relationship with gambling,
+												whether that be fully quitting or having a more sustainable
+												relationship with it.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- A Self-Help Guide To Responsible Betting End -->
+
+	<!-- footer html start -->
+	<footer class="footer-wapper-main">
+		<div class="footer-wapper">
+			<div class="container w-1170">
+				<div class="footer-row-a">
+					<div class="footer-left-col">
+						<div class="footer-left-card">
+							<div class="footer-logo">
+								<img src="img/footer-logo.svg" alt="logo">
+							</div>
+							<p>Our team consists of industry experts, professional gamblers, and passionate sports
+								journalist. We have a rigorous review process and editorial standards and we do our best
+								to keep treating our readers fairly and providing unbiased free and professional
+								information.</p>
+							<ul>
+								<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Twitter.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-right-col">
+						<div class="footer-menu-col">
+							<h3>about us</h3>
+							<ul>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Meet the team</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Press</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>get started</h3>
+							<ul>
+								<li><a href="#">Sports betting news</a></li>
+								<li><a href="#">Legalization Tracker</a></li>
+								<li><a href="#">Betting odds</a></li>
+								<li><a href="#">Sportsbook</a></li>
+								<li><a href="#">Betting tools</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>site</h3>
+							<ul>
+								<li><a href="#">privacy</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">How we Rate</a></li>
+								<li><a href="#">Editorial Guidelines</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom-wapper">
+					<p>Our team consists of industry experts, professional gamblers, and passionate sports journalist.
+						We have a rigorous review process and editorial standards and we do our best to keep treating
+						our readers fairly and providing unbiased free and professional information.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-reserved">
+			<div class="container w-1170">
+				<p>All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer html end -->
+
+</body>
+
+</html>

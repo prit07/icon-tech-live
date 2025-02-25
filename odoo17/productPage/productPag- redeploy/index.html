@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drift-zoom/1.3.1/drift-basic.min.css" /> -->
+    <link rel="stylesheet" href="css/product-page.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/drift-zoom/1.3.1/Drift.min.js"></script> -->
+    <script src="js/product-page.js"></script>
+
+    <style>
+
+        .zoom-lens {
+            position: absolute;
+            width: 30px;
+            height: 20px;
+            opacity: 0.4;
+            cursor: none;
+            display: none;
+        }
+
+        .detail-zoom-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 426px;
+            top: 81px;
+            border: 1px solid #ddd;
+            overflow: hidden;
+            display: none;
+        }
+
+        .zoomed-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: auto;
+            transform-origin: top left;
+        }
+  
+    </style>
+
+</head>
+
+<body>
+    <!-- Product Page Start -->
+    <div class="product-page">
+        <div class="container w-1312">
+            <div class="product-page-top">
+                <div class="product-page-top-left">
+                    <ul>
+                        <li><a href="#"> Tables /</a> </li>
+                        <li><a href="#"> Dining Tables / </a> </li>
+                        <li><a href="#"> Aaron Dining Table Round </a> </li>
+                    </ul>
+                </div>
+                <div class="product-page-top-center">
+                    <div class="product-page-top-center-logo">
+                        <a href="#"><img src="img/product-page-logo.png" alt=""></a>
+                    </div>
+                    <div class="product-page-top-center-text">
+                        <h4>Designer: <span> Home Design </span> </h4>
+                        <a href="#">HOPE Dining Table Rectangular</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pdp-center-row">
+                <div class="pdp-center-left-col">
+                    <div class="pdp-center-left-carousel">
+                        <div class="owl-carousel owl-product-carousel">
+                            <div class="item"> <img src="img/01.png"> </div>
+                            <div  class="item"> <img src="img/02.png"> </div>
+                            <div  class="item" > <img src="img/03.png"> </div>
+                            <div  class="item"> <img src="img/04.png"> </div>
+                            <div class="item"> <img src="img/01.png"> </div>
+                            <div  class="item"> <img src="img/02.png"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pdp-center-right-col">
+                    <div class="pdp-center-right-sales-main">
+                        <div class="pdp-center-right-sales">
+                            <h3>Sales Description</h3>
+                            <div class="pdp-center-hover">
+                                <p>A light and contemporary spirit defines the Hope dining table: a simple yet refined
+                                    style. A taste for design details, guided by the obliquity of the solid wooden legs,
+                                    each divided into two sections, and by the continuity between structure and top,
+                                    available in both wood and glass. “Lightness and elegant dynamism”, the
+                                    characteristics
+                                    that the architect and creator Cesare Arosio wanted to transform into a unique and
+                                    elegant product, able to stand out among the different furnishing elements with
+                                    class
+                                and personality. </p>
+                            </div>
+                        </div>
+                        <div class="pdp-center-right-sales">
+                            <h3>Designer’s Thoughts</h3>
+                            <div class="pdp-center-hover">
+                                <p>A light and contemporary spirit defines the Hope dining table: a simple yet refined
+                                    style. A taste for design details, guided by the obliquity of the solid wooden legs,
+                                    each divided into two sections, and by the continuity between structure and top,
+                                    available in both wood and glass. “Lightness and elegant dynamism”, the
+                                    characteristics
+                                    that the architect and creator Cesare Arosio wanted to transform into a unique and
+                                    elegant product, able to stand out among the different furnishing elements with
+                                    class
+                                and personality. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pdp-center-right-color">
+                        <form>
+                            <input type="radio" id="color1" name="color" value="color1">
+                            <label for="color1">
+                                <img src="img/variantColorImage.png" alt="">
+                                <span>color 1</span>
+                            </label>
+
+                            <input type="radio" id="color2" name="color" value="color2">
+                            <label for="color2">
+                                <img src="img/variantColorImage-1.png" alt="">
+                                <span>color 2</span>
+                            </label>
+
+                            <input type="radio" id="color3" name="color" value="color3">
+                            <label for="color3">
+                                <img src="img/variantColorImage-2.png" alt="">
+                                <span>color 3</span>
+                            </label>
+                        </form>
+                    </div>
+                    
+                    <div class="pdp-center-right-bottom">
+                        <ul>
+                            <li> 
+                                <img src="img/CodeSandboxOutlined.png" alt="">  
+                                <a id="openPopup">Choose your Variation</a>
+                                <div id="variants-popup" class="variants-popup">
+                                    <div class="variant-popup-content">
+                                        <div class="variants-popup-top-img">
+                                            <img src="img/variantspopup-01.png" alt="">
+                                        </div>
+                                        <div class="variants-popup_accordion_wapper">
+                                            <div class="variants-popup_accordion_item ">
+                                                <div class="variants-popup_menu">
+                                                    <a>Dimensions</a>
+                                                </div>
+                                                <div class="variants-popup_content">
+                                                    <ul>
+                                                        <li>Option 1</li>
+                                                        <li>Option 2</li>
+                                                        <li>Option 3</li>
+                                                        <li>Option 4</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="variants-popup_accordion_item ">
+                                                <div class="variants-popup_menu">
+                                                    <a><img src=""><span>Wood & Finish</span> </a>
+                                                </div>
+                                                <div class="variants-popup_content">
+                                                    <ul>
+                                                        <li data-tab="wood-finish-1">Option 1</li>
+                                                        <li data-tab="wood-finish-2">Option 2</li>
+                                                        <li data-tab="wood-finish-3">Option 3</li>
+                                                        <li data-tab="wood-finish-4">Option 4</li>
+                                                    </ul>
+                                                    <div class="tab--content">
+                                                        <div id="wood-finish-1" class="variants-main-card">
+                                                            <div class="color-variant-wapper">
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-1">
+                                                                    <label for="color-1">
+                                                                        <img src="img/variantColorImage.png" />
+                                                                        <span>Color Code 1</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-2">
+                                                                    <label for="color-2">
+                                                                        <img src="img/variantColorImage-1.png" />
+                                                                        <span>Color Code 2</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-3">
+                                                                    <label for="color-3"><img src="img/variantColorImage-2.png" /><span>Color Code 3</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-4">
+                                                                    <label for="color-4"><img src="img/variantColorImage.png" /><span>Color Code 4</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-5">
+                                                                    <label for="color-5"><img src="img/variantColorImage-1.png" /><span>Color Code 5</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-6">
+                                                                    <label for="color-6"><img src="img/variantColorImage-2.png" /><span>Color Code 6</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-7">
+                                                                    <label for="color-7"><img src="img/variantColorImage.png" /><span>Color Code 7</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-8">
+                                                                    <label for="color-8"><img src="img/variantColorImage-1.png" /><span>Color Code 8</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-9">
+                                                                    <label for="color-9"><img src="img/variantColorImage-2.png" /><span>Color Code 9</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-10">
+                                                                    <label for="color-10"><img src="img/variantColorImage.png" /><span>Color Code 10</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-11">
+                                                                    <label for="color-11"><img src="img/variantColorImage-1.png" /><span>Color Code 11</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-12">
+                                                                    <label for="color-12"><img src="img/variantColorImage-2.png" /><span>Color Code 12</span></label>
+                                                                </div>
+                                                                <div class="color-variant-main">
+                                                                    <input type="radio" name="test" id="color-13">
+                                                                    <label for="color-13"><img src="img/variantColorImage.png" /><span>Color Code 13</span></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="variants-popup_accordion_item ">
+                                                <div class="variants-popup_menu">
+                                                    <a><img src=""><span>Upholstery</span></a>
+                                                </div>
+                                                <div class="variants-popup_content">
+                                                    <ul>
+                                                        <li data-tab="upholstery-1">Option 1</li>
+                                                        <li data-tab="upholstery-2">Option 2</li>
+                                                        <li data-tab="upholstery-3">Option 3</li>
+                                                        <li data-tab="upholstery-4">Option 4</li>
+                                                    </ul>
+                                                    <div id="upholstery-1" class="variants-main-card">
+                                                        <div class="color-variant-wapper">
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-1">
+                                                                <label for="upholstery-1">
+                                                                    <img src="img/variantColorImage.png" />
+                                                                    <span>Color Code 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-2">
+                                                                <label for="upholstery-2">
+                                                                    <img src="img/variantColorImage-1.png" />
+                                                                    <span>Color Code 2</span>
+                                                                </label>
+                                                            </div>
+                                                         
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-3">
+                                                                <label for="upholstery-3"><img src="img/variantColorImage-2.png" /><span>Color Code 3</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-4">
+                                                                <label for="upholstery-4"><img src="img/variantColorImage.png" /><span>Color Code 4</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-5">
+                                                                <label for="upholstery-5"><img src="img/variantColorImage-1.png" /><span>Color Code 5</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-6">
+                                                                <label for="upholstery-6"><img src="img/variantColorImage-2.png" /><span>Color Code 6</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-7">
+                                                                <label for="upholstery-7"><img src="img/variantColorImage.png" /><span>Color Code 7</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-8">
+                                                                <label for="upholstery-8"><img src="img/variantColorImage-1.png" /><span>Color Code 8</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-9">
+                                                                <label for="upholstery-9"><img src="img/variantColorImage-2.png" /><span>Color Code 9</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-10">
+                                                                <label for="upholstery-10"><img src="img/variantColorImage.png" /><span>Color Code 10</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-11">
+                                                                <label for="upholstery-11"><img src="img/variantColorImage-1.png" /><span>Color Code 11</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-12">
+                                                                <label for="upholstery-12"><img src="img/variantColorImage-2.png" /><span>Color Code 12</span></label>
+                                                            </div>
+                                                            <div class="color-variant-main">
+                                                                <input type="radio" name="test" id="upholstery-13">
+                                                                <label for="upholstery-13"><img src="img/variantColorImage.png" /><span>Color Code 13</span></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="variants-popup-bottom-items">
+                                            <div class="variants-popup-bottom-img">
+                                                <img src="img/variantspopup-02.png" alt="">
+                                            </div>
+                                            <div class="variants-popup-bottom-text">
+                                                <a href="#">Dimensions</a>
+                                                <ul>
+                                                    <li>W: 150 cm | </li>
+                                                    <li>L: 100 cm | </li>
+                                                    <li>H: 75 cm | </li>
+                                                </ul>
+                                            </div>
+                                            <div class="variants-popup-right-color">
+                                                <form >
+                                                    <input type="radio" id="variants-color1" name="color" value="variants-color1">
+                                                    <label for="variants-color1" class="demo-area" id="variants-color">
+                                                        <h5 href="#">Wood And Finish</h5>
+                                                        <img class="variants-color-trigger" src="img/variantspopup-03.png" >
+                                                        <span>Color option 1</span>
+                                                    </label>
+                                                    <input type="radio" id="color2" name="color" value="variants-color2">
+                                                    <label for="color2" class="demo-area" id="variants-color">
+                                                        <h5 href="#">Upholstery</h5>
+                                                        <img class="variants-color-trigger" src="img/03.png" >
+                                                        <span>Color option 1</span>
+                                                    </label>
+                                                </form>
+                                                <div class="detail-zoom-effect"></div>
+                                            </div>
+                                            <div class="variants-popup-right-color">
+                                                <form >
+                                                    <input type="radio" id="variants-color1" name="color" value="variants-color1">
+                                                    <label for="variants-color1" class="demo-area" id="variants-color">
+                                                        <h5 href="#">Wood And Finish</h5>
+                                                        <img class="variants-color-trigger" src="img/variantspopup-03.png" >
+                                                        <span>Color option 1</span>
+                                                    </label>
+                                                    <input type="radio" id="color2" name="color" value="variants-color2">
+                                                    <label for="color2" class="demo-area" id="variants-color">
+                                                        <h5 href="#">Upholstery</h5>
+                                                        <img class="variants-color-trigger" src="img/03.png" >
+                                                        <span>Color option 1</span>
+                                                    </label>
+                                                </form>
+                                                <div class="detail-zoom-effect"></div>
+                                            </div>
+                                            <div class="variants-popup-price">
+                                                <h4>Variant Price</h4>
+                                                <a href="#">5678.00 USD</a>
+                                            </div>
+                                            <div class="variants-popup-add-to">
+                                                <ul>
+                                                    <li><img src="img/variantspopup-04.png" alt=""> <span>Add To Cart</span> </li>
+                                                    <li><img src="img/variantspopup-04.png" alt=""> <span>Add to WishList</span> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <img src="img/MailOutlined.png" alt=""> <a href="#">Contact Us</a> </li>
+                            <li> <img src="img/FastBackwardFilled.png" alt=""> <a href="#">Back to shop page</a> </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="product-page-bottom">
+            <div class="product-page-main">
+                <ul class="product-page-tabs">
+                    <li class=" active" tab="t1"><a href="javascript:void(0)">Same Family Items</a>
+                    </li>
+                    <li tab="t2"><a href="javascript:void(0)"> Product Information </a></li>
+                    <li tab="t3"><a href="javascript:void(0)"> Attached files </a></li>
+                </ul>
+            </div>
+            <div class="container w-1312">
+                <div id="t1" class="product-content active">
+                    <div class="product-same-family-items">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-page-main-items ">
+                                    <div class="product-page-overlay"></div>
+                                    <div class="product-page-img">
+                                        <img src="img/productBasicInfo.png" alt="">
+                                        <div class="product-page-content-details">
+                                            <ul>
+                                                <li>Brand : <span> Condehouse </span></li>
+                                                <li>Designer :<span> Naoto Fukasawa </span></li>
+                                                <li>Number of variations: <span> 94 </span></li>
+                                                <li>Make To Order - <span> 90 days </span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-page-text">
+                                        <h4><a href="#">TEN FOR TEN Table</a></h4>
+                                        <p>Price starts from 7500 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-page-main-items ">
+                                    <div class="product-page-overlay"></div>
+                                    <div class="product-page-img">
+                                        <img src="img/productBasicInfo (1).png" alt="">
+                                        <div class="product-page-content-details">
+                                            <ul>
+                                                <li>Brand : <span> Condehouse </span></li>
+                                                <li>Designer :<span> Naoto Fukasawa </span></li>
+                                                <li>Number of variations: <span> 94 </span></li>
+                                                <li>Make To Order - <span> 90 days </span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-page-text">
+                                        <h4><a href="#">TEN FOR TEN Table</a></h4>
+                                        <p>Price starts from 7500 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-page-main-items ">
+                                    <div class="product-page-overlay"></div>
+                                    <div class="product-page-img">
+                                        <img src="img/productBasicInfo (2).png" alt="">
+                                        <div class="product-page-content-details">
+                                            <ul>
+                                                <li>Brand : <span> Condehouse </span></li>
+                                                <li>Designer :<span> Naoto Fukasawa </span></li>
+                                                <li>Number of variations: <span> 94 </span></li>
+                                                <li>Make To Order - <span> 90 days </span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-page-text">
+                                        <h4><a href="#">TEN FOR TEN Table</a></h4>
+                                        <p>Price starts from 7500 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="product-page-main-items ">
+                                    <div class="product-page-overlay"></div>
+                                    <div class="product-page-img">
+                                        <img src="img/productBasicInfo (3).png" alt="">
+                                        <div class="product-page-content-details">
+                                            <ul>
+                                                <li>Brand : <span> Condehouse </span></li>
+                                                <li>Designer :<span> Naoto Fukasawa </span></li>
+                                                <li>Number of variations: <span> 94 </span></li>
+                                                <li>Make To Order - <span> 90 days </span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product-page-text">
+                                        <h4><a href="#">TEN FOR TEN Table</a></h4>
+                                        <p>Price starts from 7500 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-page-see-all-items">
+                            <a href="#">See All Items</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="t2" class="product-content ">
+                <div class="product-page-information">
+                    <ul>
+                        <li>Product Name:</li>
+                        <li>Style:</li>
+                        <li>Designer:</li>
+                        <li>Stock Status:</li>
+                        <li>Country of origin:</li>
+                        <li>Category:</li>
+                        <li>Tags:</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="t3" class="product-content ">
+                <div class="product-attached-files">
+                    <ul>
+                        <li>3D Files:</li>
+                        <li>2D Files:</li>
+                        <li>Product Sheet:</li>
+                        <li>Assembly Instructions:</li>
+                        <li>Maintenance Instructions:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Page End -->
+
+
+    <footer>
+        <div class="container">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis perferendis facere iusto, nam obcaecati dolores quaerat mollitia maxime est consequatur adipisci, quos vero aperiam repellat cumque quis nulla explicabo ratione atque laboriosam necessitatibus velit. Aliquid, voluptatem pariatur asperiores facere aut nesciunt aspernatur! Voluptatum, ex. Neque, reprehenderit accusamus nisi blanditiis ut repellendus unde illo, laudantium deserunt possimus commodi! Fugit voluptate quasi nostrum similique quod tempore, aliquid ab, alias sunt illo natus. Odio molestias rem at tempora id eaque impedit nostrum aliquam asperiores, ducimus ut consequuntur enim eius repellendus repudiandae quidem aperiam voluptatem, doloremque, perferendis voluptatibus expedita deleniti quam! Dolores, facilis nulla! A blanditiis animi itaque explicabo natus quia tempora ipsam perspiciatis rem, accusamus dicta, quis quas aperiam dolorem tempore velit provident recusandae distinctio quod autem! Dicta quasi veniam vero natus quas deserunt. Sint nostrum eos consectetur magni assumenda alias fugit qui saepe aliquam! Officiis placeat rem aspernatur officia debitis ratione libero rerum. Cum dolore fugiat suscipit molestias modi temporibus doloribus? Nesciunt, vero ipsam. Blanditiis animi natus vero dolore at nemo similique totam, tenetur quis repellat velit laudantium voluptates accusamus nesciunt rem neque, sapiente repudiandae provident doloremque ea dolores suscipit enim placeat. A quas ex rem. Eos quae, enim, eaque quos modi neque exercitationem dolor labore, deserunt placeat officia laudantium iure mollitia odio error sit fuga ut ducimus pariatur omnis. Iusto, nostrum amet repellat tempore pariatur laudantium laboriosam harum magni obcaecati, fuga autem adipisci quas tempora recusandae quibusdam ipsa quaerat. Qui obcaecati fuga sapiente ducimus voluptate velit modi. Facere, cupiditate! Nesciunt et quia alias vitae consequuntur nisi reprehenderit fuga ipsa incidunt quidem, blanditiis itaque deserunt. Voluptatum ipsum suscipit corrupti minus dolores porro eos vel quod ut autem. Tempore, impedit aliquid harum quod omnis dolor perspiciatis iusto ullam delectus dolorum. Eligendi sapiente at optio, eveniet perferendis praesentium natus nobis numquam nesciunt modi fuga ex, sint ipsam est nam accusantium cum commodi, amet tempore quisquam nulla vel omnis officiis. Nihil officia fugit atque deleniti aperiam neque maxime totam praesentium id! Asperiores repellendus consequuntur ea a architecto, est sint voluptates alias sed aliquam aliquid minima necessitatibus eveniet deleniti quidem facere beatae, id sequi dolor quia tempora, voluptatem vitae provident! Consectetur quos aut perspiciatis voluptatem, optio temporibus ratione aliquam illum nemo sequi fuga quidem impedit veniam. Itaque eos praesentium molestiae, dicta aliquam corrupti sapiente iste ad? Quaerat rem vero qui officia? Officiis maxime molestiae dolores non, laudantium voluptas, est magni dignissimos maiores iusto architecto quod? Maxime quas repudiandae, tenetur quae quod pariatur laborum neque minus ducimus sint necessitatibus suscipit officiis quo excepturi impedit fugiat magnam repellat! Officia, error id? Ipsa rem quas aliquam id perspiciatis repellendus dolore odit, cumque magnam debitis unde, veniam numquam neque, corporis corrupti provident voluptates dicta! Impedit ea perspiciatis quisquam temporibus consequatur.</p>
+        </div>
+    </footer>
+
+
+        
+    <script src="index.js"></script>
+
+</body>
+
+</html>

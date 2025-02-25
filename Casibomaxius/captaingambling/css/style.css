@@ -1,0 +1,108 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+:root {
+	--editorial_new: Editorial New;
+	--suisseintl: SuisseIntl;
+	--PP_editorial_new: PP Editorial New;
+}
+
+
+.captaingambling-online-bonuses { box-shadow: 1px 1px 10px rgba(0,0,0,.1); margin-bottom: 15px;}
+.captaingambling-online-bonuses h3 {
+    padding: 15px 25px;
+    box-shadow: 0 -1px 0 0 #e2e6e9 inset;
+    border-radius: 4px 4px 0 0;
+    background:#0B2450;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--suisseintl);
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+    line-height: normal;
+}
+.captaingambling-online-bonuses ul{ margin: 0;padding: 15px 15px 15px 45px;}
+.captaingambling-online-bonuses ul li a {   
+    color: #000000; 
+    font-size: 15px;
+    font-family: var(--editorial_new);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline;
+  }
+
+
+  
+.captaingambling-top-online-casinos {  box-shadow: 1px 1px 10px rgba(0,0,0,.1); }
+.captaingambling-top-online-casinos h3 {
+  padding: 15px 25px;
+  box-shadow: 0 -1px 0 0 #e2e6e9 inset;
+  border-radius: 4px 4px 0 0;
+  background: #0B2450;
+  color: #fff;
+  font-size: 15px;
+  font-family: var(--suisseintl);
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  line-height: normal;
+}
+.captaingambling-top-online-casinos-main { padding: 12px;}
+.captaingambling-top-online-casinos-wapper:last-of-type{ border: 0;}
+.captaingambling-top-online-casinos-wapper  {display: flex; align-items: center;  padding: 12px 0; border-bottom: 1px solid #e2e6e9; }
+.captaingambling-top-online-casinos-img { margin-right: 10px    ;}
+.captaingambling-top-online-casinos-img img { width: 70px; height: 50px; border-radius: 5px;}
+.captaingambling-top-online-casinos-text { width: 100%; max-width: 130px;}
+.captaingambling-top-online-casinos-text h5 {
+    color: #0B2450;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 700;
+    font-family: var(--suisseintl);
+    margin: 0;
+    font-style: normal;
+}
+.captaingambling-top-online-casinos-text a { color: #000000; font-family: var(--editorial_new); font-size: 13px; text-decoration: underline }
+.captaingambling-top-online-casinos-reating  {    border-left: 1px solid #e2e6e9;  margin-left: 5px; padding: 8px ;}
+.captaingambling-top-online-casinos-reating h5 {
+    color: #000000;
+    font-size: 16.5px;
+    font-family: var(--suisseintl);
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+.captaingambling-top-online-casinos-reating h5 span { font-size: 12px; font-weight: 400; }
+.captaingambling-stars-rating { unicode-bidi: bidi-override; direction: ltr; font-size: 5px; display: flex; gap: 1px;}
+.captaingambling-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.captaingambling-stars-rating span.star:hover { cursor:pointer; }
+.captaingambling-stars-rating span.star:before { content:"\f005"; padding-right:0px; color:#F3A90A; }
+.captaingambling-stars-rating span.star.filled:before { font-weight: 900; color:#F3A90A; content:"\f005"; }
+.captaingambling-stars-rating span.star.half-filled:before { content:"\f089"; color:#F3A90A; }
+
+.captaingambling-stars-rating span.star.half-filled:after {
+    content: "\f005";
+    color: #F3A90A;
+    margin-left: -5.7px;
+}
+
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    .captaingambling-online-bonuses ul { padding: 15px 15px 15px 25px;}
+    .captaingambling-top-online-casinos-text { max-width: 117px;}
+    .captaingambling-top-online-casinos-wapper { gap: 7px;  flex-wrap: wrap;}
+}
+
+
+@media(max-width:991px) {
+    .captaingambling-top-online-casinos-text { max-width: 100%;}
+}
+
+
+@media (min-width: 1300px) {
+.container, .w-1200 {
+    max-width: 1200px !important;
+}
+}

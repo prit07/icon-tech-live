@@ -1,0 +1,163 @@
+body { margin:0; padding:0; }
+a:hover { text-decoration:none; }
+
+.mi-cuenta-top {
+    background-color: #000000;
+    width: 100%;
+}
+.mi-cuenta-top h2 {
+   font-family: Roboto;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 35.16px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 47px 0;
+}
+.mi-cuenta-grid { 
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 100px 0;
+}
+
+.mi-cuenta-grid-col { padding: 22px 26px; border-radius: 5px; border: 1px solid #000000; width: 100%;}
+.mi-cuenta-grid-col-heading { display: flex; justify-content: space-between; gap: 5px;}
+.mi-cuenta-grid-col-heading>h4{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.mi-cuenta-grid-col-heading>a {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: right;
+    text-decoration: underline;
+    color: #BDBDBD;
+}
+.mi-cuenta-grid-col-mis-datos>ul { margin: 0; padding: 0; list-style: none;}
+.mi-cuenta-grid-col-mis-datos>ul>li {
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18.75px;
+   text-align: left;
+}
+.suscripciones-grid-col-mis-datos>b {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  text-align: left;
+  color: #DFA535;
+}
+.suscripciones-grid-col-mis-datos>p {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    color: #000000;
+}
+.suscripciones-grid-col-mis-datos>ul { display: flex; justify-content: end; margin-top: 10px; padding: 0; list-style: none; gap: 12px;}
+.suscripciones-grid-col-mis-datos>ul>li>span {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: line-through;
+    line-height: 28.13px;
+    text-align: right;
+    color: #006837;
+}
+.suscripciones-grid-col-mis-datos>ul>li {
+   font-family: Roboto;
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28.13px;
+   text-align: right;
+   color: #006837;
+}
+.pedidos-grid-col-mis-datos>ul {list-style: none; margin: 0; padding: 0;}
+.pedidos-grid-col-mis-datos>ul>li {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-decoration: underline;
+}
+.mi-cuenta-grid-col-ul { margin: 0; padding: 0; list-style: none;display: flex; flex-direction: column; gap: 35px; }
+.mi-cuenta-grid-col-ul>li {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: left;
+}
+.mi-cuenta-grid-col-ul>li>span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: right;
+}
+.mi-cuenta-grid-col-ul>li>b {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: right;
+    color: #006837;
+}
+
+
+
+@media(min-width:1240px) {
+	.container.w-1196 { max-width:1196px; width:100%; padding: 0 !important;}
+}
+
+
+@media(max-width:1240px) {
+  
+}
+
+@media (max-width: 991px) {
+   
+}
+
+
+@media(max-width:767px) {
+   
+    .mi-cuenta-grid {
+        display: grid;
+        grid-row-gap: 25px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 35px 0;
+    }
+    .mi-cuenta-grid-col-heading>h4 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.09px;
+      margin-bottom: 4px;
+    }
+    .mi-cuenta-grid-col-mis-datos>ul>li { font-size: 14px; line-height: 16.75px;}
+    .mi-cuenta-grid-col {  padding: 17px 20px;}
+    .suscripciones-grid-col-mis-datos>b {font-size: 16px; line-height: 19.09px;}
+    .suscripciones-grid-col-mis-datos>p { font-size: 14px; line-height: 16.75px;}
+    .mi-cuenta-grid-col-ul>li { font-size: 16px; line-height: 19.09px;}
+    .mi-cuenta-grid-col-ul>li>span { font-size: 14px;  line-height: 16.75px;}
+    .mi-cuenta-grid-col-ul>li>b { font-size: 14px;  line-height: 16.75px;}
+    .mi-cuenta-grid-col-ul { gap: 20px;}
+}
+

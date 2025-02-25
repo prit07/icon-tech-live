@@ -1,0 +1,886 @@
+body { margin: 0; padding: 0; }
+
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+    }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+
+
+/*  Category Or Topic Archive Page Start */
+.category-or-topic-archive { padding: 64px 0 110px 0;}
+.cota-ba-row { display:flex; flex-direction:row;justify-content:space-between; gap:24px; }
+.cota-left-col { max-width: 948px; width: 100%; display: flex; flex-direction: column; gap: 40px; }
+.cota-category-name-main {display: flex; flex-direction: column; gap: 23px; }
+.cota-right-col { max-width:302px; width:100%; }
+/* Category name  Page Start */
+
+/* Category name Header start */
+.cota-category-name-header { display: flex; justify-content: space-between; align-items: center;} 
+.cota-category-name-heading h2 { 
+    color: #000;
+    font-family:var(--onest-text);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px; 
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+
+.cota-category-name-most-popular>ul {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 0;
+	margin: 0;
+}
+.cota-category-name-most-popular>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    right: 20px;
+}
+.cota-category-name-most-popular>ul>li>a {
+	color: #000;
+    font-family:var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+	display: block;
+	padding: 17px 8px;
+	position: relative;
+}
+.cota-category-name-most-popular>ul>li.cota-sub-menu-card>a:after{
+	content:'';
+	background: url('../img/Chevron\ Down.svg') no-repeat;
+	width: 16px;
+	height: 16px;
+	transform: rotate(0deg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	right: -14px;
+	top: 38%;
+} 
+.cota-submenu-wapper{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: #fff;
+	height: auto;
+	width: 150px;
+	padding: 10px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	z-index: 1000;
+	box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+}
+.cota-submenu-wapper>ul { padding:0; margin:0; }
+.cota-submenu-wapper>ul>li { list-style-type:none; display:block; list-style-type:none; }
+.cota-submenu-wapper>ul>li>a {
+	color: #000;
+    font-family:var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+	display: block;
+	padding: 8px 10px;
+}
+.cota-category-name-most-popular>ul>li:hover .cota-submenu-wapper { visibility: visible; opacity:1; }
+.cota-category-name-most-popular>ul>li:hover a:after { transform:rotate(180deg); }
+ /* Category name Header End */
+
+
+/* Category It Work Start */
+.cota-it-work { display: flex; flex-direction: row; gap: 16px; }
+.cota-it-work-wapper {width: 100%; max-width: 227px; display: flex; flex-direction: column; gap: 16px;}
+.cota-it-work-img  { width: 100%; height: 181px;}
+.cota-it-work-img img{ 
+    width:100%;
+    max-width:unset;
+    height:100%;
+    object-fit:cover;
+}
+.cota-it-work-center {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+} 
+.cota-it-work-center>h3{ margin: 0; line-height: 0;}
+.cota-it-work-center>h3>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.cota-it-work-center p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+
+
+.cota-best-trading-center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.cota-best-trading-center ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cota-best-trading-center ul li i { font-size: 8px; color: #678EC9; }
+.cota-best-trading-center ul li a{
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Category It Work End */
+
+
+/* Cota it Work Topic Start */
+.cota-it-work-topic {     
+    width: 100%;
+    height: 100%;
+    max-width: unset;
+    overflow: hidden;
+}
+.cota-it-work-topic-wapprt {
+
+	width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    gap: 14px;
+	overflow: hidden;
+}
+
+.cota-it-work-topic-btn>span>a {
+    padding: 6px 8px;
+    border: 1px solid #DFAB3E;
+    display: inline-block;
+    color: #3836CB;
+    font-family: var(--golos-text);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+}
+.cota-it-work-topic-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cota-it-work-topic-items>h3{ margin:0; line-height: 0;}
+.cota-it-work-topic-items>h3>a {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+}
+.cota-it-work-topic-items p{
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+/* Cota it Work Topic End */
+
+
+/* Richird Norton photorealistic Start start */
+.cota-sect-c-wapper {
+	position: relative;
+	padding: 48px 0;
+	background: #FBF1E5;
+    padding: 32px;
+}
+.cota-c-row { display: flex;  justify-content: space-between; }
+.cota-col-left {
+	max-width: 513px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.cota-c-left-text h2 {
+	color: #000;
+	font-family:var(--golos-text);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+	margin: 0;
+	padding-bottom: 16px;
+}
+.cota-c-left-text p {
+	margin: 0;
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 137.5% */
+    letter-spacing: 0.16px;
+}
+.cota-c-subscribe {
+	max-width: 400px;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+}
+.cota-c-subscribe input {
+	border-radius: 2px;
+	background: #FFF;
+	height: 50px;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.40);
+	font-family: var(--golos-text);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.16px;
+	border: 0;
+	padding: 0 16px;
+}
+.cota-c-subscribe button {
+	border: 0;
+	background: #3836CB;
+	color: #FFF;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 123px;
+	height: 50px;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.cota-col-right { max-width:377px; width:100%; }
+.cota-col-right ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.cota-col-right ul li {
+	list-style-type: none;
+	color: #000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.16px;
+	position: relative;
+	padding-left: 40px;
+}
+.cota-col-right ul li:before {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	display: block;
+	top:5px;
+	left: 0;
+	background-image: url('../img/check-y.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* Richird Norton photorealistic end */
+
+
+/* Category Page Last div Start  */
+.cota-sect-f-main { display: flex; flex-direction: column; gap: 32px; }
+.cota-sect-f-card-wapper { display: flex; flex-direction: row; gap: 24px; }
+.cota-sect-f-img { max-width: 304px; width: 100%; height:174px;  }
+.cota-sect-f-img img { max-width:unset; width:100%; height:100%; object-fit:cover; }
+.cota-sect-f-text { display: flex; flex-direction: column; gap: 16px; }
+.cota-sect-f-top-text { display:flex; flex-direction:column; gap:12px; }
+.cota-sect-f-top-text span a{
+	border: 1px solid #DFAB3E;
+	padding: 6px 8px;
+	display: inline-block;
+	color: #3836CB;
+	font-family: var(--golos-text);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 0.12px;
+	text-transform: uppercase;
+}
+.cota-sect-f-top-text h3 { margin:0; line-height:normal; }
+.cota-sect-f-top-text h3 a {
+	color: #000;
+	font-family:var(--golos-text);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 0.18px;
+	display: block;
+}
+.cota-sect-f-top-text p {
+	color: #000;
+	font-family: var(--golos-text);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 0.16px;
+	margin: 0;
+}
+.cota-sect-f-ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	align-items: center;
+}
+.cota-sect-f-ul li {
+	list-style-type: none;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.60);
+	font-family: var(--golos-text);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.cota-sect-f-ul li i {
+	font-size: 6px;
+	color: #3836CB;
+	line-height: normal;
+	display: block;
+}
+.cota-sect-f-ul li a {
+	color: #000;
+	font-family: var(--golos-text);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+/* Category Page Last div End  */
+
+
+/*  Category Name page Emd */
+
+
+
+/* Cota video Page Main Start */
+
+/* Cota video Header Start */
+.cota-video-heading { 
+	border-top: 1px solid #B79501;;
+	border-bottom: 1px solid #B79501;;
+	padding: 16px 0; 
+}
+.cota-video-heading h2 {
+	color: #000;
+    font-family: var(--golos-text);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; 
+	margin: 0;
+}
+/* Cota video Header End */
+
+/* Category Video  Items Start */
+.cota-video-page-main {display: flex; flex-direction: column; gap: 24px;}
+.cota-videos-card-img img {width: 100%; height: 150px;}
+.cota-videos-row { display: flex; flex-direction: row;  row-gap: 24px; column-gap:16px;	flex-wrap: wrap; }
+.cota-videos-card-wapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+	width: 100%;
+    max-width: 219px;
+}
+.cota-videos-card-wapper .cota-videos-card-img a { width: 100%; position: relative; display: block;}
+.cota-videos-card-wapper .cota-videos-card-img a .cota-overlay-slider {
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%);
+}
+.cota-videos-card-wapper .cota-videos-card-inner h4 { margin: 0; line-height: 0;}
+.cota-videos-card-wapper .cota-videos-card-inner h4 a{
+   color: #181716;
+   font-family: var(--dm-sans-text);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 20px;
+   letter-spacing: 0.16px;
+}
+/* Category Video  Items End */ 
+
+/* Category Video Page End */
+
+
+
+/* Popular business podcasts Start */
+ .popular-business-podcasts-main { display: flex; flex-direction: column; gap: 24px;}
+
+ /* Popular business podcasts Heading Start */
+ .cota-podcasts-heading {
+	border-top: 1px solid #B79501;;
+	border-bottom: 1px solid #B79501;;
+	padding: 16px 0; 
+ }
+ .cota-podcasts-heading h2 {
+	color: #000;
+    font-family: var(--dm-sans-text);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px; 
+	margin: 0;
+ }
+ /* Popular business podcasts Heading End */
+ 
+ /* Popular business podcasts Items Start */
+.cota-podcasts-row {display: flex; gap: 24px; flex-wrap: wrap;}
+.cota-podcasts-items {
+	background: #fff;
+	max-width: 165px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.cota-podcasts-items-top {
+	padding:0 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.cota-podcasts-items-top img{ max-width: 150px; width: 100%;}
+.cota-podcasts-items-top>h3 {margin: 0 ; line-height: 0; text-align: center;}
+.cota-podcasts-items-top>h3>a {
+	color: #181716;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.18px;
+}
+.cota-podcasts-items-btn>span {
+	display: flex;
+	padding: 12px 32px;
+	justify-content: center;
+    align-items: center;
+	border-radius: 4px;
+    background: #3836CB;
+}
+.cota-podcasts-items-btn>span>a {
+	color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* Popular business podcasts Items End */
+
+
+/* Popular business podcasts End */
+
+
+/* Right Start */
+.cota-wapper-right { display: flex; flex-direction: column; gap: 40px; margin-top: 40px;}
+
+/* Right Subscribe Start */
+.cota-subscribe-btn h3 {
+    width: 100%;
+    display: flex;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.cota-subscribe-btn>h3>a {
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* Right Subscribe End */
+
+/* Right Search Start */
+.cota-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.cota-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.cota-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+/* Right Search End */
+
+/* Right Latest News Start */
+.cota-latest-newa-heading { margin-bottom: 24px;}
+.cota-latest-newa-heading h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.cota-latest-newa-wapper { display: flex; flex-direction: column; gap: 16px;}
+.cota-latest-newa-items h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.cota-latest-newa-items h2 { line-height: 0; margin-bottom: 6px;}
+.cota-latest-newa-items>h2>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.cota-latest-newa-items p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.cota-hr {margin: 0; border-top: 1px solid #E6E6E6;}
+/* Right Latest News End */
+
+
+ /* Right Related Interviews Start */ 
+
+.cota-related-interviews h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 24px;
+}
+.cota-related-interviews-card ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.cota-related-interviews-card ul li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 16px;
+}
+.cota-related-interviews-card ul li .cota-ri-img {
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    border-radius: 100%;
+}
+.cota-related-interviews-card ul li .cota-ri-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.cota-related-interviews-card ul li h4 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+/* Right Related Interviews End */
+
+
+
+/* Related themes  Start */
+.cota-related-theme-main h2{
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.cota-related-theme-card { display: flex; flex-flow: row wrap; gap: 8px; }
+.cota-related-theme-card a {
+    border-radius: 4px;
+    border: 1px solid #DFAB3E;
+    padding: 10px 16px;
+    color: #181716;
+    font-family: var(--onest-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Related themes  End */
+
+.cota-latest-comments {display: flex; flex-direction: column; gap: 23px;} 
+.cota-latest-comments h2{
+	color: #000;
+	font-family:var(--golos-text);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	margin: 0;
+	line-height: normal;
+}
+.cota-latest-comments-items>ul {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.cota-latest-comments-items>ul>li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.cota-latest-comments-items>ul>li>img {
+	width: 24px;
+    height: 24px;
+	border-radius: 24px;
+
+}
+.cota-latest-comments-items>ul>li>h3 {
+	margin: 0; line-height: 0;
+}
+.cota-latest-comments-items>ul>li>h3>a {
+	color: #000;
+    font-family:var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.cota-latest-comments>span>a {
+	color: #3836CB;
+    font-family: var(--golos-text);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+/* Right End */
+
+
+
+@media (max-width:1199px) {
+    .cota-left-col { max-width: 693px;}
+    
+
+    /* Category It Work Start  */
+    .cota-it-work-wapper { width: 100%; max-width: 161px;}
+    .cota-it-work-img { width: 100%; height: 160px;}
+    .cota-best-trading-center ul li {        white-space: nowrap;}
+    .cota-best-trading-center ul li a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        width: 70px;
+    }
+    .cota-best-trading-center ul {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+    /* Category It Work End  */
+
+
+    /* podcasts Start*/ 
+    .cota-podcasts-items { max-width: 154px;}
+    /* podcasts End*/ 
+}
+
+
+
+
+@media (max-width:991px) {
+    .cota-ba-row { flex-wrap: wrap;}
+    .cota-col-left { max-width: 100%; width: 100%;}
+    .cota-col-right { max-width: 100%; width: 100%;}
+    .cota-wapper-right { margin-top: 56px;}
+    
+    /* Category It Work Start  */
+    .cota-it-work { flex-wrap: wrap;}
+    .cota-it-work-wapper { width: 100%; max-width: 48.8%;}
+    /* Category It Work Topic Start  */
+    .cota-it-work-topic { display: flex; gap: 16px; flex-wrap: wrap;}
+    .cota-mobile-view-none {display: none !important;}
+    /* Category It Work Topic Start  */
+    
+    /* Richird Norton photorealistic Start */
+    .cota-c-row { flex-wrap: wrap; gap: 32px;}
+    /* Richird Norton photorealistic End  */
+
+    /* podcasts Start*/
+    .cota-podcasts-items { max-width: 154px;}
+    /* podcasts End*/
+
+
+}
+
+
+
+@media (max-width:767px){
+    .cota-right-col {max-width: 100%; width: 100%;}
+    .cota-category-name-header { flex-wrap: wrap;}
+    .cota-category-name-most-popular>ul { margin-left: 15px;}
+   
+    /* subscribe */
+    .cota-subscribe-btn {display: none;}
+    /* Search */
+    .cota-Search-wapper { display: none;}
+    
+     /* Category It Work Start  */ 
+    .cota-it-work-wapper {  width: 100%; max-width: 47.6%;}
+    .cota-best-trading-center ul { display: flex; flex-direction: row; gap: 4px;}
+     .cota-best-trading-center>ul li a {
+        white-space: nowrap;
+        width: 76px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+     /* Category It Work End  */ 
+    
+    /* Category Page Last div Start */
+     .cota-sect-f-card-wapper { flex-wrap: wrap;}
+     .cota-sect-f-img { max-width: 100%; height: 160px;}
+    /* Category Page Last div End */
+    
+    /* Videp page start */
+    .cota-videos-card-wapper { width: 100%; max-width: 100%;}
+    .cota-videos-card-img img {  width: 100%; height: 200px;}
+    /* Videp page start */ 
+
+    /* podcasts Start*/
+    .cota-podcasts-items { max-width: unset; width: 172px !important; min-width: 172px;}
+    .cota-podcasts-row { flex-wrap: unset; overflow: scroll;}
+    /* podcasts End*/
+
+    /* Richird Norton photorealistic Start  */
+    .cota-sect-c-wapper { padding: 48px 16px;}
+    .cota-c-subscribe { gap: 12px; flex-direction: column;}
+    .cota-c-subscribe button { width: 100%;}
+    .cota-c-left-text h2 { font-size: 26px; line-height: 30px;}
+     /* Richird Norton photorealistic End  */
+
+     /*  Related themes  Start  */
+     .cota-related-theme-card a {
+        border-radius: 0px;
+        border: 1px solid #DFAB3E;
+        color: #3836CB;
+        font-family: var(--golos-text);
+        font-weight: 500;
+   }
+    /*  Related themes  End  */
+}

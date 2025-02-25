@@ -1,0 +1,449 @@
+
+body { margin: 0; padding: 0; }
+:root {
+	--font_1:'Blacker Text';
+	--font_2:'Manrope', sans-serif;
+	--font_1:'Blacker Text';
+	--font_2:'Manrope', sans-serif;
+
+	--main_bg_1:#FFF6ED;
+	--sub_bg_2:#F8EBDF;
+	--sub_bg_3:#F3DCA0;
+	--sub_bg_4:#291622;
+	--sub_bg_5:#fff;
+	--sub_bg_7:#96423F;
+
+
+    --sub-heading_4:#291622;
+    --sub-heading_5:#fff;
+    
+    --text_color_3:#F3DCA0;
+	--text_color_4:#291622;
+	--text_ul_li_4:#291622;
+    --text_color_5:#fff;
+	--text_ul_li_5:#fff;
+	--text_color_6:#333;
+	--text_ul_li_6:#333;
+	--text_color_7:#96423F;
+
+    --border_color_2:#F8EBDF;
+	--border_color_4:#291622;
+	--border_color_7:#96423F;
+}
+a:hover { text-decoration:none; }
+
+/* top link section start */
+
+.top-link-section{
+	background: var(--main_bg_1);
+	padding: 32px 0;
+}
+.top-link-section ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+.top-link-section ul li{
+	list-style-type: none;
+}
+.top-link-section ul li a{
+	color:  var(--text_ul_li_4);
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+.top-link-section ul li.active a{
+	text-decoration-line: none;
+}
+.top-link-section ul li span img {
+	display: none;
+}
+/* top link section end */
+
+/* Types of Car section start */
+
+.type-of-car-section{
+	background: var(--main_bg_1);
+	padding: 20px 0 32px 0;
+}
+.type-of-car-left-wapper{
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_5);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.type-of-car-card-title{
+	display: flex;
+	position: relative;
+	padding: 0 20px 0 0;
+}
+.type-of-car-card-title::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	background: url(../img/down-arrow.svg) no-repeat;
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.type-of-car-card-title span{
+	color: var(--text_color_4);
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper h5{
+	margin: 0;
+	color: var(--sub-heading_4);
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+.type-of-car-card-inner{
+	display: none;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li{
+	list-style-type: none;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li p{
+	color:  var(--text_ul_li_6);
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	margin: 0;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li.active p{
+	color: var(--text_color_7);
+	font-weight: 600;
+}
+.type-of-car-left-wapper .border-line{
+	border: 1px solid var(--border_color_2);
+}
+/* right */
+
+.Types-of-Car-right-wapper h2{
+	color: var(--sub-heading_4);
+	font-family: var(--font_1);
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	margin: 0;
+	padding-bottom: 22px;
+}
+.Types-of-Car-right-wapper p{
+	color:  var(--text_color_6);
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px; 
+	margin: 0;
+	padding-bottom: 16px;
+}
+.Types-of-Car-right-wapper p a{
+	color:  var(--text_color_6);
+	text-decoration-line: underline;
+}
+.Types-of-Car-right-wapper h4{
+	color: var(--sub-heading_4);
+	font-family: var(--font_1);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.24px;
+	margin: 0;
+	padding: 24px 0 13px 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts{
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_5);
+	margin-bottom: 13px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title{
+	background: var(--sub_bg_7);
+	padding: 16px 32px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title h4{
+	color: var(--sub-heading_5);
+	padding: 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text{
+	padding: 20px 32px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text p{
+	padding: 0;
+}
+.Types-of-Car-right-wapper button{
+	border: 1px solid  var(--border_color_4);
+	background:  var(--sub_bg_3);
+	color:  var(--text_color_4);
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 8px 12px; 
+	margin-top: 20px;
+}
+/* Types of Car section end */
+
+/* Legal Guides section start */
+.lelgal-guides-section{
+	background: var(--main_bg_1) ;
+	padding: 300px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lelgal-guides-section::before {
+	content: '';
+	border: 2px solid var(--border_color_4);
+	background: var(--sub_bg_3);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 118px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.lelgal-guides-section::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 150px;
+	background: var(--sub_bg_4);
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.lelgal-guides-section h2{
+	margin: 0;
+	color: var(--sub-heading_5);
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+}
+.lelgal-guides-section h2 span{
+	position: relative;
+	z-index: 1;
+}
+.lelgal-guides-section h2 span::after{
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #532E45;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+.lelgal-guides-section .Legal-Guides-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.injured-law-wapper{
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+	row-gap: 24px;
+	flex-flow: row wrap;
+}
+.Injury-Law-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.Injury-Law-card-wapper h6 { margin: 0; line-height: normal;}
+.Injury-Law-card-wapper h6 a{
+	color: var(--sub-heading_5);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+.Injury-Law-card-wapper p{
+	color: var(--text_color_5);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+.lelgal-guides-section .container{ display: flex; flex-direction: column; gap: 120px; }
+.read-more-btn{ display: none; }
+/* Legal Guides section end */
+
+/* Legal Guides section end */
+
+
+
+
+
+
+
+@media(max-width:1399px){
+
+	/* Legal Guides section start */
+	.lelgal-guides-section::before { left: -90px; }
+	.lelgal-guides-section::after { right: -120px; width: 118%; }
+	/* Legal Guides section end */
+}
+
+@media(max-width:1199px){
+	
+/* Legal Guides section start */
+.d-n{display: none;}
+.read-more-btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.read-more-btn a{
+	color: var(--text_ul_li_4);
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 16px 90px;
+	border-radius: 52px;
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_3);
+}
+.lelgal-guides-section::after {
+	right: -120px;
+	width: 122%;
+}
+.lelgal-guides-section::before { width: 100%; top: 137px; left: -120px; }
+.Injury-Law-card-wapper { display: none; }
+/* Legal Guides section end */
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	
+
+}
+
+@media(max-width:991px){
+	/* Types of Car section start */
+	.type-of-car-section .row{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	/*  Types of Car section end */
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding: 240px 0 80px 0; }
+	.lelgal-guides-section .container { gap: 80px; }
+	.lelgal-guides-section h2 { font-size: 46px; }
+	.lelgal-guides-section::after { right: -145px; width: 135%; }
+	/* Legal Guides section end */
+	
+	
+}
+
+@media(max-width:767px){
+
+/*  top link section start  */
+
+.top-link-section ul {
+	flex-direction: column;
+	gap: 8px;
+}
+.top-link-section ul li img{
+	display: none;
+}
+.top-link-section ul li span img {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*  top link section end */
+
+/* Types of Car section start */
+
+.type-of-car-section {
+	padding: 20px 0 20px 0;
+}
+.Types-of-Car-right-wapper h2 {
+	font-size: 30px;
+}
+.Types-of-Car-right-wapper h4 {
+	font-size: 22px;
+	padding: 20px 0 13px 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title {
+	padding: 16px 20px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text {
+	padding: 16px 20px;
+}
+.Types-of-Car-right-wapper button {
+	margin-top: 15px;
+}
+/* Types of Car section end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding: 160px 0 50px 0; }
+	.lelgal-guides-section .container { gap: 50px; }
+	.lelgal-guides-section .Legal-Guides-wapper { gap: 24px; }
+	.lelgal-guides-section::before { top: 42px; left: -171px;}
+	.lelgal-guides-section::after { right: -226px; width:237%; top:65px;}
+	.lelgal-guides-section h2 span::after { height: 15px;}
+	.m-d-n { display: none; }
+	.lelgal-guides-section h2 { font-size: 36px; letter-spacing: -0.36px; }
+	/* Legal Guides section end */
+}
+
+
+@media(max-width:420px){
+	/* Legal Guides section start */
+
+	.lelgal-guides-section h2 {
+		font-size: 37px;
+	}
+
+	/* Legal Guides section end */
+}

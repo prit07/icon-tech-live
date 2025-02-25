@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+ul {list-style: none; margin: 0; padding: 0;} 
+
+
+
+.review-description-wapper table {
+    border-collapse: separate !important;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid rgba(14, 34, 54, 0.15);
+    border-radius: 8px; 
+}
+
+
+.review-description-wapper table tbody { border-radius: 8px;}		
+.table-tr-heading td {
+    background: #0E2236;
+    color: #FFF !important;
+    font-family: var(--font_2);
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: 18px !important;
+    padding: 12px !important;
+}
+.table-tr-heading td b { color: #fff;}
+
+.tr-bg-color-01 { border-bottom: 1px solid  #EAECF0;}
+.tr-bg-color-02 { border-bottom: 1px solid  #EAECF0;
+    background: #F3F4F5;}
+.review-description-wapper table td {
+    font-family: Manrope;
+    color: #101828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 16px;
+    vertical-align: middle;
+}
+.review-description-wapper ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.review-description-wapper table ul li::before {
+    content: '';
+    background: url(../img/check_circle_g.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+ 
+}
+.review-description-wapper a { color: #1A6C83;}
+.review-description-wapper ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 15px;
+}
+.review-description-wapper table ul li {
+    padding-left: 25px;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #0E2236;
+    position: relative;
+    text-align: left;
+    
+}
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/planes-de-alimentacion.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+	<script src="js/sidebar-js.js"></script>
+</head>
+
+<body>
+
+
+	<section class="ver-var-top-sect-wapper">
+		<div class="container w-1196">
+			<div class="cart-data">
+				<p>1/14 COMIDAS DISEÑADAS</p>
+				<a href="#" class="ver-add-to-card show-message-link button wc-forward">VER CARRITO</a>
+			</div>
+			<div class="message-container" style="display: none;">
+				<p>Requiere 13 productos más para completar el pedido</p>
+			</div>
+
+		</div>
+	</section>
+	<!-- sidebar html start -->
+	<div class="ver-overlay-bg"></div>
+	<div class="ver-sidebar-main-center">
+		<div class="ver-sidebar-wapper" id="ver-sidebar-wapper">
+			<!-- progressbar html start -->
+			<div class="ver-sidebar-progressbar">
+				<div class="ver-sidebar-progress-wapper">
+					<div class="ver-sidebar-progress-text">
+						<p><span id="ver-sidebar-selected-product">0</span>/14 platos seleccionados</p>
+					</div>
+					<div class="ver-sidebar-progress-wapper-a progress">
+						<div class="ver-sidebar-progress-1 progress-bar"></div>
+					</div>
+					<span>¡Puedes realizar tu pedido!</span>
+				</div>
+			</div>
+			<!-- progressbar html end -->
+			<!-- add to cart product html start -->
+			<div class="ver-sidebar-product-list">
+				<h3 class="ver-sidebar-title">TU CARRITO</h3>
+				<div class="ver-sidebar-product-wapper">
+					<div class="ver-sidebar-p-card">
+						<div class="ver-sidebar-left-p">
+							<img src="img/img-1.png" alt="">
+						</div>
+						<div class="ver-sidebar-right-p">
+							<h4><a href="#">Pechuga de Pollo Arroz integral Pimientos con cebolla</a></h4>
+							<div class="ver-siderbar-dynamics-data">
+								<ul>
+									<li><b class="variation-Escogetuprotena">Escoge tu proteína:</b> <span
+											class=" variation-Escogetuprotena">Pechuga de Pollo</span></li>
+									<li><b class="variation-Cantidaddeprotena">Cantidad de proteína:</b> <span
+											class=" variation-Escogetuprotena">
+											<p>125g (+0,15€) <span class="tc-price-in-cart"> <span
+														class="tc-plus-sign">+</span> <span
+														class="tc-price-amount-in-cart"><span
+															class="woocommerce-Price-amount amount"><bdi>0,15&nbsp;<span
+																	class="woocommerce-Price-currencySymbol">€</span></bdi></span></span></span>
+												<span class="tc-quantity-in-cart"></span></p>
+										</span></li>
+									<li><b class="variation-QuieroCARBS">Quiero CARBS:</b> <span
+											class=" variation-QuieroCARBS">Si </span></li>
+									<li><b class="variation-Escogetusalsa">Escoge tu salsa:</b> <span
+											class=" variation-Escogetusalsa">
+											<p>Bbq +0,80€ <span class="tc-price-in-cart"> <span
+														class="tc-plus-sign">+</span> <span
+														class="tc-price-amount-in-cart"><span
+															class="woocommerce-Price-amount amount"><bdi>0,80&nbsp;<span
+																	class="woocommerce-Price-currencySymbol">€</span></bdi></span></span></span>
+												<span class="tc-quantity-in-cart"></span></p>
+										</span></li>
+								</ul>
+							</div>
+							<div class="ver-sidebar-right-p-card">
+								<div class="ver-sidebar-right-p-left-card">
+									<div class="ver-sidebar-qty-container">
+										<button class="ver-sidebar-qty-btn-minus btn-light" type="button">-</button>
+										<input type="text" name="qty" value="1" class="ver-sidebar-input-qty" />
+										<button class="ver-sidebar-qty-btn-plus btn-light" type="button">+</button>
+									</div>
+									<span><img src="img/delete-icon.png" alt="" class="img-fluid"></span>
+								</div>
+								<div class="ver-product-price">
+									<p>7,60€</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ver-sidebar-p-card">
+						<div class="ver-sidebar-left-p">
+							<img src="img/img-1.png" alt="">
+						</div>
+						<div class="ver-sidebar-right-p">
+							<h4><a href="#">Pechuga de Pollo Arroz integral Pimientos con cebolla</a></h4>
+							<div class="ver-siderbar-dynamics-data">
+								<ul>
+									<li><b class="variation-Escogetuprotena">Escoge tu proteína:</b> <span
+											class=" variation-Escogetuprotena">Pechuga de Pollo</span></li>
+									<li><b class="variation-Cantidaddeprotena">Cantidad de proteína:</b> <span
+											class=" variation-Escogetuprotena">
+											<p>125g (+0,15€) <span class="tc-price-in-cart"> <span
+														class="tc-plus-sign">+</span> <span
+														class="tc-price-amount-in-cart"><span
+															class="woocommerce-Price-amount amount"><bdi>0,15&nbsp;<span
+																	class="woocommerce-Price-currencySymbol">€</span></bdi></span></span></span>
+												<span class="tc-quantity-in-cart"></span></p>
+										</span></li>
+									<li><b class="variation-QuieroCARBS">Quiero CARBS:</b> <span
+											class=" variation-QuieroCARBS">Si </span></li>
+									<li><b class="variation-Escogetusalsa">Escoge tu salsa:</b> <span
+											class=" variation-Escogetusalsa">
+											<p>Bbq +0,80€ <span class="tc-price-in-cart"> <span
+														class="tc-plus-sign">+</span> <span
+														class="tc-price-amount-in-cart"><span
+															class="woocommerce-Price-amount amount"><bdi>0,80&nbsp;<span
+																	class="woocommerce-Price-currencySymbol">€</span></bdi></span></span></span>
+												<span class="tc-quantity-in-cart"></span></p>
+										</span></li>
+								</ul>
+							</div>
+							<div class="ver-sidebar-right-p-card">
+								<div class="ver-sidebar-right-p-left-card">
+									<div class="ver-sidebar-qty-container">
+										<button class="ver-sidebar-qty-btn-minus btn-light" type="button">-</button>
+										<input type="text" name="qty" value="1" class="ver-sidebar-input-qty" />
+										<button class="ver-sidebar-qty-btn-plus btn-light" type="button">+</button>
+									</div>
+									<span><img src="img/delete-icon.png" alt="" class="img-fluid"></span>
+								</div>
+								<div class="ver-product-price">
+									<p>7,60€</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- add to cart product html end -->
+			<!-- ver subscription html start -->
+			<div class="ver-subscription-wapper">
+				<div class="ver-subscription-top-wapper">
+					<div class="ver-subscrip-left">
+						<h4>Deseo suscripción</h4>
+						<p>Elige tu suscripción</p>
+					</div>
+					<div class="ver-subscrip-right">
+						<div class="ver-switch-wrapper">
+							<span id="ver-s-switch-text">No</span>
+							<label class="ver-switch" for="ver-checkbox">
+								<input type="checkbox" id="ver-checkbox">
+								<div class="ver-slider ver-round"></div>
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="ver-subscription-bottom-wapper">
+					<button>Semanal</button>
+					<button>Quincenal</button>
+					<button>Mensual</button>
+				</div>
+			</div>
+			<!-- ver subscription html end -->
+			<!-- ver subtotle html start -->
+			<div class="ver-subtotle-wapper">
+				<h4>Subtotal</h4>
+				<p>108,40€</p>
+			</div>
+			<!-- ver subtotle html end -->
+			<!-- ver costes html start -->
+			<div class="ver-costes-wapper">
+				<h4>Costes de envío</h4>
+				<p>Gratuito</p>
+			</div>
+			<!-- ver costes html end -->
+			<!-- ver descuentos html start -->
+			<div class="ver-descuentos-wapper">
+				<div class="ver-cupon-form">
+					<input type="text" name="" placeholder="Aplica tu cupón de descuento">
+					<button>APLICAR</button>
+				</div>
+				<div class="ver-aplicupon">
+					<p>Descuentos aplicados</p>
+					<p>-10,84€</p>
+				</div>
+				<div class="ver-por-suscripcion">
+					<p>Descuentos por suscripción 10% OFF</p>
+					<p>-9,80€</p>
+				</div>
+			</div>
+			<!-- ver descuentos html end -->
+			<!-- ver totle html start -->
+			<div class="ver-totle-wapper">
+				<div class="ver-totle-card">
+					<h4>TOTAL</h4>
+					<p>97,56€</p>
+				</div>
+				<button class="ver-checkout-button">IR AL CHECKOUT</button>
+			</div>
+			<!-- ver totle html end -->
+		</div>
+	</div>
+	<!-- sidebar html end -->
+</body>
+
+</html>

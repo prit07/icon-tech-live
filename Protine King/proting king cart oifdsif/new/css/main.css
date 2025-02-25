@@ -1,0 +1,16 @@
+body { margin:0; padding:0; }
+a:hover { text-decoration:none; }
+
+
+.protein-king-icon { padding:42px 0 38px 67px; display: flex; gap: 5px; align-items: center; position: relative; }
+.protein-king-icon-user img {
+    width: 21px;
+    height: 20px;
+}
+
+.protein-king-icon-cart  {
+    background-color: transparent !important;
+    border: 0 !important;
+    position: relative;
+}
+.protein-king-icon-cart  img { width: 21px; height: 20px;}

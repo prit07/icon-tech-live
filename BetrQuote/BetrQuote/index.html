@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page || Betrquote</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/home-page.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="js/header-footer.js"></script> -->
+    <!-- <script src="js/home-page.js"></script> -->
+    <!-- <script src="js/demo.js"></script> -->
+    <!-- <script src="js/home-page (1).js"></script> -->
+    <script src="js/new-upd.js"></script>
+</head>
+
+<body>
+
+    <!-- header html start -->
+    <header class="header-wapper">
+        <div class="container header--container">
+            <div class="header-card-wrapper">
+                <div class="header--head">
+                    <div class="header--logo logo">
+                        <a href="#" class="logo--container">
+                            <img src="img/BetrQuote.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header--navigation"><a class="header--link" href="#">I'm a contractor</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header html end -->
+
+    <!-- banner section html start -->
+    <section class="banner-wapper">
+        <div class="container w-1202">
+            <div class="banner--content">
+                <div class="fieldset-progress-bar">
+                    <div class="progress-bg">
+                        <div></div>
+                    </div>
+                    <div class="fieldset-progress-text">
+                        <p> Your Savings Calculation is <span class="progress-text"></span> Complete</p>
+                    </div>
+                </div>
+                <fieldset class="fieldset-wapper fieldset-active" id="zip_tab">
+                    <div class="fieldset-inner-text">
+                        <h1>Find Trusted Gutter Installation, Repair & Guard Experts – Free Estimates</h1>
+                        <p>All Types of Gutter Installation, Repair, and Guard Solutions for Every Home</p>
+                    </div>
+                    <div class="steps--inner steps--roofing-located">
+                        <div class="form-wapper">
+                            <div class="form-input-c-main">
+                                <div class="form-input-c">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/location_on.svg"
+                                        alt="">
+                                    <input class="input-mian" type="text"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                        id="zip_code" placeholder="ZIP Code" maxlength="6">
+                                </div>
+                                <span class="error-message" style="display:none; color:red;"></span>
+                                <!-- Error message container -->
+                            </div>
+                            <div class="steps--buttons">
+                                <button class=" btn-main btn-disabled btn-next btn-next-bg">GET QUOTES</button>
+                            </div>
+                        </div>
+                        <span>Free, no obligation estimates.</span>
+
+                    </div>
+
+                </fieldset>
+                <!-- 					<fieldset class="fieldset-wapper" id="project_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>What’s your guttering project goal?</h2>
+                        <p>Let us know your specific needs to get started!</p>
+                    </div>
+                    <div class="fieldset-inner-box-row">
+                        <div class="fieldset-inner-box">
+                            <div class="fieldset-inner-box-col active btn-next">
+                                <label for="gutter-installation1">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg" alt="" class="">
+                                    <input type="radio" id="gutter-installation1" name="project_type" value="Gutter Installation">
+                                    <span>Gutter Installation</span>
+                                </label>
+                            </div>
+                            <div class="fieldset-inner-box-col  btn-next">
+                                <label for="gutter-installation2">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg" alt="" class="">
+                                    <input type="radio" id="gutter-installation2" name="project_type" value="Gutter Repair">
+                                    <span>Gutter Repair</span>
+                                </label>
+                            </div>
+                            <div class="fieldset-inner-box-col btn-next">
+                                <label for="gutter-installation3">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg" alt="" class="">
+                                    <input type="radio" id="gutter-installation3" name="project_type" value="Gutter Guard">
+                                    <span>Gutter Guard</span>
+                                </label>
+                            </div>
+                        </div>
+                        <span class="error-message" style="display:none; color:red;"></span>
+                    </div>
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back btn-back-h">back</button>
+                    </div>
+                </fieldset> -->
+                <fieldset class="fieldset-wapper" id="project_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>What’s your guttering project goal?</h2>
+                        <p>Let us know your specific needs to get started!</p>
+                    </div>
+                    <div class="fieldset-inner-box-row">
+                        <div class="fieldset-inner-box">
+                            <div class="fieldset-inner-box-col active btn-next" data-value="Gutter Installation">
+                                <label for="gutter-installation1">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg"
+                                        alt="" class="">
+                                    <span>Gutter Installation</span>
+                                </label>
+                            </div>
+                            <div class="fieldset-inner-box-col btn-next" data-value="Gutter Repair">
+                                <label for="gutter-installation2">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg"
+                                        alt="" class="">
+                                    <span>Gutter Repair</span>
+                                </label>
+                            </div>
+                            <div class="fieldset-inner-box-col btn-next" data-value="Gutter Guard">
+                                <label for="gutter-installation3">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/public/img/gutt-rep.svg"
+                                        alt="" class="">
+                                    <span>Gutter Guard</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Error message if project type is not selected -->
+                        <span class="error-message" style="display:none; color:red;"></span>
+                    </div>
+
+                    <!-- Hidden input to store the selected project type -->
+                    <input type="hidden" id="selected_project_type" name="project_type" value="">
+
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back btn-back-h">back</button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset-wapper" id="selected-box1">
+                    <div class="fieldset-dropdown">
+                        <label for="pet-select">Select The gutter material</label>
+                        <select name="gutter_material" id="gutter_material1">
+                            <option value="">--Please choose an option--</option>
+                            <option value="Copper">Copper</option>
+                            <option value="Galvanized">Galvanized</option>
+                            <option value="PVC">PVC</option>
+                            <option value="Seamless Metal">Seamless Metal</option>
+                            <option value="Wood">Wood</option>
+                        </select>
+                    </div>
+                    <div class="fieldset-dropdown-btn">
+                        <button class=" btn-main  btn-next">Next</button>
+                    </div>
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back">back</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-wapper" id="selected-box2">
+                    <div class="fieldset-dropdown">
+                        <label for="gutter_material2">Is User a Home Owner</label>
+                        <select name="gutter_material" id="gutter_material2">
+                            <option value="">--Please choose an option--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="fieldset-dropdown-btn">
+                        <button class="btn-main btn-next">Next</button>
+                    </div>
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back">Back</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-wapper" id="selected-box3">
+                    <div class="fieldset-dropdown">
+                        <label for="gutter_material3">Is the user authorized to make changes toh the property ?</label>
+                        <select name="gutter_material" id="gutter_material3">
+                            <option value="">--Please choose an option--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="fieldset-dropdown-btn">
+                        <button class="btn-main btn-next">Next</button>
+                    </div>
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back">Back</button>
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset-wapper" id="address_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>Enter your street address</h2>
+                        <p>We’ll find top-rated gutter installers near you</p>
+                    </div>
+                    <div class="fieldset-inputs-field">
+                        <div class="form-input-c-main">
+                            <input class="input-mian" type="text" id="street_address"
+                                placeholder="type Here e.g. 123 West Main Road">
+                            <span class="error-message" style="display:none; color:red;"></span>
+                        </div>
+                        <button class=" btn-main  btn-next">Next</button>
+                    </div>
+                    <div class="fieldset-back-btn">
+                        <button class="btn-back">back</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-wapper" id="email_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>Provide your email for seamless updates</h2>
+                        <p>We’ll keep communication via emails after every consultation.</p>
+                    </div>
+                    <div class="fieldset-inputs-field">
+                        <div class="form-input-c-main">
+                            <input class="input-mian" type="email" id="email" placeholder="Email address">
+                            <span class="error-message" style="display:none; color:red;"></span>
+                        </div>
+                        <button class=" btn-main btn-disabled btn-next">Next</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-wapper" id="names_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>How can we address you?</h2>
+                        <p>Please enter your full name so our team can get in touch</p>
+                    </div>
+                    <div class="fieldset-inputs-field">
+                        <div class="form-input-c-main">
+                            <input class="input-mian" type="text" id="first_name" placeholder="Enter first name">
+                            <span class="error-message" style="display:none; color:red;"></span>
+                        </div>
+                        <div class="form-input-c-main">
+                            <input class="input-mian" type="text" id="last_name" placeholder="Enter last name">
+                            <span class="error-message" style="display:none; color:red;"></span>
+                        </div>
+                        <button class=" btn-main btn-disabled btn-next">Next</button>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-wapper" id="phone_tab">
+                    <div class="fieldset-inner-text">
+                        <h2>Get expert quotes for your gutter project</h2>
+                        <p>Enter your phone number for personalized estimates from local contractors</p>
+                    </div>
+                    <div class="fieldset-inputs-field">
+                        <div class="form-input-c-main">
+                            <input class="input-mian" type="text"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                id="phone" name="phone" placeholder="Enter phone number" maxlength="10">
+                            <span class="error-message" style="display:none; color:red;"></span>
+
+                        </div>
+                        <button class=" btn-main btn-disabled btn-next" id="submit_form"> Unlock Deals </button>
+                    </div>
+                    <div class="fieldset-inner-lst">
+                        <label> By submitting this request, I agree to GutterProtection's <a
+                                href="https://betrquote.com/terms-and-conditions/">Terms of Use</a> &
+                            <a href="https://betrquote.com/privacy-policy/">Privacy Policy</a> and <a href="#">
+                                authorize marketing companies </a>, their
+                            contractors, and home improvement service product partners including QuinStreet (<a
+                                href="#"> our partners list</a>) , HomeBuddy (<a href="#">our partners list</a>) to send
+                            me offers via email as well as phone and text messages at the provided number. I agree to be
+                            contacted by the mentioned groups even if my contacts are registered in state or federal do
+                            not call list. I agree that these marketing communications may be delivered to me with an
+                            automatic telephone dialing system or pre-recorded messages. I understand that my consent is
+                            not a purchase condition and that I may revoke it at any time. <a href="#">California
+                                Notice</a>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+    <!-- banner section html end -->
+
+
+    <!-- Why Regular Gutter Cleaning is Essential for Your Home Start -->
+    <section class="why-regular-cleaning">
+        <div class="container w-1034">
+            <div class="why-regular-cleaning-heading">
+                <h2>Why Regular Gutter Cleaning is Essential for Your Home</h2>
+                <p>Keep Your Gutters Flowing Smoothly and Protect Your Home from Costly Damage</p>
+            </div>
+            <div class="why-regular-cleaning-row">
+                <div class="why-regular-cleaning-row-col-left">
+                    <div class="why-regular-cleaning-row-col-left-text">
+                        <ul>
+                            <li>Prevents Water Damage to Roof and Foundation</li>
+                            <li>Stops Pests from Nesting in Your Gutters</li>
+                            <li>Extends the Lifespan of Your Roof and Gutters</li>
+                            <li>Protects Your Landscaping from Water Runoff</li>
+                            <li>Avoids Expensive Repairs and Maintenance Costs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="why-regular-cleaning-row-col-right">
+                    <div class="why-regular-cleaning-row-col-right-img">
+                        <img src="img/full-shot-man-wearing-protection-helmet 1@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Regular Gutter Cleaning is Essential for Your Home End -->
+
+
+    <!-- How It Works html start -->
+    <section class="how-it-work-wapper">
+        <div class="container w-1218">
+            <div class="htp-title">
+                <h3>How It Works</h3>
+            </div>
+            <div class="howItWorks--list">
+                <div class="howItWorks--item">
+                    <div class="howItWorks--img">
+                        <img src="img/Group 12.png" alt="icon" width="96" height="96">
+                    </div>
+                    <h4 class="howItWorks--itemHdr">Tell Us About Your Gutter Cleaning Needs</h4>
+                    <p class="howItWorks--txt">Answer a few quick questions so we can understand your requirements</p>
+                </div>
+                <div class="howItWorks--item">
+                    <div class="howItWorks--img">
+                        <img src="img/Group 10.png" alt="icon" width="96" height="96">
+                    </div>
+                    <h4 class="howItWorks--itemHdr">Connect with a Local Gutter Cleaning </h4>
+                    <p class="howItWorks--txt">We'll put you in touch with a trusted professional who specializes in
+                        gutter cleaning in your area.</p>
+                </div>
+                <div class="howItWorks--item">
+                    <div class="howItWorks--img">
+                        <img src="img/Group 11.png" alt="icon" width="96" height="96">
+                    </div>
+                    <h4 class="howItWorks--itemHdr">Receive a Free Quote</h4>
+                    <p class="howItWorks--txt">Your gutter cleaning expert will provide a free estimate and answer any
+                        questions you have.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works html end -->
+
+    <!-- trustUs html start -->
+    <section class="trustUs-wapper">
+        <div class="container w-1202">
+            <div class="htp-title">
+                <h3>Delivering Reliable Service Every Step of the Way</h3>
+            </div>
+            <div class="trustUs--list mx-auto">
+                <div class="trustUs--item">
+                    <p class="trustUs--count mb-1">32,286</p>
+                    <div class="trustUs--info">
+                        <img class="trustUs--img d-block me-2" src="img/Send.svg" alt="icon" width="24" height="24">
+                        <p class="trustUs--txt">Project requests</p>
+                    </div>
+                </div>
+                <div class="trustUs--item">
+                    <p class="trustUs--count mb-1">18,172</p>
+                    <div class="trustUs--info">
+                        <img class="trustUs--img d-block me-2" src="img/Calendar.svg" alt="icon" width="24" height="24">
+                        <p class="trustUs--txt">Estimates given</p>
+                    </div>
+                </div>
+                <div class="trustUs--item">
+                    <p class="trustUs--count mb-1">6,518</p>
+                    <div class="trustUs--info">
+                        <img class="trustUs--img d-block me-2" src="img/Icon.svg" alt="icon" width="24" height="24">
+                        <p class="trustUs--txt">Projects completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trustUs html end -->
+
+    <!-- reviews html start -->
+    <section class="reviews-wapper">
+        <div class="container w-1202">
+            <div class="htp-title">
+                <h3>What People Are Saying</h3>
+            </div>
+            <div id="reviews-slider" class="owl-carousel reviews-slider">
+                <div class="review-card">
+                    <div class="review-card--inner">
+                        <img class="review-img-user" src="img/user.png" alt="user" width="72" height="72">
+                        <h4>Lillian S.</h4>
+                        <img class="review-img-rating" src="img/rating.png" alt="5 stars rating" width="152"
+                            height="24">
+                        <div class="reviewCard--info mb-md-0">
+                            <p class="mb-4">“I wanted a space that felt like I was at a 5 star resort, and Reflections
+                                delivered and at a good price. In just a few weeks, I got the bathroom I've always
+                                wanted.&nbsp;“</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card--inner">
+                        <img class="review-img-user" src="img/user.png" alt="user" width="72" height="72">
+                        <h4>Lillian S.</h4>
+                        <img class="review-img-rating" src="img/rating.png" alt="5 stars rating" width="152"
+                            height="24">
+                        <div class="reviewCard--info mb-md-0">
+                            <p class="mb-4">“I wanted a space that felt like I was at a 5 star resort, and Reflections
+                                delivered and at a good price. In just a few weeks, I got the bathroom I've always
+                                wanted.&nbsp;“</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card--inner">
+                        <img class="review-img-user" src="img/user.png" alt="user" width="72" height="72">
+                        <h4>Lillian S.</h4>
+                        <img class="review-img-rating" src="img/rating.png" alt="5 stars rating" width="152"
+                            height="24">
+                        <div class="reviewCard--info mb-md-0">
+                            <p class="mb-4">“I wanted a space that felt like I was at a 5 star resort, and Reflections
+                                delivered and at a good price. In just a few weeks, I got the bathroom I've always
+                                wanted.&nbsp;“</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-card--inner">
+                        <img class="review-img-user" src="img/user.png" alt="user" width="72" height="72">
+                        <h4>Lillian S.</h4>
+                        <img class="review-img-rating" src="img/rating.png" alt="5 stars rating" width="152"
+                            height="24">
+                        <div class="reviewCard--info mb-md-0">
+                            <p class="mb-4">“I wanted a space that felt like I was at a 5 star resort, and Reflections
+                                delivered and at a good price. In just a few weeks, I got the bathroom I've always
+                                wanted.&nbsp;“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reviews html end -->
+
+    <!-- How Much Will Gutter Cleaning Cost start -->
+    <div class="how-much-will-gutter">
+        <div class="container w-915">
+            <div class="how-much-will-gutter-row">
+                <div class="how-much-will-gutter-row-left">
+                    <div class="how-much-will-gutter-row-left-img">
+                        <img src="img/Illustration.png" alt="">
+                    </div>
+                </div>
+                <div class="how-much-will-gutter-row-right">
+                    <div class="how-much-will-gutter-row-right-item">
+                        <h2>How Much Will Gutter Cleaning Cost?</h2>
+                        <div class="how-much-will-main">
+                            <div class="how-much-will-input-main">
+                                <div class="how-much-will-input">
+                                    <img src="img/location_on.svg" alt="">
+                                    <input id="how-much-input" type="text" placeholder="Enter Zip Code"
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                        maxlength="6">
+                                </div>
+                                <span class="error-message"></span>
+                            </div>
+                            <div class="how-much-will-btn">
+                                <button class="how-much-btn btn-disabled">Get my free estimate</button>
+                            </div>
+                        </div>
+                        <span>Free, no obligation estimates.</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- How Much Will Gutter Cleaning Cost end -->
+
+    <!-- Footer Start -->
+    <footer class="footer-wapper">
+        <div class="container footer--container">
+            <div class="footer-row">
+                <div class="footer-left">
+                    <div class="footer-left-logo">
+                        <img src="img/BetrQuote.svg" alt="">
+                        <p>© 2024 BetrQuote</p>
+                    </div>
+                </div>
+                <div class="footer-center"></div>
+                <div class="footer-right">
+                    <div class="footer-right-ul">
+                        <ul>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="js.js">
+
+
+    </script>
+
+
+</body>
+
+</html>

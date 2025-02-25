@@ -1,0 +1,28 @@
+body { margin: 0; padding: 0;box-sizing: border-box;}
+
+
+.back-to-top a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF9800;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4db2ec;
+    /* opacity: 0; */
+    color: #fff;
+    /* visibility: hi   dden; */
+    z-index: 1000;  
+}
+.back-to-top a i { font-size: 25px;}
+.back-to-top a:hover { text-decoration: none;}
+.back-to-top a.show { opacity: 1; visibility: visible; }
+  
+
+
+
+

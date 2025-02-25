@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Makeover Generator</title>
+    <!-- Font Awoseme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Bootstarp Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Custum Css -->
+    <link rel="stylesheet" href="css/life-makeover.css">
+    <link rel="stylesheet" href="css/animated.css">
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="life-makeover" id="life-makeover">
+        <div class="main" id="main0">
+            <div class="gummy-drop-match-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="stepone" id="stepone">
+                <div class="life-makeover-heading">
+                    <h1>Life Makeover Generator</h1>
+                    <p>Coupons & Diamonds</p>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btnonrid" onclick="stoponebtn()">
+                        <span href="#">Start</span>
+                    </a>
+                </div>
+            </div>
+            <div class="step0 " id="step0" style="display: none;">
+                <div class="main-user-box" id="main-user-box">
+                    <h2 class="step0-txt animated lightSpeedIn">ENTER YOUR LIFE MAKEOVER ACCOUNT ID/USERNAME :</h2>
+                    <div class="form-1">
+                        <div class="inputWithIcon " id="inputWithIconBox">
+                            <i class="fa-solid fa-user-large"></i>
+                            <input type="text" class="user-input input-1" placeholder="Username/ID" id="input-id">
+                        </div>
+                        <p class="error-message" style="display: none; ">Please enter your Account Id</p>
+                    </div>
+                    <div class="devices-wapper">
+                        <h2 class="step0-txt animated lightSpeedIn">Select your device :</h2>
+                        <div class="devices">
+                            <div class="devices_box" id="device0" onclick="startSecondSearch('device0','Window')">
+                                <div class="devices_icon">
+                                    <i class="fa-brands fa-windows"></i>
+                                </div>
+                                <p>Window</p>
+                            </div>
+                            <div class="devices_box" id="device1" onclick="startSecondSearch('device1','Mac')">
+                                <div class="devices_icon">
+                                    <i class="fa-brands fa-apple"></i>
+                                </div>
+                                <p>Ios</p>
+                            </div>
+                            <div class="devices_box" id="device2" onclick="startSecondSearch('device2','Android')">
+                                <div class="devices_icon">
+                                    <i class="fa-brands fa-android"></i>
+                                </div>
+                                <p>Android</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-user-btn-sub">
+                        <a class="btn-shine" id="btn0id" onclick="submitForm()">
+                            <span href="#">next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="m-0" id="showUserValue" style="display: none;"></div>
+            <div class="Resource-Div " id="Resource-div" style="display: none;">
+                <h2 class="step0-txt animated lightSpeedIn">SELECT LIFE MAKEOVER COUPONS :</h2>
+                <div class="resource-div-main">
+                    <div class="Resource" id="Resource0" onclick="ResourceSelected('Resource0','10000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4> 10000</h4>
+                    </div>
+                    <div class="Resource" id="Resource1" onclick="ResourceSelected('Resource1','20000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4>20000</h4>
+                    </div>
+                    <div class="Resource" id="Resource2" onclick="ResourceSelected('Resource2','30000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4>30000</h4>
+                    </div>
+                    <div class="Resource" id="Resource3" onclick="ResourceSelected('Resource3','40000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4>40000</h4>
+                    </div>
+                    <div class="Resource" id="Resource4" onclick="ResourceSelected('Resource4','50000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4>50000</h4>
+                    </div>
+                    <div class="Resource" id="Resource6" onclick="ResourceSelected('Resource6','60000')">
+                        <h3>Coupons</h3>
+                        <img src="img/coupon-code.png" class="Resource-pic ">
+                        <h4>60000</h4>
+                    </div>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btn1id" onclick="displayFinalMenu2()">
+                        <span href="#">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="Resource-Div " id="Resource-div1" style="display: none;">
+                <h2 class="step0-txt animated lightSpeedIn"> Select My Sweet Home Dungeon Gems :</h2>
+                <div class="resource-div-main">
+                    <div class="Resource-n" id="Resource-n1" onclick="ResourceSelected1('Resource-n1','11111')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>11111</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n2" onclick="ResourceSelected1('Resource-n2','22222')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>22222</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n3" onclick="ResourceSelected1('Resource-n3','33333')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>33333</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n4" onclick="ResourceSelected1('Resource-n4','44444')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>44444</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n5" onclick="ResourceSelected1('Resource-n5','55555')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>55555</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n6" onclick="ResourceSelected1('Resource-n6','66666')">
+                        <h3>Gems</h3>
+                        <img src="img/quality.png" class="Resource-pic">
+                        <h4>66666</h4>
+                    </div>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btn1id" onclick="GenerateButton()">
+                        <span href="#">next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search1" id="search1" style="display: none;">
+                <div class="loader01" id="loader01">
+                    <img src="img/setting.png" alt="">
+                </div>
+                <div class="checkmark-img animated flipInY" id="checkmark-img">
+                    <img src="img/check.png" alt="">
+                </div>
+                <div class="gemsCountElementgems" id="CountElementcoins" style="display: none;">
+                    <div class="CountElement-wapper animated flipInY">
+                        <img class="mb-2" src="img/coupon-code.png" alt="">
+                        <span class="CountElement-text bounceInRight animated" id="coinsCountElement"></span>
+                    </div>
+                </div>
+                <div class="gemsCountElementgems" id="CountElementgems" style="display: none;">
+                    <div class="CountElement-wapper animated flipInX">
+                        <img src="img/quality.png" alt="">
+                        <span class="CountElement-text bounceInRight animated" id="gemsCountElement"></span>
+                    </div>
+                </div>
+                <div class="step0-txt01 " id="selectedValue1"></div>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar-striped" id="progress-bar ">
+                    </div>
+                </div>
+            </div>
+            <div class="verifypage " id="verifyPage" style="display: none;">
+                <div class="LastStepTxt animated lightSpeedIn" id="LastStepTxt">
+                    <h3>Hello <span style="color: #01ff01;" id="showUserValue2"></span>
+                        ! You are almost there.
+                    </h3>
+                    <p> To generate <span id="selectedValue"></span>
+                        into your account complete the human
+                        verification. Click on the button to verify.
+                    </p>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btn2id">
+                        <span href="#">VERIFY</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custum Js -->
+    <script src="js/life-makeover.js"></script>
+
+
+
+
+</body>
+
+</html>

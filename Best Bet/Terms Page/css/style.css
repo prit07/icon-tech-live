@@ -1,0 +1,85 @@
+body { margin: 0; padding: 0; box-sizing: border-box; background-color: #F9F9F9;; }
+
+
+/* Terms and Conditions Page Start */
+
+.terms-and-conditions { padding: 46px 0;}
+.terms-and-conditions-title { padding-bottom: 38px;}
+.terms-and-conditions-title h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 11px;
+}
+.terms-and-conditions-title p { 
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000000CC;
+    margin: 0;
+}
+
+
+.terms-and-conditions-content>h2 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    text-align: left;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.terms-and-conditions-content>blockquote{ padding-bottom: 75px; margin: 0;}
+.terms-and-conditions-content>blockquote>p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00000080;
+    padding-bottom: 34px;
+    margin: 0;
+}
+.terms-and-conditions-content>blockquote>p:last-child { padding: 0;}
+.terms-and-conditions-content>p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00000080;
+    margin-bottom: 40px;
+}
+/* Terms and Conditions Page End */
+
+
+@media(min-width:1200px){
+	.container.w-1196 { max-width:1196px!important; }
+}
+
+
+
+@media(max-width:600px) {
+    
+    .terms-and-conditions-title h1 { font-size: 36px; line-height: 41.6px;}
+    .terms-and-conditions-title p {  font-size: 16px; line-height: 26.8px;}
+    .terms-and-conditions-title { padding-bottom: 30px;}
+    .terms-and-conditions-content>h2 { font-size: 22px; line-height: 26.31px; padding-bottom: 15px;}
+    .terms-and-conditions-content>blockquote>p { font-size: 16px; line-height: 25.8px; padding-bottom: 15px;}
+    .terms-and-conditions-content>blockquote { padding-bottom: 45px; }
+    .terms-and-conditions-content>p { font-size: 16px;  line-height: 25.8px; margin-bottom: 25px;}
+    
+}
+
+
+

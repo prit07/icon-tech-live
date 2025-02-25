@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Law Firm Directory Page || legal</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="font/font-style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/law-firm-directory-page.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+	integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+	integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="js/header-footer.js"></script>
+	<script src="js/law-firm-directory-page.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header start -->
+	<header id="h-home" class="h-home-wapper">
+		<div class="h-header-main">
+			<div class="container w-1280">
+				<div class="h-header-nav">
+					<div class="h-header-logo">
+						<a href="home-page.html"><img src="img/header-footer-img/Logo(11).png" class="img-fluid" alt="logo"></a>
+					</div>
+					<div class="h-header-menu">
+						<div class="h-toggle-btn" id="h-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+						<div class="h-main-menu" id="h-sidebar-wrapper">
+							<ul>
+								<li class="main_li">
+									<a href="#">Blog</a>
+									<ul class="sub_menu_ul">
+										<li><a href="law-category-page.html">Law Category Page</a></li>
+										<li><a href="content-page.html">Content Page</a></li>
+									</ul>
+								</li>
+								<li class="main_li">
+									<a href="#">Directory</a>
+									<ul class="sub_menu_ul">
+										<li><a href="practice-category-page.html">Practice category page</a></li>
+										<li><a href="law-firm-directory-page.html">Law Firm Directory Page</a></li>	
+										<li><a href="cases-category-page.html">Cases category page</a></li>		
+										<li><a href="cases-list-page.html">Cases list page</a></li>		
+									</ul>
+								</li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Glossary</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Search-Button-Sign-Up-wapper">
+						<a href="#" class="search-btn"><img src="img/header-footer-img/search-icon.png" alt=""></a>
+						<a href="#" class="sign-up-btn">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- search html start  -->
+		<div class="search-popup">
+			<span class="search-back-drop"></span>
+			<button class="close-search"><span class="fas fa-times"></span></button>
+			<div class="search-inner">
+				<form method="post" action="index.html">
+					<div class="form-group">
+						<input type="search" name="search-field" value="" placeholder="Search..." required="">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search html end  -->
+	</header>
+	<!-- header end -->
+
+	<!-- Lawyer page breadcrumbs section html start -->
+	<section class="breadcrumbs-wapper">
+		<div class="container w-1280">
+			<div class="breadcrumbs-main">
+				<div class="breadcrumbs-inner-text">
+					<ul>
+						<li><a href="#">US Law</a></li>
+						<li><img src="img/right-icon.svg" alt=""></li>
+						<li><a href="#">New York</a></li>
+						<li><img src="img/right-icon.svg" alt=""></li>
+						<li><a href="#">Overview</a></li>
+						<li><img src="img/right-icon.svg" alt=""></li>
+						<li><span>New York, NY: The Law Offices of Barry E. Janay, P.C.</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Lawyer page banner breadcrumbs html end -->
+
+	<!-- lawyer profile, Overview & Reviews section html start -->
+	<section class="lawyer-profile-wapper">
+
+		<!-- lawyer profile section html start -->
+		<div class="container w-1280">
+			<h1>New York, NY: The Law Offices of Barry E. Janay, P.C.</h1>
+			<div class="lawyer-profile-main">
+				<div class="lawyer-profile-left">
+					<div class="lawyer-profile-list-card premium-card-wapper">
+						<div class="lawyer-profile-list-left">
+							
+							<div class="lawyer-profile-list-thumb">
+								<img src="img/Rectangle 17(4).png" alt="">
+							</div>
+							<div class="lawyer-profile-stars">
+								<span class="lawyer-profile-stars-rating" rating="3.5">
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+									<span class="star"></span>
+								</span>
+								<p>13 reviews</p>
+							</div>
+						</div>
+						<div class="lawyer-profile-list-right">
+							<div class="lawyer-profile-right-card">
+								<h5><span>#602</span> in weekly profile views out of <span>308,665</span> total Law Firms Overall</h5>
+								<p>Since 2004, providing clients with the legal knowledge and support to effectively resolve their business law, estate planning, probate and real estate law matters. When Results Matter, Go With Experience You Can Trust. Call Us Today.</p>
+								<h4>Attorney Awards</h4>
+								<img src="img/image 2(17).png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lawyer-profile-right">
+					<div class="lawyer-profile-last">
+						<div class="lawyer-profile-last-top">
+							<span><img src="img/location-b.svg" alt=""><a href="#">90 Broad Street, 25th Floor, New York, NY 10004</a></span>
+							<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+						</div>
+						<div class="lawyer-profile-last-bottom">
+							<a href="#" class="lawyer-profile-website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+							<a href="#" class="lawyer-profile-email-btn"><img src="img/email.svg" alt=""> Contact</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- lawyer profile section html end -->
+
+		<!-- lawyer Overview & Reviews section html start -->
+		<div class="lawyer-details-wapper">
+			<div class="container w-1280">
+				<div class="lawyer-d-tab-wapper">
+					<div class="lawyer-tab-menu">
+						<ul>
+							<li><a href="javascript:void(0)" class="lawyer-tab-a lawyer-active-a" data-id="overview">Overview</a></li>
+							<li><a href="javascript:void(0)" class="lawyer-tab-a" data-id="reviews">Reviews <span>34</span></a></li>
+						</ul>
+					</div>
+					<div class="lawyer-tab-container">
+						<div class="lawyer-tab lawyer-tab-active" data-id="overview">
+							<div class="overview-dt-inner-wapper">
+								<div class="the-law-office-text-wapper">
+									<p>The Law Office of Barry E. Janay, P.C. (“LOBEJ”) represents and counsels small to medium-sized businesses, individuals, and families in matters relating to estate planning, business law, wills, trusts, probate, real estate, and much more.</p>
+									<p>At LOBEJ, we will not rest easy unless we know that we have done the best possible job for our clients. Our loyalty is indivisible. Janay arrives at the office early and stays late. Our attorneys are skillful strategists who possess knowledge and abilities that will provide you with the assurance you need no matter what the situation that you find yourself in may be.</p>
+									<h6>We Are Dedicated to Providing You With the Best Attorney for Your Case</h6>
+									<p>The Law Office of Barry E. Janay, P.C. provides unique solutions tailored to meet its client’s needs. One size fits all is not the way that the Legal industry should be, unfortunately that’s the way too many lawyer’s and law firm’s treat their client’s.</p>
+									<p>At the Law Office of Barry E. Janay, P.C. we understand that you are an individual and you are unique, hence your legal needs will be just as unique. We won’t offer you one solution or way of handling your matter, we will offer a myriad of solutions.</p>
+									<p>We strive to provide you with top-notch legal representation for your case with INTEGRITY, COMMITMENT, INSIGHT AND RESULTS!</p>
+								</div>
+								<div class="office-details-text-wapper">
+									<h3><img src="img/fi_12328804.png" alt=""> Office Details</h3>
+									<div class="office-details-text">
+										<div class="contact-information-card">
+											<h4>Contact Information:</h4>
+											<ul>
+												<li><a href="#"><img src="img/fi_483947.png" alt="">(303) 682-2944</a></li>
+												<li><a href="#"><img src="img/fi_483947.png" alt="">(303) 682-2944</a></li>
+												<li><a href="#"><img src="img/fi_483947.png" alt="">(303) 682-2944</a></li>
+												<li><a href="#"><img src="img/web-icon.svg" alt="">(303) 682-2944</a></li>
+											</ul>
+										</div>
+										<div class="contact-information-card">
+											<h4>Mailing Address:</h4>
+											<h6><img src="img/location-b.svg" alt=""> 90 Broad Street, 25th Floor, New York, NY 10004</h6>
+										</div>
+										<div class="contact-information-card">
+											<h4>Office Size:</h4>
+											<p>4</p>
+										</div>
+										<div class="contact-information-card">
+											<h4>Year Established:</h4>
+											<p>1996</p>
+										</div>
+										<div class="contact-information-card">
+											<h4>Payment Information:</h4>
+											<p>Accepts Visa, MasterCard, American Express, Discover and Other - Paypal, Zelle, Venmo, Cryptocurrency</p>
+										</div>
+									</div>
+								</div>
+								<div class="practice-areas-text-wapper">
+									<h3><img src="img/Area-icon.svg" alt=""> Practice Areas</h3>
+									<div class="practice-areas-text-inner">
+										<div class="injury-law-card-wapper">
+											<h4>Injury Law</h4>
+											<p>Brain Injury, Car Accidents, Motorcycle Accidents, Premises Liability, Truck Accidents, Wrongful Death</p>
+										</div>
+										<div class="injury-law-card-wapper">
+											<h4>Family Law</h4>
+											<p>Bad Faith Insurance, Motor Vehicle Insurance</p>
+										</div>
+										<div class="injury-law-card-wapper">
+											<h4>Bicycle Accidents</h4>
+										</div>
+										<div class="injury-law-card-wapper">
+											<h4>Pedestrian Accidents</h4>
+										</div>
+									</div>
+								</div>
+								<div class="People-text-wapper">
+									<h3><img src="img/fi_681494.png" alt=""> People</h3>
+									<div class="people-slider-wapper">
+										<div class="owl-carousel" id="h-people-slide-h">
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="people-card-wapper">
+													<div class="people-card-img-reting-wapper">
+														<div class="people-card-img">
+															<img src="img/Rectangle 17(5).png" alt="">
+														</div>
+														<div class="pepole-card-reting">
+															<div class="lawyer-profile-stars">
+																<span class="lawyer-profile-stars-rating" rating="3.5">
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																	<span class="star"></span>
+																</span>
+																<p>13 reviews</p>
+															</div>
+														</div>
+													</div>
+													<div class="people-card-inner">
+														<h5>Barry E. Janay</h5>
+														<h6>Associate</h6>
+														<p>Business Law, Business and  Com...</p>
+														<a href="#">View more</a>
+														<div class="people-card-btn-wapper">
+															<button class="call-review"><img src="img/fi_483947(1).png" alt="">(303) 682-2944</button>
+															<button class="email-review"><img src="img/fi_9333946.png" alt="">Email Lawyer</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="videos-wapper-in-text">
+									<h3><img src="img/fi_711245.png" alt=""> Videos</h3>
+									<div class="videos-wapper-slider-wapper">
+										<div class="owl-carousel" id="h-video-slide-h">
+											<div class="item">
+												<div class="videos-card-wapper">
+
+												</div>
+											</div>
+											<div class="item">
+												<div class="videos-card-wapper">
+
+												</div>
+											</div>
+											<div class="item">
+												<div class="videos-card-wapper">
+
+												</div>
+											</div>
+											<div class="item">
+												<div class="videos-card-wapper">
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bar-registry-wapper">
+									<h3><img src="img/fi_2258843.png" alt=""> Bar Registry</h3>
+									<div class="bar-registry-text-inner">
+										<img src="img/Image.png" alt="">
+										<div class="bar-registry-ul">
+											<ul>
+												<li><a href="#">Insurance Defense</a></li>
+												<li><a href="#">Insurance Defense</a></li>
+												<li><a href="#">Insurance Defense</a></li>
+											</ul>
+											<ul>
+												<li><a href="#">Insurance Defense</a></li>
+												<li><a href="#">Insurance Defense</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="lawyer-tab" data-id="reviews">
+							<div class="lawyer-reviews-details">
+								<div class="lawyer-reviews-row">
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Auto accident</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="3.5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Great lawyer quick and responsive</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Great lawyer quick and responsive</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="4">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Auto accident</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="4.5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Auto accident</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="3.5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Great lawyer quick and responsive</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Great lawyer quick and responsive</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="4">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="lawyer-reviews-col">
+										<div class="lawyer-reviews-card">
+											<h3>Auto accident</h3>
+											<p>Ed Smith is very personable and explains all the different aspects of personal injury law. I felt very comfortable with his ability to do the best for me. I felt lost in the system and did not want to deal with all the questions from the insurance company. I am very pleased with the results and would recommend him to anyone needing a personal injury attorney.</p>
+											<div class="lawyer-reviews-bottom">
+												<h4>Miranda</h4>
+												<span class="lawyer-reviews-stars-rating" rating="4.5">
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+													<span class="star"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- lawyer Overview & Reviews section html end -->
+
+	</section>
+	<!-- lawyer profile, Overview & Reviews section html end -->
+	<div class="lawyer-profile-bottom">
+		<div class="lawyer-profile-bottom-v">
+			<span>View contacts</span><img src="img/down-arrow.svg" alt="">
+		</div>
+		<div class="lawyer-profile-right">
+			<div class="lawyer-profile-last">
+				<div class="lawyer-profile-last-top">
+					<span><img src="img/location-b.svg" alt=""><a href="#">90 Broad Street, 25th Floor, New York, NY 10004</a></span>
+					<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+				</div>
+				<div class="lawyer-profile-last-bottom">
+					<a href="#" class="lawyer-profile-website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+					<a href="#" class="lawyer-profile-email-btn"><img src="img/email.svg" alt=""> Contact</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact The Law Offices section start -->
+	<div class="contact-the-law-section">
+		<div class="container w-1280">
+			<div class="contact-the-law-wapper">
+				<img src="img/Ellipse 10(1).png" alt="">
+				<h2>Contact The Law Offices <span> of Barry E. Janay, P.C.</span></h2>
+				<div class="contect-form-wapper">
+					<form action="">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input type="text" placeholder="First Name" class="form-control">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input type="text" placeholder="Last Name" class="form-control">
+								</div>
+							</div>	
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input type="text" placeholder="Email or phone" class="form-control">
+								</div>
+							</div>	
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<input type="text" placeholder="ZIP " class="form-control">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<select name="selectarea" id="selectarea">
+										<option value="">Select Area of Practice</option>
+										<option value="one">One</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-12">
+								<div class="form-group">
+									<select name="selectcontry" id="selectcontry">
+										<option value="">Select Country</option>
+										<option value="one">One</option>
+										<option value="two">Two</option>
+										<option value="three">Three</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-12">
+								<div class="form-group">
+									<textarea rows="6" placeholder="Tell us sbout your legal need" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12 col-12">
+								<div class="send-request-btn">
+									<a href="#"><img src="img/fi_10322481(1).png" alt="">Send request</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact The Law Offices section end -->
+
+
+	<!-- footer section start -->
+	<div class="fooetr-section">
+		<div class="footer-top">
+			<div class="container w-1280">
+				<div class="footer-top-all-wapper">
+					<div class="footer-logo-wapper">
+						<div class="footer-logo">
+							<img src="img/header-footer-img/Logo(12).png" alt="">
+						</div>
+						<div class="footer-sign-up-btn">
+							<a href="#">Sign-Up</a>
+						</div>
+						<div class="social-icon">
+							<ul>
+								<li><a href="#"><img src="img/header-footer-img/Button.png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(1).png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(2).png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(3).png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Directory-Resources-wapper">
+						<div class="Directory-wapper">
+							<h5>Directory</h5>
+							<ul>
+								<li><a href="#">By Practice Area</a></li>
+								<li><a href="#">By State</a></li>
+								<li><a href="#">By Type Of Lawyer</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Resources</h5>
+							<ul>
+								<li><a href="#">Articles</a></li>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Podcasts</a></li>
+								<li><a href="#">Glossary</a></li>
+							</ul>
+						</div>
+						<div class="Legal-wapper">
+							<h5>Legal</h5>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Privacy Statement</a></li>
+								<li><a href="#">Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-sign-up-btn">
+						<a href="#">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container w-1280">
+				<div class="social-icon">
+					<ul>
+						<li><a href="#"><img src="img/header-footer-img/Button.png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(1).png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(2).png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(3).png" alt=""></a></li>
+					</ul>
+				</div>
+				<p>© 1995-2023 Legal.com</p>
+			</div>
+		</div>
+	</div>
+	<!-- footer section end -->
+</body>
+</html>

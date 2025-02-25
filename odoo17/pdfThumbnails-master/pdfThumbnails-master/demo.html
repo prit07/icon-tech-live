@@ -1,0 +1,171 @@
+
+<style>
+    .pdf-view-wapper {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.pdf-view-wapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: unset;
+    visibility: hidden; /* Start hidden */
+}
+
+.pdf-view-wapper .preloader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998; /* Lower z-index so the image can appear above */
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Keep the spinner visible */
+}
+
+.pdf-view-wapper img.visible {
+    visibility: visible; /* Change to visible when image is ready */
+}
+
+</style>
+
+<script>
+    $(document).ready(function () {
+    $('.pdf-view-wapper img').each(function() {
+        var imgElement = $(this);
+        var preloader = imgElement.siblings('.preloader');
+        var pdfUrl = imgElement.data('pdf-thumbnail-file');
+
+        // Load the PDF
+        var loadingTask = pdfjsLib.getDocument(pdfUrl);
+        loadingTask.promise.then(function(pdf) {
+            // Fetch the first page
+            return pdf.getPage(1);
+        }).then(function(page) {
+            var viewport = page.getViewport({ scale: 1.0 });
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render the page into the canvas context
+            var renderTask = page.render({
+                canvasContext: context,
+                viewport: viewport
+            });
+            return renderTask.promise.then(function() {
+                // Convert the canvas to an image data URL and set it as the src of the img element
+                var dataUrl = canvas.toDataURL();
+                imgElement.attr('src', dataUrl);
+
+                // Make the image visible
+                imgElement.addClass('visible');
+
+                // Reduce the opacity of the preloader to keep it visible but make the image prominent
+                preloader.css('opacity', '0');
+            });
+        }).catch(function(error) {
+            console.error('Error rendering PDF thumbnail:', error);
+            // Optionally handle the error
+        });
+    });
+});
+
+$(document).ready(function () {
+    $('.pdf-view-wapper img').each(function () {
+        var imgElement = $(this);
+        var preloader = imgElement.siblings('.preloader');
+        var pdfUrl = imgElement.data('pdf-thumbnail-file');
+
+        // Load the PDF
+        var loadingTask = pdfjsLib.getDocument(pdfUrl);
+        loadingTask.promise.then(function (pdf) {
+            // Fetch the first page
+            return pdf.getPage(1);
+        }).then(function (page) {
+            var viewport = page.getViewport({ scale: 1.0 });
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render the page into the canvas context
+            var renderTask = page.render({
+                canvasContext: context,
+                viewport: viewport
+            });
+            return renderTask.promise.then(function () {
+                // Convert the canvas to an image data URL and set it as the src of the img element
+                var dataUrl = canvas.toDataURL();
+                imgElement.attr('src', dataUrl);
+
+                // Make the image visible
+                imgElement.addClass('visible');
+
+                // Trigger a reflow/repaint
+                preloader[0].offsetHeight;  // Force a reflow
+
+                // Hide the preloader by setting opacity to 0
+                preloader.css('opacity', '0');
+            });
+        }).catch(function (error) {
+            console.error('Error rendering PDF thumbnail:', error);
+            // Optionally handle the error
+        });
+    });
+});
+
+
+
+$(document).ready(function () {
+    $('.pdf-view-wapper img').each(function () {
+        var imgElement = $(this);
+        var preloader = imgElement.siblings('.preloader');
+        var pdfUrl = imgElement.data('pdf-thumbnail-file');
+
+        // Load the PDF
+        var loadingTask = pdfjsLib.getDocument(pdfUrl);
+        loadingTask.promise.then(function (pdf) {
+            // Fetch the first page
+            return pdf.getPage(1);
+        }).then(function (page) {
+            var viewport = page.getViewport({ scale: 1.0 });
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render the page into the canvas context
+            var renderTask = page.render({
+                canvasContext: context,
+                viewport: viewport
+            });
+            return renderTask.promise.then(function () {
+                // Convert the canvas to an image data URL and set it as the src of the img element
+                var dataUrl = canvas.toDataURL();
+                imgElement.attr('src', dataUrl);
+
+                // Make the image visible
+                imgElement.addClass('visible');
+
+                // Hide the preloader by setting display to none
+                preloader.css('display', 'none');
+            });
+        }).catch(function (error) {
+            console.error('Error rendering PDF thumbnail:', error);
+            // Optionally handle the error
+        });
+    });
+});
+
+
+</script>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awoseme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstarp Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Custum Css -->
+    <link rel="stylesheet" href="css/call-of-duty-mobile.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="call-of-duty-mobile bounceIn animated " id="call-of-duty-mobile">
+        <div class="main " id="main0">
+            <div class="call-of-duty-mobile-logo jello animated ">
+                <img src="img/Call_of_Duty_Mobile_Logo.png" alt="">
+            </div>
+            <div class="step0 " id="step0">
+                <div class="main-user-box" id="main-user-box">
+                    <h2 class="step0-txt lightSpeedIn animated">Username or Email</h2>
+                    <div class="form-1">
+                        <div class="inputWithIcon " id="inputWithIconBox">
+                            <i class="fa-solid fa-user-large"></i>
+                            <input type="text" class="user-input input-1" placeholder="Username/ID" id="input-id"
+                                fdprocessedid="xr4mma">
+                        </div>
+                    </div>
+                    <div class="main-user-btn-sub ">
+                        <a href="#" href="#" id="btn0id" onclick="submitForm()"><span>Next</span></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="search0" id="search0" style="display: none;">
+                <div class="searching">
+                    <div class="searchingdata">
+                        <span class="m-0" id="showUserValue"></span>
+                        <div class="searchingname" id="searching-text-name"></div>
+                        <div class="checkmark-icon">
+                            <i class="fa-solid fa-check" id="checkmark-icon" style="display: none !important;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu1" id="menu" style="display: none;">
+                <h2 class="step0-txt lightSpeedIn animated"> Select your device.</h2>
+                <div class="devices">
+                    <div class="devices_box  flipInY animated animation-delay-100"  id="platform0" onclick="startSecondSearch('Window')">
+                        <a href="#" class="card education">
+                            <div class="overlay"></div>
+                            <div class="circle">
+                                <i class="fa-brands fa-windows"></i>
+                            </div>
+                            <p>Window</p>
+                        </a>
+                    </div>
+                    <div class="devices_box flipInX animated animation-delay-100" id="platform1" onclick="startSecondSearch('Mac')">
+                        <a href="#" class="card education">
+                            <div class="overlay"></div>
+                            <div class="circle">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+                            <p>Ios</p>
+                        </a>
+                    </div>
+                    <div class="devices_box flipInY animated animation-delay-100" id="platform2" onclick="startSecondSearch('Android')">
+                        <a href="#" class="card education">
+                            <div class="overlay"></div>
+                            <div class="circle">
+                                <i class="fa-brands fa-android"></i>
+                            </div>
+                            <p>Android</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="ban-protection   ">
+                    <img src="img/shield.png" alt="">
+                    <h5> ANTI BAN PROTECTION MODE : <span>ON</span> </h5>
+                </div>
+            </div>
+            <div class="Resource-Div" id="Resource-div" style="display: none;">
+                <h2 class="step0-txt lightSpeedIn animated "> Select the amount of Gems and coins to generate</h2>
+
+                <div class="range-slider-main">
+                    <div class="range-slider">
+                        <h4> Selected Credits <span class="range-slider__range">0</span></h4>
+                        <input class="range-slider__range" type="range" value="0" min="0" max="50000" step="0">
+                    </div>
+                    <div class="range-slider">
+                        <h4>Selected CP <span class="range-slider__value range-slider__range1">0</span></h4>
+                        <input class="range-slider__range" type="range" value="0" min="0" max="80000" step="0">
+                    </div>
+                </div>
+
+                <div style="display: none;">
+                    <!--  -->
+                    <div id="sliderval1"></div>
+                    <div id="sliderval2"></div>
+                    <div id="sliderval3"></div>
+                    <!--  -->
+                </div>
+                <div class="main-user-btn-sub">
+                    <a href="#" href="#" id="btn1id" onclick="GenerateButton()"><span>Generate</span></a>
+                </div>
+
+            </div>
+            <div class="search1" id="search1" style="display: none;">
+                <div class="loader01"></div>
+                <div class="step0-txt01" id="selectedValue1">Getting Ready </div>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar-striped" id="progress-bar ">
+                    </div>
+                </div>
+                <!-- <div class="loader-last" id="loader01"></div> -->
+            </div>
+            <div class="verifypage" id="verifyPage" style="display: none;">
+                <div class="LastStepTxt" id="LastStepTxt">
+                    <h3>Hello  <span id="showUserValue2"></span> 
+                        ! You are almost there.
+                    </h3>
+                    <p> To generate  <span id="selectedValue"></span> 
+                        Credits and Points into your account complete the human
+                        verification. Click on the button to verify.
+                    </p>
+                </div>
+
+                <div class="main-user-btn-sub">
+                    <a href="#" class='butn butn__new' id="btn2id"><span>VERIFY</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custum Js -->
+    <script src="js/call-of-duty-mobile.js"> </script>
+
+
+</body>
+
+</html>

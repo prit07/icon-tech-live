@@ -1,0 +1,473 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FCFAF5;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/* banner section start */
+
+.banner-section{
+    padding: 114px 0;
+    background: url(../img/image\ 1\(10\).png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.banner-section .banner-inner-text h2{
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -2.4px;
+    margin: 0;
+    padding: 0;
+}
+.banner-section .banner-inner-text p{
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    margin: 0;
+    padding: 28px 0 40px 0;
+}
+.banner-section .banner-inner-text .shop-btn{ display: flex;}
+.banner-section .banner-inner-text .shop-btn a{
+    padding: 12px 40px;
+    border-radius: 12px;
+    background: #AF593C;
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+}
+.banner-bottom-section{ background: #6C674D;}
+.banner-bottom-section .banner-bottom-text p{
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+/* banner section end */
+
+/* product show section start */
+
+.product-show-section{ padding: 120px 0;}
+.product-show-section .product-show-wapper{ display:grid; grid-column-gap:32px; grid-template-columns:repeat(4,1fr);}
+.product-show-section .product-show-wapper .product-show-item{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+.product-show-section .product-show-wapper .product-show-item .product-show-item-img{ border-radius: 12px; overflow: hidden;}
+.product-show-section .product-show-wapper .product-show-item .product-show-item-img img{ width: 100%; height: 100%; max-width: unset;}
+.product-show-section .product-show-wapper .product-show-item .product-show-item-name{ display: flex;}
+.product-show-section .product-show-wapper .product-show-item .product-show-item-name a{
+    color: #000;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+/* product show section end */
+
+
+
+/*  Shop bestsellers section start */
+.shop-bestsellers-section { padding: 0 0 120px 0}
+.shop-bestsellers-title  { margin-bottom: 48px;}
+.shop-bestsellers-title h2 { 
+    color: #455661;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.shop-bestsellers-product-wapper { display: flex; gap: 32px;}
+.shop-bestsellers-item {width: 100%; display: flex; flex-direction: column; gap: 28px;}
+.shop-bestsellers-item-img img { width: 100%; max-width: 300px; height: 329px; border-radius: 12px;}
+.shop-bestsellers-name-price-color h5 {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.72px;
+    margin-bottom: 8px;
+}
+.shop-bestsellers-item-inner p {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+    margin-bottom: 8px;
+}
+.shop-bestsellers-item-inner p span {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    text-decoration-line: line-through;   
+}
+.shop-bestsellers-name-price-color ul{ margin-bottom: 20px; padding: 0; list-style: none; display: flex; gap: 10px; flex-wrap: wrap;} 
+.shop-bestsellers-name-price-color ul li span { display: block; width: 32px; height: 32px; border-radius: 50%;}
+.shop-bestsellers-btn a { 
+    display: block;
+    border-radius: 12px;
+    border: 1px solid #AF593C;
+    color: #AF593C;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    padding: 12px 40px;
+    letter-spacing: -0.54px;
+}
+/*  Shop bestsellers section end */
+
+/* Meet the bed your mind Start */
+.meet-the-bed-your-mind-wapper {display: flex; gap: 116px; align-items: center; justify-content: end; padding: 0 0 120px 0;}
+.meet-the-bed-your-mind-text { padding-left: 30px; max-width: 591px; width: 100%;}
+.meet-the-bed-your-mind-text h2 {
+    color: #455661;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: -1.44px;
+    margin-bottom: 28px;
+}
+.meet-the-bed-your-mind-text p {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+    letter-spacing: -0.6px;
+    margin-bottom: 40px;
+}
+.meet-the-bed-your-mind-text a {
+    display: block;
+    width: fit-content;
+    border-radius: 12px;
+    background: #AF593C;
+    padding: 12px 40px;
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+}
+.meet-the-bed-your-mind-img { max-width: 705px; width: 100%;}
+.meet-the-bed-your-mind-img img { width: 100%; height: 570px; border-radius: 20px;}
+/* Meet the bed your mind End */
+
+/* Shop the collection Start */
+.shop-the-collection-main {  border-radius: 64px; background: #EFEDE3; padding: 120px 0;}
+.shop-the-collection-wapper  { padding:  0 0 120px 0;}
+.shop-the-collection-wapper h2{ 
+    color: #455661;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 48px;
+}
+
+/* Helix Midnight Luxe Start */
+.helix-midnight-luxe { 
+    width: 100%;
+    height: 360px;
+    background-size: cover !important;
+    border-radius: 12px;
+    display: flex;
+    gap: 67px;
+    padding:  0 72px 0 48px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.helix-midnight-luxe-left {  max-width: 549px; width: 100%; display: flex; gap: 28px; }
+.helix-midnight-luxe-left-img {max-width: 240px; width: 100%;}
+.helix-midnight-luxe-left-img img { width: 100%; height: 171px;}
+.helix-midnight-luxe-left-text { max-width: 281px; width: 100%;}
+.helix-midnight-luxe-left-text h4 {
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.72px;
+    margin-bottom: 16px;
+}
+.helix-midnight-luxe-left-text p {
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.54px;
+    margin-bottom: 16px;
+}
+.helix-midnight-luxe-left-text a {
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; 
+    letter-spacing: -0.6px;
+}
+.helix-midnight-luxe-right { max-width: 560px; width: 100%;}
+.helix-midnight-luxe-right h2 {
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: -1.44px;
+    margin-bottom: 40px;
+}
+.helix-midnight-luxe-right a {
+    display: block;
+    width: fit-content;
+    border-radius: 12px;
+    background: #AF593C;
+    padding: 12px 40px;
+    color: #FFF;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+}
+/* Helix Midnight Luxe End */
+
+
+/* Explore collection Start */
+.explore-collection-wapper { display: grid; grid-column-gap: 32px; grid-template-columns: repeat(2, 1fr); padding: 0 0 120px 0;}
+.explore-collection-item {display: flex; flex-direction: column; gap: 20px;}
+.explore-collection-item-img img {max-width: 632px; width: 100%; height: 353px}
+.explore-collection-item-name a {
+    color: #000;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+/* Explore collection End */
+
+
+/* 5-star-reviews Start */
+.star-reviews-our-award { display: flex; gap: 116px;}
+.star-reviews-left-our-award { max-width: 548px; width: 100%;}
+.star-reviews-right-our-award {max-width: 632px; width: 100%; padding-right: 10px;}
+.star-reviews-right-our-award { display: flex; gap: 24px;}
+.star-reviews-right-our-award-img img { max-width: 358px; height: 346px;}
+.star-reviews-right-our-award-text h5 {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; 
+    letter-spacing: -0.72px;
+    margin-bottom: 32px;
+}
+.star-reviews-right-our-award-text p {
+    color: #34312D;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    margin: 0;
+    letter-spacing: -0.54px;
+}
+.our-award-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:16px; margin-bottom: 28px; }
+.our-award-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.our-award-stars-rating span.star:hover { cursor:pointer; }
+.our-award-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#AF593C; }
+.our-award-stars-rating span.star.filled:before { font-weight: 900; color:#AF593C; content:"\f005"; }
+.our-award-stars-rating span.star.half-filled:before { content:"\f089"; color:#AF593C; }
+.our-award-stars-rating span.star.half-filled:after { content:"\f005"; color:#AF593C; margin-left:-20px; }
+.star-reviews-left-our-award-items { width: 100%; height: 100%;}
+.star-reviews-left-our-award-text h2{ 
+    color: #455661;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.owl-star-reviews  .owl-nav {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    bottom: -100px;
+}
+
+/* 5-star-reviews End */
+
+
+/* Discover Premium Bedding Start */
+
+.discover-premium-bedding { padding: 120px 0;}
+.discover-premium-bedding-heading h2 {
+    color: #455661;
+    font-family: "Aktiv Grotesk Corp";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 48px;
+}
+/* Discover Premium Bedding end */
+
+
+
+/* Shop the collection End */
+
+@media(max-width:1299px) {
+    .helix-midnight-luxe-left-img { max-width: 180px; width: 100%;}
+    .helix-midnight-luxe { padding: 0 40px;}
+
+    .star-reviews-our-award { gap: 80px;}
+    .star-reviews-left-our-award { max-width: 450px; width: 100%; }
+    .star-reviews-right-our-award-img img { max-width: 310px; height: 310px; }
+    .star-reviews-left-our-award-text h2 { font-size: 40px; line-height: 46px;}
+}
+
+
+@media(max-width: 1199px){
+    .banner-section .banner-inner-text h2 { font-size: 60px; line-height: 60px;}
+    .banner-section .banner-inner-text p { font-size: 17px; line-height: 29px;}
+    .shop-bestsellers-item-img img { height: 250px; }
+    .shop-bestsellers-name-price-color ul li span { width: 26px; height: 26px;}
+    .shop-bestsellers-name-price-color h5 { font-size: 22px; line-height: 30px;}
+    .meet-the-bed-your-mind-wapper { gap: 80px;}
+    .shop-bestsellers-product-wapper { display: flex; gap: 20px;}
+
+    .helix-midnight-luxe { gap: 27px;}
+    .helix-midnight-luxe-right h2 { font-size: 40px; line-height: 46px; margin-bottom: 20px;}
+    .helix-midnight-luxe { padding: 0px 30px;}
+    .helix-midnight-luxe-right { max-width: 375px; width: 100%;}
+
+
+    .star-reviews-our-award {  gap: 40px; }
+    .star-reviews-left-our-award-text h2 { font-size: 34px; line-height: 40px; }
+    .star-reviews-left-our-award { max-width: 380px; width: 100%; }
+    .star-reviews-right-our-award-text h5 { font-size: 20px; line-height: 32px; margin-bottom: 18px;}
+    .our-award-stars-rating { margin-bottom: 15px;}
+    .star-reviews-right-our-award-img img { max-width: 210px; height: 210px; }
+    .owl-star-reviews .owl-nav { bottom: -20px;}
+
+}
+
+@media (max-width:991px) {
+    .about-us-gap {
+        padding-right: 0px;
+    }
+}
+
+@media(max-width: 991px){
+    .shop-bestsellers-product-wapper { display: grid; grid-column-gap: 32px; grid-row-gap: 32px; grid-template-columns: repeat(2,1fr);}
+    .shop-bestsellers-item-img img { max-width: 100%; height: 329px;}
+    .meet-the-bed-your-mind-wapper { gap: 30px; }
+    .meet-the-bed-your-mind-text h2 { font-size: 34px; line-height: 40px;  margin-bottom: 18px;}
+    .meet-the-bed-your-mind-text p { font-size: 17px; line-height: 29px; margin-bottom: 25px;}
+    .meet-the-bed-your-mind-img { max-width: 100%; width: 100%;}
+    .meet-the-bed-your-mind-img img { width: 100%; height: 430px; }
+    .product-show-section .product-show-wapper { grid-row-gap: 32px; grid-template-columns: repeat(2, 1fr);}
+
+    .helix-midnight-luxe { padding: 30px 30px; flex-wrap: wrap; height: auto;}
+    .helix-midnight-luxe-left { max-width: 100%;}
+    .helix-midnight-luxe-right { max-width: 100%;}
+
+    .explore-collection-item-img img {height: 250px;}
+
+    .star-reviews-left-our-award { max-width: 450px; width: 100%; }
+    .star-reviews-our-award { gap: 60px; flex-wrap: wrap;}
+}
+@media(max-width: 767px){
+    .banner-section { padding: 70px 0;  }
+    .product-show-section { padding: 70px 0;}
+    .shop-bestsellers-section { padding: 0 0 70px 0;}
+    .meet-the-bed-your-mind-wapper { padding: 0 0 70px 0; flex-direction: column;}
+    .shop-the-collection-wapper { padding: 0 0 70px 0;}
+    .helix-midnight-luxe { margin-bottom: 70px;}
+    .shop-the-collection-main { padding: 70px 0; border-radius: 34px;}
+    .discover-premium-bedding { padding: 70px 0;}
+    .banner-section .banner-inner-text h2 { font-size: 50px; line-height: 50px; }
+    .shop-bestsellers-title h2 { font-size: 40px; line-height: 46px;}
+    .shop-bestsellers-product-wapper { grid-template-columns: repeat(1,1fr);}
+    .product-show-section .product-show-wapper {  grid-template-columns: repeat(1, 1fr);}
+    .meet-the-bed-your-mind-text { padding: 0 10px;}
+    .meet-the-bed-your-mind-text h2 { font-size: 40px; line-height: 45px;}
+    .meet-the-bed-your-mind-wapper { gap: 40px;}
+    .meet-the-bed-your-mind-img img { height: 470px;}
+
+    .shop-the-collection-wapper h2 { font-size: 37px; line-height: 42px; margin-bottom: 28px;}
+    .shop-bestsellers-title { margin-bottom: 30px;}
+
+    .helix-midnight-luxe-left { max-width: 100%; flex-wrap: wrap;}
+    .helix-midnight-luxe-left-text { max-width: 100%; width: 100%;}
+    .helix-midnight-luxe-right h2 { font-size: 34px; line-height: 40px;}
+
+    .explore-collection-wapper { grid-row-gap: 32px; grid-template-columns: repeat(1, 1fr); padding: 0 0 70px 0;}
+
+    .discover-premium-bedding-heading h2 { font-size: 40px; line-height: 46px; margin-bottom: 28px;}
+
+    .star-reviews-right-our-award { flex-wrap: wrap; padding-right: 0;}
+    
+}
+
+@media(min-width:1300px){
+	.container.w-1296 { max-width:1296px!important;  padding: 0; }
+}

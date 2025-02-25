@@ -1,0 +1,99 @@
+
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+/* About Us start */
+
+.sing-up-wapper{position: relative; display: flex; justify-content: center; }
+.sing-up-wapper::before {
+    content: "";
+    width: 100%;
+    height: 1080px;
+    background: url(../img/sing-up01.png) no-repeat center;
+    background-size: cover !important;
+    position: absolute;
+    z-index: -1;
+    top: -105px;
+}
+.sing-up-center {
+    width: 100%;
+    height: fit-content;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(28px);
+    max-width: 572px;
+    padding: 48px;
+    margin: 187px auto 345px auto;
+}
+.sing-up-center {display: flex; flex-direction: column; gap: 32px;}
+.sing-up-center h1 {
+    color: #09121F;
+    text-align: center;
+    font-family: "Apple Garamond";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 52px; 
+    letter-spacing: -1.68px;
+    margin-bottom: 20px;
+} 
+.sing-up-center p {
+    color: #09121F;
+    text-align: center;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: -0.54px;
+}
+.sing-up-center-bottom {display: flex; flex-direction: column; gap: 20px;}
+.sing-up-center-bottom  input{
+    border-radius: 8px;
+    padding: 16px 24px;
+    border: 1px solid #E3E3E3;
+    background: #F1F2F2;
+    color: rgba(9, 18, 31, 0.66);
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.54px;
+}
+.sing-up-center-bottom input:focus-visible {
+    outline: unset;
+}
+.sing-up-center-bottom a {
+    display: block;
+    border-radius: 60px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    text-align: center;
+    border: 0;
+    letter-spacing: -0.48px;
+}
+
+
+
+@media(max-width:991px){
+    .sing-up-wapper::before { height: 900px;}
+    .sing-up-center { margin: 120px auto 232px auto;}
+}
+
+
+@media (max-width:767px) {
+    .sing-up-wapper::before { height: 798px;}
+    .sing-up-center { padding: 25px 15px; margin: 100px auto 200px auto;}
+    .sing-up-center h1 { font-size: 44px; line-height: 39px; margin-bottom: 15px;}
+    .sing-up-center p { font-size: 16px; line-height: 26px;}
+}

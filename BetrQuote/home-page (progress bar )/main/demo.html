@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .fieldset-wapper {
+            display: none;
+        }
+
+        .fieldset-active {
+            display: block;
+        }
+        .progress-bg div {
+    height: 10px;
+    background: #76c7c0;
+    width: -1px;
+    transition: width 0.3s;
+}
+    </style>
+</head>
+
+<body>
+    <fieldset class="fieldset-wapper fieldset-one fieldset-active">
+        <p>lore</p>
+        <button class="btn-next">dsd</button>
+        <button class="btn-back">dsd</button>
+    </fieldset>
+    <fieldset class="fieldset-wapper fieldset-two">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg"> <div></div> </div>
+            <div class="fieldset-progress-text">
+                <p> Your Savings Calculation is <span class="progress-text">17%</span> Complete</p>
+            </div>
+        </div>
+        <p>s</p>
+        <button class="btn-next">dsd</button>
+        <button class="btn-back">dsd</button>
+    </fieldset>
+    <fieldset class="fieldset-wapper fieldset-three">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg"> <div></div>  </div>
+            <div class="fieldset-progress-text">
+                <p> Your Savings Calculation is <span class="progress-text">17%</span> Complete</p>
+            </div>
+        </div>
+        <p>dde</p>
+        <button class="btn-next">dsd</button>
+        <button class="btn-back">dsd</button>
+    </fieldset>
+    <fieldset class="fieldset-wapper fieldset-four">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg"> <div></div> </div>
+            <div class="fieldset-progress-text">
+                <p> Your Savings Calculation is <span class="progress-text">17%</span> Complete</p>
+            </div>
+        </div>
+        <p>ddeds</p>
+        <button class="btn-next">dsd</button>
+        <button class="btn-back">dsd</button>
+    </fieldset>
+</body>
+<script>
+   $(document).ready(function () {
+        const totalFieldsets = $(".fieldset-wapper").length;
+
+        function updateProgress(currentIndex) {
+            const progressPercentage = Math.round(((currentIndex + 1) / totalFieldsets) * 100);
+            $(".progress-bg > div").css("width", progressPercentage + "%");
+            $(".progress-text").text(progressPercentage + "%");
+        }
+
+        $(".btn-next").click(function () {
+            const activeFieldset = $(".fieldset-active");
+            const currentIndex = $(".fieldset-wapper").index(activeFieldset);
+
+            activeFieldset.removeClass("fieldset-active");
+            const nextFieldset = activeFieldset.next(".fieldset-wapper");
+            if (nextFieldset.length) {
+                nextFieldset.addClass("fieldset-active");
+                updateProgress(currentIndex);
+            }
+        });
+
+        $(".btn-back").click(function () {
+            const activeFieldset = $(".fieldset-active");
+            const currentIndex = $(".fieldset-wapper").index(activeFieldset);
+
+            activeFieldset.removeClass("fieldset-active");
+            const prevFieldset = activeFieldset.prev(".fieldset-wapper");
+            if (prevFieldset.length) {
+                prevFieldset.addClass("fieldset-active");
+                updateProgress(currentIndex - 1);
+            }
+        });
+
+        // Initialize progress for the first fieldset
+        updateProgress(0);
+    });
+
+
+</script>
+
+</html>

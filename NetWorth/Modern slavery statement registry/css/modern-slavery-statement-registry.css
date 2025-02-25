@@ -1,0 +1,298 @@
+body { margin: 0; padding: 0; }
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+/*  Modern Slavery Statement Registry Start */
+
+/* breadcrumbs css start */
+.mssr-best-article-top ul{ display: flex; gap: 5px; }
+.mssr-best-article-top { margin-bottom: 24px;}
+.mssr-best-article-top>ul>li>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.mssr-best-article-top>ul>li>a>span {
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* breadcrumbs css end */
+
+
+.modern-slavery-statment-registry { padding: 64px 0 120px 0;}
+.mssr-ba-row { display:flex; flex-direction:row; justify-content:space-between; gap:20px; }
+.mssr-left-col { max-width: 845px; width: 100%; display: flex; flex-direction: column; gap: 40px; }
+.mssr-right-col { max-width:302px; width:100%; }
+
+/* Modern Slavery Heading Start */
+.mssr-heading {display: flex; flex-direction: column; gap: 24px; }
+.mssr-heading h1 {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+    line-height: 46px; 
+}
+.mssr-heading p {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+/* Modern Slavery Heading End */
+
+/* Who has to publish a statement start */
+.mssr-publish-a-statement { display: flex; flex-direction: column; gap: 20px;}
+.mssr-publish-a-statement h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.24px;
+    margin: 0;
+}
+
+.mssr-publish-a-statement p {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+
+.mssr-publish-a-statement .mssr-ul-one {
+    list-style: unset !important;
+    padding-left: 23px !important;
+}
+
+.mssr-publish-a-statement>ul>li {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+}
+.mssr-publish-a-statement .mssr-ul-two {
+    list-style: unset !important;
+    padding-left: 50px !important;
+}
+/* Who has to publish a statement End */
+
+
+/* Find resources on modern slavery statements Start */
+.mssr-find-resources {display: flex; flex-direction: column; gap: 20px;}
+.mssr-find-resources h2 {
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.24px;
+    margin: 0;
+}
+.mssr-find-resources p {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+.mssr-find-resources a {
+    width: fit-content;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #3836CB;
+    color: #3836CB;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Find resources on modern slavery statements End */
+
+
+/* Right Start */
+.mssr-wapper-right { display: flex; flex-direction: column; gap: 40px; }
+
+/* Right Subscribe Start */
+
+.mssr-subscribe-btn { display: flex; flex-direction: column; gap: 16px;}
+.mssr-subscribe-find-statement>a{
+    width: 100%;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.mssr-subscribe-add-statement>a {
+    border-radius: 4px;
+    border: 1px solid #3836CB;
+    width: 100%;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    color: #3836CB;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Right Subscribe End */
+
+
+/* SHARE START */
+.mssr-share h3{
+    color: rgba(24, 23, 22, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.mssr-share-icon ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.mssr-share-icon>ul>li>a>i {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  SHARE End */
+
+
+/* Right Search Start */
+.mssr-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.mssr-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.mssr-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+/* Right Search End */
+
+/* Right Latest News Start */
+.mssr-latest-newa-heading { margin-bottom: 24px;}
+.mssr-latest-newa-heading h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.mssr-latest-newa-wapper { display: flex; flex-direction: column; gap: 16px;}
+.mssr-latest-newa-items h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.mssr-latest-newa-items h2 { line-height: 0; margin-bottom: 6px;}
+.mssr-latest-newa-items>h2>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.mssr-latest-newa-items p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.mssr-hr {margin: 0; border-top: 1px solid #E6E6E6;}
+/* Right Latest News End */
+
+
+/*  Modern Slavery Statement Registry End */
+
+@media (max-width:991px) {
+    .modern-slavery-statment-registry { padding: 40px 0 64px 0;}
+    .mssr-ba-row { gap: 64px; flex-direction: column;}
+    .mssr-publish-a-statement .mssr-ul-two { padding-left: 23px !important;}
+}
+
+
+
+@media (max-width:767px){
+    .mssr-subscribe-btn {display: none;}
+    .mssr-Search-wapper {display: none;}
+    .mssr-right-col { max-width: 100%; width: 100%;}
+    .mssr-heading h1 { font-size: 36px; line-height: 40px;}
+}

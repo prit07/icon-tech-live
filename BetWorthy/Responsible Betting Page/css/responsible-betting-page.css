@@ -1,0 +1,529 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+
+/* Responsible Betting start */
+
+.rbp-betting {
+	width: 100%;
+	height: 400px;
+	background-size: cover !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rbp-betting-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	max-width: 976px;
+	width: 100%;
+	margin: auto;
+}
+
+.rbp-betting-text>h4 {
+	color: #1B9C43;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.rbp-betting-text>h1 {
+	color: #FFF;
+	font-family: var(--font_1);
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 92px;
+	margin: 0;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+.rbp-betting-text>p {
+	color: #FFF;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
+
+/* Responsible Betting end */
+
+
+
+/* A Self-Help Guide To Responsible Betting start  */
+
+.rbp-self-help {
+	padding: 100px 0;
+}
+
+.rbp-left ul {
+	padding: 0;
+	list-style: none;
+
+}
+
+.rbp-left ul li {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 16px;
+}
+
+.rbp-left ul li h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 28px;
+	height: 28px;
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	margin: 0;
+	border-radius: 20px;
+	background: #EFEFEF;
+}
+
+.rbp-left ul li a {
+	color: #4D4F4E !important;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.rbp-right {
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+}
+
+.rbp-wapper-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.rbp-wapper-right h3 {
+	color: var(--text, #0E2236);
+	font-family: var(--font_2);
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 40px;
+	letter-spacing: -0.84px;
+	margin: 0;
+}
+
+.rbp-wapper-right p {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+}
+
+.rbp-self-main {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+
+.rbp-self-titel {
+	width: 100%;
+	height: 100px;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.rbp-self-titel h2 {
+
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 40px;
+	letter-spacing: -0.84px;
+	margin: 0;
+	padding: 0 25px;
+}
+
+.rbp-right-text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.rbp-right-text p {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+}
+
+.rbp-right-top-items {
+	display: flex;
+	gap: 24px;
+	align-self: stretch;
+}
+
+.scroll-bar {
+	width: 4px;
+	height: auto;
+	background: #F6F6F6;
+}
+
+.rbp-right-top-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+}
+
+.rbp-right-top-text h3 {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	margin: 0;
+}
+
+.rbp-right-top-text p {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+
+}
+
+.rbp-right-top-text p span {
+	color: #1A6C83;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+	margin: 0;
+}
+
+.rbp-right-top-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.rbp-right-top-img img {
+	width: 100%;
+	max-width: 273px;
+	height: 244px;
+}
+
+.rbp-right-bottom-main {
+	padding-left: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.rbp-right-bottom-center ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin: 0;
+}
+
+.rbp-right-bottom-center ul li {
+
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	position: relative;
+	padding-left: 44px;
+
+}
+
+.rbp-right-bottom-center ul li::before {
+	content: "";
+	width: 29px;
+	height: 29px;
+	background: url(../img/rbp.svg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.rbp-right-top-bottom p{
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+}
+
+.rbp-right-top-text h5 {
+	color: var(--Blue, #1A6C83);
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	margin: 0;
+	display: flex;
+	gap: 16px;
+	align-items: center;
+}
+
+.rbp-right-top-text h5 img {
+	width: 24px;
+	height: 24px;
+}
+
+.rbp-right-top-text button {
+	color: #1A6C83;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	display: flex;
+	line-height: 24px;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	background: rgba(26, 108, 131, 0.10);
+	backdrop-filter: blur(36.5px);
+	padding: 6px 16px;
+	margin: 0;
+}
+
+.rbp-right-top-text h6 {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 28px;
+	display: flex;
+	margin: o;
+	align-items: center;
+	gap: 12px;
+}
+
+.rbp-right-top-text h6 img {
+	width: 45px;
+	height: 24px;
+
+}
+
+.rbp-right-top-text ul {
+	margin: 0;
+	padding-left: 28px;
+
+}
+
+.rbp-right-top-text ul li {
+	color: #1B9C43;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+}
+
+/* Find The Right Support*/
+
+.rbp-find-the-right {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+
+}
+
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+
+@media(max-width:991px) {
+
+	/* Responsible Betting  */
+	.rbp-betting-text {
+		gap: 15px;
+	}
+}
+
+@media(max-width:767px) {
+
+	/* Responsible Betting  */
+
+	.rbp-betting-text>h4 {
+		font-size: 17px;
+		line-height: 23px;
+	}
+
+	.rbp-betting-text>h1 {
+		font-size: 47px;
+		line-height: 57.5px;
+		text-align: center;
+	}
+
+	.rbp-betting-text>p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+
+
+	/* we’re are looking for start */
+
+	.cp-looking-wapper h3 {
+		font-size: 37px;
+		line-height: 39px;
+	}
+
+
+
+	/* Meet Our People Start  */
+
+	.cp-people-wapper {
+
+		gap: 22px;
+	}
+
+	.cp-people-wapper h4 {
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 26px;
+	}
+
+	.cp-people-wapper h2 {
+
+		font-size: 42px;
+		line-height: 46px;
+
+	}
+
+	.cp-people-wapper p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+
+
+
+	/* Apply Now For Success start  */
+
+	.cp-apply-from-wappre {
+		gap: 36px;
+
+	}
+
+	.cp-apply-from-heading h2 {
+		text-align: center;
+		font-size: 46px;
+		line-height: 58px;
+	}
+
+	/* A Self-Help Guide To Responsible Betting start  */
+
+
+	.rbp-self-help {
+		padding: 30px 0;
+	}
+
+	.scroll-bar {
+		display: none;
+	}
+
+	.rbp-wapper-right p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.rbp-right-text p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.rbp-right-top-text p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.rbp-self-titel {
+		height: 80px;
+	}
+
+	.rbp-self-titel h2 {
+		font-size: 21px;
+		line-height: 33px;
+		padding: 0 10px;
+	}
+    .rbp-right-top-text p span {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.rbp-right-bottom-center ul li {
+		font-size: 16px;
+		padding-left: 36px;
+	}
+	.rbp-right-top-bottom p {
+
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.rbp-right-top-text button {
+	
+		font-size: 14px;
+		line-height: 22px;
+		padding: 5px 11px;
+	
+		
+	}
+   
+}

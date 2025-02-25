@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.coming-soon {
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    position: relative;
+    top: 0;
+
+}
+.coming-soon::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(253, 235, 218, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cs-left-img img {
+    width: 100%;
+    max-width: 607px;
+    height: 698.077px;
+    transform: rotate(3.224deg);
+    z-index: 100;
+}
+
+.cs-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 84px;
+}
+
+.cs-center-logo {
+    margin-top: 36px;
+    width: 100%;
+    max-width: 154px;
+    height: 56px;
+}
+
+.cs-center-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.cs-center-bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+}
+
+.cs-center-bottom-text h1 {
+    width: 100%;
+    max-width: 397px;
+    color: #291622;
+    text-align: center;
+    font-family: Blacker Text;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: -1.86px;
+    text-transform: capitalize;
+    margin: 0;
+    position: relative;
+    z-index: 1111;
+  
+}
+
+.cs-center-bottom-text h1::before {
+    content: "";
+    width: 100%;
+    max-width: 390px;
+    height: 20px;
+    background: #FFF;
+    position:absolute;
+    bottom:0;
+    z-index: -1;
+    left: 0;
+
+}
+
+.cs-center-bottom-text p {
+    width: 100%;
+    max-width: 443px;
+    color: #333;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0;
+}
+
+.cs-center-bottom-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.cs-center-bottom-btn input {
+    width: 352px;
+    border-radius: 52px;
+    height: 48px;
+    border: 1px solid #291622;
+    background: #FFF;
+    display: flex;
+    padding: 8px 16px;
+    color: #291622;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.cs-center-bottom-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.cs-center-bottom-btn button {
+    border-radius: 52px;
+    border: 1px solid #291622;
+    background: #F3DCA0;
+    display: flex;
+    width: 352px;
+    height: 48px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #291622;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.cs-right-img img {
+    width: 100%;
+    max-width: 485px;
+    height: 727.784px;
+    flex-shrink: 0;
+
+}
+
+
+.coming-soon-bottom {
+    display: flex;
+}
+
+.coming-soon-bottom-img {
+    position: relative;
+    margin-top: -125px;
+}
+
+.bottom-img-01 img {
+    width: 100%;
+    height: 320px;
+    position: absolute;
+    z-index: 10;
+
+}
+
+.bottom-img-02 img {
+    width: 100%;
+    position: relative;
+    height: 320px;
+}
+
+
+@media(max-width:1199px) {
+
+    .cs-center {
+        gap: 75px;
+    }
+
+    .cs-center-bottom-text h1 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+}
+
+
+@media(max-width:991px) {
+
+    .cs-left-img img {
+        width: 100%;
+        max-width: 607px;
+        height: 610.077px;
+        transform: rotate(3.224deg);
+    }
+
+    .cs-center {
+        gap: 50px;
+    }
+
+    .cs-center-bottom-text h1 {
+        font-size: 50px;
+        line-height: 56px;
+        margin: 0;
+    }
+
+    .cs-center-bottom-text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .cs-center-bottom-btn input {
+        width: 310px;
+        height: 44px;
+    }
+
+    .cs-center-bottom-btn button {
+        width: 310px;
+        height: 44px;
+    }
+
+    .cs-right-img img {
+        height: 600.784px;
+    }
+
+    .bottom-img-01 img {
+        height: auto;
+    }
+
+    .bottom-img-02 img {
+        height: auto;
+    }
+
+    .coming-soon-bottom-img {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+@media(max-width:767px) {
+
+
+    .cs-left-img {
+        display: none;
+    }
+
+    .cs-right-img {
+        display: none;
+    }
+
+    .coming-soon-bottom-img {
+        margin-top: 50px;
+    }
+}

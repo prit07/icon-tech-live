@@ -1,0 +1,1267 @@
+body { margin: 0; padding: 0; }
+:root {
+	--font_1:'Anton', sans-serif;
+	--font_2:'Manrope', sans-serif;
+}
+.bg-color-1B9C43 a { background-color:#1B9C43; }
+.bg-color-1A6C83 a { background-color:#1A6C83; }
+.bg-color-273248 a { background-color:#273248; }
+a:hover{
+	text-decoration: none;
+}
+
+
+.mb-c{ margin-bottom: 60px;}
+.mb-d{ margin-bottom: 48px;}
+.mb-e{ margin-bottom: 28px;}
+.mb-f { margin-bottom: 12px;}
+
+
+/* Top Rated Sportbook Start  */
+.best-sportsbook-bonuses-section { padding-bottom: 40px;}
+.best-sportsbook-bonuses-section .bsb-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper{
+	border: 1px solid rgba(73, 73, 74, 0.10);
+	padding: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0px 0px 16px 16px;
+    background: #0E2236;
+}
+
+.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper .bsb-card-img span.bg-color-1A6C83 {
+    padding: 6px 6px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #1A6C83;
+    backdrop-filter: blur(36.5px);
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font_2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper .bsb-card-img-thumb{ max-width: 257px; width: 100%; height: 142px;}
+.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper .bsb-card-img-thumb img{ width: 100%; height: 100%;}
+.bsb-card-sign-up span{
+    color: #1B9C43;
+    text-align: center;
+    font-family: var(--font_2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    padding: 8px 12px;
+    text-transform: uppercase;
+    display: flex;
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(27, 156, 67, 0.12);
+    backdrop-filter: blur(36.5px);
+}
+.bsb-card-sign-up h6{
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 40px; 
+	letter-spacing: -0.84px;
+	margin: 0;
+    padding: 14px 0 10px 0;
+}
+.bsb-card-sign-up p{
+    font-family: var(--font_2);
+    margin: 0;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.bookmakers-list-rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 6px;
+}
+
+.content-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:20px; }
+.content-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.content-stars-rating span.star:hover { cursor:pointer; }
+.content-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#FFC700; }
+.content-stars-rating span.star.filled:before { font-weight: 900; color:#FFC700; content:"\f005"; }
+.content-stars-rating span.star.half-filled:before { content:"\f089"; color:#FFC700; }
+.content-stars-rating span.star.half-filled:after { content:"\f005"; color:#FFC700; margin-left:-22px; }
+.content-rating-table { 
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: -0.84px;
+}
+#content-rating-table {
+    font-family: var(--font_2);
+    color: #FFF;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: -0.68px;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.bookmakers-list-rating a {
+	color:  #1B9C43;
+	font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-decoration-line: underline;
+}
+.bsb-Legal-validated { display: flex; gap: 12px; width: 100%; padding-bottom: 24px; }
+.bsb-legal-licensed { width: 100%; max-width: 88px;} 
+.bsb-legal-licensed h6{
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+	margin-bottom: 8px;
+}
+.bsb-us-icon { display: flex; gap: 7px;}
+.bsb-us-icon img {
+	width: 20px;
+    height: 20px;
+}
+.bsb-us-icon p {
+	color: #FFF;
+    font-family:var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+	text-transform: uppercase;
+    margin: 0;
+}
+.bsb-validated-date{ display: flex; gap: 4px;}
+.bsb-validated-on h6{
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+	margin-bottom: 8px;
+ }
+.bsb-validated-date span {
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+} 
+.bsb-bet-now-btn { width: 100%;}
+.bsb-bet-now-btn a{
+	display: flex;
+	height: 48px;
+	padding: 12px 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	align-self: stretch;
+	border-radius: 8px;
+    background: #1B9C43;
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+/* Top Rated Sportbook End  */
+
+/* DraftKings Sportsbook section satrt */
+
+.draftkings-sportsbook-section{ padding: 80px 0;}
+.draftkings-sportsbook-section .drk-left{ position: sticky;  top: 20px;}
+.draftkings-sportsbook-section .drk-left ul{ padding: 0; list-style: none; counter-reset: item;}
+.draftkings-sportsbook-section .drk-left ul li{
+	display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-left: 40px;
+    position: relative;
+    counter-increment: item;
+ }
+ .draftkings-sportsbook-section .drk-left ul li:first-of-type::before {
+	counter-set: item 0;
+  }
+ 
+ .draftkings-sportsbook-section .drk-left ul li::before{
+	content:counter(item);;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #EFEFEF; 
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ .draftkings-sportsbook-section .drk-left ul li.active::before{
+	content: counter(item);
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #1B9C43; 
+	color: #FFF; 
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+.draftkings-sportsbook-section .drk-left ul li a{
+   color: #4D4F4E !important;
+   font-family: var(--font_2);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 24px;
+   display: flex;
+   gap: 12px;
+   width: 100%;
+}
+
+.draftkings-sportsbook-section .drk-left ul li span {
+   display: block;
+   max-width: 28px;
+   width: 100%;
+   height: 28px;
+   color: #4D4F4E;
+   text-align: center;
+   font-family: var(--font_2);
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 28px;
+   margin: 0;
+   border-radius: 20px;
+   background: #EFEFEF;
+}
+.drk-left ul li.active a span { background: #1B9C43; color: #fff;}
+.draftkings-sportsbook-section .drk-left ul li.active a{ color: #1A6C83 !important; font-weight: 700;}
+
+
+
+
+
+/* Best Sportsbook Promotions section start */
+.bsp-section{ padding: 80px 0;}
+.bsp-wapper{ display: flex; flex-direction: column; gap: 32px;}
+.bsp-title-wapper{display: flex; flex-direction: column; gap: 32px;}
+.bsp-title-wapper h2{
+	color: #0E2236;
+	font-family: var(--font_1);
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 65.5px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.bsp-title-wapper p{
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+	padding: 0;
+}
+.bsp-title-wapper p span{ text-decoration-line: underline; }
+.bsp-table-wapper { border-radius: 16px; background: #0E2236;}
+/* Best Sportsbook Promotions section end */
+
+
+/* Quick facts: Borgata Sports promo code Start */
+.bsp-quick-facts { display: flex; gap: 17px; flex-wrap: wrap;}
+.bsp-quick-facts-wapper {
+	max-width: 199px;
+    width: 100%;
+    height: 110px;
+    background: url(../img/Subtract01.png) no-repeat center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+	position: relative;
+}
+.bsp-quick-facts-wapper::after {
+    content: "";
+    position: absolute;
+    background: url(../img/Line\ 41.png) no-repeat;
+    width: 5px;
+    height: 84%;
+    right: 13px;
+	
+}
+.bsp-quick-facts-wapper h4 {
+	color: var(--text, #0E2236);
+    font-family: var(--font_2);
+    font-size: 22.193px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 31.07px; 
+	margin: 0;
+}
+.bsp-quick-facts-wapper a {
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 19.974px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.07px; 
+}
+.drk-right{ display: flex; flex-direction: column;}
+.drk-right h2:first-child{ padding-top: 60px; padding-bottom: 24px;}
+.drk-right h2{
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.66px;
+    padding: 0 0 24px 0;
+    margin: 0;
+}
+.drk-right h2:nth-child(odd) { font-weight: 800;}
+  
+.drk-right h2:nth-child(even) { font-weight: 700;}
+.drk-right>p{	
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    padding-bottom: 24px;
+}
+.drk-right p span{	text-decoration-line: underline; }
+.drk-right h3{
+	color:#0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+/* DraftKings Sportsbook Start */
+.drk-sportsbook-wapper{ display: flex; flex-direction: column; gap: 20px;}
+.drk-sportsbook-wapper h5{
+	margin: 0;
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+}
+ .drk-sportsbook-wapper p{
+    color:  #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+.drk-sportsbook-wapper p span{ text-decoration-line: underline; }
+
+ .drk-sportsbook-wapper .drk-sportsbook-card{
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 16px;
+    background: #0E2236;
+	position: relative;
+}
+.drk-sportsbook-card::before {
+    content: "";
+    width: 20px;
+    position: absolute;
+    right: 210px;
+    height: 100%;
+    background: url(../img/Frame12.png) no-repeat center;
+    background-size: contain;
+    top: 0;
+}
+.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code{ display: flex; align-items: center;}
+.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-img{
+	width: 60px;
+	height: 60px;
+	margin-right: 16px;
+}
+.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-img img{ width: 100%; height: 100%;}
+.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code p{
+	color: #FFF;
+	font-family:  var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+    margin: 0;
+}
+ .drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code h6{
+	color: #fff;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.66px;
+    margin: 0;
+}
+ .drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-bet-now-btn{ display: flex;}
+ .drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-bet-now-btn a{
+	padding: 12px 32px;
+	background: #1B9C43;
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+ .drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-bet-now-btn a svg{ margin-right: 8px;}
+/* DraftKings Sportsbook End */
+
+
+/* How to claim the Borgata Sports promo code Start  */
+.bsp-select-a-sportsbook-wapper{ position: relative; counter-reset: item;}
+.bsp-select-a-sportsbook-wapper ul{ margin: 0; padding: 0; list-style: none;}
+.bsp-select-a-sportsbook-wapper ul li{
+	counter-increment: item;
+	position: relative;
+	padding-left: 40px;
+}
+.bsp-select-a-sportsbook-wapper ul li h4 {
+	color:  #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px; 
+	margin-bottom: 12px;
+ }
+.bsp-select-a-sportsbook-wapper ul li p{
+	margin: 0;
+	padding-bottom: 20px;
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+}
+.bsp-select-a-sportsbook-wapper ul li::before{
+	content:counter(item);;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	background: #EFEFEF; 
+	color: #1A6C83;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+}
+.bsp-select-a-sportsbook-wapper ul li::after{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background: #B2BCBF;
+	left: 14px;
+	top: 0;
+	z-index: 0;
+}
+.bsp-select-a-sportsbook-wapper ul li:last-child:after{ content: ''; width: 0; height: 0; display: none;}
+/* How to claim the Borgata Sports promo code End  */
+
+ 
+/* Borgata Sports promo code terms and conditions Start  */
+.lack-of-juicy-wapper{
+	display: flex;
+    align-items: center;
+    gap: 48px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.lack-of-juicy-wapper ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style: none;
+}
+.lack-of-juicy-wapper ul li{
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    position: relative;
+    padding-left: 30px;
+}
+.lack-of-juicy-wapper ul li::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(../img/green-chek.png) no-repeat center;
+	background-size: cover;
+}
+/* Borgata Sports promo code terms and conditions End */
+
+/* Recent News Start  */
+.updated-sportsbook-promo-codes{ display: flex; flex-direction: column; gap: 24px;}
+.updated-sportsbook-promo-codes h5{
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.66px;
+    margin: 0;
+}
+.post-sect-b-list-card{
+	display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+.post-sect-b-img { max-width: 202px; width: 100%; height: 114px;}
+.post-sect-b-img img {
+	width: 100%;
+	height: 100%;
+	max-width: unset;
+	object-fit: cover;
+}
+.post-sect-b-text {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.post-sect-b-text span { display: block; line-height: 0; font-size: 0;}
+.post-sect-b-text span a {
+	display: inline-block;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	backdrop-filter: blur(36.5px);
+	height: 28px;
+	padding: 0 12px;
+	color: #FFF;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.32px;
+	text-transform: uppercase;
+}
+.post-sect-b-text h3 {
+	font-size: 0;
+	line-height: unset;
+	margin: 0;
+	padding: 0;
+}
+.post-sect-b-text h3 a {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	display: inline-block;
+}
+.post-sect-b-list-ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.post-sect-b-list-ul ul {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	gap: 4px;
+}
+.post-sect-b-list-ul ul li {
+	list-style-type: none;
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 0.15px;
+	display: inline-flex;
+	text-transform: uppercase;
+}
+.post-sect-b-list-ul ul li a { color: #4D4F4E;}
+.post-sect-b-list-ul ul + ul { gap: 16px;}
+.post-sect-b-list-ul ul li img { margin-right: 8px;}
+.post-sect-b-list-ul ul li span {
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	padding: 0;
+	height: auto;
+	letter-spacing: 0.15px;
+}
+/*  Recent News End */
+
+/* Additional Borgata promotional offers Start */
+.bsp-additional-borgata-card  { display: flex; gap: 12px; }
+.bsp-additional-borgata-card-wapper {
+	max-width: 300px;
+	width: 100%;
+	border: 1px solid #F5F5F5;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.bsp-additional-borgata-card-img img { width: 64px; height: 64px;}
+.bsp-additional-borgata-card-items { display: flex; flex-direction: column; gap: 12px;}
+.bsp-additional-borgata-card-items h4 {line-height: 0; margin: 0;}
+.bsp-additional-borgata-card-items h4 a {
+	color:  #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+}
+.bsp-additional-borgata-card-items p {
+	color:  #0E2236;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+	margin: 0;
+}
+/* Additional Borgata promotional offers End */
+
+
+/* Borgata Sports review Start */
+.bsp-borgata-sports-review {display: flex; gap: 16px; padding-bottom: 20px;     flex-wrap: wrap;}
+.bsp-borgata-sports-review-wapper { 
+	max-width: 400px;
+	width: 100%;
+	padding: 20px 24px;
+	border-right: 1px solid #F5F5F5;
+	border-bottom: 1px solid #F5F5F5;
+	border-left: 1px solid #F5F5F5;
+	background: #F6F6F6;
+	display: flex;
+	gap: 10px;
+}
+.bsp-borgata-sports-stars { display: flex; gap: 8px;}
+.bsp-borgata-sports-table span{
+	color: #0E2236 !important;
+    font-family: var(--font_2);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px; 
+    letter-spacing: -0.76px;
+}
+.bsp-borgata-sports-stars-main>h6 {line-height: 0; margin: 0;}
+.bsp-borgata-sports-stars-main>h6>a {
+	color:  #1B9C43;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+
+}
+.bsp-borgata-sports-review-txt>p {
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+	margin: 0;
+	padding-bottom: 20px;
+}
+.bsp-borgata-sports-review-txt>p>span { text-decoration-line: underline;}
+/* Borgata Sports review Start  */
+
+/* User Reviews Start */
+.bsp-user-view>p {
+	color:  #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+	margin: 0;
+	padding-bottom: 12px;
+}
+
+.bsp-user-view-card {display: flex; gap: 16px;}
+.bsp-user-view-card-wapper {
+    width: 100%;
+    max-width: 219px;
+    border-right: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    background: #F6F6F6;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.bsp-user-view-card-wapper img { width: 26px; height: 26px;}
+.bsp-user-view-card-wapper p {
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+	margin: 0;
+}
+/* User Reviews Start */
+
+/* Borgata Sports payment methods Start  */
+.bsp-sports-payment-methods p {
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+	margin: 0;
+	padding-bottom: 20px;
+}
+.bsp-sports-payment-methods p span { text-decoration: underline;}
+.bsp-sports-payment-methods-box {
+	height: 100%;
+	border: 1px solid #E0E0E0;
+	display: flex;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+	gap: 10px;
+}
+.bsp-sports-payment-methods-left {display: flex; gap: 12px; align-items: center;}
+.bsp-sports-payment-methods-left img { width: 40px;	height: 40px;}
+.bsp-sports-payment-methods-left h4 {
+	color:  #0E2236;
+    font-family: var(--font_2);
+	margin: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+.bsp-sports-payment-methods-right { display: flex; gap: 8px;}
+.bsp-payment-methods-btn-1 {
+	border-radius: 88px;
+    background: rgba(27, 156, 67, 0.12);
+	display: flex;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+	color: #1B9C43;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+.bsp-payment-methods-btn-2 {
+	display: flex;
+    padding: 6px 14px;
+    justify-content: center;
+    align-items: center;
+	border-radius: 88px;
+    background: rgba(221, 45, 47, 0.12);
+	color: #DD2D2F;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+/* Borgata Sports payment methods Start  */
+
+/* Borgata Sports customer support Start */
+.bsp-borgata-sports-customer ul { padding-left: 28px; margin: 0;}
+.bsp-borgata-sports-customer ul li {
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+}
+.bsp-borgata-sports-customer ul li a {
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration-line: underline;
+}
+.bsp-borgata-sports { display: flex; flex-direction: column; gap: 20px;}
+.bsp-borgata-sports>h3{ 
+    color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    margin: 0;
+    padding: 0;
+}
+.bsp-borgata-sports>p {
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+	margin: 0;
+	padding: 0 !important;
+}
+.bsp-sborgata-sports-wapper {
+	padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: #0E2236;
+    position: relative;
+	gap: 20px;
+}
+.bsp-sborgata-sports-wapper::before {
+	content: "";
+    width: 20px;
+    position: absolute;
+    right: 210px;
+    height: 100%;
+    background: url(../img/Frame12.png) no-repeat center;
+    background-size: contain;
+    top: 0;
+}
+.bsp-sborgata-sports-img-code { display: flex; align-items: center; gap: 24px;}
+.bsp-sborgata-sports-img img { width: 60px; height: 60px;}
+.bsp-sborgata-sports-code { display: flex; flex-direction: column; gap: 16px;}
+.bsp-sborgata-sports-code p {
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+	margin: 0;
+	padding: 0 !important;
+}
+.bsp-sborgata-sports-code h6 {
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+	margin: 0;
+    line-height: 28px; 
+    letter-spacing: -0.66px;
+}
+.bsp-sborgata-sports-launch-date { display: flex; flex-direction: column; gap: 12px;}
+.bsp-sborgata-sports-launch-date h4 {
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+	margin: 0;
+}
+.bsp-sborgata-sports-launch-date p {
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+	margin: 0;
+	padding: 0 !important;
+    letter-spacing: -0.54px;
+}
+.drk-sportsbook-card-bet-now-btn a {
+	background: #1B9C43;
+	display: inline-flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+	color: #FFF;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+/* Borgata Sports customer support End */
+
+/* Recent Borgata Sports updates Start */
+.bsp-borgata-sports-updates { display: flex; flex-direction: column; gap: 20px;}
+.bsp-borgata-sports-updates p {
+	color: #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+	margin: 0;
+	padding: 0 !important;
+}
+/* Recent Borgata Sports updates End */
+
+/* USA sports betting resources Start */
+.bsp-sports-betting-resources {display: flex; gap: 16px; }
+.bsp-sports-betting-resources-card { max-width: 326px; width: 100% ;}
+.bsp-sports-betting-resources-card-heading {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background: #F5F5F5;
+}
+.bsp-sports-betting-resources-card-heading h4 {
+	color: #0E2236;
+    font-size: 18px;
+    font-family: var(--font_2);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+}
+.bsp-sports-betting-resources-card-items {
+	border-right: 1px solid rgba(73, 73, 74, 0.10);
+    border-bottom: 1px solid rgba(73, 73, 74, 0.10);
+    border-left: 1px solid rgba(73, 73, 74, 0.10);
+    background: #FFF;
+	display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.bsp-sports-betting-resources-card-img-text img { width: 100%; max-width: 250px; height: 68px;}
+.bsp-sports-betting-resources-card-img-text { 
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+} 
+.bsp-sports-betting-resources-card-img-text  p {
+	color: var(--text, #0E2236);
+    text-align: center;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+	padding: 0 !important;
+	margin: 0;
+}
+.bsp-sports-betting-resources-card-btn a {
+	border: 1.5px solid #1B9C43;
+	padding: 12px 24px;
+	color: #0E2236;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    line-height: 140%; 
+}
+/* USA sports betting resources End */
+
+/* Borgata Sports promo code FAQ Start */
+.faq_accordion_wapper:first-child{ border-top: 1px solid #ECECEC;}
+.faq_accordion_wapper a {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	width: 100%;
+	color: #0E2236 !important;
+    font-family: var(--font_2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+.faq_accordion_wapper a { width: 95% !important;}
+.faq_accordion_wapper .faq_content { display: none; padding: 16px 0px 0px 0; overflow: hidden; }
+.faq_accordion_wapper .faq_content p {
+	padding: 0;
+	color:  #4D4F4E;
+    font-family: var(--font_2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+} 
+.faq_accordion_item .faq_menu:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 7px;
+	background: url(../img/fi_2952084\(2\).png) no-repeat;
+	background-size: cover;
+	width: 24px;
+	height: 24px;
+}
+.faq_accordion_item.active .faq_menu::after {transform: rotate(-45deg); }
+.faq_accordion_item{border-bottom: 1px solid  #ECECEC; padding: 24px 24px 24px 0;}
+.faq_accordion_item .faq_menu {
+	background-color: #fff;
+	padding: 0 24px 0 0;
+	position: relative;
+}
+.faq_accordion_item.active .faq_menu {background-color: #fff; position: relative;}
+.faq_accordion_item.active .faq_menu a{ font-weight: 800;}
+/* Borgata Sports promo code FAQ End */
+
+/* Sports betting news Start */
+.sports-betting-news-wapper{ display: flex; flex-direction: column; gap: 24px;}
+/* Sports betting news End */
+
+
+
+
+
+
+
+
+@media(max-width:1199px){
+	/* Best Sportsbook Promotions section start */
+	.bsb-bet-now-btn a { padding: 12px 15px;}
+	.bsb-card-img { width: 200px;}
+	.bsb-card-sign-up { width: 200px; margin-top: 15px;}
+	.bookmakers-list-rating { width: 200px;}
+	.bsb-Legal-validated { flex-direction: column; gap: 15px;}
+	.bsb-legal-licensed { max-width: 100%;}
+	.bsp-additional-borgata-card {flex-wrap: wrap;}
+	.bsp-user-view-card { flex-wrap: wrap;}
+	.bsp-sports-payment-methods-left { max-width: 100%;}
+	.bsp-sports-payment-methods-box { flex-wrap: wrap; gap: 18px;}
+	.bsp-sborgata-sports-code h6 { font-size: 20px; line-height: 26px;}
+	.bsp-sborgata-sports-wapper::before { right: 188px;}
+	.bsp-sports-betting-resources { flex-wrap: wrap;}
+
+	.lack-of-juicy-wapper ul li::before { top: 4px;}
+	.lack-of-juicy-wapper ul li { font-size: 16px; line-height: 26px;}
+	.lack-of-juicy-wapper { gap: 20px;}
+
+}
+
+
+@media(max-width:991px){
+	 .bookmakers-list-rating { width: 164px;}
+	 .bsp-additional-borgata-card { flex-wrap: wrap;}
+	 .bsp-additional-borgata-card-wapper { max-width: 339px;}
+	 .bsb-Legal-validated { flex-direction: row; gap: 15px;}
+	 .bsb-legal-licensed { max-width: 150px;}
+	 .best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper {gap: 20px;}
+	 .bsb-bet-now-btn { width: 40%;}
+}
+
+@media(max-width:767px){
+	/* Best Sportsbook Promotions section start */
+	.bsp-section { padding: 40px 0;}
+	.bsp-title-wapper { gap: 20px;}
+	.bsp-title-wapper h2 {font-size: 36px; line-height: 48.5px;}
+	.bsp-title-wapper p { font-size: 16px; line-height: 26px;}
+	/* Best Sportsbook Promotions section end */
+	.bsp-quick-facts-wapper {
+		max-width: 164px;
+		width: 100%;
+		height: 77px;
+		padding-left: 11px; }
+	.bsp-quick-facts-wapper h4 { font-size: 17.193px; line-height: 24.07px; }
+	.bsp-quick-facts-wapper a {font-size: 14.974px; line-height: 28.07px; } 
+	.drk-sportsbook-card::before {display: none;}
+
+	
+	/* Best sportsbooks for bonuses section start  */
+
+	.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper { justify-content: center;}
+	.bsb-card-img { width: 250px;}
+	.bsb-card-sign-up { width: 250px;}
+	.bookmakers-list-rating { width: 250px;}
+	.bsb-card-sign-up h6 { font-size: 26px; line-height: 28px; padding: 10px 0 10px 0;}
+	.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper .bsb-card-img-thumb { max-width: 100%; width: 100%; height: auto;}
+	.bookmakers-list-rating { align-items: start;}
+	.bsb-card-sign-up p { font-size: 17px; line-height: 25px;}
+
+	/* Best sportsbooks for bonuses section end  */
+
+	 /* DraftKings Sportsbook section satrt */
+	.draftkings-sportsbook-section { padding: 40px 0;}
+	.drk-right h2 {padding: 30px 0 20px 0;}
+	.drk-right h2:first-child { padding-top: 0; padding-bottom: 20px;}
+	.drk-right p { padding-bottom: 20px;}
+	.drk-right h3 { padding-bottom: 20px;}
+	.mb-c { margin-bottom: 30px;}
+	.drk-sportsbook-card { flex-wrap: wrap; gap: 20px;}
+	.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code p { font-size: 15px; line-height: 23px;}
+	.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code h6 {
+		font-size: 18px;
+		line-height: 24px;
+		padding: 0;
+	}
+	.lack-of-juicy-wapper { flex-wrap: wrap;}
+	.lack-of-juicy-wapper ul li { font-size: 18px; line-height: 28px;}
+	.updated-sportsbook-promo-codes { gap: 20px;}
+	.post-sect-b-list-card { gap: 15px; flex-wrap: wrap;}
+	.post-sect-b-img { max-width: 100%; height: 233px;}
+	.types-of-card-wapper { padding: 20px; flex-wrap: wrap; gap: 20px;}
+	.types-of-card-wapper .types-of-card-img-text { gap: 10px; flex-wrap: wrap;}
+	.types-of-card-wapper .types-of-card-img-text .types-of-card-img { max-width: 100%; height: 150px;}
+	.types-of-card-wapper .types-of-card-img-text .types-of-text { gap: 5px;}
+	.post-sect-b-text h3 { padding: 0;}
+	.drk-sportsbook-wapper p { padding: 0;}
+	.best-sportsbook-bonuses-section .bsb-wapper .bsb-card-wapper { justify-content: start;}
+	.bsp-additional-borgata-card-wapper {max-width: 100%;}
+	.bsp-borgata-sports-review-wapper {flex-wrap: wrap;}
+	.bsp-user-view-card-wapper { max-width: 100%;}
+	.bsp-sborgata-sports-wapper { flex-wrap: wrap; gap: 20px;}
+	.bsp-sborgata-sports-wapper::before { display: none;} 
+	.bsp-sborgata-sports-code { gap: 10px;}
+	.bsp-sports-betting-resources-card {max-width: 100%; }
+	.bsb-bet-now-btn { width: 100%;}
+	.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-img-code .drk-sportsbook-card-code { gap: 12px;}
+	.bsp-sborgata-sports-code h6 { font-size: 17px; line-height: 22px;}
+	.bsp-sborgata-sports-code p { font-size: 16px;line-height: 22px;}
+	.bsp-sborgata-sports-launch-date { gap: 5px;}
+	.bsp-sborgata-sports-launch-date h4 { font-size: 14px; line-height: 22px;}
+	.bsp-sborgata-sports-launch-date p { font-size: 16px; line-height: 24px;}
+	.drk-sportsbook-card-bet-now-btn a { padding: 9px 25px; font-size: 17px; line-height: 27px;}
+	.drk-sportsbook-wapper .drk-sportsbook-card .drk-sportsbook-card-bet-now-btn a {
+		padding: 9px 25px; 
+		font-size: 17px; 
+		line-height: 27px;
+	}
+	.bsp-quick-facts-wapper::after {
+		height: 99%;
+	}
+
+
+
+
+	/* DraftKings Sportsbook section end */
+	
+}
+
+@media(min-width:1200px){
+	.container.w-1170 { max-width:1170px!important; }
+}

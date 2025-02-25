@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <style>
+        /* Product list Start */
+        .product-list-page {
+            border-bottom: 1px solid #000;
+        }
+
+        .product-list-page-top {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            background-color: #000000;
+        }
+
+        .product-list-page-top img {
+            width: 150px;
+            height: 70px;
+        }
+
+        .product-list-row {
+            display: flex;
+        }
+
+        .product-list-col-left {
+            width: 100%;
+            max-width: 100%;
+            padding: 59px 0 126px 0;
+        }
+
+        .product-list-col-right {
+            width: 100%;
+            max-width: 345px;
+        }
+
+        .product-list-col-grid {
+            display: grid;
+            grid-column-gap: 49px;
+            grid-row-gap: 59px;
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .product-list-left-img {
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-list-left-img>a>img {
+            width: 100%;
+            max-width: 202px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .product-list-left-text>h5 {
+            margin: 0 auto;
+            line-height: 0;
+            text-align: center;
+            padding-bottom: 8.5px;
+        }
+
+        .product-list-left-text>h5>a {
+            display: inline-block;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 21.09px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .product-list-left-text>h3 {
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28.13px;
+            text-align: center;
+            color: #006837;
+            margin-bottom: 7.12px;
+        }
+
+        .product-list-left-bottom {
+            width: 100%;
+            text-align: center;
+        }
+
+        .product-list-left-bottom button:hover {
+            background-color: #DFA535;
+        }
+
+        .product-list-left-bottom button {
+            width: 100%;
+            max-width: 184px;
+            margin: auto;
+            border: 0;
+            background: #006837;
+            padding: 10px 25px 10px 25px;
+            border-radius: 5px;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16.41px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 7.23px;
+        }
+
+        .product-list-left-bottom>ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 7px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product-list-left-bottom>ul>li {
+            flex: 1;
+            font-family: Roboto;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 11.72px;
+            text-align: center;
+            color: #BDBDBD;
+            border: 1px solid #BDBDBD;
+            border-radius: 5px;
+            padding: 2px 7.4px;
+        }
+
+        .product-list-left-bottom>ul>li>p {
+            margin: 0;
+        }
+
+        @media (max-width: 767px) {
+            .product-list-left-bottom>ul {
+                gap: 6px;
+                justify-content: start;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media (max-width: 1199px) {
+            .product-list-col-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Product list End */
+    </style>
+</head>
+
+<body>
+    <div class="container w-848">
+        <div class="product-list-col-grid">
+            <div class="product-list-item-left">
+                <div class="product-list-item-left-main">
+                    <div class="product-list-left-img">
+                        <a href="#"> <img src="img/Rectangle 35.png" alt=""> </a>
+                    </div>
+                    <div class="product-list-left-text">
+                        <h5><a href="#">Plato 1</a></h5>
+                        <h3>6,40€</h3>
+                    </div>
+                    <div class="product-list-left-bottom">
+                        <button>AÑADIR AL CARRITO</button>
+                    </div>
+                    </div>
+                    
+                    <div class="product-list-left-bottom">
+                        <ul>
+                            <li><span>1126</span>
+                                <p>Kcal</p>
+                            </li>
+                            <li><span>101,54</span>
+                                <p>Proteinas</p>
+                            </li>
+                            <li><span>149,46</span>
+                                <p>Carbohidratos</p>
+                            </li>
+                            <li><span>11,98</span>
+                                <p>Grasas</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-list-item-left">
+                    <div class="product-list-item-left-main">
+                        <div class="product-list-left-img">
+                            <a href="#"> <img src="img/Rectangle 35.png" alt=""> </a>
+                        </div>
+                        <div class="product-list-left-text">
+                            <h5><a href="#">Plato 1</a></h5>
+
+                        </div>
+                        <div class="product-list-left-bottom">
+                            <button>AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+                    <div class="product-list-left-bottom">
+                        <ul>
+                            <li><span>1126</span>
+                                <p>Kcal</p>
+                            </li>
+                            <li><span>101,54</span>
+                                <p>Proteinas</p>
+                            </li>
+                            <li><span>149,46</span>
+                                <p>Carbohidratos</p>
+                            </li>
+                            <li><span>11,98</span>
+                                <p>Grasas</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

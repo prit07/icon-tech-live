@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>NFL Betting || Betworthy</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+		integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+		crossorigin="anonymous"></script>
+
+	<script src="js/header-footer.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+	<div class="m-overlay-bg"></div>
+	<!-- header html start -->
+	<header class="header-wapper">
+		<div class="top-header-wapper">
+			<div class="container w-1170">
+				<div class="top-header-card">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/header-logo.svg" alt="">
+						</a>
+					</div>
+					<div class="header-top-menu">
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Log In/Sing Up</a></li>
+						</ul>
+					</div>
+					<div class="header-right-side">
+						<div class="header-search-icon">
+							<span><img src="img/search-sm.svg" alt=""></span>
+						</div>
+						<div class="m-toggle-btn" id="m-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header-wapper">
+			<div class="container w-1170">
+				<div class="bottom-header-menu">
+					<ul>
+						<li><a href="#">Legalization Tracker</a></li>
+						<li><a href="#">Responsible Betting</a></li>
+						<li><a href="#">Betting Academy</a></li>
+						<li class="sub-menu-card">
+							<a href="#">Resources</a>
+							<div class="submenu-wapper">
+								<ul>
+									<li><a href="#">Legalization</a></li>
+									<li><a href="#">Responsible</a></li>
+									<li><a href="#">Betting</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<span>|</span>
+					<ul>
+						<li><a href="#">random</a></li>
+						<li><a href="#">top viewed</a></li>
+						<li><a href="#">top commented</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- mobile header sidebar html start -->
+		<div class="m-sidebar-wrapper" id="m-sidebar-wrapper">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Log In/Sing Up</a></li>
+				<li><a href="#">Legalization Tracker</a></li>
+				<li><a href="#">Responsible Betting</a></li>
+				<li><a href="#">Betting Academy</a></li>
+				<li class="sub-menu-card">
+					<a href="#">Resources</a>
+					<div class="submenu-wapper">
+						<ul>
+							<li><a href="#">Legalization</a></li>
+							<li><a href="#">Responsible</a></li>
+							<li><a href="#">Betting</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">random</a></li>
+				<li><a href="#">top viewed</a></li>
+				<li><a href="#">top commented</a></li>
+			</ul>
+		</div>
+		<!-- mobile header sidebar html end -->
+		<!-- search popup html start -->
+		<div class="dd32-search-popup">
+			<div class="dd32-search-bg"></div>
+			<div class="dd32-search-form">
+				<form method="get" action="#">
+					<div class="dd32-form">
+						<input type="text" id="dd32-search" placeholder="search" name="s">
+						<label for="search"><i class="fa fa-search"></i></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search popup html end -->
+	</header>
+	<!-- header html end -->
+
+
+	<!-- NFL Betting section start -->
+
+	<div class="nfl-betting-section">
+		<div class="container w-1170">
+			<div class="nfl-betting-wapper">
+				<h2>NFL Betting: Make Smarter Football Bets</h2>
+				<p>Get informed NFL analysis, smart football picks, the best NFL odds, stats, and more. Covers' NFL is your one-stop shop for making smarter football bets.</p>
+			</div>
+			<div class="nfl-betting-must-reads-wapper">
+				<div class="nfl-betting-left-wapper">
+					<div class="must-reads-wapper">
+						<h6>NFL Must Reads</h6>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="odds-covers-wapper">
+							<div class="odds-covers-card">
+								<div class="odds-covers-icon">
+									<img src="img/icon1.svg" alt="">
+								</div>
+								<div class="odds-covers-text">
+									<h3>Odds </h3>
+									<a href="#">Best NFL Odds <img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="odds-covers-card">
+								<div class="odds-covers-icon">
+									<img src="img/icon2.svg" alt="">
+								</div>
+								<div class="odds-covers-text">
+									<h3>Picks </h3>
+									<a href="#">Best NFL Odds <img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="odds-covers-card">
+								<div class="odds-covers-icon">
+									<img src="img/icon3.svg" alt="">
+								</div>
+								<div class="odds-covers-text">
+									<h3>Betting  </h3>
+									<a href="#">Best NFL Odds <img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</div>
+							<div class="odds-covers-card">
+								<div class="odds-covers-icon">
+									<img src="img/fi_1885289.png" alt="">
+								</div>
+								<div class="odds-covers-text">
+									<h3>Scoreboard </h3>
+									<a href="#">Best NFL Odds <img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(6).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Super Bowl 2025 Betting: More Than $300 Million In Legal US Wagers</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+									<ul>
+										<li><img src="img/comment-b.svg" alt=""><span>0</span></li>
+										<li><img src="img/eye-b.svg" alt=""><span>26 views</span></li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="nfl-betting-right-wapper">
+					<div class="top-nfl-sportsbooks-wapper">
+						<h4>Top NFL Sportsbooks</h4>
+						<ul>
+							<li><img src="img/pin.png" alt=""> <span>Bonus Available</span> <a href="#">Review</a></li>
+							<li><img src="img/pin.png" alt=""> <span>Bonus Available</span> <a href="#">Review</a></li>
+							<li><img src="img/pin.png" alt=""> <span>Bonus Available</span> <a href="#">Review</a></li>
+							<li><img src="img/pin.png" alt=""> <span>Bonus Available</span> <a href="#">Review</a></li>
+							<li><img src="img/pin.png" alt=""> <span>Bonus Available</span> <a href="#">Review</a></li>
+						</ul>
+					</div>
+					<div class="popular-content-wapper">
+						<h4>Popular Content</h4>
+						<ul>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">New TN Sports Betting Executive Director Makes Important Decisions</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">Casino Near Maryland Sports Betting Launch - Mobile On Hold</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">Starting of Florida Sports Betting at Hard Rock</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">DC Version of Florida Sports Betting Litigation</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="nfl-betting-right-new-wapper">
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(9).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(9).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="popular-content-wapper">
+						<ul>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">New TN Sports Betting Executive Director Makes Important Decisions</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">Casino Near Maryland Sports Betting Launch - Mobile On Hold</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+							<li>
+								<div class="new-tn-sports">
+									<h6><a href="#">DC Version of Florida Sports Betting Litigation</a></h6>
+									<a class="sect-b-arrow-icon" href="#"><img src="img/up-right-arrow 1.svg" alt=""></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="find-review-wapper">
+						<h3>Find, review and compare the best sportsbooks</h3>
+						<p>Discover which sportsbooks are the most trustworthy, offer the best bonuses, and find the active promo codes.</p>
+						<form action="">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="→ e.g. BetMGM, DraftKings, etc">
+							</div>
+							<div class="find-review-btn">
+								<a href="#"><span><img src="img/search-sm.png" alt=""></span></a>
+							</div>
+						</form>
+						<div class="find-review-img">
+							<img src="img/image 2(18).png" alt="">
+						</div>
+					</div>
+					<div class="nfl-betting-right-new-wapper">
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(9).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_new">New</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+						<div class="must-reads-card-wapper">
+							<div class="must-reads-card-img">
+								<img src="img/Rectangle 226(9).png" alt="">
+							</div>
+							<div class="must-reads-card-inner">
+								<span class="latest_sport">sport</span>
+								<h4><a href="#">Gambling firms to stop advertising during live sporting events</a></h4>
+								<div class="post-sect-b-list-ul">
+									<ul>
+										<li>BY <a href="#">CARL MILLER</a></li>
+										<li>|</li>
+										<li>JUNE 27, 2023</li>
+									</ul>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- NFL Betting section end -->
+
+
+	<!-- get insider section start -->
+
+		<div class="get-insider-section">
+			<div class="container w-1170">
+				<div class="get-insider-wapper">
+					<div class="get-insider-left-text">
+						<h3>get insider tips and tricks in our newsletter!</h3>
+						<form action="">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Your email address">
+							</div>
+							<div class="sing-up-btn">
+								<a href="#">Sing Up</a>
+							</div>
+						</form>
+						<div class="i-have-read-check">
+							<input class="radio" type="checkbox" id="readcheck">
+							<label for="readcheck">I have read and agree to the terms & conditions</label>
+						</div>
+					</div>
+					<div class="get-insider-center-img">
+						<img src="img/iPhone 13 mini - 1.png" alt="">
+					</div>
+					<div class="get-insider-right-text">
+						<ul>
+							<li>Gambling firms to stop advertising during live sporting events</li>
+							<li>Stay up to date with the latest trends and advancements in AI chat technology with </li>
+							<li>Gambling firms to stop advertising during live sporting events</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- get insider section end -->
+
+
+
+	<!-- footer html start -->
+	<footer class="footer-wapper-main">
+		<div class="footer-wapper">
+			<div class="container w-1170">
+				<div class="footer-row-a">
+					<div class="footer-left-col">
+						<div class="footer-left-card">
+							<div class="footer-logo">
+								<img src="img/footer-logo.svg" alt="logo">
+							</div>
+							<p>Our team consists of industry experts, professional gamblers, and passionate sports
+								journalist. We have a rigorous review process and editorial standards and we do our best
+								to keep treating our readers fairly and providing unbiased free and professional
+								information.</p>
+							<ul>
+								<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Twitter.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-right-col">
+						<div class="footer-menu-col">
+							<h3>about us</h3>
+							<ul>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Meet the team</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Press</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>get started</h3>
+							<ul>
+								<li><a href="#">Sports betting news</a></li>
+								<li><a href="#">Legalization Tracker</a></li>
+								<li><a href="#">Betting odds</a></li>
+								<li><a href="#">Sportsbook</a></li>
+								<li><a href="#">Betting tools</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>site</h3>
+							<ul>
+								<li><a href="#">privacy</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">How we Rate</a></li>
+								<li><a href="#">Editorial Guidelines</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom-wapper">
+					<p>Our team consists of industry experts, professional gamblers, and passionate sports journalist.
+						We have a rigorous review process and editorial standards and we do our best to keep treating
+						our readers fairly and providing unbiased free and professional information.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-reserved">
+			<div class="container w-1170">
+				<p>All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer html end -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.map-container {
+  position: relative;
+  margin: 0 auto;
+}
+
+.personal-lawyer-map a { position:relative; }
+.personal-lawyer-map, #usa-map { position:relative; }
+.BiggerGroup { font-size: 20px; }
+/*.BiggerGroup text { fill: #291622; opacity:1; }*/
+.stateABB text textPath{ fill: #291622;  fill-opacity:1;  font-size:20px; }
+.pdttime path{ fill: rgba(255, 249, 240, 1); stroke: rgba(41, 22, 34, 0.33); }
+.map-color { fill: rgba(255, 249, 240, 1) !important; stroke: rgba(41, 22, 34, 0.33) !important; }
+#visnames text { font-family:var(--Manrope) !important; }
+.tooltip-inner { font-size:18px; font-family:var(--Manrope); }
+#info-box {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background-color: #212121;
+  color: #ffffff;
+  border: 0px solid #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+}

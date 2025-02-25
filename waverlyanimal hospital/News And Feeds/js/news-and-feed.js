@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $('.owl-news-and-feeds').owlCarousel({
+        loop:false,
+        margin:20,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1200:{
+                items:3
+            }
+        }
+    })
+})

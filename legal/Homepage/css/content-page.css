@@ -1,0 +1,458 @@
+
+body { margin: 0; padding: 0; }
+:root {
+	--font_1:'Blacker Text';
+	--font_2:'Manrope', sans-serif;
+}
+a:hover { text-decoration:none; }
+
+/* top link section start */
+
+.top-link-section{
+	background: #FFF6ED;
+	padding: 32px 0;
+}
+.top-link-section ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+.top-link-section ul li{
+	list-style-type: none;
+}
+.top-link-section ul li a{
+	color:  #291622;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+.top-link-section ul li.active a{
+	text-decoration-line: none;
+}
+.top-link-section ul li span img {
+	display: none;
+}
+/* top link section end */
+
+/* Types of Car section start */
+
+.type-of-car-section{
+	background: #FFF6ED;
+	padding: 20px 0 32px 0;
+}
+.type-of-car-left-wapper{
+	border: 1px solid #291622;
+	background: #FFF;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.type-of-car-card-title{
+	display: flex;
+	position: relative;
+	padding: 0 20px 0 0;
+}
+.type-of-car-card-title::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	background: url(../img/arrow-f-icon.svg) no-repeat;
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.type-of-car-card-title span{
+	color: #291622;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper h5{
+	margin: 0;
+	color: #291622;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+}
+.type-of-car-card-inner{
+	display: none;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li{
+	list-style-type: none;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li p{
+	color:  #333;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px;
+	margin: 0;
+}
+.type-of-car-left-wapper .type-of-car-card-wapper ul li.active p{
+	color: #96423F;
+	font-weight: 600;
+}
+.type-of-car-left-wapper .border-line{
+	border: 1px solid #F8EBDF;
+}
+/* right */
+
+.Types-of-Car-right-wapper h2{
+	color: #291622;
+	font-family: var(--font_1);
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	margin: 0;
+	padding-bottom: 22px;
+}
+.Types-of-Car-right-wapper p{
+	color:  #333;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px; 
+	margin: 0;
+	padding-bottom: 13px;
+}
+.Types-of-Car-right-wapper p a{
+	color:  #333;
+	text-decoration-line: underline;
+}
+.Types-of-Car-right-wapper h4{
+	color: #291622;
+	font-family: var(--font_1);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.24px;
+	margin: 0;
+	padding: 24px 0 13px 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts{
+	border: 1px solid #291622;
+	background: #FFF;
+	margin-bottom: 13px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title{
+	background: #96423F;
+	padding: 16px 32px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title h4{
+	color: #FFF;
+	padding: 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text{
+	padding: 20px 32px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text p{
+	padding: 0;
+}
+.Types-of-Car-right-wapper button{
+	border: 1px solid  #291622;
+	background:  #F3DCA0;
+	color:  #291622;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 8px 12px; 
+	margin-top: 20px;
+}
+/* Types of Car section end */
+
+/* Legal Guides section start */
+.lelgal-guides-section{
+	background: #FFF6ED ;
+	padding: 300px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lelgal-guides-section::before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 100px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.lelgal-guides-section::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 150px;
+	background: #291622;
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.lelgal-guides-section h2{
+	margin: 0;
+	color: #FFF;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+}
+.lelgal-guides-section h2 span{
+	position: relative;
+	z-index: 1;
+}
+.lelgal-guides-section h2 span::after{
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #532E45;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+.lelgal-guides-section .Legal-Guides-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.injured-law-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.Injury-Law-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.Injury-Law-card-wapper h6{
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+.Injury-Law-card-wapper p{
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+
+.lelgal-guides-section .container{
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+.read-more-btn{
+	display: none;
+}
+/* Legal Guides section end */
+
+
+
+
+
+
+
+@media(max-width:1399px){
+/* Legal Guides section start */
+
+.lelgal-guides-section::before {
+	left: -90px;
+}
+.lelgal-guides-section::after {
+	right: -120px;
+	width: 118%;
+}
+
+/* Legal Guides section end */
+}
+@media(max-width:1199px){
+	
+/* Legal Guides section start */
+.d-n{display: none;}
+.read-more-btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.read-more-btn a{
+	color: #291622;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	padding: 16px 90px;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #F3DCA0;
+}
+.lelgal-guides-section::after {
+	right: -120px;
+	width: 122%;
+}
+.lelgal-guides-section::before {
+	width: 100%;
+	top: 124px;
+}
+/* Legal Guides section end */
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	
+
+
+
+}
+
+@media(max-width:991px){
+	/* Types of Car section start */
+	.type-of-car-section .row{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	/*  Types of Car section end */
+	/* Legal Guides section start */
+	.lelgal-guides-section {
+		padding: 240px 0 80px 0;
+	}
+	.lelgal-guides-section .container {
+		gap: 80px;
+	}
+	.lelgal-guides-section h2 {
+		font-size: 46px;
+	}
+	.lelgal-guides-section::after {
+		right: -120px;
+		width: 127%;
+	}
+	.t-d-n{
+		display: none;
+	}
+
+	/* Legal Guides section end */
+	
+	
+}
+
+@media(max-width:767px){
+
+/*  top link section start  */
+
+.top-link-section ul {
+	flex-direction: column;
+	gap: 8px;
+}
+.top-link-section ul li img{
+	display: none;
+}
+.top-link-section ul li span img {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*  top link section end */
+
+/* Types of Car section start */
+
+.type-of-car-section {
+	padding: 20px 0 20px 0;
+}
+.Types-of-Car-right-wapper h2 {
+	font-size: 30px;
+}
+.Types-of-Car-right-wapper h4 {
+	font-size: 22px;
+	padding: 20px 0 13px 0;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-title {
+	padding: 16px 20px;
+}
+.Types-of-Car-right-wapper .Types-of-Impacts .Types-of-Impacts-text {
+	padding: 16px 20px;
+}
+.Types-of-Car-right-wapper button {
+	margin-top: 15px;
+}
+/* Types of Car section end */
+
+/* Legal Guides section start */
+.lelgal-guides-section {
+	padding: 200px 0 50px 0;
+}
+.lelgal-guides-section .container {
+	gap: 50px;
+}
+.lelgal-guides-section .Legal-Guides-wapper {
+	gap: 30px;
+}
+.lelgal-guides-section::after {
+	right: -120px;
+	width: 157%;
+}
+.m-d-n{
+	display: none;
+}
+.lelgal-guides-section h2 {
+	font-size: 48px;
+}
+
+/* Legal Guides section end */
+
+}
+
+
+@media(max-width:420px){
+	/* Legal Guides section start */
+
+	.lelgal-guides-section h2 {
+		font-size: 37px;
+	}
+
+	/* Legal Guides section end */
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/shop-page.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/shop-page.js"></script>
+
+</head>
+
+<body>
+
+    <div class="shop-page">
+        <div class="container w-1202">
+            <div class="filter-overlay-bg"></div>
+            <div class="filter-sidebar">
+                <div class="filter-toggle-btn" id="filter-toggle-btn">
+                    <img src="img/ControlTwotone.svg" alt="">
+                    <h4>Filters</h4>
+                </div>
+                <div class="filter-sidebar-wrapper" id="filter-sidebar-wrapper">
+                    <i class="fa fa-times" aria-hidden="true" id="close-sidebar"></i>
+                    <h3>Filter By</h3>
+                    <div class="filter-sidebar_accordion_wapper">
+                        <div class="filter-sidebar_accordion_item ">
+                            <div class="filter-sidebar_menu">
+                                <a>Designer</a>
+                            </div>
+                            <div class="filter-sidebar_content">
+                                <ul>
+                                    <li> <i class="fa fa-search" aria-hidden="true"></i> <input type="text"></li>
+                                    <li>
+                                        <div class="filter-sub-faq_accordion_item ">
+                                            <div class="filter-sub-faq_menu">
+                                                <a>Option 1</a>
+                                            </div>
+                                            <div class="filter-sub-faq_content">
+                                                <p>Lorem.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="filter-sub-faq_accordion_item">
+                                            <div class="filter-sub-faq_menu">
+                                                <a>Option 1</a>
+                                            </div>
+                                            <div class="filter-sub-faq_content">
+                                                <p>Lorem.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="filter-sub-faq_accordion_item">
+                                            <div class="filter-sub-faq_menu">
+                                                <a>Option 1</a>
+                                            </div>
+                                            <div class="filter-sub-faq_content">
+                                                <p>Lorem.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-sidebar_accordion_item ">
+                            <div class="filter-sidebar_menu">
+                                <a>Style</a>
+                            </div>
+                            <div class="filter-sidebar_content">
+                                <ul>
+                                    <li> <i class="fa fa-search" aria-hidden="true"></i> <input type="text"></li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-sidebar_accordion_item ">
+                            <div class="filter-sidebar_menu">
+                                <a>Origin</a>
+                            </div>
+                            <div class="filter-sidebar_content">
+                                <ul>
+                                    <li> <i class="fa fa-search" aria-hidden="true"></i> <input type="text"></li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-sidebar_accordion_item ">
+                            <div class="filter-sidebar_menu">
+                                <a>Room or space</a>
+                            </div>
+                            <div class="filter-sidebar_content">
+                                <ul>
+                                    <li> <i class="fa fa-search" aria-hidden="true"></i> <input type="text"></li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-sidebar_accordion_item ">
+                            <div class="filter-sidebar_menu">
+                                <a>Material</a>
+                            </div>
+                            <div class="filter-sidebar_content">
+                                <ul>
+                                    <li> <i class="fa fa-search" aria-hidden="true"></i> <input type="text"></li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                    <li>Option 1</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo.png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6  mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (1).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (3).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (5).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (5).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (1).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (5).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (2).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (3).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 mb-10">
+                    <div class="shop-page-main-items ">
+                        <div class="shop-page-overlay"></div>
+                        <div class="shop-page-img">
+                            <img src="img/productBasicInfo (1).png" alt="">
+                            <div class="shop-page-content-details">
+                                <ul>
+                                    <li>Brand : <span> Condehouse </span></li>
+                                    <li>Designer :<span> Naoto Fukasawa </span></li>
+                                    <li>Number of variations: <span> 94 </span></li>
+                                    <li>Make To Order - <span> 90 days </span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-page-text">
+                            <h4><a href="#">TEN FOR TEN Table</a></h4>
+                            <p>Price starts from 7500 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shop-page-pagination">
+                <ul>
+                    <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">--26</a></li>
+                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

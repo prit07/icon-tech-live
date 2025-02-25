@@ -1,0 +1,572 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFF6ED;
+}
+
+:root {
+	--Blacker_Text: 'Blacker Text';
+	--Manrope: 'Manrope', sans-serif;
+}
+
+/* banner section css start */
+.banner-section-wapper {
+	position: relative;
+	padding: 64px 0 30px;
+}
+
+.banner-title {
+	max-width: 730px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+.banner-title h1 {
+	margin: 0;
+	color: #291622;
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	letter-spacing: -1.95px;
+	text-transform: capitalize;
+	position: relative;
+}
+
+.banner-title h1:before {
+	content: '';
+	position: absolute;
+	width: 361px;
+	height: 20px;
+	display: block;
+	background: #FFF;
+	margin: auto;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	bottom: 5px;
+}
+
+.form-wapper {
+	max-width: 802px;
+	width: 100%;
+	margin: auto;
+}
+
+.form-wapper form {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.banner-new-input {
+	width: 100%;
+	max-width: 349px;
+	margin-right: 0;
+	position: relative;
+	margin-bottom: 0;
+}
+
+.area-icon img {
+	position: absolute;
+	top: 14px;
+	left: 16px;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+}
+
+.arrow-f-icon img {
+	width: 14px;
+	height: 14px;
+	top: 17px;
+	right: 16px;
+	position: absolute;
+	z-index: 100;
+}
+
+.form-col {
+	max-width: 330px;
+	width: 100%;
+}
+
+.input-focus {
+	max-width: 100%;
+	padding: 0 44px 0 44px;
+	line-height: 48px !important;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #FFF;
+	margin: auto;
+	width: 100% !important;
+	height: 48px;
+	position: relative;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.label-focus {
+	position: absolute;
+	left: 44px;
+	top: 14px;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 100ms;
+	transform-origin: center;
+	font-weight: 400;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+input.input-focus:focus {
+	outline: unset;
+}
+
+input.input-focus:focus,
+input.input-focus:not(:placeholder-shown) {
+	padding-bottom: 0 !important;
+	padding-top: 10px !important;
+}
+
+input.input-focus:focus+label,
+input.input-focus:not(:placeholder-shown)+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+select.select-focus::not([value=""]):valid~label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+select.select-focus:focus+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+input.input-focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus::-moz-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus::placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+.form-col .form-group{ position: relative; margin: 0;}
+.form-col .form-control {
+	max-width: 100%;
+    line-height: 48px !important;
+    border-radius: 52px !important;
+    padding: 0 44px 0px 44px;
+    border: 1px solid #291622;
+    background: #FFF;
+    margin: auto;
+    width: 100% !important;
+    height: 48px;
+    position: relative;
+    color: #291622;
+    font-family: var(--Manrope);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+	appearance: none;
+    line-height: normal;
+	display: block;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+}
+select.form-control{ transition: 0.15s;  }
+
+.floating-label {
+	font-size: 16px;
+    font-weight: 400;
+    color: #475F7B;
+    opacity: 1;
+    top: 0px;
+    left: 44px ;
+    pointer-events: none;
+    position: absolute;
+    transition: 240ms;
+    margin-bottom: 0;
+    z-index: 1;
+}
+.floating-diff .floating-label{ opacity: 0; }
+.floating-diff.focused .floating-label{ opacity: 1;}
+.form-group.focused .floating-label { opacity: 1; color: #7b7f82; top: 0px; left: 44px; font-size: 12px;}
+.form-group.focused select.form-control{ padding-top: 5px;}
+.float-checkradio{ background-color: #FFF; border: 1px solid #DFE3E7; border-radius: .267rem; padding: 8px 19px; transition: 0.3s; min-height: 55px;}
+.float-checkradio.focused{ padding-top: 21px;}
+
+
+.form-btn button {
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #F3DCA0;
+	padding: 0 24px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	height: 48px
+}
+
+/* banner section css end */
+
+/*Legal Guides section css start */
+.lg-section-wapper {
+	background: #FFF6ED;
+	padding: 200px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lg-section-wapper:before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.lg-section-wapper::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 138px;
+	border: 2px solid #291622;
+	background: #F8EBDF;
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.lg-sect-title {
+	padding-top: 120px;
+}
+.lg-sect-title h2 {
+	position: relative;
+	color: #291622;
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+	margin: 0;
+	display: inline-block;
+}
+.lg-sect-title h2 span {
+	position: relative;
+	z-index: 100
+}
+.lg-sect-title h2:before {
+	content: '';
+	width: 158px;
+	height: 20px;
+	position: absolute;
+	right: -3px;
+	bottom: 4px;
+	background-color: #fff;
+	z-index: -0;
+}
+.legal-guides-wapper {
+	position: relative;
+	padding-top: 40px;
+}
+.legal-guides-wapper {
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+	row-gap: 24px;
+	flex-flow: row wrap;
+}
+.legal-card h3 {
+	font-size: 0;
+	line-height: normal;
+	margin: 0;
+}
+.legal-card h3 a {
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	padding-bottom: 8px;
+}
+.legal-card p {
+	margin: 0;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.legal-research-card-wapper {
+	padding-top: 0px;
+}
+.legal-research-card-wapper .lg-sect-title h2:before {
+	width: 281px;
+}
+
+.legal-guides-btn-card, .legal-research-btn-card { display: none; }
+
+/*Legal Guides section css end */
+
+/* Find Personal Lawyer by State section css start */
+.personal-lawyer-wapper {
+	background: #F8EBDF;
+	padding: 200px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.personal-lawyer-wapper:before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.personal-lawyer-wapper::after {
+	content: '';
+	position: absolute;
+	right: -112px;
+	top: 138px;
+	background: #291622;
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.pl-top-shape {
+	position: relative;
+	background: #291622;
+	z-index: 0;
+	padding: 100px 0;
+	width: 100%;
+	-webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	z-index: 100;
+}
+.plb-title {
+	max-width: 647px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+.plb-title h2 {
+	color: #FFF;
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+	text-align: center;
+	margin: 0;
+	position: relative;
+	display: inline-block;
+}
+.plb-title h2 span {
+	position: relative;
+	z-index: 100
+}
+.plb-title h2:before {
+	content: '';
+	width: 178px;
+	height: 20px;
+	position: absolute;
+	right: -3px;
+	bottom: 4px;
+	background: #532E45;
+	z-index: -1;
+}
+.state-list-wapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	border-radius: 4px;
+	background: #35202D;
+	padding: 24px;
+	flex-wrap: wrap;
+}
+.state-list-wapper ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.state-list-wapper ul li { list-style-type: none; }
+.state-list-wapper ul li a {
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+/* Find Personal Lawyer by State section css end */
+
+@media (max-width:1400px) {
+	/*Legal Guides section css start */
+	.lg-section-wapper::after { right: -121px; width: 120%; }
+	/*Legal Guides section css End*/
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after { width: 120%; }
+	/* Find Personal Lawyer by State section css End */ 
+}
+
+@media(max-width:1199px) {
+	/*Legal Guides section css start */
+	.lg-section-wapper::after { content: ''; width: 123%; right: -120px; }
+	/*Legal Guides section cssEnd */
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after { width: 122%; }
+	.personal-lawyer-map svg { max-width:100%;  }
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:991px) {
+	/*Legal Guides section css  */
+	.lg-section-wapper:before { top: 78px; left: -114px; }
+	.lg-section-wapper::after { width: 200%; right: -149px; z-index: -1; }
+	.lg-sect-title h2 { font-size: 46px; }
+	.legal-col { display:none; }
+	.legal-guides-btn-card, .legal-research-btn-card  { display:block; margin-top:24px; }
+	.legal-guides-btn-card a, .legal-research-btn-card a {
+		border-radius: 52px;
+		border: 1px solid #291622;
+		background: #F3DCA0;
+		width: 100%;
+		max-width: 335px;
+		height: 48px;
+		margin: auto;
+		color: #291622;
+		font-family: var(--Manrope);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 48px;
+		text-align: center;
+		display: block;
+	}
+	.form-col { max-width: 275px;}
+	/*Legal Guides section css End */
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after { width: 125%; }
+	.pl-top-shape { padding: 77px 0  0 0; }
+	.state-list-wapper { gap:30px; }
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:767px) {
+	/*Legal Guides section css start */
+	.lg-section-wapper { padding:100px 0 60px; }
+	.lg-section-wapper::after { width: 248%; right: -254px; z-index: -1; }
+	.lg-section-wapper:before { top: 108px; left: -173px; }
+	.lg-sect-title { padding-top: 72px; }
+	.lg-sect-title h2 { width: 100%; width: 307px; font-size: 36px; letter-spacing: -0.36px; }
+	.lg-sect-title h2:before { width: 116px !important; height: 20px; left: 100px; }
+	.legal-guides-wapper { padding-top: 24px; }
+	.legal-research-card-wapper .lg-sect-title h2:before { width: 208px !important; left: 68px; }
+	/*Legal Guides section css end */
+
+	/* banner section css start */
+	.banner-section-wapper { position: relative; padding: 48px 0 24px; }
+	.banner-title { padding-bottom: 24px; }
+	.banner-title h1 { font-size: 48px; line-height: 110%; }
+	.banner-title h1:before { width: 178px; height: 20px; }
+	.form-btn {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		max-width: unset;
+	}
+	.form-btn button {
+		width: 100%;
+		max-width: 100%;
+		height: 48px;
+		padding: 12px 24px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	.form-wapper, .form-col { max-width:100%; }
+	.banner-new-input { max-width: 100%;}
+	/* banner section css End*/
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper { padding:100px 0 60px; }
+	.personal-lawyer-wapper::after { right: -129px; top: 128px; width: 173%; }
+	.plb-title h2 {
+		width: 100%;
+		max-width: 335px;
+		color: #FFF;
+		text-align: center;
+		font-family: Blacker Text;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.36px;
+	}
+	.plb-title h2:before { display: none; }
+	.state-list-wapper { display: flex; padding: 16px; column-gap: 16px; align-items: stretch; }
+	.state-list-wapper ul li { width: 114px; list-style-type: none; }
+	.state-list-wapper ul { display: flex; flex-direction: column; gap: 8px; }
+	/* Find Personal Lawyer by State section css start */
+
+}

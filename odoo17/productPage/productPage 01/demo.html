@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Initially hide full content */
+        .content {
+            display: none;
+        }
+
+        /* Initially show half content */
+        .pdp-center-right-sales h3:hover + .pdp-center-hover .content.half-content {
+            display: inline;
+        }
+
+        /* Show full content when clicked */
+        .pdp-center-right-sales h3.clicked + .pdp-center-hover .content.full-content {
+            display: inline;
+        }
+
+        .pdp-center-right-sales-main { width: 40%;}
+    </style>
+</head>
+<body>
+    <div class="pdp-center-right-sales-main">
+        <div class="pdp-center-right-sales">
+            <h3 class="hover-trigger">Sales Description</h3>
+            <div class="pdp-center-hover">
+                <p class="content half-content">A light and contemporary spirit defines the Hope dining table: a simple yet refined style. A taste for design details, guided by the</p>
+                <p class="content full-content">A light and contemporary spirit defines the Hope dining table: a simple yet refined style. A taste for design details, guided by the obliquity of the solid wooden legs, each divided into two sections, and by the continuity between structure and top, available in both wood and glass. “Lightness and elegant dynamism”, the characteristics that the architect and creator Cesare Arosio wanted to transform into a unique and elegant product, able to stand out among the different furnishing elements with class and personality.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const hoverTrigger = document.querySelector('.hover-trigger');
+
+            hoverTrigger.addEventListener('click', function() {
+                this.classList.add('clicked');
+                const content = this.nextElementSibling.querySelector('.content');
+            });
+        });
+    </script>
+
+     
+</body>
+</html>

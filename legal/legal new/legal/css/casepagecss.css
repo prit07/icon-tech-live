@@ -1,0 +1,646 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--Blacker_Text: 'Blacker Text';
+	--Manrope: 'Manrope', sans-serif;
+	--main_bg_1:#FFF6ED;
+	--sub_bg_2:#F8EBDF;
+	--sub_bg_3:#F3DCA0;
+	--sub_bg_4:#291622;
+	--sub_bg_5:#fff;
+
+
+    --sub-heading_4:#291622;
+    --sub-heading_5:#fff;
+
+	--text_color_4:#291622;
+	--text_ul_li_4:#291622;
+    --text_color_5:#fff;
+	--text_ul_li_5:#fff;
+	--text_color_6:#333;
+	--text_ul_li_footer_6:#333;
+
+
+	--border_color_4:#291622;
+
+
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+/* top link section start */
+
+.top-link-section {
+	background:var(--main_bg_1);
+	padding: 32px 0 24px 0;
+}
+
+.top-link-section ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.top-link-section ul li {
+	list-style-type: none;
+}
+
+.top-link-section ul li a {
+	color: var(--text_ul_li_4);
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+
+.top-link-section ul li.active a {
+	text-decoration-line: none;
+}
+
+/* top link section end */
+
+/* state of oregon section start */
+.state-of-oregon-section {
+	padding: 0 0 32px 0;
+	background:var(--main_bg_1);
+}
+
+.state-of-oregon-left-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.state-of-oregon-left-wapper p {
+	color: var(--text_color_6);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}
+
+.state-of-oregon-left-wapper h6 {
+	color: var(--text_color_4);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	margin: 0;
+}
+
+.state-of-oregon-left-wapper ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.state-of-oregon-left-wapper ul li {
+	list-style: none;
+}
+
+.state-of-oregon-top {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.state-of-oregon-top h2 {
+	color: var(--sub-heading_4);
+	font-family: var(--Blacker_Text);
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.34px;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+.state-of-oregon-top h5 {
+	color: var(--text_color_6);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}
+
+.state-of-oregon-top p {
+	font-size: 14px;
+	line-height: 20px;
+	opacity: 0.5;
+}
+
+/* left */
+
+
+
+
+
+
+/* right */
+
+.oregon-supreme-right-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.oregon-supreme-right-wapper .adv-wapper {
+	width: 100%;
+	height: 349px;
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_5);
+	color: #000;
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper {
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_2);
+	padding: 32px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper h5 {
+	color: var(--sub-heading_4);
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.22px;
+	margin: 0;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper p {
+	color: var(--text_color_6);
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group {
+	margin: 0;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group input {
+	width: 100%;
+	height: 48px;
+	padding: 8px 16px;
+	border-radius: 52px;
+	border: 1px solid var(--border_color_4);
+	background: var(--sub_bg_5);
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group input:focus {
+	box-shadow: none;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn {
+	display: flex;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn a {
+	border-radius: 52px;
+	border: 1px solid var(--border_color_4	);
+	background: var(--sub_bg_3);
+	width: 100%;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--text_color_4);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn a img {
+	margin-right: 6px;
+}
+
+/* state of oregon section end */
+
+
+
+
+
+
+/* Find Personal Lawyer by State section css start */
+.personal-lawyer-wapper {
+	background:var(--main_bg_1);
+	padding: 200px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.personal-lawyer-wapper:before {
+	content: '';
+	border: 2px solid var(--border_color_4);
+	background: var(--sub_bg_3);
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -120px;
+	z-index: -2;
+	height: 100%;
+}
+
+.personal-lawyer-wapper::after {
+	content: '';
+	position: absolute;
+	right: -160px;
+	top: 155px;
+	background: var(--sub_bg_4);
+	width: 120%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+
+.pl-top-shape {
+	position: relative;
+	background: var(--sub_bg_4);
+	z-index: 0;
+	padding: 110px 0;
+	width: 100%;
+	-webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	z-index: 100;
+}
+
+.pl-top-shape .container {
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+
+.plb-title {
+	max-width: 647px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 32px;
+}
+
+.plb-title h2 {
+	color: var(--sub-heading_5);
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.plb-title h2 span {
+	position: relative;
+	z-index: 1;
+}
+
+.plb-title h2 span::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #532E45;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text {
+	border-radius: 4px;
+	background: #35202D;
+	padding: 24px;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	min-height: 223px;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	list-style: none;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+	color: var(--text_ul_li_5);
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 40px;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.plb-wapper-bottom .plb-title {
+	padding-bottom: 40px;
+}
+
+.plb-wapper-bottom .plb-title h2 {
+	text-align: center;
+}
+
+.state-list-wapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	border-radius: 4px;
+	background: #35202D;
+	padding: 24px;
+	flex-wrap: wrap;
+}
+
+.state-list-wapper ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.state-list-wapper ul li {
+	list-style-type: none;
+}
+
+.state-list-wapper ul li a {
+	color: var(--text_ul_li_5);
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+/* Find Personal Lawyer by State section css end */
+
+
+
+
+
+
+
+@media(max-width:1399px) {
+
+	/* state of oregon section start */
+	/* right */
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	/* state of oregon section end */
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 123%;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+		font-size: 15px;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:1199px) {
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 128%;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+
+	/* state of oregon section start */
+	/* right */
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper h5 {
+		font-size: 17px;
+		line-height: 23px;
+	}
+
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper p {
+		font-size: 11px;
+		line-height: 19px;
+	}
+
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper {
+		padding: 25px 10px;
+		gap: 14px;
+	}
+
+	.oregon-supreme-right-wapper .adv-wapper {
+		height: 250px;
+	}
+
+	/* state of oregon section end */
+
+	/* Find Personal Lawyer by State section css start */
+	.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+		font-size: 12px;
+		line-height: 30px;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text {
+		min-height: 183px;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+
+}
+
+@media(max-width:991px) {
+
+
+	/* state of oregon section start  */
+
+	.state-of-oregon-section .row {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	/* state of oregon section end  */
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 135%;
+	}
+
+	.pl-top-shape {
+		padding: 85px 0 0 0;
+	}
+
+	.state-list-wapper {
+		gap: 30px;
+	}
+
+	.us-primary-wapper-top .row {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.pl-top-shape .container {
+		gap: 30px;
+	}
+
+	.plb-title {
+		max-width: 100%;
+	}
+
+	.plb-wapper-bottom .plb-title h2 {
+		text-align: left;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:767px) {
+
+	/*  top link section start  */
+	.top-link-section {
+		padding: 24px 0;
+	}
+
+	.top-link-section ul {
+		column-gap: 16px;
+		flex-wrap: wrap;
+	}
+
+	/*  top link section end */
+	/* state of oregon section start  */
+	.state-of-oregon-left-wapper {
+		gap: 20px;
+	}
+
+	/* state of oregon section end  */
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper {
+		padding: 100px 0 60px;
+	}
+
+	.personal-lawyer-wapper::after {
+		right: -163px;
+		top: 128px;
+		width: 188%;
+	}
+
+	.personal-lawyer-wapper:before {
+		left: -124px;
+	}
+
+	.plb-title h2 {
+		width: 100%;
+		max-width: 335px;
+		color: var(--sub-heading_5);
+		text-align: center;
+		font-family: var(--Blacker_Text);
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.36px;
+	}
+
+	.plb-title h2:before {
+		display: none;
+	}
+
+	.state-list-wapper {
+		display: flex;
+		padding: 16px;
+		column-gap: 16px;
+		align-items: stretch;
+	}
+
+	.state-list-wapper ul li {
+		width: 114px;
+		list-style-type: none;
+	}
+
+	.state-list-wapper ul {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.pl-top-shape {
+		padding: 130px 0 0 0;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text {
+		gap: 10px;
+		min-height: auto;
+		flex-wrap: wrap;
+	}
+
+	/* Find Personal Lawyer by State section css start */
+
+}
+
+
+@media(max-width:420px) {}

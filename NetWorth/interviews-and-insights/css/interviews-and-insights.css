@@ -1,0 +1,660 @@
+body { margin: 0; padding: 0; }
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+/* interviews and insights Template Start */
+
+.iai-best-article { padding: 64px 0 93px 0;}
+/* breadcrumbs css start */
+.iai-best-article-top { margin-bottom: 24px;}
+.iai-best-article-top ul{ display: flex; gap: 5px; }
+.iai-best-article-top>ul>li>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.iai-best-article-top>ul>li>a>span {
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* breadcrumbs css end */
+
+.tba-wapper-left { display: flex; flex-direction: column; gap: 40px;}
+.iai-ba-row { display:flex; flex-direction:row;justify-content:space-between; gap:20px; }
+.iai-left-col { max-width: 845px; width: 100%; }
+.iai-right-col { max-width:302px; width:100%; }
+
+/* 1 section css start */
+.iai-top-title-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.iai-card-wapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.iai-t-card-link {
+    display: inline-block;
+    padding: 6px 8px;
+    border: 1px solid #DFAB3E;
+    color: #3836CB;
+    font-family: var(--golos-text);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
+}
+.iai-bottom-ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+.iai-bottom-ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.iai-bottom-ul li i {
+    font-size: 6px;
+    color: #3836CB;
+    line-height: normal;
+    display: block;
+}
+.iai-bottom-ul li a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.iai-top-title-card h1 {
+    color: #000;
+    font-family: var(--onest-text);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -0.4px;
+    margin: 0;
+}
+.iai-top-title-card p {
+    margin: 0;
+    color: #000;
+    font-family: var(--onest-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+.interviews-q-wapper h2{
+    margin: 0;
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+.interviews-q-wapper p {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+}
+.interviews-q-wapper blockquote {
+    border-left: 3px solid #3836CB;
+    padding-left: 20px;
+    margin: 0;
+}
+.interviews-text { padding-top:16px; padding-bottom:32px; }
+.interviews-text p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+}
+/* 1 section css end */
+
+/* comments section css start */
+.comments-wapper {
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.comments-wapper h5 {
+    color: #181716;
+    font-family: var(--DM-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.comments-wapper .comments-card-wapper {
+    display: flex;
+    gap: 16px;
+}
+.comments-wapper .comments-card-wapper .comments-card-img h4{
+    display: none;
+}
+.comments-wapper .comments-card-wapper .comments-card-img img {
+    width: 48px;
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner-input {
+    width: 100%;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner-input form .form-group{
+    margin: 0;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner-input form input {
+    width: 100%;
+    height: 54px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    box-shadow: none;
+    padding: 16px;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner-input form input::placeholder {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner {
+    max-width: 708px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner h4 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner ul li {
+    display: flex;
+    align-items: center;
+    font-size: 2px;
+    color: #000;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner ul li span {
+    color: rgba(0, 0, 0, 0.50);
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+}
+.comments-wapper .comments-card-wapper .comments-card-inner ul li a {
+    color: #3836CB;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+}
+/* comments section css end */
+
+/* Articles with this term css start */
+.iai-articles { padding-top:64px; }
+.iai-articles { display: flex; flex-direction: column; gap: 20px;}
+.iai-articles h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: -0.24px;
+}
+.iai-articles-wapper { display: flex;  flex-direction: row; gap: 24px;}
+.iai-articles-wapper-img{ max-width:218px; height:140px; width:100% }
+.iai-articles-wapper-img img { width:100%; height:100%; object-fit:cover; max-width:unset; }
+.iai-articles-wapper-items { max-width:75%; width:100%; }
+.iai-articles-wapper-items-top>h3{ line-height: 0; margin-bottom: 12px;}
+.iai-articles-wapper-items-top>h3>a{
+    color: #181716;
+    font-family: var(--dm-sans-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.18px;
+}
+.iai-articles-wapper-items-top p {
+    color: #181716;
+    font-family:var(--dm-sans-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.iai-best-trading-center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.iai-best-trading-center ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 8px;
+}
+.iai-best-trading-center ul li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    max-width: unset;
+}
+.iai-best-trading-center ul li i { font-size: 8px; color: #678EC9; }
+.iai-best-trading-center ul li a{
+    color: #181716;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Articles with this term css end */
+
+/* right side css start */
+.iai-wapper-right { display: flex; flex-direction: column; gap: 40px;}
+.iai-subscribe-btn>a {
+    width: 100%;
+    display: flex;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.iai-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.iai-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.iai-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+.iai-share h3{
+    color: rgba(24, 23, 22, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.iai-share-icon ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.iai-share-icon>ul>li>a>i {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* written css start */
+.written-by-wapper {
+   border-radius: 4px;
+   background: #F1F1F1;
+   display: flex;
+   padding: 24px 16px;
+   flex-direction: column;
+   align-items: center;
+   align-self: stretch;
+   position: relative;
+   gap: 12px;
+}
+.written-by-wapper h4{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.written-by-img { position: relative; }
+.written-by-img img {
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    max-width: unset;
+    position: relative;
+}
+.writter-social-link {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-color: #000;
+    border-radius: 100%;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+}
+.writter-social-link:hover{ color:#fff; }
+.written-by-text h3 {
+    margin: 0;
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+.written-by-text p {
+    color: #000;
+    text-align: center;
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    margin: 0;
+}
+/* written css end */
+
+/* related-net-worth-profiles css start */
+.iai-net-worth-profiles-wapper h6 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 16px;
+}
+.iai-net-worth-profiles-wapper ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+}
+.iai-net-worth-profiles-wapper ul li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 6px 16px;
+    background: #FFF;
+    border-left: 0px solid #FFFF;
+    cursor: pointer;
+}
+.iai-net-p-img{ position:relative; }
+.iai-net-worth-profiles-wapper ul li .iai-net-p-img span {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    position: absolute;
+    border-bottom: 0;
+    right:6px;
+    top: 0;
+    color: #000;
+    text-align: center;
+    font-family: var(--DM-text);
+    font-size: 8.437px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 11.25px;
+    letter-spacing: 0.084px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.iai-net-worth-profiles-wapper ul li .iai-net-p-img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 2.727px solid transparent;
+    position: relative;
+}
+.iai-net-worth-profiles-wapper ul li h6 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    padding: 0;
+    margin: 0;
+}
+.iai-net-worth-profiles-wapper ul li h5 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    margin: 0 0 0 auto;
+}
+.iai-net-worth-profiles-wapper ul li:hover {
+    background: #F2F2F2;
+    border-left: 4px solid #3836CB;
+}
+.iai-net-worth-profiles-wapper ul li:hover span {
+    background: #3836CB;
+    color: #FFF;
+}
+.iai-net-worth-profiles-wapper ul li:hover img {
+    border: 2.727px solid #3836CB;
+}
+.iai-net-worth-profiles-wapper ul li:hover h5 {
+    font-weight: 700;
+}
+/* related-net-worth-profiles css end */
+
+/* related-interviews css start */
+.iai-related-interviews h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding-bottom: 24px;
+}
+.iai-related-interviews-card ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.iai-related-interviews-card ul li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    gap: 16px;
+}
+.iai-related-interviews-card ul li .iai-ri-img {
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    border-radius: 100%;
+}
+.iai-related-interviews-card ul li .iai-ri-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.iai-related-interviews-card ul li h4 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+/* related-interviews css end */
+
+/* right side css end */
+
+/* interviews and insights Template End */
+
+@media(max-width:991px){
+    .iai-ba-row { flex-direction:column; }
+}
+@media(max-width:767px){
+    .iai-best-article { padding:40px 0; }
+    .iai-ba-row { flex-direction:column; gap:64px; }
+    .iai-left-col { max-width: 100%; width: 100%; }
+    .iai-right-col { max-width:100%; width:100%; }
+
+    .iai-top-title-card { gap:24px; }
+    .iai-top-title-card h1 { font-size: 32px; line-height:38px; }
+    .interviews-q-wapper h2 { padding-top:24px; font-size: 22px; line-height:24px; }
+
+    /* comment css start */
+    .comments-wapper .comments-card-wapper { flex-direction: column; gap:10px; }
+    .comments-wapper .comments-card-wapper .comments-card-inner h4 { display:none; }
+    .comments-card-img { display:flex; flex-direction:row; gap:16px; align-items:center; }
+    .comments-card-img h4 {
+        display: block;
+        color: #000;
+        font-family: var(--golos-text);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.16px;
+        margin: 0;
+    }
+    .comments-wapper .comments-card-wapper .comments-card-img h4 { display:block; }
+    /* comment css end */
+
+    /* Articles with this term css start */
+    .iai-articles-wapper { flex-direction:column; }
+    .iai-articles-wapper-img  { max-width:100%; height:220px; }
+    .iai-articles-wapper-items { max-width:100%; }
+    /* Articles with this term css end */
+}

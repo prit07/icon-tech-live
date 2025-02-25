@@ -1,0 +1,124 @@
+body { margin: 0; padding: 0; box-sizing: border-box; background-color: #F9F9F9;; }
+
+/*  Responsible Betting Page End */
+
+.responsible-betting-page-bg { 
+    background: #D9D9D9;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsible-betting-row { display: flex; gap: 64px; padding: 43px 0;}
+.responsible-betting-col-left { width: 100%; max-width: 300px; }
+.responsible-betting-col-right { width: 100%; max-width: 850px; }
+
+
+
+.responsible-betting-tabing { position: sticky ; top: 0; background: #DADADA; padding: 15px 20px; border-radius: 8px;}
+.responsible-betting-tabing h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 18px;
+}
+.sidebar-ul { list-style: none; margin: 0; padding-left: 20px;   counter-reset: item;}
+.sidebar-ul li { margin-bottom: 8px;  position: relative;   counter-increment: item;}
+.sidebar-ul li::before{
+	content:counter(item);;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	position: absolute;
+	left: -15px;
+	top: 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #270719CC;
+ }
+.sidebar-ul li a{ 
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #270719CC;
+}
+.sidebar-ul li.active a { font-weight: 800;}
+.sidebar-ul li.active::before {font-weight: 800;}
+
+
+.responsible-betting-item h1 {
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 23px;
+    color: #000000;
+}
+
+.responsible-betting-item p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #00000080;
+    margin: 0;
+    padding-bottom: 39px;
+}
+
+.responsible-betting-item h2 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    text-align: left;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+
+/*  Responsible Betting Page End */
+
+
+@media(min-width:1200px){
+	.container.w-1196 { max-width:1196px!important; }
+}
+
+
+@media(max-width:991px){
+    .responsible-betting-row { flex-direction: column;}
+}
+
+@media(max-width:600px) {
+    
+    .responsible-betting-col-left { max-width: 100%;}
+    .responsible-betting-row { gap: 30px;}
+    .responsible-betting-item h1 { font-size: 34px; line-height: 40.6px;}
+    .responsible-betting-item p { font-size: 16px; line-height: 25.8px; padding-bottom: 20px;}
+    .responsible-betting-item h2 { font-size: 24px; line-height: 30.31px;}
+    
+}
+
+
+
+
+@media (max-width: 1600px) {
+    .comprar-como-btn-wapper .iniciar-btn button {
+        font-size: 11px !important;
+    }
+}
+
+.comprar-como-btn-wapper .iniciar-btn { max-width: 160px !important; width: 100% !important; }

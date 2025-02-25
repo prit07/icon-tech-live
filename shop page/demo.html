@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shop-page.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <style>
+        .filter-sub-cate-card-content {
+            display: none;
+        }
+        .filter-sub-cate-card-content.protein-cart-block {
+            display: block;
+        }
+        .filter-sub-cate-card-item.active .filter-sub-cate-card-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter-sub-cate-card-item">
+        <div class="filter-sub-cate-card">
+            <input type="checkbox" name="cfilter" class="form-check-input">
+            <a href="#">Dining Chairs</a>
+        </div>
+        <div class="filter-sub-cate-card-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos fuga animi cupiditate
+                doloremque, quos unde molestias reiciendis eum iure optio nesciunt dolor in maiores voluptas adipisci id
+                numquam sit?</p>
+        </div>
+    </div>
+    <div class="filter-sub-cate-card-item">
+        <div class="filter-sub-cate-card">
+            <input type="checkbox" name="cfilter" class="form-check-input">
+            <a href="#">Dining Chairs</a>
+        </div>
+        <div class="filter-sub-cate-card-content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eos fuga animi cupiditate
+                doloremque, quos unde molestias reiciendis eum iure optio nesciunt dolor in maiores voluptas adipisci id
+                numquam sit?</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.filter-sub-cate-card-item .filter-sub-cate-card a').click(function (e) {
+                e.preventDefault(); 
+
+                var $item = $(this).closest('.filter-sub-cate-card-item');
+                var cart = $item.find('.filter-sub-cate-card-content');
+
+                if ($item.hasClass('active')) {
+                    // If the clicked item is already active, just toggle the content
+                    $item.removeClass('active');
+                    $('.filter-sub-cate-card-content').removeClass('protein-cart-block');
+                } else {
+                    
+                    // Hide content of all items and remove active class from all items
+                    $('.filter-sub-cate-card-item').removeClass('active');
+                    $('.filter-sub-cate-card-content').removeClass('protein-cart-block');
+
+                    // Show the content of the clicked item and add the active class
+                    cart.addClass('protein-cart-block');
+                    $item.addClass('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

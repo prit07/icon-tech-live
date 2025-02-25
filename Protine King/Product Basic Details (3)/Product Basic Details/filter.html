@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .filter-sidebar_content {
+            position: relative;
+            width: 100% !important;
+            max-width: 400px !important;
+        }
+
+        .filter-sidebar_content ul li select  { display: none;}
+        .select-selected-filter:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #000000 transparent transparent transparent;
+        }
+        .select-selected-filter.select-arrow-active-filter:after { border-color: transparent transparent #000000 transparent; top: 7px;}
+        .select-selected-filter {
+            background: #fff;
+            border-radius: 5px;
+            position: relative;
+            padding: 8px 15px;
+            cursor: pointer;
+            border: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.1px;
+            text-align: left;
+            color: #000;
+            margin-top: 0;
+            display: block;
+            text-decoration: none;
+        }
+        .select-items-filter {
+            width: 100%;
+            max-width: 100%;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px #5D5A5A;
+        }
+        .select-items-filter div {
+            padding: 3px 10px 3px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.1px;
+            text-align: left;
+            display: block;
+            text-decoration: none;
+        }
+        .select-items-filter {
+            position: relative;
+            top: 0;
+            left: 0px;
+            right: 0;
+            z-index: 99;
+            margin-bottom: 10px;
+        }
+        .select-hide-filter { display: none; }
+        .select-items-filter div:hover { color: #fff; background-color: rgba(0, 0, 0, 1); }
+        .select-items-filter div:hover:first-child { border-radius: 5px 5px 0 0; }
+        .select-items-filter div:hover:last-child {  border-radius: 0 0 5px 5px;}
+    
+        .select-container-filter { position: relative; width: 100%;}
+
+        /* add css */
+    </style>
+</head>
+
+<body>
+
+    <div class="filter-sidebar_content" style="display: block;">
+        <ul>
+            <li>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" class="itpl-search-filter-value">
+            </li>
+                
+                
+                <li data-search-filter="with dovetail">
+                    <input type="checkbox" name="attrib" class="form-check-input" id="40-2909" value="40-2909">
+                    <label for="40-2909">With Dovetail</label>
+                </li>
+                
+                
+                <li data-search-filter="without devetail">
+                    <input type="checkbox" name="attrib" class="form-check-input" id="40-2910" value="40-2910">
+                    <label for="40-2910">Without Devetail</label>
+                </li>
+        </ul>
+    </div>
+    <div class="filter-sidebar_content" style="display: block;">
+        <ul>
+            <li>
+                <select class="form-select css_attribute_select mb-2" name="attrib" data-gtm-form-interact-field-id="0">
+                    <option value="37-2876" data-value_id="8283" data-atr_id="36">-</option>
+                    <option value="37-2876" data-value_id="8283" data-atr_id="36" >Japanese Ash</option>
+                    <option value="3df7-2876" data-value_id="8283" data-atr_id="36" >Japanese Oak</option>
+                    <option value="37-2876" data-value_id="8283" data-atr_id="36" >Walnut</option>
+                    <option value="37s-2876" data-value_id="8283" data-atr_id="36">Maple</option>
+                    <option value="37-2876" data-value_id="8283" data-atr_id="36">MDF</option>
+
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+ $(document).ready(function () {
+    // Only target filter-sidebar_content that contains a select element
+    $(".filter-sidebar_content").has("select").each(function () {
+        var $this = $(this),
+            $select = $this.find("select"),
+            // Create the selected element
+            $selected = $("<div></div>")
+                .addClass("select-selected-filter")
+                .html($select.find("option:selected").html()),
+            // Create the items element
+            $items = $("<div></div>")
+                .addClass("select-items-filter select-hide-filter");
+
+        // Create the dropdown items
+        $select.find("option").each(function (i) {
+            var $option = $(this);
+            var $item = $("<div></div>").html($option.html()).attr('data-value_id', $option.data('value_id')).attr('data-atr_id', $option.data('atr_id')) .attr('value', $option.attr('value')).on("click", function () {
+                var $clicked = $(this),
+                    index = $clicked.index(); // Adjust index to account for all options
+                var atr_id = $clicked.attr('data-atr_id'); // Capture the data-atr_id
+                var value_id = $clicked.attr('data-value_id'); // Capture the data-value_id
+                var value = $clicked.attr('value'); // Capture the value attribute
+
+                // Update the select element's selectedIndex
+                $select.prop("selectedIndex", index);
+
+                // Update the selected attribute on the select options
+                $select.find("option").removeAttr("selected");
+                $select.find("option").eq(index).attr("selected", "selected");
+
+                // Update the custom dropdown's displayed selected value and data-atr_id
+                $selected.html($clicked.html());
+
+                // Manage the same-as-selected class
+                $clicked.addClass("same-as-selected").siblings().removeClass("same-as-selected");
+
+                // Close the dropdown
+                $selected.click();
+            });
+
+            // Add same-as-selected class if the option is selected initially
+            if ($option.is(":selected")) {
+                $item.addClass("same-as-selected");
+            }
+
+            $items.append($item);
+        });
+
+        // Create a container div for selected and items
+        var $container = $("<div></div>")
+            .addClass("select-container-filter")
+            .append($selected)
+            .append($items);
+
+        // Append the container div to the main content
+        $this.append($container);
+        $selected.on("click", function (e) {
+            e.stopPropagation();
+            $(".select-items-filter").not($items).addClass("select-hide-filter");
+            $(".select-selected-filter").not($selected).removeClass("select-arrow-active-filter");
+            $items.toggleClass("select-hide-filter");
+            $selected.toggleClass("select-arrow-active-filter");
+        });
+    });
+
+    $(document).on("click", function () {
+        $(".select-items-filter").addClass("select-hide-filter");
+        $(".select-selected-filter").removeClass("select-arrow-active-filter");
+    });
+});
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function switchRadioSelection() {
+            var radio1 = document.getElementById("tmcp_choice_1_0_10668e1af35ffe7");
+            var radio2 = document.getElementById("tmcp_choice_1_1_11668e1af360129");
+            
+            if (radio1.checked) {
+                radio1.checked = false;
+                radio2.checked = true;
+            } else if (radio2.checked) {
+                radio2.checked = false;
+                radio1.checked = true;
+            } else {
+                // If neither is checked, check the first one by default
+                radio1.checked = true;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <ul class="tmcp-ul-wrap tmcp-elements tm-extra-product-options-radio conditional-data-ul fullwidth-ul tm-element-ul-radio element_1 tc-list-container">
+        <li class="tmcp-field-wrap tm-per-row tc-mode-normal">
+            <div class="tmcp-field-wrap-inner">
+                <div class="tc-col tc-field-label-wrap">
+                    <label class="tc-col tm-epo-field-label fullwidth" for="tmcp_choice_1_0_10668e1af35ffe7">
+                        <span class="tc-label-wrap"><span class="tc-input-wrap tc-epo-style-space"><input type="radio"
+                                    id="tmcp_choice_1_0_10668e1af35ffe7" name="tmcp_radio_1"
+                                    class="tmcp-field conditional-data tm-epo-field tmcp-radio tcenabled" data-price=""
+                                    value="Si_0"></span><span class="tc-col tc-label tm-label"><span
+                                    class="tc-label-inner tcwidth tcwidth-100 no-desc"><span
+                                        class="tc-label-text">Si</span><span
+                                        class="tc-col-auto tc-epo-style-space tc-price-wrap">
+                                        <span class="price tc-price">
+                                            <span class="amount">0,00&nbsp;€</span>
+                                        </span>
+                                    </span>
+                                </span></span></span> </label>
+                </div>
+            </div>
+        </li>
+        <li class="tmcp-field-wrap tm-per-row tc-mode-normal tc-active">
+            <div class="tmcp-field-wrap-inner">
+                <div class="tc-col tc-field-label-wrap">
+                    <label class="tc-col tm-epo-field-label fullwidth" for="tmcp_choice_1_1_11668e1af360129">
+                        <span class="tc-label-wrap"><span class="tc-input-wrap tc-epo-style-space"><input type="radio"
+                                    id="tmcp_choice_1_1_11668e1af360129" name="tmcp_radio_1"
+                                    class="tmcp-field conditional-data tm-epo-field tmcp-radio tcenabled" data-price=""
+                                    value="No_1"></span><span class="tc-col tc-label tm-label"><span
+                                    class="tc-label-inner tcwidth tcwidth-100 no-desc"><span
+                                        class="tc-label-text">No</span><span
+                                        class="tc-col-auto tc-epo-style-space tc-price-wrap">
+                                        <span class="price tc-price">
+                                            <span class="amount">0,00&nbsp;€</span>
+                                        </span>
+                                    </span>
+                                </span></span></span> </label>
+                </div>
+            </div>

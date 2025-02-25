@@ -1,0 +1,120 @@
+body { margin: 0; padding: 0 ; box-sizing: border-box;}
+a:hover { text-decoration: none;}
+
+
+
+
+.best-bet-email-sing-up {display: flex; }
+.best-bet-email-sing-up-left {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.best-bet-email-sing-up-right { width: 100%; max-width: 50%;}
+
+
+
+.best-bet-email-sing-up-img img { width: 100%; height: 100vh; border-radius: 45px 0px 0px 45px;}
+
+
+
+
+
+
+.best-bet-email-sing-up-content { width: 100%; max-width: 470px; border-radius: 20px;  position: relative; z-index: 111;}
+.best-bet-email-sing-up-content-heding { padding-bottom: 38px;}
+.best-bet-email-sing-up-content-heding h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.best-bet-email-sing-up-content-heding p {
+    color:  #414252;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.72px;
+    margin: 0;
+}
+
+
+.best-bet-email-sing-up-content-form { display: flex; flex-direction: column; gap: 18px; margin-bottom: 33px;}
+.best-bet-email-sing-up-content-form-input { display: flex; flex-direction: column;}
+.best-bet-email-sing-up-content-form-input label {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.best-bet-email-sing-up-content-form-input input {
+    display: flex;
+    align-items: flex-start;
+    height: 60px;
+    padding: 10px 0px 10px 10px; 
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #D9D9D9;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.best-bet-email-sing-up-content-btn a{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid #321919;
+    background: #36114A;
+    height: 60px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media(max-width:600px) {
+    .best-bet-email-sing-up { flex-direction: column;}
+    .best-bet-email-sing-up-left { max-width: 100%; padding: 40px 30px;}
+    .best-bet-email-sing-up-right { max-width: 100%;}
+    .best-bet-email-sing-up-img img { width: 100%; height: auto; border-radius: 0;}
+
+    .best-bet-email-sing-up-content-heding { padding-bottom: 25px;}
+    .best-bet-email-sing-up-content-heding h2 { font-size: 26px;}
+    .best-bet-email-sing-up-content-heding p { font-size: 16px; line-height: 24px;}
+    .best-bet-email-sing-up-content-form-input input { height: 45px;}
+    .best-bet-email-sing-up-content-form { gap: 14px; margin-bottom: 25px;}
+    .best-bet-email-sing-up-content-btn a{ font-size: 16px; height: 45px;}
+
+}
+
+
+
+
+@media(min-width:1200px){
+	.container.w-1200 { max-width:1200!important; }
+}
+

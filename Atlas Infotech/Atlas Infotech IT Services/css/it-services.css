@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none !important;
+}
+
+/* Atlas Infotech IT Services Start */
+.it-services { background: #FFF; padding: 85px 0 70px 0;}
+.it-services-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 70px;
+    height: 100%;
+}
+.it-services-text { display: flex; flex-direction: column; gap: 32px; }
+.it-services-heading h2{ 
+    color: #8D5A5C;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0; }
+.it-services-heading h2 span {
+    position: relative;
+    z-index: 1;
+}    
+.it-services-heading h2 span::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    z-index: -1;
+}
+.it-services-heading-bt h3 {
+    margin: 0;
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.it-services-heading-bt p {
+    color: #000;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+} 
+
+
+
+.it-services-box-wapper {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    padding: 38px 35px;
+    border-bottom: 5px solid #C25700;
+    background: #FFF;
+    box-shadow: 0px 4px 25px 0px rgba(133, 34, 207, 0.30);
+ 
+}
+.it-services-box-img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-size: cover !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.it-services-box-img::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #59788E;
+    position: absolute;
+}
+.it-services-box-img img { position: relative; width: 70px; height: 70px;}
+
+.it-services-box-text h4 { text-align: center; }
+.it-services-box-text h4 a{
+    color: #59788E;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.it-services-box-text p {
+    color: #000;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+.it-services-box-arrow { display: flex; justify-content: center; position: relative; top: -21px; }
+.it-services-box-arrow a img{
+    padding: 15px;
+    border-radius: 50%;
+    background: #FFF;
+} 
+
+.it-services-box-main { display: flex; flex-direction: column; gap: 30px; }
+ 
+
+/* .it-services-box-main { display: flex; flex-direction: column; gap: 70px; } */
+
+
+/* Atlas Infotech IT Services End */
+
+
+
+@media (min-width:1300px) {
+    .w-1240 {
+        max-width: 1240px !important;
+        padding: 0;
+    }
+}
+
+
+@media(max-width:1199px) {
+    
+.it-services-box-wapper { width: 100%; max-width: 250px; }
+.it-services-box-img { width: 140px; height: 140px; }
+.it-services-box-img::before { width: 90px; height: 90px; }
+.it-services-box-img img { width: 50px; height: 50px;}
+.it-services-box-text h4 a { font-size: 20px;}
+.it-services-box-text p { font-size: 15px; line-height: 21px;}
+.it-services-heading-bt h3 {  font-size: 33px;}
+.it-services-left { gap: 50px;}
+.it-services-text { gap: 20px;}
+}
+
+
+@media(max-width:991px) {
+
+  .it-services { padding: 60px 0 30px 0;}
+  .it-services-box-main { display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap;}
+  .it-services-left { flex-direction: row; gap: 30px;   }
+  .it-services-box-wapper { width: 330px; max-width:unset; }
+  .it-services-text { gap: 20px; justify-content: center;}
+  .it-services-heading-bt h3 { font-size: 29px;}
+  .it-services-heading-bt p { font-size: 16px;}
+  
+
+
+}
+@media(max-width:767px) {
+    .it-services { padding: 45px 0 30px 0;}
+    .it-services-left {flex-wrap: wrap;}
+    .it-services-box-main { gap: 0px; }
+    .it-services-box-wapper { width: 100%; max-width:unset;  }
+}

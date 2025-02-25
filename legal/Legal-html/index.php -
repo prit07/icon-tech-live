@@ -1,0 +1,11 @@
+<?php
+$path    = __DIR__;
+$files = scandir($path);
+
+$i=1;
+foreach($files as $file){
+    if (is_file(__DIR__.'/'.$file) && $file != '..' &&  $file != "." && $file != "23-10-2023.zip" && $file != "index.php") {
+        echo $i.') <a href="https://mytestapp.org.in/Legal-html/'.$file.'" style="font-size: 22px;line-height: 30px;font-family: monospace;">'.$file.'</a><br>';
+        $i++;
+    }
+}

@@ -1,0 +1,109 @@
+body { margin: 0; padding: 0;  box-sizing: border-box;     background: linear-gradient(0deg, rgba(29, 97, 129, 0.50) 0%, rgba(29, 97, 129, 0.50) 100%), #000;}
+
+:root {
+    --font_1: 'IBM Plex Sans', sans-serif;
+    --font_2: 'Oswald', sans-serif;
+    --font_3: 'Poppins', sans-serif;
+}
+
+a:hover { text-decoration: none;}
+ul { margin: 0; padding: 0; list-style: none;}
+
+.cm-flag-dropdown { position: relative;}
+.cm-flag-dropdown__options--visible .cm-flag-dropdown__options {  animation: showit 0.35s forwards ease-out;}
+@keyframes showit {
+    0% { transform: scale(0);}
+    70% {transform: scale(1.05);}
+    80% {transform: scale(0.95);}
+    100% { transform: scale(1);}
+}
+.cm-input-serch {
+    width: 100%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid #fff;
+}
+.cm-input-serch input { border: 0; width: 100%;  background-color: transparent ; color: #fff;}
+.cm-input-serch i{ font-size: 13px; color: #ffffff !important;}
+.cm-input-serch input:focus-visible { outline: none;}
+.cm-flag-dropdown__skeleton {
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+    transition: box-shadow 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.cm-flag-dropdown__option { display: flex; align-items: center;}
+
+.cm-flag-dropdown__selected span {
+    color: rgba(255, 255, 255, 0.95);
+    font-family: var(--font_1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 5px;
+}
+.cm-flag-dropdown__option span {
+    color: #FFF !important;
+    font-family: var(--font_1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    padding-left: 8px;
+}
+.cm-flag-dropdown__arrow::before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: '\f078';
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    font-size: 10px;
+    color: rgba(251, 251, 251, 0.60);
+    text-align: center;
+    font-weight: 600;
+    transform: translateY(-50%);
+}
+
+.cm-flag-dropdown__options .cm-flag-dropdown__option {
+    padding: 6px 10px;
+    transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    cursor: pointer;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.cm-flag-dropdown__options {
+    position: absolute;
+    top: 100% !important;
+    width: 100%;
+    max-width: 260px;
+    padding: 20px;
+    left: 0px;
+    height: auto;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    border-radius: 8px;
+    background: #22272D;
+    box-shadow: 0px 4px 16px 0px rgba(9, 29, 39, 0.40);
+    z-index: 1000000;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    display: none; 
+}
+.cm-flag-dropdown:hover .cm-flag-dropdown__options {display: block; }
+.cm-flag-dropdown__option { padding: 6px 10px; cursor: pointer;}
+
+.cm-flag-dropdown__selected img {  width: 16px; height: 11px;}
+.cm-flag-dropdown__selected { display: flex; align-items: center; gap: 5px;}
+

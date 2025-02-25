@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Leicht.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-LeichtKursiv.otf');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Leicht.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-LeichtKursiv.otf');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Buch.otf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-BuchKursiv.otf');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Kräftig.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-KräftigKursiv.otf');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Dreiviertelfett.otf');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-DreiviertelfettKursiv.otf');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-Extrafett.otf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sohne';
+    src: url('TestSöhne-ExtraleichtKursiv.otf');
+    font-weight: 900;
+    font-style: italic;
+}
+

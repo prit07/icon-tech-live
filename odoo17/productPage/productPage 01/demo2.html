@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pdp-center-hover {   display: none;}
+        .pdp-center-right-sales h3:hover + .pdp-center-hover { display:block; height: 65px;  width: 300px; overflow-y: hidden; text-overflow: ellipsis;}
+        .pdp-center-right-sales h3.clicked + .pdp-center-hover { display: block; height: auto; }
+        .pdp-center-right-sales { width: 30%; }
+    </style>
+</head>
+<body>
+    <div class="pdp-center-right-sales">
+        <h3 >Sales Description</h3>
+        <div class="pdp-center-hover">
+            <p>A light and contemporary spirit defines the Hope dining table: a simple yet refined style. A taste for design details, guided by the obliquity of the solid wooden legs, each divided into two sections, and by the continuity between structure and top, available in both wood and glass. “Lightness and elegant dynamism”, the characteristics that the architect and creator Cesare Arosio wanted to transform into a unique and elegant product, able to stand out among the different furnishing elements with class and personality.</p>
+        </div>
+    </div>
+    <div class="pdp-center-right-sales">
+        <h3 >Sales Description</h3>
+        <div class="pdp-center-hover">
+            <p>A light and contemporary spirit defines the Hope dining table: a simple yet refined style. A taste for design details, guided by the obliquity of the solid wooden legs, each divided into two sections, and by the continuity between structure and top, available in both wood and glass. “Lightness and elegant dynamism”, the characteristics that the architect and creator Cesare Arosio wanted to transform into a unique and elegant product, able to stand out among the different furnishing elements with class and personality.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.pdp-center-right-sales h3').click(function() {
+                $(this).toggleClass('clicked');
+                $('.pdp-center-right-sales h3').not(this).removeClass('clicked');
+            });
+        });
+    </script>
+    
+</body>
+</html>

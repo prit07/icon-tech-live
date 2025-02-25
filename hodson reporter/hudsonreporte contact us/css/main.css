@@ -1,0 +1,88 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration: none;}
+
+
+
+.hr-cu-row { display:flex; flex-direction:row;justify-content:space-between; gap:48px; }
+.hr-cu-left-col { max-width: 690px; width: 100%; }
+.hr-cu-right-col { max-width: 324px; width: 100%;}
+
+
+
+
+/* Contact Us Start */
+.hr-contact-us { padding: 40px 0;}
+.hr-contact-us h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 0;
+  border-bottom: 2px solid #222222;
+  color: #fff;
+}
+.hr-contact-us h4 span {
+  display: inline-block;
+  padding: 7px 12px 4px;
+  line-height: 17px;
+  background-color: #222222;
+}
+.hr-contact-us-list { border-bottom: 1px solid #9A9A9A; }
+.hr-contact-us-list>ul { margin: 26px 0; padding: 0; list-style: none;}
+.hr-contact-us-list>ul>li {
+  font-size: 15px;
+  line-height: 1.74;
+  color: #222;
+  font-family: 'Open Sans', arial, sans-serif;
+  text-align: center;
+}
+.hr-contact-us-list>ul>li>span { font-weight: bold; text-transform: uppercase;}
+.hr-contact-us-list>ul>li>a {  color: #4db2ec;}
+.hr-contact-us-grid {
+  padding: 35px 0 10px 0; 
+  border-bottom: 1px solid #9A9A9A;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hr-contact-us-grid-item>ul { margin: 0; padding: 0; list-style: none;}
+.hr-contact-us-grid-item>ul>li {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #666;
+}
+.hr-contact-us-grid-item>ul>li>span {     font-weight: bold;}
+.hr-contact-us-grid-item>ul>li>a {     color: #4db2ec;}
+
+/* Contact Us  End */
+
+
+
+@media(max-width:991px) {
+  .hr-cu-right-col {max-width: 230px; }
+  .hr-cu-left-col { max-width: 478px; width: 100%;}
+
+  .hr-cu-left-slider-img>a>img { width: 190px !important; }
+}
+
+
+
+
+@media (max-width:767px) {
+  .hr-cu-row { flex-wrap: wrap;}
+
+  .hr-contact-us-grid {
+    grid-row-gap: 15px;
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+
+
+@media(min-width:1300px){
+	.container.w-1068 {  max-width:1068px!important; padding: 0 ; }
+}
+
+
+
+

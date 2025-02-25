@@ -1,0 +1,356 @@
+
+body { margin: 0; padding: 0; }
+
+:root {
+	--Blacker_Text: 'Blacker Text';
+	--Manrope: 'Manrope', sans-serif;
+}
+
+a:hover { text-decoration:none; }
+
+
+/* Contact Frank section start */
+
+.contact-Frank-section{
+	padding: 40px 0;
+	background: #FFF6ED;
+}
+.contact-Frank-section .contact-Frank-card-wapper{
+	max-width: 772px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.contact-Frank-section .contact-Frank-card-wapper .contact-Frank-card-img{
+	border-radius: 100px;
+	border: 2px solid  #291622;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.contact-Frank-section .contact-Frank-card-wapper .contact-Frank-card-img img{
+	width: 100%;
+	height: 100%;
+}
+.contact-Frank-section .contact-Frank-card-wapper h2{
+	color: #291622;
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px; 
+	letter-spacing: -1.95px;
+	text-transform: capitalize;
+	margin: 0;
+}
+.contact-Frank-section .contact-Frank-card-wapper h2 span{
+	position: relative;
+	z-index: 1;
+}
+.contact-Frank-section .contact-Frank-card-wapper h2 span::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #FFF;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+.contact-Frank-section .container{
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.contact-Frank-section .contact-form-wapper form{
+	max-width: 400px;
+	margin: 0 auto;
+	width: 100%;
+	border: 1px solid  #291622;
+	background:  #F8EBDF;
+	padding: 24px; 
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.contact-Frank-section .contact-form-wapper form .form-group {
+	margin: 0;
+}
+.contact-Frank-section .contact-form-wapper form .form-group input{
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #FFF;
+	width: 100%;
+	height: 48px;
+	padding: 8px 16px; 
+}
+.contact-Frank-section .contact-form-wapper form .form-group input::placeholder{
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	opacity: 0.5;
+}
+.contact-Frank-section .contact-form-wapper form .form-group textarea::placeholder{
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	opacity: 0.5;
+}
+.contact-Frank-section .contact-form-wapper form .form-group textarea{
+	border-radius: 24px;
+	border: 1px solid #291622;
+	background: #FFF;
+	width: 100%;
+	padding: 8px 16px; 
+}
+.contact-Frank-section .contact-form-wapper form .form-group input:focus{
+	box-shadow: none;
+}
+.contact-Frank-section .contact-form-wapper form .form-group textarea:focus{
+	box-shadow: none;
+}
+.contact-Frank-section .contact-form-wapper form .Send-request-btn{
+	display: flex;
+}
+.contact-Frank-section .contact-form-wapper form .Send-request-btn a{
+	width: 100%;
+	padding: 12px 0;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #F3DCA0;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contact-Frank-section .contact-form-wapper form .Send-request-btn a img{
+	margin-right: 6px;
+}
+.contact-Frank-section .contact-form-wapper form p{
+	color:  #333;
+	font-family: var(--Manrope);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 18px;
+	margin: 0;
+}
+/* Contact Frank section end */
+
+/* How Do I Choose section start */
+
+.how-do-i-choose-section{
+	padding: 300px 0 120px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	background: #FFF6ED; 
+}
+
+.how-do-i-choose-section::before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 100px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.how-do-i-choose-section::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 150px;
+	background: #291622;
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+
+.how-do-i-choose-section .container{
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+.how-do-i-choose-card-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.how-do-i-choose-card-wapper h4{
+	color: #FFF;
+	font-family: var(--Blacker_Text);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.32px;
+	margin: 0;
+}
+.how-do-i-choose-card-wapper p{
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px; 
+	margin: 0;
+}
+.how-do-i-choose-card-wapper p a{
+	color:  #F3DCA0;
+	font-weight: 600;
+	text-decoration-line: underline;
+}
+.how-do-i-choose-card-wapper ul{
+	margin: 0;
+	padding: 0 0 0 22px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.how-do-i-choose-card-wapper ul li::marker {
+	color: #FFF;
+	font-size: 14px;
+}
+/* How Do I Choose section end */
+
+
+
+
+
+
+
+@media(max-width:1399px){
+	/* How Do I Choose section start */
+	.how-do-i-choose-section::after {
+		right: -120px;
+		width: 118%;
+	}
+	.how-do-i-choose-section::before {
+		left: -90px;
+	}
+	/* How Do I Choose section end */
+}
+@media(max-width:1199px){
+	/* How Do I Choose section start */
+	.how-do-i-choose-section::before {
+		width: 100%;
+		top: 124px;
+	}
+	.how-do-i-choose-section::after {
+		right: -120px;
+		width: 122%;
+	}
+	/* How Do I Choose section end */
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	
+/* How Do I Choose section start */
+
+.how-do-i-choose-card-wapper h4 {
+	font-size: 28px;
+}
+
+/* How Do I Choose section end */
+
+
+}
+
+@media(max-width:991px){
+	/* Contact Frank section start */
+
+	.contact-Frank-section .contact-Frank-card-wapper h2 {
+		font-size: 58px;
+		line-height: 68px;
+	}
+
+	/* Contact Frank section end */
+	/* How Do I Choose section start */
+	.how-do-i-choose-section::after {
+		right: -120px;
+		width: 127%;
+	}
+	.how-do-i-choose-section .row{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.how-do-i-choose-card-wapper {
+		gap: 20px;
+	}
+	/* How Do I Choose section end */
+}
+
+@media(max-width:767px){
+/* Contact Frank section start */
+.contact-Frank-section {
+	padding: 20px 0;
+}
+.contact-Frank-section .contact-Frank-card-wapper h2 {
+	font-size: 38px;
+	line-height: 44px;
+}
+.contact-Frank-section .contact-Frank-card-wapper h2 span::after {
+	height: 15px;
+	bottom: 2px;
+}
+
+/* Contact Frank section end */
+/* How Do I Choose section start */
+.how-do-i-choose-section	 {
+	padding: 120px 0 50px 0;
+}
+.how-do-i-choose-section::after {
+	right: -130px;
+	width: 176%;
+	top: 90px;
+}
+.how-do-i-choose-section::before {
+	width: 100%;
+	top: 70px;
+	left: -104px;
+}
+.how-do-i-choose-card-wapper h4 {
+	font-size: 28px;
+}
+.how-do-i-choose-section .container {
+	gap: 24px;
+}
+/* How Do I Choose section start */
+}
+
+
+@media(max-width:420px){
+	/* Contact Frank section start */
+
+	.contact-Frank-section .contact-Frank-card-wapper h2 {
+		font-size: 34px;
+		line-height: 39px;
+	}
+	.contact-Frank-section .contact-Frank-card-wapper h2 span::after {
+		height: 15px;
+		bottom: 2px;
+	}
+
+	/* Contact Frank section end */
+}

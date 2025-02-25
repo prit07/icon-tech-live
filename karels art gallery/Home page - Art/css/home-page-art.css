@@ -1,0 +1,173 @@
+body { margin: 0; padding: 0; box-sizing: border-box; }
+a{
+    outline: none;
+    text-decoration: none !important;
+}
+
+
+
+/* Home Page Art Start */
+
+
+
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    border-radius: 6px;
+    height: 302px;
+}
+
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+figure.effect-zoe figcaption {
+    top: auto;
+    bottom: 0;
+    padding: 27px 19px;
+    height: auto;
+    background: #fff;
+    color: black;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption h2 {
+    text-align: start;
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-family: 'Syne', sans-serif;
+}
+figcaption p {
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    letter-spacing: 0.28px;
+    color: #000000;
+    font-family: 'Syne', sans-serif;
+}
+
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+}
+
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-zoe:hover h2 {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+
+
+
+.home-page-art-bottom-btn { display: flex; justify-content: center; align-items: center; }
+.home-page-art-bottom-btn a {
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: underline !important;
+    font-weight: bold;
+    color: #000000;
+    line-height: normal;
+    font-family: 'Syne', sans-serif;
+
+
+
+}
+
+.latest-img { display: none; }
+
+
+
+
+/* Home Page Art End */
+
+
+
+@media (min-width:1300px) {
+    .w-1430{
+        max-width: 1430px !important;
+    }
+}
+
+
+@media(max-width:991px) {
+
+}
+
+@media(max-width:767px) {
+ 
+}

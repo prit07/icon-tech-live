@@ -1,0 +1,859 @@
+body { margin:0; padding:0; box-sizing: border-box;  }
+a , a:hover { text-decoration: none; }
+
+/* About page banner page Start */
+.rhu-about-us-banner-page {background: #16513C; width: 100%; position: relative;}
+.rhu-about-us-banner-page::after {
+	content: "";
+	width: 100%;
+	height: 391px;
+	background: url(../img/about-us-page-banner.png) no-repeat center;
+    background-size:100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.rhu-about-us-banner-page-content {
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+    z-index: 111;
+	padding-top: 80px;
+
+}
+.rhu-about-us-banner-page-content h2 {
+	font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+	color: #FFFFFF;
+	margin: 0;
+}
+.rhu-about-us-banner-page-content ul { display: flex; list-style: none; margin: 0; gap: 4px; padding: 0;}
+.rhu-about-us-banner-page-content ul li a { 
+	font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.rhu-about-us-banner-page-content ul li {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F2C200;
+}
+/* About page banner page End */
+
+
+/*  RHU Organics’ Chanamethi mango pickle Start  */
+.pd-mango-pickle { padding: 47px 0 62px 0; position: relative;}
+.pd-mango-pickle::after {
+    content: "";
+    width: 150px;
+    height: 400px;
+    background: url(../img/mango-pickle-01.png) no-repeat center;
+    background-size: 100% 100% ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.pd-mango-pickle::before {
+    content: "";
+    width: 150px;
+    height: 400px;
+    background: url(../img/mango-pickle-02.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: -178px;
+}
+.pd-mango-pickle-main { 
+    width: 100%;
+    height: 825px;
+    background: url(../img/mango-pickle.png) no-repeat center;
+    background-size: 100% 100% ;
+    position: relative;
+}
+.pd-mango-pickle-main::before {
+    content: "";
+    width: 360px;
+    height: 260px;
+    background: url(../img/mango-pickle-03.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 35px 0;
+}
+.pd-mango-pickle-main { display: flex; }
+.pd-mango-pickle-col { width: 50%;}
+
+.pd-mango-pickle-right { padding: 60px 53px 60px 60px;}
+.pd-mango-pickle-heading h2 {
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42.23px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.pd-mango-pickle-text h4 {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #242424;
+    padding-bottom: 9.5px;
+    margin: 0;
+}
+.pd-mango-pickle-text p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #545454;
+    margin-bottom: 18px;
+}
+/* STAR REATING */
+.pd-mango-pickle-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:18px; display: flex; gap: 8px; justify-content: start; margin-bottom: 18px;}
+.pd-mango-pickle-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.pd-mango-pickle-stars-rating span.star:hover { cursor:pointer; }
+.pd-mango-pickle-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#FFC909; }
+.pd-mango-pickle-stars-rating span.star.filled:before { font-weight: 900; color:#FFC909; content:"\f005"; }
+.pd-mango-pickle-stars-rating span.star.half-filled:before { content:"\f089"; color:#FFC909; }
+.pd-mango-pickle-stars-rating span.star.half-filled:after { content:"\f005"; color:#FFC909; margin-left:-22px; }
+.pd-mango-pickle-stars-rating h6 {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+/* STAR REATING */
+.mango-pickle-mango-pickle-text { margin-bottom: 18px;}
+.mango-pickle-mango-pickle-text h4 {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #242424;
+    margin-bottom: 9.5px;
+}
+.mango-pickle-mango-pickle-text p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #545454;
+}  
+.mango-pickle_faq_accordion_wapper a { width: 95% !important;}
+.mango-pickle_faq_accordion_wapper .mango-pickle_faq_content { display: none; }
+.mango-pickle_faq_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(223, 237, 233, 0.5) 100%);
+    padding: 13.66px 30px 13.66px 20px;
+    border-radius: 10px;
+}
+.mango-pickle_faq_accordion_item {  padding: 0 0 18px 0;}
+.mango-pickle_faq_menu>a {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #242424 !important;    
+}
+.mango-pickle_faq_content { margin-top: 5px;}
+
+.mango-pickle_faq_menu_img {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.mango-pickle_faq_menu_img.new-class .mango-pickle_faq-plus-img  { display: none;}
+.mango-pickle_faq_menu_img.new-class .mango-pickle_faq-mines-img  { display: block;}
+.mango-pickle_faq_menu_img .mango-pickle_faq-mines-img { display: none;}
+.mango-pickle_faq_menu_img .mango-pickle_faq-mines-img { filter: brightness(100%) invert(1);}
+.mango-pickle_faq_content_row {
+    display: grid;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+    grid-template-columns: repeat(3, 1fr)
+}
+.mango-pickle_faq_content_items {
+    background: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+    padding: 17px 19px;
+    position: relative;
+}
+.mango-pickle_faq_content_items::after{
+    content: "";
+    width: 24px;
+    height: 20px;
+    background: url(../img/mango-pickle-faq.png) no-repeat center;
+    background-size: 100% 100% ;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mango-pickle_faq_content_items p {
+    font-family: Work Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.73px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin: 0;
+}
+.mango-pickle_faq_content_items h5 {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin: 0;
+}
+.mango-pickle_faq_content>p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #545454;
+    padding: 0 15px;
+    margin: 0;
+}
+.pd-mango-pickle-bottom { display: flex; gap: 52px; align-items: center; position: relative; z-index: 111;}
+.pd-mango-pickle-btn {
+    width: 100%;
+    max-width: 326px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #163421;
+    border-radius: 85px;
+}
+.pd-mango-pickle-btn a { 
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.pd-mango-pickle-icon>ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 20px; position: relative;}
+.pd-mango-pickle-icon>ul>li:first-child a img { width: 24px; height: 24px;}
+.pd-mango-pickle-icon>ul>li>a>img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.pd-mango-pickle-icon-hover:hover .pd-mango-pickle-icon-drop-down { display: flex;}
+.pd-mango-pickle-icon-drop-down {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 100%;
+    max-width: 55px;
+    position: absolute;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    left: 26px;
+    top: 26px;
+    border-radius: 10px;
+    background: #fff;
+}
+.pd-mango-pickle-icon-drop-down { display:none;}
+
+.pd-mango-pickle-owl #sync1 { margin-bottom: 79px; position: relative;}
+.pd-mango-pickle-owl #sync1::after {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background: url(../img/owl-slider-affter.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -48px;
+    right: -96px;
+}
+.pd-mango-pickle-owl { padding: 60px 67px 46px 17px;}
+.owl-pd-mango-sync1-img img { width: 100%; height: 541px;}
+.owl-pd-mango-sync2-img img{ width: 99px; height: 99px; border-radius: 14px;}
+
+/*  RHU Organics’ Chanamethi mango pickle End  */
+
+
+/*  product details review Start */
+.pd-review {  background: #16513C; padding: 42px 0 130px 0;}
+.pd-review::after {
+    content: "";
+    width: 150px;
+    height: 400px;
+    background: url(../img/pd-review-affter.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    z-index: 11;
+}
+.pd-review-heading { padding-bottom: 92px;}
+.pd-review-heading h2 {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.92px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.pd-review-row { 
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 32px;
+    grid-template-columns: repeat(2, 1fr);
+} 
+
+.pd-review-item { background: #FFFFFF33; padding: 24px 24px 14px 31px; border-radius: 22px; position: relative;}
+.pd-review-item::after {
+    content: "";
+    width: 50px;
+    height: 47px;
+    background: url(../img/pd-review-01.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.pd-review-item-top {display: flex; gap: 25px;  margin-bottom: 14px;}
+.pd-review-item-top-left img { width: 54px; height: 54px; border-radius: 50%;}
+.pd-review-item-top-right>h4 {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin-bottom: 11px;
+}
+.pd-review-item-top-right>h4>span { color: #FFFFFF66;}
+/* STAR REATING */
+.pd-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:15px; display: flex; gap: 3px; justify-content: start; }
+.pd-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.pd-stars-rating span.star:hover { cursor:pointer; }
+.pd-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#FFC909; }
+.pd-stars-rating span.star.filled:before { font-weight: 900; color:#FFC909; content:"\f005"; }
+.pd-stars-rating span.star.half-filled:before { content:"\f089"; color:#FFC909; }
+.pd-stars-rating span.star.half-filled:after { content:"\f005"; color:#FFC909; margin-left:-17px; }
+/* STAR REATING */
+.pd-review-item-bottom p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+/*  product details review End */
+
+
+/*  Delicious mango pickle recipes to try Start  */
+.product-pickle { background: #183422; padding: 100px 0; position: relative;}
+.product-pickle::after {
+    content: "";
+    width: 300px;
+    height: 250px;
+    background: url(../img/product-pickle-after.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.product-pickle::before {
+    content: "";
+    width: 160px;
+    height: 400px;
+    background: url(../img/product-pickle-before.png);
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -282px;
+    left: 0;
+}
+.product-pickle-heading { display: flex; justify-content: space-between; gap: 450px; padding-bottom: 83px;}
+.product-pickle-heading h2 {
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+.product-pickle-heading a {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 184px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    border-radius: 85px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.product-pickle-heading img { width: 44px; height: 44px;}
+.product-pickle-heading a span{
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #163421;
+}
+.product-pickle-row {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.product-pickle-itmes  {
+    background: #FFFFFF33;
+    padding: 24px 8px;
+    border-radius: 20px;
+    height: 100%;
+}
+.product-pickle-itmes img { width: 33px; height: 41px; padding-bottom: 14px; object-fit: contain;}
+.product-pickle-itmes h3 { margin: 0; line-height: 0; padding: 0 0px 2px 0;}
+.product-pickle-itmes h3 a {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.product-pickle-itmes p {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+ /*  Delicious mango pickle recipes to try End  */
+
+
+ /*  Recipe for Your Soul Start  */
+.recipe-for-your-soul { padding: 45px 0 94px 0; position: relative;}
+.recipe-for-your-soul::after {
+    content: "";
+    width: 100px;
+    height: 431px;
+    background: url(../img/recipe-04.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.recipe-for-your-soul-heading { margin-bottom: 62px;}
+.recipe-for-your-soul-heading h2 {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.92px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin: 0;
+}
+.recipe-for-your-soul-row { 
+    display: grid;
+    grid-column-gap: 22px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.recipe-for-your-soul-item { 
+    background: #DFEDE9;
+    padding: 54px 4px 14px 22px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+.recipe-for-your-soul-item::after {
+    content: "";
+    width: 250px;
+    height: 87px;
+    background: url(../img/recipe-01.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 0 0 0;
+}
+.recipe-for-your-soul-text h3 {
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.54px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    margin: 0;
+}
+.recipe-for-your-soul-img { position: relative;}
+.recipe-for-your-soul-img::after {
+    content: "";
+    width: 173px;
+    height: 76px;
+    background: url(../img/recipe-03.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    bottom: -12px;
+}
+.recipe-for-your-soul-img img {width: 136px; height: 267px; position: relative ; z-index: 111;}
+.recipe-for-your-soul-img img { width: 100px; height: 200px;}
+.recipe-for-your-soul-text h3 { font-size: 26px; line-height: 29.54px;}
+.recipe-for-your-soul::after { width: 50px; height: 231px;}
+ /*  Recipe for Your Soul End  */
+
+/* Frequently asked question Start  */
+.pd-frequently { padding: 117px 0 262px 0; position: relative;}
+
+.pd-frequently::after {
+    content: "";
+    width: 120px;
+    height: 300px;
+    background: url(../img/faq-02.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -101px;
+    left: 0;
+}
+.pd-frequently::before {
+    content: "";
+    width: 302px;
+    height: 440px;
+    background: url(../img/faq-03.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+}
+.pd-frequently-heading { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 81px; align-items: center;}
+.pd-frequently-heading h2{
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    margin: 0;
+}
+.pd-frequently-heading a {
+    background: #F2C200;
+    padding: 15px;    
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    border-radius: 25px;
+}
+.pd_faq_accordion_wapper a { width: 95% !important;}
+.pd_faq_accordion_wapper .pd_faq_content { display: none; }
+.pd_faq_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pd_faq_accordion_item {
+    background: #DFEDE9;
+    padding: 20px 34px;
+}
+.pd_faq_menu>a {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422 !important;
+}
+.pd_faq_content { margin-top: 22px;}
+.pd_faq_content p {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #8C9F93;
+    margin: 0;
+}
+.pd_faq_menu_img {
+    width: 42px;
+    height: 42px;
+    background: #DFEDE9;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.pd_faq_menu_img.new-class .pd_faq-plus-img  { display: none;}
+.pd_faq_menu_img.new-class .pd_faq-mines-img  { display: block;}
+.pd_faq_menu_img .pd_faq-mines-img { display: none;}
+.pd_faq_menu_img .pd_faq-mines-img { filter: brightness(100%) invert(1);}
+/* Frequently asked question End */
+
+@media(max-width:1199px){
+   /*  Delicious mango pickle recipes to try Start  */
+   .product-pickle-heading { gap: 200px; }
+   .product-pickle::after { width: 200px; height: 150px;}
+   /*  Delicious mango pickle recipes to try End  */
+
+    /* RHU Organics’ Chanamethi mango pickle Start */
+   .pd-mango-pickle-right { padding: 40px 43px 50px 50px;}
+   .pd-mango-pickle-heading h2 { font-size: 29px; line-height: 34.23px; margin-bottom: 10px;}
+   .mango-pickle_faq_content_items { padding: 13px 9px;}
+   .pd-mango-pickle::after { width: 60px; height: 250px; left: 0; bottom: 10%;}
+   .pd-mango-pickle::before { width: 60px; height: 300px; top: -78px;}
+    /* RHU Organics’ Chanamethi mango pickle End */
+}
+
+
+@media(max-width:991px){
+	/* About page banner page Start */
+    .rhu-our-story { padding: 52px 0;}
+	.rhu-about-us-banner-page-content { height: 365px; padding-top: 60px;}
+	.rhu-about-us-banner-page::after { height: 250px;}
+	/* About page banner page End */
+
+    /*  Delicious mango pickle recipes to try Start  */
+    .product-pickle-row {  grid-template-columns: repeat(3, 1fr);}
+    .product-pickle-heading { gap: 100px;}
+    /*  Delicious mango pickle recipes to try End  */
+
+
+   /*  product details review Start */
+    .pd-review-row { grid-column-gap: 15px; grid-row-gap: 22px;}
+    .pd-review-item { padding: 14px 13px 29px 20px; }
+    .pd-review-heading {  padding-bottom: 52px;}
+    /*  product details review End */
+
+     /*  Recipe for Your Soul start  */
+    .recipe-for-your-soul-row { grid-column-gap: 22px;  grid-row-gap: 22px; grid-template-columns: repeat(2, 1fr);}
+   /*  Recipe for Your Soul End  */
+
+    /* Frequently asked question Start */
+   .product-pickle::before { width: 80px; height: 250px; bottom: -182px;}
+    /* Frequently asked question End */
+
+    /*  RHU Organics’ Chanamethi mango pickle start  */
+   .pd-mango-pickle-right { padding: 20px 14px 50px 28px;}
+   .pd-mango-pickle-heading h2 { font-size: 24px; line-height: 28.23px;margin-bottom: 8px;}
+   .owl-pd-mango-sync1-img img { height: 400px;}
+   .pd-mango-pickle-owl #sync1::after { width: 100px; height: 100px; bottom: -61px; right: -77px;}
+   .pd-mango-pickle-owl { padding: 30px 30px 36px 17px}
+   .owl-pd-mango-sync2-img img { width: 55px !important; height: 57px; border-radius: 14px;}
+   .pd-mango-pickle-stars-rating span.star.half-filled:after { margin-left: -17px;}
+   .pd-mango-pickle-stars-rating h6 { font-size: 14px; line-height: 20px;}
+   .pd-mango-pickle-stars-rating span.star.half-filled:after { margin-left: -15px;}
+   .pd-mango-pickle-stars-rating { font-size: 13px; gap: 4px; margin-bottom: 8px;}
+   .pd-mango-pickle-text h4 { font-size: 16px; line-height: 16.11px; padding-bottom: 3.5px;}
+   .pd-mango-pickle-text p { font-size: 14px; line-height: 22px; margin-bottom: 10px;}
+   .mango-pickle_faq_menu {  padding: 10.66px 20px 10.66px 15px;}
+   .mango-pickle_faq_menu>a { font-size: 15px; line-height: 16.11px;}
+   .pd-mango-pickle-main { height: 675px;}
+   .pd-mango-pickle-main::before { width: 274px;  height: 160px;}
+   /*  RHU Organics’ Chanamethi mango pickle End  */
+}
+@media(max-width:767px){
+	/* About page banner page Start */
+	.rhu-about-us-banner-page-content { height: 150px; padding-top: 40px;}
+	.rhu-about-us-banner-page::after { height: 97px;}
+	.rhu-about-us-banner-page-content h2 { font-size: 20px; line-height: 25.08px;}
+	.rhu-about-us-banner-page-content ul li a { font-size: 12px; line-height: 25.8px;}
+	.rhu-about-us-banner-page-content ul li { font-size: 12px; line-height: 25.8px;}
+	/* About page banner page End */
+
+
+    /*  Delicious mango pickle recipes to try Start  */
+    .product-pickle {  padding: 41px 0 61px 0; }
+    .product-pickle-row {  grid-template-columns: repeat(2, 1fr);     grid-column-gap: 16px;  grid-row-gap: 16px;}
+    .product-pickle-heading { gap: 10px;  padding-bottom: 40px;}
+    .product-pickle-heading h2 { font-size: 16px; line-height: 18px; }
+    .product-pickle-heading a { max-width: 98px; height: 34px; gap: 3px; padding: 6px 7px;}
+    .product-pickle::after {  width: 106px; height: 48px;}
+    .product-pickle-heading img { width: 21px; height: 21px;}
+    .product-pickle-heading a span { font-size: 12px; line-height: 18px; }
+    .product-pickle-itmes {  padding: 19px 8px; border-radius: 14px;}
+    .product-pickle-itmes img { width: 23px; height: 29px; padding-bottom: 10px;}
+    .product-pickle-itmes h3 a { font-size: 10px; line-height: 12px;}
+    .product-pickle-itmes p { font-size: 8px; line-height: 12px;}
+    /*  Delicious mango pickle recipes to try End  */ 
+
+   /*  product details review Start */
+    .pd-review { padding: 25px 0;}
+    .pd-review::after { display: none;}
+    .pd-review-heading { padding-bottom: 16px;}
+    .pd-review-row { grid-row-gap: 8px; grid-template-columns: repeat(1, 1fr);}
+    .pd-review-item { padding: 17.25px 50px 10px 17.25px;   border-radius: 12px;}
+    .pd-review-item-top-left img { width: 30px; height: 30px;}
+    .pd-review-item-top { gap: 14px; margin-bottom: 5px;}
+    .pd-review-item-top-right>h4 { font-size: 8px; line-height: 9px; margin-bottom: 6px;}
+    .pd-review-item-bottom p { font-size: 9px; line-height: 16px; }
+    .pd-stars-rating { font-size: 8px;}
+    .pd-stars-rating span.star.half-filled:after { margin-left: -10px;}
+    .pd-review-heading h2 { font-size: 24px; line-height: 28px; margin: 0; text-align: start;}
+   /*  product details review Start */
+
+
+    /*  Recipe for Your Soul start  */
+   .recipe-for-your-soul-img img { width: 58px; height: 113px;}
+   .recipe-for-your-soul-img::after { width: 86px; height: 32px; right: 0; bottom: -12px;}
+   .recipe-for-your-soul-text h3 { font-size: 15px; line-height: 15px;}
+   .recipe-for-your-soul-img::after { width: 86px; height: 32px; right: -3px; bottom: -6px;  border-radius: 0 0 6.41px 0;}
+   .recipe-for-your-soul-item::after { width: 140px; height: 50px;}
+   .recipe-for-your-soul-item { background: #DFEDE9; padding: 23px 2px 7px 9px; border-radius: 6.41px;}
+   .recipe-for-your-soul::after { display: none;}
+   .recipe-for-your-soul { padding: 15px 0 27px 0;}
+   .recipe-for-your-soul-heading { margin-bottom: 17px;}
+   .recipe-for-your-soul-heading h2 { font-size: 24px; line-height: 28px; text-align: left;}
+    /*  Recipe for Your Soul End  */
+
+    /* Frequently asked question Start */
+    .pd-frequently { padding: 15px 0 0px 0;}
+    .product-pickle::before { display: none;}
+    .pd-frequently-heading { gap: 18px;  padding-bottom: 22px;}
+    .pd-frequently-heading h2 { font-size: 16px; line-height: 18px;}
+    .pd-frequently-heading a { padding: 8px 10px; font-size: 12px; line-height: 14px; border-radius: 25px;}
+    .pd_faq_menu>a { font-size: 12px; line-height: 14px;}
+    .pd_faq_menu_img { width: 12px; height: 12px;}
+    .pd_faq-mines-img { width: 4px;}
+    .pd_faq_content { margin-top: 6px;}
+    .pd-frequently::before { display: none;}
+    .pd-frequently::after { display: none;}
+    .pd_faq_content p { font-size: 10px; line-height: 11px;}
+    .pd_faq-plus-img { width: 5px; height: 5px;}
+    .pd_faq_accordion_item {padding: 10px 7px; }
+    /* Frequently asked question End */
+
+
+    /*  RHU Organics’ Chanamethi mango pickle Start  */
+    .pd-mango-pickle .w-1164 { padding: 0;}
+    .pd-mango-pickle-main { height: auto; flex-direction: column; background: none ;}
+    .pd-mango-pickle-col { width: 100%;}
+    .pd-mango-pickle::before {display: none; }
+    .pd-mango-pickle::after { display: none;}
+    .pd-mango-pickle-main::before { display: none;}
+    .pd-mango-pickle-owl { padding: 0 0 15px 0; width: 100%; max-width: 250px; margin: auto;}
+    .owl-pd-mango-sync2-img img { width: 33px !important; height: 33px; border-radius: 4px;}
+    .owl-pd-mango-sync1-img img { height: 236px;}
+    .pd-mango-pickle-owl #sync1::after { width: 37px; height: 39px; bottom: -3px; right: -28px;}
+    .pd-mango-pickle-owl #sync1 { margin-bottom: 5px;}
+    #sync2 { max-width: 202px; margin: auto; }
+    .pd-mango-pickle-right { padding: 36px 16px; background: #DFEDE9;}
+    .pd-mango-pickle-heading h2 { font-size: 25px; line-height: 29px; margin-bottom: 7px;}
+    .pd-mango-pickle-stars-rating h6 { font-size: 12px; line-height: 18px;}
+    .pd-mango-pickle-text h4 { font-size: 12px; line-height: 14.11px; padding-bottom: 7px;}
+    .pd-mango-pickle-text p { font-size: 10px; line-height: 15px; margin-bottom: 15px;}
+    .mango-pickle_faq_menu { padding: 10px 30px 10px 15px;}
+    .mango-pickle_faq_menu_img { width: 17px; height: 17px;}
+    .mango-pickle_faq_menu>a { font-size: 12px; line-height: 14.11px;}
+    .mango-pickle_faq_content { margin-top: 12px;}
+    .mango-pickle_faq_content_row { grid-column-gap: 16px; grid-row-gap: 16px; grid-template-columns: repeat(2, 1fr);}
+    .mango-pickle_faq_content_items { padding: 17px 9px;}
+    .mango-pickle_faq_content>p { font-size: 10px; line-height: 18px;}
+    .pd-mango-pickle-btn { max-width: 163px; height: 32px; border-radius: 42px;}
+    .pd-mango-pickle-btn a { font-size: 10px; line-height: 17.46px;}
+    .pd-mango-pickle-icon ul li:first-child a img { width: 17px; height: 17px;}
+    .pd-mango-pickle-icon ul li a img { width: 17px; height: 17px; object-fit: contain;}
+    .pd-mango-pickle-bottom { justify-content: space-between;}
+    .pd-mango-pickle { padding: 6px 0 0px 0; position: relative;}
+    .pd-mango-pickle-icon-drop-down { left: 12px; }
+     /*  RHU Organics’ Chanamethi mango pickle End  */ 
+}
+@media (min-width: 1300px) {
+    .container.w-1164 {
+        max-width: 1164px !important;
+        padding: 0;
+    }
+}

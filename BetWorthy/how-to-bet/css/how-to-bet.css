@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+
+.htb-wapper-main { display: flex; flex-wrap: wrap; flex-direction: row; }
+.htb-wapper { padding:20px 0; position:relative; }
+.htb-heading h2{
+  color: #0E2236;
+  font-family: var(--font_1);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.48px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.htb-items { border: 1px solid #cecece;  padding: 15px; width:18%; position: relative; padding-bottom: 45px; margin: 0 1% 25px; }
+.htb-items:hover { box-shadow: 0 0 20px #ddd;}
+.htb-img { width:100%; height: 150px; }
+.htb-img a img { width:100%; height:135px; }
+.htb-img img  { width: auto; display: inline-block; transition: all ease-in-out .2s; }
+.htb-people-icon { display:flex; justify-content:end; margin-bottom:5px; }
+.htb-people-icon a img { border-radius:50%; width:22px; height:22px;   }
+.htb-center-text h3  a { color:#333; font-family: var(--font_2); }
+.htb-center-text h3 { 
+    text-transform: none;
+    line-height: 18px;
+    font-size: 14px;
+    font-style: var(--font_2);
+    font-weight: 400; 
+    color: #333;}
+.htb-center-text h5 a {color: #555; text-decoration: none; text-transform: uppercase; font-size: 11px; font-family: var(--font_2);}    
+.htb-text-end { display:flex; justify-content:end; }
+.htb-text-end span{ font-size:11px; font-family:var(--font_2); }
+
+.htb-bottom {
+      height: 38px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-left: 1px solid #fff;
+      z-index: 2}
+.htb-bottom .htb-btn-icon {
+        background-color: #f4f3f3;
+        width: 33.33%;
+        height: 38px;
+        float: left;
+        line-height: 38px;
+        color: #656d78;
+        text-align: center;
+        text-shadow: 0 1px 0 #fff;
+        display: block;
+        padding: 0;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: relative;
+        font-size: 14px
+    }
+.htb-bottom.two_btn_bottom .htb-btn-icon {
+        width: 50%
+    }
+.htb-btn-icon.htb-thumbplus-icon:hover { background-color: #eee;}
+.htb-btn-icon .htb-table-thum,.htb-btn-icon:hover .htb-thumbscount-icon { display: none}
+.htb-btn-icon:hover .htb-table-thum { display: inline}
+.htb-thumbscount-icon { font-size: 12px; line-height: 29px; margin: 0 0 0 8px; display: inline-block; color: #67a827; }
+.htb-btn-icon .htb-thumbminus-icon,
+.htb-btn-icon .htb-thumbplus-icon { margin-bottom: 3px}
+.htb-btn-icon .htb-thumbscount-icon:before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f164";
+    line-height: 38px;
+    display: inline-block;
+    margin-right: 8px}
+.htb-thumbminus-icon,
+.htb-thumbplus-icon {
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 1em;
+    border: 1px solid #dcddde;
+    border-radius: 4px;
+    outline: 0
+}
+.htb-thumbplus-icon { color: #67a827}
+.htb-thumbminus-icon { color: #d10000; margin: 0 8px 0 0}
+.htb-thumbminus-icon:hover {background-color: #d10000; color: #fff; border: 1px solid #d10000}
+.htb-thumbplus-icon:hover { background-color: #67a827; border: 1px solid #67a827; color: #fff }
+.htb-thumbminus-icon:before {
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f165" !important;
+    line-height: 25px;
+    display: inline-block;
+    font-weight: 300;}
+.htb-thumbplus-icon:before {
+      font-family: 'Font Awesome\ 5 Free';
+    content: "\f164";
+    line-height: 25px;
+    display: inline-block;
+    font-weight: 300
+}
+.htb-bottom .htb-thumbscount-icon {
+    float: none;
+    margin: 0;
+    line-height: 38px;
+    font-size: inherit}
+.htb-bottom .htb-right-numb:before { content: "\f27a"; font-family: 'Font Awesome\ 5 Free'; margin-right: 5px }
+.htb-bottom .htb-thumbplus-icon.heartplus { font-size: 15px}
+
+
+
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+
+@media( max-width:1024px) {
+.htb-items {
+    width: 30.33%;
+    margin: 0 1.5% 15px;
+    float: left;
+}
+}
+
+@media(max-width:767px) {
+  .htb-items { width: 100%; margin: 0 1.5% 15px; float: left;}
+  .htb-img { width: 100%; height: 170px; }
+  .htb-img a img { width: 100%; height: 160px; }
+  .htb-heading h2 { font-size: 36px; line-height: 38px;}
+
+ 
+}

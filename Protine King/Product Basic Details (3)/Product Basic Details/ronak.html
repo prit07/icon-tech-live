@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <style>
+        .custom-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            text-align: left;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .dropdown-menu li {
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f1f1f1;
+        }
+
+        .hidden-select {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <div class="custom-dropdown">
+        <button class="dropdown-toggle">Select an option</button>
+        <ul class="dropdown-menu">
+            <li data-value="option1">Option 1</li>
+            <li data-value="option2">Option 2</li>
+            <li data-value="option3">Option 3</li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            // Create a hidden select element
+            var $select = $('<select class="hidden-select"></select>');
+            $(".custom-dropdown").append($select);
+
+            // Populate the select element with options from the dropdown menu
+            $(".dropdown-menu li").each(function () {
+                var value = $(this).data("value");
+                var text = $(this).text();
+                var $option = $('<option></option>').attr("value", value).text(text);
+                $select.append($option);
+            });
+
+            // Handle dropdown toggle click
+            $(".dropdown-toggle").on("click", function () {
+                $(this).next(".dropdown-menu").toggle();
+            });
+
+            // Handle dropdown menu item click
+            $(".dropdown-menu li").on("click", function () {
+                var selectedText = $(this).text();
+                var selectedValue = $(this).data("value");
+
+                // Update the dropdown button text
+                $(".dropdown-toggle").text(selectedText);
+
+                // Remove "selected" attribute from all options in the hidden select element
+                $select.find('option').removeAttr('selected');
+
+                // Set the corresponding option in the hidden select element as selected
+                $select.find('option[value="' + selectedValue + '"]').attr('selected', 'selected');
+
+                // Hide the dropdown menu
+                $(".dropdown-menu").hide();
+
+                // Trigger custom attribute change function
+                _onChangeAttribute({
+                    defaultPrevented: false,
+                    currentTarget: $select[0]  // Passing the select element as the event target
+                });
+            });
+
+            // Close the dropdown if the user clicks outside of it
+            $(document).on("click", function (event) {
+                if (!$(event.target).closest(".custom-dropdown").length) {
+                    $(".dropdown-menu").hide();
+                }
+            });
+        });
+
+        // The function to handle changes
+        function _onChangeAttribute(ev) {
+            if (!ev.defaultPrevented) {
+                ev.preventDefault();
+                const productGrid = document.querySelector(".o_wsale_products_grid_table_wrapper");
+                if (productGrid) {
+                    productGrid.classList.add("opacity-50");
+                }
+
+                const form = ev.currentTarget.closest("form");
+                if (form) {
+                    form.submit();
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

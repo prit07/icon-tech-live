@@ -1,0 +1,231 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+
+
+/* Bports Betting Glossary Start */
+
+.sports-betting-glossary {
+	background: #F5F5F7;
+	padding: 84px 0 70px 0;
+}
+
+.sports-glossary-wapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	margin: auto;
+
+}
+
+.sports-glossary-wapper h3 {
+	color: #1B9C43;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.sports-glossary-wapper h1 {
+	color: #0E2236;
+	text-align: center;
+	font-family: var(--font_1);
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 68.5px;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.sports-glossary-wapper p {
+	width: 100%;
+	max-width: 594px;
+	color:  #4D4F4E;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+}
+
+
+/* Sports Betting Glossary End */
+
+
+/* Glossary header A B C D .. Start */
+
+
+.sports-nav-a-b ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.sports-nav-a-b ul li a {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: 19.2px;
+	text-transform: uppercase;
+}
+
+.sports-a-b-c .sports-nav-a-b ul li a.active{
+	color: #1B9C43;
+	font-weight: 800;
+}
+
+
+/* Glossary header A B C D .. End */
+
+
+
+/* Glossary Page A B C .. Start */
+
+.glossary-page-a {
+	padding-top: 30px;
+}
+
+.glossary-page-logo h2 {
+	color: var(--text, #0E2236);
+	margin: 0;
+	font-family: var(--font_1);
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 68.5px;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+.g-flex {
+	flex-flow: row wrap;
+}
+
+
+.glossary-page-main {
+	height: 100%;
+	display: flex;
+	padding: 24px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	background: #FBFBFB;
+
+}
+
+.glossary-page-main h3 {
+
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 24px;
+	margin: 0;
+}
+
+.glossary-page-main p {
+
+	object-fit: cover;
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+}
+
+
+
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+
+
+@media(max-width:991px) {
+
+	/* Glossary header A B C D .. Start */
+
+	.sports-nav-a-b ul li a {
+		letter-spacing: 10.2px;
+		
+	}
+}
+
+@media(max-width:767px) {
+
+	/* Sports Betting Glossary start */
+
+	.sports-betting-glossary {
+		padding: 52px 0 43px 0;
+	}
+
+	.sports-glossary-wapper {
+		gap: 22px;
+	}
+
+	.sports-glossary-wapper h3 {
+		font-size: 17px;
+		line-height: 23px;
+	}
+
+	.sports-glossary-wapper h1 {
+		font-size: 47px;
+		line-height: 55.5px;
+
+	}
+
+	.sports-top input {
+		width: 100%;
+		padding: 9px 14px;
+		font-size: 15px;
+		line-height: 120%;
+	}
+
+	.sports-top a {
+		padding: 9px 14px;
+	}
+
+	.sports-bottom .sports-bottom-left h3 {
+		font-size: 13px;
+		line-height: 21px;
+	}
+
+	.sports-bottom-right {
+		gap: 8px;
+	}
+
+	.sports-bottom-right h4 {
+		padding: 4px 10px;
+		font-size: 13px;
+		line-height: 21px;
+
+	}
+
+
+}

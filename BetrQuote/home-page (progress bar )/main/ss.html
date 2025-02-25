@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .fieldset-wapper {
+            display: none;
+        }
+
+        .fieldset-active {
+            display: block;
+        }
+
+        .progress-bg {
+            width: 100%;
+            background-color: #f3f3f3;
+            margin: 20px 0;
+        }
+
+        .progress-bg div {
+            height: 10px;
+            background: #76c7c0;
+            width: 0;
+            transition: width 0.3s;
+        }
+
+        .fieldset-progress-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset class="fieldset-wapper fieldset-one fieldset-active">
+        <p>Step 1: Lorem Ipsum</p>
+        <button class="btn-next">Next</button>
+    </fieldset>
+
+    <fieldset class="fieldset-wapper fieldset-two">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg">
+                <div></div>
+            </div>
+            <div class="fieldset-progress-text">
+                <p>Your Savings Calculation is <span class="progress-text">20%</span> Complete</p>
+            </div>
+        </div>
+        <p>Step 2: Some information</p>
+        <button class="btn-next">Next</button>
+        <button class="btn-back">Back</button>
+    </fieldset>
+
+    <fieldset class="fieldset-wapper fieldset-three">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg">
+                <div></div>
+            </div>
+            <div class="fieldset-progress-text">
+                <p>Your Savings Calculation is <span class="progress-text"></span> Complete</p>
+            </div>
+        </div>
+        <p>Step 3: Another Section</p>
+        <button class="btn-next">Next</button>
+        <button class="btn-back">Back</button>
+    </fieldset>
+
+    <fieldset class="fieldset-wapper fieldset-four">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg">
+                <div></div>
+            </div>
+            <div class="fieldset-progress-text">
+                <p>Your Savings Calculation is <span class="progress-text"></span> Complete</p>
+            </div>
+        </div>
+        <p>Step 4: Final Section</p>
+        <button class="btn-next">Next</button>
+        <button class="btn-back">Back</button>
+    </fieldset>
+
+    <fieldset class="fieldset-wapper fieldset-five">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg">
+                <div></div>
+            </div>
+            <div class="fieldset-progress-text">
+                <p>Your Savings Calculation is <span class="progress-text"></span> Complete</p>
+            </div>
+        </div>
+        <p>Step 5: Last Section</p>
+        <button class="btn-next">Next</button>
+        <button class="btn-back">Back</button>
+    </fieldset>
+
+    <fieldset class="fieldset-wapper fieldset-final">
+        <div class="fieldset-progress-bar">
+            <div class="progress-bg">
+                <div></div>
+            </div>
+            <div class="fieldset-progress-text">
+                <p>Your Savings Calculation is <span class="progress-text">100%</span> Complete</p>
+            </div>
+        </div>
+        <p>Step 6: Completion</p>
+        <button class="btn-back">Back</button>
+    </fieldset>
+
+    <script>
+        $(document).ready(function () {
+            const totalFieldsets = $(".fieldset-wapper").length;
+            let currentStep = 0; // Track the current step
+
+            function updateProgress() {
+                const progressPercentage = (currentStep / (totalFieldsets - 1)) * 100;
+                $(".progress-bg > div").css("width", progressPercentage + "%");
+                $(".progress-text").text(progressPercentage + "% Complete");
+            }
+
+            $(".btn-next").click(function () {
+                const activeFieldset = $(".fieldset-active");
+
+                // Only proceed if there is a next fieldset
+                if (currentStep < totalFieldsets - 1) {
+                    activeFieldset.removeClass("fieldset-active");
+                    currentStep++;
+                    const nextFieldset = $(".fieldset-wapper").eq(currentStep);
+                    nextFieldset.addClass("fieldset-active");
+                    updateProgress();
+                }
+            });
+
+            $(".btn-back").click(function () {
+                const activeFieldset = $(".fieldset-active");
+
+                // Only proceed if there is a previous fieldset
+                if (currentStep > 0) {
+                    activeFieldset.removeClass("fieldset-active");
+                    currentStep--;
+                    const prevFieldset = $(".fieldset-wapper").eq(currentStep);
+                    prevFieldset.addClass("fieldset-active");
+                    updateProgress();
+                }
+            });
+
+            // Initialize progress for the first fieldset
+            updateProgress();
+        });
+    </script>
+
+</body>
+
+</html>

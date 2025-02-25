@@ -1,0 +1,827 @@
+body{ margin:0; padding:0; background: #FFF6ED; }
+:root {
+	--Blacker_Text:'Blacker Text'; 
+	--Manrope:'Manrope', sans-serif;
+}
+
+/*listing page banner section css start*/
+.listing-banner-wapper { position: relative; padding: 32px 0; }
+.listing-banner-main { max-width:802px; width:100%; margin:auto; }
+.breadcrumbs-inner-text ul { display: flex; align-items: center; gap: 8px; justify-content:center; padding:0; margin:0; }
+.breadcrumbs-inner-text ul li {
+	color: #333;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	list-style-type: none;
+}
+.breadcrumbs-inner-text ul li a {
+	color: #291622;
+	text-decoration-line: underline;
+}
+.listing-title { max-width:634px; width:100%; margin:auto; padding-top:40px; padding-bottom:32px; }
+.listing-title h1 {
+	margin:0;
+	color: #291622;
+	text-align: center;
+	font-family: Blacker Text;
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	letter-spacing: -1.95px;
+	text-transform: capitalize;
+	position: relative;
+}
+.listing-title h1:before{
+	content: '';
+	position: absolute;
+	width: 525px;
+	height: 20px;
+	display: block;
+	background: #FFF;
+	margin: auto;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	top: 28%;
+}
+
+
+.form-wapper {
+	max-width: 802px;
+	width: 100%;
+	margin: auto;
+}
+
+.form-wapper form {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.banner-new-input {
+	width: 100%;
+	max-width: 349px;
+	margin-right: 0;
+	position: relative;
+	margin-bottom: 0;
+}
+
+.area-icon img {
+	position: absolute;
+	top: 14px;
+	left: 16px;
+	width: 20px;
+	height: 20px;
+	z-index: 100;
+}
+
+.arrow-f-icon img {
+	width: 14px;
+	height: 14px;
+	top: 17px;
+	right: 16px;
+	position: absolute;
+	z-index: 100;
+}
+
+.form-col {
+	max-width: 330px;
+	width: 100%;
+}
+
+.input-focus {
+	max-width: 100%;
+	padding: 0 44px 0 44px;
+	line-height: 48px !important;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #FFF;
+	margin: auto;
+	width: 100% !important;
+	height: 48px;
+	position: relative;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.label-focus {
+	position: absolute;
+	left: 44px;
+	top: 14px;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin: 0;
+	transition-property: all;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 100ms;
+	transform-origin: center;
+	font-weight: 400;
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+input.input-focus:focus {
+	outline: unset;
+}
+
+input.input-focus:focus,
+input.input-focus:not(:placeholder-shown) {
+	padding-bottom: 0 !important;
+	padding-top: 10px !important;
+}
+
+input.input-focus:focus+label,
+input.input-focus:not(:placeholder-shown)+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+select.select-focus::not([value=""]):valid~label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+select.select-focus:focus+label {
+	font-size: 12px;
+	-webkit-transform: translateY(-0.9rem);
+	-moz-transform: translateY(-0.9rem);
+	-ms-transform: translateY(-0.9rem);
+	transform: translateY(-0.9rem);
+}
+
+input.input-focus::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus::-moz-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+input.input-focus::placeholder {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+.form-col .form-group{ position: relative; margin: 0;}
+.form-col .form-control {
+	max-width: 100%;
+    line-height: 48px !important;
+    border-radius: 52px !important;
+    padding: 0 44px 0px 44px;
+    border: 1px solid #291622;
+    background: #FFF;
+    margin: auto;
+    width: 100% !important;
+    height: 48px;
+    position: relative;
+    color: #291622;
+    font-family: var(--Manrope);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+	appearance: none;
+    line-height: normal;
+	display: block;
+    -webkit-transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .35s ease-in-out;
+}
+select.form-control{ transition: 0.15s;  }
+
+.floating-label {
+	font-size: 16px;
+    font-weight: 400;
+    color: #475F7B;
+    opacity: 1;
+    top: 0px;
+    left: 44px ;
+    pointer-events: none;
+    position: absolute;
+    transition: 240ms;
+    margin-bottom: 0;
+    z-index: 1;
+}
+.floating-diff .floating-label{ opacity: 0; }
+.floating-diff.focused .floating-label{ opacity: 1;}
+.form-group.focused .floating-label { opacity: 1; color: #7b7f82; top: 0px; left: 44px; font-size: 12px;}
+.form-group.focused select.form-control{ padding-top: 5px;}
+.float-checkradio{ background-color: #FFF; border: 1px solid #DFE3E7; border-radius: .267rem; padding: 8px 19px; transition: 0.3s; min-height: 55px;}
+.float-checkradio.focused{ padding-top: 21px;}
+
+
+.form-btn button {
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #F3DCA0;
+	padding: 0 24px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	height: 48px
+}
+
+
+/*listing page banner section css end*/
+
+/* Lawyers list section css start */
+.lawyers-list-wapper { 
+	background: #FFF6ED;
+	padding: 300px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lawyers-list-wapper:before{
+	content: '';
+	border-top: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 100px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.lawyers-list-wapper::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	border-top: 2px solid #291622;
+	top: 128px;
+	background: #F8EBDF;
+	width: 115%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+
+/* left side css start */
+.lawyers-sidebar-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	padding-bottom: 20px;
+}
+.lawyers-sidebar-title h3 {
+	color: #291622;
+	font-family: var(--Blacker_Text);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
+.lawyers-sidebar-title a {
+	color: #333;
+	font-family:var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+}
+.form-p-wapper { display:flex; flex-direction:column; gap:14px; }
+.lawyers-sidebar-card { display: flex; flex-direction: column; gap: 16px; position: relative; }
+.lawyers-rating-card {
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 20px;
+	border: 1px solid #291622;
+	background: #FFF;
+}
+.lawyers-rating-card h3 {
+	color: #291622;
+	font-family: var(--Blacker_Text);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.18px;
+	margin: 0;
+}
+.form-p-wapper .form-check { padding-left: 0; display: flex; align-items: center; gap: 8px; }
+.form-p-wapper label { margin-bottom:0 !important;  }
+.form-p-wapper label img { width:100%; height:auto; max-width:unset; }
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+	.radio::after {
+		border-top: 0;
+		border-left: 0;
+		content: "";
+		display: block;
+		left: 4px;
+		position: absolute;
+		top: 8px;
+		width: 8px;
+		height: 8px;
+		border-radius: 100%;
+		background:transparent;
+	}
+}
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+	.radio {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background:transparent !important;
+		border: 1px solid #291622;
+		border-radius: 100% !important;
+		height: 16px !important;
+		outline: none !important;
+		width: 16px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+}
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+	.radio:checked { background-color:#96423F !important; }
+	.radio:checked:after {
+		background: #fff;
+	}
+}
+.lawyers-language { display:flex; flex-direction:column; gap:14px; }
+.lawyers-form-check{ position:relative; }
+.lawyers-form-check .form-check-input { position: absolute; z-index: -1; opacity: 0; }
+.lawyers-form-check .form-check-label {
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	padding-left: 30px;
+}
+.lawyers-form-check .form-check-label:before, .lawyers-form-check .form-check-label:after {
+	content: "";
+	position: absolute;
+	top: 49%;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	border-radius: 4px;
+}
+.lawyers-form-check .form-check-label:before { 
+	left: 0; 
+	pointer-events: none; 
+	user-select: none; 
+	border: 1px solid #291622; 
+	background: transparent; 
+}
+.lawyers-form-check .form-check-label:after {
+	left: 3px;
+	width: 14px;
+	height: 14px;
+	border-radius: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+	margin-top: -7px;
+	background-image: url('../img/check-mark.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.lawyers-form-check .form-check-input:checked + .form-check-label:after { opacity: 1; }
+.lawyers-form-check .form-check-input:checked + .form-check-label:before { background-color:#96423F; border-color:#96423F; }
+
+/* left side css end */
+.lawyers-list-main { display:flex; flex-direction:column; gap:20px; }
+.lawyers-list-card {
+	border: 1px solid #291622;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex: 1 0 0;
+}
+.lawyers-list-left { max-width: 195px; width: 100%; border-right: 1px solid #291622; position:relative; height: 100%; }
+.premium-list {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #F3DCA0;
+	height: 30px;
+	padding: 0 8px;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 30px;
+	text-align: center;
+}
+.lawyers-list-thumb img{
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+}
+.content-stars { 
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex; 
+	gap:8px; 
+	border: 1px solid #291622;
+	background: #F8EBDF;
+	padding: 4px 8px;
+}
+.content-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:13px; }
+.content-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.content-stars-rating span.star:hover { cursor:pointer; }
+.content-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#96423F; }
+.content-stars-rating span.star.filled:before { font-weight: 900; color:#96423F; content:"\f005"; }
+.content-stars-rating span.star.half-filled:before { content:"\f089"; color:#96423F; }
+.content-stars-rating span.star.half-filled:after { content:"\f005"; color:#96423F; margin-left:-16px; }
+.content-stars p { 
+	margin: 0;
+	color:#291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.lawyers-list-right { 
+	display: flex;
+	padding: 20px;
+	gap: 16px;
+	flex: 1 0 0;
+	align-self: stretch;
+	position: relative;
+	background: #FFF6ED;
+}
+.premium-card-wapper .lawyers-list-right { background: #FFF; }
+.lawyers-right-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	flex: 1 0 0;
+}
+.lawyers-right-card h2 {
+	margin: 0;
+	color: #291622;
+	font-family: var(--Blacker_Text);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.2px;
+}
+.lawyers-right-card h3 {
+	margin: 0;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+.lawyers-right-card span.address-card {
+	display: flex;
+	align-items: center;
+	color: #96423F;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	gap: 8px;
+}
+.lawyers-right-card span.address-card img { width: 16px; height: 16px; }
+.lawyers-right-card p {
+	color: #333;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+.lawyers-right-card p a{ color: #96423F; font-weight: 600; }
+.lawyers-right-card ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.lawyers-right-card ul li{
+	display: flex;
+	flex-direction: row;
+	color: #333;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	gap: 10px;
+	align-items: baseline;
+}
+.lawyers-right-card ul li img {
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+.lawyers-right-last{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+.lawyers-right-last-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	position: relative;
+}
+.lawyers-right-last-top span {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+.lawyers-right-last-top span img { width: 18px; height: 18px; max-width:unset; }
+.lawyers-right-last-top span a {
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	color: #291622;
+}
+.lawyers-right-last-bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	align-self: stretch;
+}
+.website-btn {
+	display: flex;
+	height: 48px;
+	max-width: 210px;
+	width: 100%;
+	gap: 10px;
+	padding: 0 24px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 33px;
+	border: 1px solid #96423F;
+	color: #96423F;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+}
+.website-btn:hover{ color: #96423F; }
+.email-btn {
+	border-radius: 52px;
+	border: 1px solid #333;
+	background: #F3DCA0;
+	display: flex;
+	max-width: 210px;
+	width: 100%;
+	height: 48px;
+	padding:0 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: #333;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.email-btn:hover{ color: #333; }
+
+/* Lawyers list section css end */
+
+/* Legal Guides section start */
+.lelgal-guides-section{
+	background: #F8EBDF ;
+	padding: 300px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+.lelgal-guides-section::before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 118px;
+	position: absolute;
+	left: -100px;
+	z-index: -2;
+	height: 100%;
+}
+.lelgal-guides-section::after {
+	content: '';
+	position: absolute;
+	right: -106px;
+	top: 150px;
+	background: #291622;
+	width: 114%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+.lelgal-guides-section h2{
+	margin: 0;
+	color: #FFF;
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+}
+.lelgal-guides-section h2 span{
+	position: relative;
+	z-index: 1;
+}
+.lelgal-guides-section h2 span::after{
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #532E45;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+.lelgal-guides-section .Legal-Guides-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.injured-law-wapper{
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+	row-gap: 24px;
+	flex-flow: row wrap;
+}
+.Injury-Law-card-wapper{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.Injury-Law-card-wapper h6{
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+}
+.Injury-Law-card-wapper p{
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin: 0;
+}
+.lelgal-guides-section .container{ display: flex; flex-direction: column; gap: 120px; }
+.read-more-btn{ display: none; }
+/* Legal Guides section end */
+
+
+@media(max-width:1399px){
+
+	/* Lawyers list section css start */
+	.lawyers-list-wapper::before { left: -90px; }
+	.lawyers-list-wapper::after { right: -120px; width: 118%; }
+	/* Lawyers list section css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section::before { left: -90px; }
+	.lelgal-guides-section::after { right: -120px; width: 118%; }
+	/* Legal Guides section end */
+}
+@media(max-width:1199px){
+	/* Lawyers list section css start */
+	.lawyers-list-wapper::before { width: 100%; top: 104px;  left: -145px;}
+	.lawyers-list-wapper::after { right: -120px; width: 122%; }
+	/* Lawyers list section css end */
+
+	/* Legal Guides section start */
+	.d-n{display: none;}
+	.read-more-btn{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.read-more-btn a{
+		color: #291622;
+		font-family: var(--font_2);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		padding: 16px 90px;
+		border-radius: 52px;
+		border: 1px solid #291622;
+		background: #F3DCA0;
+	}
+	.lelgal-guides-section::after {
+		right: -120px;
+		width: 122%;
+	}
+	.lelgal-guides-section::before { width: 100%; top: 137px; left: -120px; }
+	.Injury-Law-card-wapper { display: none; }
+	/* Legal Guides section end */
+}
+
+@media(max-width:991px){
+	/* Lawyers list section css start */
+	.lawyers-list-wapper::after { right: -199px; width: 150%; }
+	.lawyers-list-main { margin-top:30px; }
+	.lawyers-list-card  { flex-flow: row wrap; }
+	.lawyers-list-right { flex-direction:column; }
+	.lawyers-right-last { flex-flow:wrap row; }
+	.lawyers-right-last-bottom { flex-flow:wrap row; width:100%; }
+	.form-col { max-width: 275px; width: 100%; }
+	/* Lawyers list section css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding: 240px 0 80px 0; }
+	.lelgal-guides-section .container { gap: 80px; }
+	.lelgal-guides-section h2 { font-size: 46px; }
+	.lelgal-guides-section::after { right: -145px; width: 135%; }
+	
+	/* Legal Guides section end */
+}
+@media(max-width:767px){
+	/* listing page banner section html start */	
+    .breadcrumbs-inner-text ul li { font-size: 11px; }
+	.listing-banner-wapper { position: relative; padding: 24px 0;}
+	.listing-title { max-width: 634px; width: 100%; margin: auto; padding-top: 24px; padding-bottom: 0px;}
+	.listing-title h1 { font-size:40px;line-height:50px; padding-bottom: 24px;}
+	.listing-title h1:before { width:240px;top: 16%; }
+	.banner-new-input { max-width: 100%;}
+	.form-btn { width: 100%; height: 100%; object-fit: cover; max-width: unset; }
+	.form-btn button { width: 100%; max-width: 100%; height: 48px; padding: 12px 24px; justify-content: center; align-items: center; gap: 10px;}
+	.form-wapper, .form-col { max-width:100%; }
+	/* listing page banner section html end */
+	/* Lawyers list section css start */
+	.lawyers-list-wapper { background: #FFF6ED; padding: 185px 0 80px 0; position: relative; z-index: 1; overflow: hidden;}
+	.lawyers-list-wapper::before { width: 100%; top: 75px; left: -210px; }
+	.lawyers-list-wapper::after { right: -290px; width: 273%; top: 114px; }
+	.lawyers-list-main { margin-top:30px; }
+	.lawyers-list-card  { flex-direction:column; flex-flow:column; }
+	.lawyers-list-right { flex-direction:column; }
+	/* Lawyers list section css end */
+
+	/* Legal Guides section start */
+	.lelgal-guides-section { padding: 160px 0 50px 0; }
+	.lelgal-guides-section .container { gap: 50px; }
+	.lelgal-guides-section .Legal-Guides-wapper { gap: 24px; }
+	.lelgal-guides-section::before { top: 42px; left: -171px;}
+	.lelgal-guides-section::after { right: -226px; width:220%; top:65px;}
+	.lelgal-guides-section h2 span::after { height: 15px;}
+	.m-d-n { display: none; }
+	.lelgal-guides-section h2 { font-size: 36px; letter-spacing: -0.36px; }
+	/* Legal Guides section end */
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owl Carousel Sync Slider</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<style>
+      .owl-thumb-item img {
+            width: 100%;
+            height: auto;
+        }
+  .owl-thumb-item {
+            width: 100px;
+            height: auto;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+</style>
+</head>
+<body>
+
+<div id="sync1" class="owl-carousel owl-theme">
+    <div class="item"><h2>1</h2></div>
+    <div class="item"><h2>2</h2></div>
+    <div class="item"><h2>3</h2></div>
+    <div class="item"><h2>4</h2></div>
+    <div class="item"><h2>5</h2></div>
+    <div class="item"><h2>6</h2></div>
+</div>
+
+<div id="sync2" class="owl-carousel owl-theme">
+    <div class="item"><h2>1</h2></div>
+    <div class="item"><h2>2</h2></div>
+    <div class="item"><h2>3</h2></div>
+    <div class="item"><h2>4</h2></div>
+    <div class="item"><h2>5</h2></div>
+    <div class="item"><h2>6</h2></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+   $(document).ready(function(){
+    var sync1 = $('#sync1');
+    var sync2 = $('#sync2');
+    var syncedSecondary = true;
+
+    sync1.owlCarousel({
+        items: 3,
+        slideSpeed: 300,
+        nav: false,
+        dots: false,
+        autoplay: false,
+        loop: true,
+        responsiveRefreshRate: 200,
+        navText: [
+            '<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>',
+            '<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'
+        ]
+    });
+
+    sync2.owlCarousel({
+        items: 4,
+        dots: true,
+        nav: true,
+        loop:false,
+        slideBy: 1,
+        responsiveRefreshRate: 100,
+        slideBy: 1,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 4
+            }
+        }
+    });
+
+    sync1.on('changed.owl.carousel', function(event) {
+        if (!event.namespace || !event.relatedTarget || syncedSecondary) {
+            return;
+        }
+        var number = event.relatedTarget.relative(event.item.index);
+        sync2.data('owl.carousel').to(number, 300, true);
+    });
+
+    sync2.on('initialized.owl.carousel', function() {
+        sync2.find('.owl-item').eq(0).addClass('current');
+    }).on('click', '.owl-item', function() {
+        var index = $(this).index();
+        var sync1Index = sync1.find('.owl-item').eq(index).index();
+        sync1.trigger('to.owl.carousel', [sync1Index, 300, true]);
+    }).on('changed.owl.carousel', function(event) {
+        if (!event.namespace || !event.relatedTarget) {
+            return;
+        }
+        if (syncedSecondary) {
+            var number = event.relatedTarget.relative(event.item.index);
+            sync1.data('owl.carousel').to(number, 100, true);
+        }
+    });
+  });
+</script>
+
+</body>
+</html>

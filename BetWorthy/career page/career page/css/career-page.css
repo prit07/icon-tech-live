@@ -1,0 +1,489 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+
+/* Join Us Today start */
+
+.cp-join {
+	width: 100%;
+	height: 400px;
+	background: url(../img/jion-us.png) no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cp-jion-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 36px;
+	max-width: 697px;
+	width: 100%;
+	margin: auto;
+}
+
+.cp-jion-text>h4 {
+	color: #1B9C43 ;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.cp-jion-text>h1 {
+	color: #FFF;
+	text-align: center;
+	font-family: var(--font_1);
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 68.5px;
+	letter-spacing: 0.6px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.cp-jion-text>p {
+	color: #FFF;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
+
+/* Join Us Today end */
+
+
+/* we’re are looking for start */
+.cp-looking {
+	padding: 100px 0px;
+	background: #FFF;
+}
+
+.cp-looking-wapper h3 {
+	color: #0E2236;
+	text-align: center;
+	margin: 0;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50px;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.cp-product {
+	display: flex;
+	width: 100%;
+	max-width: 664px;
+	padding: 16px 24px;
+	justify-content: space-between;
+	align-items: center;
+	background: #F6F6F6;
+}
+
+.cp-product-left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+}
+
+.cp-product-left h4 {
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: -0.16px;
+	margin: 0;
+}
+
+.cp-product-left p {
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: -0.14px;
+	margin: 0;
+}
+
+.cp-product-right a {
+	color: #1B9C43 !important;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: -0.16px;
+}
+
+/* we’re are looking for end */
+
+
+
+/* Meet Our People Start  */
+.cp-people {
+	padding: 101px 0px 99px 0;
+	background: #F6F6F6;
+}
+
+.cp-people-wapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 36px;
+	width: 100%;
+	max-width: 993px;
+	margin: auto;
+}
+
+.cp-people-wapper h4 {
+	color: #1B9C43;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.cp-people-wapper h2 {
+	color: #0E2236;
+	text-align: center;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 50px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.cp-people-wapper p {
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: -0.2px;
+	margin: 0;
+}
+
+.cp-people-main {
+	background: #FFF;
+}
+
+.cp-people-top {
+	background: #EEE;
+	padding: 16px;
+	position: relative;
+}
+
+.cp-people-top::before {
+	content: "";
+	background: url(../img/people-line.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	max-width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.cp-people-left {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 16px;
+}
+
+.cp-people-img img {
+	width: 48px;
+	height: 48px;
+	border-radius: 48px;
+}
+
+.cp-pe-left-text h4 {
+	color: #4D4F4E;
+	margin: 0;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: -0.16px;
+}
+
+.cp-pe-left-text p {
+	color: #4D4F4E;
+	text-align: center;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: -0.14px;
+	margin: 0;
+}
+
+.cp-people-bottom {
+	padding: 16px;
+}
+
+.cp-people-bottom p {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: -0.14px;
+	margin: 0;
+}
+
+/* Meet Our People End */
+
+
+/* Apply Now For Success start  */
+
+.cp-apply-from {
+	background: #1A6C83;
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.cp-apply-from::before {
+	content: "";
+	background: url(../img/from.png) no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+}
+
+.cp-apply-from-wappre {
+	width: 100%;
+	display: flex;
+	max-width: 743px;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	position: relative;
+	margin: auto;
+
+}
+
+.cp-apply-from-heading h2 {
+	color: #FFF;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+}
+
+.cp-from-input input {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	width: 100%;
+	color: rgba(77, 79, 78, 0.50);
+	font-family: var(--font_2);
+	font-size: 16px !important;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	border: none;
+}
+
+.cp-from-input select {
+	width: 100%;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%;
+	outline: none;
+}
+
+.cp-from-input textarea {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	border: none;
+	outline: none;
+	width: 100%;
+	color: rgba(77, 79, 78, 0.50) !important;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.cp-btn {
+	display: flex;
+	padding: 16px 24px;
+	justify-content: center;
+	align-items: center;
+	background: #1B9C43;
+}
+
+.cp-btn button {
+	background: #1B9C43;
+	border: none;
+	color: #FFF;
+	font-family: Manrope;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	/* 155.556% */
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+
+@media(max-width:991px) {
+
+	/* we’re are looking for start */
+	.cp-looking {
+		padding: 50px 0px;
+	}
+
+
+	/* Meet Our People Start  */
+	.cp-people {
+		padding: 50px 0px;
+	}
+
+	/* Apply Now For Success start  */
+
+	.cp-apply-from {
+		padding: 50px 0;
+	}
+}
+
+@media(max-width:767px) {
+
+	/* Join Us Today start */
+	.cp-jion-text {
+		gap: 25px;
+	}
+
+	.cp-jion-text>h4 {
+		font-size: 17px;
+		line-height: 23px;
+	}
+
+	.cp-jion-text>h1 {
+		font-size: 48px;
+		line-height: 58.5px;
+	}
+
+	.cp-jion-text>p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+
+
+	/* we’re are looking for start */
+
+	.cp-looking-wapper h3 {
+		font-size: 37px;
+		line-height: 39px;
+	}
+
+
+
+	/* Meet Our People Start  */
+
+	.cp-people-wapper {
+
+		gap: 22px;
+	}
+
+	.cp-people-wapper h4 {
+		font-size: 15px;
+		font-weight: 700;
+		line-height: 26px;
+	}
+
+	.cp-people-wapper h2 {
+
+		font-size: 42px;
+		line-height: 46px;
+
+	}
+
+	.cp-people-wapper p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+
+
+
+	/* Apply Now For Success start  */
+
+	.cp-apply-from-wappre {
+		gap: 36px;
+	
+	}
+
+	.cp-apply-from-heading h2 {
+		text-align: center;
+		font-size: 46px;
+		line-height: 58px;
+	}
+
+
+
+}

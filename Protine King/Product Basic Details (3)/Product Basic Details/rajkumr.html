@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <style>
+        .variants-popup_content {
+            position: relative;
+            width: 100% !important;
+            max-width: 400px !important;
+        }
+
+        .variants-popup_content select {
+            display: none;
+        }
+
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #000000 transparent transparent transparent;
+        }
+
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent #000000 transparent;
+            top: 7px;
+        }
+
+        .select-selected {
+            background: #fff;
+            border-radius: 5px;
+            position: relative;
+            padding: 8px 20px;
+            cursor: pointer;
+            border: 1px solid #5D5A5A;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.1px;
+            text-align: left;
+            color: #000;
+            margin-top: 10px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .select-items {
+            width: 100%;
+            max-width: 100%;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px #5D5A5A;
+        }
+
+        .select-items div {
+            padding: 5px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.1px;
+            text-align: left;
+            color: #000;
+            display: block;
+            text-decoration: none;
+        }
+
+        .select-items {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            right: 0;
+            z-index: 99;
+        }
+
+        .select-hide {
+            display: none;
+        }
+
+        .select-items div:hover {
+            color: #fff;
+            background-color: rgba(0, 0, 0, 1);
+        }
+
+        .select-items div:hover:first-child {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .select-items div:hover:last-child {
+            border-radius: 0 0 5px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="variants-popup_content" style="width:200px;">
+        <select>
+            <option data-value_id="8283" data-atr_id="36">Select car:</option>
+            <option data-value_id="8284" data-atr_id="36">Audi</option>
+            <option data-value_id="8285" data-atr_id="3">BMW</option>
+            <option data-value_id="8286" data-atr_id="6">Citroen</option>
+            <option data-value_id="8287" data-atr_id="3">Ford</option>
+        </select>
+    </div>
+    <div class="itpl_name"></div>
+
+    <script>
+        $(document).ready(function () {
+            $(".variants-popup_content").each(function () {
+                var $this = $(this),
+                    $select = $this.find("select"),
+                    // Create the selected element
+                    $selected = $("<div></div>")
+                        .addClass("select-selected form-select css_attribute_select variants-select-color o_wsale_product_attribute js_variant_change itpl_variant_change always active")
+                        .html($select.find("option:selected").html()),
+                    // Create the items element
+                    $items = $("<div></div>")
+                        .addClass("select-items select-hide");
+
+                // Create the dropdown items
+                $select.find("option").each(function (i) {
+                    var $option = $(this);
+                    var $item = $("<div></div>")
+                        .html($option.html())
+                        .attr('data-atr_id', $option.data('atr_id'))
+                        .on("click", function () {
+                            var $clicked = $(this),
+                                index = $clicked.index(), // Adjust index to account for all options
+                                atr_id = $clicked.attr('data-atr_id'); // Capture the data-atr_id
+
+                            // Update the select element's selectedIndex
+                            $select.prop("selectedIndex", index);
+
+                            // Update the selected attribute on the select options
+                            $select.find("option").removeAttr("selected");
+                            $select.find("option").eq(index).attr("selected", "selected");
+
+                            // Update the custom dropdown's displayed selected value and data-atr_id
+                            $selected.html($clicked.html());
+                            $selected.attr('data-atr_id', atr_id); // Update data-atr_id on the selected element
+
+                            // Manage the same-as-selected class
+                            $clicked.addClass("same-as-selected").siblings().removeClass("same-as-selected");
+
+                            // Close the dropdown
+                            $selected.click();
+                        });
+
+                    // Add same-as-selected class if the option is selected initially
+                    if ($option.is(":selected")) {
+                        $item.addClass("same-as-selected");
+                    }
+
+                    $items.append($item);
+                });
+
+                // Create a container div for selected and items
+                var $container = $("<div></div>")
+                    .addClass("select-container")
+                    .append($selected)
+                    .append($items);
+
+                // Append the container div to the main content
+                $this.append($container);
+
+                $selected.on("click", function (e) {
+                    e.stopPropagation();
+                    $(".select-items").not($items).addClass("select-hide");
+                    $(".select-selected").not($selected).removeClass("select-arrow-active");
+                    $items.toggleClass("select-hide");
+                    $selected.toggleClass("select-arrow-active");
+                });
+            });
+
+            $(document).on("click", function () {
+                $(".select-items").addClass("select-hide");
+                $(".select-selected").removeClass("select-arrow-active");
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

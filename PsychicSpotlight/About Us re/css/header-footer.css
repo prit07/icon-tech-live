@@ -1,0 +1,62 @@
+
+body { margin: 0; padding: 0; box-sizing: border-box; }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+/* Header start */
+.h-header-wappper { padding-top: 24px;}
+.h-header-main { display: flex; justify-content: space-between; align-items: center; margin-top: 0;}
+.h-header-main-logo a img  {max-width: 296px; height: 81px; width: 100%;}
+.h-header-main-btn a { 
+    display: inline-block;
+    color: #FFF;
+    height: fit-content;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    padding: 16px 24px;
+    letter-spacing: -0.48px;
+    border-radius: 60px;
+    background: #BCA8F4;
+ }
+
+ 
+/* Header End */
+
+
+/* Footer start */
+.footer { background: #09121F;  padding: 22px 0;}
+.footer-wapper-logo a img {max-width: 296px; height: 81px; width: 100%; }
+/* Footer End */
+
+
+
+
+@media (max-width:1199px) {
+  
+  
+}
+
+
+
+
+@media (max-width:991px) {
+ 
+}
+
+
+
+@media (max-width:767px){
+    .h-header-main { margin-top: 0px;}
+    .h-header-main-logo a img  { max-width: 200px; height: 61px; }
+    .footer-wapper-logo a img {max-width: 200px; height: 61px; width: 100%; }
+}
+
+
+ 
+@media(min-width:1300px){
+	.container.w-1269 { max-width:1269px!important;  padding: 0; }
+}

@@ -1,0 +1,438 @@
+body { margin: 0; padding: 0; }
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+
+/* About Us Start  */
+
+.about-us {padding: 54px 0 107px 0; }
+
+/* breadcrumbs css start */
+.au-best-article-top ul{ display: flex; gap: 5px; }
+.au-best-article-top { margin-bottom: 32px;}
+.au-best-article-top>ul>li>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.au-best-article-top>ul>li>a>span {
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* breadcrumbs css end */
+
+
+.au-ba-row { display:flex; flex-direction:row;justify-content:space-between; gap:20px; }
+.au-left-col { max-width: 845px; width: 100%; }
+.au-right-col { max-width:302px; width:100%; }
+
+/* About Us Start */
+.about-us-wapper-left {display: flex; flex-direction: column; gap: 32px;}
+
+/* About Fit Small Business Start  */
+.au-about-fit-business {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.au-about-fit-business h2 {
+    color: #000;
+    font-family: Onest;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px; 
+    margin: 0;
+    letter-spacing: -0.4px;
+}
+.au-about-fit-business p {
+    color: #000;
+    font-family: Golos Text;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: 0.18px;
+}
+/* About Fit Small Business End */
+
+ 
+/* Our Topics of Focus & Industry Experts Start */
+.au-our-topics-of-focus h2 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 16px;
+    letter-spacing: -0.28px;
+}
+.au-our-topics-of-focus-main {display: flex; flex-direction: column; gap: 12px;}
+.au-our-topics-of-focus-wapper {
+    border-radius: 4px;
+    background: #F1F1F1;
+    display: flex;
+    gap: 12px;
+    padding: 24px 16px;
+}
+.au-our-topics-of-focus-img {position: relative; z-index: 1;}
+.au-our-topics-of-focus-img>img {
+    width: 82px;
+    height: 82px;
+    border-radius: 82px;
+}
+.au-our-topics-of-focus-img-linkdin>a>img{
+   width: 31px;
+   top: 50px;
+   right: 0;
+   height: 31px;
+   position: absolute;
+}
+
+.au-our-topics-of-focus-text { display: flex; flex-direction: column; gap: 8px;}
+.au-our-topics-of-focus-text h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin: 0;
+}
+.au-our-topics-of-focus-text>h3 {
+    margin: 0; line-height: 0;
+}
+.au-our-topics-of-focus-text>h3>a{
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.au-our-topics-of-focus-text>p {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.14px;
+    margin: 0;
+}
+/* Our Topics of Focus & Industry Experts End */
+
+
+/*  How We Make Money Start */
+.au-how-we-make-money  {display:flex ; flex-direction: column; gap: 16px;}
+.au-how-we-make-money h2{
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+.au-how-we-make-money p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    letter-spacing: 0.18px;
+}
+.au-how-we-make-money>p>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    text-decoration-line: underline;
+}
+/*  How We Make Money End */
+
+
+/* Join our Team Start */
+.au-jpin-our-team { display: flex; flex-direction: column; gap: 16px;}
+.au-jpin-our-team> h2 {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+.au-jpin-our-team>p{
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+.au-jpin-our-team>p>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    text-decoration-line: underline;
+}
+
+/* Join our Team End */
+
+
+/* Contact Us Start */
+.au-contact-us h2{ 
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
+    letter-spacing: -0.28px;
+    margin: 0;
+}
+.au-contact-us-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+ }
+.au-contact-us-left-top>ul { display: flex; flex-direction: column; gap: 12px;}
+.au-contact-us-left-top>ul>li { display: flex;gap: 12px;}
+.au-contact-us-left-top>ul>li>img { width: 24px; height: 24px;}
+.au-contact-us-left-top>ul>li>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.au-share-icon-left ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.au-share-icon-left>ul>li>a>i {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.au-contact-us-map-right iframe { width: 100%; height: 197px;}
+/* Conatct Us End */
+
+
+
+/* Right Start */
+.au-wapper-right { display: flex; flex-direction: column; gap: 40px; }
+
+/* Right Subscribe Start */
+.au-subscribe-btn h3 {
+    width: 100%;
+    display: flex;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.au-subscribe-btn>h3>a {
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* Right Subscribe End */
+
+
+/* SHARE START */
+.au-share h3{
+    color: rgba(24, 23, 22, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.au-share-icon ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.au-share-icon>ul>li>a>i {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  SHARE End */
+
+
+/* Right Search Start */
+.au-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.au-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.au-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+/* Right Search End */
+
+/* Right Latest News Start */
+.au-latest-newa-heading { margin-bottom: 24px;}
+.au-latest-newa-heading h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.au-latest-newa-wapper { display: flex; flex-direction: column; gap: 16px;}
+.au-latest-newa-items h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.au-latest-newa-items h2 { line-height: 0; margin-bottom: 6px;}
+.au-latest-newa-items>h2>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.au-latest-newa-items p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.au-hr {margin: 0; border-top: 1px solid #E6E6E6;}
+/* Right Latest News End */
+
+/* Related themes  Start */
+.au-related-theme-main h2{
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.au-related-theme-card { display: flex; flex-flow: row wrap; gap: 8px; }
+.au-related-theme-card a {
+    border-radius: 4px;
+    border: 1px solid #DFAB3E;
+    padding: 10px 16px;
+    color: #181716;
+    font-family: var(--onest-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Related themes  End */
+
+/* About Us End */
+
+
+@media (max-width:991px) {
+    .au-ba-row { gap: 20px; flex-wrap: wrap; }
+    .au-ba-row { gap: 64px;}
+
+    .au-m-order-1 { order: 0;}
+    .au-m-order-0 { order: 1;}
+    .au-d-flex { display: flex; flex-direction: column; gap: 20px;}
+    .au-contact-us h2 { margin-bottom: 20px;}
+}
+
+
+@media (max-width:767px) {
+    .about-us { padding: 40px 0 64px 0;}
+    .au-best-article-top { margin-bottom: 40px;}
+    .about-us-wapper-left { gap: 40px;}
+    .au-about-fit-business h2 { font-size: 36px; line-height: 44px;}
+    .au-our-topics-of-focus-wapper { gap: 12px; flex-direction: column;}
+
+    .au-our-topics-of-focus-img-linkdin>a>img { top: 50px; left: 50px;}
+    .au-related-theme-card a {
+        border-radius: 0px;
+        border: 1px solid #DFAB3E;
+        color: #3836CB;
+        font-family: var(--golos-text);
+        font-weight: 500;
+    }
+}

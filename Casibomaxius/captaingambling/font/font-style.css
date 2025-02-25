@@ -1,0 +1,173 @@
+/* SuisseIntl */
+@font-face{
+    font-family: "SuisseIntl";
+    src: url("653d9381828e9577fb1e417dc047f89d.woff")format("woff"),
+    url("653d9381828e9577fb1e417dc047f89d.woff2")format("woff2");
+    font-weight:600;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face{
+    font-family: "SuisseIntl";
+    src: url("88f10bf18a36407ef36bf30bc25a3618.woff")format("woff"),
+    url("88f10bf18a36407ef36bf30bc25a3618.woff2")format("woff2");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face{
+    font-family: "SuisseIntl";
+    src: url("c446362802681bacaacbad0f39bfc1a5.woff")format("woff"),
+    url("c446362802681bacaacbad0f39bfc1a5.woff2")format("woff2");
+    font-weight:500;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face{
+    font-family: "SuisseIntl";
+    src: url("03d5b20d124cd26dc873bd4a8e42313e.woff")format("woff"),
+    url("03d5b20d124cd26dc873bd4a8e42313e.woff2")format("woff2");
+    font-weight:300;
+    font-style:normal;
+    font-display:swap;
+}
+
+/* PP Editorial New */
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-UltralightItalic.woff2') format('woff2'),
+    url('PPEditorialNew-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Regular.woff2') format('woff2'),
+    url('PPEditorialNew-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Ultralight.woff2') format('woff2'),
+    url('PPEditorialNew-Ultralight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Ultrabold.woff2') format('woff2'),
+    url('PPEditorialNew-Ultrabold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-UltraboldItalic.woff2') format('woff2'),
+    url('PPEditorialNew-UltraboldItalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PP Editorial New';
+    src: url('PPEditorialNew-Italic.woff2') format('woff2'),
+    url('PPEditorialNew-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Editorial New */
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Regular.eot');
+    src: local('Editorial New Regular'), local('EditorialNew-Regular'),
+        url('EditorialNew-Regular.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Regular.woff2') format('woff2'),
+        url('EditorialNew-Regular.woff') format('woff'),
+        url('EditorialNew-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Light.eot');
+    src: local('Editorial New Light'), local('EditorialNew-Light'),
+        url('EditorialNew-Light.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Light.woff2') format('woff2'),
+        url('EditorialNew-Light.woff') format('woff'),
+        url('EditorialNew-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Ultrabold.eot');
+    src: local('Editorial New Ultrabold'), local('EditorialNew-Ultrabold'),
+        url('EditorialNew-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Ultrabold.woff2') format('woff2'),
+        url('EditorialNew-Ultrabold.woff') format('woff'),
+        url('EditorialNew-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Bold.eot');
+    src: local('Editorial New Bold'), local('EditorialNew-Bold'),
+        url('EditorialNew-Bold.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Bold.woff2') format('woff2'),
+        url('EditorialNew-Bold.woff') format('woff'),
+        url('EditorialNew-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Medium.eot');
+    src: local('Editorial New Medium'), local('EditorialNew-Medium'),
+        url('EditorialNew-Medium.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Medium.woff2') format('woff2'),
+        url('EditorialNew-Medium.woff') format('woff'),
+        url('EditorialNew-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Thin.eot');
+    src: local('Editorial New Thin'), local('EditorialNew-Thin'),
+        url('EditorialNew-Thin.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Thin.woff2') format('woff2'),
+        url('EditorialNew-Thin.woff') format('woff'),
+        url('EditorialNew-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Ultralight.eot');
+    src: local('Editorial New Ultralight'), local('EditorialNew-Ultralight'),
+        url('EditorialNew-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Ultralight.woff2') format('woff2'),
+        url('EditorialNew-Ultralight.woff') format('woff'),
+        url('EditorialNew-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Editorial New';
+    src: url('EditorialNew-Heavy.eot');
+    src: local('Editorial New Heavy'), local('EditorialNew-Heavy'),
+        url('EditorialNew-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('EditorialNew-Heavy.woff2') format('woff2'),
+        url('EditorialNew-Heavy.woff') format('woff'),
+        url('EditorialNew-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

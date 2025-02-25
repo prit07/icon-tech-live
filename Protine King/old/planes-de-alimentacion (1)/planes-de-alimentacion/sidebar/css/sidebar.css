@@ -1,0 +1,540 @@
+body { margin:0; padding:0; }
+a:hover { text-decoration:none; }
+[data-theme="dark"] { }
+[data-ver="dark"] { }
+
+
+
+
+/*  */
+.ver-siderbar-dynamics-data { margin-bottom: 10px;}
+.ver-siderbar-dynamics-data ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; flex-direction: column; }
+.ver-siderbar-dynamics-data ul li  { display: flex; flex-direction: column; gap:5px;}
+.ver-siderbar-dynamics-data ul li b{
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14.75px;
+  text-align: left;
+}
+.ver-siderbar-dynamics-data ul li span {
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 12.41px;
+  text-align: left;
+}
+.ver-siderbar-dynamics-data ul li span p { margin: 0;}
+
+
+
+
+
+
+.ver-var-top-sect-wapper {
+    background-color: #DFA535;
+    position: relative;
+}
+.cart-data {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 21px;
+    justify-content: end;
+}
+.cart-data p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+}
+.cart-data a {
+    color: #006837 !important;
+    display: inline-block;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 16.41px !important;
+    text-align: left !important;
+    background: #FFFFFF !important;
+    padding: 10px 25px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+}
+.cart-data a:hover::after {  display: none;}
+
+@media(max-width:767px){
+    .cart-data { gap: 20px; justify-content: end;}
+    .cart-data p { font-size: 14px; line-height: 16.75px;}
+}
+
+
+/* sidebar css start */
+.ver-open-nav { overflow: hidden; }
+.ver-overlay-bg {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(86, 86, 86, .4);
+	z-index: 1000;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.ver-overlay-bg.ver-bg-active {
+	display: block;
+	width: 100%;
+	left: auto;
+	top: 0;
+	cursor: pointer;
+}
+.ver-sidebar-wapper {
+	position: fixed;
+	right: 0;
+	height: 100vh;
+	overflow-y: auto;
+	max-width: 345px;
+	width: 100%;
+	top: 0;
+	z-index: 10000;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	display: none;
+}
+.ver-sidebar-wapper.ver-active-sidebar {
+	display: block;
+}
+/* sidebar progress bar css start */
+.ver-sidebar-progressbar { padding:38px 18px 15px; }
+.ver-sidebar-progress-text { display: flex; flex-flow: row wrap; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.ver-sidebar-progress-text p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	margin: 0;
+	color: #006837;
+}
+.ver-sidebar-progress-text p span { display: inline-block; text-align: left; color: #006837; font-weight: 500; font-size: 20px; line-height: 23.44px; }
+.ver-sidebar-progress-wapper span {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: right;
+	display: block;
+	color: #000;
+}
+.ver-sidebar-progress-wapper-a {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #000000;
+	height: 36px;
+	border-radius: 5px;
+	background-color: transparent !important;
+	margin-bottom: 15px;
+}
+.ver-sidebar-progress-1 { 
+	background-color: #006837 !important; 
+	width:0; 
+	position:absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-color: #006837; 
+	border-radius: 5px;
+}
+/* sidebar progress bar css end */
+
+/* add to cart product css start */
+.ver-sidebar-product-list { position: relative; padding: 0 18px 42px; border-bottom: 1px solid #000; }
+.ver-sidebar-title {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.13px;
+	text-align: left;
+	color: #000;
+	padding-bottom: 36px;
+}
+.ver-sidebar-product-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	height: 450px;
+	overflow-y: auto;
+	padding-right: 20px;
+}
+.ver-sidebar-p-card {
+	display: flex;
+	flex-flow: row;
+	gap: 15px;
+	position: relative;
+}
+.ver-sidebar-left-p {
+	max-width: 107px;
+	width: 100%;
+	height: 99px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px 5px;
+}
+.ver-sidebar-left-p img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	max-width: unset;
+	margin: auto;
+	vertical-align: middle;
+}
+.ver-sidebar-right-p h4 { margin: 0; line-height: normal; padding-bottom:10px; }
+.ver-sidebar-right-p h4 a {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: left;
+	color: #000;
+	display: block;
+}
+.ver-sidebar-qty-container {
+	position: relative;
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: row;
+	max-width: 50px;
+	width: 100%;
+	height:16px;
+	justify-content: space-evenly;
+	border-radius: 5px;
+}
+.ver-sidebar-qty-btn-minus, .ver-sidebar-qty-btn-plus, .ver-sidebar-input-qty {
+	background-color: transparent !important; 
+	border: 0;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.41px;
+	text-align: center;
+	color:#000000;
+	max-width: 7.33px;
+	width: 100%;
+	background-color: #D9D9D9;
+	padding: 0;
+}
+.ver-sidebar-input-qty {
+	max-width: 10px;
+	width: 100%;
+	padding: 0;
+	background-color: #D9D9D9;
+	border: 0;
+	text-align: center;
+	display: block;
+
+}
+.ver-sidebar-qty-btn-minus { border-radius:5px; }
+.ver-sidebar-qty-btn-minus:hover, .ver-sidebar-qty-btn-plus:hover, .ver-sidebar-qty-btn-minus:focus, 
+.ver-sidebar-qty-btn-plus:focus, .ver-sidebar-qty-btn-minus:focus-visible, .ver-sidebar-qty-btn-plus:focus-visible { 
+	background-color:unset; 
+	color:#000000; 
+	border: 0;
+	box-shadow: unset;
+	padding: 0;
+	outline: unset;
+}
+.ver-sidebar-input-qty {
+	background-color:unset; 
+	color:#000000; 
+	border: 0;
+	box-shadow: unset;
+	outline: unset;
+}
+.ver-sidebar-right-p-card { display:flex; align-items:center; gap:10px; width:100%; justify-content:space-between; }
+.ver-sidebar-right-p-left-card { display:flex; align-items:center; justify-content:space-between; max-width:70px; width:100%; }
+.ver-sidebar-right-p-left-card span { cursor:pointer; }
+.ver-product-price p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+}
+/* add to cart product css end */
+
+/* ver subscription css start */
+.ver-subscription-wapper {
+	padding: 24px 18px 26px;
+	position: relative;
+	border-bottom: 1px solid #000;
+}
+.ver-subscription-top-wapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+}
+.ver-subscrip-left h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18.75px;
+	text-align: left;
+	color: #000;
+	padding-bottom: 9px;
+}
+.ver-subscrip-left p {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: left;
+	color: #000;
+	margin: 0;
+}
+.ver-switch-wrapper { display: flex;align-items: center; gap:16px; max-width:126px; width:100%; }
+.ver-switch { display: inline-block; height: 28px; position: relative; width: 78px; margin-bottom: 0; }
+#ver-a-switch-text {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.75px;
+	text-align: right;
+	color: #000;
+	display: inline-block;
+	max-width: 36px;
+	width: 100%;
+}
+.ver-switch input { display: none; }
+.ver-slider {
+	background-color: #fff;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+	border: 1px solid #000000;
+}
+.ver-slider:before {
+    top: -1px;
+    content: "";
+    height: 28px;
+    width: 38px;
+    background-color: #006837;
+    left: -1px;
+    position: absolute;
+    border-radius: 5px;
+    transition: .4s;
+    border: 1px solid #000;
+}
+.ver-switch input:checked + .ver-slider:before { transform: translateX(40px); background-color:#DFA535; }
+.ver-slider.ver-round { border-radius: 5px; }
+.ver-slider.ver-round:before { border-radius: 5px; }
+.ver-subscription-bottom-wapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-top: 14px;
+}
+.ver-subscription-bottom-wapper button {
+	border: 1px solid #000000;
+	background-color: #fff;
+	max-width: 96px;
+	width: 100%;
+	height: 36px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.41px;
+	text-align: center;
+	color: #000;
+}
+/* ver subscription css end */
+
+/* ver subtotle css start */
+.ver-subtotle-wapper {
+	position: relative;
+	padding: 22px 18px 26px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.ver-subtotle-wapper h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: left;
+	color: #000;
+}
+.ver-subtotle-wapper p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+}
+/* ver subtotle css end */
+
+/* ver costes css start */
+.ver-costes-wapper {
+	position: relative;
+	padding: 20px 18px 22px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.ver-costes-wapper h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: left;
+	color: #000000;
+	opacity: 50%;
+}
+.ver-costes-wapper p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+	opacity: 50%;
+}
+/* ver costes css end */
+
+/* ver descuentos css start */
+.ver-descuentos-wapper {
+	padding: 23px 18px 26px;
+	position: relative;
+	border-bottom: 1px solid #000;
+}
+.ver-cupon-form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 18px;
+}
+.ver-cupon-form input {
+	max-width: 184px;
+	width: 100%;
+	height: 36px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14.06px;
+	color: #000;
+	display: block;
+	padding: 0 5px;
+}
+.ver-cupon-form input:focus { outline:unset; }
+.ver-cupon-form button {
+	max-width: 108px;
+	width: 100%;
+	height: 36px;
+	background-color: #006837;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.41px;
+	border-radius: 5px;
+	border: 0;
+}
+.ver-aplicupon { display:flex; flex-direction:row;justify-content:space-between; align-items:center; }
+.ver-aplicupon p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18.75px;
+	text-align: left;
+	color: #000;
+}
+.ver-por-suscripcion { margin-top:12px; display:flex; flex-direction:row;justify-content:space-between; align-items:center; }
+.ver-por-suscripcion p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	color: #000;
+}
+/* ver descuentos css end */
+
+/* ver totle css start */
+.ver-totle-wapper {
+	position: relative;
+	padding: 22px 18px 38px;
+}
+.ver-totle-card { display: flex; flex-direction: row; align-items: center; justify-content:space-between; margin-bottom:26px; }
+.ver-totle-card h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.13px;
+	text-align: left;
+	color: #000;
+}
+.ver-totle-card p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	color: #006837;
+}
+.ver-checkout-button{
+	width: 100%;
+	background-color: #DFA535;
+	height: 53px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	color: #fff;
+	text-align: center;
+	border: 0;
+}
+/* ver totle css end */
+
+@-moz-document url-prefix() {
+	.ver-sidebar-wapper, .ver-sidebar-product-wapper { scrollbar-color: #E7E7E7 #BDBDBD; scrollbar-width: thin; }
+}
+.ver-sidebar-wapper::-webkit-scrollbar, .ver-sidebar-product-wapper::-webkit-scrollbar { width: 7px; }
+.ver-sidebar-wapper::-webkit-scrollbar-track-piece, .ver-sidebar-product-wapper::-webkit-scrollbar-track-piece {
+	background:  #E7E7E7;
+	border-radius: 20px;
+	margin-bottom: 0;
+}
+.ver-sidebar-wapper::-webkit-scrollbar-thumb, .ver-sidebar-product-wapper::-webkit-scrollbar-thumb { background-color: #BDBDBD; border-radius: 20px; }
+/* sidebar css end */
+
+
+

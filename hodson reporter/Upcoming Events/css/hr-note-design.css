@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+a:hover { text-decoration: none}
+
+.hr-upcoming-event {padding: 40px 0;}
+.hr-upcoming-event { width: 100%; max-width: 350px;}
+.hr-upcoming-event h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 12px;
+    position: relative;
+}
+.hr-upcoming-event h2::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #E1E1E1;
+    position: absolute;
+    bottom: 0%;
+}
+
+.hr-upcoming-event-item {margin-top: 40px;}
+.hr-upcoming-event-item h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    color: #003F81;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.hr-upcoming-event-item>ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.hr-upcoming-event-item>ul>li {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: #767676;
+
+}
+
+
+
+@media(max-width:767px) {
+    .hr-upcoming-event { max-width: 100%;}
+}
+
+
+@media(min-width:1300px) {
+    .container.w-324 {
+        max-width: 324px !important;
+        padding: 0
+    }
+}

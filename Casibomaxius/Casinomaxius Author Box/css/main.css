@@ -1,0 +1,114 @@
+body { margin: 0; padding: 0; box-sizing: border-box;} 
+
+
+
+.casinomaxius-author-box-main{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+.cab-left { max-width: 440px; width: 100%;}
+.cab-left-items {display: flex; gap: 12px;}
+.cab-left-items-img>a>img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.cab-left-items-text-top>h4{ margin: 0; line-height: 0; }
+.cab-left-items-text-top>h4>a {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+.cab-left-items-text-top { display: flex; gap: 9px; align-items: center;}
+.cab-left-items-text-top img{ width: 16px; height: 16px; cursor: pointer;}
+.cab-left-items-text-top>a>i { font-size: 16px; color: #007bff;}
+.cab-left-items-text-bottom { display: flex; gap: 20px;}
+.cab-left-items-text-bottom-left { display: flex; gap: 6px; align-items: center;}
+.cab-left-items-text-bottom-left>p {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%
+}
+.cab-left-items-text-bottom-right {
+    border-radius: 0.25rem;
+    padding: 4px 8px 4px 8px;
+    display: inline-flex;
+    background: #191D26;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.cab-left-items-text-bottom-right>p {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #fff;
+}
+.cab-left-items-text-bottom-right>p>a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #fff;
+    text-decoration: underline;
+}
+.cab-left-bottom>h5 {
+     margin: 0;
+     font-size: 12px;
+     color: #43597A;
+     padding-top: 15px;
+}
+
+.cab-right {display: flex; gap: 24px; align-items: center;}
+.cab-right-btn>a {
+    border: 1px solid #CFD5DD;
+    border-radius: 0.25rem;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+}
+.cab-right-btn>a>img { width: 16px; height: 16px;}
+.cab-right-icon>a>i{
+    background-color: #F5F7F9;
+    padding: 11px;
+    text-align: center;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    color: #000;
+}
+
+@media (min-width: 1200px) {
+.w-800 {
+    max-width: 800px;
+}
+
+}
+
+
+@media (max-width:767px){
+    .casinomaxius-author-box-main { flex-wrap: wrap;}
+    .cab-left-items-text-bottom { gap: 5px; flex-wrap: wrap;}
+    .cab-left-items-text-bottom-right { position: relative; left: -61px; top: 6px;}
+    .cab-right-btn { order: 1;}
+    .cab-right-icon  { order: 0;}
+}

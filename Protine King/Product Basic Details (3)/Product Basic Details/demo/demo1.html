@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .custom-select-wrapper {
+            position: relative;
+            width: 300px;
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        select {
+            display: none;
+        }
+
+        .custom-select {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .custom-select:hover {
+            border-color: #888;
+        }
+
+        .custom-select:focus {
+            border-color: #555;
+            outline: none;
+        }
+
+        .custom-select-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #333 transparent transparent transparent;
+            transform: translateY(-50%);
+        }
+
+        .select-options {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .select-options.active {
+            display: block;
+        }
+
+        .select-options li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .select-options li:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-select-wrapper">
+        <div class="custom-select">Select an option</div>
+        <div class="select-options"></div>
+        <select>
+            <option value="html">HTML</option>
+            <option value="css3">HTML CSS3</option>
+            <option value="sass">HTML CSS3 SASS</option>
+            <option value="less">HTML CSS3 SASS LESS</option>
+            <option value="stylus">HTML CSS3 SASS LESS STYLUS</option>
+            <option value="jquery">JQUERY</option>
+            <option value="bootstrap">BOOTSTRAP</option>
+            <option value="material">MATERIAL</option>
+            <option value="react">REACT</option>
+            <option value="angular">ANGULAR</option>
+        </select>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis, commodi porro voluptatum omnis incidunt nobis cum molestiae, deleniti aliquam voluptate est optio, veniam amet vitae facere laborum fuga harum.
+    </p>
+
+    <div class="custom-select-wrapper">
+        <div class="custom-select">Select an option</div>
+        <div class="select-options"></div>
+        <select>
+            <option value="html">HTML</option>
+            <option value="css3">HTML CSS3</option>
+            <option value="sass">HTML CSS3 SASS</option>
+            <option value="less">HTML CSS3 SASS LESS</option>
+            <option value="stylus">HTML CSS3 SASS LESS STYLUS</option>
+            <option value="jquery">JQUERY</option>
+            <option value="bootstrap">BOOTSTRAP</option>
+            <option value="material">MATERIAL</option>
+            <option value="react">REACT</option>
+            <option value="angular">ANGULAR</option>
+        </select>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const customSelectWrappers = document.querySelectorAll('.custom-select-wrapper');
+
+            customSelectWrappers.forEach(wrapper => {
+                const customSelect = wrapper.querySelector('.custom-select');
+                const selectOptions = wrapper.querySelector('.select-options');
+                const originalSelect = wrapper.querySelector('select');
+
+                // Populate the custom options
+                Array.from(originalSelect.options).forEach(option => {
+                    const li = document.createElement('li');
+                    li.textContent = option.textContent;
+                    li.dataset.value = option.value;
+                    selectOptions.appendChild(li);
+                });
+
+                customSelect.addEventListener('click', function () {
+                    selectOptions.classList.toggle('active');
+                });
+
+                selectOptions.addEventListener('click', function (event) {
+                    if (event.target.tagName === 'LI') {
+                        customSelect.textContent = event.target.textContent;
+                        originalSelect.value = event.target.dataset.value;
+                        selectOptions.classList.remove('active');
+                    }
+                });
+
+                document.addEventListener('click', function (event) {
+                    if (!wrapper.contains(event.target)) {
+                        selectOptions.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+body {margin: 0; padding: 0;}
+a:hover { text-decoration:none; }
+
+/* About Us Start */
+
+.our-feature-main { display: flex; flex-direction: column; gap: 40px;}
+.our-feature {display: flex; gap: 27px;}
+.our-feature-icon-items h3 {
+    color: #000;
+    font-family: Lato;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.56px;
+    margin-bottom: 7px;
+
+}
+
+.our-feature-icon-items>h5 {
+    color: #000;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.32px;}
+.our-feature-icon-items>h5>a {
+    color: #ED8E82;
+    font-family: Lato;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.26px;
+    text-decoration-line: underline;
+}

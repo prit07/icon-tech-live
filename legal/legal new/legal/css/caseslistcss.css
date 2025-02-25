@@ -1,0 +1,434 @@
+
+body { margin: 0; padding: 0; }
+
+:root {
+	--Blacker_Text:'Blacker Text'; 
+	--Manrope:'Manrope', sans-serif;
+	--main_bg_1:#FFF6ED;
+	--sub_bg_2:#F8EBDF;
+	--sub_bg_3:#F3DCA0;
+	--sub_bg_4:#291622;
+	--sub_bg_5:#fff;
+
+
+    --sub-heading_4:#291622;
+    --sub-heading_5:#fff;
+
+	--text_color_4:#291622;
+	--text_ul_li_4:#291622;
+    --text_color_5:#fff;
+	--text_ul_li_5:#fff;
+	--text_color_6:#333;
+	--text_ul_li_6:#333;
+	--text_color_7:#96423F;
+
+	--border_color_4:#291622;
+	--border_color_7:#96423F;
+}
+a:hover { text-decoration:none; }
+
+
+
+/* top link section start */
+
+.top-link-section{
+	background: var(--main_bg_1);
+	padding: 32px 0;
+	}
+	.top-link-section ul{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+	}
+	.top-link-section ul li{
+		list-style-type: none;
+	}
+	.top-link-section ul li a{
+		color:  var(--text_ul_li_4);
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+	}
+	
+	/* top link section end */
+
+	/* Oregon Supreme section start */
+
+	/* left */
+
+	.oregon-supreme-section{
+		background: var(--main_bg_1);
+		padding-bottom: 120px;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper{
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 {
+		color: var(--sub-heading_4);
+		font-family: var(--Blacker_Text);
+		font-size: 62px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 67px;
+		letter-spacing: -1.95px;
+		text-transform: capitalize;
+		margin: 0;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 span{
+		position: relative;
+  z-index: 1;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 span::after{
+		content: '';
+  width: 100%;
+  height: 20px;
+  background: var(--sub_bg_5);
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+	}
+
+.search-wapper form, .search-wapper form .form-group{
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	margin: 0;
+}
+ .search-wapper form .court-name{
+	width: 42%;
+}
+ .search-wapper form .since {
+	width: 23%;
+}
+ .search-wapper form .to{
+	width: 21%;
+}
+ .search-wapper form .search-btn-f{
+	width: 14%;
+	display: flex;
+ }
+ .search-wapper form .search-btn-f a{
+	border-radius: 52px;
+border: 1px solid var(--border_color_4);
+background: var(--sub_bg_3);
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 48px;
+color: var(--text_color_4);
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+.search-wapper form .form-group input{
+	width: 100%;
+	height: 48px;
+	border-radius: 52px;
+border: 1px solid var(--text_color_4);
+background: var(--sub_bg_5);
+padding: 8px 16px; 
+ }
+ .search-wapper form .form-group input::placeholder{
+	color: var(--text_color_4);
+font-family: var(--Manrope);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+opacity: 0.5;
+ }
+  .search-wapper form .form-group input:focus{
+	box-shadow: none;
+ }
+ .search-wapper form .form-group label{
+	margin: 0;
+	padding: 0;
+	color: var(--text_color_4);
+text-align: center;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+ }
+
+	.oregon-supreme-section .oregon-supreme-left-wapper table{
+		width: 100%;
+		height: 100%;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table p { margin: 0; line-height: normal; }
+	.oregon-supreme-section .oregon-supreme-left-wapper table p a{
+		color: var(--text_color_7);
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+margin: 0;
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table thead p{
+		color: var(--text_color_4);
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table tbody p{
+		color:var(--text_color_6);
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table thead{
+		border: 1px solid  var(--border_color_4);
+background: var(--sub_bg_2);
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table tbody tr{
+		border-right: 1px solid  var(--border_color_4);
+border-bottom: 1px solid  var(--border_color_4);
+border-left: 1px solid  var(--border_color_4);
+background: var(--sub_bg_5);
+	}
+	.oregon-supreme-section .oregon-supreme-left-wapper table th,.oregon-supreme-section .oregon-supreme-left-wapper table td{
+		padding: 10px;
+	}
+
+
+
+	/* right */
+
+	.oregon-supreme-right-wapper{
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.oregon-supreme-right-wapper .adv-wapper{
+		width: 100%;
+		height: 349px;
+		border: 1px solid  var(--border_color_4);
+background: var(--sub_bg_5);
+color: #000;
+text-align: center;
+font-family: var(--Manrope);
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper{
+		border: 1px solid var(--border_color_4);
+background: var(--sub_bg_2);
+padding: 32px 16px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper h5{
+		color: var(--sub-heading_4);
+text-align: center;
+font-family: var(--Blacker_Text);
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: -0.22px;
+margin: 0;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper p{
+		color: var(--text_color_6);
+text-align: center;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+margin: 0;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form{
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group{
+		margin: 0;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group input{
+		width: 100%;
+		height: 48px;
+		padding: 8px 16px; 
+		border-radius: 52px;
+border: 1px solid var(--border_color_4);
+background: var(--sub_bg_5);
+	}
+	.table-responsive-sm{
+		overflow-x: scroll;
+	}
+	.table-responsive-sm table { width:100%; min-width: 690px; }
+	.table-responsive-sm .w-44 { width: 44%; }
+	.table-responsive-sm .w-24 { width: 24%; }
+	.table-responsive-sm .w-30 { width: 30%; }
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .form-group input:focus{
+		box-shadow: none;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn{
+		display: flex;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn a{
+		border-radius: 52px;
+border: 1px solid var(--border_color_4);
+background: var(--sub_bg_3);
+width: 100%;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--text_color_6);
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper form .subscribe-btn a img{
+		margin-right: 6px;
+	}
+	/* Oregon Supreme section end */
+
+
+
+
+
+@media(max-width:1399px){
+	/* Oregon Supreme section start */
+	/* left */
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 {
+		font-size: 56px;
+		line-height: 61px;
+	}
+	/* right */
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+	/* Oregon Supreme section end */
+}
+@media(max-width:1199px){
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	/* Oregon Supreme section start */
+	/* left */
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 {
+		font-size: 48px;
+		line-height: 53px;
+	}
+	.search-wapper form, .search-wapper form .form-group {
+		gap: 5px;
+	}
+	.search-wapper form .court-name {
+		width: 37%;
+	}
+	.search-wapper form .since {
+		width: 25%;
+	}
+	.search-wapper form .to {
+		width: 22%;
+	}
+	.search-wapper form .search-btn-f {
+		width: 16%;
+	}
+	/* right */
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper h5 {
+		font-size: 17px;
+		line-height: 23px;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper p {
+		font-size: 11px;
+		line-height: 19px;
+	}
+	.oregon-supreme-right-wapper .free-daily-summaries-wapper {
+		padding: 25px 10px;
+		gap: 14px;
+	}
+	.oregon-supreme-right-wapper .adv-wapper {
+		height: 250px;
+	}
+	/* Oregon Supreme section end */
+
+}
+
+@media(max-width:991px){
+	/* Oregon Supreme section start */
+
+	.oregon-supreme-section .row{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	/* Oregon Supreme section end */
+}
+
+@media(max-width:767px){
+/*  top link section start  */
+.top-link-section{
+	padding: 24px 0;
+	}
+
+/*  top link section end */
+/* Oregon Supreme section start */
+.oregon-supreme-section {
+	padding-bottom: 60px;
+}
+/* left */
+.oregon-supreme-section .oregon-supreme-left-wapper {
+	gap: 20px;
+}
+.oregon-supreme-section .oregon-supreme-left-wapper h2 {
+	font-size: 42px;
+	line-height: 47px;
+}	
+
+.search-wapper form, .search-wapper form .form-group {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: start;
+}
+.search-wapper form .form-group label {
+	padding-left: 20px;
+}
+.search-wapper form{
+	gap: 15px;
+}
+.search-wapper form .court-name {
+	width: 100%;
+}
+.search-wapper form .since {
+	width: 100%;
+}
+.search-wapper form .to {
+	width: 100%;
+}
+.search-wapper form .search-btn-f {
+	width: 100%;
+}
+/* Oregon Supreme section end */
+}
+
+
+@media(max-width:350px){
+	.oregon-supreme-section .oregon-supreme-left-wapper h2 {
+		font-size: 40px;
+		line-height: 45px;
+	}
+}

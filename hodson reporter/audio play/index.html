@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>audio</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="hr-listen-wapper">
+		<div class="hr-listen-item">
+			<h4 id="audioText">Listen</h4>
+			<img id="audioIcon" src="img/Audio.png" alt="">
+			<audio id="audioPlayer"
+				src="https://staging.hudsonreporter.com/wp-content/uploads/2024/05/SatrangiReRingtoneRingtone.mp3"></audio>
+		</div>
+	</div>
+</body>
+
+<script>
+document.querySelector('.hr-listen-item').addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    var audioIcon = document.getElementById('audioIcon');
+    var audioText = document.getElementById('audioText');
+
+    if (audioPlayer.paused) {
+        if (audioPlayer.currentTime === 0) {
+            // Start playing from the beginning
+            audioPlayer.play();
+            audioIcon.src = "img/Pause.png";  // Set to the pause image
+            audioText.textContent = "Pause";  // Set the text to "Pause"
+        } else {
+            // Resume playing
+            audioPlayer.play();
+            audioIcon.src = "img/Pause.png";  // Set to the pause image
+            audioText.textContent = "Pause";  // Set the text to "Pause"
+        }
+    } else {
+        // Pause the audio
+        audioPlayer.pause();
+        audioIcon.src = "img/reset.png";  // Set to the play image
+        audioText.textContent = "Resume";  // Set the text to "Listen"
+    }
+});
+
+</script>
+
+</html>

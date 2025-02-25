@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel Thumbnail Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+       .item img{
+    width: 100%;
+    height: 200px !important;
+    display: inline-block;
+    cursor: pointer;
+  }
+        .owl-thumb-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-carousel" class="owl-carousel owl-theme">
+        <div class="item"> 1 </div>
+        <div class="item">2 </div>
+        <div class="item"> 3 </div>
+        <div class="item"> 4 </div>
+        <div class="item"> 5 </div>
+        <!-- <div class="item"> <img src="img/Gym-Guyz-Free-Initial-Assessment.png" alt=""> </div>
+        <div class="item"> <img src="img/Group 29.png" alt=""> </div>
+        <div class="item"> <img src="img/Group 30.png" alt=""> </div>
+        <div class="item"> <img src="img/Gym-Guyz-Free-Initial-Assessment.png" alt=""> </div>
+        <div class="item"> <img src="img/Group 29.png" alt=""> </div>
+        <div class="item"> <img src="img/Group 30.png" alt=""> </div>
+        <div class="item"> <img src="img/Gym-Guyz-Free-Initial-Assessment.png" alt=""> </div> -->
+
+    </div>
+
+    <div id="thumb-carousel" class="owl-carousel owl-theme">
+        <div class="owl-thumb-item" data-slide-index="0">
+            1
+        </div>
+        <div class="owl-thumb-item" data-slide-index="1">
+    2
+        </div>
+        <div class="owl-thumb-item" data-slide-index="2">
+3
+        </div>
+        <div class="owl-thumb-item" data-slide-index="3">
+ 4
+        </div>
+        <div class="owl-thumb-item" data-slide-index="4">
+5
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var mainCarousel = $('#main-carousel');
+            var thumbCarousel = $('#thumb-carousel');
+
+            mainCarousel.owlCarousel({
+                items: 2,
+                loop: true,
+                nav: false,
+                dots: false
+            });
+
+            thumbCarousel.owlCarousel({
+                items: 3,
+                loop: true,
+                nav: true,
+                dots: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 3
+                    }
+                }
+            });
+
+
+            // Click event for main carousel navigation
+            mainCarousel.on('click', '.owl-next', function () {
+                thumbCarousel.trigger('next.owl.carousel');
+            });
+            mainCarousel.on('click', '.owl-prev', function () {
+                thumbCarousel.trigger('prev.owl.carousel');
+            });
+
+            // Click event for thumbnail carousel navigation
+            thumbCarousel.on('click', '.owl-next', function () {
+                mainCarousel.trigger('next.owl.carousel');
+            });
+            thumbCarousel.on('click', '.owl-prev', function () {
+                mainCarousel.trigger('prev.owl.carousel');
+            });
+
+
+            // // Click event for thumbnail carousel navigation
+            // thumbCarousel.on('click', '.owl-thumb-item', function () {
+            //     var index = $(this).data('slide-index');
+            //     mainCarousel.trigger('to.owl.carousel', [index, 300, true]);
+            // });
+            thumbCarousel.on('click', '.owl-thumb-item', function () {
+                var index = $(this).data('slide-index');
+                mainCarousel.trigger('to.owl.carousel', [index, 0, true]); 
+            });
+
+            // Click event for main carousel navigation
+            // mainCarousel.on('changed.owl.carousel', function (event) {
+            //     if (!event.namespace || event.property.name !== 'position') return;
+            //     var index = event.relatedTarget.relative(event.property.value);
+            //     thumbCarousel.trigger('to.owl.carousel', [index, 300, true]);
+            // });
+        });
+    </script>
+
+
+</body>
+
+</html>

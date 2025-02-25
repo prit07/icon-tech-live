@@ -1,0 +1,203 @@
+body { margin: 0; padding: 0; margin: 0; box-sizing: border-box;}
+a:hover { text-decoration: none !important;}
+
+/* With Gymguyz Start */
+.with-gymguyz-wapper {
+    background-color: #F8F3F3;
+    padding: 50px 0;
+}
+.with-gymguyz-heading { margin-bottom: 40px;}  
+.with-gymguyz-heading h6 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E4002B;
+    margin: 0;
+}
+.with-gymguyz-heading h2 {
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #E4002B;
+    margin: 0;
+}
+
+.owl-with-gymguyz-slider {display: flex; flex-direction: column; align-items: end;}
+
+.main-carousel-items-img img{width: 100%; height: 500px;}
+.main-carousel-items-img { position: relative;}
+#main-carousel {
+    height: 500px;
+}
+
+.main-carousel-bg {background: #E4002B80;   padding: 17px 30px;}
+.main-carousel-items-first-text {
+    max-width: 500px;
+    width: 85%;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.main-carousel-items-first-text h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+.main-carousel-items-first-text p {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+}
+
+#thumb-carousel { width: 100%; text-align: right; max-width: 310px; margin-right: 150px; margin-top: 40px;}
+#thumb-carousel .owl-nav .owl-prev, #thumb-carousel .owl-nav .owl-next { position:absolute; top:8px; }
+#thumb-carousel .owl-nav [class*='owl-']:hover { background: unset !important;}
+#thumb-carousel .owl-nav .owl-prev { left: -24px; }
+#thumb-carousel .owl-nav .owl-next { right:-24px; }
+
+/* With Gymguyz End */
+
+
+
+
+@media(min-width:1024px) {
+    .item2 { width: 737px !important;}
+    .last-two-active { width: 333px !important; }
+    .last-three-active { width: 350px !important; }
+}
+
+
+@media only screen and (min-width: 991px) and (max-width: 1024px){
+    .item2 {
+        width: 650px !important;
+    }
+}
+
+@media(max-width:991px) {
+    .main-carousel-bg { padding: 12px 10px;}
+    .main-carousel-items-first-text h3 { font-size: 20px; line-height: 32px;}
+    .main-carousel-items-first-text p { font-size: 16px; line-height: 22px;}
+    .main-carousel-items-img img { height: 400px;}
+    #main-carousel { height: 400px;}
+    #thumb-carousel {  margin-right: 80px;}
+}
+
+@media(max-width:767px) {
+    .with-gymguyz-heading h6 { font-size: 20px; line-height: 25px;}
+    .with-gymguyz-heading h2 { font-size: 42px; line-height: 70px;}
+    
+    #thumb-carousel {  margin-right: 31px;}
+    .with-gymguyz-wapper { padding: 40px 0;}
+    .with-gymguyz-heading { margin-bottom: 20px;}
+}
+ 
+@media(min-width:1300px){
+	.container.w-1240 { max-width:1240px!important; padding: 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+.ver-sidebar-wapper {  border: 1px solid #000000;}
+.ver-sidebar-right-p { width: 100%;}
+/* add cdd */
+
+
+---- 
+.ver-sidebar-right-p h4 a {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+.ver-subtotle-wapper h4 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000;
+    padding: 0 !important;
+}
+.ver-costes-wapper h4 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.44px;
+    text-align: left;
+    color: #000000;
+    padding: 0 !important;
+    opacity: 50%;
+}
+.ver-totle-card h4 {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    text-align: left;
+    color: #000;
+    padding: 0 !important;
+}
+.product-list-left-text>h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: center;
+    color: #006837;
+    margin-bottom: 7.12px;
+    padding: 0 !important;
+}
+.product-list-left-text>h5>a {
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+/* replace css */

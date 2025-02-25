@@ -1,0 +1,548 @@
+@font-face {
+	font-family: 'Sohne';
+	src: url('../font/TestSöhne-Buch.otf'),
+}
+@font-face {
+	font-family: 'Apple Garamond';
+	src: url('../font/AppleGaramond.ttf'),
+}
+
+
+body { margin: 0; padding: 0; }
+
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+    }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+
+
+
+/* PsychicSpotlight Home Page Start */
+.psychicspotlight-home-page { padding: 32px 0 108px 0;}
+.home-page-row { display:flex; flex-direction:row;justify-content:space-between; gap:32px; }
+.home-page-left-col { max-width: 952px; width: 100%; display: flex; flex-direction: column; gap: 72px; }
+.home-page-right-col { max-width:296px; width:100%; }
+
+/* Left Start */
+
+.home-page-left-top {
+    width: 100%; 
+    height: 220px; 
+    background-size: cover !important; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 24px; 
+    padding-left: 32px;
+    border-radius: 6px;
+}
+.home-page-left-top h1 { 
+    color: #FFF;
+    font-family: "Apple Garamond";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; 
+    letter-spacing: -1.92px;
+    margin: 0;
+}
+.home-page-left-top p {
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.66px;
+    margin: 0;
+}
+
+
+
+.home-california-psychics { display: flex; flex-direction: column; gap: 12px;}
+.home-california-psychics-wapper {
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 6.65px 8.446px 0px rgba(0, 0, 0, 0.01), 0px 22.336px 28.367px 0px rgba(0, 0, 0, 0.01);
+    padding: 24px;
+    display: flex;
+    gap: 37px;
+    position: relative;
+    align-items: center;
+}
+.home-california-psychics-left { width: 100%; max-width: 647px; display: flex; gap: 24px;}
+.home-california-psychics-logo { width: 100%; max-width: 200px; display: flex; flex-direction: column;}
+.home-california-psychics-logo span {
+    width: fit-content;
+    border-radius: 93.161px;
+    border: 1.059px solid rgba(20, 12, 50, 0.03);
+    background: #FAFAFB;
+    padding: 11.292px 16.938px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15.527px; 
+}
+.home-california-psychics-logo img {width: 100%; height: 119px;}
+.home-california-psychics-center ul { margin: 0; padding: 0; list-style: none; height: 100%; display: flex; flex-direction: column; gap: 6px; justify-content: center;}
+.home-california-psychics-center ul li {
+    display: flex; 
+    gap: 14px;
+    align-items: center;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.home-california-psychics-center ul li img { width: 18px; height: 18px;}
+.home-california-psychics-right { width: 100%; max-width: 220px; display: flex; flex-direction: column; gap: 12px;}
+.home-california-psychics-stars-rating h6 {
+    margin: 0;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    letter-spacing: -0.66px;
+    margin-right: 7px;
+}
+/* STAR REATING */
+.home-california-psychics-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:20px; display: flex; gap: 5px; justify-content: center; }
+.home-california-psychics-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.home-california-psychics-stars-rating span.star:hover { cursor:pointer; }
+.home-california-psychics-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#BCA8F4; }
+.home-california-psychics-stars-rating span.star.filled:before { font-weight: 900; color:#BCA8F4; content:"\f005"; }
+.home-california-psychics-stars-rating span.star.half-filled:before { content:"\f089"; color:#BCA8F4; }
+.home-california-psychics-stars-rating span.star.half-filled:after { content:"\f005"; color:#BCA8F4; margin-left:-24px; }
+/* STAR REATING */
+.home-california-psychics-right button {
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    border-radius: 60px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+    border: 0;
+}
+.home-california-psychics-right a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 132px;
+    border: 1.5px solid #09121F;
+    padding: 16px 24px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 22px;
+}
+/* Best Overall */
+.home-california-card-covard {
+    position: absolute;
+    top: -25px;
+    left: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #BCA8F4;
+    padding: 6px 16px;
+}
+.home-california-card-covard::after {
+    content: '';
+    width: 16px;
+    height: 12px;
+    background: url(../img/Vector\ 31.svg) no-repeat;
+    background-size: cover;
+    bottom: -12px;
+    left: 0;
+    position: absolute;
+}
+.home-california-card-covard h6 {
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.48px;
+    text-transform: uppercase;
+    margin: 0;
+}
+/* Best Overall */
+
+
+
+
+.home-why-we-chose-it h2{
+    color: #09121F;
+    font-size: 48px;
+    font-family: "Apple Garamond";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+}
+.home-why-we-chose-it p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    margin-bottom: 25px;
+}
+.home-why-we-chose-it h5 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin-bottom: 8px;
+}
+.home-why-we-chose-it ul { padding-left: 28px; margin: 0;}
+.home-why-we-chose-it ul li {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+} 
+
+
+
+.home-email-subscribe {
+    border-radius: 8px;
+    background: #09121F;
+    padding: 39px 40px;
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.home-email-subscribe::after {
+    content: "";
+    width: 284px;
+    height: 210px;
+    background: url(../img/home-email-subscribe01.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.home-email-subscribe::before {
+    content: "";
+    width: 122px;
+    height:108px;
+    background: url(../img/home-email-subscribe02.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+.home-email-subscribe-text { width: 100%; max-width: 534px;}
+.home-email-subscribe-text h3 {
+    color: #FFF;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.home-email-subscribe-btn { width: 100%; max-width: 287px; display: flex; flex-direction: column; gap: 12px;}
+.home-email-subscribe-btn input {
+   width: 100%;
+   border-radius: 8px;
+   border: 1px solid #B9B5A9;
+   background: #FFF;
+   padding: 15px 24px;
+   color: rgba(26, 12, 80, 0.66);
+   font-family: "Plus Jakarta Sans";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: -0.48px;
+}
+.home-email-subscribe-btn a {
+    display: block;
+    border-radius: 60px;
+    background: #BCA8F4;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;  
+    letter-spacing: -0.48px;
+    padding: 16px 24px;
+}
+
+
+
+.home-gold-iras-faq h2{
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+}
+.home-gold-iras-accordion  {display: flex; flex-direction: column; gap: 12px;}
+.home-gold-iras-accordion .home-gold-iras-accordion-heading:after {
+    content: "";
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
+}
+.home-gold-iras-accordion>.home-gold-iras-accordion-wapper { border-radius: 8px; border: 3px solid #F0F0F5; background: #FFF;}
+.home-gold-iras-accordion .home-gold-iras-accordion-heading.collapsed:after { transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.home-gold-iras-accordion .home-gold-iras-accordion-heading {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    padding: 20px 32px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.6px;
+}
+.home-gold-iras-accordion-text p { 
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    padding: 0 32px;
+    margin-bottom: 20px;
+} 
+
+
+
+.home-final-opinion { display: flex; flex-direction: column; gap: 32px;}
+.home-final-opinion h2 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.home-final-opinion p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.home-final-opinion a {
+    display: block;
+    width: 100%;
+    max-width: 180px;
+    text-align: center;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    border-radius: 108px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+}
+
+
+
+.home-more-information {display: flex; flex-direction: column; gap: 32px;}
+.home-more-information h2 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    margin: 0px;
+    letter-spacing: -1.44px;
+}
+.home-more-information-main {display: flex; flex-direction: column; gap: 24px;}
+.home-more-information-item { 
+    border-radius: 8px;
+    border: 3px solid #F0F0F5;
+    background: #FFF;
+    padding: 24px;
+    box-shadow: 0px 6.65px 8.446px 0px rgba(0, 0, 0, 0.01), 0px 22.336px 28.367px 0px rgba(0, 0, 0, 0.01);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-more-information-item h4 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    letter-spacing: -0.6px;
+    margin: 0;
+}
+.home-more-information-item p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.home-more-information a {
+    display: inline-block;
+    max-width: 220px;
+    width: 100%;
+    color: #FFF;
+    font-family: Sohne;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: -0.54px;
+    border-radius: 88px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+}
+/* Left End */
+
+
+
+/* Right Start */
+.home-page-ads { display: grid; grid-template-columns: repeat(1 , 1fr); gap: 32px;}
+.home-page-ads img { width: 100%; max-width: 296px; height: 373px;}
+/* Right End */
+
+
+
+/* PsychicSpotlight Home Page Enf */
+
+
+
+
+
+@media (max-width:1199px) {
+    .home-page-left-col { max-width: 690px;}
+    .home-page-right-col { max-width: 225px;  width: 100%;}
+
+    .home-page-left-top p { font-size: 18px; line-height: 27px;}
+    .home-page-left-top p { font-size: 18px; line-height: 27px;}
+
+    .home-california-psychics-wapper {  flex-direction: column;}
+    .home-california-psychics-right { max-width: 100%; flex-direction: row; align-items: center; gap: 20px;}
+
+    .home-email-subscribe-text h3 { font-size: 37px; line-height: 35px;}
+    .home-email-subscribe { padding: 39px 30px;}
+    .home-email-subscribe-btn { max-width: 234px;}
+  
+    .home-page-ads img {  max-width: 100%; height: auto;}
+  
+}
+
+
+
+
+@media (max-width:991px) {
+    .home-page-row { flex-wrap: wrap;}
+    .home-page-left-col  { max-width: 100%; width: 100%;}
+    .home-page-right-col { max-width: 100%; width: 100%;}
+   
+    .home-page-left-top h1 { font-size: 50px; line-height: 52px;}
+    .home-page-left-top p { font-size: 18px; line-height: 28px;}
+    .home-page-left-top { padding-left: 20px;}
+
+    /* right Start */
+    .home-page-ads { grid-template-columns: repeat(2 , 1fr);}
+
+}
+
+
+
+@media (max-width:767px){
+    .home-page-right-col {max-width: 100%; width: 100%;}
+ 
+
+    .home-page-left-top h1 { font-size: 40px; line-height: 42px;}
+    .home-page-left-top p { font-size: 16px; line-height: 25px;}
+
+    .home-california-psychics-left { flex-direction: column; gap: 10px;}
+    .home-california-psychics-wapper { gap: 25px; flex-direction: column;}
+    .home-california-psychics-right { max-width: 100% !important; flex-direction: column; align-items: unset;}
+    .home-california-psychics-logo { max-width: 200px;}
+    .home-california-psychics-center ul li { gap: 10px; font-size: 15px; line-height: 25px; }
+    .home-california-card-covard::after { width: 11px; height: 12px;}
+    .home-california-card-covard{ left: -12px;; padding: 5px 8px;}
+    .home-california-psychics-logo img {width: 100%; height: 100px;}
+  
+
+    .home-email-subscribe {  flex-direction: column; gap: 30px;}
+    .home-email-subscribe-text h3 { font-size: 34px;}
+    .home-email-subscribe-btn { max-width: 100%;}
+
+    .home-gold-iras-accordion .home-gold-iras-accordion-heading:after { right: 7px;  margin-top: 0; top: 35px;}
+    .home-gold-iras-accordion .home-gold-iras-accordion-heading {padding: 15px 29px 15px 20px; font-size: 18px; line-height: 26px;}
+    .home-gold-iras-accordion-text p { padding: 0 29px 0 20px ; font-size: 16px; line-height: 26px; margin-bottom: 15px; }
+
+
+    /* right Start */
+    .home-page-ads { grid-template-columns: repeat(1 , 1fr);}
+}
+
+
+ 
+@media(min-width:1300px){
+	.container.w-1269 { max-width:1269px!important;  padding: 0; }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 1 (product img,title,price)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="js/main.js"></script> -->
+</head>
+<body>
+
+
+
+    <div class="product-dt-section-r">
+        <div class="container-fluid">
+            <div class="product-dt-row">
+                <div class="product-dt-right-wapper">
+                    <div class="product-details-slider-wapper">
+                        <!--   -->
+                    <div class="owl-carousel" id="product-details-slider">
+                        <div class="item"> <img src="img/aaron-burden-ndzLr2_FQx8-unsplash@2x.png" alt=""> </div>
+                        <div class="item"> <img src="img/desola-lanre-ologun-9-B_-_e6uUk-unsplash@2x.png"> </div>
+                        <div class="item"> <img src="img/dose-media-DiTiYQx0mh4-unsplash.png"> </div>
+                        <div class="item"> <img src="img/EONSEA-dron@2x.png"> </div>
+                        <div class="item"><img src="img/matt-pritchard-T2vYlYWeZbg-unsplash@2x.png"> </div> 
+
+                      </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+ <script>
+        $(document).ready(function(){
+        
+            // Function to create second-slider
+            function createSecondSlider() {
+                const secondOwlCarousel = document.createElement('div');
+                secondOwlCarousel.classList.add('owl-carousel');
+                secondOwlCarousel.id = 'second-slider'; 
+                
+                const firstSliderImages = document.querySelectorAll('#product-details-slider .item img');
+        
+                firstSliderImages.forEach(img => {
+                    const slideItem = document.createElement('div');
+                    slideItem.classList.add('item');
+                    
+                    const imgCopy = img.cloneNode(true); 
+                    
+                    slideItem.appendChild(imgCopy); 
+                    secondOwlCarousel.appendChild(slideItem);
+                });
+                
+                $('.product-details-slider-wapper').append(secondOwlCarousel);
+                $("#second-slider").owlCarousel({    
+                    loop: true,
+                    margin: 0, 
+                    stagePadding: 0,
+                    autoplay: false,
+                    nav: true,
+                    navText: [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    dots:false,
+                    responsive:{
+                        0:{
+                            items:2
+                        },
+                        768:{
+                            items:3
+                        },
+                        1000:{
+                            items:3
+                        }
+                    }
+                });
+        
+                // Event listener for image click
+                $('#second-slider .item img').on('click', function() {
+                    const newImageSrc = $(this).attr('src');
+                    $('#product-details-slider .owl-item.active .item img').attr('src', newImageSrc);
+                });
+            }
+        
+            // Check if there's only one item in product-details-slider
+            if ($('#product-details-slider .item').length > 1) {
+                createSecondSlider(); // If more than one item, create second-slider
+            }
+        
+            // Initialize product-details-slider
+            $("#product-details-slider").owlCarousel({    
+                loop: false,
+                items: 1,
+                margin: 0,
+                stagePadding: 0,
+                autoplay: false
+            });
+        });
+  </script>
+  
+</body>
+</html>

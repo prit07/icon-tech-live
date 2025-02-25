@@ -1,0 +1,68 @@
+body { margin: 0; padding: 0; }
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+/* PsychicSpotlight faq Page Start */
+.psychicspotlight-faq-page { padding: 78px 0 120px 0;}
+.faq-gold-iras-faq h2{
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+}
+.faq-gold-iras-accordion  {display: flex; flex-direction: column; gap: 12px;}
+.faq-gold-iras-accordion .faq-gold-iras-accordion-heading:after {
+    content: "";
+    border: solid #000000;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
+}
+.faq-gold-iras-accordion>.faq-gold-iras-accordion-wapper { border-radius: 8px; border: 3px solid #F0F0F5; background: #FFF;}
+.faq-gold-iras-accordion .faq-gold-iras-accordion-heading.collapsed:after { transform: rotate(45deg);-webkit-transform: rotate(45deg);}
+.faq-gold-iras-accordion .faq-gold-iras-accordion-heading {
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+    padding: 20px 32px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.6px;
+}
+.faq-gold-iras-accordion-text p { 
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    padding: 0 32px;
+    margin-bottom: 20px;
+} 
+/* PsychicSpotlight Faq Page Enf */
+
+
+@media (max-width:767px){
+    .faq-gold-iras-accordion .faq-gold-iras-accordion-heading:after { right: 7px;  margin-top: 0; top: 35px;}
+    .faq-gold-iras-accordion .faq-gold-iras-accordion-heading {padding: 15px 29px 15px 20px; font-size: 18px; line-height: 26px;}
+    .faq-gold-iras-accordion-text p { padding: 0 29px 0 20px ; font-size: 16px; line-height: 26px; margin-bottom: 15px; }
+}
+
+@media(min-width:992px){
+	.container.w-900 { max-width:900px!important;  padding: 0; }
+}

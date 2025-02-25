@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="font/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-dark bg-black bg-opacity-75 border-bottom fixed-top">
+            <div class="container-xl pt-3 mb-3">
+                <a aria-current="page" href="/en/"
+                class="router-link-active header-logo router-link-exact-active navbar-brand">
+                <img src="img/logo.png" alt="Logo" class="img-fluid" height="40" width="180">
+                Cobra Bitcoin
+            </a>
+            <div class="d-flex align-items-center">
+                <div class="nav-item dropdown lang-dropdown d-xl-none d-block">
+                </div>
+                <button class="navbar-toggler text-white shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="/en/staking" class="nav-link lg:px-3 px-2">Staking</a></li>
+                    <li class="nav-item"><a aria-current="page" href="/en#tokenomics"
+                        class="router-link-active router-link-exact-active nav-link lg:px-3 px-2">Tokenomics</a>
+                    </li>
+                    <li class="nav-item"><a aria-current="page" href="/en#roadmap"
+                        class="router-link-active router-link-exact-active nav-link lg:px-3 px-2">Roadmap</a>
+                    </li>
+                    <li class="nav-item"><a aria-current="page" href="/en#giveaway"
+                        class="router-link-active router-link-exact-active nav-link lg:px-3 px-2">Giveaway</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><button type="button"
+                        class="nav-link px-4 d-inline-block text-black btn-primary rounded ms-xl-3 openModalBtn" id="openModalBtn">Buy Cobra Bitcoin&nbsp;
+                        <svg width="21px" height="21px" viewBox="0 -5 20 20" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs></defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -6564.000000)"
+                            fill="#ff00ff">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path
+                                d="M298.803134,6405.67805 L300.227463,6407.16201 C300.5321,6407.48143 300.304126,6407.99811 299.861293,6407.99811 L284.834221,6407.99811 C284.277401,6407.99811 284,6408.4477 284,6409.00043 L284,6408.99242 C284,6409.54515 284.277401,6410.00075 284.834221,6410.00075 L299.846162,6410.00075 C300.291013,6410.00075 300.517977,6410.54047 300.209306,6410.85788 L298.793047,6412.31781 C298.409729,6412.71634 298.426877,6413.35218 298.833396,6413.72867 L298.835413,6413.73268 C299.236888,6414.10517 299.866337,6414.08614 300.244611,6413.68962 L303.449351,6410.34721 C304.186734,6409.57219 304.182699,6408.36059 303.44229,6407.58957 L300.265794,6404.30724 C299.888529,6403.91472 299.264124,6403.8957 298.863658,6404.26518 L298.85357,6404.2752 C298.44806,6404.64869 298.425868,6405.27752 298.803134,6405.67805"
+                                id="arrow_right-[#365]"></path>
+                            </g>
+                        </g>
+                    </g>
+                </svg></button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header>
+<main class="main-area pt-5 mt-5">
+    <div class="header-area header-content-area position-relative mb-5">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-topleft position-absolute start-0" style="width: auto; height: auto;"><img
+                    src="img/header_leftop-de6827a3.webp" alt="header_leftop" class="img-fluid"
+                    style="max-width: 60vw; height: auto; object-fit: cover;"></div>
+                    <div class="header-topright position-absolute end-0" style="width: auto; height: auto;"><img
+                        src="img/header_right_circle-72a9cc15.webp" alt="header_right_circle" class="img-fluid"
+                        style="max-width: 10vw; height: auto; object-fit: cover;"></div>
+                        <div class="row d-flex align-items-center justify-content-center" style="padding-bottom: 100px;">
+                            <div class="col-xl-12 col-12">
+                                <div class="header-left-content pt-5 pb-2 my-md-5  text-center">
+                                    <h1 class="futura-medium heading-text text-white position-relative mb-4"><span
+                                        class="heading-line">Cobra Bitcoin</span><br>Empowering a <br><span
+                                        class="quicksand text-primary">Green</span> Economy</h1>
+                                        <p class="text-white opacity-7 mb-4">Cobra Bitcoin drives the transition to a sustainable future by funding renewable energy projects and advancing lithium technologies.</p>
+                                        <div class="whitepaper-btns mb-4 text-center">
+                                            <a href="https://whitepaper.bitcoinlithium.com/" class="btn btn-primary py-2 me-3" target="_blank">Whitepaper&nbsp;
+                                                <svg width="21px" height="21px" viewBox="0 -5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs></defs>
+                                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -6564.000000)" fill="#000000">
+                                                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                                <path
+                                                                d="M298.803134,6405.67805 L300.227463,6407.16201 C300.5321,6407.48143 300.304126,6407.99811 299.861293,6407.99811 L284.834221,6407.99811 C284.277401,6407.99811 284,6408.4477 284,6409.00043 L284,6408.99242 C284,6409.54515 284.277401,6410.00075 284.834221,6410.00075 L299.846162,6410.00075 C300.291013,6410.00075 300.517977,6410.54047 300.209306,6410.85788 L298.793047,6412.31781 C298.409729,6412.71634 298.426877,6413.35218 298.833396,6413.72867 L298.835413,6413.73268 C299.236888,6414.10517 299.866337,6414.08614 300.244611,6413.68962 L303.449351,6410.34721 C304.186734,6409.57219 304.182699,6408.36059 303.44229,6407.58957 L300.265794,6404.30724 C299.888529,6403.91472 299.264124,6403.8957 298.863658,6404.26518 L298.85357,6404.2752 C298.44806,6404.64869 298.425868,6405.27752 298.803134,6405.67805"
+                                                                id="arrow_right-[#365]"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </a>
+                                            <a href="javascript:void(0)" class="btn btn-outline-white py-2 openModalBtn" id="openModalBtn">Buy Cobra Bitcoin&nbsp;<svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.2074 4.9675L20.2067 4.96675L16.1245 0.904255C15.8187 0.599919 15.324 0.601052 15.0196 0.906911C14.7152 1.21273 14.7164 1.70738 15.0222 2.01175L17.763 4.73925H1.21777C0.786289 4.73925 0.436523 5.08902 0.436523 5.5205C0.436523 5.95199 0.786289 6.30175 1.21777 6.30175H17.763L15.0223 9.02925C14.7164 9.33363 14.7153 9.82827 15.0196 10.1341C15.3241 10.44 15.8187 10.441 16.1245 10.1368L20.2067 6.07425L20.2074 6.07351C20.5134 5.76812 20.5124 5.27187 20.2074 4.9675Z" fill="white"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottomleft position-absolute d-lg-block d-none start-0 bottom-0"><img
+                    src="img/header_leftbottom-0c7c091f.webp" alt="header_leftbottom" class="img-fluid start-0 bottom-0"
+                    style="height: auto; object-fit: cover;"></div>
+                </div>
+                <section class="featuredin-area mb-5">
+                    <h2 class="kenzoestic-reg fs-70 text-center mb-4 text-uppercase text-primary">Featured <span
+                        class="text-white">In</span></h2>
+                        <div class="logo-marqee-area">
+                            <div class="logos-marquee">
+                                <div class="marquee">
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon1-ceb6c9b0.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon2-45f3bdbb.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon3-d2961f31.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon4-2f113632.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon5-d86a783d.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon1-ceb6c9b0.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon2-45f3bdbb.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon3-d2961f31.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon4-2f113632.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon5-d86a783d.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon1-ceb6c9b0.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon2-45f3bdbb.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon3-d2961f31.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon4-2f113632.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon5-d86a783d.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                </div>
+                                <div class="marquee">
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon6-7e255e01.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon7-597b46fd.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon8-a2d1caf1.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon9-ab515def.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon10-9b15e47b.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon6-7e255e01.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon7-597b46fd.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon8-a2d1caf1.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon9-ab515def.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon10-9b15e47b.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                    <div class="marquee__group">
+                                        <img src="img/featured_icon6-7e255e01.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon7-597b46fd.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon8-a2d1caf1.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon9-ab515def.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                        <img src="img/featured_icon10-9b15e47b.webp" alt="featured_icon1" class="img-fluid"
+                                        width="250" height="auto">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="summary-section-area py-4 mb-5 position-relative">
+                        <div class="summartop-right position-absolute top-0 end-0" style="width:auto;height:auto;"><img
+                            src="img/summary_topright-edaa795e.webp" alt="summary_topright" class="img-fluid"
+                            style="max-width:20vw;height:auto;margin-top:-40px;object-fit:cover;"></div>
+                            <div class="summarbottom-left position-absolute bottom-0 start-0"
+                            style="width:auto;margin-bottom:-50px;height:auto;"><img src="img/summary_bottom_left-77e4e6ae.webp"
+                            alt="summary_bottom_left" class="img-fluid" style="max-width:15vw;height:auto;object-fit:cover;">
+                        </div>
+                        <div class="summartop-right position-absolute bottom-0 end-0"
+                        style="width:auto;margin-bottom:-50px;height:auto;">
+                        <img src="img/bitcoin_icon-50d3b75f.webp" alt="bitcoin_icon" class="img-fluid"
+                        style="max-width:20vw;height:auto;object-fit:cover;">
+                    </div>
+                    <div class="container pb-5">
+                        <div class="row">
+                            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                                <div class="lottie-image-gif" autoplay="true">
+                                    <img src="img/1.gif" alt="Animated GIF">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="summary-content text-md-start text-center">
+                                    <div class="heading position-relative summary-title mb-3">
+                                        <h2 class="text-white fs-70 futura-medium mb-5"><span class="h2bg">Summary <div
+                                            class="h2img"></div></span></h2>
+                                        </div>
+                                        <p class="text-white opacity-7 text-start">Cobra Bitcoin represents a groundbreaking
+                                            fusion of digital currency and sustainable development, aiming to finance and propel
+                                            renewable energy projects while focusing on the exploration and development of lithium,
+                                        a crucial element in clean energy technologies.</p>
+                                        <div class="list-text mb-4 text-start">
+                                            <p class="text-white opacity-7"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                                                fill="#8DEA2A"></path>
+                                            </svg> &nbsp; Financing Renewable Energy Projects</p>
+                                            <p class="text-white opacity-7"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                                                fill="#8DEA2A"></path>
+                                            </svg> &nbsp; Lithium Exploration and Development</p>
+                                            <p class="text-white opacity-7"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                                                fill="#8DEA2A"></path>
+                                            </svg> &nbsp; Sustainable Technological Solutions</p>
+                                            <p class="text-white opacity-7"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                                                fill="#8DEA2A"></path>
+                                            </svg> &nbsp; Energy Storage Infrastructure for Remote Communities</p>
+                                            <p class="text-white opacity-7"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                                                fill="#8DEA2A"></path>
+                                            </svg> &nbsp; Promoting the Green Economy</p>
+                                        </div>
+                                        <div class="readmore-btn"><a
+                                            class="px-4 py-2 d-inline-block text-black btn-primary rounded text-decoration-none"
+                                            href="https://whitepaper.bitcoinlithium.com/" target="_blank"
+                                            aria-label="Whitepaper">Read more &nbsp; <svg width="21px" height="21px"
+                                            viewBox="0 -5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs></defs>
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                transform="translate(-340.000000, -6564.000000)" fill="#ff00ff">
+                                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                    <path
+                                                    d="M298.803134,6405.67805 L300.227463,6407.16201 C300.5321,6407.48143 300.304126,6407.99811 299.861293,6407.99811 L284.834221,6407.99811 C284.277401,6407.99811 284,6408.4477 284,6409.00043 L284,6408.99242 C284,6409.54515 284.277401,6410.00075 284.834221,6410.00075 L299.846162,6410.00075 C300.291013,6410.00075 300.517977,6410.54047 300.209306,6410.85788 L298.793047,6412.31781 C298.409729,6412.71634 298.426877,6413.35218 298.833396,6413.72867 L298.835413,6413.73268 C299.236888,6414.10517 299.866337,6414.08614 300.244611,6413.68962 L303.449351,6410.34721 C304.186734,6409.57219 304.182699,6408.36059 303.44229,6407.58957 L300.265794,6404.30724 C299.888529,6403.91472 299.264124,6403.8957 298.863658,6404.26518 L298.85357,6404.2752 C298.44806,6404.64869 298.425868,6405.27752 298.803134,6405.67805"
+                                                    id="arrow_right-[#365]"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="tokenomics" class="tokenomics-area pb-5 position-relative" style="width: auto; height: auto;">
+                    <div class="tokenomics-topleft position-absolute top-0 start-0">
+                        <div class="circle-blur"></div><img src="img/header_leftbottom-0c7c091f.webp" alt="header_leftbottom"
+                        class="img-fluid position-absolute top-0 start-0"
+                        style="max-width:20vw;height:auto;margin-top:-80px;object-fit:cover;">
+                    </div>
+                    <div class="tokenomics-topright position-absolute bottom-0 end-0"
+                    style="width:auto;margin-bottom:-60px;height:auto;">
+                    <div class="circle-blur"></div>
+                    <img src="img/bitcoin_icon2-f85cccac.webp" alt="bitcoin_icon2"
+                    class="img-fluid position-absolute bottom-0 end-0 mb-3"
+                    style="max-width:20vw;height:auto;object-fit:cover;">
+                </div>
+                <div class="heading-aera text-center mb-5">
+                    <h2 class="text-white fs-70 futura-medium"><span class="tokenomicsbg px-4">Tokenomics</span></h2>
+                    <h6 class="text-white opacity-7 fw-normal">Total Supply: 500,000,000 Tokens</h6>
+                </div>
+                <div class="tokenomic-circle position-relative text-center mx-auto"><img src="img/tokenbg-d6903f3f.webp"
+                    alt="tokenbg" class="img-fluid mx-auto d-lg-block d-none">
+                    <div class="unbounded circle-text position-absolute top-50 start-50 translate-middle d-lg-block d-none">
+                    100% </div>
+                    <div class="row d-lg-none d-flex gx-0 align-items-center mb-4">
+                        <div class="col-5">
+                            <div class="position-relative">
+                                <img src="img/tokenbg-d6903f3f.webp" alt="tokenbg" class="img-fluid mx-auto">
+                                <div class="unbounded circle-text position-absolute top-50 start-50 translate-middle">100%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="token-mobile text-start">
+                                <p class="fw-semibold mb-1"><i class="fa-solid fa-circle yellow"></i> &nbsp;Liquidity: 15%
+                                (75,000,000 Tokens)</p>
+                                <p class="fw-semibold mb-1"><i class="fa-solid fa-circle green"></i> &nbsp;Presale: 40%
+                                (200,000,000 Tokens)</p>
+                                <p class="fw-semibold mb-1"><i class="fa-solid fa-circle orange"></i> &nbsp;Staking: 20%
+                                (100,000,000 Tokens)</p>
+                                <p class="fw-semibold mb-1"><i class="fa-solid fa-circle skyblue"></i> &nbsp;Marketing: 15%
+                                (75,000,000 Tokens)</p>
+                                <p class="fw-semibold mb-1"><i class="fa-solid fa-circle blue"></i> &nbsp;Airdrop, Giveaway:
+                                10% (50,000,000 Tokens)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="giveaway-text position-absolute d-lg-block d-none">
+                        <div class="giveaway mb-2"><strong>Airdrop, Giveaway: 10%<br></strong> (50,000,000 Tokens)</div><img
+                        src="data:image/webp;base64,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"
+                        alt="preslae" class="img-fluid">
+                    </div>
+                    <div class="marketing-text position-absolute top-50 d-lg-block d-none">
+                        <div class="marketing mb-2"><strong>Marketing: 15%<br></strong> (75,000,000 Tokens)</div><img
+                        src="data:image/webp;base64,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"
+                        alt="preslae" class="img-fluid">
+                    </div>
+                    <div class="liquidity-text position-absolute d-lg-block d-none">
+                        <div class="mb-2 mb-2 ps-md-5 ms-md-5"><strong class="ps-md-3">Liquidity: 15%<br></strong>
+                        (75,000,000 Tokens)</div><img
+                        src="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAS4AAABVCAYAAAD30gn1AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABLqADAAQAAAABAAAAVQAAAAAzwkM7AAADnElEQVR4Ae3agWkTcQDFYVMcwA3UTdwkGcERskHpBNYN3KAj6AYZwW4Q/wcGDqExoU2b/PIdHAnt9Xrve/BIoYt3jhcR2G63y3Gj1YvczE0IENgn8Ov9vu/63mECf0fr/rCrXUWAwHMFFs+9wbX//D+jdTc8fly7ifwETizweOL7t28/jdY4d8e6nVY6AgQuXmCs1XK3WON1ffGBBCBAoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAtYLTa/UpHICdgtHKVCkSgLWC02v1KRyAnYLRylQpEoC1gtNr9SkcgJ2C0cpUKRKAhMMbpwzi/jvPbOG/HuZqSjdflOHfHevqagwABAm8uMFZpOc7fu3WavW5m79dv/qAegAABApPAGKbVbJyeentLiwABAmcjMJZq89Razb7+cDYP7EEIELhugTFMX2bj9L+3H69bS3oCBM5B4GY8xKcjHuTzEde6lAABAicRmIbLQYAAgcsSGH8bTv8CccixuaxknpYAgarAzWKxeBzh7g4I+P2Aa1xCgACB1xEYH7emT10/93zsun+dJ/FbCBAgcKTAGK7pv+Y3swF7GO9XR97G5QQIECBAgAABAnOBPwJbROE2Xni3AAAAAElFTkSuQmCC"
+                        alt="liquidity" class="img-fluid">
+                    </div>
+                    <div class="preslae-text position-absolute top-50 d-lg-block d-none">
+                        <div class="preslae position-absolute"><strong>Presale: 40%<br></strong> (200,000,000 Tokens)</div>
+                        <img src="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAABUCAYAAAAmsjreAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABIqADAAQAAAABAAAAVAAAAACbugLaAAADlUlEQVR4Ae3a7W2ScRTG4T6dgBHYwI5QN3ADdQM36QjVCRyBEeoGuoHdAA8Jd9IPGiCR3m25SP45fXnCeXp9+AVIr66ePLbb7XrO3ZyHOT/nbOZ8enKJLwkQIHA+gQnOxzm/5/zt8X1+uDrfds9MgMDFC0xkdq+EDj3uLh4KAAEC5xOYAm0OVWj/+9vz3YVnJkDgUgWuJzC7t1y3RwLcHHmdywgQIHC0wPVcecpnP6dce/RNuJAAgcsW2IXo8QSCU6494WldSoDAxQvM27PN/jOgQ2N98VgACBA4j8DU5+ZQgeb3D+fZ7lkJECCwF5jQfJjzr/8jSqfugREgQOB/CyxPn3Bqs57vv8x5t//5r5nf5uw+G9rMWc35uizL55keBAgQeF6BidTu7VteMXll9Lz8thEgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWEyAQATGKhEmAQFVAjKr8lhMgEAExioRJgEBVQIyq/JYTIBABMYqESYBAVUCMqvyWvxGB5Y38HdU/YxejuYHNnFX1Riwn8DoF1tev875f1l0vy/Jj7uj9nMeXdWfuhsDrEPgDg6QoBgAanlAAAAAASUVORK5CYII="
+                        alt="preslae" class="img-fluid">
+                    </div>
+                    <div class="staking-text position-absolute d-lg-block d-none">
+                        <div class="staking position-absolute bottom-0 mb-2"><strong>Staking: 20%<br></strong> (100,000,000
+                        Tokens)</div><img
+                        src="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAUkAAABVCAYAAADE6Rb8AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABSaADAAQAAAABAAAAVQAAAABgtWh+AAADk0lEQVR4Ae3a4UkjURSGYUf8ryWkAy3BEtKBlmAHxgq0BO1AK0gNqUA70A7iGUhAhE+v4I/J3CcwLHt2Nsx99uxLdnU48iJAgEDnAtvt9qwIFnV9DMPwVj96ESBAgEDF8bKudV1fX6/1k2s6BAgQ6FqgQnhV10+v266BHJ4AgX4FqoyLut5/KuTu1y6P+2VycgIEOha4qbOP/w/52+tKJH8j8usECMxR4LzxUD5JNkK5jQCBTgV8kuz0D96xCXQusGk8/5tINkq5jQCBWQk8N57mqfE+txEgQGA+AvWV64uGr2w/zufETkKAAIFGgV0g99/+sw6xfGh8O7cRIEBgPgLfArkaT1az8Xsml3Wt6rquq+Vbg+aD4iQECBAYBSp+4z+x958gV1QIECBAYCcgkFaBAAECQUAgA4wxAQIEBNIOECBAIAgIZIAxJkCAgEDaAQIECAQBgQwwxgQIEBBIO0CAAIEgIJABxpgAAQICaQcIECAQBAQywBgTIEBAIO0AAQIEgoBABhhjAgQICKQdIECAQBAQyABjTIAAAYG0AwQIEAgCAhlgjAkQICCQdoAAAQJBQCADjDEBAgQE0g4QIEAgCAhkgDEmQICAQNoBAgQIBAGBDDDGBAgQEEg7QIAAgSAgkAHGmAABAgJpBwgQIBAEBDLAGBMgQEAg7QABAgSCgEAGGGMCBAgIpB0gQIBAEBDIAGNMgAABgbQDBAgQCAICGWCMCRAgIJB2gAABAkFAIAOMMQECBATSDhAgQCAICGSAMSZAgIBA2gECBAgEAYEMMMYECBAQSDtAgACBICCQAcaYAAECAmkHCBAgEAQEMsAYEyBAQCDtAAECBIKAQAYYYwIECAikHSBAgEAQEMgAY0yAAAGBtAMECBAIAgIZYIwJECAgkHaAAAECQUAgA4wxAQIEBNIOECBAIAgIZIAxJkCAgEDaAQIECAQBgQwwxgQIEBBIO0CAAIEgIJABxpgAAQICaQcIECAQBAQywBgTIEBAIO0AAQIEgoBABhhjAgQICKQdIECAQBAQyABjTIAAAYG0AwQIEAgCAhlgjAkQICCQdoAAAQJBQCADjDEBAgQE0g4QIEAgCAhkgDEmQICAQP7fDgyFuay3O/u/t/ROBAhMQOC+nmH8e303DMNqAs9zsI8wRvK1nn5xsCfw4AQIJAGBTDJ/mJ/UvS91nf7h97iVAIHpC2zqE+TD9B9z+k/4Cbef5I3VmaRhAAAAAElFTkSuQmCC"
+                        alt="preslae" class="img-fluid">
+                    </div>
+                </div>
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="bottom-text mx-auto text-md-start text-center">
+                        <p class="text-white opacity-7 text-start"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                            fill="#8DEA2A"></path>
+                        </svg> &nbsp; Stake rewards based on dynamic percentage.</p>
+                        <p class="text-white opacity-7 text-start"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                            fill="#8DEA2A"></path>
+                        </svg> &nbsp; When you buy $BTCL you can immediately put it to work.</p>
+                        <p class="text-white opacity-7 text-start"><svg width="16" height="16" viewBox="0 0 16 16"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                            d="M7.8728 0.84668C3.73608 0.84668 0.372803 4.20996 0.372803 8.34668C0.372803 12.4834 3.73608 15.8467 7.8728 15.8467C12.0095 15.8467 15.3728 12.4834 15.3728 8.34668C15.3728 4.20996 12.0095 0.84668 7.8728 0.84668ZM7.8728 14.9092C4.25464 14.9092 1.3103 11.9648 1.3103 8.34668C1.3103 4.72852 4.25464 1.78418 7.8728 1.78418C11.491 1.78418 14.4353 4.72852 14.4353 8.34668C14.4353 11.9648 11.491 14.9092 7.8728 14.9092ZM11.4998 5.81836C11.6814 6 11.6814 6.29883 11.4998 6.48047L7.10522 10.875C7.0144 10.9658 6.89429 11.0127 6.77417 11.0127C6.65405 11.0127 6.53394 10.9658 6.44312 10.875L4.24585 8.67773C4.06421 8.49609 4.06421 8.19727 4.24585 8.01562C4.42749 7.83398 4.72632 7.83398 4.90796 8.01562L6.77417 9.88184L10.8376 5.81836C11.0193 5.63379 11.3181 5.63379 11.4998 5.81836Z"
+                            fill="#8DEA2A"></path>
+                        </svg> &nbsp; Stake $BTCL to earn $BTCL!</p>
+                        <div class="readmore-btn text-center pt-3"><a
+                            class="px-4 py-2 d-inline-block text-black btn-primary rounded text-decoration-none"
+                            href="https://whitepaper.bitcoinlithium.com/" target="_blank">Read
+                            more &nbsp; <svg width="21px" height="21px" viewBox="0 -5 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs></defs>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -6564.000000)"
+                                fill="#ff00ff">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                    d="M298.803134,6405.67805 L300.227463,6407.16201 C300.5321,6407.48143 300.304126,6407.99811 299.861293,6407.99811 L284.834221,6407.99811 C284.277401,6407.99811 284,6408.4477 284,6409.00043 L284,6408.99242 C284,6409.54515 284.277401,6410.00075 284.834221,6410.00075 L299.846162,6410.00075 C300.291013,6410.00075 300.517977,6410.54047 300.209306,6410.85788 L298.793047,6412.31781 C298.409729,6412.71634 298.426877,6413.35218 298.833396,6413.72867 L298.835413,6413.73268 C299.236888,6414.10517 299.866337,6414.08614 300.244611,6413.68962 L303.449351,6410.34721 C304.186734,6409.57219 304.182699,6408.36059 303.44229,6407.58957 L300.265794,6404.30724 C299.888529,6403.91472 299.264124,6403.8957 298.863658,6404.26518 L298.85357,6404.2752 C298.44806,6404.64869 298.425868,6405.27752 298.803134,6405.67805"
+                                    id="arrow_right-[#365]"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="bitcoin-lithium-section pb-2">
+            <div class="logo-marqee-area pt-5 mt-5 pb-5 mb-5">
+                <div class="logos-marquee bg-primary">
+                    <div class="marquee">
+                        <div class="marquee__group">
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                        </div>
+                        <div class="marquee__group">
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Bitcoin Cobra</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore-solution-area position-relative mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="solutions-content position-relative py-5">
+                            <h2 class="text-white fs-70 futura-medium mb-4 text-md-start text-center"><span
+                                class="h2bg">SOLUTIONS <div class="h2img"></div></span></h2>
+                                <div class="list-solution text-md-start text-start">
+                                    <p class="text-white opacity-7"><svg width="26" height="21" viewBox="0 0 26 21"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                        d="M24.0043 0.228549C19.3914 1.73223 13.5483 5.7646 8.11539 12.7009L4.90329 9.14697C4.39066 8.60039 3.50224 8.60039 3.02381 9.14697L0.665921 11.7783C0.221973 12.2907 0.256184 13.0767 0.734342 13.5551L7.97855 20.4917C8.59355 21.0725 9.55039 20.9017 9.96039 20.1841C13.8217 13.1791 17.9904 7.98539 24.9612 2.0396C25.8496 1.28802 25.098 -0.147241 24.0043 0.228549Z"
+                                        fill="#8DEA2A"></path>
+                                    </svg> &nbsp;Cobra Bitcoin Financing Platform for Mining, Recycling and Startups
+                                </p>
+                                <p class="text-white opacity-7"><svg width="26" height="21" viewBox="0 0 26 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                    d="M24.0043 0.228549C19.3914 1.73223 13.5483 5.7646 8.11539 12.7009L4.90329 9.14697C4.39066 8.60039 3.50224 8.60039 3.02381 9.14697L0.665921 11.7783C0.221973 12.2907 0.256184 13.0767 0.734342 13.5551L7.97855 20.4917C8.59355 21.0725 9.55039 20.9017 9.96039 20.1841C13.8217 13.1791 17.9904 7.98539 24.9612 2.0396C25.8496 1.28802 25.098 -0.147241 24.0043 0.228549Z"
+                                    fill="#8DEA2A"></path>
+                                </svg> &nbsp;Efficient and Affordable Battery Charging Stations</p>
+                                <p class="text-white opacity-7"><svg width="26" height="21" viewBox="0 0 26 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                    d="M24.0043 0.228549C19.3914 1.73223 13.5483 5.7646 8.11539 12.7009L4.90329 9.14697C4.39066 8.60039 3.50224 8.60039 3.02381 9.14697L0.665921 11.7783C0.221973 12.2907 0.256184 13.0767 0.734342 13.5551L7.97855 20.4917C8.59355 21.0725 9.55039 20.9017 9.96039 20.1841C13.8217 13.1791 17.9904 7.98539 24.9612 2.0396C25.8496 1.28802 25.098 -0.147241 24.0043 0.228549Z"
+                                    fill="#8DEA2A"></path>
+                                </svg> &nbsp;Tokenized Carbon Credits</p>
+                                <p class="text-white opacity-7"><svg width="26" height="21" viewBox="0 0 26 21"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                    d="M24.0043 0.228549C19.3914 1.73223 13.5483 5.7646 8.11539 12.7009L4.90329 9.14697C4.39066 8.60039 3.50224 8.60039 3.02381 9.14697L0.665921 11.7783C0.221973 12.2907 0.256184 13.0767 0.734342 13.5551L7.97855 20.4917C8.59355 21.0725 9.55039 20.9017 9.96039 20.1841C13.8217 13.1791 17.9904 7.98539 24.9612 2.0396C25.8496 1.28802 25.098 -0.147241 24.0043 0.228549Z"
+                                    fill="#8DEA2A"></path>
+                                </svg> &nbsp;Crowdfunding for Social Impact Empowering Communities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-center align-items-center">
+                        <div class="lottie-animation-container lottie-image" autoplay="true"
+                        style="--lottie-animation-container-width: 100%; --lottie-animation-container-height: 100%; --lottie-animation-container-background-color: transparent; --lottie-animation-margin: 0 auto;">
+                        <img class="img-fluid" src="img/fetchpik.com-iconscout-unYsR8kjHQ.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects-area position-relative mb-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2">
+                    <div class="tokenomics-topleft position-absolute top-0 start-0" style="width: auto; height: auto;">
+                        <img src="img/bitcoin_icon12-a2091854.webp" alt="bitcoin_icon3"
+                        class="img-fluid position-absolute top-0 start-0"
+                        style="max-width: 18vw; height: auto; object-fit: cover;">
+                        <div class="circle-blur"></div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="container">
+                        <div class="heading text-center mb-4 pt-5">
+                            <h2 class="futura-medium fs-70 text-white">PORTFOLIO OF<br><span
+                                class="bottom-line">PROJECTS</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="projects-inner mt-5 position-relative">
+                    <div class="splide projects-slider is-initialized splide--loop splide--ltr splide--draggable is-active"
+                    id="splide01">
+                    <div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable"
+                    id="splide01-track" aria-live="polite" aria-atomic="true"
+                    style="padding-left: 0px; padding-right: 0px;" aria-busy="false">
+                    <div class="owl-carousel owl-theme" id="owl-portfolio">
+                        <div class="item">
+                            <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone"
+                            id="splide01-clone01" role="group" aria-roledescription="slide" aria-label="1 of 3"
+                            aria-hidden="true">
+                            <div data-v-c81d0b8c="" class="card border">
+                                <div data-v-c81d0b8c="" class="card-body p-3">
+                                    <h3 data-v-c81d0b8c="" class="kenzoestic-reg text-uppercase text-white">
+                                    Reforestation in Amazon Rainforest</h3>
+                                    <p data-v-c81d0b8c="" class="text-white opacity-7">Initiatives to restore
+                                        native
+                                    forest in areas affected by illegal deforestation.</p><img
+                                    data-v-c81d0b8c=""
+                                    src="https://bitcoinlithium.com/assets/slide1-0b85412f.webp"
+                                    alt="slide1" class="img-fluid text-center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone is-active"
+                        id="splide01-clone02" role="group" aria-roledescription="slide" aria-label="2 of 3"
+                        aria-hidden="true">
+                        <div data-v-c81d0b8c="" class="card border">
+                            <div data-v-c81d0b8c="" class="card-body p-3">
+                                <h3 data-v-c81d0b8c=""
+                                class="kenzoestic-reg text-uppercase text-white mb-3">
+                            Microgrids in Africa</h3>
+                            <p data-v-c81d0b8c="" class="text-white opacity-7">Development of autonomous
+                            clean energy systems for communities without electricity access.</p><img
+                            data-v-c81d0b8c=""
+                            src="https://bitcoinlithium.com/assets/slide2-d10c2ee2.webp"
+                            alt="slide2" class="img-fluid text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone"
+                id="splide01-clone03" role="group" aria-roledescription="slide" aria-label="3 of 3"
+                aria-hidden="true">
+                <div data-v-c81d0b8c="" class="card border">
+                    <div data-v-c81d0b8c="" class="card-body p-3">
+                        <h3 data-v-c81d0b8c="" class="kenzoestic-reg text-uppercase text-white">
+                        Renewable Energy Plants in Asia</h3>
+                        <p data-v-c81d0b8c="" class="text-white opacity-7">Deployment of solar and
+                        windtechnologies in urban and rural areas.</p><img data-v-c81d0b8c=""
+                        src="https://bitcoinlithium.com/assets/slide3-c8364367.webp"
+                        alt="slide3" class="img-fluid text-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone"
+            id="splide01-clone04" role="group" aria-roledescription="slide" aria-label="1 of 3"
+            aria-hidden="true">
+            <div data-v-c81d0b8c="" class="card border">
+                <div data-v-c81d0b8c="" class="card-body p-3">
+                    <h3 data-v-c81d0b8c="" class="kenzoestic-reg text-uppercase text-white">
+                    Reforestation in Amazon Rainforest</h3>
+                    <p data-v-c81d0b8c="" class="text-white opacity-7">Initiatives to restore
+                        native
+                    forest in areas affected by illegal deforestation.</p><img
+                    data-v-c81d0b8c=""
+                    src="https://bitcoinlithium.com/assets/slide1-0b85412f.webp"
+                    alt="slide1" class="img-fluid text-center">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone is-active"
+        id="splide01-clone05" role="group" aria-roledescription="slide" aria-label="2 of 3"
+        aria-hidden="true">
+        <div data-v-c81d0b8c="" class="card border">
+            <div data-v-c81d0b8c="" class="card-body p-3">
+                <h3 data-v-c81d0b8c=""
+                class="kenzoestic-reg text-uppercase text-white mb-3">
+            Microgrids in Africa</h3>
+            <p data-v-c81d0b8c="" class="text-white opacity-7">Development of autonomous
+            clean energy systems for communities without electricity access.</p><img
+            data-v-c81d0b8c=""
+            src="https://bitcoinlithium.com/assets/slide2-d10c2ee2.webp"
+            alt="slide2" class="img-fluid text-center">
+        </div>
+    </div>
+</div>
+</div>
+<div class="item">
+    <div data-v-c81d0b8c="" class="splide__slide item  splide__slide--clone"
+    id="splide01-clone06" role="group" aria-roledescription="slide" aria-label="3 of 3"
+    aria-hidden="true">
+    <div data-v-c81d0b8c="" class="card border">
+        <div data-v-c81d0b8c="" class="card-body p-3">
+            <h3 data-v-c81d0b8c="" class="kenzoestic-reg text-uppercase text-white">
+            Renewable Energy Plants in Asia</h3>
+            <p data-v-c81d0b8c="" class="text-white opacity-7">Deployment of solar and
+            windtechnologies in urban and rural areas.</p><img data-v-c81d0b8c=""
+            src="https://bitcoinlithium.com/assets/slide3-c8364367.webp"
+            alt="slide3" class="img-fluid text-center">
+        </div>
+    </div>
+</div>
+</div>
+<div class="item">
+    <div data-v-c81d0b8c="" class="splide__slide item  is-prev" id="splide01-slide01"
+    role="group" aria-roledescription="slide" aria-label="1 of 3" aria-hidden="true">
+    <div data-v-c81d0b8c="" class="card border">
+        <div data-v-c81d0b8c="" class="card-body p-3">
+            <h3 data-v-c81d0b8c="" class="kenzoestic-reg text-uppercase text-white">
+            Reforestation in Amazon Rainforest</h3>
+            <p data-v-c81d0b8c="" class="text-white opacity-7">Initiatives to restore
+                native
+            forest in areas affected by illegal deforestation.</p><img
+            data-v-c81d0b8c=""
+            src="https://bitcoinlithium.com/assets/slide1-0b85412f.webp"
+            alt="slide1" class="img-fluid text-center">
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="roadmap" class="roadmore-area mb-5 position-relative">
+    <div class="roadmore-topright position-absolute top-0 end-0">
+        <div class="circle-blur" style="margin-top:200px;"></div>
+        <img src="img/bitcoin_icon11-1e00520e.webp" alt="bitcoin_icon"
+        class="img-fluid position-absolute top-0 end-0"
+        style="max-width:20vw;height:auto;margin-top:-30px;object-fit:cover;">
+    </div>
+    <div class="roadmore-topleft position-absolute top-0 start-0">
+        <img src="img/roadmap_left-fa101d06.webp" alt="roadmap_left"
+        class="img-fluid position-absolute top-0 start-0"
+        style="max-width:20vw;height:auto;margin-top:-30px;object-fit:cover;">
+    </div>
+    <div class="roadmore-topleft position-absolute bottom-0 end-0">
+        <img src="img/roadmap_circle-9663df2f.webp" alt="roadmap_circle"
+        class="img-fluid position-absolute end-0"
+        style="max-width:20vw;height:auto;margin-top:-100px;object-fit:cover;">
+    </div>
+    <div class="roadmap-section py-5 position-relative d-lg-block d-none">
+        <div class="container">
+            <div class="heading text-center position-relative">
+                <h2 class="text-white fs-70 futura-medium mb-5"><span class="h2bg">Roadmap <div class="h2img">
+                </div></span></h2>
+            </div>
+            <div class="timeline">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="timeline-item item1">
+                            <div class="phase">
+                                <h3>PHASE 1: (Q1 2025)</h3>
+                            </div>
+                            <ul>
+                                <li>Smart contract deploy</li>
+                                <li>Presale launch</li>
+                                <li>Staking launch</li>
+                                <li>Airdrop and giveaways to the community</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item item2">
+                            <div class="phase">
+                                <h3>PHASE 3: (Q3 2025)</h3>
+                            </div>
+                            <ul>
+                                <li>Awareness Campaigns</li>
+                                <li>More exchange A-tier CEX and DEX listing</li>
+                                <li>Start pilot projects</li>
+                                <li>Release blockchain integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="shape-line position-relative"><img
+                            src="data:image/webp;base64,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"
+                            alt="roadmap" class="position-absolute shape1"><img
+                            src="img/roadmap_shape2-1c956571.webp" alt="roadmap"
+                            class="position-absolute shape2"><img
+                            src="data:image/webp;base64,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"
+                            alt="roadmap" class="position-absolute shape3"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="timeline-item item3">
+                                <div class="phase">
+                                    <h3>PHASE 2: (Q2 2025)</h3>
+                                </div>
+                                <ul>
+                                    <li>Airdrop and giveaway winners</li>
+                                    <li>Presale ends and claim starts</li>
+                                    <li>Exchange A-tier CEX and DEX listing</li>
+                                    <li>Project foundation and platform development</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-item item4">
+                                <div class="phase">
+                                    <h3>PHASE 4: (Q4 2025)</h3>
+                                </div>
+                                <ul>
+                                    <li>Scaling operations</li>
+                                    <li>Continuous community development</li>
+                                    <li>Create regional implementation teams</li>
+                                    <li>Introduce new features</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-version d-lg-none d-block">
+            <div class="roadmap-section position-relative">
+                <div class="container px-4 px-lg-0 position-relative z-3">
+                    <div class="heading text-center position-relative">
+                        <h2 class="text-white fs-70 futura-medium mb-5"><span class="h2bg">Roadmap <div
+                            class="h2img"></div></span></h2>
+                        </div>
+                        <div class="timeline">
+                            <div class="row">
+                                <div class="col-2"><img src="img/roadmap_shape_mobile-84756a3d.webp" alt=""></div>
+                                <div class="col-10">
+                                    <div class="timeline-item item1">
+                                        <div class="phase">
+                                            <h3>PHASE 1: (Q1 2025)</h3>
+                                        </div>
+                                        <ul>
+                                            <li>Smart contract deploy</li>
+                                            <li>Presale launch</li>
+                                            <li>Staking launch</li>
+                                            <li>Airdrop and giveaways to the community</li>
+                                        </ul>
+                                    </div>
+                                    <div class="timeline-item item2">
+                                        <div class="phase">
+                                            <h3>PHASE 2: (Q2 2025)</h3>
+                                        </div>
+                                        <ul>
+                                            <li>Airdrop and giveaway winners</li>
+                                            <li>Presale ends and claim starts</li>
+                                            <li>Exchange A-tier CEX and DEX listing</li>
+                                            <li>Project foundation and platform development</li>
+                                        </ul>
+                                    </div>
+                                    <div class="timeline-item item3">
+                                        <div class="phase">
+                                            <h3>PHASE 3: (Q3 2025)</h3>
+                                        </div>
+                                        <ul>
+                                            <li>Awareness Campaigns</li>
+                                            <li>More exchange A-tier CEX and DEX listing</li>
+                                            <li>Start pilot projects</li>
+                                            <li>Release blockchain integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="timeline-item item4">
+                                        <div class="phase">
+                                            <h3>PHASE 4: (Q4 2025)</h3>
+                                        </div>
+                                        <ul>
+                                            <li>Scaling operations</li>
+                                            <li>Continuous community development</li>
+                                            <li>Create regional implementation teams</li>
+                                            <li>Introduce new features</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bitcoin-lithium-section pb-4 mb-4">
+            <div class="logo-marqee-area rotate pt-5 mt-5 pb-5 mb-5">
+                <div class="logos-marquee bg-primary">
+                    <div class="marquee">
+                        <div class="marquee__group">
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                        </div>
+                        <div class="marquee__group">
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                            <div class="marquee__group_items">
+                                <img src="img/logo.png" alt="bitcoin_logo" class="img-fluid bitcoin-logo">
+                                <p>Cobra Bitcoin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="giveaway" class="gamebitcoin-area position-relative">
+            <div class="roadmore-topright position-absolute top-0 start-0" style="width:auto;height:auto;"><img
+                src="img/game-topleft-cf6621ae.webp" alt="game-topleft"
+                style="max-width:18vw;height:auto;margin-top:-150px;object-fit:cover;"></div>
+                <div class="roadmore-topright position-absolute top-0 end-0" style="width:auto;height:auto;">
+                    <div class="circle-blur"></div><img src="img/bitcoin_icon9-f692d3f2.webp" alt="bitcoin_icon4"
+                    class="img-fluid position-absolute top-0 end-0"
+                    style="max-width:15vw;height:auto;margin-top:-100px;object-fit:cover;">
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10">
+                            <div class="heading text-md-start text-center">
+                                <h2 class="text-white fs-70 futura-medium mb-xl-0 mb-4 text-center">GIVEAWAY<br><span
+                                    class="bottom-line">Cobra Bitcoin</span></h2>
+                                    <p class="text-white futura-medium mb-xl-0 mt-5 pb-3 text-start"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="readmore-btn text-center pt-3" style="padding-bottom: 90px;">
+                        <!-- <a href="/en/giveaway"
+                        class="px-4 py-3 d-inline-block text-black btn btn-primary btn-lg rounded text-decoration-none">
+                        <svg width="30px" height="30px" viewBox="0 0 1024 1024" class="icon" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M809.6 532.7v327.1c0 15.1-12.3 27.5-27.5 27.5H563.4V532.7h246.2zM454.4 532.7v354.5H238.9c-15.2 0-27.5-12.3-27.5-27.5v-327h243z"
+                        fill="#FFE085"></path>
+                        <path
+                        d="M860.9 398.1v96.2c0 15.1-12.3 27.5-27.5 27.5h-270V370.6h270c15.2 0 27.5 12.3 27.5 27.5zM454.4 370.6v151.1H187.6c-15.2 0-27.5-12.3-27.5-27.5V398c0-15.1 12.3-27.5 27.5-27.5H454.4z"
+                        fill="#FFF0C2"></path>
+                        <path
+                        d="M871.9 398.1v96.2c0 21.2-17.3 38.5-38.5 38.5h-12.8v327.1c0 21.2-17.3 38.5-38.5 38.5H238.9c-21.2 0-38.5-17.3-38.5-38.5V532.7h-12.8c-21.2 0-38.5-17.3-38.5-38.5V398c0-21.2 17.3-38.5 38.5-38.5h121.9c-25.3-14.4-42.4-41.5-42.4-72.6 0-46.1 37.5-83.7 83.6-83.7 28.2 0 48.4 8.6 68.4 26.9-4.5-15.3-4.7-32.1-0.2-48.2 6.2-22.4 20.8-41.6 39.9-52.6 19.4-11.2 41.9-14.1 63.5-8.4 21.6 5.8 39.6 19.6 50.8 39 16.7 28.9 19.2 58.7 7.4 93.2 28.1-34.4 51.7-50 89.8-50 46.1 0 83.7 37.5 83.7 83.7 0 31.1-17.1 58.2-42.4 72.6h121.9c21.1 0.2 38.4 17.5 38.4 38.7z m-11 96.2v-96.2c0-15.1-12.3-27.5-27.5-27.5h-270v151.1h270c15.2 0 27.5-12.3 27.5-27.4z m-51.3 365.5V532.7H563.4v354.5h218.7c15.2 0.1 27.5-12.3 27.5-27.4z m-66.7-572.9c0-40.1-32.6-72.7-72.7-72.7-41.8 0-64.7 21.9-100.3 70.9l-49.2 74.4h149.5c40.1 0.1 72.7-32.5 72.7-72.6z m-190.2 0.2c28.3-49.1 31.6-85.5 10.8-121.5-9.7-16.8-25.4-28.8-44.1-33.9-6.3-1.7-12.6-2.5-18.9-2.5-12.6 0-25 3.3-36.2 9.8-16.6 9.6-29.3 26.4-34.8 46-5.5 19.7-3.1 40.4 6.4 56.9l73.6 109.2 43.2-64z m-0.3 600.2V370.6h-42.9l-0.1 0.1-0.1-0.1h-44v516.7h87.1z m-52.1-527.7L451 285c-35.5-48.8-58.4-70.7-100.2-70.7-40.1 0-72.7 32.6-72.7 72.7s32.6 72.6 72.7 72.6h149.5z m-45.9 527.7V532.7h-243v327.1c0 15.1 12.3 27.5 27.5 27.5h215.5z m0-365.6V370.6H187.6c-15.2 0-27.5 12.3-27.5 27.5v96.2c0 15.1 12.3 27.5 27.5 27.5h266.8z"
+                        fill="#EF4668"></path>
+                        <path
+                        d="M670.2 214.3c40.1 0 72.7 32.6 72.7 72.7s-32.6 72.6-72.7 72.6H520.7l49.2-74.4c35.6-49.1 58.6-70.9 100.3-70.9zM563.5 165.6c20.8 36 17.5 72.4-10.8 121.5l-43.3 64-73.6-109.2c-9.5-16.5-11.8-37.2-6.4-56.9 5.5-19.6 18.1-36.4 34.8-46 11.2-6.5 23.6-9.8 36.2-9.8 6.3 0 12.7 0.8 18.9 2.5 18.9 5.1 34.5 17.1 44.2 33.9zM552.4 589.5v297.8h-87V370.6h44l0.1 0.1v-0.1h42.9v162.1zM451 285l49.3 74.6H350.8c-40.1 0-72.7-32.6-72.7-72.6 0-40.1 32.6-72.7 72.7-72.7 41.7 0 64.7 21.8 100.2 70.7z"
+                        fill="#F59A9B"></path>
+                    </svg> &nbsp;Join the giveaway
+                </a> -->
+            </div>
+        </section>
+        <section class="howdoes-work-area position-relative">
+            <div class="container">
+                <div class="steps-area position-relative">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="step">
+                                <div class="position-relative text-center">
+                                    <img src="img/step_img-b100fe2f.webp" alt="step_img" class="img-fluid">
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <div class="stepno position-absolute top-50 translate-middle start-50">
+                                        <h3 class="futura-medium text-black mb-0">01</h3>
+                                        <p class="fw-medium text-black mb-0">Step</p>
+                                    </div>
+                                </div>
+                                <div class="step-content text-center mt-4">
+                                    <h4 class="text-primary gilroy-bold">Access the Giveaway</h4>
+                                    <p class="text-white opacity-7 text-start">Visit our official giveaway page to
+                                    participate and follow the steps. For more check our whitepaper!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="step">
+                                <div class="position-relative text-center">
+                                    <img src="img/step_img-b100fe2f.webp" alt="step_img" class="img-fluid">
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <div class="stepno position-absolute top-50 translate-middle start-50">
+                                        <h3 class="futura-medium text-black mb-0">02</h3>
+                                        <p class="fw-medium text-black mb-0">Step</p>
+                                    </div>
+                                </div>
+                                <div class="step-content text-center mt-4">
+                                    <h4 class="text-primary gilroy-bold">Complete Tasks</h4>
+                                    <p class="text-white opacity-7 text-start">Engage in fun activities like sharing on
+                                    social media, following our profiles, or referring friends to earn entries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="step">
+                                <div class="position-relative text-center">
+                                    <img src="img/step_img-b100fe2f.webp" alt="step_img" class="img-fluid">
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <span class="position-absolute top-50 translate-middle"></span>
+                                    <div class="stepno position-absolute top-50 translate-middle start-50">
+                                        <h3 class="futura-medium text-black mb-0">03</h3>
+                                        <p class="fw-medium text-black mb-0">Step</p>
+                                    </div>
+                                </div>
+                                <div class="step-content text-center mt-4">
+                                    <h4 class="text-primary gilroy-bold">Earn Entries</h4>
+                                    <p class="text-white opacity-7 text-start">Each completed task earns you entries.
+                                        The more entries you collect, the higher your chances of winning $BTCL tokens.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                            <div class="step">
+                                <div class="position-relative text-center">
+                                    <img src="img/step_img-b100fe2f.webp" alt="step_img" class="img-fluid">
+                                    <span class="position-absolute top-50 translate-middle"></span><span
+                                    class="position-absolute top-50 translate-middle"></span>
+                                    <div class="stepno position-absolute top-50 translate-middle start-50">
+                                        <h3 class="futura-medium text-black mb-0">04</h3>
+                                        <p class="fw-medium text-black mb-0">Step</p>
+                                    </div>
+                                </div>
+                                <div class="step-content text-center mt-4">
+                                    <h4 class="text-primary gilroy-bold">Win Rewards</h4>
+                                    <p class="text-white opacity-7 text-start">Winners will be announced at the end of
+                                    the giveaway, and $BTCL tokens will be sent directly to your wallet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-area py-5 my-5 position-relative">
+            <div class="roadmore-topright position-absolute top-0 start-0" style="width:auto;height:auto;">
+                <img src="img/faqleft-a49c47a7.webp" alt="faqleft"
+                style="max-width:18vw;height:auto;margin-top:-30px;object-fit:cover;">
+            </div>
+            <div class="roadmore-topright position-absolute top-0 end-0" style="width:auto;height:auto;">
+                <div class="circle-blur"></div>
+                <img src="img/bitcoin_icon10-1272d078.webp" alt="bitcoin_icon4"
+                class="img-fluid position-absolute top-0 end-0"
+                style="max-width:20vw;height:auto;margin-top:-30px;object-fit:cover;">
+            </div>
+            <div class="roadmore-topright position-absolute bottom-0 start-0" style="width:auto;height:auto;">
+                <div class="circle-blur"></div>
+                <img src="img/bitcoin_icon3-8602de49.webp" alt="bitcoin_icon4"
+                class="img-fluid position-absolute bottom-0 start-0"
+                style="max-width:18vw;height:auto;margin-bottom:-40px;object-fit:cover;">
+            </div>
+            <div class="roadmore-topleft position-absolute bottom-0 end-0" style="width:auto;height:auto;">
+                <img src="img/roadmap_circle-9663df2f.webp" alt="roadmap_circle"
+                style="max-width:15vw;height:auto;margin-bottom:-40px;object-fit:cover;">
+            </div>
+            <div class="container">
+                <div class="heading text-center mb-5">
+                    <h2 class="text-white futura-medium fs-70"><span class="bottom-line">FAQ</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-9">
+                        <div class="faq-inner">
+                            <div class="accordion" id="accordionfaq">
+                                <div class="accordion-item mb-4 bg-transparent">
+                                    <h2 class="accordion-header">
+                                        <button
+                                        class="accordion-button bg-transparent text-white fw-medium fs-4 collapsed"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                        aria-expanded="false" aria-controls="collapse2">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <span class="d-inline-block">
+                                                    <i class="fa-solid fa-circle"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1 ms-3">What is Cobra Bitcoin ($BTCL)?</div>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapse2" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionfaq" style="">
+                                <div class="accordion-body px-5 py-4 mt-4">
+                                    <p class="text-white opacity-7">Cobra Bitcoin is an innovative
+                                        cryptocurrency project that combines Real-World Asset (RWA) tokenization
+                                        with a focus on lithium-related projects to bridge blockchain technology
+                                        and tangible asset value. By tokenizing lithium and other critical
+                                        assets, the project supports industries driving renewable energy and
+                                        battery innovation. Cobra Bitcoin aims to democratize access to these
+                                        high-demand resources, ensuring transparency and liquidity for
+                                    investors.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-4 bg-transparent">
+                            <h2 class="accordion-header">
+                                <button
+                                class="accordion-button bg-transparent text-white fw-medium fs-4 collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                                aria-expanded="false" aria-controls="collapse1">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <span class="d-inline-block">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">How do i participate in the presale?</div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionfaq" style="">
+                        <div class="accordion-body px-5 py-4 mt-4">
+                            <p values="[object Object]" class="text-white opacity-7">Connect a
+                                compatible cryptocurrency wallet to our official website. Use your
+                                wallet to exchange your preferred cryptocurrency for <!----> tokens. For
+                                a detailed step-by-step guide and specific requirements, please refer to
+                                the <a
+                                href="https://whitepaper.bitcoinlithium.com/informations/how-to-buy"
+                                target="_blank">How to Buy</a> section in our whitepaper. Make sure
+                            your wallet is set up and funded before proceeding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-4 bg-transparent">
+                    <h2 class="accordion-header"><button
+                        class="accordion-button bg-transparent text-white fw-medium fs-4 collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                        aria-expanded="false" aria-controls="collapse3">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><span class="d-inline-block"><i
+                                class="fa-solid fa-circle"></i></span></div>
+                                <div class="flex-grow-1 ms-3">When do i receive my presale tokens?</div>
+                            </div>
+                        </button></h2>
+                        <div id="collapse3" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionfaq" style="">
+                        <div class="accordion-body px-5 py-4 mt-4">
+                            <p class="text-white opacity-7">You can claim your $BTCL tokens as soon as
+                                the presale concludes. The exact claim date will be announced closer to
+                                the end of the presale. Stay updated through our official channels for
+                            the latest information.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-4 bg-transparent">
+                    <h2 class="accordion-header"><button
+                        class="accordion-button bg-transparent text-white fw-medium fs-4 collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                        aria-expanded="false" aria-controls="collapse4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><span class="d-inline-block"><i
+                                class="fa-solid fa-circle"></i></span></div>
+                                <div class="flex-grow-1 ms-3">Can I earn rewards by holding $BTCL?</div>
+                            </div>
+                        </button></h2>
+                        <div id="collapse4" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionfaq" style="">
+                        <div class="accordion-body px-5 py-4 mt-4">
+                            <p class="text-white opacity-7">Yes, Cobra Bitcoin provides holding
+                                rewards and staking mechanisms, allowing long-term holders to earn
+                            passive income while supporting the ecosystem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-5 bg-transparent">
+                    <h2 class="accordion-header"><button
+                        class="accordion-button bg-transparent text-white fw-medium fs-4 collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                        aria-expanded="true" aria-controls="collapse5">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><span class="d-inline-block"><i
+                                class="fa-solid fa-circle"></i></span></div>
+                                <div class="flex-grow-1 ms-3">How can i contact the team?</div>
+                            </div>
+                        </button></h2>
+                        <div id="collapse5" class="accordion-collapse collapse "
+                        data-bs-parent="#accordionfaq" style="">
+                        <div class="accordion-body px-5 py-4 mt-4">
+                            <p class="text-white opacity-7">For immediate support, join our Telegram
+                                channel, where a Cobra Bitcoin moderator will be available to answer
+                                your questions. Alternatively, you can reach out via email at
+                                support@bitcoinlithium.com for more detailed inquiries. Our team strives
+                            to respond promptly to ensure your concerns are addressed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<footer class="footer-area pt-5">
+    <div class="container">
+        <div class="row pb-2">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                <div class="footer-about text-md-start text-center">
+                    <div class="footer-logo">
+                        <div class="footer-logo-text">
+                            <a href="#">
+                                <img src="img/logo.png" alt="logo">
+                                <p> Cobra Bitcoin</p>
+                            </a>
+                        </div>
+                        <p class="text-white opacity-7 mb-4 text-start">Cobra Bitcoin is a revolutionary
+                            digital token aimed at powering the transition to a green economy. We support
+                        renewable energy projects, lithium exploration, and sustainable solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                <h3 class="text-white futura-medium mb-3">Quick Links</h3>
+                <div class="footer-links">
+                    <ul class="list-unstyled">
+                        <li><a aria-current="page" href="/en/"
+                            class="router-link-active router-link-exact-active text-decoration-none text-white mb-2 d-inline-block">Home</a>
+                        </li>
+                        <li><a href="/en/staking"
+                            class="text-decoration-none text-white mb-2 d-inline-block">Staking</a></li>
+                            <li><a aria-current="page" href="/en#tokenomics"
+                                class="router-link-active router-link-exact-active text-decoration-none text-white mb-2 d-inline-block">Tokenomics</a>
+                            </li>
+                            <li><a aria-current="page" href="/en#roadmap"
+                                class="router-link-active router-link-exact-active text-decoration-none text-white mb-2 d-inline-block">Roadmap</a>
+                            </li>
+                            <li><a aria-current="page" href="/en#giveaway"
+                                class="router-link-active router-link-exact-active text-decoration-none text-white mb-2 d-inline-block">Giveaway</a>
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+                    <h3 class="text-white futura-medium mb-3">Socials</h3>
+                    <div class="footer-contactinfor">
+                        <div class="footer-social-icons mb-md-0 mb-4">
+                            <a href="https://t.me/bitcoinlithium" class="me-2 text-decoration-none"
+                            aria-label="Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            width="45px" height="45px">
+                            <linearGradient id="BiF7D16UlC0RZ_VqXJHnXa" x1="9.858" x2="38.142" y1="9.858"
+                            y2="38.142" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#33bef0"></stop>
+                            <stop offset="1" stop-color="#0a85d9"></stop>
+                        </linearGradient>
+                        <path fill="url(#BiF7D16UlC0RZ_VqXJHnXa)"
+                        d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z">
+                    </path>
+                    <path
+                    d="M10.119,23.466c8.155-3.695,17.733-7.704,19.208-8.284c3.252-1.279,4.67,0.028,4.448,2.113	c-0.273,2.555-1.567,9.99-2.363,15.317c-0.466,3.117-2.154,4.072-4.059,2.863c-1.445-0.917-6.413-4.17-7.72-5.282	c-0.891-0.758-1.512-1.608-0.88-2.474c0.185-0.253,0.658-0.763,0.921-1.017c1.319-1.278,1.141-1.553-0.454-0.412	c-0.19,0.136-1.292,0.935-1.745,1.237c-1.11,0.74-2.131,0.78-3.862,0.192c-1.416-0.481-2.776-0.852-3.634-1.223	C8.794,25.983,8.34,24.272,10.119,23.466z"
+                    opacity=".05"></path>
+                    <path
+                    d="M10.836,23.591c7.572-3.385,16.884-7.264,18.246-7.813c3.264-1.318,4.465-0.536,4.114,2.011	c-0.326,2.358-1.483,9.654-2.294,14.545c-0.478,2.879-1.874,3.513-3.692,2.337c-1.139-0.734-5.723-3.754-6.835-4.633	c-0.86-0.679-1.751-1.463-0.71-2.598c0.348-0.379,2.27-2.234,3.707-3.614c0.833-0.801,0.536-1.196-0.469-0.508	c-1.843,1.263-4.858,3.262-5.396,3.625c-1.025,0.69-1.988,0.856-3.664,0.329c-1.321-0.416-2.597-0.819-3.262-1.078	C9.095,25.618,9.075,24.378,10.836,23.591z"
+                    opacity=".07"></path>
+                    <path fill="#fff"
+                    d="M11.553,23.717c6.99-3.075,16.035-6.824,17.284-7.343c3.275-1.358,4.28-1.098,3.779,1.91	c-0.36,2.162-1.398,9.319-2.226,13.774c-0.491,2.642-1.593,2.955-3.325,1.812c-0.833-0.55-5.038-3.331-5.951-3.984	c-0.833-0.595-1.982-1.311-0.541-2.721c0.513-0.502,3.874-3.712,6.493-6.21c0.343-0.328-0.088-0.867-0.484-0.604	c-3.53,2.341-8.424,5.59-9.047,6.013c-0.941,0.639-1.845,0.932-3.467,0.466c-1.226-0.352-2.423-0.772-2.889-0.932	C9.384,25.282,9.81,24.484,11.553,23.717z">
+                </path>
+            </svg>
+        </a>
+    </div>
+</div>
+</div>
+</div>
+<div class="footer-sep text-center">
+    <img src="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAABNMAAAACCAYAAAByvJrRAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAE06ADAAQAAAABAAAAAgAAAACRjZeOAAAD0UlEQVRoBbWY21IkRwxEwf//z7Mk9nGcSEtVPbu4IkBS3lTdM7zw+aHzer0+v85XeX0KpqeK+mjMs/t4eibHuHs8L3mbRzNlNWbv1nfeNE9Y8vLDXamTNliO7+AZ/JSB5jvon1/G0ntGZ4w+1bvQUq0z1h50aKiNe3aPPhXc9bQPHRme3f8OP92HHNfes82Nk2H81pu/+eFT7XOPxpj7ie+8J/NJwz4qWn/u5sLn3LDmPbv/O23O6z3t85zedybXGdHgQcu86SfcWHoyqOZv2I13Prn2pOdZ0Gb+C7EqPqqo77Zxz+7xGXMfvufGbvy0wxn2u7em+2kOlpOMzvkmhE98Y5n9eTgDvD3WTBwY1fr0G47OFS1183NXvNZPnglrD5oNv+26+cgnh2qf+9aH6+eOJlgfY/Y0bp+54NvcOBng1Ke4dTyjMXrqlv+TvO/hffRUdqaCUc2Z736ajSWP70Vnn+Z3OO9LnxO/M9L7vaBJ5aDftO2Pzx5yuqIB97z10ZqbZmObNrjv3Toynmii5XSOZ/foUxv37B5PsMaZqdbSu6KjNvcnz71l9g7P6dvnOb3n1oc73bl5+zs3HMec+6d8dPa53zJOmnB+zikjGBnUTTfhN0/z3vckz3pnud805Jvvfpp/x5f7+F1zvwkjH03fITh55qyfMiasPT3bw87WMFPxuJpzHw0zFR8zFdye7tHEs73bzuvZGe7JIzscXqr19NZ95H9lJhI6nuUfa61tf8/Rc3F6MjYtvOs7GZNv2tU6z/T2+cUbn7QnDC51yoFvrmfrfDfwrpsf3cRP2KaftBOGP3XiJ+zmeZf3+2KfsSnvqc5eerzMqRP2Dn/L2PIn/CnGztu76ueY9NNO+9jVmOdTRnM93/InPbsnbsJOejjXdzOe6p/qfJf0m+9dvHPfyd52ORMN1dxpl7n+jm5ZZJ/4E3fyn3zh4Puup0y4VPxgPYOj3fa0znP32eGc207739Hal769PVt/4p7qpowJ2/Im7YTlXfZ5iuFrfc/oqD/B51nISfXMHio6ZmrjPaOjmk/P+zQ+acGmOnnRbdyGxzdxjfXMvqf+m968+23v/4n/RDYZp+/Yk+dEk7z8PMljN15XOKo5+ombMPSpN/6maX/P7+xqb8/cZXqXk5bdJw4N2Z7p4++/f7Ate8KfYuxNbU/P1k765m+aKX/CyJk+Czjv3jLQNJ95y57yyenaueab69na9BNvzL29wbdnOXHbzs723P2Uv90T74kPd+PJcT15orvxN83JP3E3LHz/zecOHPjO6Rn9f/6B9i/x1fwChqtOEnPAsmIAAAAASUVORK5CYII="
+    alt="footer_line" class="img-fluid"></div>
+    <div class="copyright">
+        <p class="text-center text-white p-4">© 2025 Cobra Bitcoin. All Rights Reserved.</p>
+    </div>
+</div>
+</footer>
+</main>
+
+
+<div class="modal-backdrop-a" id="modalBackdrop">
+    <div class="modal-a" id="buyModal">
+        <span class="close-modal" id="closeModalBtn">×</span>
+        <h2>How to Buy Cobra Bitcoin</h2>
+        <p><strong>Token Price:</strong> $5 per ABTC</p>
+        <p><strong>Minimum Investment:</strong> $1,000 (General) / $25,000 (Founders)</p>
+        <ol class="steps">
+            <li class="step-item">
+                <strong>Supported Cryptos:</strong><br>
+                ETH, USDC (ERC-20), USDT (ERC-20)
+            </li>
+            <li class="step-item">
+                <strong>Payment Address:</strong><br>
+                <span style="color:#00ffff;">0x25Ae070f39072aAB0a4c569099Cf0<wbr>20Ee617ba43</span><br><small><em>Use ERC‑20 only. DO NOT send to the token’s own contract address.</em></small>
+                </li>
+                <li class="step-item">
+                    <strong>Withdraw from Any Exchange</strong><br>
+                    Ensure you're sending via the correct ERC-20 network.
+                </li>
+                <li class="step-item">
+                    <strong>Proof of Payment:</strong><br>
+                    Email a screenshot or transaction hash to 
+                    <a href="mailto:info@astrabitcoin.com" style="color:#ffd700;">info@astrabitcoin.com</a>.
+                    <br><br>
+                    <em>
+                        Please also include your receiving wallet address (Trust Wallet, MetaMask,
+                        or any ERC-20–compatible wallet) so we can deliver your ABTC tokens.
+                    </em>
+                </li>
+                <li class="step-item">
+                    <strong>Receiving ABTC:</strong><br>
+                    Tokens are typically credited within a few hours once confirmed.
+                </li>
+                <li class="step-item">
+                    <strong>Importing ABTC:</strong><br>
+                    <strong>Name:</strong> Cobra Bitcoin<br>
+                    <strong>Contract Address:</strong>
+                    <span style="color:#00ffff;">0x8C45bC48a451F48cca403ff2DDba2<wbr>dA0EA68c404</span>
+                        <br>
+                        <strong>Symbol:</strong> ABTC &nbsp;|&nbsp; 
+                        <strong>Decimals:</strong> 18
+                    </li>
+                </ol>
+                <button id="confirmButton">Got It!</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            // const openModalBtn   = document.getElementsByClassName('openModalBtn');
+            const closeModalBtn  = document.getElementById('closeModalBtn');
+            const modalBackdrop  = document.getElementById('modalBackdrop');
+            const confirmButton  = document.getElementById('confirmButton');
+
+            // Show Modal
+            jQuery('.openModalBtn').click(function(){
+                modalBackdrop.classList.add('show');
+            })
+            // Close Modal (X button)
+                closeModalBtn.addEventListener('click', () => {
+                    modalBackdrop.classList.remove('show');
+                });
+            // Confirm Button
+                confirmButton.addEventListener('click', () => {
+                    modalBackdrop.classList.remove('show');
+                });
+            // Close on clicking backdrop
+                window.addEventListener('click', (e) => {
+                    if (e.target === modalBackdrop) {
+                      modalBackdrop.classList.remove('show');
+                  }
+              });
+          </script>
+      </body>
+      </html>

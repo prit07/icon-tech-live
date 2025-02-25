@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gummy Drop! Match 3 Puzzles</title>
+    <!-- Font Awoseme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Bootstarp Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Custum Css -->
+    <link rel="stylesheet" href="css/gummy-drop-match-3-puzzles-generator.css">
+    <link rel="stylesheet" href="css/animated.css">
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+
+<body>
+    <div class="gummy-drop-match-3-puzzles" id="gummy-drop-match-3-puzzles">
+
+        <div class="main" id="main0">
+            <div class="gummy-drop-match-logo animated jello">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="stepone" id="stepone">
+                <div class="gummy-drop-match-3-puzzles-heading ">
+                    <h1 class="lightSpeedIn animated " id="id_name"> Gummy Drop! Match 3 Puzzles Generator </h1>
+                    <p class="lightSpeedIn animated "> Gold & Gems </p>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btnonrid" onclick="stoponebtn()">
+                        <span href="#">Start</span>
+                    </a>
+                </div>
+            </div>
+            <div class="step0 " id="step0" style="display: none;">
+                <div class="main-user-box" id="main-user-box">
+                    <h2 class="step0-txt animated lightSpeedIn">My Sweet Home Games ID. </h2>
+                    <div class="form-1">
+                        <div class="inputWithIcon " id="inputWithIconBox">
+                            <i class="fa-solid fa-user-large"></i>
+                            <input type="text" class="user-input input-1" placeholder="Username/ID" id="input-id"
+                                fdprocessedid="xr4mma">
+                        </div>
+                        <p class="error-message" style="display: none; ">Please enter your Account Id</p>
+                    </div>
+                    <div class="main-user-btn-sub">
+                        <a class="btn-shine" id="btn0id" onclick="submitForm()">
+                            <span href="#">next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <span class="m-0" id="showUserValue" style="display: none;"></span>
+            <div class="menu1" id="menu" style="display: none;">
+                <h2 class="step0-txt animated lightSpeedIn">Select your device :</h2>
+                <div class="devices">
+                    <div class="devices_box selectedPlatform" id="platform0"
+                        onclick="startSecondSearch('device0','Window')">
+                        <div class="devices_icon">
+                            <i class="fa-brands fa-windows"></i>
+                        </div>
+                        <p>Window</p>
+                    </div>
+                    <div class="devices_box" id="platform1" onclick="startSecondSearch('device1','Mac')">
+                        <div class="devices_icon">
+                            <i class="fa-brands fa-apple"></i>
+                        </div>
+                        <p>Ios</p>
+                    </div>
+                    <div class="devices_box" id="platform2" onclick="startSecondSearch('device1','Android')">
+                        <div class="devices_icon">
+                            <i class="fa-brands fa-android"></i>
+                        </div>
+                        <p>Android</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Resource-Div " id="Resource-div" style="display: none;">
+                <h2 class="step0-txt animated lightSpeedIn"> Select My Sweet Home Dungeon Gold :</h2>
+                <div class="resource-div-main">
+                    <div class="Resource" id="Resource0" onclick="ResourceSelected('Resource0','25000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>25000</h4>
+                    </div>
+                    <div class="Resource" id="Resource1" onclick="ResourceSelected('Resource1','45000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>45000</h4>
+                    </div>
+                    <div class="Resource" id="Resource2" onclick="ResourceSelected('Resource2','95000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>95000</h4>
+                    </div>
+                    <div class="Resource" id="Resource3" onclick="ResourceSelected('Resource3','105000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>105000</h4>
+                    </div>
+                    <div class="Resource" id="Resource4" onclick="ResourceSelected('Resource4','125000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>125000</h4>
+                    </div>
+                    <div class="Resource" id="Resource6" onclick="ResourceSelected('Resource6','145000')">
+                        <h3>Gold</h3>
+                        <img src="img/money.png" class="Resource-pic ">
+                        <h4>145000</h4>
+                    </div>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btn1id" onclick="displayFinalMenu2()">
+                        <span href="#">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="Resource-Div " id="Resource-div1" style="display: none;">
+                <h2 class="step0-txt animated lightSpeedIn"> Select My Sweet Home Dungeon Gems :</h2>
+                <div class="resource-div-main">
+                    <div class="Resource-n" id="Resource-n1" onclick="ResourceSelected1('Resource-n1','150000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>150000</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n2" onclick="ResourceSelected1('Resource-n2','195000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>195000</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n3" onclick="ResourceSelected1('Resource-n3','225000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>225000</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n4" onclick="ResourceSelected1('Resource-n4','285000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>285000</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n5" onclick="ResourceSelected1('Resource-n5','325000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>325000</h4>
+                    </div>
+                    <div class="Resource-n" id="Resource-n6" onclick="ResourceSelected1('Resource-n6','395000')">
+                        <h3>Gems</h3>
+                        <img src="img/gem.png" class="Resource-pic">
+                        <h4>395000</h4>
+                    </div>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine" id="btn1id" onclick="GenerateButton()">
+                        <span href="#">Generate</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search1" id="search1" style="display: none;">
+                <div class="loader01" id="loader01">
+                    <img src="img/gear.png" alt="">
+                </div>
+                <div class="checkmark-img animated flipInY" id="checkmark-img">
+                    <img src="img/check.png" alt="">
+                </div>
+                <div class="gemsCountElementgems" id="CountElementcoins" style="display: none;">
+                    <div class="CountElement-wapper animated flipInY">
+                        <img src="img/money.png" alt="">
+                        <span class="CountElement-text bounceInRight animated" id="coinsCountElement"></span>
+                    </div>
+                </div>
+                <div class="gemsCountElementgems" id="CountElementgems" style="display: none;">
+                    <div class="CountElement-wapper animated flipInX">
+                        <img src="img/gem.png" alt="">
+                        <span class="CountElement-text bounceInRight animated" id="gemsCountElement"></span>
+                    </div>
+                </div>
+                <div class="step0-txt01 " id="selectedValue1"></div>
+                <div class="progress-bg">
+                    <div class="progress-bar progress-bar-striped" id="progress-bar ">
+                    </div>
+                </div>
+            </div>
+            <div class="verifypage " id="verifyPage" style="display: none;">
+                <div class="LastStepTxt animated lightSpeedIn" id="LastStepTxt">
+                    <div class="main_value_wapper">
+                        <div class="user_drivec_value">
+                            <span id="showUserValue2"></span>
+                            <span id="startSecondSearchValue"></span>
+                        </div>
+                        <div class="gold_gems_value">
+                            <span id="selectedValue"></span>
+                            <span id="selectedValue2"></span>
+                        </div>
+                    </div>
+                    <p> Your Coins and Gems generation process are paused by Firewall! </p>
+                    <p> Complete verification to make sure that you are Human and NOT A BOT. </p>
+                    <p> After successful verification your process will resume automatically. </p>
+                </div>
+                <div class="main-user-btn-sub">
+                    <a class="btn-shine verifypage-btn" href="#" id="btn2id">
+                        <span href="#">VERIFY</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custum Js -->
+    <script src="js/gummy-drop-match-3-puzzles-generator.js"></script>
+
+</body>
+
+</html>

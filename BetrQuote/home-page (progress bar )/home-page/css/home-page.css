@@ -1,0 +1,366 @@
+body { margin:0; padding:0; overflow-x: hidden; }
+:root {
+	--bg-orange:#fa8c16;
+	--text-orange:#fa8c16;
+	--bg-Blue:#2f54eb;
+	--text-Blue:#2f54eb;
+	--text-black:#000000;
+	--bg-Violet:#f5f6fe;
+	--text-grey:#646464;
+	--text-white:#fff;
+	--Montserrat:font-family: "Montserrat", sans-serif;
+	--League-Spartan:"League Spartan", sans-serif;
+}
+
+/* banner css start */
+.banner-wapper {
+	padding-bottom: 16px !important;
+	padding-top: 16px !important;
+	min-height: 575px;
+	background-color: #2f54eb;
+	background-image: url(../img/96da435f64db0ba1e0b0.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	background-position: top;
+	background-size: 900px auto;
+}
+.fieldset-wapper {
+	padding-bottom: 100px;
+	padding-top: 120px;
+	position: relative;
+	max-width: 913px;
+	width: 100%;
+	margin: auto;
+	display: none;
+	-webkit-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s;
+	top: 0;
+	-webkit-animation: none;
+	animation: none;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+.fieldset-wapper.fieldset-active { display: block; }
+.fieldset-inner-text h1 {
+	font-family: var(--League-Spartan);
+	font-weight: 700;
+	margin: 0 auto 20px auto;
+	font-size: 44px;
+	line-height: 51px;
+	text-align: center;
+	color: #fff;
+}
+.fieldset-inner-text p {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	max-width: 100%;
+	font-family: var(--League-Spartan);
+}
+.steps--inner {
+	padding: 35px 0 0 0;
+	min-height: auto;
+}
+.steps--roofing-located {
+	max-width: 440px !important;
+	width: 100%;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.fieldset-bottom-text { padding-top: 65px; }
+.funnel--bottom-li {
+	max-width: 840px;
+	margin: auto;
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding: 0;
+}
+.funnel--bottom-li li {
+	position: relative;
+	display: inline-block;
+	margin:0 31px 24px 0;
+	font-size: 16px;
+	line-height: 24px;
+	list-style-type: disc;
+	color: var(--text-white);
+	font-family: var(--League-Spartan);
+}
+.funnel--bottom-li li:before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: -11px;
+	width: 3px;
+	height: 3px;
+	background: #fff;
+}
+.form-wapper input {
+	width: 100%;
+	padding: 16px 35px 16px 16px;
+	color: var(--text-black);
+	height: 57px;
+	opacity: 1;
+	font-size: 23px;
+	line-height: 24px;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 4px 14px rgba(68, 68, 68, .19);
+	box-shadow: 0 4px 14px rgba(68, 68, 68, .19);
+	border-radius: 70px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	font-family: var(--League-Spartan);
+}
+.steps--buttons {
+	margin-top: 20px;
+	width: 100%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	position: relative;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+.steps--buttons .btn-next {
+	border: 0;
+	width: 100% !important;
+	max-width: 513px;
+	height: 57px;
+	background: var(--bg-orange);
+	border-radius: 110px; 
+	font-family: var(--League-Spartan);
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	position: relative;
+	text-transform: uppercase;
+	padding: 12px;
+	color: var(--text-white);
+	text-align: center;
+}
+/* banner css end */
+
+
+
+/* progress bar start  */
+.fieldset-progress-bar { display:flex; flex-direction: column; align-items: center;  padding-bottom: 125px;}
+.fieldset-progress-text p{ 
+	font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color:var(--text-white);
+    max-width: 100%;
+    font-family: var(--League-Spartan);
+}
+.fieldset-progress-text p span{ 	font-weight: 700; color: var(--text-orange); }
+.progress-bg {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+.progress-bg div {
+    height: 7px;
+    background: var(--bg-orange);
+    width: 0px;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+/* progress bar end  */
+
+/* Back btn start */
+.fieldset-back-btn {display: flex; justify-content: center; margin-top: 100px;}
+.fieldset-back-btn button{
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    color:var(--text-white);
+    max-width: 100%;
+    font-family: var(--League-Spartan);
+	position: relative;
+}
+.fieldset-back-btn button:focus {outline: none;}
+.fieldset-back-btn button::after {
+    content: "";
+    width: 16px;
+    height: 13px;
+    background: url(../img/icon-arrow.svg) no-repeat center;
+    position: absolute;
+    background-size: cover;
+    left: -18px;
+    top: 12px;
+}
+/* Back btn End */
+
+/* step 2 start */
+.fieldset-inner-text h2{
+	font-family: var(--League-Spartan);
+	font-weight: 500;
+	margin: 0 auto 0px auto;
+	font-size: 44px;
+	line-height: 66px;
+	text-align: center;
+	color:	var(--text-white);
+}
+
+.fieldset-inner-box { display: flex; gap: 10px; justify-content: center;}
+.fieldset-inner-box-col { width: 100%; max-width: 230px;}
+.fieldset-inner-box label {
+	background: var(--bg-Blue);
+	border: 2px solid var(--text-black);
+	border-radius: 50px;
+	padding: 28px 20px;
+	display: flex;
+	flex-direction: column;
+}
+.fieldset-inner-box label img { width: 50px; height: 60px;}
+.fieldset-inner-box label span {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+    color:var(--text-white);
+    max-width: 100%;
+    font-family: var(--League-Spartan);
+}
+.fieldset-inner-box-col input[type="radio"] { display: none; }
+.fieldset-inner-box-col label { display: flex; align-items: center;}
+/* .fieldset-inner-box-col input[type="radio"]:checked + label { background: var(--bg-orange);} */
+
+.fieldset-inner-box-col.active label {
+	background: var(--bg-orange)
+}
+/* step 2 End */
+
+
+/* step 3 start */
+.fieldset-inputs-field {width: 100%; display: flex; flex-direction: column; align-items: center;}
+.fieldset-inputs-field input {
+	border-radius: 70px;
+	background: var(--bg-Violet);
+	width: 100%;
+	max-width: 400px ;
+	height: 57px;
+	font-weight: 500;
+	padding: 5px 15px;
+    font-size: 23px;
+    line-height: 38px;
+    text-align: start;
+    color:var(--text-grey);
+    font-family: var(--League-Spartan);
+	border: 0;
+	margin-bottom: 20px;
+}
+.fieldset-inputs-field button {
+	background-color: var(--bg-orange);
+	width: 100%;
+	max-width: 400px ;
+	border: 0;
+	height: 57px;
+	border-radius: 110px;
+	font-weight: 500;
+	padding: 5px 15px;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color:var(--text-white);
+	text-transform: uppercase;
+    font-family: var(--League-Spartan);
+}
+/* step 3 End */
+
+
+/* step 6 start */
+.fieldset-inner-lst {display: flex;  align-items: center; padding-top: 60px; flex-direction: column;}
+.fieldset-inner-lst label {
+	width: 100%; 
+	max-width: 518px;
+    font-size: 14px;
+    line-height:21px;
+    text-align: center;
+    color:var(--text-white);
+    font-family: var(--League-Spartan);
+}
+.fieldset-inner-lst label a { font-weight: 600; color:var(--text-white); text-decoration: underline;}
+.fieldset-inner-lst p {
+	width: 100%;
+    max-width: 518px;
+	font-size: 14px;
+    line-height:21px;
+    text-align: start;
+    color:var(--text-white);
+    font-family: var(--League-Spartan);
+	text-decoration: underline;
+}
+
+/* step 6 End */
+
+
+
+
+@media (min-width: 1680px) and (min-height: 420px) {
+	/* banner css start */
+	.banner-wapper { background-size: auto 96%; }
+	/* banner css end */
+}
+@media(max-width:1365px){
+	/* banner css start */
+	.banner-wapper { min-height: 560px; }
+	/* banner css end */
+}
+@media(max-width:991px){
+	/* banner css start */
+	.banner-wapper { min-height: auto; }
+	/* banner css end */
+
+	/* stepe 2 start */
+	.fieldset-inner-text h2 { font-size: 35px; line-height: 45px;}
+	.fieldset-inner-text  p { font-size: 22px; line-height: 32px;}
+	/* stepe 2 end */
+
+	/* stepe 2 start */
+	.fieldset-inputs-field input { font-size: 20px; line-height: 30px;}
+	.fieldset-inputs-field button {font-size: 21px; line-height: 31px; }
+	/* stepe 2 end */
+}
+@media(max-width:375px){
+	/* banner css start */
+	.banner-wapper { background-size: 667px 324px; background-position: top 30px center; }
+	/* banner css end */
+
+	/* stepe 2 start */
+	.fieldset-inner-text h2 { font-size: 31px; line-height: 38px; padding-bottom: 10px; }
+	.fieldset-inner-text  p { font-size: 18px; line-height: 26px;}
+	/* stepe end */
+
+	/* stepe 2 start */
+	.fieldset-inputs-field input { font-size: 18px; line-height: 28px; height: 50px;}
+	.fieldset-inputs-field button {font-size: 19px; line-height: 19px; height: 50px;}
+	/* stepe 2 end */
+}

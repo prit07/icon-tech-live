@@ -1,0 +1,634 @@
+body { margin: 0; padding: 0; }
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+/* Top/Best Article Template Start */
+
+.top-best-article { padding: 64px 0 93px 0;}
+/* breadcrumbs css start */
+.top-best-article-top { margin-bottom: 24px;}
+.top-best-article-top ul{ display: flex; gap: 5px; }
+.top-best-article-top>ul>li>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.top-best-article-top>ul>li>a>span {
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* breadcrumbs css end */
+.tba-wapper-left { display: flex; flex-direction: column; gap: 40px;}
+
+.top-ba-row { display:flex; flex-direction:row;justify-content:space-between; gap:20px; }
+.top-left-col { max-width: 845px; width: 100%; }
+.top-right-col { max-width:302px; width:100%; }
+
+
+/* 1 section css start */
+.tba-best-day-trading { display: flex; flex-direction: column; gap: 24px;}
+.tba-best-day-trading-heading h1 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    margin: 0;
+}
+.tba-best-day-trading-center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.tba-best-day-trading-center ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 8px;
+}
+.tba-best-day-trading-center ul li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    max-width: unset;
+}
+.tba-best-day-trading-center ul li i { font-size: 8px; color: #678EC9; }
+.tba-best-day-trading-center ul li a{
+    color: #181716;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tba-best-day-trading-bottom  { display: flex; flex-direction: column; gap: 16px;}
+.tba-best-day-trading-bottom h3 {
+    color: #000;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+.tba-best-day-trading-bottom p {
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+.tba-best-day-trading-bottom>p>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    text-decoration-line: underline;
+}
+/* 1 section css end */
+
+/* Best Day Trading Courses in 2023 css start */
+.tba-best-day-trading-2023 h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    letter-spacing: -0.24px;
+    margin-bottom: 20px;
+}
+.tba-best-day-trading-2023-wapper>ul {
+    list-style: unset !important;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-left: 21px !important;
+}
+.tba-best-day-trading-2023-wapper>ul>li {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    letter-spacing: 0.18px;
+}
+.tba-best-day-trading-2023-wapper>ul>li>a {
+    color:  #3836CB;
+    font-family:var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.18px;
+    text-decoration-line: underline;
+}
+/* Best Day Trading Courses in 2023 css end */
+
+/* tba udemy css start */
+.tba-udemy-wapper { display: flex; flex-direction: column; gap: 20px; position: relative; }
+.tba-udemy-card-wapper {  border: 1px solid #E6E6E6; border-radius: 2px; position:relative; }
+.tba-udemy-best-education {
+    border-bottom: 1px solid #E6E6E6;
+    background: #FFF;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    position: relative;
+}
+.tba-udemy-logo { max-width: 151px; width: 100%; height: 100px; }
+.tba-udemy-logo img { width:100%; height:100%; max-width:unset; object-fit:cover; }
+.tba-udemy-best-education-text h3 {
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    margin-bottom: 8px;
+    letter-spacing: -0.24px;
+}
+.tba-udemy-best-education-text>h4 { 
+    line-height: 0; 
+    margin: 0;  
+    border-radius: 4px;     
+    padding: 8px 10px;  
+    background: rgba(56, 54, 203, 0.12);
+}
+.tba-udemy-best-education-text>h4>a {
+    color: #3836CB;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    letter-spacing: 0.16px;
+}
+.tba-udemy-best-star-reating { display: flex; gap: 4px; margin-bottom: 8px;} 
+.tba-udemy-best-star-reating>h3 {
+    color: #000;
+    font-family: Golos Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+.tba-udemy-best-star-reating>a>i { color: #DFAB3E; font-size: 20px; }
+.tba-udemy-best-subscribe-btn>a {
+    color: #FFF;
+    font-family:var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px 24px;
+    border-radius: 4px;
+    margin: 0;
+    background: #3836CB;
+    display: inline-block;
+}
+.tba-udemy-overview-users-are-saying {
+    padding: 24px 24px 32px 24px;
+    background: #FAFAFA;
+}
+.tba-udemy-overview-wapper>h3 { margin-bottom: 12px; line-height: 0;}
+.tba-udemy-overview-wapper>h3>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; 
+    letter-spacing: -0.2px;
+}
+.tba-udemy-overview-wapper>p {
+    color: #181716;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.16px;
+    margin-bottom: 12px;
+}
+.affiliated-card.tba-udemy-card-wapper {  border: 1px solid #DFAB3E; } 
+.affiliated-name {
+    position: absolute;
+    top:-10px;
+    left: 24px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    background: #DFAB3E;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.14px;
+    display: inline-block;  
+    z-index: 100;
+}
+.pros-cons-wapper { padding-top: 12px; padding-bottom: 32px; border-bottom: 1px solid #E6E6E6; }
+.pros-card-wapper h3, .cons-card-wapper h3 {
+    margin: 0;
+    color: #181716;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.16px;
+    padding-bottom: 12px;
+}
+.pros-card-wapper ul, .cons-card-wapper ul { margin: 0; padding: 0; display:flex; flex-direction:column; gap:10px; }
+.pros-card-wapper ul li, .cons-card-wapper ul li {
+    list-style-type: none;
+    display: block;
+    position: relative;
+    color: #181716;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.16px;
+    padding-left: 30px;
+}
+.pros-card-wapper ul li:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/pros-icon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cons-card-wapper ul li:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url('../img/cons-icon.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tba-saying-wapper { padding-top:32px; }
+.tba-saying-wapper h3 {
+    color: #181716;
+    font-family: Golos Text;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding-bottom: 16px;
+}
+.tba-saying-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:18px; margin-bottom:8px; }
+.tba-saying-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.tba-saying-stars-rating span.star:hover { cursor:pointer; }
+.tba-saying-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#DFAB3E; }
+.tba-saying-stars-rating span.star.filled:before { font-weight: 900; color:#DFAB3E; content:"\f005"; }
+.tba-saying-stars-rating span.star.half-filled:before { content:"\f089"; color:#DFAB3E; }
+.tba-saying-stars-rating span.star.half-filled:after { content:"\f005"; color:#DFAB3E; margin-left:-20px; }
+.tba-saying-card p {
+    color: #181716;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+/* tba udemy css end */
+
+/* Articles with this term css start */
+.tba-articles { display: flex; flex-direction: column; gap: 20px;}
+.tba-articles h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: -0.24px;
+}
+.tba-articles-wapper { display: flex;  flex-direction: row; gap: 24px;}
+.tba-articles-wapper-img{ max-width:218px; height:140px; width:100% }
+.tba-articles-wapper-img img { width:100%; height:100%; object-fit:cover; max-width:unset; }
+.tba-articles-wapper-items { max-width:75%; width:100%; }
+.tba-articles-wapper-items-top>h3{ line-height: 0; margin-bottom: 12px;}
+.tba-articles-wapper-items-top>h3>a{
+    color: #181716;
+    font-family: var(--dm-sans-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.18px;
+}
+.tba-articles-wapper-items-top p {
+    color: #181716;
+    font-family:var(--dm-sans-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.tba-best-trading-center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.tba-best-trading-center ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 8px;
+}
+.tba-best-trading-center ul li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    max-width: unset;
+}
+.tba-best-trading-center ul li i { font-size: 8px; color: #678EC9; }
+.tba-best-trading-center ul li a{
+    color: #181716;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Articles with this term css end */
+
+
+/* right side css start */
+.tba-wapper-right { display: flex; flex-direction: column; gap: 40px;}
+.tba-subscribe-btn>a {
+    width: 100%;
+    display: flex;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.tba-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.tba-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.tba-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+.tba-share h3{
+    color: rgba(24, 23, 22, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.tba-share-icon ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.tba-share-icon>ul>li>a>i {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tba-latest-newa-heading { margin-bottom: 24px;}
+.tba-latest-newa-heading h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.tba-latest-newa-wapper { display: flex; flex-direction: column; gap: 16px;}
+.tba-latest-newa-items h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.tba-latest-newa-items h2 { line-height: 0; margin-bottom: 6px;}
+.tba-latest-newa-items>h2>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.tba-latest-newa-items p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.tba-hr {margin: 0; border-top: 1px solid #E6E6E6;}
+.written-by-wapper {
+   border-radius: 4px;
+   background: #F1F1F1;
+   display: flex;
+   padding: 24px 16px;
+   flex-direction: column;
+   align-items: center;
+   align-self: stretch;
+   position: relative;
+   gap: 12px;
+}
+.written-by-wapper h4{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.written-by-img { position: relative; }
+.written-by-img img {
+    width: 82px;
+    height: 82px;
+    border-radius: 100%;
+    max-width: unset;
+    position: relative;
+}
+.writter-social-link {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-color: #000;
+    border-radius: 100%;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 31px;
+}
+.writter-social-link:hover{ color:#fff; }
+.written-by-text h3 {
+    margin: 0;
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+.written-by-text p {
+    color: #000;
+    text-align: center;
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.14px;
+    margin: 0;
+}
+.tba-related-theme-main h2{
+    color: #181716;
+    font-family:var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.tba-related-theme-card { display: flex; flex-flow: row wrap; gap: 8px; }
+.tba-related-theme-card a {
+    border-radius: 4px;
+    border: 1px solid #DFAB3E;
+    padding: 10px 16px;
+    color: #181716;
+    font-family: var(--onest-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* right side css end */
+
+/* Top/Best Article Template End */
+
+
+@media(max-width:991px){
+    .top-ba-row { flex-direction:column; }
+}
+
+@media(max-width:767px){
+    .top-ba-row { flex-direction:column; gap:64px; }
+    .top-left-col { max-width: 100%; width: 100%; }
+    .top-right-col { max-width:100%; width:100%; }
+
+    .tba-best-day-trading-heading h1 { font-size: 36px; line-height:42px; }
+    .tba-udemy-best-education { gap:12px; }
+    .tba-udemy-best-education-subscribe { gap:12px; width:100%; }
+    .tba-udemy-best-subscribe-btn>a { width:100%; text-align:center; }
+    .tba-udemy-logo { height:57px; }
+    .tba-articles-wapper { flex-direction:column; }
+    .tba-articles-wapper-img  { max-width:100%; height:220px; }
+    .tba-articles-wapper-items { max-width:100%; }
+
+    /* right side css start */ 
+    .written-by-wapper, .tba-related-theme-main, .tba-subscribe-btn>a { display:none; }
+
+    /* right side css end */ 
+}

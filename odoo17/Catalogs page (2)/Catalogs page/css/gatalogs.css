@@ -1,0 +1,149 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+a { text-decoration: unset;}
+
+/* catalogs Start */
+
+.mb-50 {margin-bottom: 50px;}
+.mb-20 { margin-bottom: 20px;}
+.catalogs-page { padding: 50px;}
+.catalogs-page-heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalogs-page-heading h2 {
+    color: #000;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.catalogs-page-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 11px;
+}
+.catalogs-page-items img { max-width: 157px; height: 246px;}
+.catalogs-page-items h3 { line-height: 0; margin: 0;}
+.catalogs-page-items h3 a{ 
+    color: #000;
+    text-align: center;
+    font-family: Arimo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    line-height: normal;
+}
+
+
+
+.owl-catalogs-page .owl-nav .owl-prev, .owl-catalogs-page .owl-nav .owl-next { position:absolute; top:40%; }
+.owl-catalogs-page .owl-nav .owl-prev { left: -25px; }
+.owl-catalogs-page .owl-nav .owl-next { right:-25px; }
+.owl-catalogs-page .owl-dots { display: none;}
+
+.owl-catalogs-one .carousel-inner .carousel-item .col-12 { padding:0 10px; }
+.owl-catalogs-one .carousel-inner .carousel-item.active,
+.owl-catalogs-one .carousel-inner .carousel-item-start,
+.owl-catalogs-one .carousel-inner .carousel-item-next,
+.owl-catalogs-one .carousel-inner .carousel-item-prev {
+  display: flex;
+}
+.owl-catalogs-one .carousel-inner .carousel-item-end,
+.owl-catalogs-one .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+.catalogs-page .carousel-control-prev, .catalogs-page .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity 0.15s ease;
+}
+.catalogs-page .carousel-control-next { right: -20px; }
+.catalogs-page .carousel-control-prev { left: -20px; }
+.catalogs-page .carousel-control-prev, .carousel-control-next { position: absolute; }
+.catalogs-page .carousel-control-prev > span.fa, .catalogs-page .carousel-control-next > span.fa {
+    color: #495057;
+    background: radial-gradient(#FFF 50%, transparent 50%);
+}
+
+@media (min-width: 768px) {
+    .owl-catalogs-one .carousel-inner .carousel-item-right.active,
+    .owl-catalogs-one .carousel-inner .carousel-item-next,
+    .owl-catalogs-one .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(20%) !important;
+}
+
+    .owl-catalogs-one .carousel-inner .carousel-item-left.active,
+    .owl-catalogs-one .carousel-item-prev:not(.carousel-item-end),
+    .owl-catalogs-one .active.carousel-item-start,
+    .owl-catalogs-one .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-20%) !important;
+}
+
+    .owl-catalogs-one .carousel-item-next.carousel-item-start,
+    .owl-catalogs-one .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .owl-catalogs-one .carousel-inner .carousel-item-prev,
+    .owl-catalogs-one .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-20%) !important;
+}
+}
+
+
+@media (min-width: 1200px) {
+    .custom-width {
+        /* flex: 0 0 25%; */
+        max-width: 20%;
+    }
+
+}
+
+/* catalogs End */
+
+
+@media(min-width:1300px){
+    .container.w-1340 { max-width: 1340px !important; padding: 0px !important;}
+}
+
+@media(max-width:1199px) {
+    .owl-catalogs-page .owl-nav .owl-prev { left: -15px; }
+    .owl-catalogs-page .owl-nav .owl-next { right:-15px; }
+}
+
+@media(max-width:991px) {
+    .owl-catalogs-page .owl-nav .owl-prev { left: -15px; }
+    .owl-catalogs-page .owl-nav .owl-next { right:-15px; }
+    .catalogs-page-items img {max-width: 190px; height: 266px;}
+}
+ 
+@media(max-width:767px) {
+    .owl-catalogs-page .owl-nav .owl-prev { left: -2px; }
+    .owl-catalogs-page .owl-nav .owl-next { right:-2px; }
+   
+}
+

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Career Sub Page v2 || Betworthy</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/career-sub-page-two.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+		integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+		crossorigin="anonymous"></script>
+
+	<script src="js/header-footer.js"></script>
+	<script src="js/career-sub-page-two.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header html start -->
+	<header class="header-wapper">
+		<div class="top-header-wapper">
+			<div class="container w-1170">
+				<div class="top-header-card">
+					<div class="header-logo">
+						<a href="#">
+							<img src="img/header-logo.svg" alt="">
+						</a>
+					</div>
+					<div class="header-top-menu">
+						<ul>
+							<li><a href="#">About us</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Careers</a></li>
+							<li><a href="#">Contact us</a></li>
+							<li><a href="#">Log In/Sing Up</a></li>
+						</ul>
+					</div>
+					<div class="header-right-side">
+						<div class="header-search-icon">
+							<span><img src="img/search-sm.svg" alt=""></span>
+						</div>
+						<div class="m-toggle-btn" id="m-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header-wapper">
+			<div class="container w-1170">
+				<div class="bottom-header-menu">
+					<ul>
+						<li><a href="#">Legalization Tracker</a></li>
+						<li><a href="#">Responsible Betting</a></li>
+						<li><a href="#">Betting Academy</a></li>
+						<li class="sub-menu-card">
+							<a href="#">Resources</a>
+							<div class="submenu-wapper">
+								<ul>
+									<li><a href="#">Legalization</a></li>
+									<li><a href="#">Responsible</a></li>
+									<li><a href="#">Betting</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<span>|</span>
+					<ul>
+						<li><a href="#">random</a></li>
+						<li><a href="#">top viewed</a></li>
+						<li><a href="#">top commented</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- mobile header sidebar html start -->
+		<div class="m-sidebar-wrapper" id="m-sidebar-wrapper">
+			<ul>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">Careers</a></li>
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">Log In/Sing Up</a></li>
+				<li><a href="#">Legalization Tracker</a></li>
+				<li><a href="#">Responsible Betting</a></li>
+				<li><a href="#">Betting Academy</a></li>
+				<li class="sub-menu-card">
+					<a href="#">Resources</a>
+					<div class="submenu-wapper">
+						<ul>
+							<li><a href="#">Legalization</a></li>
+							<li><a href="#">Responsible</a></li>
+							<li><a href="#">Betting</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#">random</a></li>
+				<li><a href="#">top viewed</a></li>
+				<li><a href="#">top commented</a></li>
+			</ul>
+		</div>
+		<!-- mobile header sidebar html end -->
+		<!-- search popup html start -->
+		<div class="dd32-search-popup">
+			<div class="dd32-search-bg"></div>
+			<div class="dd32-search-form">
+				<form method="get" action="#">
+					<div class="dd32-form">
+						<input type="text" id="dd32-search" placeholder="search" name="s">
+						<label for="search"><i class="fa fa-search"></i></label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search popup html end -->
+	</header>
+	<!-- header html end -->
+
+	<!-- Pizza & Baseball Job-->
+	<section class="cspvtwo-pizza">
+		<div class="container w-1170">
+			<div class="cspvtwo-pizza-top-wapper ">
+				<a href="#">Career</a>
+				<img src="img/ic_round-keyboard-arrow-left.svg" alt="">
+				<p>Pizza & Baseball Job</p>
+			</div>
+			<div class="cspvtwo-pizza-bottom-wapper">
+				<h1>Pizza & Baseball Job</h1>
+				<h2>3 000 —‍ 4 500 $ Remote</h2>
+				<p>How about watching baseball, eating pizza, and getting paid for it?</p>
+				<button>Send the request</button>
+			</div>
+		</div>
+	</section>
+	<!-- Pizza & Baseball Job  -->
+
+	<!-- What We’re Looking For Start -->
+	<section class="cspvtwo-looking">
+		<div class="container w-1170">
+			<div class="cspvtwo-looking-wapper">
+				<p>We’re looking for a qualified candidate that we can pay to watch MLB games while eating a variety of
+					delivery pizzas. You won’t even have to leave your couch, making it the perfect job for anyone who’s
+					still hesitant about heading back into the office. Sound like something you’d be interested in? Good
+					— then read on.</p>
+				<p>The ideal candidate would have a strong working knowledge of both professional baseball and
+					professional pizza. You don’t have to be an expert — but it helps if you can tell an Oriole from a
+					Blue Jay and deep dish from thin crust.</p>
+				<p>You will be watching a lot of baseball and eating a lot of pizza, so it helps if you truly enjoy both
+					of those things. You can always grit your teeth and try to white-knuckle your way through, but we
+					want someone whose love of the food and the game really shines through.</p>
+
+				<h2>What We’re Looking For</h2>
+
+				<h4>We’d also like someone who also has the following:</h4>
+
+				<ul>
+					<li>Experience working in a self-directed role (we won’t be looking over your shoulder a
+							ton) </li>
+				
+					<li>Background in sports or culinary arts preferred (this isn’t a deal breaker,
+							however)</li>
+				
+					<li>High-speed internet or cable television (we’ll reimburse you for the sports
+							package)</li>
+			
+					<li>Basic knowledge of baseball and pizza (we mentioned this one before, but it bears
+							repeating, given that it’s the job and all)</li>
+			
+					<li>Willingness to work late hours (West Coast games run late, after all)</li>
+				
+					<li>Fun and engaging personality (we’re paying you to eat pizza and watch baseball — why
+							would you be surly?)</li>
+				</ul>
+
+				<p>If you don’t match all of the above criteria, don’t worry — you should still apply anyway. We’re
+					mainly looking for someone who wants to dabble in professional baseball-watching and pizza-eating,
+					not necessarily someone who’s already an established expert at both.</p>
+
+				<h4>We’re especially interested in candidates who can track rivalries within the sport, so you should
+					expect to watch lots of games between the following teams:</h4>
+
+
+				<ul>
+					<li>Red Sox and Yankees</li>
+			
+					<li>Dodgers and Giants</li>
+				
+					<li>Astros and Rangers</li>
+				
+					<li>Reds and Pirates</li>
+				
+					<li>Orioles and relevance</li>
+				</ul>
+
+				<p>At times, you may also be required to be the only person on the planet watching the Tampa Bay Rays.
+					As a result, you may need to watch several games on certain days, while other days you might not
+					need to watch any (we won’t stop you, of course). This job can be done around your existing career,
+					or it can be a nice part-time thing to tide you over until you find something else. You’re right —
+					you’ll have to do more than just watch the games and eat the pies. We’ll also expect you to report
+					on both. Specifically, you’ll rate the pizzas and pizza providers on the following criteria:</p>
+
+
+				<h2>Sounds Good, But What’s The Job?</h2>
+
+				<ul>
+					<li> Presentation</li>
+
+					<li>Customer Service</li>
+				
+					<li>Ease of users</li>
+				
+					<li>Topping Quality</li>
+				
+					<li>Value for the Price</li>
+				</ul>
+
+				<p>The baseball situation is a little bit more open-ended. We’re a gambling establishment, so most of what we’ll want you to report on will be gambling-related. We won’t want you to simply tell us who covered and which props cashed — our users can get that information anywhere. Instead, we want something a little more unique. What does that mean exactly? Well, it will partially be up to you — but here are a few ideas we’ve kicked around:</p>
+        
+
+				<ul>
+					<li>Any prop bets we missed (did you hear a trash can banging at an Astros game — what are the odds?)</li>
+				
+					<li>Any trends that are worth a closer look (do the tight pants reallyhelp Walker Buehler that much?)</li>
+				
+					<li>And, most importantly, which teams pair best with which pizzas</li>
+				</ul>
+
+
+				<h2>What you will get with us </h2>
+
+				<p>We’ll also keep you in mind if we pull another crazy stunt like this sometime in the future — and we generally do a lot of ridiculous stuff (because it’s better than working), so there’s a good chance we’ll have you on speed dial.</p>
+			    
+				<p>In all honesty, this likely won’t be a long-term or life-changing position. However, it will give you the opportunity to make a not-insignificant amount of money for doing two things that you likely do for free anyway.</p>
+			</div>
+		</div>
+	</section>
+	<!-- What We’re Looking For End -->
+
+	<!-- Apply Now For Success start -->
+	<section class="cp-apply-from">
+		<div class="container w-1170">
+			<div class="cp-apply-from-wappre">
+				<div class="cp-apply-from-heading">
+					<h2>Apply Now For Success</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="text" placeholder="First Name" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="text" placeholder="Last Name" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="email" placeholder="Email" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="tel" placeholder="Phone number" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="text" placeholder="City" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6  mb-3">
+						<div class="cp-from-input">
+							<input type="url" placeholder="Linkeldn URL" required="required">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 mb-3">
+						<div class="cp-from-input">
+							<select id="product">
+								<option value="Product Owner">Product Owner </option>
+								<option value="Undergraduate">Undergraduate</option>
+								<option value="opel">Opel</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 mb-3">
+						<div class="cp-from-input">
+							<select id="Undergraduate">
+								<option value="Undergraduate">Undergraduate</option>
+								<option value="Product Owner">Product Owner </option>
+								<option value="opel">Opel</option>
+								<option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-12  mb-3">
+						<div class="cp-from-input">
+							<textarea placeholder="Why do you want work with us?"></textarea>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="cp-btn">
+							<button>Send the request</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- footer html start -->
+	<footer class="footer-wapper-main">
+		<div class="footer-wapper">
+			<div class="container w-1170">
+				<div class="footer-row-a">
+					<div class="footer-left-col">
+						<div class="footer-left-card">
+							<div class="footer-logo">
+								<img src="img/footer-logo.svg" alt="logo">
+							</div>
+							<p>Our team consists of industry experts, professional gamblers, and passionate sports
+								journalist. We have a rigorous review process and editorial standards and we do our best
+								to keep treating our readers fairly and providing unbiased free and professional
+								information.</p>
+							<ul>
+								<li><a href="#"><img src="img/Facebook.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Twitter.svg" alt=""></a></li>
+								<li><a href="#"><img src="img/Instagram.svg" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-right-col">
+						<div class="footer-menu-col">
+							<h3>about us</h3>
+							<ul>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Meet the team</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Press</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>get started</h3>
+							<ul>
+								<li><a href="#">Sports betting news</a></li>
+								<li><a href="#">Legalization Tracker</a></li>
+								<li><a href="#">Betting odds</a></li>
+								<li><a href="#">Sportsbook</a></li>
+								<li><a href="#">Betting tools</a></li>
+							</ul>
+						</div>
+						<div class="footer-menu-col">
+							<h3>site</h3>
+							<ul>
+								<li><a href="#">privacy</a></li>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">How we Rate</a></li>
+								<li><a href="#">Editorial Guidelines</a></li>
+								<li><a href="#">Sitemap</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom-wapper">
+					<p>Our team consists of industry experts, professional gamblers, and passionate sports journalist.
+						We have a rigorous review process and editorial standards and we do our best to keep treating
+						our readers fairly and providing unbiased free and professional information.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-reserved">
+			<div class="container w-1170">
+				<p>All rights reserved</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer html end -->
+
+</body>
+
+</html>

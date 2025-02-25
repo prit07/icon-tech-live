@@ -1,0 +1,401 @@
+body { margin: 0; padding: 0; box-sizing: border-box; background: #F9F9F9;}
+
+
+
+/* Top Canada Online Casinos in 2024 Start */
+.top-canada-online-casinos {   background: #F9F9F9; }
+
+.top-canada-online-casinos-heading { background-color: #D9D9D9; height: 150px; padding: 0 8px; margin-bottom: 47px; display: flex; justify-content: center; align-items: center;}
+.top-canada-online-casinos-heading  h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.top-canada-online-casinos-text { margin-bottom: 65px;}
+.top-canada-online-casinos-text p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: left;
+    color: #00000080;
+    margin: 0;
+}
+
+
+.top-canada-online-casinos-top-heading { background: #36114A; border-radius: 3px; width: 100% ;}
+.top-canada-online-casinos-top-heading ul{ display: flex; list-style: none; padding: 15px 30px; margin: 0;}
+.top-canada-online-casinos-top-heading ul li {
+    width: 100%;
+    max-width: 190px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    color: #F6F5FA;
+}
+
+.top-canada-online-casinos-table table{ width: 100%;}
+.top-canada-online-casinos-top-center { display: flex; flex-direction: column; justify-content: center;}
+.top-canada-online-casinos-table { width: 100%; overflow-y: auto; margin-bottom: 87px;}
+.top-canada-online-casinos-top-heading {
+    background: #36114A;
+    border-radius: 3px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 30px;
+    display: inline-block;
+}
+.top-canada-online-casinos-top-heading th {
+    width: 190px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    color: #F6F5FA;
+}
+.top-canada-bonus { width: 260px !important;}
+.top-canada-overal-rating { width: 200px !important;    }
+
+.top-canada-online-casinos-left { width: 181px;}
+.top-canada-online-casinos-welcom-bonus {
+    width: 100%;
+    max-width: 217px;
+}
+.top-canada-online-casinos-welcom-rating { width: 166px; }
+.top-canada-online-casinos-payout-speed {width: 94px; }
+.top-canada-online-Benefits { width: 170px; }
+.top-canada-online-right-btn { width: 120px;}
+.top-canada-online-casinos-top-item {
+    padding: 10px 10px 30px 10px;
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+
+.top-canada-online-casinos-left-count {
+    background: #417DF7;
+    border-radius: 3px;
+    padding: 5px 7px;
+    width: fit-content;
+    margin-bottom: 16px;
+} 
+.top-canada-online-casinos-left-count p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+.top-canada-online-casinos-left img {
+    width: 100%;
+    max-width: 156px;
+    height: 81px;
+    margin-left: 25px;
+}
+
+.top-canada-online-casinos-welcom-bonus { width: 100%; max-width: 217px;}
+.top-canada-online-casinos-welcom-bonus span {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: left;
+    color: #731B9C;
+    display: inline-block;
+    padding: 4px 5px;
+    background: #B241F74A;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+.top-canada-online-casinos-welcom-bonus h4 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #464A50;  
+}
+.top-canada-online-casinos-welcom-bonus a {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: #417DF7;
+}
+
+
+/* STAR REATING */
+.top-canada-online-casinos-welcom-rating {  display: flex; align-items: center;}
+.top-canada-online-casinos-welcom-rating-item { unicode-bidi:bidi-override; direction:ltr; font-size:20px; display: flex; gap: 5px; justify-content: center; }
+.top-canada-online-casinos-welcom-rating-item span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.top-canada-online-casinos-welcom-rating-item span.star:hover { cursor:pointer; }
+.top-canada-online-casinos-welcom-rating-item span.star:before { content:"\f005"; padding-right:1px; color:#FDB600; }
+.top-canada-online-casinos-welcom-rating-item span.star.filled:before { font-weight: 900; color:#FDB600; content:"\f005"; }
+.top-canada-online-casinos-welcom-rating-item span.star.half-filled:before { content:"\f089"; color:#FDB600; }
+.top-canada-online-casinos-welcom-rating-item span.star.half-filled:after { content:"\f005"; color:#FDB600; margin-left:-24px; }
+.top-canada-online-casinos-welcom-rating-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.top-canada-online-casinos-welcom-rating-item ul li { 
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    
+}
+/* STAR REATING */
+
+.top-canada-online-casinos-payout-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-canada-online-dollar-sing {display: flex; align-items: center; gap: 10px; margin-bottom: 25px;}
+.top-canada-online-dollar-sing span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F4E3FE;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.top-canada-online-dollar-sing span i { color: #731B9C; }
+.top-canada-online-dollar-sing h3{
+   font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50; 
+    margin: 0;
+}
+.top-canada-online-payment-img { 
+    width: fit-content;
+    display: grid;
+    grid-column-gap:7px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-canada-online-payment-img img {width: 35px; height: 25px;}
+
+.top-canada-online-Benefits { display: flex; align-items: center;}
+.top-canada-online-Benefits ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px;}
+.top-canada-online-Benefits ul li { 
+    display: flex; 
+    gap: 7px; 
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+}
+.top-canada-online-Benefits ul li i {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F4E3FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-canada-online-right-btn { display: flex; flex-direction: column; gap: 13px; justify-content: center;}
+.top-canada-online-right-btn button { 
+    border-radius: 6px;
+    width: 100%; 
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    border: 0;
+    color: #FFFFFF;
+    background: #417DF7;
+    padding: 12px 25px;
+}
+/* Top Canada Online Casinos in 2024 End */
+
+
+
+
+/* best bet text wapper Start */
+.best-bet-text-wapper {background: #F9F9F9; padding-bottom: 142px;}
+.best-bet-text-itmes ul { list-style: none; margin: 0; padding: 0;}
+.best-bet-text-itmes h2 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    text-align: left;
+    margin-bottom: 20px;    
+    color: #000000;
+    padding-top: 87px;
+}
+.best-bet-text-itmes h3 { 
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.31px;
+    text-align: left;
+    margin-bottom: 20px;    
+    color: #000000;
+}
+.best-bet-text-itmes p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00000080;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.best-bet-text-itmes h2:first-child { padding: 0;}
+/* best bet text wapper End  */
+
+
+/* faq wapper Start */
+.faq-wapper {background: #F9F9F9; padding-bottom: 54px; }
+
+.faq_accordion_wapper_casino h2 {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.83px;
+    text-align: left;
+    color: #417DF7;
+    margin-bottom: 20px;
+}
+.faq_accordion_item {
+    padding: 19px 51px 19px 51px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.faq_menu { position: relative;}
+.faq_menu::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -27px;
+    top: 9px;
+    transform: rotate(-90deg);
+}
+.faq_accordion_item.active .faq_menu::after {
+    transform: rotate(0deg);
+}
+.faq_menu a{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #417DF7 !important;
+}
+.faq_content { padding-top: 8px;}
+.faq_content p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+}
+.faq_content p a {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+    text-decoration: underline ;
+}
+.faq_accordion_item:last-child { margin: 0 !important;}
+.faq_content { display: none;}
+/* faq wapper End */
+
+
+
+
+
+@media(min-width:1200px){
+	.container.w-1196 { max-width:1196px!important; }
+}
+
+
+
+@media(max-width:991px){
+
+    .best-bet-banner-item-box { margin: 0px 30px;   }
+    .top-canada-online-casinos-text { margin-bottom: 45px;}
+    .top-canada-online-casinos-table { margin-bottom: 67px;}
+    .best-bet-text-flex { gap: 47px;}
+    .best-bet-text-wapper { padding-bottom: 100px;}
+
+    .best-bet-text-itmes h2 { padding-top: 47px;}
+    
+}
+
+@media(max-width:767px) {
+
+
+    .top-canada-online-casinos-heading h2 { font-size: 25px; line-height: 33.57px;}
+    .top-canada-online-casinos-text p { font-size: 16px; line-height: 26.8px;}
+    .top-canada-online-casinos-text { margin-bottom: 35px;}
+    .top-canada-online-casinos-heading { margin-bottom: 30px;}
+    .top-canada-online-casinos-table { margin-bottom: 47px;}
+
+    .eatured-partner-text {   padding: 17px 20px 31px 20px;}
+
+
+    .types-of-online-casino-grid { grid-template-columns: repeat(1, 1fr);}
+    .types-of-online-casino-heading h3 {  font-size: 20px;  line-height: 25.05px;}
+
+    .faq_accordion_item_bonuses { padding: 15px 21px 15px 31px;}
+    .faq_menu_bonuses::after { left: -18px;}
+
+
+    .types-of-online-casino-grid-text a { font-size: 20px; line-height: 25.05px;}
+    .faq_menu::after { left: -23px;}
+    .faq_accordion_item { padding: 15px 21px 15px 31px;}
+    
+    .articles-press-grid { grid-template-columns: repeat(1, 1fr);}
+    .different-types-of-casino-text h2 { font-size: 20px; line-height: 25.05px;}
+
+    .best-bet-text-wapper { padding-bottom: 40px;}
+    .best-bet-text-itmes h2 {  font-size: 27px;  line-height: 34.83px; margin-bottom: 10px; padding-top: 30px;}
+    .best-bet-text-itmes p { font-size: 16px; line-height: 26.8px;}
+
+    .articles-press-grid-bottom {  padding: 15px 25px 20px 22px;}
+    .articles-press-grid-bottom h4 a { font-size: 20px; line-height: 24.63px;}
+
+    .faq_accordion_wapper_casino h2 { font-size: 32px; line-height: 40.83px;}
+}
+
+/* add css */
+

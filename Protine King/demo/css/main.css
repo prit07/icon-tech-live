@@ -1,0 +1,27 @@
+body { margin:0; padding:0; }
+a:hover { text-decoration:none; }
+
+
+ /* Product Basic Details Start */
+
+
+@media(min-width:1240px) {
+	.container.w-1196 { max-width:1196px; width:100%; padding: 0 !important;}
+}
+
+
+@media(max-width:1240px) {
+    
+}
+
+@media(max-width:991px) {
+
+
+}
+
+
+
+@media (max-width: 540px) { 
+
+}
+

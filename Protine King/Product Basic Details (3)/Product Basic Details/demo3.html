@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .custom-select-wrapper {  position: relative;  width: 300px;   border: 2px solid #ccc;}
+
+        select {display: none;
+            /* Hide the original select element */}
+
+        .custom-select {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            background-color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .custom-select:hover {
+            border-color: #888;
+        }
+
+        .custom-select:focus {
+            border-color: #555;
+            outline: none;
+        }
+
+        .custom-select-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 6px solid transparent;
+            border-color: #333 transparent transparent transparent;
+            transform: translateY(-50%);
+        }
+
+        .select-options {
+            display: none;
+            position: relative;
+            z-index: 10;
+            background: #fff;
+
+            border-radius: 4px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .select-options.active {
+            display: block;
+        }
+
+        .select-options li {
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            list-style: none;
+        }
+
+        .select-options li:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-select-wrapper">
+        <div class="custom-select">Select an option</div>
+        <div class="select-options"></div>
+        <select>
+            <option value="html">HTML</option>
+            <option value="css3">HTML CSS3</option>
+            <option value="sass">HTML CSS3 SASS</option>
+            <option value="less">HTML CSS3 SASS LESS</option>
+            <option value="stylus">HTML CSS3 SASS LESS STYLUS</option>
+            <option value="jquery">JQUERY</option>
+            <option value="bootstrap">BOOTSTRAP</option>
+            <option value="material">MATERIAL</option>
+            <option value="react">REACT</option>
+            <option value="angular">ANGULAR</option>
+        </select>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis, commodi porro voluptatum omnis
+        incidunt nobis cum molestiae, deleniti aliquam voluptate est optio, veniam amet vitae facere laborum fuga harum.
+    </p>
+
+
+    <div class="custom-select-wrapper">
+        <div class="custom-select">Select an option</div>
+        <div class="select-options"></div>
+        <select>
+            <option value="html">HTML</option>
+            <option value="css3">HTML CSS3</option>
+            <option value="sass">HTML CSS3 SASS</option>
+            <option value="less">HTML CSS3 SASS LESS</option>
+            <option value="stylus">HTML CSS3 SASS LESS STYLUS</option>
+            <option value="jquery">JQUERY</option>
+            <option value="bootstrap">BOOTSTRAP</option>
+            <option value="material">MATERIAL</option>
+            <option value="react">REACT</option>
+            <option value="angular">ANGULAR</option>
+        </select>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const customSelect = document.querySelector('.custom-select');
+            const selectOptions = document.querySelector('.select-options');
+            const originalSelect = document.querySelector('select');
+
+            // Populate the custom options
+            Array.from(originalSelect.options).forEach(option => {
+                const li = document.createElement('li');
+                li.textContent = option.textContent;
+                li.dataset.value = option.value;
+                selectOptions.appendChild(li);
+            });
+
+            customSelect.addEventListener('click', function () {
+                selectOptions.classList.toggle('active');
+            });
+
+            selectOptions.addEventListener('click', function (event) {
+                if (event.target.tagName === 'LI') {
+                    customSelect.textContent = event.target.textContent;
+                    originalSelect.value = event.target.dataset.value;
+                    selectOptions.classList.remove('active');
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                if (!customSelect.contains(event.target)) {
+                    selectOptions.classList.remove('active');
+                }
+            });
+        });
+
+
+    </script>
+
+<style>
+    ---
+.conditional-data-div .tc-cell.tc-element-container.tc-col { display: flex; justify-content: end;}
+.conditional-data-div ul li label { border: 0 !important;}
+.conditional-data-div ul {
+    border: 1px solid #000;
+    width: fit-content !important;
+    justify-content: end !important;
+    flex: none !important;
+    border-radius: 5px;
+    gap: 0 !important;
+    padding: 0 !important;
+    height: fit-content;
+}
+.conditional-data-div ul li label:has(input[type="radio"]:checked) { background-color: #006837; color: #ffffff; border-left: 1px  solid #000;}
+.conditional-data-div ul li:first-child label:has(input[type="radio"]:checked) { background-color: #DFA535; color: #ffffff; border-right: 1px solid;}
+.conditional-data-div ul li label span { padding: 2px 2px;}
+/* add css */
+
+
+
+---
+.conditional-data-second-div .tc-cell.tc-element-container.tc-col {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px !important;
+}
+.conditional-data-div .tc-cell.tc-element-container.tc-col {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px !important;
+}
+/* replace css */
+
+
+---
+.conditional-data-div .appended-value {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: right;
+}
+.conditional-data-second-div .appended-value2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: right;
+}
+/* add css */
+
+
+
+
+.conditional-data-second-div ul li label {
+    width: 50.5px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.conditional-data-second-div ul li label .tc-epo-style-space  { height: 0 !important; padding: 0 !important;}
+.conditional-data-second-div ul li label .tc-label-wrap { padding: 0px 0px 0px 12px !important;}
+.conditional-data-second-div ul li:first-child label { position: relative; left: -1px;}
+
+
+ ---
+.conditional-data-div ul li:first-child label { position: relative; left: -1px;}
+.conditional-data-div ul li label {
+    width: 50.5px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.conditional-data-div ul li label .tc-epo-style-space { height: 0 !important; padding: 0 !important;}
+.conditional-data-div ul li label .tc-label-wrap { padding: 0px 0px 0px 12px !important;}
+/* add css */
+
+
+  ----
+.conditional-data-div ul li:first-child label :has(input[type="radio"]:checked) {
+    background-color: #DFA535 !important;
+    color: #ffffff;
+    border-radius: 5px;
+    border-right: 1px solid #000;
+    height: 100%;
+}
+.conditional-data-div ul li label :has(input[type="radio"]:checked) {
+    background-color: #006837 !important;
+    color: #ffffff;
+    border-left: 1px solid #000 !important;
+    height: 100%;
+    border-radius: 5px !important;
+}
+/* replace css */
+
+
+
+
+---
+.corbono-option-div .tc-col { gap: 0 !important;}
+/* add css */
+
+
+ ----
+.pbd-btn-anadir {  display: flex; flex-direction: column;}
+.pbd-btn-anadir button:hover::after { display: none;}
+/* add css */
+
+--- 
+.pbd-btn-anadir a, .pbd-btn-anadir button {
+    display: inline-block !important;
+    padding: 10px 25px !important;
+    width: fit-content !important;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 16.41px !important;
+    text-align: left !important;
+    color: #FFFFFF !important;
+    background-color: #006837 !important;
+    border-radius: 5px !important;
+    margin-bottom: 20px !important;
+    opacity: 1 !important;
+} 
+/* REPLACE CSS */
+
+
+   ---
+.tc-mode-normal .tc-field-label-wrap label {
+    border: 1px solid #000000;
+    width: fit-content;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.41px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+/* Replace css */
+
+  ---
+.tc-mode-normal .tc-field-label-wrap label span { padding: 2px;} 
+/* add css */
+
+
+
+
+
+
+
+---
+.cart-data {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 21px;
+    justify-content: end;
+}
+.cart-data p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+}
+.cart-data a {
+    color: #006837 !important;
+    display: inline-block;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 16.41px !important;
+    text-align: left !important;
+    background: #FFFFFF !important;
+    padding: 10px 25px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+}
+.cart-data a:hover::after {  display: none;}
+
+@media(max-width:767px){
+    .cart-data { gap: 20px; justify-content: end;}
+    .cart-data p { font-size: 14px; line-height: 16.75px;}
+}
+/* add css */
+
+
+---
+.pbd-wapper-col-right-top h2 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding: 0 !important;
+}
+.pbd-wapper-col-right-top h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align: left;
+    color: #006837;
+    margin-bottom: 10px;
+    padding: 0 !important;
+}
+/* replace css */
+
+
+---
+.pbd-wapper-col-right .pbd-wapper-col-right-top ul { padding: 0 !important; margin-bottom: 32px !important;}
+.proteína-div ul { margin-bottom: 35px !important;}
+.corbono-option-div { margin-bottom: 35px !important;}
+.corbono-option-div h2 {  margin-bottom: 3px !important;}
+.proteína-div h2 { margin-bottom: 3px !important;}
+.pbd-wapper-col-right-bottom {  padding-top: 73px !important;}
+/* add css */
+
+
+
+
+.conditional-data-div .tc-row {
+    flex-direction: column-reverse;
+}
+
+
+
+.pbd-wapper-col-right .pbd-wapper-col-right-top ul {  padding: 0 !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    ---
+    .w-1196 { padding: 0 !important;}
+    .proteína-div ul {  margin-bottom: 16px !important;}
+    .corbono-option-div {  margin-bottom: 15px !important;}
+    .conditional-data-div .tc-row { flex-direction: column-reverse; margin-bottom: 14px;}
+    .conditional-data-second-div .tc-row { flex-direction: column-reverse; margin-bottom: 15px;}
+    .pbd-btn-anadir { align-items: center;}
+    .pbd-wapper-col-right-bottom { padding-top: 50px !important;}
+    /* add css */
+
+     ----
+    .pbd-wapper-col-right-top h2 {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+    }
+    .pbd-wapper-col-right-top ul li {
+        width: fit-content;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0px 12px;
+        list-style: none;
+    }
+    /* replace css */
+}
+
+
+
+
+@media (max-width: 767px) {
+    ---
+    .container {  padding: 0;}
+    /* add css */
+
+    ---
+    .w-1196 { padding: 0 15px !important;}
+    /* replace css */
+}
+
+</style>
+</body>
+
+</html>

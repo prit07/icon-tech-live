@@ -1,0 +1,154 @@
+:root {
+    --Inter_Text:"Inter", sans-serif ; 
+}
+
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration: none !important;}
+
+.greenbot-author { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 16px 0 32px 0;     border-bottom: 2px solid #191919; margin-bottom: 32px;}
+.greenbot-author img { width: 237px; height: 237px; border-radius: 50%; margin: auto;}
+.greenbot-author h1 {
+    font-family: var(--Inter_Text);
+    color: #191919;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+.greenbot-author p {
+    font-size: 19px;
+    color: #191919;
+    font-weight: 600;
+    line-height: 1.33em;
+    font-family: var(--Inter_Text);
+    margin-bottom: 12px;
+}
+.greenbot-author-icon { font-size: 22px;  color: #F99A8A ;}
+
+.greenbot-text { margin-bottom: 40px;}
+.greenbot-text h2 {
+    font-weight: 600;
+    font-family: var(--Inter_Text);
+    font-size: 28px;
+    line-height: 140%;
+    color: #080E0F;
+   margin: 27px 0 17px 0;
+} 
+.greenbot-text ul li::marker { color: #F99A8A ;}
+.greenbot-text ul li {
+    font-size: 18px;
+    font-family: var(--Inter_Text);
+    color: #191919;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.greenbot-text>p {
+    font-size: 18px;
+    font-family: var(--Inter_Text);
+    color: #191919;
+    line-height: normal;
+    margin-bottom: 18px;
+}
+.greenbot-style-summary { background: #F4FBFC; padding: 1.5rem 1.5rem 1.5rem 1.2rem; margin-bottom: 30px;}
+.greenbot-style-summary h3 {
+    font-weight: 800;
+    font-family: var(--Inter_Text);
+    font-size: 28px;
+    line-height: 140%;
+    color: #080E0F;
+    margin-bottom: 12px;
+}
+.greenbot-style-summary p {
+    font-size: 18px;
+    font-family: var(--Inter_Text);
+    color: #191919;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.greenbot-author-articles-box h2 {
+    font-family: var(--Inter_Text) ;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 46px;
+    margin: 0 0 1.5rem 0;
+    padding: 10px 50px 0 0;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+.greenbot-author-articles-box h2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    margin-top: -10px;
+    border-top: 5px solid #000000;
+}
+
+
+.greenbot-rubric-list {  display: grid; grid-column-gap: 48px; grid-row-gap: 40px; grid-template-columns: repeat(3,1fr); }
+.greenbot-rubric-list-item { display: none;}
+.greenbot-rubric-list-item-img a { display: inline-block;}
+.greenbot-rubric-list-item-img a img { width: 100%; height: 100%; border-radius: 6px; }
+.greenbot-rubric-list-item-text a p{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #191919;
+    font-family: var(--Inter_Text);
+    margin: 8px 0 0 0;
+}
+.greenbot-rubric-list-item-text a p:hover { color: #F76C5E;}
+.greenbot-btn { width: 100%; display: flex; justify-content: center; margin: 20px 0 30px 0;}
+.greenbot-btn a {
+    border-radius: 0.5rem ;
+    padding-left: 2rem ;
+    padding-right: 3rem ;
+    background-position: right 2em center ;
+    font-family: var(--Inter_Text);
+    font-size: 0.8888888888888889rem ;
+    font-weight: 700 ;
+    line-height: 1.5em ;
+    color: #F76C5E ;
+    background-color: #FFFFFF ;
+    padding: 0.5em 1.25em 0.5em 1.25em ;
+    text-decoration: none ;
+    border: 2px solid #F76C5E ;
+    display: inline-block;
+    cursor: pointer ;
+    outline: none ;
+}
+.greenbot-btn a i { margin-left: 6px;}
+
+
+
+@media(max-width:991px) {
+    .greenbot-rubric-list { grid-column-gap: 38px; grid-row-gap: 36px;}
+}
+
+@media(max-width:767px) {
+
+    .greenbot-author h1 { font-size: 24px; line-height: 32px;}
+    .greenbot-author p { font-size: 17px; text-align: center;}
+    .greenbot-text h2 { font-size: 24px; line-height: 100%;}
+    .greenbot-text ul{ padding-left: 30px;}
+    .greenbot-style-summary h3 { font-size: 24px; line-height: 100%;}
+
+    .greenbot-rubric-list { grid-column-gap: 28px; grid-row-gap: 20px; grid-template-columns: repeat(1, 1fr);}
+    .greenbot-rubric-list-item-wapper {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 0 0 15px 0; 
+        border-bottom: 1px solid #DADADA;
+    }
+    .greenbot-rubric-list-item-img a { width: 140px; }
+    .greenbot-rubric-list-item-text a p {font-size: 16px; line-height: 21px;  margin: 0; }
+    .greenbot-author-articles-box h2 { font-size: 20px; line-height: 30px; padding: 10px 30px 0 0; position: relative;}
+}
+
+@media (min-width: 1280px) {
+    .container , .w-1230{
+        max-width: 1230px;
+    }
+}

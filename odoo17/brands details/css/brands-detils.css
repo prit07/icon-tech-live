@@ -1,0 +1,72 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+a { text-decoration: unset;}
+/* Brands Details  Start */
+.brands-details { padding: 50px 0;}
+.brands-details-wapper { margin-bottom: 130px; padding-bottom: 10px; border-bottom: 0.3px solid #414141}
+.brands-details-row {display: flex; gap: 100px; align-items: center;}
+.brands-details-img { width: 100%; max-width: 612px; }
+.brands-details-text { width: 100%; max-width: 645px;}
+.brands-details-img img{ width: 100%; height: 356px;}
+.brands-details-text h3 { 
+    font-family: Arimo;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.4px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 7px;
+}
+.brands-details-text p {
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.4px;
+    text-align: left;
+    color: #000000;
+    margin: 0;
+}
+
+.brands-details-products ul { margin: 0; padding: 0; list-style: none;  width: 100%;display: flex; gap: 10px; align-items: center; flex-direction: column; }
+.brands-details-products ul li {
+    width: 100%;
+    background-color: #41414178;
+    max-width: 200px;
+    font-family: Arimo;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.4px;
+    text-align: center;
+    padding: 10px 0;
+    color: #FFFFFFE5;
+}
+
+
+/* Brands Details  End */
+
+
+@media(min-width:1300px){
+    .container.w-1356 { max-width: 1356px !important; padding: 0px !important;}
+}
+
+@media(max-width:1199px) {
+    .brands-details-row { gap: 70px;}
+}
+
+@media(max-width:991px) {
+    .brands-details-row { gap: 30px; align-items: start;}
+    .brands-details-wapper { margin-bottom: 80px;}
+    
+}
+ 
+@media(max-width:767px) {
+
+    .brands-details-row { flex-direction: column;}
+    .brands-details-img { order: 0;}
+    .brands-details-text { order: 1;}
+    .brands-details-img img { width: 100%; height: 280px;}
+}
+
+  
+
+

@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cmi-choose-amount {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 3px #000;
+    margin: 30px;
+}
+.cmi-choose-amount ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+.cmi-choose-amount label { font-family: "Open Sans", sans-serif; font-weight: 700;}
+.cmi-choose-amount ul li label {
+    text-align: center;
+    display: block;
+    background: #d3d3d3;
+    color: #000000;
+    padding: 6px;
+    cursor: pointer;
+}
+.cmi-choose-amount input[type="radio"]:checked+label { background-color: #0c4a0d; color: #ffffff;}
+.cmi-choose-amount ul>li>input[type=radio] { position: absolute; z-index: -1; opacity: 1;}
+.cmi-choose-amount-ul>li>input:checked+label::after {
+    content: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" width="15px" height="20px" xml:space="preserve"><g><path style="fill: red;" d="M990,210.8L924.3,145L345.1,724.2L75.7,454.8L10,520.6l325.5,325.5l9.2,8.9l9.8-8.9L990,210.8L990,210.8z"/></g></svg>');
+    position: absolute;
+    padding-left: 5px;
+}
+#cmi_other:not(:checked) ~ #cmi_custom_amount > .cmi_cu_field { display: none;}
+#wcdp-cmi-5 {
+width: calc(100% - 1ch - 35px);
+height: 100%;
+padding: 3px;
+text-align: center;
+margin: 0;
+color: #000;
+background-color: #FFF;
+display: inline-block;
+border: 0;
+font-size: 20px;
+}
+.cmi_cu_field { display: inline;}
+#cmi_other:checked ~ #cmi_custom_amount > #cmi_other { display: none;}

@@ -1,0 +1,359 @@
+body { margin: 0; padding: 0; box-sizing: border-box; background: #F9F9F9; }
+
+
+
+/* Featured Partner End*/
+
+
+/* Online Casino Bonuses Start */
+.online-casiono-bonuses { background: #F9F9F9;   padding-bottom: 82px;}
+
+.online-casiono-bonuses-heading  { background-color: #D9D9D9; height: 150px; padding: 0 8px; margin-bottom: 79px; display: flex; justify-content: center; align-items: center;}
+.online-casiono-bonuses-heading  h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.online-casiono-bonuses-dropdown { margin-bottom: 20px;}
+.select_wrap {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    user-select: none;
+}
+.select_wrap .default_option {
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+    list-style: none;
+    margin: 0;
+}
+.default_option>li>p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    color: #464A50;
+    margin: 0;
+}
+.select_ul>li>p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.select_wrap .default_option li{ padding: 2px 20px;}
+.select_wrap .default_option::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover !important;
+}
+.select_wrap.active .default_option:before {  transform: rotate(-181deg); top: 16px;}
+.select_wrap .select_ul {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    border: 1px solid #464A50;
+    z-index: 111;
+}
+
+
+.select_wrap .select_ul li{ padding: 10px 20px; cursor: pointer;}
+.select_wrap .select_ul li:hover{
+    background: black;
+    color: white;
+}
+.select_wrap .select_ul li:hover p { color: #fff;}
+.select_wrap .select_ul li:first-child:hover{
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+.select_wrap .select_ul li:last-child:hover{
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+.select_wrap.active .select_ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+.online-casiono-bonuses-blog-grid {
+    display: grid;
+    grid-column-gap: 11px;
+    grid-row-gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 26px;
+}
+.online-casiono-bonuses-blog-item { background-color: #FFFFFF; padding: 20px;}
+.online-casiono-bonuses-blog-item-top {position: relative;}
+.online-casiono-bonuses-blog-item-top img { width: 100%; height: 167px;}
+.online-casiono-bonuses-blog-item-top span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    color: #F6F5FA;
+    padding: 15px 22px;
+    background: #417DF7;
+    border-radius: 3px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.online-casiono-bonuses-blog-item-bottom h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    color: #417DF7;
+    margin: 14px 0 ;
+}
+.online-casiono-bonuses-blog-item-bottom h2 {
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E13A3A;
+    margin-bottom: 15px;
+}
+.online-casiono-bonuses-blog-item-bottom p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #464A50;
+    margin-bottom: 21px;
+}
+.online-casiono-bonuses-blog-item-bottom button {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    background: #417DF7;
+    padding: 11px 25px;
+    width: 100%;
+    border-radius: 21px;
+    color: #FFFFFF;
+    border: 0;
+    margin-bottom: 12px;
+}
+.online-casiono-bonuses-blog-item-bottom .read-review {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    color: #417DF7;
+    text-decoration: underline;
+    display: inline-block;
+    width: 100%;
+}
+.online-casiono-bonuses-blog-item-bottom .view-full{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    color: #417DF7;
+    text-decoration: underline;
+    display: inline-block;
+    width: 100%;
+}
+.online-casiono-bonuses-blog-btn>a {
+    background: #417DF7;
+    padding: 11px 22px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+/* Online Casino Bonuses End */
+
+
+/* best bet text wapper Start */
+.best-bet-text-wapper {background: #F9F9F9; padding-bottom: 142px;}
+.best-bet-text-itmes ul { list-style: none; margin: 0; padding: 0;}
+.best-bet-text-itmes h2 {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36.31px;
+    text-align: left;
+    margin-bottom: 20px;    
+    color: #000000;
+    padding-top: 40px;
+}
+.best-bet-text-itmes h3 { 
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.31px;
+    text-align: left;
+    margin-bottom: 20px;    
+    color: #000000;
+}
+.best-bet-text-itmes p {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #00000080;
+    margin: 0;
+    padding-bottom: 15px;
+}
+.best-bet-text-itmes h2:first-child { padding: 0;}
+/* best bet text wapper End  */
+
+
+
+
+/* faq wapper Start */
+.faq-wapper {background: #F9F9F9; padding-bottom: 54px; }
+
+.faq_accordion_wapper_casino h2 {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.83px;
+    text-align: left;
+    color: #417DF7;
+    margin-bottom: 20px;
+}
+.faq_accordion_item {
+    padding: 19px 51px 19px 51px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.faq_menu { position: relative;}
+.faq_menu::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -27px;
+    top: 9px;
+    transform: rotate(-90deg);
+}
+.faq_accordion_item.active .faq_menu::after {
+    transform: rotate(0deg);
+}
+.faq_menu a{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #417DF7 !important;
+}
+.faq_content { padding-top: 8px;}
+.faq_content p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+}
+.faq_content p a {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+    text-decoration: underline ;
+}
+.faq_accordion_item:last-child { margin: 0 !important;}
+.faq_content { display: none;}
+/* faq wapper End */
+
+
+
+
+
+
+
+@media(min-width:1200px){
+	.container.w-1196 { max-width:1196px!important; }
+}
+
+@media(max-width:991px){
+    .online-casiono-bonuses-blog-grid { grid-template-columns: repeat(2, 1fr);}
+
+    .online-casiono-bonuses-heading { margin-bottom: 49px;}
+    .online-casiono-bonuses {  padding-bottom: 62px;}
+
+    .best-bet-text-wapper { padding-bottom: 80px;}
+}
+
+@media(max-width:767px) {
+
+
+   
+    .online-casiono-bonuses-heading {  margin-bottom: 35px; }
+    .online-casiono-bonuses-heading h2 { font-size: 28px; line-height: 33.57px;}
+
+    .online-casiono-bonuses { padding-bottom: 40px;}
+    .online-casiono-bonuses-blog-grid { grid-template-columns: repeat(1, 1fr);}
+    .online-casiono-bonuses-heading-left h2 { font-size: 28px; line-height: 32.73px;}
+    .online-casiono-bonuses-blog-item-top span { font-size: 17px; padding: 12px 20px;}
+    .online-casiono-bonuses-blog-item-bottom h2 { font-size: 32px; line-height: 37.99px; margin-bottom: 10px;}
+    .online-casiono-bonuses-blog-item-bottom h4 { font-size: 14px; line-height: 17.36px; margin: 11px 0;}
+
+
+    
+    .best-bet-text-wapper { padding-bottom: 40px;}
+    .best-bet-text-itmes h2 {  font-size: 27px;  line-height: 34.83px; margin-bottom: 10px; padding-top: 20px;}
+    .best-bet-text-itmes p { font-size: 16px; line-height: 26.8px; padding-bottom: 10px;}
+
+
+    .faq_accordion_wapper_casino h2 { font-size: 32px; line-height: 40.83px;}
+    .faq-wapper { padding-bottom: 40px;}
+    .faq_menu::after { left: -23px;}
+    .faq_accordion_item { padding: 15px 21px 15px 31px;}
+
+   
+}
+
+

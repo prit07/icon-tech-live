@@ -1,0 +1,509 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--Blacker_Text: 'Blacker Text';
+	--Manrope: 'Manrope', sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+
+/* US Law Case Law section start */
+
+.us-law-case-section {
+	padding: 64px 0 10px 0;
+	background: #FFF6ED;
+}
+
+.us-law-case-section .us-law-case-wapper {
+	max-width: 731px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.us-law-case-section .us-law-case-wapper h2 {
+	color: #291622;
+	text-align: center;
+	font-family: var(--Blacker_Text);
+	font-size: 65px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 70px;
+	letter-spacing: -1.95px;
+	margin: 0;
+}
+
+.us-law-case-section .us-law-case-wapper h2 span {
+	position: relative;
+	z-index: 1;
+}
+
+.us-law-case-section .us-law-case-wapper h2 span::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #FFF;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+
+.us-law-case-section .us-law-case-wapper p {
+	color: #291622;
+	text-align: center;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	margin: 0;
+	max-width: 637px;
+}
+
+.us-law-case-section .us-law-case-wapper form {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	max-width: 534px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.us-law-case-section .us-law-case-wapper form .form-group {
+	margin: 0;
+	width: 74%;
+}
+
+.us-law-case-section .us-law-case-wapper form .form-group input {
+	width: 100%;
+	height: 48px;
+	padding: 8px 16px;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #FFF;
+}
+
+.us-law-case-section .us-law-case-wapper form .form-group input:focus {
+	box-shadow: none;
+}
+
+.us-law-case-section .us-law-case-wapper form .form-group input::placeholder {
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	opacity: 0.5;
+}
+
+.us-law-case-section .us-law-case-wapper form .search-btn-us-law {
+	display: flex;
+	width: 25%;
+}
+
+.us-law-case-section .us-law-case-wapper form .search-btn-us-law a {
+	width: 100%;
+	height: 48px;
+	border-radius: 52px;
+	border: 1px solid #291622;
+	background: #F3DCA0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #291622;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.us-law-case-section .us-law-case-wapper form .search-btn-us-law a img {
+	margin-right: 6px;
+}
+
+/* US Law Case Law section end */
+
+
+
+
+
+
+
+
+/* Find Personal Lawyer by State section css start */
+.personal-lawyer-wapper {
+	background: #FFF6ED;
+	padding: 200px 0 110px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.personal-lawyer-wapper:before {
+	content: '';
+	border: 2px solid #291622;
+	background: #F3DCA0;
+	width: 102%;
+	transform: rotate(5.716deg);
+	top: 120px;
+	position: absolute;
+	left: -120px;
+	z-index: -2;
+	height: 100%;
+}
+
+.personal-lawyer-wapper::after {
+	content: '';
+	position: absolute;
+	right: -160px;
+	top: 155px;
+	background: #291622;
+	width: 120%;
+	height: 100%;
+	transform: rotate(-7.689deg);
+	z-index: -1;
+}
+
+.pl-top-shape {
+	position: relative;
+	background: #291622;
+	z-index: 0;
+	padding: 100px 0;
+	width: 100%;
+	-webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+	z-index: 100;
+}
+
+.pl-top-shape .container {
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+
+.plb-title {
+	max-width: 647px;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 32px;
+}
+
+.plb-title h2 {
+	color: #FFF;
+	font-family: var(--Blacker_Text);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.48px;
+	text-transform: capitalize;
+	margin: 0;
+}
+
+.plb-title h2 span {
+	position: relative;
+	z-index: 1;
+}
+
+.plb-title h2 span::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #532E45;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text {
+	border-radius: 4px;
+	background: #35202D;
+	padding: 24px;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	min-height: 223px;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	list-style: none;
+}
+
+.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 40px;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.plb-wapper-bottom .plb-title {
+	padding-bottom: 40px;
+}
+
+.plb-wapper-bottom .plb-title h2 {
+	text-align: center;
+}
+
+.state-list-wapper {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	border-radius: 4px;
+	background: #35202D;
+	padding: 24px;
+	flex-wrap: wrap;
+}
+
+.state-list-wapper ul {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.state-list-wapper ul li {
+	list-style-type: none;
+}
+
+.state-list-wapper ul li a {
+	color: #FFF;
+	font-family: var(--Manrope);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+/* Find Personal Lawyer by State section css end */
+
+
+
+
+
+
+
+@media(max-width:1399px) {
+
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 123%;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+		font-size: 15px;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:1199px) {
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 128%;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+
+
+
+	/* Find Personal Lawyer by State section css start */
+	.us-primary-wapper-top .us-primary-law-inner-text ul li p {
+		font-size: 12px;
+		line-height: 30px;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text {
+		min-height: 183px;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+
+}
+
+@media(max-width:991px) {
+
+
+	/* US Law Case Law section end */
+	.us-law-case-section .us-law-case-wapper h2 {
+		font-size: 60px;
+		line-height: 65px;
+	}
+	/* US Law Case Law section end */
+
+
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper::after {
+		width: 135%;
+	}
+
+	.pl-top-shape {
+		padding: 85px 0 0 0;
+	}
+
+	.state-list-wapper {
+		gap: 30px;
+	}
+
+	.us-primary-wapper-top .row {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.pl-top-shape .container {
+		gap: 30px;
+	}
+
+	.plb-title {
+		max-width: 100%;
+	}
+
+	.plb-wapper-bottom .plb-title h2 {
+		text-align: left;
+	}
+
+	/* Find Personal Lawyer by State section css End */
+}
+
+@media(max-width:767px) {
+
+
+/* US Law Case Law section end */
+.us-law-case-section .us-law-case-wapper {
+	gap: 18px;
+}
+.us-law-case-section .us-law-case-wapper h2 {
+	font-size: 31px;
+	line-height: 36px;
+}
+.us-law-case-section .us-law-case-wapper h2 span::after {
+	height: 12px;
+}
+.us-law-case-section .us-law-case-wapper p {
+	font-size: 14px;
+	line-height: 22px;
+	max-width: 100%;
+}
+.us-law-case-section .us-law-case-wapper form {
+	flex-direction: column;
+	gap: 10px;
+	max-width: 100%;
+	width: 100%;
+}
+.us-law-case-section .us-law-case-wapper form .form-group {
+	width: 100%;
+}
+.us-law-case-section .us-law-case-wapper form .search-btn-us-law {
+	width: 100%;
+}
+/* US Law Case Law section end */
+	/* Find Personal Lawyer by State section css start */
+	.personal-lawyer-wapper {
+		padding: 100px 0 60px;
+	}
+
+	.personal-lawyer-wapper::after {
+		right: -163px;
+		top: 128px;
+		width: 200%;
+	}
+
+	.personal-lawyer-wapper:before {
+		left: -124px;
+	}
+
+	.plb-title h2 {
+		width: 100%;
+		max-width: 335px;
+		color: #FFF;
+		text-align: center;
+		font-family: var(--Blacker_Text);
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.36px;
+	}
+
+	.plb-title h2:before {
+		display: none;
+	}
+
+	.state-list-wapper {
+		display: flex;
+		padding: 16px;
+		column-gap: 16px;
+		align-items: stretch;
+	}
+
+	.state-list-wapper ul li {
+		width: 114px;
+		list-style-type: none;
+	}
+
+	.state-list-wapper ul {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.pl-top-shape {
+		padding: 130px 0 0 0;
+	}
+
+	.us-primary-wapper-top .us-primary-law-inner-text {
+		gap: 10px;
+		min-height: auto;
+		flex-wrap: wrap;
+	}
+
+	/* Find Personal Lawyer by State section css start */
+
+}
+
+
+@media(max-width:350px) {
+	.us-law-case-section .us-law-case-wapper h2 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px 0;
+            text-align: center
+        }
+
+        .radio-toolbar input[type="radio"] {
+            display: none;
+        }
+
+        .radio-toolbar label {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .radio-toolbar input[type="radio"]:checked+label { background-color: #333; color: #fff }
+
+    </style>
+</head>
+
+<body>
+    <div class="radio-toolbar">
+        <input type="radio" id="radio1" name="radios" value="all" >
+        <label for="radio1">All</label>
+        <input type="radio" id="radio2" name="radios" value="false">
+        <label for="radio2">Open</label>
+        <input type="radio" id="radio3" name="radios" value="true">
+        <label for="radio3">Archived</label>
+    </div>
+
+</body>
+
+</html>

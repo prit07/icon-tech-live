@@ -1,0 +1,505 @@
+
+.pda-var-top-sect-wapper {
+    background-color: #DFA535;
+    position: relative;
+}
+.cart-data {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    gap: 21px;
+    justify-content: end;
+}
+.cart-data p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+    margin: 0;
+    color: #fff;
+}
+.cart-data a {
+    color: #006837 !important;
+    display: inline-block;
+    font-family: Roboto !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 16.41px !important;
+    text-align: left !important;
+    background: #FFFFFF !important;
+    padding: 10px 25px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+}
+.cart-data a:hover::after {  display: none;}
+
+@media(max-width:767px){
+    .cart-data { gap: 20px; justify-content: end;}
+    .cart-data p { font-size: 14px; line-height: 16.75px;}
+}
+
+
+/* sidebar css start */
+.open-nav { overflow: hidden; }
+.m-overlay-bg {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(86, 86, 86, .4);
+	z-index: 1000;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+.m-overlay-bg.m-bg-active {
+	display: block;
+	width: 100%;
+	left: auto;
+	top: 0;
+	cursor: pointer;
+}
+.pda-sidebar-wapper {
+	position: fixed;
+	right: 0;
+	height: 100vh;
+	overflow-y: auto;
+	max-width: 345px;
+	width: 100%;
+	top: 0;
+	z-index: 10000;
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	display: none;
+}
+.pda-sidebar-wapper.active-sidebar {
+	display: block;
+}
+/* sidebar progress bar css start */
+.pda-sidebar-progressbar { padding:38px 18px 15px; }
+.pda-sidebar-progress-text { display: flex; flex-flow: row wrap; justify-content:space-between; align-items:center; margin-bottom:8px; }
+.pda-sidebar-progress-text p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	margin: 0;
+	color: #006837;
+}
+.pda-sidebar-progress-text p span { display: inline-block; text-align: left; color: #006837; font-weight: 500; font-size: 20px; line-height: 23.44px; }
+.pda-sidebar-progress-wapper span {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: right;
+	display: block;
+	color: #000;
+}
+.pda-sidebar-progress-wapper-a {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #000000;
+	height: 36px;
+	border-radius: 5px;
+	background-color: transparent !important;
+	margin-bottom: 15px;
+}
+.pda-sidebar-progress-1 { 
+	background-color: #006837; 
+	width:0; 
+	position:absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	border-color: #006837; 
+	border-radius: 5px;
+}
+/* sidebar progress bar css end */
+
+/* add to cart product css start */
+.pda-sidebar-product-list { position: relative; padding: 0 18px 42px; border-bottom: 1px solid #000; }
+.pda-sidebar-title {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.13px;
+	text-align: left;
+	color: #000;
+	padding-bottom: 36px;
+}
+.pda-sidebar-product-wapper {
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	height: 450px;
+	overflow-y: auto;
+	padding-right: 20px;
+}
+.pda-sidebar-p-card {
+	display: flex;
+	flex-flow: row;
+	gap: 15px;
+	position: relative;
+}
+.pda-sidebar-left-p {
+	max-width: 107px;
+	width: 100%;
+	height: 99px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 10px 5px;
+}
+.pda-sidebar-left-p img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	max-width: unset;
+	margin: auto;
+	vertical-align: middle;
+}
+.pda-sidebar-right-p h4 { margin: 0; line-height: normal; padding-bottom:10px; }
+.pda-sidebar-right-p h4 a {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: left;
+	color: #000;
+	display: block;
+}
+.pda-sidebar-qty-container {
+	position: relative;
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: row;
+	max-width: 50px;
+	width: 100%;
+	height:16px;
+	justify-content: space-evenly;
+	border-radius: 5px;
+}
+.pda-sidebar-qty-btn-minus, .pda-sidebar-qty-btn-plus, .pda-sidebar-input-qty {
+	background-color: transparent;
+	border: 0;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16.41px;
+	text-align: center;
+	color:#000000;
+	max-width: 7.33px;
+	width: 100%;
+	background-color: #D9D9D9;
+	padding: 0;
+}
+.pda-sidebar-input-qty {
+	max-width: 10px;
+	width: 100%;
+	padding: 0;
+	background-color: #D9D9D9;
+	border: 0;
+	text-align: center;
+	display: block;
+
+}
+.pda-sidebar-qty-btn-minus { border-radius:5px; }
+.pda-sidebar-qty-btn-minus:hover, .pda-sidebar-qty-btn-plus:hover, .pda-sidebar-qty-btn-minus:focus, 
+.pda-sidebar-qty-btn-plus:focus, .pda-sidebar-qty-btn-minus:focus-visible, .pda-sidebar-qty-btn-plus:focus-visible { 
+	background-color:unset; 
+	color:#000000; 
+	border: 0;
+	box-shadow: unset;
+	padding: 0;
+	outline: unset;
+}
+.pda-sidebar-input-qty {
+	background-color:unset; 
+	color:#000000; 
+	border: 0;
+	box-shadow: unset;
+	outline: unset;
+}
+.pda-sidebar-right-p-card { display:flex; align-items:center; gap:10px; width:100%; justify-content:space-between; }
+.pda-sidebar-right-p-left-card { display:flex; align-items:center; justify-content:space-between; max-width:70px; width:100%; }
+.pda-sidebar-right-p-left-card span { cursor:pointer; }
+.pda-product-price p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+}
+/* add to cart product css end */
+
+/* pda subscription css start */
+.pda-subscription-wapper {
+	padding: 24px 18px 26px;
+	position: relative;
+	border-bottom: 1px solid #000;
+}
+.pda-subscription-top-wapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 16px;
+}
+.pda-subscrip-left h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18.75px;
+	text-align: left;
+	color: #000;
+	padding-bottom: 9px;
+}
+.pda-subscrip-left p {
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	text-align: left;
+	color: #000;
+	margin: 0;
+}
+.pda-switch-wrapper { display: flex;align-items: center; gap:16px; max-width:126px; width:100%; }
+.pda-switch { display: inline-block; height: 28px; position: relative; width: 78px; margin-bottom: 0; }
+#pda-a-switch-text {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.75px;
+	text-align: right;
+	color: #000;
+	display: inline-block;
+	max-width: 36px;
+	width: 100%;
+}
+.pda-switch input { display: none; }
+.pda-slider {
+	background-color: #fff;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+	border: 1px solid #000000;
+}
+.pda-slider:before {
+	top: -1px;
+	content: "";
+	height: 28px;
+	width: 38px;
+	background-color: #006837;
+	left: 0;
+	position: absolute;
+	border-radius: 5px;
+	transition: .4s;
+}
+.pda-switch input:checked + .pda-slider:before { transform: translateX(40px); background-color:#DFA535; }
+.pda-slider.pda-round { border-radius: 5px; }
+.pda-slider.pda-round:before { border-radius: 5px; }
+.pda-subscription-bottom-wapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	margin-top: 14px;
+}
+.pda-subscription-bottom-wapper button {
+	border: 1px solid #000000;
+	background-color: #fff;
+	max-width: 96px;
+	width: 100%;
+	height: 36px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.41px;
+	text-align: center;
+	color: #000;
+}
+/* pda subscription css end */
+
+/* pda subtotle css start */
+.pda-subtotle-wapper {
+	position: relative;
+	padding: 22px 18px 26px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.pda-subtotle-wapper h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: left;
+	color: #000;
+}
+.pda-subtotle-wapper p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+}
+/* pda subtotle css end */
+
+/* pda costes css start */
+.pda-costes-wapper {
+	position: relative;
+	padding: 20px 18px 22px;
+	border-bottom: 1px solid #000;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.pda-costes-wapper h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: left;
+	color: #000000;
+	opacity: 50%;
+}
+.pda-costes-wapper p {
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	text-align: right;
+	color: #006837;
+	margin: 0;
+	opacity: 50%;
+}
+/* pda costes css end */
+
+/* pda descuentos css start */
+.pda-descuentos-wapper {
+	padding: 23px 18px 26px;
+	position: relative;
+	border-bottom: 1px solid #000;
+}
+.pda-cupon-form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 18px;
+}
+.pda-cupon-form input {
+	max-width: 184px;
+	width: 100%;
+	height: 36px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 14.06px;
+	color: #000;
+	display: block;
+	padding: 0 5px;
+}
+.pda-cupon-form input:focus { outline:unset; }
+.pda-cupon-form button {
+	max-width: 108px;
+	width: 100%;
+	height: 36px;
+	background-color: #006837;
+	color: #fff;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.41px;
+	border-radius: 5px;
+	border: 0;
+}
+.pda-aplicupon { display:flex; flex-direction:row;justify-content:space-between; align-items:center; }
+.pda-aplicupon p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18.75px;
+	text-align: left;
+	color: #000;
+}
+.pda-por-suscripcion { margin-top:12px; display:flex; flex-direction:row;justify-content:space-between; align-items:center; }
+.pda-por-suscripcion p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 14.06px;
+	color: #000;
+}
+/* pda descuentos css end */
+
+/* pda totle css start */
+.pda-totle-wapper {
+	position: relative;
+	padding: 22px 18px 38px;
+}
+.pda-totle-card { display: flex; flex-direction: row; align-items: center; justify-content:space-between; margin-bottom:26px; }
+.pda-totle-card h4 {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28.13px;
+	text-align: left;
+	color: #000;
+}
+.pda-totle-card p {
+	margin: 0;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	color: #006837;
+}
+.pda-checkout-button{
+	width: 100%;
+	background-color: #DFA535;
+	height: 53px;
+	border-radius: 5px;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 23.44px;
+	color: #fff;
+	text-align: center;
+	border: 0;
+}
+/* pda totle css end */
+
+@-moz-document url-prefix() {
+	.pda-sidebar-wapper, .pda-sidebar-product-wapper { scrollbar-color: #E7E7E7 #BDBDBD; scrollbar-width: thin; }
+}
+.pda-sidebar-wapper::-webkit-scrollbar, .pda-sidebar-product-wapper::-webkit-scrollbar { width: 7px; }
+.pda-sidebar-wapper::-webkit-scrollbar-track-piece, .pda-sidebar-product-wapper::-webkit-scrollbar-track-piece {
+	background:  #E7E7E7;
+	border-radius: 20px;
+	margin-bottom: 0;
+}
+.pda-sidebar-wapper::-webkit-scrollbar-thumb, .pda-sidebar-product-wapper::-webkit-scrollbar-thumb { background-color: #BDBDBD; border-radius: 20px; }
+/* sidebar css end */
+

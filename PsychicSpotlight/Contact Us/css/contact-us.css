@@ -1,0 +1,144 @@
+body { margin: 0; padding: 0; box-sizing: border-box; background: #F1F2F2;}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+.contact-us-wapper { padding: 101px 0 136px 0;  }
+.contact-us-questions {
+    margin: auto;
+    max-width: 572px;
+    width: 100%;
+    border-radius: 32px;
+    background: #FFF;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+}
+.contact-us-questions::after {
+    content: "";
+    width: 575px;
+    height: 575px;
+    background: url(../img/Chart.png) no-repeat center;
+    background-size: 100% 100%; 
+    position: absolute;
+    z-index: -1;
+    left: -264px;
+    top: -101px;
+}
+.contact-us-questions::before {
+    content: "";
+    width: 450px;
+    height: 467px;
+    background: url(../img/Remove-bg\ 1.png) no-repeat center;
+    background-size: 100% 100%; 
+    position: absolute;
+    z-index: -1;
+    right: -244px;
+    bottom: -75px;
+}
+.contact-us-questions-top  { display: flex; flex-direction: column; gap: 24px;}
+.contact-us-questions-top h1 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.68px;
+    text-align: center;
+    margin: 0;
+}
+.contact-us-questions-top p {
+    color: #09121F;
+    text-align: center;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.contact-us-questions-top ul { margin: 0; padding: 0; list-style: none; display: flex; justify-content: center;  gap: 32px; align-items: center;}
+.contact-us-questions-top ul li {
+    color: #09121F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.54px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-us-questions-top ul li img { width: 18px; height: 18px;}
+.contact-us-questions-from {display: flex; flex-direction: column; gap: 16px; position: relative;}
+.contact-us-questions-from input {
+    border-radius: 8px;
+    border: 1px solid #E3E3E3;
+    background: #F1F2F2;
+    padding: 16px 24px;
+    color: rgba(9, 18, 31, 0.66);
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.54px;
+}
+.contact-us-questions-from input:focus-visible { outline: unset;}
+.contact-us-questions-from textarea:focus-visible { outline: unset;}
+.contact-us-questions-from textarea { 
+    border-radius: 8px;
+    border: 1px solid #E3E3E3;
+    background: #F1F2F2;
+    padding: 16px 24px;
+    color: rgba(9, 18, 31, 0.66);
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.54px;
+}
+.contact-us-questions-from a {
+    display: block;
+    padding: 16px 24px;
+    border-radius: 60px;
+    background: #BCA8F4;
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.48px;
+}
+
+
+@media(max-width:1199px) {
+    .contact-us-questions::before { width: 380px; height: 397px; right: -175px;  bottom: -65px;}
+    .contact-us-questions::after { width: 480px; height: 480px; left: -175px; top: -77px; }
+
+}
+@media(max-width:991px) {
+    .contact-us-questions::after { width: 300px; height: 300px; left: -80px; top: -57px;}
+    .contact-us-questions::before { width: 300px; height: 317px; right: -83px; bottom: -67px; }
+}
+
+@media (max-width:767px) {
+    .contact-us-wapper { padding: 64px 0 90px 0;}
+    .contact-us-questions::after {  width: 190px; height: 190px; left: -10px; top: -56px;}
+    .contact-us-questions::before { width: 190px; height: 190px; right: -13px; bottom: -57px; }
+    .contact-us-questions { padding: 20px;}
+    .contact-us-questions-top ul li { font-size: 16px; line-height: 24px; gap: 6px;}
+    .contact-us-questions-top h1 { font-size: 45px; line-height: 33px;}
+    .contact-us-questions-top ul { gap: 18px;}
+    .contact-us-questions-top p { font-size: 16px; line-height: 26px;}
+    .contact-us-questions-from input { padding: 13px 20px;}
+    .contact-us-questions-from textarea {  padding: 12px 20px;}    
+}

@@ -1,0 +1,130 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration: none;}
+
+
+.copiedtext {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(2em);
+    color: #000;
+    transition: all 2s;
+}
+
+.copied .copiedtext {
+    opacity: 1;
+    transform: translateY(-3em);
+    transition: all 2s;
+}
+
+.hr-fdnt-wapper { padding-top: 81px;}
+.hr-fdnt-row { display:flex; flex-direction:row;justify-content:space-between; gap:48px; }
+.hr-fdnt-left-col { max-width: 700px; width: 100%; }
+.hr-fdnt-right-col { max-width: 324px; width: 100%;}
+
+/* CTA Desktop Start */
+.hr-cta-desktop-main {display: flex; flex-direction: column; gap: 50px;}
+.hr-cta-desktop-wapper {
+    max-width: 700px;
+    width: 100%;
+    height: 161px;
+    border: 2px solid #557498;
+    background: #FFF;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 21px 24px 22px 23px;
+    align-items: center;
+}
+
+.hr-cta-desktop-img { width: 100%; display: flex; justify-content: center; max-width: 148px;}
+.hr-cta-desktop-text { display: flex; flex-direction: column; gap: 23px;}
+.hr-cta-desktop-text h3 { line-height:0; margin: 0; }
+.hr-cta-desktop-text h3 a {
+    color: #222;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.hr-cta-desktop-text ul { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px;}
+.hr-cta-desktop-text ul li {  list-style: none; display: flex; gap: 2px; }
+.hr-cta-desktop-text ul li span{
+    color: #222;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-style: normal;
+
+    font-weight: 400;
+    line-height: 13px; 
+}
+.hr-cta-desktop-text ul li img { width: 15px; height: 15px;}
+.hr-cta-desktop-button   {width: 100%; max-width: 127px; }
+.hr-cta-desktop-button  button{
+    width: 100%;
+    border: 1px dashed #1E427E;
+    background: #FFF;
+    margin-bottom: 8px;
+    position: relative;
+    padding: 10px 5px;
+}
+ .hr-cta-desktop-button button span {
+    color: #1E427E;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px; 
+ }
+ .hr-cta-desktop-button button span i { margin-left: 5px; font-size: 16px; line-height: 13px; }
+ .hr-cta-desktop-button a {
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    padding: 12px 5px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-color: #4DB2EC;
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+    box-shadow: 3px 3px 0 #1E427E;
+ }
+
+
+@media(max-width:991px) {
+  .hr-fdnt-right-col {max-width: 230px; }
+    .hr-cta-desktop-wapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        gap: 26px;
+        padding:44px 36px;
+        flex-direction: column;
+    }
+    .hr-cta-desktop-text h3 { text-align: center; padding: 10px;}
+    .hr-cta-desktop-img { width: 100%; max-width: 193px;}
+}
+
+
+
+@media (max-width:767px) {
+    .hr-fdnt-row { gap: 20px; flex-wrap: wrap;}
+    .hr-fdnt-left-main { gap: 25px;}
+}
+
+
+@media(min-width:1300px){
+	.container.w-1068 { 
+        max-width:1068px!important;
+        padding: 0 ; 
+     }
+
+    }
+

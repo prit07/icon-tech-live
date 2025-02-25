@@ -1,0 +1,2059 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+:root { --golos-text: 'Golos Text', sans-serif; --font_1:'proxima'; --font_2:'Montserrat', sans-serif; }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+.center-align { align-items: center !important;}
+ul { margin: 0 !important; list-style: none; padding: 0;}
+
+/*========== header & footer css start ==========*/
+/* header css start */
+.h-home-wapper {  position:relative;  padding: 26px 0;     background: rgb(16, 19, 21);  }
+.h-toggle-btn { display: none; }
+.h-header-nav { display: flex; align-items: center; justify-content: space-between; }
+.h-main-menu  ul {  padding: 0 20px; margin: 0; display: flex; align-items: center; margin: 0; background: #191919; border-radius: 25px; }
+.h-main-menu ul li { list-style-type: none; display: inline-block; margin:0 0 0 0;     padding: 0 12px;}
+.h-main-menu ul li:last-child { margin-right: 0; } 
+.h-main-menu ul li a {
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s all;
+    font-family: 'proxima';
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    position: relative;
+}
+.h-header-card { display: flex; gap: 30px;}
+.subscribe-wapper a{
+    border-radius: 4px;
+    background: #3A6AFD;
+    padding: 0 24px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    height: 50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 30px;
+    font-family: 'proxima';
+}
+.subscribe-wapper a:hover {
+    background-color: #fff;
+    color: #00060f;
+    transition: all 0.4s ease-in-out;
+}
+/* header css end */
+/* Footer Start */
+.footer { background: #191919; padding: 45px 0 25px 0   ;}
+.footer-items { display: flex; flex-direction: column; gap: 20px;}
+.footer-heading h4{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: normal;
+    font-weight: bold;
+    color: #ffff;
+
+}
+.footer-llc p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #DBDBDB;
+    margin: 0;
+    line-height: normal;
+    font-family: 'proxima';
+    font-style: normal;
+}
+.footer-center-email p{
+    font-size: 16px;
+    margin: 0;
+    color: #DBDBDB;
+    margin: 0;
+    line-height: normal;
+    font-style: normal;
+    font-family: 'proxima';
+}
+.footer-center-phone p{
+    font-size: 16px;
+    margin: 0;
+    color: #DBDBDB;
+    margin: 0;
+    line-height: normal;
+    font-style: normal;
+    font-family: 'proxima';
+}
+.footer-bottom a {
+    background: #3A6AFD;
+    display: flex;
+    padding: 0 38px;
+    height: 50px;
+    color: #FFF;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    font-size: 16px;
+    font-family: 'proxima';
+}
+.footer-bottom a:hover {
+    background-color: #fff;
+    color: #00060f;
+    transition: all 0.4s ease-in-out;
+}
+.footer-information p {
+    width: 100%;
+    max-width: 380px;
+    line-height:2em; 
+    font-size:16px;
+    color: #C7C7C7;
+    font-family: 'proxima';
+    margin-bottom: 30px;
+}
+.footer-email-items p {
+    font-size: 16px;
+    color: #DBDBDB;
+    line-height: normal;
+    font-style: normal;
+    font-family: 'proxima';
+    margin-bottom: 10px;
+
+}
+.footer-input { display: flex; gap: 20px;}
+.footer-input input {
+    width: 100%;
+    max-width: 281px;
+    height: 50px;
+    background: #242838;
+    padding: 3px 3px 3px 20px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+.footer-input a {
+    background-color: #fff;
+    color: #00060f;
+    display: flex;
+    padding: 0 30px;
+    height: 50px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    font-size: 16px;
+    font-family: 'proxima';
+}
+.footer-input a:hover {
+    background-color: #00060f;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+.footer-ul-li ul  { padding-left: 6px;}
+.footer-ul-li ul li {
+    color: #C7C7C7;
+    font-size: 16px;
+    font-family: 'proxima';
+    font-style: normal;
+    padding: 5px 0;
+}
+.line {
+    display: block;
+    margin-bottom: 10px;
+}
+/* Footer End */
+/*========== header & footer css end ==========*/
+
+/*========== home page css start ==========*/
+/* Banner start */
+.hig-banner-sect-wapper { width: 100%; background: rgb(16, 19, 21); padding: 233px 0 80px; }
+.hig-banner-sect-top-left { max-width: 880px; width: 100%; display: flex; flex-direction: column; gap: 40px;}
+.hig-banner-sect-top-left h1 {
+    font-size: 68px;
+    line-height: 68px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: #FFF;
+    margin: 0;
+    font-weight: bold;
+}
+.hig-banner-sect-left-center p{
+    font-size: 24px;
+    color: #fff;
+    line-height:1.2em; 
+    margin: 0;
+    font-family: 'proxima';
+}
+.hig-banner-sect-left-btn { display: flex; gap: 10px; padding-bottom: 130px;}
+.hig-banner-login {background-color: #3A6AFD   !important;}
+.hig-banner-sect-left-btn a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    background: #191919;
+    padding: 0px 38px;
+    font-family: 'proxima';
+    border-radius: 25px;
+}
+.hig-banner-sect-left-btn a:hover {
+    background-color: #fff !important;
+    color: #00060f;
+    transition: all 0.4s ease-in-out;
+}
+.hig-banner-sect-bottom {
+    width: 100%;
+    background: #191919;
+    display: flex;
+}
+.hig-banner-sect-bottom-items {max-width: 365px; width: 100%; height: 112px; display: flex; align-items: center; gap: 20px; padding-left: 20px;}
+.hig-banner-sect-bottom-left-border {
+    width: 8px;
+    height: 80px;
+    background: #3A6AFD;
+    border-radius: 10px;
+}
+.hig-banner-sect-bottom-right-text p{
+    font-size: 18px;
+    color: #FFF;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Banner End */
+
+
+/* Web based - No download Start  */
+.hig-web-based-wapper { width: 100%; background: #FFF;}
+.hig-web-based-wapper-top { 
+    background-color: #191919;
+    width: 340px; 
+    height:76px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 1px 4px rgba(0,0,0,.6);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 80px;
+}
+.hig-web-based-wapper-top h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.hig-web-based-wapper-top p {
+ font-size: 18px;
+ color: #FFF;
+ font-family: 'Montserrat', sans-serif;
+ line-height: normal;
+ font-style: normal;
+ margin: 0;
+}
+.hig-web-based-wapper-img { width: 100%;  margin: auto;  display: flex; justify-content: center; position: relative;}
+.hig-web-based-wapper-img>img {
+    width: 100%;
+    max-width: 999px;
+    height: 619px;  
+}
+.hig-web-based-wapper-mobile-img>img {
+    position: absolute;
+    width: 306px;
+    height: 440px;
+    bottom: -51px;
+    right: 244px;
+}
+.hig-web-based-wapper-img-mobile {display: none;}
+
+/* mobile  img start */
+.hig-web-based-wapper-img-mobile img {
+    width: 280px;
+    height: 173px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+/* mobile img enf */
+
+/* Slider Start */
+.hig-web-based-wapper-slider { margin-top: 60px; background: rgb(245, 245, 245); }
+.hig-web-based-wapper-slider-items { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 403px;
+}
+.hig-web-based-wapper-slider-items h3 { 
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+    line-height: normal;
+    font-family: 'avenir-lt';
+    font-style: normal;
+}
+.hig-web-based-wapper-slider-items span { width: 35px; height: 1px; background: #000;}
+.hig-web-based-wapper-slider-items h2 {
+    max-width: 675px;
+    width: 100%;
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}  
+.owl-web-based .owl-next,
+.owl-prev {
+    position: absolute;
+    top: 0;
+    width: 36px;
+    bottom: 0;
+}
+.owl-web-based .owl-next { left: 60px;}
+.owl-web-based .owl-prev { right: 60px;}
+.owl-web-based .owl-next i,
+.owl-prev i {
+    font-size: 25px;
+    line-height: 24px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.owl-web-based .owl-nav [class*='owl-']:hover {
+    background: unset !important;
+    color: #FFF;
+    text-decoration: none;
+}
+.owl-web-based .owl-dots { position: relative ; bottom: 30px;     text-align: center;}
+.owl-web-based .owl-dots .owl-dot span {
+    width: 8px;
+    height: 8px;
+    margin: 6px 8px;
+    background: #000;
+    display: block;
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+    position: relative;
+}
+.owl-web-based .owl-dots .owl-dot.active span { width: 10px; height: 10px; background: unset; border: 2px solid black;}
+.owl-web-based .owl-dots .owl-dot:hover span { background:#000;}
+/* Slider End */
+
+/* Web based - No download End */
+
+
+/* Super fast GPT Frontend Start */
+.hig-super-fast-gpt { background: #101315;}
+.hig-super-fast-gpt-top { 
+    background-color: #191919;
+    width: 340px; 
+    height:76px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 1px 4px rgba(0,0,0,.6);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 80px;
+}
+.hig-super-fast-gpt-top h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.hig-super-fast-gpt-top p {
+ font-size: 18px;
+ color: #FFF;
+ font-family: 'Montserrat', sans-serif;
+ line-height: normal;
+ font-style: normal;
+ margin: 0;
+}
+
+.hig-super-fast-gpt-video { display: flex; justify-content: center; padding-bottom: 60px;}
+.hig-super-fast-gpt-video video{ max-width: 978px; width: 100%;}
+.hig-super-fast-gpt-btn { padding-bottom: 60px;}
+.hig-super-fast-gpt-btn a {
+    background: #3A6AFD;
+    display: flex;
+    padding: 0 48px;
+    height: 50px;
+    color: #FFF;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'proxima';
+}
+/* Super fast GPT Frontend End */
+
+
+/* Why IRON-GPT Start */
+.hig-iron-gpt { position: relative; width: 100%;}
+.hig-iron-gpt video {
+    width: 100%;
+    height: 995px;
+    max-width: 100%;
+    object-fit: cover;
+
+}
+.hig-iron-gpt::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.85);
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.hig-iron-gpt-wapper { position: absolute; top: 0;}
+.hig-iron-gpt-top { 
+    background-color: #fff;
+    width: 340px; 
+    height:54px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 1px 4px rgba(0,0,0,.6);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 80px;
+}
+.hig-iron-gpt-top  h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.hig-iron-gpt-main { display: flex; gap: 80px; width: 700px; flex-wrap: wrap;}
+.hig-iron-gpt-main-items { max-width: 300px; width: 100%; }
+.hig-iron-gpt-items-icon-text {
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.hig-iron-gpt-items-icon-text svg {
+    width: 55px;
+    height: 55px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.hig-iron-gpt-items-icon-text h3 {
+    color: #ffff;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+} 
+.hig-iron-gpt-items-text { padding-bottom: 65px;}
+.hig-iron-gpt-items-text h3 {
+    color: #ffff;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+.hig-iron-gpt-items-ul-li>ul>li {
+    font-size: 18px;
+    font-family: 'proxima';
+    color: #FFF;
+    font-weight: normal;
+    font-style: normal;
+    padding: 1px 0;
+}
+/* Why IRON-GPT End */
+
+
+/* Who uses IRON-GPT Start */
+.hig-who-uses-iron-gpt-top { 
+    background-color: #191919;
+    width: 340px; 
+    height:54px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 1px 4px rgba(0,0,0,.6);
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 80px;
+}
+.hig-who-uses-iron-gpt-top h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.hig-who-uses-iron-gpt-items-img img{
+    width: 100%;
+    height: 350px;
+}
+.hig-who-uses-iron-gpt-items-img img {
+    background-color: #101315;
+}
+.hig-who-uses-iron-gpt-items-text h2 {
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    padding: 25px 0px;
+    direction: ltr;
+    visibility: inherit;
+    color: rgb(0, 6, 15) !important;
+}
+.hig-who-uses-iron-gpt-btn { padding: 50px 0;}
+.hig-who-uses-iron-gpt-btn a {
+    background: #3A6AFD;
+    display: flex;
+    padding: 0 48px;
+    height: 50px;
+    color: #FFF;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'proxima';
+}
+/* hover Effect start*/
+.hig-who-uses-iron-gpt-items-img { position: relative; overflow: hidden;}
+.hig-who-uses-iron-gpt-items-img::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%);
+    transition: top 0.3s ease;
+}
+.hig-who-uses-iron-gpt-items:hover .hig-who-uses-iron-gpt-items-img::before {  top: 30%;}
+/* hover End */
+/* Who uses IRON-GPT End */
+
+/* Testimonials Start */
+.hig-testimonial-wapper { background: #191919; padding-bottom: 80px; }
+.hig-testimonial-top { 
+    background-color: #fff;
+    width: 340px; 
+    height:54px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 80px;
+}
+.hig-testimonial-top h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 20px;
+
+}
+.hig-testimonial-bottom {
+    width: 100%;
+    background: #191919;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.hig-testimonial-items-main {display: flex; flex-direction: column; gap: 60px;}
+.hig-testimonial-items {
+    max-width: 365px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+    align-items: start;
+}
+.hig-testimonial-left-border {
+    width: 8px;
+    height: 150px;
+    background: #3A6AFD;
+    border-radius: 10px;
+}
+.hig-testimonial-right-text p {
+    max-width: 255px;
+    width: 100%;
+    font-size: 16px;
+    color: #FFF;
+    margin: 0;
+    font-family: 'proxima';
+}
+.hig-testimonial-items-bottom {
+    max-width: 365px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+.hig-testimonial-items-bottom-img img {
+    width: 67px;
+    height: 67px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hig-testimonial-items-bottom-text h4 {
+    line-height: normal;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.hig-testimonial-items-bottom-text p {
+    color: #C7C7C7;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 25px;
+}
+/* Testimonials End */
+
+
+/* Most Important Features Start */
+.hig-most-important-features { background: #fff; padding-top: 80px;}
+.hig-most-important-features-heading h2 {   font-size: 40px;
+    color: #000;
+    line-height: normal;
+    font-family: 'Wix Madefor Display', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+.owl-most-important-features { padding-bottom: 90px;}
+.hig-most-important-features-img img{  width: 100%; height:275px;}
+.hig-most-important-features-text h2 {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+}
+/* hover Effect start*/
+.hig-most-important-features-img { position: relative; overflow: hidden;}
+.hig-most-important-features-img::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(250, 230, 242, 0.2)40%, rgba(255, 255, 255, 0) 100%);
+    transition: top 0.3s ease;
+}
+.hig-most-important-features-items:hover .hig-most-important-features-img::before {  top: 0%;}
+.owl-most-important-features .owl-next,
+.owl-prev {
+    position: absolute;
+    top: 0;
+    width: 36px;
+    bottom: 0;
+}
+.owl-most-important-features .owl-next { left: -65px;}
+.owl-most-important-features .owl-prev { right: -50px;}
+.owl-most-important-features .owl-next i,
+.owl-prev i {
+    font-size: 35px;
+    line-height: 24px;
+    margin-top: -12px;
+    position: absolute;
+    top: 35%;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    filter: drop-shadow(0px 1px 0.15px #B2B2B2);
+}
+.owl-most-important-features .owl-nav [class*='owl-']:hover {
+    background: unset !important;
+    color: #FFF;
+    text-decoration: none;
+}
+/* Most Important Features End */
+
+
+/* Technology Partners Start  */
+.hig-technology-partners-top {
+    background-color: #fff;
+    width: 340px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 0px 10px 10px;
+}
+.hig-technology-partners-top h3 {
+    font-size: 18px;
+    background: #ffff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.hig-technology-partners-logo { background: #000;}
+.hig-technology-partners-logo-main { display: flex; }
+.hig-technology-partners-logo-items { 
+    border-left: 1px solid #353535; 
+    max-width: 290px; 
+    width: 100%;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hig-border-right {
+    width: 100%;
+    border-right: 1px solid #353535;
+    max-width: 291px;
+}
+.change-color-image{
+    filter: brightness(0) invert(1);
+}
+/* Technology Partners End  */
+
+/* Comparison Chart Start */
+.hig-comparison-chart-main { width: 100%; display: flex; justify-content: center; padding: 100px 0;}
+.hig-comparison-chart-main iframe{ width: 100%; border: 0 !important; max-width: 964px;  height: 723px;}
+.hig-comparison-chart-main iframe a {display: none;}
+/* Comparison Chart End */
+
+/* FAQ Start */
+.hig-faq-wapper { background: #212121   ; padding: 100px 0;}
+.hig-faq-heading h2 {
+    font-size: 40px;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    font-style: normal;
+    padding-bottom: 30px;
+
+}
+.hig-faq-menu ul {display: flex; gap: 40px;     padding: 0;}
+.hig-faq-menu ul li { list-style-type: none; display: inline-block; }
+.hig-faq-menu ul li a {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'proxima';
+    font-style: normal;
+    color: #fff;
+}
+.hig-faq-active-a { 
+    font-weight: 700 !important;
+    color: #3A6AFD  !important;
+}
+.hig-faq-tab { display: none; }
+.hig-faq-tab-active { display: block; }
+.hig-faq-card { background: transparent !important; width: 100%; max-width: 790px; border-bottom: 1px solid  #fff !important; }
+.hig-card-title  strong{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    color: #fff;
+    padding-right: 10px;
+}
+.hig-card-bottom { padding-top: 30px;} 
+.hig-card-bottom h5{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'proxima';
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+.hig-card-bottom p {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'proxima';
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+.hig-card-bottom-icon {display: flex; gap: 10px; padding: 16px 0 36px 0;}
+.hig-card-bottom-icon i {color: #fff;}
+.hig-card-bottom h6 {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'proxima';
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+    padding: 16px 0;
+}
+.accordion-faq .hig-card-header:after {
+    content: "";
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-135deg);
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
+}
+.accordion-faq .hig-card-header.collapsed:after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.owl-web-based .owl-next i,.owl-web-based .owl-prev i {
+    font-size: 25px;
+    line-height: 24px;
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/* FAQ Endd */
+/*========== home page css end ==========*/
+
+
+/*========== about page css start ==========*/
+/* Who We Are section start */
+.aig-about-who-are-section{
+    background: #000;
+    overflow: hidden;
+}
+.aig-about-who-are-section h2{
+    margin: 0;
+    padding: 70px 0;
+    font-family: var(--font_2);
+    font-weight: normal;
+    font-size: 40px;
+    line-height: normal;
+    color: rgb(255,255,255);
+}
+/* Who We Are section end */
+
+/* We are Deutsche section satrt */
+.aig-about-we-deutsche-section{
+    background: #000;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+.aig-about-we-deutsche-section .container{
+    background: rgb(36,40,52);
+}
+.aig-about-we-deutsche-section .aig-about-we-text-wapper{
+    max-width: 490px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+.aig-about-we-deutsche-section .aig-about-we-text-wapper h6{
+    font-family: var(--font_2);
+    line-height: 1.4em;
+    font-size: 26px;
+    font-weight: normal;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding-bottom: 20px;
+}
+.aig-about-we-deutsche-section .aig-about-we-text-wapper p{
+    font-family: var(--font_1);
+    color: rgb(255,255,255);
+    line-height: 1.6em;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 20px;
+
+}
+.aig-about-we-deutsche-section .aig-about-we-img-wapper{
+    max-width: 526px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+.aig-about-we-deutsche-section .aig-about-we-img-wapper img{
+    width: 100%;
+}
+/* We are Deutsche section end */
+
+/* our mission & Core Values section start */
+.aig-about-mission-core-section-wapper{
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../img/bg-img.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.aig-about-mission-core-section-wapper .aig-about-mission-title-both{
+    border-radius: 0 0 10px 10px;
+    background: rgb(255,255,255);
+    padding: 16px 16px;
+    max-width: 340px;
+    width: 100%;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    font-family: var(--font_2);
+    display: inline-block;
+}
+.aig-about-mission-core-section-wapper .aig-about-mission-text-inner-wapper{
+    padding: 200px 0;
+    max-width: 745px;
+    width: 100%;
+}
+.aig-about-mission-core-section-wapper .aig-about-mission-text-inner-wapper h2{
+    line-height: 1.4em;
+    font-size: 40px;
+    font-family: var(--font_2);
+    color: rgb(255,255,255);
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.aig-about-mission-core-section-wapper .aig-about-mission-text-inner-wapper p{
+    font-family: var(--font_1);
+    line-height: 1.6em;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+}
+.aig-about-core-values-wapper .aig-about-core-title-both{
+    border-radius: 10px 10px 0 0;
+    background: rgb(255,255,255);
+    padding: 16px 16px;
+    max-width: 340px;
+    width: 100%;
+    line-height: normal;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: var(--font_2);
+    display: inline-block;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper{
+    display: flex;
+    width: 100%;
+    gap: 1px;
+    background: #000;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper{
+    width: 33.33%;
+    position: relative;
+    padding: 50px 40px;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background: rgb(24,28,34);
+    top: 0;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper:last-child:after{
+    content: '';
+    width: 0;
+    height: 0;
+    display: none;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-title{
+    position: relative;
+    padding-left: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-title::before{
+    content: '';
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgb(58,106,253);
+    border-radius: 5px;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-title h4{
+    line-height: normal;
+    font-size: 26px;
+    font-family: var(--font_2);
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-inner{
+    padding-top: 40px;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-inner ul {
+    margin: 0 0 0 1.2em;
+    padding: 0 0 0 1.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-inner ul li{
+    line-height: 1.6em;
+    font-family: var(--font_1);
+    font-size: 16px;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+}
+.aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper .aig-about-core-innovation-inner p{
+    line-height: 1.6em;
+    font-size: 16px;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+    max-width: 265px;
+    padding-left: 30px;
+    font-family: var(--font_1);
+}
+/* our mission & Core Values section end */
+/*========== about page css end ==========*/
+
+/* IRON GPT multimodal section start */
+/* what is IRON GPT B1 section start */
+.aig-iron-b1-section{
+    padding: 100px 0 50px 0;
+    background: #00060F;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner{
+    max-width: 850px;
+    width: 100%;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner h2{
+    font-family: var(--font_1);
+    font-size: 40px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 34px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner p {
+    font-family: var(--font_1);
+    font-size: 20px;
+    color: rgb(255,255,255);
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper h5{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    justify-content: space-between;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner ul li{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;  
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner ul li.animation{
+    opacity: 1;
+    animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn{
+    display: flex;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn a{
+    max-width: 217px;
+    min-width: 217px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+    border-radius: 30px;
+    font-family: var(--font_1);
+    font-size: 16px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn a:hover{
+    background: #FFF;
+    color: #000;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img{
+    padding-top: 100px;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img img{
+    width: 100%;
+    height: auto;
+}
+/* what is IRON GPT B1 section end */
+
+.aig-iron-gpt-multimodal-section{
+    padding: 100px 0;
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-height: 526px;
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper video{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper .aig-iron-gpt-multimodal-play-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.4);
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper .aig-iron-gpt-multimodal-play-btn svg{
+    width: 50px;
+    height: 50px;
+}
+/* IRON GPT multimodal section end */
+/*  Output Performance Comparison section start */
+.aig-output-performance-section{
+    padding: 100px 0;
+    background: #00060F;
+}
+.aig-output-performance-section .aig-output-performance-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper h2{
+    font-family: var(--font_1);
+    font-size: 36px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 22px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper p{
+    font-family: var(--font_1);
+    font-size: 20px;
+    color: rgb(255,255,255);
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-row{
+    display: flex;
+    gap: 20px;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-row .aig-output-performance-generalistic-answer-wapper {
+    width: 50%;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-generalistic-answer-wapper h6{
+    font-family: var(--font_2);
+    font-size: 14px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-generalistic-answer-wapper span{
+  font-weight: normal;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper{
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+    padding: 30px 25px;
+    height: 100%;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper h3{
+    font-family: var(--font_1);
+    font-size: 32px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .prompt-p p{
+    font-family: var(--font_1);
+    font-size: 16px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .prompt-p p span{
+    color: #FF0000;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .answer-chat-gpt-inner p{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper h4{
+    font-family: var(--font_1);
+    font-size: 26px;
+    color: rgb(255,255,255);
+    line-height: 36px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner h5{
+    font-family: var(--font_1);
+    font-size: 22px;
+    color: rgb(255,255,255);
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner p{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner ul li{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner ul{
+    margin: 0;
+    padding-left: 32px;
+}
+/*  Output Performance Comparison section end */
+/* side by side section start */
+.aig-side-by-side-section{
+    background: rgb(63, 63, 63);
+    padding: 7px 0 63px 0;
+}
+.aig-side-by-side-section .aig-side-by-side-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+.aig-side-by-side-section .aig-side-by-side-wapper iframe{
+    width: 100%;
+    height: 2726px;
+}
+/* side by side section end */
+
+
+/* ========== Iron GPT B1 page css start ========== */
+/* what is IRON GPT B1 section start */
+.aig-iron-b1-section { padding: 100px 0 50px 0; background: #00060F; }
+.aig-iron-b1-section .aig-iron-b1-title-wapper { max-width: 936px; width: 100%; margin: 0 auto; }
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner { max-width: 850px; width: 100%; }
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner h2 {
+    font-family: var(--font_1);
+    font-size: 40px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 34px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner p {
+    font-family: var(--font_1);
+    font-size: 20px;
+    color: rgb(255,255,255);
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper h5 {
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner {
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    justify-content: space-between;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner ul li {
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn { display: flex; }
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn a {
+    max-width: 217px;
+    min-width: 217px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+    border-radius: 30px;
+    font-family: var(--font_1);
+    font-size: 16px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner .user-guide-GPT-btn a:hover{
+    background: #FFF;
+    color: #000;
+}
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img { padding-top: 100px; }
+.aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img img{
+    width: 100%;
+    height: auto;
+}
+/* what is IRON GPT B1 section end */
+
+/* IRON GPT multimodal section start */
+.aig-iron-gpt-multimodal-section { padding: 100px 0; }
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    max-height: 526px;
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper video{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper .aig-iron-gpt-multimodal-play-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.4);
+}
+.aig-iron-gpt-multimodal-section .aig-iron-gpt-multimodal-wapper .aig-iron-gpt-multimodal-play-btn svg{
+    width: 50px;
+    height: 50px;
+}
+/* IRON GPT multimodal section end */
+/*  Output Performance Comparison section start */
+.aig-output-performance-section { padding: 100px 0; background: #00060F; }
+.aig-output-performance-section .aig-output-performance-wapper { max-width: 936px; width: 100%; margin: 0 auto; }
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper h2 {
+    font-family: var(--font_1);
+    font-size: 36px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 22px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper p {
+    font-family: var(--font_1);
+    font-size: 20px;
+    color: rgb(255,255,255);
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 50px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-row { display: flex; gap: 20px; }
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-row .aig-output-performance-generalistic-answer-wapper {
+    width: 50%;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-generalistic-answer-wapper h6{
+    font-family: var(--font_2);
+    font-size: 14px;
+    color: rgb(255,255,255);
+    font-weight: bold;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-generalistic-answer-wapper span{
+  font-weight: normal;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper{
+    border: 1px solid rgb(255,255,255);
+    border-radius: 10px;
+    padding: 30px 25px;
+    height: 100%;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper h3{
+    font-family: var(--font_1);
+    font-size: 32px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .prompt-p p{
+    font-family: var(--font_1);
+    font-size: 16px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .prompt-p p span{
+    color: #FF0000;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .answer-chat-gpt-inner p{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper h4{
+    font-family: var(--font_1);
+    font-size: 26px;
+    color: rgb(255,255,255);
+    line-height: 36px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner h5{
+    font-family: var(--font_1);
+    font-size: 22px;
+    color: rgb(255,255,255);
+    line-height: 30px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner p{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner ul li{
+    font-family: var(--font_1);
+    font-size: 18px;
+    color: rgb(255,255,255);
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper .report-on-the-israel-hamas-inner ul{
+    margin: 0;
+    padding-left: 32px;
+}
+/*  Output Performance Comparison section end */
+/* side by side section start */
+.aig-side-by-side-section{
+    background: rgb(63, 63, 63);
+    padding: 7px 0 63px 0;
+}
+.aig-side-by-side-section .aig-side-by-side-wapper{
+    max-width: 936px;
+    width: 100%;
+    margin: 0 auto;
+}
+.aig-side-by-side-section .aig-side-by-side-wapper iframe{
+    width: 100%;
+    height: 2726px;
+}
+/* side by side section end */
+/* ========== Iron GPT B1 page css end ========== */
+
+/* ========== contact us page css start ========== */
+/* contact us section start */
+.aig-contact-us-section { background: url(../img/contact-bg.webp) no-repeat; background-size: cover; }
+.aig-contact-us-section .aig-contact-us-wapper { max-width: 778px; width: 100%; padding-top: 70px; }
+.aig-contact-us-section .aig-contact-us-wapper .aig-contact-us-text-wapper h2 {
+    font-family: var(--font_2);
+    line-height: normal;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+.aig-contact-us-section .aig-contact-us-wapper .aig-contact-us-text-wapper p {
+    font-family: var(--font_1);
+    line-height: 1.6em;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    margin: 0;
+    padding: 0 0 43px 0;
+}
+.aig-contact-us-section .aig-contact-us-wapper form {
+    background: rgb(255,255,255);
+    border-radius: 10px 10px 0 0;
+    padding: 46px 36px 44px 36px;
+}
+.aig-contact-us-section .aig-contact-us-wapper form input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+}
+.aig-contact-us-section .aig-contact-us-wapper form input:focus {
+    border-bottom: 2px solid #000;
+}
+.aig-contact-us-section .aig-contact-us-wapper form .form-group {
+    margin-bottom: 50px;
+}
+.aig-contact-us-section .aig-contact-us-wapper form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    resize: none;
+}
+.aig-contact-us-section .aig-contact-us-wapper form textarea:focus {
+    border-bottom: 2px solid #000;
+}
+.aig-contact-us-section .aig-contact-us-wapper form label {
+    font-family: var(--font_1);
+    font-size: 16px;
+    line-height: 1.4em;
+    color: #000;
+}
+.aig-contact-us-section .aig-contact-us-wapper form .aig-contact-submit-btn {
+    display: flex;
+}
+.aig-contact-us-section .aig-contact-us-wapper form .aig-contact-submit-btn a {
+    width: 135px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    font-family: var(--font_1);
+    font-size: 16px;
+    line-height: 1.4em;
+    color: rgb(255,255,255);
+    border-radius:30px;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+.aig-contact-us-section .aig-contact-us-wapper form .aig-contact-submit-btn a:hover {
+    background: #3A6AFD;
+}
+/* contact us section end */
+/* ========== contact us page css end ========== */
+
+
+
+@media(min-width:1200px){
+    .container {
+       max-width: 1920px;
+       width: 95%;
+       margin: auto;
+   }
+}
+
+@media(max-width:1199px){
+    /*========== header footer css start ==========*/
+    /*mobile header start*/
+    .subscribe-wapper {display: none;}
+    .h-header-card {     display: flex; flex-direction: column; position: relative ; top: 50px;}
+    .h-main-menu ul { background: transparent;}
+    .h-home-wapper {  display: flex; align-items: center;   background: #2c2c2c; }
+    .h-header-logo a img {  width:100%; height:auto; object-fit:contain; }
+    .h-toggle-btn { display: block; }
+    .h-toggle-btn {
+        margin-right: 0;
+        width: 20px;
+        z-index: 11111;
+        height: 20px;
+        position: absolute;
+        -webkit-transition: .5s ease-in;
+        -o-transition: .5s ease-in;
+        transition: .5s ease-in;
+        cursor: pointer;
+        right: 25px;
+        top: 35px;
+    }
+    .h-toggle-btn .line-card {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+    .h-toggle-btn .line-card:first-child { margin:0; }
+    .h-toggle-btn .line-card:last-child { margin:0; }
+    #h-toggle-btn.open .one { transform: rotate(45deg) translate(1px, 6px); }
+    #h-toggle-btn.open .two { opacity: 0; }
+    #h-toggle-btn.open .three { transform: rotate(-45deg) translate(3px, -8px); }
+    #h-sidebar-wrapper {
+        z-index: 1000;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 0;
+        margin-left: 0;
+        background: #242834;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        visibility: hidden;
+        opacity: 0;
+        top: 0px;
+        padding: 24px 16px 32px;
+        display: flex;
+        justify-content: center;
+    }
+    #h-sidebar-wrapper.h-menu-active {    width: 100%; opacity: 1; visibility: visible; height: 100%;}
+    #h-sidebar-wrapper ul { 
+        margin: 0; 
+        padding: 0 !important; 
+        flex-direction:column; 
+        display: flex;
+        gap: 20px;
+    }
+    #h-sidebar-wrapper ul li { 
+        list-style-type: none; 
+        display:block; 
+        width: 100%; 
+    }
+    #h-sidebar-wrapper ul li a { 
+        color: #fff;
+        display: block; 
+        position:relative; 
+        font-size: 26px;
+    }
+    .m-overlay-bg {  
+        display: none; 
+        position: fixed; 
+        width: 100%; 
+        height: 100%; 
+        background: rgba(86, 86, 86, 0.4); 
+        z-index: 1000; 
+        transition: all 0.5s ease-in-out; 
+    }
+    .m-overlay-bg.h-bg-active { display: block; width: 100%; left: auto; top: 0; cursor: pointer; }
+    .open-nav { overflow: hidden; }
+    /* mobile header end */
+    /*========== header footer css end ==========*/
+
+
+    /*========== home page css start ==========*/
+    /* Web based - No download Start */
+    .hig-web-based-wapper-mobile-img>img { bottom: -51px; right: 4px;}
+    /* Web based - No download End */
+    .owl-most-important-features .owl-next { left: -15px;}
+    .owl-most-important-features .owl-prev { right: 4px;}
+    /* Technology Partners Start */
+    .hig-technology-partners-logo-main { display: flex; flex-wrap: wrap;}
+    .hig-technology-partners-logo-items {
+        border-bottom: 1px solid #353535;
+        border-left: 1px solid #353535;
+    }
+    /* Technology Partners End  */
+    /*========== home page css end ==========*/
+
+
+    /* ========== Iron GPT B1 page css start ========== */
+    /* Output Performance Comparison section start */
+    .aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper h2 {
+        font-size: 35px;
+    }
+    .aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-generalistic-answer-wapper h6 {
+        font-size: 13px;
+    }
+    /* Output Performance Comparison section end */
+    /* ========== Iron GPT B1 page css end ========== */
+}
+
+@media(max-width:991px){
+    /*========== home page css start ==========*/
+    .mb-30 { margin-bottom: 40px;}
+    /* Banner start */
+    .hig-banner-sect-wapper {padding: 130px 0 80px; }
+    .hig-banner-sect-top-left h1 { font-size: 51px; line-height: 60px;  }
+    .hig-banner-sect-left-center p { font-size: 20px; line-height: 27px; }
+    .hig-banner-sect-bottom { flex-wrap: wrap; gap: 10px; }
+    .hig-banner-sect-left-btn { padding-bottom: 80px;} 
+    /* Banner End */
+
+    /* Web based - No download Start */
+    .hig-web-based-wapper-img>img { width: 100%; max-width: 100%;   height: 519px;}
+    .hig-web-based-wapper-mobile-img>img { height: 340px;}
+    /* Web based - No download End */
+
+    /*  Testimonials Start */
+    .hig-testimonial-items-bottom { max-width: 300px;}
+    .hig-testimonial-items { max-width: 300px;}
+    /*  Testimonials End */
+
+    /*  Technology Partners Start  */
+    .hig-border-right { max-width: 50%;}
+    .hig-technology-partners-logo-items { max-width: 50%; }
+    /*  Technology Partners End  */
+
+    /* Comparison Chart Start */
+    .hig-comparison-chart-main iframe {
+        width: 100%;
+        border: 0 !important;
+        max-width: 964px;
+        height: 535px;
+    }
+    /* Comparison Chart End */
+    /*========== home page css end ==========*/
+
+    /*========== about page css start ==========*/
+    /* Who We Are section start  */
+    .aig-about-who-are-section {
+        background: #000;
+        overflow: hidden;
+    }
+    .aig-about-who-are-section h2 { padding: 40px 0; font-size: 30px; }
+    /* Who We Are section end  */
+    /* We are Deutsche section satrt */
+    .aig-about-we-deutsche-section .row { flex-direction: column-reverse; }
+    .aig-about-we-deutsche-section .aig-about-we-text-wapper { padding: 0 0; }
+    .aig-about-we-deutsche-section .aig-about-we-img-wapper { padding: 45px 0; }
+    /* We are Deutsche section end */
+    /* our mission & Core Values section start */
+    .aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper { width: 100%; }
+    .aig-about-core-values-wapper .aig-about-core-row-wapper { flex-direction: column; }
+    .aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper::after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        right: auto;
+        top: auto;
+        left: 0;
+    }
+    /* our mission & Core Values section end */
+    /*========== about page css end ==========*/
+
+    /* ========== Iron GPT B1 page css start ========== */
+    /* what is IRON GPT B1 section start */
+    .aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img {
+        padding-top: 60px;
+    }
+    .aig-output-performance-section .aig-output-performance-wapper .aig-output-row {
+        flex-direction: column;
+    }
+    .aig-output-performance-section .aig-output-performance-wapper .aig-output-row .aig-output-performance-generalistic-answer-wapper {
+        width: 100%;
+    }
+    /* what is IRON GPT B1 section end */
+    /* ========== Iron GPT B1 page css end ========== */
+
+}
+@media(max-width:767px){
+    /*========== header footer css start ==========*/
+    .m-mobile-card { display:block; } 
+    .m-search-wapper { margin-top:16px; position:relative; }
+    .m-search-wapper input{
+        position: relative;
+        width: 100%;
+        height: 44px;
+        padding: 10px 16px 10px 42px;
+        color: rgba(24, 23, 22, 0.50);
+        font-family: var(--golos-text);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 4px;
+        border: 1px solid #E6E6E6;
+    }
+    .m-search-wapper span { position: absolute; top: 10px; left: 16px; }
+    .h-header-card { display:flex; flex-direction:column; gap:32px;  }
+    /*========== header footer css end ==========*/
+
+
+    /*========== home page css start ==========*/
+    /* Banner start */
+    .hig-banner-sect-wapper { padding: 100px 0 60px;}
+    .hig-banner-sect-top-left { gap: 20px;}
+    .hig-banner-sect-left-btn {
+        padding-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .hig-banner-sect-top-left h1 { font-size: 31px; line-height: 38px;}
+    .hig-banner-sect-left-center p { font-size: 16px; line-height: 25px;}
+    /* Banner End */
+
+    /* Web based - No download Start */
+    .hig-web-based-wapper-top { margin-bottom: 17px;}
+    .hig-web-based-wapper-img>img { display: none;}
+    .hig-web-based-wapper-mobile-img>img  { position: unset; width: 210px; height: 315px; object-fit: cover; object-position: 50% 50%;}
+    .owl-web-based .owl-nav {display: none;}
+    .hig-web-based-wapper-slider-items { height: 309px;}
+    .hig-web-based-wapper-img-mobile {display: block;}  
+    .hig-web-based-wapper-img-mobile {  display: flex !important; justify-content: center;  margin: 20px 0;}
+    /* Web based - No download End */
+
+    /* Super fast GPT Frontend Start */
+    .hig-super-fast-gpt-top { margin-bottom: 60px;} 
+    .hig-super-fast-gpt-video { padding-bottom: 30px;}
+    .hig-super-fast-gpt-btn { padding-bottom: 30px;}
+    /* Super fast GPT Frontend EnD */
+
+    /* Why IRON-GPT Start */
+    .hig-iron-gpt-main { gap: 30px; width: 100%;}
+    .hig-iron-gpt-items-icon-text {
+        padding-bottom: 15px;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .hig-iron-gpt-main-items {max-width: 100%;}
+    /* Why IRON-GPT End */
+
+    /* Who uses IRON-GPT Start */
+    .hig-who-uses-iron-gpt {display: none;}
+    /* Who uses IRON-GPT End */
+
+    /*  Testimonials Start */
+    .hig-testimonial-items { max-width: 100%;}
+    .hig-testimonial-items-bottom { max-width: 100%;}
+    .hig-testimonial-left-border { height: 100%;}
+    .hig-testimonial-right-text p { max-width: 290px;}
+    .hig-testimonial-wapper { padding-bottom: 30px;}
+    /*  Testimonials End */
+
+    /* Most Important Features Start */
+    .owl-most-important-features .owl-next { left: -10px;}
+    .owl-most-important-features .owl-prev { right: 15px;  }
+    .hig-most-important-features-heading h2 { font-size: 30px; margin-bottom: 50px;}
+    .owl-most-important-features { padding-bottom: 50px;}
+    /* Most Important Features End */
+
+    /* Technology Partners Start */
+    .hig-technology-partners-logo-items {
+        border-bottom: 1px solid #353535;
+        max-width: 100%;
+        border-left: unset;
+    }
+    .hig-border-right { border-right: unset;}
+    /* Technology Partners End */
+
+    /* Comparison Chart Start */
+    .hig-comparison-chart-main iframe {  max-width: 100%; height: 284px;}
+    /* Comparison Chart End */
+    /*========== home page css end ==========*/
+
+    /*========== about page css start ==========*/
+    /* We are Deutsche section satrt */
+    .aig-about-we-deutsche-section { padding-bottom: 45px; }
+    /* We are Deutsche section end */
+    /*  our mission & Core Values section start  */
+    .aig-about-mission-core-section-wapper .aig-about-mission-text-inner-wapper { padding: 80px 0; }
+    .aig-about-mission-core-section-wapper .aig-about-mission-text-inner-wapper h2 { font-size: 30px; }
+    .aig-about-core-values-wapper .aig-about-core-row-wapper .aig-about-core-innovation-card-wapper { padding: 30px 20px; }
+    /*  our mission & Core Values section end  */
+    /*========== about page css end ==========*/
+
+    /* ========== Iron GPT B1 page css start ========== */
+    /* what is IRON GPT B1 section start */
+    .aig-iron-b1-section {
+        padding:50px 0;
+    }
+    .aig-iron-b1-section .aig-iron-b1-title-wapper .aig-iron-b1-title-inner h2 {
+        font-size: 32px;
+        padding: 0 0 24px 0;
+    }
+    .aig-iron-b1-section .aig-iron-b1-title-wapper .aig-advantages-IRON-inner {
+        align-items: start;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .aig-iron-b1-section .aig-iron-b1-title-wapper .aig-multimodal-al-img {
+        padding-top: 30px;
+    }
+    /* what is IRON GPT B1 section end */
+    /* IRON GPT multimodal section start */
+    .aig-iron-gpt-multimodal-section {
+        padding: 40px 0;
+    }
+    /* IRON GPT multimodal section end */
+    /* Output Performance Comparison section start */
+    .aig-output-performance-section { padding: 40px 0; }
+    .aig-output-performance-section .aig-output-performance-wapper .aig-output-performance-title-wapper h2 { font-size: 32px; }
+    .aig-output-performance-generalistic-answer-wapper .aig-generalistic-answer-chat-gpt-wapper { padding: 26px 16px; }
+    /* Output Performance Comparison section end */
+    /* side by side section start */
+    .aig-side-by-side-section .aig-side-by-side-wapper iframe { width: 100%; height: 350px; }
+    /* side by side section end */
+    /* ========== Iron GPT B1 page css end ========== */
+
+    /* ========== contact us page css start ========== */
+    /* contact us section start */
+    .aig-contact-us-section .aig-contact-us-wapper form { padding: 20px 20px 20px 20px; }
+    .aig-contact-us-section .aig-contact-us-wapper form .form-group { margin-bottom: 20px; }
+    .aig-contact-us-section .aig-contact-us-wapper form input { height: 30px; }
+    .aig-contact-us-section .aig-contact-us-wapper form .aig-contact-submit-btn a { width: 100%; }
+    /* contact us section end */
+    /* ========== contact us page css end ========== */
+
+}
+
+@media(min-width:1300px){
+    .w-1300{ 
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: calc(100% - 30px - 30px) !important;
+        min-width: 980px;
+    }
+    .container-h{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        width: calc(100% - 100px - 100px);
+        min-width: 980px;
+    }
+}
+
+
+@media(max-width:767px){ 
+    .header-wrapper .nav-dropdown-wrapper { top: 124px !important;}
+}

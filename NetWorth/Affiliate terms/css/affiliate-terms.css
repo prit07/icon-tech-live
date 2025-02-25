@@ -1,0 +1,334 @@
+body { margin: 0; padding: 0; }
+:root { 
+    --golos-text: 'Golos Text', sans-serif; 
+    --onest-text:'Onest', sans-serif ;  
+    --dm-sans-text:'DM Sans', sans-serif;
+}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+ul {list-style: none !important; margin: 0; padding: 0 !important; }
+
+
+/*  Affiliate Terms Start */
+
+/* breadcrumbs css start */
+.at-best-article-top ul{ display: flex; gap: 5px; }
+.at-best-article-top { margin-bottom: 24px;}
+.at-best-article-top>ul>li>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.at-best-article-top>ul>li>a>span {
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Golos Text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* breadcrumbs css end */
+
+.affiliate-terms { padding: 64px 0 110px 0;}
+.at-ba-row { display:flex; flex-direction:row; justify-content:space-between; gap:20px; }
+.at-left-col { max-width: 845px; width: 100%; display: flex; flex-direction: column; gap: 40px; }
+.at-right-col { max-width:302px; width:100%; }
+
+
+/* Affiliate terms  Heading Start */
+.affiliate-terms-heading h1 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px; 
+    margin: 0;
+}
+/* Affiliate terms  End */
+
+
+/* Affiliate terms 301 Redirect Start */
+.at-301-redirect { display: flex; flex-direction: column; gap: 12px;}
+.at-301-redirect-wapper {
+    border-radius: 4px;
+    border: 1px solid #DFAB3E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.at-301-redirect-wapper>h3 { margin: 0; line-height: 0;}
+.at-301-redirect-wapper>h3>a {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+}
+.at-301-redirect-wapper>p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    margin: 0;
+}
+/* Affiliate terms 301 Redirect End */
+
+/* Affiliate terms Related terms Start */
+.at-related-term h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    margin-bottom: 24px;
+}
+
+.at-related-term-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.at-related-term-btn a {
+    border-radius: 4px;
+    border: 1px solid #DFAB3E;
+    padding: 10px 16px;
+    color: #181716;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Affiliate terms Related terms End */
+
+
+/*Affiliate terms Articles with this term css start */
+.at-articles { display: flex; flex-direction: column; gap: 20px;}
+.at-articles h2 {
+    color: #181716;
+    font-family: var(--golos-text);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: -0.24px;
+}
+.at-articles-wapper { display: flex;  flex-direction: row; gap: 24px;}
+.at-articles-wapper-img{ max-width:218px; height:140px; width:100% }
+.at-articles-wapper-img img { width:100%; height:100%; object-fit:cover; max-width:unset; }
+.at-articles-wapper-items { max-width:75%; width:100%; }
+.at-articles-wapper-items-top>h3{ line-height: 0; margin-bottom: 12px;}
+.at-articles-wapper-items-top>h3>a{
+    color: #181716;
+    font-family: var(--dm-sans-text);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.18px;
+}
+.at-articles-wapper-items-top p {
+    color: #181716;
+    font-family:var(--dm-sans-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.at-best-trading-center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.at-best-trading-center ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: rgba(24, 23, 22, 0.60);
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 8px;
+}
+.at-best-trading-center ul li img {
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    max-width: unset;
+}
+.at-best-trading-center ul li i { font-size: 8px; color: #678EC9; }
+.at-best-trading-center ul li a{
+    color: #181716;
+    font-family: Onest;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Affiliate terms Articles with this term css end */
+
+
+
+/* Right Start */
+.at-wapper-right { display: flex; flex-direction: column; gap: 40px; }
+
+/* Right Subscribe Start */
+.at-subscribe-btn>a {
+    width: 100%;
+    display: flex;   
+    padding: 12px 24px;
+    border-radius: 4px;
+    background: #3836CB;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* Right Subscribe End */
+
+
+/* SHARE START */
+.at-share h3{
+    color: rgba(24, 23, 22, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.at-share-icon ul { display: flex; flex-wrap: wrap; gap: 16px;}
+.at-share-icon>ul>li>a>i {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: rgba(230, 230, 230, 0.50);
+    color: #3836CB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  SHARE End */
+
+
+/* Right Search Start */
+.at-search { border-radius: 4px; border: 1px solid #E6E6E6 !important; margin: 0; }
+.at-search .form-control {
+    padding-left: 35px;
+    color: rgba(24, 23, 22, 0.50);
+    font-family: var(--onest-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 0;
+    height: 44px; 
+}
+.at-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    margin-top: 4px;
+    width: 34px;
+    height: auto;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;  
+}
+/* Right Search End */
+
+/* Right Latest News Start */
+.at-latest-newa-heading { margin-bottom: 24px;}
+.at-latest-newa-heading h3 {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+.at-latest-newa-wapper { display: flex; flex-direction: column; gap: 16px;}
+.at-latest-newa-items h4 {
+    color: rgba(0, 0, 0, 0.60);
+    font-family: var(--golos-text);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 8px;
+    line-height: normal;
+}
+.at-latest-newa-items h2 { line-height: 0; margin-bottom: 6px;}
+.at-latest-newa-items>h2>a {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+}
+.at-latest-newa-items p {
+    color: #000;
+    font-family: var(--golos-text);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: 0.16px;
+    margin: 0;
+}
+.at-hr {margin: 0; border-top: 1px solid #E6E6E6;}
+/* Right Latest News End */
+
+
+/* Affiliate Terms End */
+
+
+
+@media(max-width:1199px){
+    .at-articles-wapper-img { height: 180px;}
+}
+
+
+
+@media(max-width:991px){
+    .affiliate-terms { padding: 40px 0 64px 0;}
+    .at-ba-row {flex-wrap: wrap; gap: 64px; }
+}
+
+@media (max-width:667px){
+    .at-Search-wapper {display: none;}
+    .at-subscribe-btn { display: none;}
+    .at-right-col { max-width: 100%; width: 100%;}
+    .affiliate-terms-heading h1 { font-size: 36px; line-height: 40px;}
+    .at-articles-wapper { flex-wrap: wrap;}
+    .at-articles-wapper-items { max-width: 100%; width: 100%; }
+    .at-articles-wapper-img { max-width: 100%; height: 220px;}
+}
+
+

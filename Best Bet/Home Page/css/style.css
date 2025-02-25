@@ -1,0 +1,1117 @@
+body { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Banner Page Start */
+.banner-page-wapper { position: relative ; }
+.banner-page-wapper::after {
+    content: "";
+    width: 100%;
+    height: 212px;
+    background: url(../img/banner-page.png) no-repeat center;
+    background-size: cover !important;
+    position: absolute;
+    left: 0;
+    top: 0;  
+}
+.banner-page-items { position: relative; z-index: 11; padding-top: 36px;    height: 212px;}
+.banner-page-items h1 {
+    font-family: Inter;
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 39.94px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+.banner-page-items p {
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+.banner-page-items button {
+    width: 100%;
+    max-width: 127px;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    border: 0;
+    font-family: Inter;
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 10.89px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 0;
+}
+/* Banner Page End */
+
+
+/* Top Canada Online Casinos in 2024 Start */
+.top-canada-online-casinos {   background: #F9F9F9; padding-top: 78px;}
+
+.top-canada-online-casinos-heading {    padding-left: 30px; margin-bottom: 22px;}
+.top-canada-online-casinos-heading h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+
+.top-canada-online-casinos-top-heading { background: #36114A; border-radius: 3px; width: 100% ;}
+.top-canada-online-casinos-top-heading ul{ display: flex; list-style: none; padding: 15px 30px; margin: 0;}
+.top-canada-online-casinos-top-heading ul li {
+    width: 100%;
+    max-width: 190px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    color: #F6F5FA;
+}
+
+.top-canada-online-casinos-table table{ width: 100%;}
+.top-canada-online-casinos-top-center { display: flex; flex-direction: column; justify-content: center;}
+.top-canada-online-casinos-table { width: 100%; overflow-y: auto; padding-bottom: 40px;}
+.top-canada-online-casinos-top-heading {
+    background: #36114A;
+    border-radius: 3px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 15px 30px;
+    display: inline-block;
+}
+.top-canada-online-casinos-top-heading th {
+    width: 190px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    color: #F6F5FA;
+}
+.top-canada-bonus { width: 260px !important;}
+.top-canada-overal-rating { width: 200px !important;    }
+
+.top-canada-online-casinos-left { width: 181px;}
+.top-canada-online-casinos-welcom-bonus {
+    width: 100%;
+    max-width: 217px;
+}
+.top-canada-online-casinos-welcom-rating { width: 166px; }
+.top-canada-online-casinos-payout-speed {width: 94px; }
+.top-canada-online-Benefits { width: 170px; }
+.top-canada-online-right-btn { width: 120px;}
+.top-canada-online-casinos-top-item {
+    padding: 10px 10px 30px 10px;
+    display: flex;
+    gap: 35px;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+
+.top-canada-online-casinos-left-count {
+    background: #417DF7;
+    border-radius: 3px;
+    padding: 5px 7px;
+    width: fit-content;
+    margin-bottom: 16px;
+} 
+.top-canada-online-casinos-left-count p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+}
+.top-canada-online-casinos-left img {
+    width: 100%;
+    max-width: 156px;
+    height: 81px;
+    margin-left: 25px;
+}
+
+.top-canada-online-casinos-welcom-bonus { width: 100%; max-width: 217px;}
+.top-canada-online-casinos-welcom-bonus span {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: left;
+    color: #731B9C;
+    display: inline-block;
+    padding: 4px 5px;
+    background: #B241F74A;
+    border-radius: 3px;
+    margin-bottom: 16px;
+}
+.top-canada-online-casinos-welcom-bonus h4 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #464A50;  
+}
+.top-canada-online-casinos-welcom-bonus a {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: #417DF7;
+}
+
+
+/* STAR REATING */
+.top-canada-online-casinos-welcom-rating {  display: flex; align-items: center;}
+.top-canada-online-casinos-welcom-rating-item { unicode-bidi:bidi-override; direction:ltr; font-size:20px; display: flex; gap: 5px; justify-content: center; }
+.top-canada-online-casinos-welcom-rating-item span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.top-canada-online-casinos-welcom-rating-item span.star:hover { cursor:pointer; }
+.top-canada-online-casinos-welcom-rating-item span.star:before { content:"\f005"; padding-right:1px; color:#FDB600; }
+.top-canada-online-casinos-welcom-rating-item span.star.filled:before { font-weight: 900; color:#FDB600; content:"\f005"; }
+.top-canada-online-casinos-welcom-rating-item span.star.half-filled:before { content:"\f089"; color:#FDB600; }
+.top-canada-online-casinos-welcom-rating-item span.star.half-filled:after { content:"\f005"; color:#FDB600; margin-left:-24px; }
+.top-canada-online-casinos-welcom-rating-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.top-canada-online-casinos-welcom-rating-item ul li { 
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    
+}
+/* STAR REATING */
+
+.top-canada-online-casinos-payout-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-canada-online-dollar-sing {display: flex; align-items: center; gap: 10px; margin-bottom: 25px;}
+.top-canada-online-dollar-sing span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F4E3FE;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.top-canada-online-dollar-sing span i { color: #731B9C; }
+.top-canada-online-dollar-sing h3{
+   font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50; 
+    margin: 0;
+}
+.top-canada-online-payment-img { 
+    width: fit-content;
+    display: grid;
+    grid-column-gap:7px;
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-canada-online-payment-img img {width: 35px; height: 25px;}
+
+.top-canada-online-Benefits { display: flex; align-items: center;}
+.top-canada-online-Benefits ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 18px;}
+.top-canada-online-Benefits ul li { 
+    display: flex; 
+    gap: 7px; 
+    align-items: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+}
+.top-canada-online-Benefits ul li i {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F4E3FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-canada-online-right-btn { display: flex; flex-direction: column; gap: 13px; justify-content: center;}
+.top-canada-online-right-btn button { 
+    border-radius: 6px;
+    width: 100%; 
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    border: 0;
+    color: #FFFFFF;
+    background: #417DF7;
+    padding: 12px 25px;
+}
+/* Top Canada Online Casinos in 2024 End */
+
+
+/* Featured Partner Start */
+.featured-partner {background: #F9F9F9;}
+.featured-partner-tabel { padding: 0 !important;}
+.featured-partner-tabel .top-canada-online-casinos-top-item { margin: 0 !important;}
+.featured-partner-heading { padding-left: 32px; padding-bottom: 17px;}
+.featured-partner-heading h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.eatured-partner-text { background-color: #FFFFFF; padding: 17px 30px 51px 35px;}
+.eatured-partner-text h3 {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #000000  ;
+    margin-bottom: 10px;
+}
+.eatured-partner-text p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50;
+}
+.eatured-partner-text p a {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-decoration: underline;
+    color: #464A50;
+}
+
+
+/* Featured Partner End*/
+
+
+/* Online Casino Bonuses Start */
+.online-casiono-bonuses { background: #F9F9F9;  padding-top: 60px; padding-bottom: 40px;}
+.online-casiono-bonuses-heading-left h2 {
+    width: fit-content;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    text-align: left;
+    color: #417DF7;
+    border-bottom: 2px solid #417DF7;
+    margin-bottom: 7px;
+}
+.online-casiono-bonuses-heading-left p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.online-casiono-bonuses-heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 19px;
+}
+.online-casiono-bonuses-heading-right { display: flex; gap: 10px; width: 100%; max-width: 686px; align-items: center;}
+.online-casiono-bonuses-heading-left { width: 100%; max-width: 380px;}
+.online-casiono-bonuses-heading-right h5 {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.select_wrap {
+    width: 100%;
+    max-width: 523px;
+    position: relative;
+    user-select: none;
+}
+.select_wrap .default_option {
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+    list-style: none;
+    margin: 0;
+}
+.default_option>li>p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    color: #464A50;
+    margin: 0;
+}
+.select_ul>li>p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.select_wrap .default_option li{ padding: 2px 20px;}
+.select_wrap .default_option::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover !important;
+}
+.select_wrap.active .default_option:before {  transform: rotate(-181deg); top: 16px;}
+.select_wrap .select_ul {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    border: 1px solid #464A50;
+    z-index: 111;
+}
+
+
+.select_wrap .select_ul li{ padding: 10px 20px; cursor: pointer;}
+.select_wrap .select_ul li:hover{
+    background: black;
+    color: white;
+}
+.select_wrap .select_ul li:hover p { color: #fff;}
+.select_wrap .select_ul li:first-child:hover{
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+.select_wrap .select_ul li:last-child:hover{
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+.select_wrap.active .select_ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+.online-casiono-bonuses-blog-grid {
+    display: grid;
+    grid-column-gap: 11px;
+    grid-row-gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 26px;
+}
+.online-casiono-bonuses-blog-item { background-color: #FFFFFF; padding: 20px;}
+.online-casiono-bonuses-blog-item-top {position: relative;}
+.online-casiono-bonuses-blog-item-top img { width: 100%; height: 167px;}
+.online-casiono-bonuses-blog-item-top span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    text-align: left;
+    color: #F6F5FA;
+    padding: 15px 22px;
+    background: #417DF7;
+    border-radius: 3px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+
+.online-casiono-bonuses-blog-item-bottom h4 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    color: #417DF7;
+    margin: 14px 0 ;
+}
+.online-casiono-bonuses-blog-item-bottom h2 {
+    font-family: Inter;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 45.99px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E13A3A;
+    margin-bottom: 15px;
+}
+.online-casiono-bonuses-blog-item-bottom p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    color: #464A50;
+    margin-bottom: 21px;
+}
+.online-casiono-bonuses-blog-item-bottom button {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    background: #417DF7;
+    padding: 11px 25px;
+    width: 100%;
+    border-radius: 21px;
+    color: #FFFFFF;
+    border: 0;
+    margin-bottom: 12px;
+}
+.online-casiono-bonuses-blog-item-bottom .read-review {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    color: #417DF7;
+    text-decoration: underline;
+    display: inline-block;
+    width: 100%;
+}
+.online-casiono-bonuses-blog-item-bottom .view-full{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    color: #417DF7;
+    text-decoration: underline;
+    display: inline-block;
+    width: 100%;
+}
+.online-casiono-bonuses-blog-btn>a {
+    background: #417DF7;
+    padding: 11px 22px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+/* Online Casino Bonuses End */
+
+
+/* Different Types of Casino Bonuses Explained Start  */
+.different-types-of-casino-bonuses { background: #F9F9F9;}
+.different-types-of-casino-text { margin-bottom: 26px;}
+.different-types-of-casino-text h2 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #464A50;
+    margin-bottom: 10px;
+}
+.different-types-of-casino-text p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin: 0;
+    color: #464A50;
+}
+
+.faq_accordion_item_bonuses {
+    padding: 19px 51px 19px 51px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.faq_menu_bonuses { position: relative;}
+.faq_menu_bonuses::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -27px;
+    top: 9px;
+    transform: rotate(-90deg);
+}
+.faq_accordion_item_bonuses.active .faq_menu_bonuses::after {
+    transform: rotate(0deg);
+}
+.faq_menu_bonuses a{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #417DF7 !important;
+}
+.faq_content_bonuses { padding-top: 8px;}
+.faq_content_bonuses p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+}
+.faq_content_bonuses p a {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+    text-decoration: underline ;
+}
+.faq_accordion_item_bonuses:last-child { margin: 0 !important;}
+/* Different Types of Casino Bonuses Explained End */
+
+
+/* best bet banner start  */
+.best-bet-banner {background: #F9F9F9; padding: 40px 0; }
+.best-bet-banner-item {position: relative; display: flex; align-items: center; justify-content: center;    height: 162px;}
+.best-bet-banner-item::after {
+    content: "";
+    width: 100%;
+    height: 162px;
+    background: url(../img/Group\ 4.png) no-repeat center;
+    background-size: cover !important;
+    position: absolute;  border-radius: 10px;
+}
+.best-bet-banner-item-box {
+    background: #D9D9D9;
+    width: 100%;
+    max-width: 728px;
+    height: 90px;
+    position: relative;
+    z-index: 1111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.best-bet-banner-item-box p {
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22.99px;
+    text-align: left;
+    margin: 0;
+    color: #000000;
+}
+/* best bet banner End */
+
+
+/* Types of online casino games Start */
+.types-of-online-casino-game {background: #F9F9F9; padding: 0  0 40px 0;}
+.types-of-online-casino-heading h3 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #464A50;
+}
+.types-of-online-casino-heading p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50;
+    margin-bottom: 20px;
+}
+.types-of-online-casino-grid {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+
+.types-of-online-casino-items { position: relative;}
+.types-of-online-casino-items img { width: 100%; height: 220px;}
+.types-of-online-casino-grid-text a {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29.05px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+}
+.types-of-online-casino-grid-text {
+    position: absolute;
+    bottom: 0;
+    height: 135px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.types-of-online-casino-btn>a {
+    background: #417DF7;
+    padding: 11px 22px;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    color: #FFFFFF;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+/* Types of online casino games End */
+
+
+/* best bet text wapper Start */
+.best-bet-text-wapper {background: #F9F9F9; padding-bottom: 60px;}
+.best-bet-text-flex {display: flex; flex-direction: column; gap: 40px;}
+.best-bet-text-itmes h2 {
+    font-family: Inter;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.83px;
+    text-align: left;
+    color: #464A50;
+    margin-bottom: 20px;
+}
+.best-bet-text-itmes h4 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #464A50;
+} 
+.best-bet-text-itmes p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+   margin: 0;
+   color: #464A50;
+}
+/* best bet text wapper End  */
+
+
+/* faq wapper Start */
+.faq-wapper {background: #F9F9F9; padding-bottom: 54px; }
+
+.faq_accordion_item {
+    padding: 19px 51px 19px 51px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.faq_menu { position: relative;}
+.faq_menu::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: -27px;
+    top: 9px;
+    transform: rotate(-90deg);
+}
+.faq_accordion_item.active .faq_menu::after {
+    transform: rotate(0deg);
+}
+.faq_menu a{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.78px;
+    text-align: left;
+    color: #417DF7 !important;
+}
+.faq_content { padding-top: 8px;}
+.faq_content p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+}
+.faq_content p a {
+    display: inline-block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #464A50 !important;
+    text-decoration: underline ;
+}
+.faq_accordion_item:last-child { margin: 0 !important;}
+/* faq wapper End */
+
+
+
+/* Articles & Press Start */
+.articles-press-wapper {background: #F9F9F9; padding-bottom: 86px;}
+.articles-press-top {display: flex; justify-content: space-between; gap: 10px; align-items: center; padding-bottom: 20px;}
+.articles-press-top h2{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.05px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.select_wrap_articles-press {
+    width: 100%;
+    max-width: 523px;
+    position: relative;
+    user-select: none;
+}
+.select_wrap_articles-press .default_option_articles-press {
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    position: relative;
+    cursor: pointer;
+    padding: 12px;
+    list-style: none;
+    margin: 0;
+}
+.default_option_articles-press>li>p{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    color: #464A50;
+    margin: 0;
+}
+.select_ul_articles-press>li>p {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    color: #464A50;
+    margin: 0;
+}
+.select_wrap_articles-press .default_option_articles-press li{ padding: 2px 20px;}
+.select_wrap_articles-press .default_option_articles-press::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/Polygon\ 3.svg) no-repeat center;
+    background-size: cover !important;
+}
+.select_wrap_articles-press.active .default_option_articles-press:before {  transform: rotate(-181deg); top: 16px;}
+.select_wrap_articles-press .select_ul_articles-press {
+    position: absolute;
+    top: 46px;
+    left: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    color: white;
+    border-radius: 21px;
+    border: 1px solid #464A50;
+    z-index: 111;
+}
+.select_wrap_articles-press .select_ul_articles-press li{ padding: 10px 20px; cursor: pointer;}
+.select_wrap_articles-press .select_ul_articles-press li:hover{
+    background: black;
+    color: white;
+}
+.select_wrap_articles-press .select_ul_articles-press li:hover p { color: #fff;}
+.select_wrap_articles-press .select_ul_articles-press li:first-child:hover{
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+}
+.select_wrap_articles-press .select_ul_articles-press li:last-child:hover{
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
+}
+.select_wrap_articles-press.active .select_ul_articles-press {
+    display: block;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.articles-press-grid {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 19px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+}
+.articles-press-grid-img-text img { width: 100%; height: 195px;  border-radius: 4px;}
+.articles-press-grid-img-text { position: relative;}
+.articles-press-grid-bg {
+    position: absolute;
+    bottom: 0;
+    height: 135px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+.articles-press-grid-text {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+.articles-press-grid-text img { width: 33px; height: 36px;}
+.articles-press-grid-user-text a {
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.articles-press-grid-text p {
+    color: #A3A9B3;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+    text-align: left;
+
+}
+.articles-press-grid-bottom h4 {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.63px;
+    text-align: left;
+    margin-bottom: 13px;
+}
+.articles-press-grid-bottom p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.articles-press-grid-bottom { padding: 18px 29px 25px 28px; background: #FFFFFF;}
+
+.articles-press-grid-bottom h4 { line-height: 0; margin-bottom: 13px;}
+.articles-press-grid-bottom h4 a {
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.63px;
+    text-align: left;
+    color: #464A50;
+}
+.articles-press-grid-bottom p {
+    margin-bottom: 10px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    color: #464A50;
+}
+
+
+.articles-press-grid-bottom  button {
+    background-color: #417DF7;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    padding: 11px 20px ;
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+.articles-press-learn>a {
+    background-color: #417DF7;
+    font-family: Inter;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 13.31px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 11px 20px;
+    width: 100%;
+    max-width: 348px;
+    margin: auto;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+
+/* Articles & Press End */
+
+
+
+@media(min-width:1200px){
+	.container.w-1196 { max-width:1196px!important; }
+}
+
+@media(max-width:1199px){
+    .top-canada-bonus { width: 210px !important;}
+}
+
+@media(max-width:991px){
+    .online-casiono-bonuses-heading { gap: 15px; flex-direction: column;}
+    .online-casiono-bonuses-blog-grid { grid-template-columns: repeat(2, 1fr);}
+
+    .articles-press-top {
+        align-items: start;
+        flex-direction: column;
+    }
+    .articles-press-grid { grid-template-columns: repeat(2, 1fr);}
+
+    .best-bet-banner-item-box { margin: 0px 30px;   }
+    
+}
+
+@media(max-width:767px) {
+
+    .banner-page-wapper::after { height: 280px;}
+    .banner-page-items {height: 280px; }
+    .banner-page-items h1 { font-size: 28px; line-height: 33.94px;}
+
+    .top-canada-online-casinos-heading { padding-left: 0;}
+    .top-canada-online-casinos { padding-top: 58px; }
+    .top-canada-online-casinos-heading h2 { font-size: 20px; line-height: 25.05px;}
+
+    .featured-partner-heading { padding-left: 0;}
+    .featured-partner-heading h2 { font-size: 20px; line-height: 25.05px;}
+
+    .eatured-partner-text {   padding: 17px 20px 31px 20px;}
+
+    .online-casiono-bonuses-blog-grid { grid-template-columns: repeat(1, 1fr);}
+    .online-casiono-bonuses-heading-left h2 { font-size: 28px; line-height: 32.73px;}
+    .online-casiono-bonuses-blog-item-top span { font-size: 17px; padding: 12px 20px;}
+    .online-casiono-bonuses-blog-item-bottom h2 { font-size: 32px; line-height: 37.99px; margin-bottom: 10px;}
+    .online-casiono-bonuses-blog-item-bottom h4 { font-size: 14px; line-height: 17.36px; margin: 11px 0;}
+
+    .types-of-online-casino-grid { grid-template-columns: repeat(1, 1fr);}
+    .types-of-online-casino-heading h3 {  font-size: 20px;  line-height: 25.05px;}
+
+    .faq_accordion_item_bonuses { padding: 15px 21px 15px 31px;}
+    .faq_menu_bonuses::after { left: -18px;}
+    .best-bet-banner-item-box {
+        height: 70px;
+        margin: 0 20px;
+    }
+
+    .types-of-online-casino-grid-text a { font-size: 20px; line-height: 25.05px;}
+    .faq_menu::after { left: -23px;}
+    .faq_accordion_item { padding: 15px 21px 15px 31px;}
+    
+    .articles-press-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .different-types-of-casino-text h2 { font-size: 20px; line-height: 25.05px;}
+
+    .best-bet-text-wapper { padding-bottom: 40px;}
+    .best-bet-text-itmes h2 { font-size: 32px; line-height: 42.83px;  margin-bottom: 10px;}
+    .best-bet-text-itmes h4 { font-size: 20px; line-height: 25.05px;;}
+
+    .articles-press-grid-bottom {  padding: 15px 25px 20px 22px;}
+    .articles-press-grid-bottom h4 a { font-size: 20px; line-height: 24.63px;}
+}
+
+
+.faq_content_bonuses { display: none;}
+.faq_accordion_item_bonuses.active .faq_content_bonuses {  display: block !important;  }
+
+.faq_content { display: none;}
+.faq_accordion_item.active .faq_content { display: block !important; }
+/* add css */
+
+
+ .h-banner-category-select {
+    background: #FFFFFF;
+    border-radius: 100px;
+    padding: 13px 30px;
+    font-family: Sora;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.68px;
+    color: #000;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../img/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 12px;
+}

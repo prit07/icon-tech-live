@@ -1,0 +1,45 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration: none;}
+
+
+.hr-listen-wapper {
+    background: #4DB2EC;
+    display: flex;
+    padding: 6px 0;
+    justify-content: center;
+}
+.hr-listen-item {display: flex; gap: 6.5px; align-items: center;}
+.hr-listen-item h4 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    color: #111111;
+}
+.hr-listen-item img {
+    width: 15px;
+    height: 15px;
+}
+
+@media(max-width:991px) {
+
+}
+
+
+@media (max-width:767px) {
+   
+
+}
+
+
+@media(min-width:1300px){
+	.container.w-1116 { 
+        max-width:1116px!important;
+        padding: 0 24px; 
+     }
+
+    }
+

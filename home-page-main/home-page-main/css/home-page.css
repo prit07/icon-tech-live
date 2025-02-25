@@ -1,0 +1,880 @@
+body { margin:0; padding:0; overflow-x: hidden; }
+a:hover { text-decoration:none; }
+:root {
+	--bg-orange:#fa8c16;
+	--text-orange:#fa8c16;
+	--bg-Blue:#2f54eb;
+	--text-Blue:#2f54eb;
+	--text-black:#000000;
+	--bg-Violet:#f5f6fe;
+	--text-grey:#646464;
+	--text-white:#fff;
+	--Montserrat: "Montserrat", sans-serif;
+	--League-Spartan:"League Spartan", sans-serif;
+}
+
+/* banner css start */
+.banner-wapper {
+	padding-bottom: 16px !important;
+	padding-top: 16px !important;
+	min-height: 575px;
+	background-color: #2f54eb;
+	background-image: url(../img/96da435f64db0ba1e0b0.svg);
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	background-position: top;
+	background-size: 900px auto;
+}
+.fieldset-wapper {
+	padding-bottom: 100px;
+	padding-top: 120px;
+	position: relative;
+	max-width: 913px;
+	width: 100%;
+	margin: auto;
+	display: none;
+	-webkit-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s;
+	top: 0;
+	-webkit-animation: none;
+	animation: none;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fieldset-wapper.fieldset-active { display: block; }
+.fieldset-inner-text h1 {
+	font-family: var(--League-Spartan);
+	font-weight: 700;
+	margin: 0 auto 20px auto;
+	font-size: 44px;
+	line-height: 51px;
+	text-align: center;
+	color: #fff;
+}
+.fieldset-inner-text p {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	max-width: 100%;
+	font-family: var(--League-Spartan);
+}
+.steps--inner { padding: 35px 0 0 0; min-height: auto; }
+.steps--roofing-located {
+	max-width: 440px !important;
+	width: 100%;
+	margin: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.fieldset-bottom-text { padding-top: 65px; }
+.funnel--bottom-li {
+	max-width: 840px;
+	margin: auto;
+	color: #fff;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	padding: 0;
+}
+.funnel--bottom-li li {
+	position: relative;
+	display: inline-block;
+	margin:0 31px 24px 0;
+	font-size: 16px;
+	line-height: 24px;
+	list-style-type: disc;
+	color: var(--text-white);
+	font-family: var(--League-Spartan);
+}
+.funnel--bottom-li li:before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: -11px;
+	width: 3px;
+	height: 3px;
+	background: #fff;
+}
+.form-wapper .form-input-c {
+	width: 100%;
+	padding: 16px 35px 16px 16px;
+	color: var(--text-black);
+	height: 57px;
+	opacity: 1;
+	font-size: 23px;
+	line-height: 24px;
+	border: 1px solid transparent;
+	-webkit-box-shadow: 0 4px 14px rgba(68, 68, 68, .19);
+	box-shadow: 0 4px 14px rgba(68, 68, 68, .19);
+	border-radius: 70px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	font-family: var(--League-Spartan);
+}
+.steps--buttons {
+	margin-top: 20px;
+	width: 100%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	-ms-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+	position: relative;
+	top: auto !important;
+	left: auto !important;
+	right: auto !important;
+	bottom: auto !important;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+.steps--buttons .btn-next-bg {
+	border: 0;
+	width: 100% !important;
+	max-width: 513px;
+	height: 57px;
+	background: var(--bg-orange);
+	border-radius: 110px; 
+	font-family: var(--League-Spartan);
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	position: relative;
+	text-transform: uppercase;
+	padding: 12px;
+	color: var(--text-white);
+	text-align: center;
+}
+
+
+/* progress bar start  */
+.fieldset-progress-bar { display:none; flex-direction: column; align-items: center;  padding-top: 125px;}
+.fieldset-progress-text p{ 
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color:var(--text-white);
+	max-width: 100%;
+	font-family: var(--League-Spartan);
+}
+.fieldset-progress-text p span{ font-weight: 700; color: var(--text-orange); }
+.progress-bg {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	background-color:rgba(86,86,86,.28)!important;
+}
+.progress-bg div {
+	height: 7px;
+	background: var(--bg-orange);
+	width: 0px;
+	border-radius: 5px;
+	transition: width 0.3s;
+}
+/* progress bar end  */
+
+/* Back btn start */
+.fieldset-back-btn {display: flex; justify-content: center; margin-top: 100px;}
+.fieldset-back-btn button{
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 38px;
+	text-align: center;
+	color:var(--text-white);
+	max-width: 100%;
+	font-family: var(--League-Spartan);
+	position: relative;
+}
+.fieldset-back-btn button:focus {outline: none;}
+.fieldset-back-btn button::after {
+	content: "";
+	width: 16px;
+	height: 13px;
+	background: url(../img/icon-arrow.svg) no-repeat center;
+	position: absolute;
+	background-size: cover;
+	left: -18px;
+	top: 12px;
+}
+/* Back btn End */
+
+/* step 2 start */
+.fieldset-inner-text h2{
+	font-family: var(--League-Spartan);
+	font-weight: 500;
+	margin: 0 auto 0px auto;
+	font-size: 44px;
+	line-height: 66px;
+	text-align: center;
+	color:	var(--text-white);
+}
+.fieldset-inner-box { display: flex; gap: 10px; justify-content: center;}
+.fieldset-inner-box-col { width: 100%; max-width: 230px; }
+.fieldset-inner-box label {
+	background: var(--bg-Blue);
+	border: 2px solid #243fac;
+	border-radius: 50px;
+	padding: 28px 20px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+.fieldset-inner-box label img { width: 50px; height: 60px;}
+.fieldset-inner-box label span {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 38px;
+	text-align: center;
+	color:var(--text-white);
+	max-width: 100%;
+	font-family: var(--League-Spartan);
+}
+.fieldset-inner-box-col input[type="radio"] { display: none; }
+.fieldset-inner-box-col label { display: flex; align-items: center;}
+.fieldset-inner-box-col input[type="radio"]:checked + label { background: var(--bg-orange);}
+.fieldset-inner-box-col.active label {
+	background: var(--bg-orange)
+}
+.fieldset-inner-box-col:hover label {
+	background: var(--bg-orange)
+}
+/* step 2 End */
+
+/* step 3 start */
+.fieldset-inputs-field {width: 100%; display: flex; flex-direction: column; align-items: center;}
+.fieldset-inputs-field input {
+	border-radius: 70px;
+	background: var(--bg-Violet);
+	width: 100%;
+	max-width: 400px ;
+	height: 57px;
+	font-weight: 500;
+	padding: 5px 15px;
+	font-size: 23px;
+	line-height: 38px;
+	text-align: start;
+	color:var(--text-grey);
+	font-family: var(--League-Spartan);
+	border: 0;
+	margin-bottom: 20px;
+}
+.fieldset-inputs-field button {
+	background-color: var(--bg-orange);
+	width: 100%;
+	max-width: 400px ;
+	border: 0;
+	height: 57px;
+	border-radius: 110px;
+	font-weight: 500;
+	padding: 5px 15px;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	color:var(--text-white);
+	text-transform: uppercase;
+	font-family: var(--League-Spartan);
+}
+.fieldset-inputs-field button:focus, .fieldset-inputs-field button:focus-visible { outline:unset; box-shadow:unset; }
+.btn-next:focus, .btn-next:focus-visible { outline:unset; box-shadow:unset; }
+.fieldset-inputs-field input:focus, .fieldset-inputs-field input:focus-visible, .form-wapper .form-input-c:focus, .form-wapper .form-input-c:focus-visible { outline:unset; box-shadow:unset; }
+/* step 3 End */
+
+/* step 6 start */
+.fieldset-inner-lst {display: flex;  align-items: center; padding-top: 60px; flex-direction: column;}
+.fieldset-inner-lst label {
+	width: 100%; 
+	max-width: 518px;
+	font-size: 14px;
+	line-height:21px;
+	text-align: center;
+	color:var(--text-white);
+	font-family: var(--League-Spartan);
+}
+.fieldset-inner-lst label a { font-weight: 600; color:var(--text-white); text-decoration: underline;}
+.fieldset-inner-lst p {
+	width: 100%;
+	max-width: 518px;
+	font-size: 14px;
+	line-height:21px;
+	text-align: start;
+	color:var(--text-white);
+	font-family: var(--League-Spartan);
+	text-decoration: underline;
+}
+/* step 6 End */
+/* banner css end */
+
+
+
+/* Home Improvement Projects css start */
+.htp-sect-wapper {
+	padding-bottom: 48px !important;
+	padding-top: 48px !important;
+	position: relative;
+}
+.htp-title h3 {
+	margin-bottom: 24px !important;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 36px;
+	font-family: var(--Montserrat);
+	color: var(--text-black);
+	text-align: center;
+}
+.homeImprovements-wapper {
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	max-width: 1143px;
+	padding: 0;
+	width: 100%;
+	grid-gap: 32px;
+}
+.homeImprovements--item { max-width: 203px; width: 100%; }
+.homeImprovements--link {
+	display: flex ;
+	align-items: center;
+	flex-direction: column;
+	padding: 24px;
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(47, 84, 235, .15);
+	transition: box-shadow .2s linear;
+}
+.homeImprovements--link img { display: block; }
+.homeImprovements--txt {
+	color: var(--text-Blue);
+	font-size: 16px;
+	line-height: 1.5;
+	min-height: 48px;
+	font-family: var(--Montserrat);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-weight: 500;
+}
+/* Home Improvement Projects css end */
+
+/* How It Works css start */
+.how-it-work-wapper {
+	background: var(--bg-Violet);
+	position: relative;
+	padding-bottom: 48px;
+	padding-top: 48px;
+}
+.howItWorks--list {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 50px;
+	counter-reset: section;
+}
+.howItWorks--item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 356px;
+	width: 100%;
+}
+.howItWorks--img { margin-bottom:16px; }
+.howItWorks--itemHdr {
+	min-height: auto;
+	padding-left: 32px;
+	padding-top: 0;
+	position: relative;
+	margin: 0;
+	margin-bottom: 16px;
+	text-align: center !important;
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	color: var(--text-black);
+}
+.howItWorks--itemHdr:before {
+	background-color: var(--bg-orange);
+	border-radius: 100%;
+	color: var(--text-white);
+	content: counter(section);
+	counter-increment: section;
+	font-weight: 600;
+	height: 24px;
+	left:0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	transform: translateX(-50%);
+	width: 24px;
+}
+.howItWorks--txt {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	text-align: center;
+	color: var(--text-black);
+	font-family: var(--Montserrat);
+	margin: 0;
+}
+.howItWorks--item:not(:last-child):after {
+	background-image: url(../img/c2b96d581f4495f8af27.svg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	content: "";
+	height: 18px;
+	position: absolute;
+	width: 67px;
+	bottom: auto;
+	left: auto;
+	right: -58px;
+	top: 50%;
+	transform: translateX(0) translateY(-50%) rotate(-90deg);
+}
+/* How It Works css end */
+
+/* trustUs css start */
+.trustUs-wapper { position: relative; padding-bottom: 48px; padding-top: 48px; }
+.trustUs--list { display: flex; flex-flow: row wrap; gap: 80px; max-width: 940px; width:100%; }
+.trustUs--item { max-width: 260px; width: 100%; }
+.trustUs--count {
+	font-size: 48px;
+	line-height: 1.33;
+	font-weight: 600;
+	text-align: center;
+	font-family: var(--Montserrat);
+	color: var(--text-black);
+}
+.trustUs--info { display: flex; align-items: center; justify-content: center; }
+.trustUs--txt {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: var(--Montserrat);
+	color: var(--text-black);
+	font-weight: 500;
+	text-align: center;
+	margin: 0;
+	margin-left: 8px;
+}
+/* trustUs css end */
+
+/* reviews css start */
+.reviews-wapper {
+	padding-bottom: 48px;
+	padding-top: 48px;
+	position: relative;
+	background-color: var(--bg-Violet);
+}
+.review-card {
+	padding:16px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-grow: 1;
+}
+.review-card--inner {
+	padding: 32px 40px;
+	position: relative;
+	background-color: var(--text-white);
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(47,84,235,.15);
+}
+.reviewCard__info { height: auto; max-width: 740px; transition: max-height .3s linear; }
+.review-card--inner h4 {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: var(--Montserrat);
+	color: var(--text-black);
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 16px;
+}
+.reviewCard--info p {
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--text-black);
+	font-weight: 500;
+	font-family: var(--Montserrat);
+	margin-bottom: 16px;
+	text-align: center;
+}
+.reviewCard--info a {
+	background-color: transparent;
+	border: none;
+	color:var(--text-Blue);
+	cursor: pointer;
+	display:block;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	font-family: var(--Montserrat);
+	text-align: center;
+}
+.reviews-slider .owl-nav button:focus { outline:unset; border:0; }
+.reviews-slider .owl-prev {
+	transform: rotate(180deg);
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.reviews-slider .owl-next {
+	transform: rotate(0deg);
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+.reviews-slider .owl-dots { display:flex; justify-content:center; align-items:center; margin-top:20px; }
+.reviews-slider .owl-dots .owl-dot span {
+	background-color: transparent;
+	display: block;
+	height: 14px;
+	margin: 0 1px;
+	opacity: 1;
+	position: relative;
+	width: 14px
+}
+.reviews-slider .owl-dots .owl-dot span:before {
+	background-color: #000;
+	border-radius: 99px;
+	content: "";
+	height: 6px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 6px
+}
+.reviews-slider .owl-dots .owl-dot span.active {
+	transform: scale(1)
+}
+.reviews-slider .owl-dots .owl-dot.active span:before {
+	background-color: var(--bg-orange);
+}
+.reviews-slider .owl-dots .owl-dot.active span:after {
+	border: 1px solid #222;
+	border-radius: 100%;
+	content: "";
+	height: 14px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 14px
+}
+/* reviews css end */
+
+/* verticals css start */
+.verticals-list-wapper { position: relative; padding-bottom: 48px; padding-top: 48px; }
+.verticalsList--title {
+	font-weight: 500;
+	text-align: center;
+	line-height:1.4;
+	font-size: 23px;
+	margin: 0;
+	color: var(--text-black);
+	font-family: var(--Montserrat);
+}
+.verticalsList--projects {
+	max-width: 420px;
+	min-height: 148px;
+	width: calc(100vw - 32px);
+	min-height: 84px;
+}
+.verticalsList--controlsBox { display: flex; flex-direction: row; gap: 16px; }
+.customSelect--select {
+	appearance: none;
+	background-color: var(--bg-Violet);
+	background-image: url(../img/287d2692679a68a951b4.svg);
+	background-position: right 16px center;
+	background-repeat: no-repeat;
+	background-size: 17px 17px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #222;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	height: 56px;
+	line-height: 1.43;
+	outline: 0;
+	padding: 16px
+}
+.verticalsList--btn {
+	background-color: var(--bg-orange);
+	border: 0;
+	font-size: 16px;
+	line-height: normal;
+	color: var(--text-white);
+	padding: 16px 24px;
+	font-weight: 500;
+	font-family: var(--League-Spartan);
+	border-radius: 5px;
+}
+.customButton--inner {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+	white-space: nowrap;
+}
+.verticalsList--captionBlock p {
+	color: #646464;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.42;
+	padding-top: 8px;
+	font-family: var(--Montserrat);
+}
+/* verticals css end */
+
+
+/* Footer start */
+.footer { 	background-color: var(--bg-Blue); }
+.footer-wapper { padding-top: 24px; padding-bottom: 16px;}
+.footer-wapper-row { display: flex;}
+.footer-wapper-col-left { width: 100%; max-width: 906px;}
+.footer-wapper-col-right { width: 100%; max-width: 266px;}
+.footer--logo { width: 100%; max-width: 209px;  margin-bottom: 20px !important;}
+.footer--links ul { list-style: none; display: flex; margin-bottom: 28px; padding: 0; gap: 36px;}
+.footer--links ul li a {
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--text-white);
+	position: relative;
+	font-weight: 500;
+	font-family: var(--Montserrat);
+}
+.footer--links ul li:hover a::before  { transform: scaleX(1);}
+.footer--links ul li a::before {
+	background-color: var(--bg-orange);
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 1px;
+	left: 0;
+	position: absolute;
+	transform: scaleX(0);
+	transition: transform .3s ease;
+	width: 100%;
+}
+.footer--copyrightText { 
+	font-family: var(--Montserrat);
+	font-size: 12px;
+	line-height: 16px;
+	opacity: .7;
+	color: var(--text-white);
+	font-weight: 500;
+	margin: 0;
+}
+.footer--social { padding-left: 88px;}
+.footer--socialGroup { display: flex; gap: 16px;}
+.footer--socialTitle {
+	font-family: var(--Montserrat);
+	color: var(--text-white);
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-bottom: 16px;
+}
+.footer--mascot {  position: relative; width: 100%;}
+.footer--mascotImg {
+	position: absolute;
+	top: -242px;
+	max-height: 244px;
+	right: 0;
+}
+.copyright-m-view {display: none;}
+/* Footer End */
+
+
+@media (min-width: 1680px) and (min-height: 420px) {
+	/* banner css start */
+	.banner-wapper { background-size: auto 96%; }
+	/* banner css end */
+}
+@media(max-width:1365px){
+	/* banner css start */
+	.banner-wapper { min-height: 560px; }
+
+	/* banner css end */
+}
+@media(max-width:1199px){
+
+	/* How It Works Start */
+	.howItWorks--list { gap: 48px;}
+	.howItWorks--item { max-width: 277px;}
+	.howItWorks--itemHdr:before { left: 50%; top: -7px;}
+	.howItWorks--itemHdr { padding-top: 25px; padding-left: 0;}
+	/* How It Works End */
+
+	/* Trust Us From Start To Finish Start */
+	.trustUs--list { gap: 74px;}
+	/* Trust Us From Start To Finish End */
+
+	/* Footer Start */
+	.footer--mascotImg { right: -70px;}
+	/* Footer End */
+
+}
+
+@media(max-width:991px){
+	.footer-wapper-col-right { max-width: 100%;}
+
+	/* banner css start */
+	.banner-wapper { min-height: auto; }
+	.fieldset-inner-text h1 { font-size: 35px; line-height: 45px; margin: 0;}
+	.steps--inner { padding: 20px 0 0 0;}
+	.funnel--bottom-li { padding: 0 0 0 15px;}
+	/* stepe 2 start */
+	.fieldset-inner-text h2 { font-size: 35px; line-height: 45px;}
+	.fieldset-inner-text  p { font-size: 22px; line-height: 32px;}
+	.fieldset-wapper { padding-top:60px; }
+	/* stepe 2 end */
+
+	/* stepe 2 start */
+	.fieldset-inputs-field input { font-size: 20px; line-height: 30px;}
+	.fieldset-inputs-field button {font-size: 21px; line-height: 31px; }
+	/* stepe 2 end */
+	/* banner css end */
+
+
+	/* Home Improvement Projects Start */
+	.homeImprovements-wapper { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 16px;}
+	.homeImprovements--link { padding: 8px;}
+	/* Home Improvement Projects End */
+
+	/* How It Works Start */
+	.howItWorks--item { max-width: 197px;}
+	/* How It Works End */
+
+	
+	/* Trust Us From Start To Finish Start */
+	.trustUs--item { max-width: 192px; width: 100%;}
+	.trustUs--list { gap: 56px;}
+	/* Trust Us From Start To Finish End */
+
+	/* What People Are Saying Start */
+	.owl-nav { display: none;}
+	/* What People Are Saying End */
+
+	/* Footer Start */
+	.footer-wapper-row { display: flex; flex-direction: column;}
+	.footer--links ul { flex-direction: column; gap: 14px;}
+	.footer--mascotImg { right: 0px;     max-height: 216px;}
+	.footer--social {
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 20px;
+	}
+	.copyright-d-view {display: none;}
+	.copyright-m-view { display: block;}
+	.copyright-m-view p { padding-top: 20px;}
+	/* Footer End */
+}
+
+@media(max-width:767px) {
+	/* banner css start */
+	.banner-wapper { background-size: 667px 324px; background-position: top 30px center; }
+	.fieldset-back-btn { margin-top: 60px;}
+	.fieldset-progress-bar { padding-bottom: 55px;}
+	.fieldset-inner-text h1 {font-size: 28px; line-height: 33px;  margin-bottom: 8px;}
+	.fieldset-wapper { padding-bottom: 60px; padding-top: 0;}
+	.funnel--bottom-li { text-align: start;}
+	.funnel--bottom-li li { margin: 0 0px 5px 0; font-size: 14px; line-height: 22px;}
+	.fieldset-bottom-text { padding-top: 35px;}
+	.form-wapper .form-input-c {  height: 50px; font-size: 20px;}
+	.steps--buttons .btn-next-bg { height: 50px; font-size: 21px;}
+
+
+
+	/* stepe  start */
+	.fieldset-inner-text h2 { font-size: 28px; line-height: 33px; padding-bottom: 10px;}
+	.fieldset-inner-text  p { font-size: 16px; line-height: 25px; margin: 0;}
+	.fieldset-inputs-field input { font-size: 18px; line-height: 28px; height: 50px;}
+	.fieldset-inputs-field button {font-size: 19px; line-height: 19px; height: 50px;}
+	.fieldset-inner-box { gap: 7px; flex-direction: column; align-items: center;}
+	.fieldset-inner-box-col { width: 100%; max-width: 100%;}
+	.fieldset-inner-box-col label {
+		flex-direction: row;
+		padding: 10px 25px;
+		border-radius: 35px;
+	}
+	.fieldset-inner-box-col label span { padding-left: 30px;}
+	.fieldset-inner-box { margin-top: 10px;}
+	.fieldset-inner-lst { padding-top: 30px;}
+	.fieldset-inputs-field { padding-top: 10px;}
+	/* stepe  end */
+	/* banner css end */
+
+
+	/* Home Improvement Projects start */
+	.homeImprovements--item { max-width: 250px;	width: 100%;}
+	.homeImprovements-wapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 8px;
+		place-items: center;
+	}
+	/* Home Improvement Projects End */
+
+
+	/* How It Works Start */
+	.howItWorks--list {gap: 96px;}
+	.howItWorks--item { max-width: 100%;}
+	.howItWorks--item:not(:last-child):after {
+		bottom: -63px;
+		left: 43%;
+		right: unset;
+		top: unset;
+		transform: translateX(0) translateY(-50%) rotate(0deg);
+	}
+	/* How It Works End */
+
+	/* Trust Us From Start To Finish Start */
+	.trustUs--list { gap: 40px; flex-direction: column; align-items: center;}
+	.trustUs--count { font-size: 34px; line-height: 1.2;}
+	/* Trust Us From Start To Finish End */
+
+	/* What People Are Saying Start */
+	.htp-title h3 { margin-bottom: 8px !important; font-size: 23px;    line-height: 32px;}
+	/* What People Are Saying End */
+
+	/* How Much Will The Project Cost Start */
+	.verticalsList--title { line-height: 1.2; font-size: 16px;}
+	/* How Much Will The Project Cost End */
+
+	/* Footer Start */
+	.footer--links ul li a { font-size: 14px; line-height: 16px;}
+	.footer--links ul {gap: 10px;}
+	/* Footer End */
+
+}
+
+
+/* @media(max-width:374px){
+
+} */

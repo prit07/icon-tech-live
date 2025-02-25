@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        td {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .no-border {
+            border: none;
+        }
+
+        .table-title {
+            margin: 20px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="no-border" colspan="6">Email :</td>
+        </tr>
+        <tr>
+            <td>Purchase Order No</td>
+            <td>Date</td>
+            <td>Mode of Transport</td>
+        </tr>
+        <tr>
+            <td>Amendment No</td>
+            <td>Date</td>
+            <td>Delivery Terms</td>
+        </tr>
+        <tr>
+            <td>PR No</td>
+            <td>Date</td>
+            <td>Freight / Transportation</td>
+        </tr>
+        <tr>
+            <td>RFQ No</td>
+            <td>Date</td>
+            <td>Destination</td>
+        </tr>
+        <tr>
+            <td>Vendor Quote Ref</td>
+            <td>Date</td>
+            <td>Validity Period</td>
+        </tr>
+        <tr>
+            <td>Payment Terms</td>
+            <td colspan="2">Transit Insurance</td>
+        </tr>
+    </table>
+
+    <p class="table-title">
+        As per our agreed terms, we hereby release a purchase order for the following items:
+    </p>
+
+    <table>
+        <tr>
+            <td>Sl</td>
+            <td>Description</td>
+            <td>Quantity</td>
+            <td>Unit Rate</td>
+            <td>Total</td>
+        </tr>
+        <!-- Add item rows as needed -->
+    </table>
+</body>
+</html>

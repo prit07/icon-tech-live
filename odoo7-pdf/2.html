@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Order</title>
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.purchase-order {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  background: #f26522;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 5px;
+  text-align: left;
+}
+
+.details-table td {
+  vertical-align: top;
+  width: 50%;
+}
+
+.order-details th, .order-details td {
+  text-align: center;
+}
+
+.items-table th, .items-table td {
+  text-align: center;
+}
+
+.items-table .empty-row {
+  height: 100px;
+}
+
+.summary-table td {
+  text-align: right;
+}
+
+.terms {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+  <div class="purchase-order">
+    <h1>PURCHASE ORDER</h1>
+    
+    <table class="details-table">
+      <tr>
+        <td>
+          <strong>Vendor Details</strong><br>
+          Vendor Code: <br>
+          Vendor Name: <br>
+          Vendor Address: <br>
+          GSTIN: <br>
+          Contact Person: <br>
+          Contact No: <br>
+          Email:
+        </td>
+        <td>
+          <strong>Billing & Delivery Address:</strong><br>
+          Infracon Engineering Services India Pvt. Ltd.<br>
+          Plot no.45, Dabaspet 1st Phase, Industrial Area,<br>
+          Yedehalli Village,<br>
+          Sompura Hobli, Nelamangala Taluk,<br>
+          Bangalore Rural District-562111<br>
+          Contact: Warehouse In Charge / Purchase Head<br>
+          Mobile: +91 9845075308 / +91 9740040358<br>
+          Email: mailto:rajeshpt@infraconengg.com / mailto:kumar@infraconengg.com
+        </td>
+      </tr>
+    </table>
+
+    <table class="order-details">
+      <tr>
+        <th>Purchase Order No</th>
+        <td></td>
+        <th>Date</th>
+        <td></td>
+        <th>Mode of Transport</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Amendment No</th>
+        <td></td>
+        <th>Date</th>
+        <td></td>
+        <th>Delivery Terms</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>PR No</th>
+        <td></td>
+        <th>Date</th>
+        <td></td>
+        <th>Freight / Transportation</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>RFQ No</th>
+        <td></td>
+        <th>Date</th>
+        <td></td>
+        <th>Destination</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Vendor Quote Ref</th>
+        <td></td>
+        <th>Date</th>
+        <td></td>
+        <th>Validity Period</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Payment Terms</th>
+        <td colspan="5"></td>
+      </tr>
+      <tr>
+        <th>Transit Insurance</th>
+        <td colspan="5"></td>
+      </tr>
+    </table>
+
+    <p class="agreement">As per our agreed terms, we hereby release a purchase order for the following items:</p>
+
+    <table class="items-table">
+      <thead>
+        <tr>
+          <th>SL. No.</th>
+          <th>Model No.</th>
+          <th>HSN Code</th>
+          <th>Item Description</th>
+          <th>Qty</th>
+          <th>UOM</th>
+          <th>Unit Rate (INR)</th>
+          <th>Disc %</th>
+          <th>Value (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="9" class="empty-row"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="summary-table">
+      <tr>
+        <td colspan="7"></td>
+        <td><strong>Sub Total</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="7"></td>
+        <td>SGST 9.00%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="7"></td>
+        <td>CGST 9.00%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="7"></td>
+        <td>IGST 18%</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="7"></td>
+        <td><strong>Grand Total</strong></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p class="terms">
+      TERMS & CONDITIONS:<br>
+      1. Our P.O Number and P.O Date must appear on all Challan/Invoices.
+    </p>
+  </div>
+</body>
+</html>

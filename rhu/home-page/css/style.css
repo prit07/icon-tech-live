@@ -1,0 +1,359 @@
+body { margin:0; padding:0; height:100vh; overflow-x:hidden; background-color:#275F3A; }
+
+.main-wapper { width: 100%; height: 100vh; }
+.main-bg-img { 
+	position:fixed; 
+	left:0; 
+	right:0; 
+	top:0; 
+	bottom: 0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	opacity: 0;
+}
+.rhu-sect-1 { display: flex; align-items: center; justify-content: center; height: 100%; }
+
+.rhu-logo-bg { opacity: 0; width:336.77px; height: 336.77px; z-index:100; position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); }
+.rhu-logo-bg img { width:100%; height:auto; }
+/*.rhu-logo-bg-2 { width:336.77px; height:336.77px; position: absolute;}
+.rhu-logo-bg-2 img { width:100%; height:100%; object-fit:contain; }*/
+.rhu-logo-img { opacity: 0; width: 147.49px; height: 234.19px; position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); z-index:1001; }
+.rhu-logo-img img { width:100%; height:100%; object-fit:contain; }
+.rhu-Branch-1 {
+	position: fixed;
+	bottom: 0%;
+	left: 0;
+	width: 120%;
+	height: 790.85px;
+	opacity: 0;
+	z-index: 1;
+}
+.rhu-Branch-2 {
+	position: fixed;
+	bottom:0;
+	right: 0;
+	width: 80%;
+	height: 1042.88px;
+	transform: translate(30%, -30%);
+	opacity: 0;
+	z-index: 1;
+}
+
+/* section 2 css start */
+.rhu-sect-2 { width:100%; height:100%; }
+.rhu-menu {
+	position: fixed;
+	background-image: url('../img/menu--bg-img.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 162px;
+	height: 162px;
+	left: 46px;
+	top: 50px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	cursor: pointer;
+}
+.rhu-menu span {
+	font-family: Work Sans;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 42.23px;
+	color: #fff;
+}
+/* section 2 css end */
+
+/* section 3 css start */
+.rhu-sect-3 { width:100%; height:100%; }
+.rhu-sect-3 img { opacity:0; }
+.pomegranate-1RHU-img {
+	position: fixed;
+	bottom: 32%;
+	left: 5%;
+	z-index: 0;
+	width:148.94px;
+	height:148.21px;
+}
+.guava-FullRHU-img {
+	position: fixed;
+	bottom: 30%;
+	left: 20%;
+	z-index: 0;
+	width:118.03px;
+	height:119px;
+}
+.full-MangoRHU-img {
+	position: fixed;
+	bottom: 28%;
+	z-index: 0;
+	left: 32%;
+	width:146.94px;
+	height:172px;
+}
+.apple-red-fullRHU-img {
+	width:148.39px;
+	height:167px;
+	position: fixed;
+	z-index: 0;
+	bottom: 54%;
+	right: 18%;
+}
+.seabuckthorn-single-1RHU-img {
+	width:85.36px;
+	height:96.23px;
+	position: fixed;
+	z-index: 0;
+	bottom: 65%;
+	right: 3%;
+	transform: translate(3%, 54%);
+	/* transform: rotate(-170.65deg); */
+}
+.seabuckthorn-single-2RHU-img {
+	width:97.91px;
+	height:84.94px;
+	position: fixed;
+	z-index: 0;
+	bottom: 67%;
+	right: 1%;
+	transform: translate(1%, 56%);
+	/* transform: rotate(-66.14deg); */
+}
+/* section 3 css end */
+
+/* section 4 css start */
+.rhu-sect-4 { width:100%; height:100%; }
+
+.rhu-sect-4 img { opacity:1; }
+
+.apple-red-full-1 {
+	position: fixed;
+	bottom:2%;
+	width:47.72px;
+	height:53.7px;
+	left: 61%;
+}
+.apple-red-full {
+	position: fixed;
+	bottom:4%;
+	width:47.72px;
+	height:53.7px;
+	left: 73%;
+}
+
+.apple-red-fullrhu {
+	position: fixed;
+	bottom:6%;
+	max-width: 100%;
+	height: auto;
+	left: 77%;
+}
+
+.full-mango {
+	position: fixed;
+	bottom:3%;
+	width:58.93px;
+	height:68.98px;
+	left: 1%;
+}
+.full-mango-1 {
+	position: fixed;
+	bottom:5%;
+	width:58.93px;
+	height:68.98px;
+	left: 43%;
+}
+.full-mango-2 {
+	position: fixed;
+	bottom:9%;
+	width:38.37px;
+	height:44.92px;
+	left: 59%;
+}
+.full-mango-3 {
+	position: fixed;
+	bottom:3%;
+	width:38.37px;
+	height:44.92px;
+	left: 86%;
+}
+.full-mango-4{
+	position: fixed;
+	bottom:8%;
+	width:38.37px;
+	height:44.92px;
+	left: 47%;
+}
+.full-mangorhu{
+	position: fixed;
+	bottom:4%;
+	width:58.93px;
+	height:68.98px;
+	left: 55%;
+
+}
+
+.guava-fullrhu {
+	position: fixed;
+	bottom:2%;
+	max-width: 100%;
+	height: auto;
+	left: 27%;
+
+}
+
+.guava-full {
+	position: fixed;
+	width:36.51px;
+	height:36.82px;
+	bottom:10%;
+	left: 13%;
+}
+.guava-full-1 {
+	position: fixed;
+	bottom:5%;
+	width:36.51px;
+	height:36.82px;
+	left: 32%;
+}
+
+.leaf-1 {
+	position: fixed;
+	bottom: 4%;
+	max-width: 100%;
+	height: auto;
+	left: 49%;
+}
+.leaf-1rhu {
+	position: fixed;
+	bottom: 10%;
+	max-width: 100%;
+	height: auto;
+	left: 55%;
+}
+.leaf-4 {
+	position: fixed;
+	bottom: 0;
+	max-width:100%;
+	height:auto;
+	left: 4%;
+}
+.leaf-4-1 {
+	position: fixed;
+	bottom: 2%;
+	max-width:100%;
+	height:auto;
+	left: 11%;
+}
+.leaf-4-2 {
+	position: fixed;
+	bottom:4%;
+	max-width:100%;
+	height:auto;
+	right: 0;
+}
+.leaf-4-3 {
+	position: fixed;
+	bottom: 9%;
+	max-width: 100%;
+	height: auto;
+	left: 91%;
+}
+.leaf-4-4 {
+	position: fixed;
+	bottom: 2%;
+	max-width: 100%;
+	height: auto;
+	left: 78%;
+}
+.leaf-4-5 {
+	position: fixed;
+	bottom: 4%;
+	max-width: 100%;
+	height: auto;
+	left: 66%;
+}
+.leaf-4-6 {
+	position: fixed;
+	bottom: 6%;
+	max-width: 100%;
+	height: auto;
+	left: 20%;
+}
+.leaf-4-7 {
+	position: fixed;
+	bottom: 6%;
+	max-width: 100%;
+	height: auto;
+	left: 36%;
+}
+.leaf-4-8 {
+	position: fixed;
+	bottom: 3%;
+	max-width: 100%;
+	height: auto;
+	left: 57%;
+}
+.leaf-4-9 {
+	position: fixed;
+	bottom:2%;
+	max-width:100%;
+	height:auto;
+	left: 26%;
+}
+.leaf-4-10 {
+	position: fixed;
+	bottom:8%;
+	max-width:100%;
+	height:auto;
+	left: -0.2%;
+}
+
+.pomegranate-1rhu {
+	position: fixed;
+	bottom:2%;
+	max-width: 100%;
+	height: auto;
+	left: 7%;
+}
+.pomegranate-1 {
+	position: fixed;
+	bottom:5%;
+	max-width: 100%;
+	height: auto;
+	left: 15%;
+}
+
+.seabuckthorn-single-1-1 {
+	position: fixed;
+	bottom:8%;
+	max-width: 100%;
+	height: auto;
+	left: 66%;
+}
+.seabuckthorn-single-1rhu {
+	position: fixed;
+	bottom: 9%;
+	max-width: 100%;
+	height: auto;
+	left: 86%;
+}
+.seabuckthorn-single-1 {
+	position: fixed;
+	bottom: 5%;
+	max-width: 100%;
+	height: auto;
+	left: 89%;
+}
+.seabuckthorn-single-2rhu {
+	position: fixed;
+	bottom: 4%;
+	max-width: 100%;
+	height: auto;
+	left: 91.8%;
+}
+/* section 4 css end */

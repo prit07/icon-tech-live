@@ -1,0 +1,149 @@
+
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+/* About Us start */
+
+.header-hero-wapper{ background-size: cover !important; background: url(../img/about-us-bg.png) no-repeat center;}
+.about-us-text { max-width: 939px; width: 100%; margin: auto; padding: 72px 0 94px 0; display: flex; flex-direction: column; gap: 32px;}
+.about-us-text h2 {
+    color: #FFF;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    text-align: center;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.about-us-text p {
+    color: #FFF;
+    text-align: center;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    letter-spacing: -0.66px;
+    margin: 0;
+}
+
+
+.about-us-our-mission { padding: 120px 0 0 0; background: #FAFAFA;}
+.about-us-our-mission-wapper {display: flex; gap: 98px; }
+.about-us-our-mission-img {max-width: 554px; width: 100% ; position: relative;}
+.about-us-our-mission-img::before {
+    content: "";
+    width: 100%;
+    height: 635px;
+    background: url(../img/Vector\ 32.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 100px;
+}
+.about-us-our-mission-img01 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+}
+
+.about-us-our-mission-img01::before {
+    content: "";
+    width: 65px;
+    height: 65px;
+    background-image: url(../img/Frame\ 1183.png) !important;
+    background-size: cover !important;
+    position: absolute;
+    right: 69px;
+    top: 170px;
+}
+.about-us-our-mission-img02::after {
+    content: "";
+    width: 64px;
+    height: 64px;
+    background: url(../img/Frame\ 1184.png) no-repeat center;
+    background-size: cover !important;
+    position: absolute;
+    left: 64px;
+    bottom: 125px;
+}
+.about-us-our-mission-img01 img { width: 349px; height: 439px;position: relative;}
+
+.about-us-our-mission-img02 { position: relative; display: flex; justify-content: end; bottom: 130px;}
+.about-us-our-mission-img02 img {  width: 349px; height: 439px;}
+.about-us-our-mission-item { max-width: 628px; width: 100%; display: flex; flex-direction: column; gap: 32px;}
+.about-us-our-mission-item-text ul { margin-bottom: 12px; padding: 0; list-style: none; }
+.about-us-our-mission-item-text ul li img { width: 28px; height: 28px; }
+.about-us-our-mission-item-text ul li {
+    display: flex; 
+    align-items: center;
+    gap: 16px;
+    color: #04143A;
+    font-family: "Apple Garamond";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.08px;
+}
+.about-us-our-mission-item-text p {
+    color: #04143A;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+
+
+@media(max-width:1299px) {
+    .about-us-our-mission-img02::after { left: 47px; bottom: 164px;}
+    .about-us-our-mission-img01::before { right: 42px; top: 205px;}
+    .about-us-our-mission { padding: 120px 0 100px 0;}
+    
+
+}
+@media(max-width:1199px) {
+   
+    .about-us-our-mission-img01::before { top: 180px;}
+    .about-us-our-mission-wapper { display: flex;  gap: 50px; align-items: center;}
+    .about-us-our-mission-img02 img { width: 300px; height: 400px;}
+    .about-us-our-mission-img01 img {  width: 300px; height: 400px;}
+    .about-us-our-mission-img02 { bottom: 100px; }
+    .about-us-our-mission-img::before { height: 510px; top: 114px;}
+    .about-us-our-mission-item-text ul li { gap: 13px; font-size: 33px; line-height: 41px;}
+
+}
+
+@media(max-width:991px){
+    .about-us-our-mission { padding: 60px 0;}
+    .about-us-our-mission-wapper { gap: 0px; flex-direction: column;}
+    .about-us-our-mission-img02 { bottom: 60px;}
+    .about-us-our-mission-img { margin: auto;}
+    .about-us-our-mission-img02 img { width: 300px; height: 350px;}
+    .about-us-our-mission-img01 img { width: 300px; height: 350px;}
+    .about-us-our-mission-img::before {height: 410px; top: 114px;}
+    .about-us-our-mission-img02::after { left: 135px; bottom: 134px;}
+    .about-us-our-mission-img01::before { top: 150px; right: 132px;}
+}
+
+
+@media (max-width:767px) {
+    .about-us-text p { font-size: 19px; line-height: 29px;}
+    .about-us-text { padding: 62px 0 84px 0; gap: 22px;}
+    .about-us-our-mission-wapper { gap: 40px; flex-direction: column;}
+    .about-us-our-mission-img::before { display: none;}
+    .about-us-our-mission-img02::after { display: none;}
+    .about-us-our-mission-img01::before { display: none;}
+    .about-us-our-mission-img01 { margin-bottom: 30px;}
+    .about-us-our-mission-img02 { bottom: 0px; }
+    .about-us-our-mission-img02 img { width: 100%; height: 350px;}
+    .about-us-our-mission-img01 img { width: 100%; height: 350px;}
+}

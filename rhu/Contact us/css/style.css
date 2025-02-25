@@ -1,0 +1,266 @@
+body { margin:0; padding:0; box-sizing: border-box;  }
+a , a:hover { text-decoration: none; }
+
+/* rhu page conatc us page Start */
+.rhu-contact-us-banner-page {
+    width: 100%; 
+    height: 100%;
+    position: relative;
+    background: url(../img/contact-us-banner.png) no-repeat center;
+    background-size: cover;
+}
+.rhu-contact-us-banner-page::after {
+	content: "";
+	width: 100%;
+	height: 391px;
+	background: url(../img/about-us-page-banner.png) no-repeat center;
+    background-size:100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.rhu-contact-us-banner-page::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(177.25deg, rgba(22, 81, 60, 0) -123.12%, rgba(22, 81, 60, 0.9) 74.41%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rhu-contact-us-banner-page-content {
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+    z-index: 111;
+	padding-top: 80px;
+
+}
+.rhu-contact-us-banner-page-content h2 {
+	font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+	color: #FFFFFF;
+	margin: 0;
+}
+.rhu-contact-us-banner-page-content ul { display: flex; list-style: none; margin: 0; gap: 4px; padding: 0;}
+.rhu-contact-us-banner-page-content ul li a { 
+	font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.rhu-contact-us-banner-page-content ul li {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F2C200;
+}
+/* rhu page conatc us page Start */
+
+
+/* Contact Us Start */
+.contact-us {  padding: 40px 0; position: relative;}
+.contact-us::after {
+    content: "";
+    width: 150px;
+    height: 400px;
+    background: url(../img/contact-us-affter.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.contact-us::before {
+    content: "";
+    width: 150px;
+    height: 400px;
+    background: url(../img/contact-us-before.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    bottom: -19%;
+}
+.contact-us-row { display: flex; gap: 19px;  align-items: center; }
+.contact-us-right-title.m-view { display: none;}
+.contact-us-left { width: 100%; max-width: 454px;}
+.contact-us-right { width: 100%;}
+.contact-us-left-items { border-radius: 15px; background: #16513C; padding: 53px 28px 0 28px;}
+.contact-us-title h4 {
+    font-family: Work Sans;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35.19px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.contact-us-title p {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.contact-us-center ul{ margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 20px;} 
+.contact-us-center ul li { display: flex; gap: 20px; align-items: center;}
+.contact-us-center ul li img { width: 20px; height: 26px; object-fit: contain;}
+.contact-us-center ul li span {
+    font-family: Work Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.11px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+.contact-us-bottom { position: relative; left: -80px;}
+.contact-us-bottom img { width: 100%; height: 350px;}
+
+.contact-us-right-title h2 {
+    font-family: Work Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #183422;
+    margin-bottom: 20px;
+
+}
+.contact-us-right-title p {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.contact-us-right-form { display: grid; grid-template-columns: repeat(2, 1fr);  gap: 20px; }
+.contact-us-input { width: 100%;}
+
+.contact-us-textarea { grid-column: span 2; }
+.contact-us-textarea { width: 100%;}  
+.contact-us-input input {
+    border: 1px solid #BFBFBF;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #000000;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 8px;
+}
+.contact-us-textarea textarea {
+     width: 100%;
+     border: 1px solid #BFBFBF;
+     font-family: Poppins;
+     font-weight: 500;
+     font-size: 18px;
+     line-height: 30px;
+     letter-spacing: 0%;
+     color: #000000;
+     padding: 15px 20px;
+     width: 100%;
+     border-radius: 8px;
+}
+.contact-us-input input::placeholder, .contact-us-textarea textarea::placeholder { color: #BFBFBF !important;}
+.contact-us-right-btn a {
+    width: fit-content !important;
+    background: #F2C200;
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.48px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 13px 26px;
+    display: inline-block;
+    border-radius: 25px;
+}
+.contact-us-right-btn { margin-top: 30px;}
+/* Contact Us End */
+
+
+
+.contact-us-map iframe { width: 100%;}
+
+ @media(max-width:1199px){
+
+
+ }
+
+@media(max-width:991px){
+
+    .rhu-contact-us-banner-page::after { height: 251px;}
+
+    .contact-us-left { max-width: 270px;}
+    .contact-us-title h4 { font-size: 22px; line-height: 26.19px; margin-bottom: 10px;}
+    .contact-us-title p { font-size: 16px; line-height: 26px;}
+    .contact-us-center ul li { gap: 10px;}
+    .contact-us-left-items { padding: 20px;}
+    .contact-us-center ul li span { font-size: 16px; line-height: 19.11px;}
+    .contact-us-center ul { gap: 10px;}
+    .contact-us::before { width: 80px; height: 200px; bottom: -7%;}
+    .contact-us::after { width: 60px; height: 200px;}
+    .contact-us-bottom img { width: 100%; height: 250px;}
+    .contact-us-right-form { gap: 12px;}
+    .contact-us-input input { font-size: 15px; line-height: 23px; padding: 10px 14px;}
+    .contact-us-textarea textarea { font-size: 16px; line-height: 20px;  padding: 10px 16px; border-radius: 8px;}
+    
+    
+}
+
+@media(max-width:767px){
+
+
+    .rhu-contact-us-banner-page { width: 100%; height: 164px;}
+    .rhu-contact-us-banner-page::after { width: 100%; height: 97px;}
+    .rhu-contact-us-banner-page-content { height: 162px; padding-top: 80px;}
+    .rhu-contact-us-banner-page-content h2 { font-size: 20px; line-height: 25px;}
+    .rhu-contact-us-banner-page-content ul li a { font-size: 12px; line-height: 25px;}
+    .rhu-contact-us-banner-page-content ul li { font-size: 12px; line-height: 25px;}
+
+    .contact-us::after { display: none;}
+    .contact-us::before { display: none;}
+    .contact-us-row { flex-direction: column;}
+    .contact-us-left { max-width: 100%;}
+    .contact-us-right-title.m-view { display: block; max-width: 255px;}
+    .contact-us-right-title { display: none;}
+    .contact-us-right-title h2 { font-size: 14px; line-height: normal; margin-bottom: 10px;}
+    .contact-us-right-title p { font-size: 12px; line-height: 14px; margin-bottom: 20px;}
+    .contact-us-title h4 { font-size: 30px; line-height: 35px; margin-bottom: 15px;}
+    .contact-us-title p { font-size: 14px; line-height: 21px;}
+    .contact-us-center ul li span { font-size: 14px; line-height: 16px;}
+    .contact-us-textarea { grid-column: 1;}
+    .contact-us-right-form { grid-template-columns: repeat(1, 1fr); gap: 20px;}
+    .contact-us-input input { font-size: 12px; line-height: 23px; padding: 10px 14px;}
+    .contact-us-textarea textarea { font-size: 12px; line-height: 17px; padding: 10px 16px;}
+    .contact-us-right-btn a { width: 100% !important; font-size: 14px; line-height: 16px; text-align: center; padding: 16px 26px;}
+    .contact-us-right-btn { margin-top: 20px;}
+    .contact-us { padding: 20px 0;}
+}
+@media (min-width: 1300px) {
+    .container.w-1164 {
+        max-width: 1164px !important;
+        padding: 0;
+    }
+}

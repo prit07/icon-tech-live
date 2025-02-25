@@ -1,0 +1,337 @@
+
+body { margin: 0; padding: 0; }
+
+:root {
+	--Blacker_Text:'Blacker Text'; 
+	--Manrope:'Manrope', sans-serif;
+}
+a:hover { text-decoration:none; }
+
+
+
+
+/* Appeals Court secrion start  */
+.appeals-court-section{
+    padding: 50px 0 120px 0;
+    background: #FFF6ED; 
+}
+.appeals-court-section .appeals-court-wapper{
+    max-width: 911px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2{
+    color: #291622;
+text-align: center;
+font-family: var(--Blacker_Text);
+font-size: 65px;
+font-style: normal;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: -1.95px;
+margin: 0;
+}
+.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 span{
+position: relative;
+z-index: 1;
+}
+.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 span::after {
+	content: '';
+	width: 100%;
+	height: 20px;
+	background: #FFF;
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	z-index: -1;
+}
+.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper p{
+    color: #291622;
+text-align: center;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+margin: 0;
+}
+.appeals-court-tabs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid #ECD7C5;
+}
+.appeals-court-tabs li{
+    list-style: none;
+   padding: 0 24px 20px 24px;
+}
+.appeals-court-tabs li.active{
+    border-bottom: 2px solid #96423F;
+}
+.appeals-court-tabs li h5{
+    cursor: pointer;
+    color:  #333;
+font-family: var(--Blacker_Text);
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.2px;
+margin: 0;
+}
+.appeals-court-tabs li.active h5{
+    color:  #291622;
+font-weight: 500;
+}
+.content{
+    display: none;
+}
+.content.active{
+    display: block;
+}
+.appeals-court-box{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.search-wapper form, .search-wapper form .form-group{
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	align-items: center;
+	margin: 0;
+}
+ .search-wapper form .court-name{
+	width: 42%;
+}
+ .search-wapper form .since {
+	width: 23%;
+}
+ .search-wapper form .to{
+	width: 21%;
+}
+ .search-wapper form .search-btn-f{
+	width: 14%;
+	display: flex;
+ }
+ .search-wapper form .search-btn-f a{
+	border-radius: 52px;
+border: 1px solid #291622;
+background: #F3DCA0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 48px;
+color: #291622;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+.search-wapper form .form-group input{
+	width: 100%;
+	height: 48px;
+	border-radius: 52px;
+border: 1px solid #291622;
+background: #FFF;
+padding: 8px 16px; 
+ }
+ .search-wapper form .form-group input::placeholder{
+	color: #291622;
+font-family: var(--Manrope);
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+opacity: 0.5;
+ }
+  .search-wapper form .form-group input:focus{
+	box-shadow: none;
+ }
+ .search-wapper form .form-group label{
+	margin: 0;
+	padding: 0;
+	color: #291622;
+text-align: center;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; 
+ }
+
+ .browse-by-recent-wapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 1080px;
+    width: 100%;
+    margin: 64px auto 0 auto;
+ }
+
+ .browse-by-recent-wapper h6{
+    color:  #291622;
+    font-family: var(--Blacker_Text);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    margin: 0;
+ }
+ .browse-by-recent-wapper table{
+    width: 100%;
+    height: 100%;
+}
+
+.browse-by-recent-wapper .w-48 { width: 48% }
+.browse-by-recent-wapper .w-26 { width: 26% }
+.browse-by-recent-wapper table p { margin: 0; line-height: normal; }
+.browse-by-recent-wapper table p a{
+color: #96423F;
+font-family: var(--Manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+margin: 0;
+}
+.browse-by-recent-wapper table thead p{
+    color: #291622;
+}
+.browse-by-recent-wapper table tbody p{
+    color: #333;
+}
+.browse-by-recent-wapper table thead{
+    border: 1px solid  #291622;
+background: #F8EBDF;
+}
+.browse-by-recent-wapper table tbody tr{
+    border-right: 1px solid  #291622;
+border-bottom: 1px solid  #291622;
+border-left: 1px solid  #291622;
+background: #FFF;
+}
+.browse-by-recent-wapper table th, .browse-by-recent-wapper table td{
+    padding: 10px;
+}
+
+/* Appeals Court secrion end */
+
+
+
+@media(max-width:1399px){
+	
+}
+@media(max-width:1199px){
+	
+}
+
+@media only screen and (min-width: 992px) and (max-width:1199px) {
+	
+
+}
+
+@media(max-width:991px){
+	/* Appeals Court secrion start */
+
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 {
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .appeals-court-tabs li {
+        padding: 0 15px 20px 15px;
+    }
+    .appeals-court-tabs li h5 {
+        font-size: 16px;
+    }
+
+    /* Appeals Court secrion end */
+}
+
+@media(max-width:767px){
+    /* Appeals Court secrion start */
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper {
+        gap: 15px;
+    }
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 span::after {
+        height: 14px;
+    }
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper p {
+        font-size: 14px;
+    }
+    .appeals-court-tabs {
+        border-bottom: none;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .appeals-court-tabs li.active {
+        background: #F3DCA0;
+    }
+    .appeals-court-tabs li{
+        padding: 10px 20px;
+        border: 2px solid #96423F;
+        border-radius: 12px;
+    }
+    .search-wapper form {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .search-wapper form .court-name {
+        width: 100%;
+    }
+    .search-wapper form .since {
+        width: 100%;
+    }
+    .search-wapper form .to {
+        width: 100%;
+    }
+    .search-wapper form .search-btn-f {
+        width: 100%;
+    }
+     .search-wapper form .form-group {
+        gap: 6px;
+        align-items: start;
+        flex-direction: column;
+    }
+    .search-wapper form .form-group label {
+        text-align: left;
+        padding-left: 15px;
+    }
+    .browse-by-recent-wapper {
+        margin: 40px auto 0 auto;
+    }
+    .browse-by-recent-wapper table p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    /* Appeals Court secrion end */
+}
+
+
+@media(max-width:350px){
+	.appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 span::after {
+        height: 10px;
+    }
+    .appeals-court-section .appeals-court-wapper .appeals-court-top-wapper h2 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+}

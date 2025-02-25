@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Listing page || legal</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="font/font-style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/listing-page.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+	integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+	integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+	crossorigin="anonymous"></script>
+	<script src="js/header-footer.js"></script>
+	<script src="js/listing-page.js"></script>
+
+</head>
+
+<body>
+	<div class="m-overlay-bg"></div>
+	<!-- header start -->
+<header id="h-home" class="h-home-wapper">
+		<div class="h-header-main">
+			<div class="container w-1280">
+				<div class="h-header-nav">
+					<div class="h-header-logo">
+						<a href="home-page.html"><img src="img/header-footer-img/Logo(11).png" class="img-fluid" alt="logo"></a>
+					</div>
+					<div class="h-header-menu">
+						<div class="h-toggle-btn" id="h-toggle-btn">
+							<div class="line-card one"></div>
+							<div class="line-card two"></div>
+							<div class="line-card three"></div>
+						</div>
+						<div class="h-main-menu" id="h-sidebar-wrapper">
+							<ul>
+								<li class="main_li">
+									<a href="#">Blog</a>
+									<ul class="sub_menu_ul">
+										<li><a href="law-category-page.html">Law Category Page</a></li>
+										<li><a href="content-page.html">Content Page</a></li>
+									</ul>
+								</li>
+								<li class="main_li">
+									<a href="#">Directory</a>
+									<ul class="sub_menu_ul">
+										<li><a href="practice-category-page.html">Practice category page</a></li>
+										<li><a href="law-firm-directory-page.html">Law Firm Directory Page</a></li>	
+										<li><a href="cases-category-page.html">Cases category page</a></li>		
+										<li><a href="cases-list-page.html">Cases list page</a></li>		
+									</ul>
+								</li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Glossary</a></li>
+								<li><a href="contact-page.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Search-Button-Sign-Up-wapper">
+						<a href="#" class="search-btn"><img src="img/header-footer-img/search-icon.png" alt=""></a>
+						<a href="#" class="sign-up-btn">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- search html start  -->
+		<div class="search-popup">
+			<span class="search-back-drop"></span>
+			<button class="close-search"><span class="fas fa-times"></span></button>
+			<div class="search-inner">
+				<form method="post" action="index.html">
+					<div class="form-group">
+						<input type="search" name="search-field" value="" placeholder="Search..." required="">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- search html end  -->
+	</header>	<!-- header end -->
+
+	<!-- listing page banner section html start -->
+	<section class="listing-banner-wapper">
+		<div class="container w-1280">
+			<div class="listing-banner-main">
+				<div class="breadcrumbs-inner-text">
+					<ul>
+						<li><a href="#">Lawyer Directory </a></li>
+						<li><img src="img/right-icon.svg" alt=""></li>
+						<li><a href="#">Personal Injury</a></li>
+						<li><img src="img/right-icon.svg" alt=""></li>
+						<li><span>Colorado Attorneys</span></li>
+					</ul>
+				</div>
+				<div class="listing-title">
+					<h1>Colorado Personal Injury Lawyers</h1>
+				</div>
+				<div class="form-wapper">
+					<form>
+						<div class="form-col">
+							<div class="banner-new-input">
+								<span class="area-icon"><img src="img/Area-icon.svg" alt=""></span>
+								<input type="text" name="full-name" class="input-focus" placeholder="Practice Area or Lawyer Name">
+								<label class="label-focus">Practice Area or Lawyer Name</label>
+								<span class="arrow-f-icon"><img src="img/arrow-f-icon.svg" alt=""></span>
+							</div>
+						</div>
+						<div class="form-col">
+							<div class="form-group floating-group floating-diff">
+								<span class="area-icon"><img src="img/location-icon.svg" alt=""></span>
+								<label class="floating-label">Select Country</label>
+								<select id="country" name="country" class="form-control floating-control">
+									<option value="">Select Country</option>   
+									<option value="Afganistan">Afghanistan</option>
+									<option value="Albania">Albania</option>
+									<option value="India">India</option>
+									<option value="American Samoa">American Samoa</option>
+									<option value="Andorra">Andorra</option>
+									<option value="Angola">Angola</option>
+								</select>
+								<span class="arrow-f-icon"><img src="img/arrow-f-icon.svg" alt=""></span>
+							</div>
+						</div>
+						<div class="form-btn">
+							<button><img src="img/header-footer-img/search-icon.png">Search</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- listing page banner section html start -->
+
+
+	<!-- Lawyers list section html start -->
+
+	<section class="lawyers-list-wapper">
+		<div class="lawyers-top-shape">
+			<div class="container w-1280">
+				<div class="row">
+					<div class="col-12 col-lg-3">
+						<div class="lawyers-sidebar-wapper">
+							<div class="lawyers-sidebar-title">
+								<h3>Filter Results</h3>
+								<a href="#">Clear all</a>
+							</div>
+							<div class="lawyers-sidebar-card">
+								<div class="lawyers-rating-card">
+									<h3>Rating</h3>
+									<div class="form-p-wapper">
+										<div class="form-check">
+											<input class="radio" type="radio" value="5star" name="star" id="5" checked="">
+											<label for="5"><img src="img/5-star.png" alt=""></label>
+										</div>
+										<div class="form-check">
+											<input class="radio" type="radio" value="4star" name="star" id="4">
+											<label for="4"><img src="img/4-star.png" alt=""></label>
+										</div>
+										<div class="form-check">
+											<input class="radio" type="radio" value="3star" name="star" id="3">
+											<label for="3"><img src="img/3-star.png" alt=""></label>
+										</div>
+										<div class="form-check">
+											<input class="radio" type="radio" value="2star" name="star" id="2">
+											<label for="2"><img src="img/2-star.png" alt=""></label>
+										</div>
+										<div class="form-check">
+											<input class="radio" type="radio" value="1star" name="star" id="1">
+											<label for="1"><img src="img/1-star.png" alt=""></label>
+										</div>
+									</div>
+								</div>
+								<div class="lawyers-rating-card">
+									<h3>Language</h3>
+									<div class="lawyers-language">
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" checked="" id="English">
+											<label class="form-check-label" for="English">English</label>
+										</div>
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" id="Spanish">
+											<label class="form-check-label" for="Spanish">Spanish</label>
+										</div>
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" id="Portuguese">
+											<label class="form-check-label" for="Portuguese">Portuguese</label>
+										</div>
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" id="Сhinese">
+											<label class="form-check-label" for="Сhinese">Сhinese</label>
+										</div>
+									</div>
+								</div>
+								<div class="lawyers-rating-card">
+									<h3>Features</h3>
+									<div class="lawyers-language">
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" checked="" id="Offers free consultation">
+											<label class="form-check-label" for="Offers free consultation">Offers free consultation</label>
+										</div>
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" id="Offers virtual appointments">
+											<label class="form-check-label" for="Offers virtual appointments">Offers virtual appointments</label>
+										</div>
+										<div class="lawyers-form-check">
+											<input class="form-check-input" type="checkbox" value="" id="Accepts credit cards">
+											<label class="form-check-label" for="Accepts credit cards">Accepts credit cards</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-9">
+						<div class="lawyers-list-main">
+							<div class="lawyers-list-card premium-card-wapper">
+								<div class="lawyers-list-left">
+									<div class="premium-list">
+										<span>PREMIUM</span>
+									</div>
+									<div class="lawyers-list-thumb">
+										<img src="img/l-1.png" alt="">
+									</div>
+									<div class="content-stars">
+										<span class="content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="lawyers-list-right">
+									<div class="lawyers-right-card">
+										<h2><a href="lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+										<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+										<span class="address-card"><img src="img/location-icon.svg">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</span>
+										<p>Edward has been helping injured victims and their families for over 29 years, and he understands this is an extremely painful and stressful time for you. If you have been injured in ... <a href="#"> Read More »</a></p>
+									</div>
+									<div class="lawyers-right-last">
+										<div class="lawyers-right-last-top">
+											<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+											<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+										</div>
+										<div class="lawyers-right-last-bottom">
+											<a href="#" class="website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+											<a href="#" class="email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lawyers-list-card">
+								<div class="lawyers-list-left">
+									<div class="lawyers-list-thumb">
+										<img src="img/l-2.png" alt="">
+									</div>
+									<div class="content-stars">
+										<span class="content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="lawyers-list-right">
+									<div class="lawyers-right-card">
+										<h2><a href= "lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+										<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+										<span class="address-card"><img src="img/location-icon.svg">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</span>
+										<ul>
+											<li><img src="img/video-icon.svg" alt="">Offers Video Conferencing</li>
+											<li><img src="img/graduation.svg" alt="">University of Denver</li>
+											<li><img src="img/law-icon.svg" alt="">Personal Injury, Insurance Claims, Medical Malpractice and Products Liability</li>
+											<li><img src="img/experience-icon.svg" alt="">Denver, CO Personal Injury Lawyer with 41 years of experience</li>
+										</ul>
+									</div>
+									<div class="lawyers-right-last">
+										<div class="lawyers-right-last-top">
+											<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+											<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+										</div>
+										<div class="lawyers-right-last-bottom">
+											<a href="#" class="website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+											<a href="#" class="email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lawyers-list-card premium-card-wapper">
+								<div class="lawyers-list-left">
+									<div class="premium-list">
+										<span>PREMIUM</span>
+									</div>
+									<div class="lawyers-list-thumb">
+										<img src="img/l-1.png" alt="">
+									</div>
+									<div class="content-stars">
+										<span class="content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="lawyers-list-right">
+									<div class="lawyers-right-card">
+										<h2><a href="lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+										<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+										<span class="address-card"><img src="img/location-icon.svg">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</span>
+										<p>Edward has been helping injured victims and their families for over 29 years, and he understands this is an extremely painful and stressful time for you. If you have been injured in ... <a href="#"> Read More »</a></p>
+									</div>
+									<div class="lawyers-right-last">
+										<div class="lawyers-right-last-top">
+											<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+											<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+										</div>
+										<div class="lawyers-right-last-bottom">
+											<a href="#" class="website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+											<a href="#" class="email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="lawyers-list-card">
+								<div class="lawyers-list-left">
+									<div class="lawyers-list-thumb">
+										<img src="img/l-3.png" alt="">
+									</div>
+									<div class="content-stars">
+										<span class="content-stars-rating" rating="3.5">
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+											<span class="star"></span>
+										</span>
+										<p>13 reviews</p>
+									</div>
+								</div>
+								<div class="lawyers-list-right">
+									<div class="lawyers-right-card">
+										<h2><a href="lawyer-page.html">The Law Offices of Gonzalez Associates, LLC</a></h2>
+										<h3>Personal Injury Lawyers Serving Miami, FL (Fort Lauderdale, FL)</h3>
+										<span class="address-card"><img src="img/location-icon.svg">4100 E. Mississippi Avenue, Floor 19 Denver, CO 80246</span>
+										<ul>
+											<li><img src="img/video-icon.svg" alt="">Offers Video Conferencing</li>
+											<li><img src="img/graduation.svg" alt="">University of Denver</li>
+											<li><img src="img/law-icon.svg" alt="">Personal Injury, Insurance Claims, Medical Malpractice and Products Liability</li>
+										</ul>
+									</div>
+									<div class="lawyers-right-last">
+										<div class="lawyers-right-last-top">
+											<span><img src="img/check-icon.svg" alt="">Free Consultation</span>
+											<span><img src="img/phone-icon.svg" alt=""><a href="#">(303) 682-2944</a></span>
+										</div>
+										<div class="lawyers-right-last-bottom">
+											<a href="#" class="website-btn"><img src="img/web-icon.svg" alt=""> View Website </a>
+											<a href="#" class="email-btn"><img src="img/email.svg" alt=""> Email Lawyer</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Lawyers list section html end -->
+
+	<!-- Legal Guides section start -->
+
+	<div class="lelgal-guides-section">
+		<div class="container w-1280">
+			<div class="Legal-Guides-wapper">
+				<h2>Legal <span>Guides</span></h2>
+				<div class="injured-law-wapper legal-guides">
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="content-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+				</div>
+				<div class="read-more-btn">
+					<a href="javascript:void(0)" id="legal-guides">Load more</a>
+				</div>
+			</div>
+			<div class="Legal-Guides-wapper">
+				<h2>Legal Research and <span>Law Practice</span></h2>
+				<div class="injured-law-wapper legal-research-card">
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Injury Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Family Law</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Estate Planning</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Home Ownership</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+					<div class="Injury-Law-card-wapper">
+						<h6><a href="listing-page.html">Intellectual Property</a></h6>
+						<p>Car Accidents, Medical Malpractice...</p>
+					</div>
+				</div>
+				<div class="read-more-btn">
+					<a href="javascript:void(0)" id="legal-research-card">Load more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Legal Guides section end -->
+
+	<!-- footer section start -->
+
+	<div class="fooetr-section">
+		<div class="footer-top">
+			<div class="container w-1280">
+				<div class="footer-top-all-wapper">
+					<div class="footer-logo-wapper">
+						<div class="footer-logo">
+							<img src="img/header-footer-img/Logo(12).png" alt="">
+						</div>
+						<div class="footer-sign-up-btn">
+							<a href="#">Sign-Up</a>
+						</div>
+						<div class="social-icon">
+							<ul>
+								<li><a href="#"><img src="img/header-footer-img/Button.png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(1).png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(2).png" alt=""></a></li>
+								<li><a href="#"><img src="img/header-footer-img/Button(3).png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="Directory-Resources-wapper">
+						<div class="Directory-wapper">
+							<h5>Directory</h5>
+							<ul>
+								<li><a href="#">By Practice Area</a></li>
+								<li><a href="#">By State</a></li>
+								<li><a href="#">By Type Of Lawyer</a></li>
+							</ul>
+						</div>
+						<div class="Resources-wapper">
+							<h5>Resources</h5>
+							<ul>
+								<li><a href="#">Articles</a></li>
+								<li><a href="#">Videos</a></li>
+								<li><a href="#">Podcasts</a></li>
+								<li><a href="#">Glossary</a></li>
+							</ul>
+						</div>
+						<div class="Legal-wapper">
+							<h5>Legal</h5>
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Privacy Statement</a></li>
+								<li><a href="#">Terms of Use</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-sign-up-btn">
+						<a href="#">Sign-Up</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container w-1280">
+				<div class="social-icon">
+					<ul>
+						<li><a href="#"><img src="img/header-footer-img/Button.png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(1).png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(2).png" alt=""></a></li>
+						<li><a href="#"><img src="img/header-footer-img/Button(3).png" alt=""></a></li>
+					</ul>
+				</div>
+				<p>© 1995-2023 Legal.com</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer section end -->
+
+
+</body>
+
+</html>

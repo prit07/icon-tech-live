@@ -1,0 +1,614 @@
+body { margin:0; padding:0; box-sizing: border-box;  }
+a , a:hover { text-decoration: none; }
+
+/* About page banner page Start */
+.rhu-about-us-banner-page {background: #16513C; width: 100%; position: relative;}
+.rhu-about-us-banner-page::after {
+	content: "";
+	width: 100%;
+	height: 391px;
+	background: url(../img/about-us-page-banner.png) no-repeat center;
+    background-size:100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.rhu-about-us-banner-page-content {
+    height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+    z-index: 111;
+	padding-top: 80px;
+
+}
+.rhu-about-us-banner-page-content h2 {
+	font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+	color: #FFFFFF;
+	margin: 0;
+}
+.rhu-about-us-banner-page-content ul { display: flex; list-style: none; margin: 0; gap: 4px; padding: 0;}
+.rhu-about-us-banner-page-content ul li a { 
+	font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.rhu-about-us-banner-page-content ul li {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #F2C200;
+}
+/* About page banner page End */
+
+ /* Our Cateory Start */
+.product-category { padding: 68px 0 90px 0;}
+.product-category-heading { width: 100%; max-width: 450px; padding-bottom: 56px;}
+.product-category-heading-left h5 {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    text-transform: capitalize;
+}
+.product-category-heading-left h2 {
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    margin: 0;
+}
+.product-category-row{ display: flex; gap: 20px;}
+.product-category-left { width: 100%; max-width: 454px; background: #16513C; border-radius: 15px; padding: 38px 28px; height: fit-content;}
+
+.product-category-left .product-tabs { margin: 0 0 39px 0; list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;}
+.product-category-left .product-tabs .product-tab {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 12px 25px;
+    position: relative;
+}
+.product-category-left .product-tabs li span { display: none;}
+.product-category-left .product-tab.active span { display: block;}
+.product-category-left .product-tab.active {background: #386C5A; border-radius: 8px;     padding: 22px 25px 12px 25px;}
+.product-category-left .product-tabs li span {
+    background: #F2C200;
+    font-family: Work Sans;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1px 13px ;
+    border-radius: 8px 0 8px 0;    
+}
+.product-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.product-btn a { 
+    padding: 9.5px 10px;
+    background: #F2C200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 25px;
+    width: fit-content;
+}
+.product-btn a img {width: 30px; height: 30px;}
+.product-btn a span {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+ }
+.product-icon ul{ display: flex; gap: 21px; margin: 0; list-style: none; padding: 0;}
+.product-icon img {width:23px; height: 23px; }
+.product-category-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.col-product-img img { width: 350px; height: 290px; object-fit: contain;}
+.col-product-dots .dot {display: inline-block; width: 10px; height: 10px; border-radius: 50%;background: #FFFFFF;}
+.col-product-dots .dot.active { background: #F2C200;}
+.product-img.active { display: block;}
+.product-img {display: none;}
+.product-content{ display: none;}
+.product-content.active{ 
+    display: block;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+@keyframes fadeIn{from{opacity:0;}
+to{opacity:1;}
+}
+.product-tab-row { 
+    display: grid;
+    grid-column-gap: 23px;
+    grid-row-gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.product-tab-content { background: #DFEDE9; border-radius: 18px; padding: 36px 26px 166px 23px; position: relative; height: 100%;}
+.product-tab-content h4 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+}
+.product-tab-content p {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.product-tab-content-img { position: absolute; bottom: 0; right: 0;}
+.product-tab-content-main::after {
+    content: "";
+    width: 250px;
+    height: 178px;
+    background: url(../img/product-category-05.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.product-tab-content-main { position: relative;}
+.product-tab-content-main img {
+    width: 175px;
+    height: 222px;
+    position: relative;
+    z-index: 111;
+}
+
+
+.product-category-heading-right { display: none;}
+@keyframes fadeIn{from{opacity:0;}
+to{opacity:1;}
+}
+
+ /* Our Cateory End */
+
+
+
+
+/* social present Start */
+.social-present { padding: 51px 0 0 0;}
+.social-present-row { display: flex; gap: 142px;}
+.social-present-left { width: 100%; max-width: 454px;}
+.social-present-left h5 {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+}
+.social-present-left h2 {
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    margin: 0;
+}
+.social-present-right p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+.social-present-right a {
+    width: 100%;
+    max-width: 200px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    background: #16513C;
+    border-radius: 25px;
+
+}
+.slider-container { padding: 67px 0 0 0; position: relative;}
+.slider-container::after {
+    content: "";
+    width: 100%;
+    height: 318px;
+    background: url(../img/slider-before.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slider-container-img img { width: 100%; height: auto; border-radius: 20px;}
+/* social present End */
+
+
+/*  Delicious mango pickle recipes to try Start  */
+.product-pickle { background: #183422; padding: 100px 0; position: relative;}
+.product-pickle::after {
+    content: "";
+    width: 300px;
+    height: 250px;
+    background: url(../img/product-pickle-after.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.product-pickle-heading { display: flex; justify-content: space-between; gap: 450px; padding-bottom: 83px;}
+.product-pickle-heading h2 {
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+.product-pickle-heading a {
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 184px;
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    border-radius: 85px;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.product-pickle-heading img { width: 44px; height: 44px;}
+.product-pickle-heading a span{
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #163421;
+}
+.product-pickle-row {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.product-pickle-itmes  {
+    background: #FFFFFF33;
+    padding: 24px 8px;
+    border-radius: 20px;
+    height: 100%;
+}
+.product-pickle-itmes img { width: 33px; height: 41px; padding-bottom: 14px; object-fit: contain;}
+.product-pickle-itmes h3 { margin: 0; line-height: 0; padding: 0 0px 2px 0;}
+.product-pickle-itmes h3 a {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.product-pickle-itmes p {
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+ /*  Delicious mango pickle recipes to try End  */
+
+
+/* Frequently asked question Start  */
+.product-frequently { padding: 117px 0 182px 0; position: relative;}
+.product-frequently::before {
+    content: "";
+    width: 400px;
+    height: 250px;
+    background: url(../img/faq-before.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.product-frequently::after{
+    content: "";
+    width: 173px;
+    height: 80px;
+    background: url(../img/faq-leaf.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+}
+.product-frequently-heading { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 81px; align-items: center;}
+.product-frequently-heading h2{
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+    margin: 0;
+}
+.product-frequently-heading a {
+    background: #F2C200;
+    padding: 15px;    
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.product_faq_accordion_wapper a { width: 95% !important;}
+.product_faq_accordion_wapper .product_faq_content { display: none; }
+.product_faq_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_faq_accordion_item {
+    background: #DFEDE9;
+    padding: 20px 34px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.product_faq_accordion_item.active { background: #183422;}
+.product_faq_menu>a {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #183422;
+}
+.product_faq_accordion_item.active .product_faq_menu>a { color: #fff;}
+.product_faq_content { margin-top: 29px;}
+.product_faq_content p {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin: 0;
+}
+.product_faq_menu_img {
+    width: 42px;
+    height: 42px;
+    background: #DFEDE9;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.product_faq_menu_img.new-class .product_faq-plus-img  { display: none;}
+.product_faq_menu_img.new-class .product_faq-mines-img  { display: block;}
+.product_faq_menu_img .product_faq-mines-img { display: none;}
+.product_faq_menu_img.new-class { background: #F2C200; border: 0;}
+
+/* Frequently asked question End */
+
+
+
+ @media(max-width:1199px){
+    /*  Delicious mango pickle recipes to try Start  */
+    .product-pickle-heading { gap: 200px; }
+    .product-pickle::after { width: 200px; height: 150px;}
+    /*  Delicious mango pickle recipes to try End  */
+
+    /* Our Cateory Start */
+    .col-product-img img {  width: 261px; height: 250px;}
+    .product-category-left { max-width: 353px;padding: 20px 17px; }
+    .product-tab-content {  padding: 24px 19px 183px 19px; }
+    /* Our Cateory End */
+
+
+ }
+
+@media(max-width:991px){
+	/* About page banner page Start */
+    .rhu-our-story { padding: 52px 0;}
+	.rhu-about-us-banner-page-content { height: 365px; padding-top: 60px;}
+	.rhu-about-us-banner-page::after { height: 250px;}
+	/* About page banner page End */
+
+    /* social present Start */
+    .social-present-row {flex-direction: column; gap: 10px;}
+    .social-present-left { max-width: 100%;}
+    /*  social present End */
+
+    /*  Delicious mango pickle recipes to try Start  */
+    .product-pickle-row {  grid-template-columns: repeat(3, 1fr);}
+    .product-pickle-heading { gap: 100px;}
+    /*  Delicious mango pickle recipes to try End  */
+
+    /* Our Category Start */
+    .product-category-left {max-width: 270px; padding: 14px 12px; }
+    .product-category-left .product-tabs .product-tab {  font-size: 16px; line-height: 19.46px; padding: 8px 4px; }
+    .product-btn-icon { gap: 20px; flex-direction: column;}
+    .product-category-left .product-tabs {margin: 0 0 20px 0;}
+    .product-category-bottom { align-items: center; flex-direction: column;}
+    .col-product-img img { width: 100%; height: 200px;}
+    .product-tab-content-main img {  width: 100px; height: 150px;}
+    .product-tab-content-main::after { width: 150px; height: 111px;}
+    .product-tab-content { padding: 15px 14px 99px 14px;}
+    .product-category-left .product-tab.active { padding: 22px 8px 4px 8px }
+    .product-tab-content h4 {  font-size: 15px; line-height: 18.46px;}
+    /* Our Category End */
+}
+
+@media(max-width:767px){
+	/* About page banner page Start */
+	.rhu-about-us-banner-page-content { height: 150px; padding-top: 40px;}
+	.rhu-about-us-banner-page::after { height: 97px;}
+	.rhu-about-us-banner-page-content h2 { font-size: 20px; line-height: 25.08px;}
+	.rhu-about-us-banner-page-content ul li a { font-size: 12px; line-height: 25.8px;}
+	.rhu-about-us-banner-page-content ul li { font-size: 12px; line-height: 25.8px;}
+	/* About page banner page End */
+
+    /*  social present Start */
+    .slider-container::after { display: none;}
+    .slider-container-img img {  height: 133px; object-fit: cover;}
+    .social-present-left h5 { font-size: 10px; margin-bottom: 4px;}
+    .social-present-left h2 { font-size: 14px; line-height: 16px;}
+    .social-present-right p { font-size: 12px; line-height: 14px; margin-bottom: 10px;}
+    .social-present-right a { max-width: 180px; height: 34px; font-size: 12px; line-height: 14px;}
+    .social-present { padding: 0px 0 70px 0;}
+    /* social present end */
+
+    /*  Delicious mango pickle recipes to try Start  */
+    .product-pickle {  padding: 41px 0 61px 0; }
+    .product-pickle-row {  grid-template-columns: repeat(2, 1fr);     grid-column-gap: 16px;  grid-row-gap: 16px;}
+    .product-pickle-heading { gap: 10px;  padding-bottom: 40px;}
+    .product-pickle-heading h2 { font-size: 16px; line-height: 18px; }
+    .product-pickle-heading a { max-width: 98px; height: 34px; gap: 3px; padding: 6px 7px;}
+    .product-pickle::after {  width: 106px; height: 48px;}
+    .product-pickle-heading img { width: 21px; height: 21px;}
+    .product-pickle-heading a span { font-size: 12px; line-height: 18px; }
+    .product-pickle-itmes {  padding: 19px 8px; border-radius: 14px;}
+    .product-pickle-itmes img { width: 23px; height: 29px; padding-bottom: 10px;}
+    .product-pickle-itmes h3 a { font-size: 10px; line-height: 12px;}
+    .product-pickle-itmes p { font-size: 8px; line-height: 12px;}
+    /*  Delicious mango pickle recipes to try End  */ 
+    
+    /* Frequently asked question Start */
+    .product-frequently { padding: 15px 0 0px 0;}
+    .product-frequently-heading { gap: 18px;  padding-bottom: 22px;}
+    .product-frequently-heading h2 { font-size: 16px; line-height: 18px;}
+    .product-frequently-heading a { padding: 8px 10px; font-size: 12px; line-height: 14px; border-radius: 25px;}
+    .product_faq_menu>a { font-size: 12px; line-height: 14px;}
+    .product_faq_menu_img { width: 12px; height: 12px;}
+    .product_faq-mines-img { width: 4px;}
+    .product_faq_content { margin-top: 6px;}
+    .product-frequently::before { display: none;}
+    .product-frequently::after { display: none;}
+    .product_faq_content p { font-size: 10px; line-height: 11px;}
+    .product_faq-plus-img { width: 5px; height: 5px;}
+    .product_faq_accordion_item {padding: 10px 7px; margin-bottom: 10px;}
+    /* Frequently asked question End */
+
+
+    /* Our Category Start */
+    .product-category { padding: 28px 0;}
+    .product-category-row {gap: 29px; flex-direction: column;}
+    .product-category-left { max-width: 100%;}
+    .product-btn-icon { display: none;}
+    .product-category-bottom { display: none;}
+    .product-category-left .product-tabs { flex-direction: row; gap: 14px; overflow: auto; align-items: center; margin: 0;}
+    .product-category-left .product-tabs .product-tab {  font-size: 12px; line-height: 14.46px; white-space: nowrap;}
+    .product-category-left .product-tabs li span { line-height: 13px; padding: 0px 5px;}
+    .product-category-left .product-tab.active { padding: 8px 10px 8px 43px;}
+    .product-category-left { border-radius: 0;}
+    .product-tab-row { grid-row-gap: 20px; grid-template-columns: repeat(1, 1fr);}
+    .product-tab-content { padding: 36px 26px 145px 23px;}
+    .product-tab-content h4 { font-size: 20px; line-height: 23.46px;}
+    .product-tab-content-main::after { width: 207px; height: 169px;}
+    .product-tab-content-main img { width: 150px; height: 200px;}
+    .product-category-heading-left h2 { font-size: 14px; line-height: 16px;}
+    .product-category-heading-left h5 { font-size: 10px; line-height: 20px;}
+    .product-category-heading { max-width: 100%; padding-bottom: 30px; display: flex; gap: 10px;}
+    .product-category-heading-right { display: block;}
+    .product-btn a { padding: 9px; gap: 4px;}
+    .product-btn a img { width: 16px; height: 16px;}
+    /* Our Category End */
+
+}
+@media (min-width: 1300px) {
+    .container.w-1164 {
+        max-width: 1164px !important;
+        padding: 0;
+    }
+}

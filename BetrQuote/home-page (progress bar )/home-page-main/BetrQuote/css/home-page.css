@@ -1,0 +1,816 @@
+body { margin:0; padding:0; overflow-x: hidden; }
+a:hover { text-decoration:none; }
+:root {
+	--bg-green:#60E886;
+	--text-green:#60E886;
+	--bg-Blue:#06054B; 
+	--text-Blue:#06054B; 
+	--text-black:#000000;
+	--bg-Violet:#FFFFFF; 
+    --bg-section:#F6F4FB;
+	--text-grey:#464646; 
+	--text-white:#fff; 
+    --text-main:#2F2F2F 
+	--Poppins: "Poppins", sans-serif; ;
+}
+
+/* banner css start */
+.banner-wapper {
+    padding-bottom: 14px !important;
+    padding-top: 64px !important;
+    min-height: 496px;
+    background-color:var(--bg-Blue);
+    background-image: url(../img/96da435….svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-position: top;
+    background-size: 900px auto;
+}
+.fieldset-wapper {
+	padding-bottom: 100px;
+	padding-top: 120px;
+	position: relative;
+	max-width: 913px;
+	width: 100%;
+	margin: auto;
+	display: none;
+	-webkit-animation: fadeIn .5s;
+	animation: fadeIn .5s;
+	-webkit-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s;
+	top: 0;
+	-webkit-animation: none;
+	animation: none;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fieldset-wapper.fieldset-active { display: block; }
+.fieldset-inner-text { width: 100%; max-width: 700px; margin: auto;}
+.fieldset-inner-text h1 {
+	font-family: var(--Poppins);
+	font-weight: 800;
+	margin: 0 auto 20px auto;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	color: var(--text-white);
+    margin-bottom: 8px;
+}
+.fieldset-inner-text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+    font-family: var(--Poppins);
+    margin: 0;
+}
+.steps--inner { padding: 49px 0 0 0; min-height: auto; }
+.form-wapper {display: flex; gap: 16px;}
+.steps--roofing-located {
+	max-width: 440px !important;
+	width: 100%;
+	margin: auto;
+}
+.steps--roofing-located span{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color: #5F5E9C;
+}
+.form-wapper .form-input-c {
+    width: 100%;
+    max-width: 257px;
+    height: 64px;
+    background-color: var(--bg-Violet);
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 10px;
+    gap: 5px;
+}
+.form-wapper .form-input-c img {width: 25px; height: 25px;}
+.form-wapper .form-input-c input {
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--text-grey);
+    border: 0;
+    width: 100%;
+	background: transparent;
+}
+.form-wapper .form-input-c input:focus-visible{ outline: none;}
+.steps--buttons {
+    width: 100%;
+    max-width: 167px;
+}
+.steps--buttons .btn-next-bg {
+   width: 100%;
+   height: 64px;
+   border: 0;
+   background-color: var(--bg-green);
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   text-align: center;
+   color: var(--text-Blue);
+   border-radius: 10px;
+}
+
+
+/* progress bar start  */
+.fieldset-progress-bar { display:none; flex-direction: column; align-items: center;  padding-top: 125px;}
+.fieldset-progress-text p{ 
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+	color:var(--text-white);
+	max-width: 100%;
+	font-family: var(--Poppins);
+}
+.fieldset-progress-text p span{ font-weight: 700; color: var(--text-green); }
+.progress-bg {
+	width: 100%;
+	max-width: 700px;
+	margin: auto;
+	background-color:rgba(86,86,86,.28)!important;
+}
+.progress-bg div {
+	height: 7px;
+	background: var(--bg-green);
+	width: 0px;
+	border-radius: 5px;
+	transition: width 0.3s;
+}
+/* progress bar end  */
+
+/* Back btn start */
+.fieldset-back-btn {display: flex; justify-content: center; margin-top: 60px;}
+.fieldset-back-btn button{
+	background-color: transparent;
+	border: 0;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 38px;
+	text-align: center;
+	color:var(--text-white);
+	max-width: 100%;
+	font-family: var(--Poppins);
+	position: relative;
+}
+.fieldset-back-btn button:focus {outline: none;}
+.fieldset-back-btn button::after {
+	content: "";
+	width: 16px;
+	height: 13px;
+	background: url(../img/icon-arrow.svg) no-repeat center;
+	position: absolute;
+	background-size: cover;
+	left: -18px;
+	top: 12px;
+}
+/* Back btn End */
+
+/* step 2 start */
+
+#project_tab , #address_tab , #email_tab , #names_tab , #phone_tab { padding: 50px 0 !important;}
+.fieldset-inner-text h2{
+    font-family: var(--Poppins);
+	font-weight: 800;
+	margin: 0 auto 20px auto;
+	font-size: 32px;
+	line-height: 48px;
+	text-align: center;
+	color: var(--text-white);
+    margin-bottom: 8px;
+}
+.fieldset-inner-box { display: flex; gap: 10px; justify-content: center; padding-top: 25px;}
+.fieldset-inner-box-col { width: 100%; max-width: 230px; }
+.fieldset-inner-box label {
+	background: var(--bg-Blue);
+	border: 2px solid #243fac;
+	border-radius: 10px;
+	padding: 28px 20px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+.fieldset-inner-box label img { width: 50px; height: 60px;}
+.fieldset-inner-box label span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--text-white);
+    max-width: 100%;
+    font-family: var(--Poppins);
+}
+.fieldset-inner-box-col input[type="radio"] { display: none; }
+.fieldset-inner-box-col label { display: flex; align-items: center;}
+.fieldset-inner-box-col input[type="radio"]:checked + label { background: var(--bg-green);}
+.fieldset-inner-box-col.active label {
+	background: var(--bg-green)
+}
+.fieldset-inner-box-col:hover label {
+	background: var(--bg-green)
+}
+/* step 2 End */
+
+/* step 3 start */
+.fieldset-inputs-field {width: 100%; display: flex; gap: 20px; flex-direction: row; align-items: center; padding-top: 25px; justify-content: center;}
+.fieldset-inputs-field input {
+    border-radius: 10px;
+    background: var(--bg-Violet);
+    width: 100%;
+    max-width: 257px;
+    height: 64px;
+    font-weight: 500;
+    padding: 5px 15px;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: start;
+    color: var(--text-grey);
+    font-family: var(--Poppins);
+    border: 0;
+}
+.fieldset-inputs-field button {
+    background-color: var(--bg-green);
+    width: 100%;
+    max-width: 167px;
+    border: 0;
+    height:64px;
+    border-radius: 10px;
+    padding: 5px 15px;
+	background-color: var(--bg-green);
+	font-family: Poppins;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: center;
+	color: var(--text-Blue);
+
+}
+.fieldset-inputs-field button:focus, .fieldset-inputs-field button:focus-visible { outline:unset; box-shadow:unset; }
+.btn-next:focus, .btn-next:focus-visible { outline:unset; box-shadow:unset; }
+.fieldset-inputs-field input:focus, .fieldset-inputs-field input:focus-visible, .form-wapper .form-input-c:focus, .form-wapper .form-input-c:focus-visible { outline:unset; box-shadow:unset; }
+/* step 3 End */
+
+/* step 6 start */
+.fieldset-inner-lst {display: flex;  align-items: center; padding-top: 60px; flex-direction: column;}
+.fieldset-inner-lst label {
+	width: 100%; 
+	max-width: 518px;
+	font-size: 14px;
+	line-height:21px;
+	text-align: center;
+	color:var(--text-white);
+	font-family: var(--Poppins);
+}
+.fieldset-inner-lst label a { font-weight: 600; color:var(--text-white); text-decoration: underline;}
+.fieldset-inner-lst p {
+	width: 100%;
+	max-width: 518px;
+	font-size: 14px;
+	line-height:21px;
+	text-align: start;
+	color:var(--text-white);
+	font-family: var(--Poppins);
+	text-decoration: underline;
+}
+/* step 6 End */
+/* banner css end */
+
+
+
+/* Why Regular Gutter Cleaning is Essential for Your Home Start Start */
+.why-regular-cleaning { padding: 40px 0; background: var(--bg-Violet);}
+.why-regular-cleaning-heading h2{
+    font-family: var(--Poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: var(--text-main);
+    margin-bottom: 16px;
+}
+.why-regular-cleaning-heading p {
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.why-regular-cleaning-row {display: flex; gap: 48px; align-items: center; padding-top: 48px;}
+.why-regular-cleaning-row-col-left { width: 100%; max-width: 395px;}
+.why-regular-cleaning-row-col-right { width: 100%; max-width: 666px;}
+.why-regular-cleaning-row-col-right-img img { width: 100%; height: 360px;}
+
+.why-regular-cleaning-row-col-left-text ul { margin: 0; padding-left: 40px; list-style: none;}
+.why-regular-cleaning-row-col-left-text ul li {
+    font-family: var(--Poppins);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+    color: var(--text-main);
+    padding-bottom: 18px;
+    position: relative;
+}
+.why-regular-cleaning-row-col-left-text ul li::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url(../img/Icon.svg) no-repeat center;
+    background-size: cover !important;
+    position: absolute;
+    left: -35px;
+    top: 0;
+}
+/* Why Regular Gutter Cleaning is Essential for Your Home Start End */
+
+
+
+/* How It Works css start */
+.how-it-work-wapper {
+	background: var(--bg-section);
+	position: relative;
+	padding-bottom: 68px;
+	padding-top: 24px;
+}
+.howItWorks--list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    counter-reset: section;
+}
+.htp-title  { padding-bottom: 40px;}
+.htp-title h3 {
+    font-family: var(--Poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    color: var(--text-main);
+    margin: 0;
+}
+.howItWorks--item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 355px;
+    width: 100%;
+}
+.howItWorks--img { margin-bottom:16px; position: relative; }
+.howItWorks--img::before {
+	background-color: var(--bg-green);
+	border-radius: 100%;
+	color: var(--text-white);
+	content: counter(section);
+	counter-increment: section;
+	font-weight: 600;
+    font-size: 16px;
+	height: 24px;
+	left:0;
+	position: absolute;
+	text-align: center;
+	top:33%;
+	transform: translateX(-50%);
+	width: 24px;
+}
+.howItWorks--img img {width: 70px; height: 70px; position: relative; left: 30px;}
+
+.howItWorks--itemHdr {
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-main);
+    margin: 0;
+    padding-bottom: 16px;
+}
+
+.howItWorks--txt {
+    font-family: var(--Poppins);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: var(--text-main);
+    
+}
+.howItWorks--item:not(:last-child):after {
+    background-image: url(../img/navigate_next.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    height: 18px;
+    position: absolute;
+    width: 100%;
+    max-width: 40px;
+    bottom: auto;
+    left: auto;
+    right: -53px;
+    top: 53%;
+}
+/* How It Works css end */
+
+
+
+/* trustUs css start */
+.trustUs-wapper { position: relative; padding-bottom: 64px; padding-top: 40px; }
+.trustUs--list { display: flex; flex-flow: row wrap; gap: 80px; max-width: 940px; width:100%; }
+.trustUs--item { max-width: 260px; width: 100%; }
+.trustUs--count {
+    font-family: var(--Poppins);
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 84px;
+    text-align: center;
+    margin: 0;
+    color: var(--text-main);
+}
+.trustUs--info { display: flex; align-items: center; justify-content: center; }
+.trustUs--info img {width: 20px; height: 20px;}
+.trustUs--txt {
+    font-family: var(--Poppins);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--text-main);
+    text-align: left;    
+	margin: 0;
+	margin-left: 8px;
+}
+/* trustUs css end */
+
+/* reviews css start */
+.reviews-wapper {
+    padding-bottom: 34px;
+    padding-top: 40px;
+    position: relative;
+    background-color: var(--bg-section);
+}
+.review-card--inner .review-img-user {width: 100%; max-width: 85px; height: 85px; margin: auto;}
+.review-card--inner .review-img-rating {width: 100%; max-width: 147px;  margin: auto; }
+.reviewCard--info  { padding-top: 16px;}
+.review-card {
+	padding:16px 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex-grow: 1;
+}
+.review-card--inner {
+	padding: 32px 40px;
+	position: relative;
+	background-color: var(--text-white);
+	border-radius: 16px;
+	box-shadow: 0 4px 15px rgba(47,84,235,.15);
+}
+.reviewCard__info { height: auto; max-width: 740px; transition: max-height .3s linear; }
+.review-card--inner h4 {
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-main);
+	margin:8px 0 16px 0;
+}
+.reviewCard--info p {
+    font-family: var(--Poppins);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.reviews-slider .owl-nav button:focus { outline:unset; border:0; }
+.reviews-slider .owl-prev {
+	transform: rotate(180deg);
+	position: absolute;
+	top: 45%;
+	left: 0;
+}
+.reviews-slider .owl-next {
+	transform: rotate(0deg);
+	position: absolute;
+	top: 45%;
+	right: 0;
+}
+.reviews-slider .owl-dots { display:flex; justify-content:center; align-items:center; margin-top:20px; }
+.reviews-slider .owl-dots .owl-dot span {
+	display: block;
+	height: 14px;
+	margin: 0 2px;
+	opacity: 1;
+	position: relative;
+	width: 14px
+}
+.reviews-slider .owl-dots .owl-dot span:before {
+	background-color: #D5CCEC;
+	border-radius: 99px;
+	content: "";
+	height: 8px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 8px
+}
+/* .reviews-slider .owl-dots .owl-dot:focus-visible {outline: none !important;} */
+/* .reviews-slider .owl-dots .owl-dot span:focus-visible {outline: none !important;} */
+.reviews-slider .owl-dots .owl-dot span.active {
+	transform: scale(1)
+}
+.reviews-slider .owl-dots .owl-dot.active span:before {
+	background-color: var(--bg-green);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* reviews css end */
+
+
+/* How Much Will Gutter Cleaning Cost Start */
+.how-much-will-gutter-row { padding: 40px 0; display: flex; gap: 93px; align-items: center;}
+.how-much-will-gutter-row-left { width: 100%; max-width: 350px;}
+.how-much-will-gutter-row-right { width: 100%; max-width: 472px;}
+ .how-much-will-gutter-row-left .how-much-will-gutter-row-left-img img {
+    width: 100%;
+
+}
+.how-much-will-gutter-row-right-item h2 {
+    font-family: var(--Poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;  
+    color: var(--text-main);
+    margin: 0;
+    padding-bottom: 40px;
+}
+.how-much-will-main {display: flex; gap: 16px;}
+.how-much-will-input {
+    border: 1px solid #DBDBDB;
+    background-color: var(--bg-Violet);
+    padding: 20px 24px;
+    border-radius: 10px;
+    max-width: 256px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    gap: 5px;
+}
+.how-much-will-input input:focus-visible{outline: none;}
+.how-much-will-input input {
+    border: 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: var(--text-grey);
+    background-color: transparent;
+	width: 100%;
+}
+.how-much-will-btn {width: 100%; max-width: 200px;}
+.how-much-will-btn button {
+    background-color: var(--bg-green);
+    font-family: var(--Poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;  
+    color: var(--text-Blue);
+    border: 0;
+    width: 100%;
+    height: 64px;
+    border-radius: 10px;
+	padding: 0 15px;
+}
+.how-much-will-gutter-row-right-item span {
+    font-family: var(--Poppins);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    color:#ACACAC;
+
+}
+
+/* How Much Will Gutter Cleaning Cost End */
+
+
+
+
+@media (min-width: 1680px) and (min-height: 420px) {
+	/* banner css start */
+	.banner-wapper { background-size: auto 96%; }
+	/* banner css end */
+}
+@media(max-width:1365px){
+	/* banner css start */
+	.banner-wapper { min-height: 560px; }
+	.howItWorks--item {
+		max-width: 330px;
+	}
+
+	/* banner css end */
+}
+@media(max-width:1199px){
+
+	/* How It Works Start */
+	.howItWorks--list { gap: 48px;}
+	.howItWorks--item { max-width: 277px;}
+	.howItWorks--itemHdr:before { left: 50%; top: -7px;}
+	.howItWorks--itemHdr { padding-top: 25px; padding-left: 0;}
+	/* How It Works End */
+
+	/* Trust Us From Start To Finish Start */
+	.trustUs--list { gap: 74px;}
+	/* Trust Us From Start To Finish End */
+
+
+
+}
+
+@media(max-width:991px){
+	.footer-wapper-col-right { max-width: 100%;}
+
+	/* banner css start */
+	.banner-wapper { min-height: auto; }
+
+	.steps--inner { padding: 20px 0 0 0;}
+
+	/* stepe 2 start */
+	.fieldset-inner-text h2 { font-size: 35px; line-height: 45px;}
+	.fieldset-inner-text  p { font-size: 22px; line-height: 32px;}
+	.fieldset-wapper { padding-top:80px; }
+	/* stepe 2 end */
+
+	/* stepe 2 start */
+	.fieldset-inputs-field input { font-size: 20px; line-height: 30px;}
+	.fieldset-inputs-field button {font-size: 21px; line-height: 31px; }
+	/* stepe 2 end */
+	/* banner css end */
+
+
+
+
+	/* How It Works Start */
+	.howItWorks--list { gap: 28px;}
+	.howItWorks--item { max-width: 211px;}
+	.howItWorks--img img { left: 10px;}
+	.howItWorks--img::before { left: -15px;}
+	.howItWorks--item:not(:last-child):after { right: -39px;}
+	/* How It Works End */
+
+	
+	/* Trust Us From Start To Finish Start */
+	.trustUs--item { max-width: 192px; width: 100%;}
+	.trustUs--list { gap: 56px;}
+	/* Trust Us From Start To Finish End */
+
+	/* What People Are Saying Start */
+	.owl-nav { display: none;}
+	/* What People Are Saying End */
+
+	/*  How Much Will Gutter Cleaning Cost start  */
+	.how-much-will-main { flex-direction: column;}
+	.how-much-will-gutter-row { gap: 53px;}
+	.how-much-will-btn { max-width: 257px;}
+	/*  How Much Will Gutter Cleaning Cost End  */
+
+}
+
+@media(max-width:767px) {
+	/* banner css start */
+	.banner-wapper { background-size: 667px 324px; background-position: top 30px center; }
+	.fieldset-back-btn { margin-top: 60px;}
+	.fieldset-inner-text h1 { font-size: 24px; line-height: 34px;}
+	.fieldset-wapper { padding-bottom: 60px; padding-top: 60px;}
+	.form-wapper { flex-direction: column;}
+	.form-wapper .form-input-c { max-width: 100%; height: 50px; font-size: 20px;}
+	.steps--buttons .btn-next-bg { height: 50px;}
+
+	/* stepe  start */
+	.steps--buttons { max-width: 100%;}
+	#project_tab, #address_tab, #email_tab, #names_tab, #phone_tab { padding: 40px 0 30px 0 !important;}
+	.fieldset-inner-text h2 { font-size: 24px; line-height: 33px; padding-bottom: 10px;}
+	.fieldset-inner-text  p { font-size: 16px; line-height: 25px; margin: 0;}
+	.fieldset-inputs-field input { font-size: 18px; line-height: 28px; height: 50px; max-width: 100%;}
+	.fieldset-inputs-field button {font-size: 19px; line-height: 19px; height: 50px; max-width: 100%;}
+	.fieldset-inner-box { gap: 7px; flex-direction: column; align-items: center;}
+	.fieldset-inner-box-col { width: 100%; max-width: 100%;}
+	.fieldset-inner-box-col label {
+		flex-direction: row;
+		padding: 10px 25px;
+	}
+	.fieldset-inner-box-col label span { padding-left: 30px;}
+	.fieldset-inner-box { margin-top: 10px;}
+	.fieldset-inner-lst { padding-top: 30px;}
+	.fieldset-inputs-field { padding-top: 10px; flex-direction: column; gap: 15px;}
+	/* stepe  end */
+	/* banner css end */
+
+	/* Why Regular Gutter Cleaning is Essential for Your Home start */
+	.why-regular-cleaning-row { gap: 28px;	flex-direction: column;}
+    /* Why Regular Gutter Cleaning is Essential for Your Home End*/
+
+	/* How It Works Start */
+	.howItWorks--list {gap: 96px;}
+	.howItWorks--item { max-width: 100%;}
+    .howItWorks--item:not(:last-child):after {
+        bottom: -63px;
+        /* left: 43%; */
+        right: unset;
+        top: unset;
+        transform: translateX(0) translateY(-50%) rotate(87deg);
+    }
+	/* How It Works End */
+
+	/* Trust Us From Start To Finish Start */
+	.trustUs--list { gap: 40px; flex-direction: column; align-items: center;}
+	.trustUs--count { font-size: 34px; line-height: 1.2;}
+	/* Trust Us From Start To Finish End */
+
+	/* What People Are Saying Start */
+	.htp-title h3 { margin-bottom: 8px !important; font-size: 23px;    line-height: 32px;}
+	/* What People Are Saying End */
+
+	/*  How Much Will Gutter Cleaning Cost start  */
+	.how-much-will-main { flex-direction: column;}
+    .how-much-will-gutter-row {
+        gap: 53px;
+        flex-direction: column;
+    }
+	.how-much-will-input { max-width: 100%; height: 50px;}
+	.how-much-will-btn button { max-width: 100%; height: 50px;}
+	.how-much-will-btn { max-width: 100%;}
+	/*  How Much Will Gutter Cleaning Cost End  */
+	
+
+
+
+}
+
+
+
+@media (min-width: 1400px) {
+    .container.w-1034 { max-width: 1034px; }
+    .container.w-1218 { max-width: 1218px; }
+    .container.w-915 { max-width: 915px; padding: 0 !important; }
+}
+
+
+
+
+@media(max-width:1365px){
+	.howItWorks--item {
+		max-width: 330px !important;
+	}
+}
+
+@media (max-width: 1199px) {
+    .howItWorks--item {
+        max-width: 277px !important;
+    }
+}
+@media (max-width: 991px) {
+    .howItWorks--item {
+        max-width: 211px !important;
+    }
+}
+@media (max-width: 767px) {
+    .howItWorks--item {
+        max-width: 100% !important;
+    }
+}
+

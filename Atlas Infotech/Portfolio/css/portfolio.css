@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none !important;
+}
+
+/* Portfolio Start  */
+
+.portfolio {  width: 100%; height:  100%; background-size: cover !important;  padding: 50px 0;}
+.portfolio-main { display: flex; flex-direction: column; gap: 60px; }
+.portfolio-wapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-heading h2 {
+    color: #63C5DA;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.portfolio-wapper-img-01 {
+    width: 100%;
+    height: 684px;
+    background-size: cover !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    position: relative;
+}
+
+.portfolio-wapper-img-01 a {
+    border-radius: 7px;
+    padding: 12px 28px;
+    background: #52B2BF;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+}
+
+
+.portfolio-wapper-bottom h3{
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.portfolio-wapper-bottom p {
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+
+.portfolio-wapper-img-02 {
+    width: 100%;
+    height: 447px;
+    background-size: cover !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    position: relative;
+}
+.portfolio-wapper-img-02 a {
+    border-radius: 7px;
+    padding: 12px 28px;
+    background: #52B2BF;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+}
+
+.portfolio-wapper-img-03 {
+    width: 100%;
+    height: 365px;
+    background-size: cover !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    position: relative;
+}
+
+.portfolio-wapper-img-03 a {
+    border-radius: 7px;
+    padding: 12px 28px;
+    background: #52B2BF;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+}
+.portfolio-wapper-img-04 {
+    width: 100%;
+    height: 765px;
+    background-size: cover !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    position: relative;
+}
+.portfolio-wapper-img-04 a {
+    border-radius: 7px;
+    padding: 12px 28px;
+    background: #52B2BF;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+}
+
+
+.portfolio-view-btn { display: flex; justify-content: center;}
+.portfolio-view-btn a {
+    padding: 14px 40px;
+    border-radius: 7px;
+    background: #C25700;
+    color: #FFF;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    
+}
+/* Portfolio End */
+
+
+
+
+
+@media (min-width:1300px) {
+    .w-1240 {
+        max-width: 1240px !important;
+        padding: 0;
+    }
+}
+
+
+@media(max-width:991px) {
+    .portfolio-main { gap: 48px;}
+    .portfolio-wapper-img-01 { height: 500px; padding: 15px;}
+    .portfolio-wapper-img-04 { height: 500px; padding: 15px;}
+    .portfolio-wapper-img-02 { height: 365px; padding: 15px;}
+    .portfolio-wapper-img-01 { padding: 15px;}
+    .portfolio-wapper-img-01 a { padding:  8px 12px;}
+    .portfolio-wapper-img-02 a { padding:  8px 12px;}
+    .portfolio-wapper-img-03 a { padding:  8px 12px;}
+    .portfolio-wapper-img-04 a { padding:  8px 12px;}
+}
+
+
+@media(max-width:767px) {
+    .portfolio-wapper-img-01 { width: 100%; height: 365px;}
+    .portfolio-wapper-img-04 { width: 100%; height: 365px; }
+    
+}

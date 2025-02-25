@@ -1,0 +1,173 @@
+
+body { margin: 0; padding: 0; }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+/* PsychicSpotlight article Page Start */
+.review-page-row { display:flex; flex-direction:row;justify-content:space-between; gap:40px;  }
+.review-page-left-col { max-width: 900px; width: 100%; display: flex; flex-direction: column; gap: 44px; }
+.review-page-right-col { max-width:296px; width:100%; display: flex; flex-direction: column; gap: 48px;}
+
+
+/*  review pros and cons Start */
+.review-r-box-main { background: #FFF; position: relative; }
+.review-r-box-header { display:flex; flex-direction:row; gap:24px; }
+.review-r-box-left { 
+	max-width:105px; 
+	width:100%; 
+	height:128px; 
+	background-image: url('../img/Union.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 22px;
+}
+.review-r-box-left-text { position:relative; z-index:1000; }
+.review-r-box-left span {
+	color: #FFF;
+    font-family: "Apple Garamond";
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: -0.56px;
+	display: block;
+	text-align: center;
+	position: relative;
+}
+.review-r-box-left p {
+    color: #fff;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+	margin: 0;
+	text-align: center;
+	position: relative;
+}
+.review-r-box-right { padding:20px 0 8px 0; }
+.review-r-box-right h3 {
+    color: #09121F;
+    font-family: Sohne;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 110%;
+	letter-spacing: -0.56px;
+	margin: 0;
+	padding-bottom: 12px;
+}
+.review-r-box-right p {
+	color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+	margin: 0;
+}
+.review-r-box-body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    padding: 24px;
+    background: #FFF;
+    box-shadow: 0px 22.336px 28.367px 0px rgba(0, 0, 0, 0.01), 0px 6.65px 8.446px 0px rgba(0, 0, 0, 0.01);
+	position: relative;
+	display: flex;
+    gap: 20px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.review-r-box-pros, .review-r-box-cons { max-width:423px; width:100%; }
+.review-r-box-pros h4, .review-r-box-cons h4 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.66px;
+	margin: 0;
+	padding-bottom: 12px;
+}
+.review-r-box-pros ul, .review-r-box-cons ul {display: flex; flex-direction: column;	gap: 10px;	margin: 0; padding: 0 }
+.review-r-box-pros ul li, .review-r-box-cons ul li {
+	list-style-type: none;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.54px;
+	padding-left: 32px;
+	position: relative;
+}
+.review-r-box-pros ul li:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/pros.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.review-r-box-cons ul li:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/cons.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.review-r-box-last-btn { max-width: 100%; width: 100%; padding-top: 12px; position: relative; }
+.review-r-box-last-btn a {
+    display: block;
+    border-radius: 108px;
+    background: #BCA8F4;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+    text-align: center;
+    padding: 16px 24px;
+}
+/* review pros and cons  */
+
+
+
+
+
+
+@media (max-width: 991px) { 
+.review-page-row { flex-wrap: wrap;}
+}
+@media(max-width:767px){
+
+	.review-r-box-header { flex-direction:column; gap:18px; }
+	.review-r-box-body { flex-direction:column; padding:20px; gap:24px; }
+	.review-r-box-right { padding: 0px 0 8px 0; }
+}
+
+
+@media(min-width:1300px){
+	.container.w-1269 { max-width:1269px!important;  padding: 0; }
+}

@@ -1,0 +1,41 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration: none;}
+
+.hudsonreporet-compare-main { padding: 50px 0;}
+.hudsonreporet-compare-bottom {display: flex;  gap: 50px; }
+.hudsonreporet-compare-items { display: flex; gap: 6px; border: 1px solid #241B20; border-radius: 5px; padding: 5px 10px; } 
+.hudsonreporet-compare-img img{ width: 48px; height: 48px; border-radius: 50%; }
+.hudsonreporet-compare-text>h4{margin: 0; line-height: 0;}
+.hudsonreporet-compare-text>h4>a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.1px;
+  text-align: left;
+  color: #000;
+  display: inline-block;
+}
+.hudsonreporet-compare-text p {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23.1px;
+  text-align: left;
+  color: #000;
+  margin: 0;
+}
+
+
+
+@media(max-width:767px) {
+    .hudsonreporet-compare-bottom { gap: 20px; align-items: center;flex-direction: column;}
+    .hudsonreporet-compare-items { width: 90%;}
+}
+
+
+
+
+
+
+
+

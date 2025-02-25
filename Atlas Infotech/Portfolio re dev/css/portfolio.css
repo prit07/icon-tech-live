@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none !important;
+}
+
+/* Portfolio Start  */
+
+.atlas-portfolio { background: #fff;}
+
+.atlas-portfolio-wapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.atlas-portfolio-heading h2 {
+    color: #63C5DA;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.atlas-portfolio-wapper-img{
+    width: 100%;
+    height: 330px;
+    background-size: cover !important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: relative;
+}
+
+.atlas-portfolio-wapper-img a {
+    border-radius: 7px;
+    padding: 10px 22px;
+    background: #52B2BF;
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+}
+
+
+.atlas-portfolio-wapper-bottom h3{
+    color: #000;;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.atlas-portfolio-wapper-bottom p {
+    color: #000;;
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+
+
+/* Portfolio End */
+
+
+
+
+
+@media (min-width:1300px) {
+    .w-1240 {
+        max-width: 1240px !important;
+        padding: 0;
+    }
+}
+
+
+@media(max-width:1199px) {
+    .atlas-portfolio-wapper-img { width: 100%; height: 270px;}
+    .atlas-portfolio-wapper-img a { padding: 8px 20px; font-size: 14px; }
+}
+
+@media(max-width:991px) {
+    .atlas-portfolio-wapper-img { width: 100%; height: 330px;}
+}
+
+
+@media(max-width:767px) {
+ 
+    .atlas-portfolio-heading h2 { margin-bottom: 25px;}
+}

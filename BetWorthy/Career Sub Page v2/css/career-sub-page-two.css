@@ -1,0 +1,348 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--font_1: 'Anton', sans-serif;
+	--font_2: 'Manrope', sans-serif;
+}
+
+/*Pizza & Baseball Job Start */
+
+.cspvtwo-pizza {
+	width: 100%;
+	height: 400px;
+	background: url(../img/jion-us.png) no-repeat ;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cspvtwo-pizza-top-wapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.cspvtwo-pizza-top-wapper a {
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 14px;
+	margin: 0;
+}
+
+.cspvtwo-pizza-top-wapper p {
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 14px;
+	margin: 0;
+}
+
+.cspvtwo-pizza-bottom-wapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 36px;
+	margin: auto;
+}
+
+.cspvtwo-pizza-bottom-wapper h1 {
+	color: #FFF;
+	text-align: center;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 68.5px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.cspvtwo-pizza-bottom-wapper h2 {
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 28px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px;
+	margin: 0;
+	letter-spacing: -1.12px;
+}
+
+.cspvtwo-pizza-bottom-wapper p {
+	color: #FFF;
+	font-family: var(--font_2);
+	text-align: center;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 26px;
+	margin: 0;
+	letter-spacing: -0.2px;
+}
+
+.cspvtwo-pizza-bottom-wapper button {
+	padding: 16px 32px;
+	gap: 8px;
+	border: none;
+	outline: none;
+	background: #1B9C43;
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+/* Pizza & Baseball Job End*/
+
+
+/*  What We’re Looking For Start  */
+
+.cspvtwo-looking {
+	padding: 40px 0;
+	background: #fff;
+}
+
+
+.cspvtwo-looking-wapper p {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	align-self: stretch;
+	letter-spacing: -0.18px;
+}
+
+.cspvtwo-looking-wapper h2 {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 26px;
+	letter-spacing: -1.12px;
+	padding-top: 30px;
+}
+
+.cspvtwo-looking-wapper h4 {
+	color: #0E2236;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+	letter-spacing: -0.18px;
+	padding-top: 15px;
+}
+
+.cspvtwo-looking-wapper ul li {
+	color: #4D4F4E;
+	font-family: var(--font_2);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: -0.18px;
+
+}
+
+
+/* Apply Now For Success start  */
+
+.cp-apply-from {
+	background: #1A6C83;
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.cp-apply-from::before {
+	content: "";
+	background: url(../img/from.png) no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	top: 0;
+	left: 0;
+}
+
+.cp-apply-from-wappre {
+	width: 100%;
+	display: flex;
+	max-width: 743px;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+	position: relative;
+	margin: auto;
+
+}
+
+.cp-apply-from-heading h2 {
+	color: #FFF;
+	font-family: var(--font_1);
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+}
+
+.cp-from-input input {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	width: 100%;
+	color: rgba(77, 79, 78, 0.50);
+	font-family: var(--font_2);
+	font-size: 16px !important;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	border: none;
+}
+
+.cp-from-input select {
+	width: 100%;
+	border: none;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%;
+	outline: none;
+}
+
+.cp-from-input textarea {
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	background: #FFF;
+	padding: 16px;
+	border: none;
+	outline: none;
+	width: 100%;
+	color: rgba(77, 79, 78, 0.50) !important;
+	font-family: var(--font_2);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+
+.cp-btn {
+	display: flex;
+	padding: 16px 24px;
+	justify-content: center;
+	align-items: center;
+	background: #1B9C43;
+}
+
+.cp-btn button {
+	background: #1B9C43;
+	border: none;
+	color: #FFF;
+	font-family: Manrope;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	/* 155.556% */
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+	.container.w-1170 {
+		max-width: 1170px !important;
+	}
+}
+
+@media(max-width:991px) {
+
+
+
+
+	/* Apply Now For Success start  */
+
+	.cp-apply-from {
+		padding: 50px 0;
+	}
+}
+
+@media(max-width:767px) {
+
+	/*  Pizza & Baseball Job */
+	.cspvtwo-pizza-top-wapper {
+		justify-content: center;
+		gap: 5px;
+		
+	}
+
+	.cspvtwo-pizza-bottom-wapper {
+		
+		gap: 25px;
+		
+	}
+	.cspvtwo-pizza-bottom-wapper h1 {
+	    font-size: 40px;
+        line-height: 63.5px;
+	}
+	
+	.cspvtwo-pizza-bottom-wapper h2 {
+		font-size: 24px;
+		line-height: 22px;
+	
+	}
+	
+	.cspvtwo-pizza-bottom-wapper p {
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+	.cspvtwo-pizza-bottom-wapper button {
+		padding: 8px 22px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
+
+
+
+
+	/* Apply Now For Success start  */
+
+	.cp-apply-from-wappre {
+		gap: 36px;
+
+	}
+
+	.cp-apply-from-heading h2 {
+		text-align: center;
+		font-size: 46px;
+		line-height: 58px;
+	}
+
+	
+	}
+

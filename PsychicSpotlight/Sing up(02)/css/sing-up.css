@@ -1,0 +1,91 @@
+
+body { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+
+/* About Us start */
+
+.sing-up-wapper{position: relative; display: flex; justify-content: center; }
+.sing-up-wapper::before {
+    content: "";
+    width: 100%;
+    height: 956px;
+    background: url(../img/sing-up02.png) no-repeat center;
+    background-size: cover !important;
+    position: absolute;
+    z-index: -1;
+    top: -105px;
+}
+.sing-up-left { width: 100%; height: fit-content; max-width: 565px; }
+.sing-up-left { display: flex; flex-direction: column; gap: 40px; margin: 226px 0 306px 0;}
+.sing-up-left h1 {
+    font-family: "Apple Garamond";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFF;
+    line-height: 72px;
+    letter-spacing: -2.16px;
+    margin-bottom: 20px;
+} 
+.sing-up-left p {
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.sing-up-left-bottom {display: flex;  gap: 12px;}
+.sing-up-left-bottom  input{
+    width: 100%;
+    padding: 16px 24px;
+    border-radius: 36px;
+    border: 1px solid #E3E3E3;
+    background: #F1F2F2;
+    color: rgba(9, 18, 31, 0.66);
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: -0.54px;
+}
+.sing-up-left-bottom input:focus-visible { outline: unset;}
+.sing-up-left-bottom a {
+    max-width: 130px;
+    width: 100%;
+    display: block;
+    border-radius: 60px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    text-align: center;
+    border: 0;
+    letter-spacing: -0.48px;
+}
+
+
+
+@media(max-width:991px){
+    .sing-up-wapper::before { height: 800px;}
+    .sing-up-left { margin: 150px 0 226px 0;}
+}
+
+
+@media (max-width:767px) {
+    .sing-up-wapper::before { height: 730px;}
+    .sing-up-left-bottom { flex-direction: column;}
+    .sing-up-left-bottom a { max-width: 100%; }
+    .sing-up-left { margin: 120px 0 167px 0;}
+    .sing-up-left h1 { font-size: 44px; line-height: 39px; margin-bottom: 15px;}
+    .sing-up-left p { font-size: 16px; line-height: 26px;}
+}

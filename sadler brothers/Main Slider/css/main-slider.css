@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*  Main Slider Start   */
+
+.main-slider-wapper {
+    width: 100%;
+    height: 608px;
+    background-size: cover !important;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.main-slider-wapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    top: 0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.main-slider-text h1{
+    padding-left: 86px;
+    color: #FFCD05;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    z-index: 11;
+    padding-top: 130px;
+}
+
+.owl-main-slider .owl-dots {
+    margin: 0 !important;
+    position: relative;
+    bottom: 75px;
+}
+.owl-main-slider .owl-dots .owl-dot.active span { background: #FFCD05 !important; width: 55px !important;}
+.owl-main-slider .owl-dots .owl-dot:hover span { background:#FFCD05;}
+.owl-main-slider .owl-dots .owl-dot span { width: 20px !important; height: 20px !important;}
+
+.main-slider-left-box {
+    background-color: #999;
+    clip-path: polygon(100% 0, 0 46%, 100% 100%);
+    width: 150px;
+    margin-top: 67px;
+    height: 450px;
+    position: relative;
+    z-index: 11;
+}
+
+.main-slider-left-box::before {
+    content: "";
+    position: absolute;
+    clip-path: polygon(100% 10%, 44% 45%, 100% 91%);
+    background: #FFCD05;
+    width: 100%;
+    top: 70px;
+    height: 300px;
+} 
+
+/*  Main Slider End   */
+
+
+
+
+
+
+
+@media (min-width:1300px) {
+    .w-1240{
+        max-width: 1240px !important;
+    }
+}
+
+@media(max-width:991px) {
+    /*  Main Slider Start   */  
+    .main-slider-text h1 { font-size: 44px; padding-top: 175px; line-height: 52px;}
+    .main-slider-left-box { width: 120px;}
+     /*  Main Slider Start   */
+}
+
+@media (max-width:767px) {
+    /*  Main Slider Start   */  
+    .main-slider-text h1 { font-size: 37px; padding-top: 157px; line-height: 46px; padding-left: 0;}
+    .main-slider-left-box { display: none;}
+     /*  Main Slider Start   */
+}

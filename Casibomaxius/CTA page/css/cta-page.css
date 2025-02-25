@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #191D26;
+}
+
+a:hover { text-decoration: none !important;}
+.mb--32 { margin-bottom: 32px;}
+
+:root {
+    --font_1: 'IBM Plex Sans', sans-serif;
+    --font_2: 'Oswald', sans-serif;
+    --font_3: 'Poppins', sans-serif;
+}
+
+/* Cta page left start */
+
+.cta-page-title { padding: 60px 0 40px 0;}
+.cta-page-title h1 {
+	color: #FFF;
+	font-family: var(--font_2);
+	font-size: 34px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 24px;
+}
+
+/* author fact check start css */
+.cta-page-box-main{ display: flex; gap: 20px; justify-content: space-between; }
+.cta-left { max-width: 440px; width: 100%;}
+.cta-left-items {display: flex; gap: 12px;}
+.cta-left-items-img>a>img { width: 50px; height: 50px; border-radius: 50%; max-width:unset; object-fit:contain; }
+.cta-left-items-text-top>h4{ margin: 0; line-height: 0; }
+.cta-left-items-text-top>h4>a {
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #ffffff;
+text-transform: capitalize;
+}
+.cta-left-items-text-top { display: flex; gap: 9px; align-items: center;}
+.cta-left-items-text-top img{ width: 16px; height: 16px; cursor: pointer;}
+.cta-left-items-text-top>a>i { font-size: 16px; color: #007bff;}
+.cta-left-items-text-bottom { display: flex; gap: 20px;}
+.cta-left-items-text-bottom-left { display: flex; gap: 6px; align-items: center;}
+.cta-left-items-text-bottom-left>p {
+    margin: 0;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+   color:#35654D;
+}
+
+.cta-left-items-text-bottom-right {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.cta-left-items-text-bottom-right a {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 160%;
+    color: #fff;
+}
+.cta-left-items-text-bottom-right>a>span {
+    text-decoration: underline;
+}
+.cta-left-items-text-bottom-right img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.cta-left-bottom>h5 {
+   margin: 0;
+   font-size: 14px;
+   color: #35654D;;
+   padding-top: 15px;
+}
+.cta-right {display: flex; gap: 24px; align-items: center;}
+.cta-right-btn>a {
+    border: 1px solid #CFD5DD;
+    border-radius: 0.25rem;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #35654D;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 6px;
+}
+.cta-right-btn>a>img { width: 16px; height: 16px;}
+.cta-right-icon>a>i{
+    background-color: #F5F7F9;
+    padding: 11px;
+    text-align: center;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    color: #000;
+}
+.cta-left-items-text-bottom-left img { filter: invert(1);}
+
+.cta-page-top-img img {
+    width: 100%;
+    height: 560px;
+}
+
+.cta-page-top-bottom-text { padding: 30px 0; display: flex; flex-direction: column; gap: 16px;}
+.cta-page-top-bottom-text p {
+    color: #FFF;
+    font-family: var(--font_1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+.cta-page-top-bottom-text>p>a {
+    color: #007bff;
+    font-family: var(--font_1);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+}
+
+
+/* Best Blackjack site Start */
+.cta-best-blackjack-site-wapper { margin-bottom: 76px;}
+.cta-best-blackjack-site-titel h2 {
+    position: relative;
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-bottom: 35px;
+}
+
+.cta-best-blackjack-site-titel h2:before {
+    content: '';
+    width: 38px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px;
+    opacity: 0.4000000059604645;
+    background: #D9D9D9;
+}
+.cta-best-blackjack-card-main {
+    display: flex;
+    width: 100%;
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    gap: 20px;
+    background: #343A4A;
+    margin-top: 16px;
+}
+.cta-best-blackjack-card-left { display: flex; gap: 16px;}
+.cta-best-blackjack-card-left-logo { display: flex; gap: 12px; align-items: center;}
+.cta-best-blackjack-card-left-logo-main { width: 159px;  display: flex; justify-content: center; }
+.cta-best-blackjack-card-left-logo span {
+    color: #FFF;
+    font-family: GT Walsheim Pro;
+    font-size: 12.6px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.252px;
+    display: flex;
+    width: 28px;
+    padding: 7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 28px;
+    background: #103140;
+}
+.cta-best-blackjack-card-left-items>h4 {line-height: unset; margin-bottom: 6px;}
+.cta-best-blackjack-card-left-items>h4>a {
+    color: #0971E7;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; 
+}
+.cta-best-blackjack-card-left-items p {
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+
+.claim-btn{
+    width: 198px;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.claim-btn {
+    background: #35654D;
+    border-radius: 8px;
+    font-family: var(--font_1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F7F7F7 !important;
+}
+.claim-btn img { padding-right: 10px;}
+/* Best Blackjack site End */
+
+/*  Our Score Start */
+.our-score-wapper { display: flex; flex-direction: column; gap: 30px; margin-bottom: 61px;}
+.our-score-top { display: flex; gap: 24px;}
+.our-score-top-left { 
+    width: 105px;
+    height: 121px;
+    background: url(../img/our-score.svg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.our-score-top-left>h4{ line-height: unset; margin: 0;}
+.our-score-top-left>h4>a {
+    color: #FFF;
+    font-family:var(--font_2);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    letter-spacing: -0.56px;
+}
+.our-score-top-left p {
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    
+}
+
+.our-score-top-right {
+    width: 100%;
+    max-width: 737px;
+}
+.our-score-top-right h3 {
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.56px;
+    margin-bottom: 16px;
+
+}
+.our-score-top-right p {
+    color: #FFF;
+    font-family: var(--font_3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin: 0;
+}
+.our-score-pros-cons-wapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 16px;
+    background: #343A4A;
+    box-shadow: 0px 4px 16px 0px rgba(9, 29, 39, 0.40);
+    padding: 24px 24px 28px 24px;
+}
+.our-score-pros {width: 100%; max-width: 350px;}
+.our-score-pros h3 {
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 18px;
+    letter-spacing: -0.4px;
+}
+
+.our-score-pros>ul { list-style: none; text-decoration: none; padding: 0; display: flex;  flex-direction: column; gap: 14px; margin: 0;}
+.our-score-pros>ul>li>img {width: 24px; height: 24px;}
+.our-score-pros>ul>li {
+    color: #FFF;
+    font-family:var(--font_3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+.our-score-cons {
+    width: 100%;
+    max-width: 350px;
+}
+.our-score-cons h3 {
+    color: #FFF;
+    font-family: var(--font_2);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; 
+    letter-spacing: -0.4px;
+    margin-bottom: 18px;
+}
+.our-score-cons ul{ list-style: none; text-decoration: none; padding: 0; display: flex;  flex-direction: column; gap: 14px; margin: 0;}
+.our-score-cons>ul>li {
+    color: #FFF;
+    font-family:var(--font_3);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+.our-score-btn a {
+    background: #35654D;
+    border-radius: 8px;
+    font-family: var(--font_1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F7F7F7 !important;
+    width: 198px;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-score-btn img { padding-right: 10px;}
+
+
+
+/*  Our Score End */
+
+
+/* Cta page left End */
+
+
+
+
+
+
+
+
+@media (max-width:1199px) {
+    .cta-left-items-text-bottom-right a { white-space: unset;}
+    .claim-btn { width: 170px;}
+}
+
+@media (max-width:991px) {
+    .cta-page-top-img img { width: 100%; height: 350px;}
+}
+
+
+
+@media (max-width:767px){
+    .cta-page-title h1 { font-size:30px }
+    .cta-page-top-img img { width: 100%; height: 170px;}
+    .cta-page-box-main { flex-wrap: wrap; }
+    .cta-right { gap:0; }
+	.casinomaxius-author-box-main {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+    .cta-left-items-text-bottom { gap: 5px; flex-wrap: wrap;}
+    .cta-best-blackjack-card-main { flex-wrap: wrap;}
+    .cta-best-blackjack-card-left {flex-wrap: wrap;}
+    .our-score-top { flex-wrap: wrap;}
+    .our-score-top-left {
+        width: 105px;
+        height: 128px;
+        background-size: cover !important;
+    }
+    .our-score-pros-cons-wapper { gap: 30px; flex-wrap: wrap;}
+}
+
+/* end css */
+
+
+
+
+
+
+
+@media (min-width: 1240px) {
+    .container {
+        max-width: 1200px;
+        width: 100% !important;
+    }
+}

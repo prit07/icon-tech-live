@@ -1,0 +1,807 @@
+body{ margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+a:hover , a  { text-decoration:unset !important; outline: none !important;}
+
+
+
+/* Select participants, date, and language Start */
+.at-a-pr-participants-date { background: #51724A; padding: 16px;  border-radius: 20px;}
+.at-a-pr-participants-date-heading { margin-bottom: 10px;}
+.at-a-pr-participants-date-heading h2 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    margin: 0;
+}
+.at-a-pr-participants-date-item {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.at-a-pr-participants-date-item.active { grid-template-columns: repeat(2, 1fr); }
+.at-a-pr-participants-date-item.active .at-a-pr-participants-date-btn { display: none;}
+.at-a-pr-participants-wapper { position: relative; width: 100%; text-align: center;}
+.dropdown-button {
+    cursor: pointer;
+    color: #242424;
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    gap: 15px;
+    margin: 0;
+    padding: 0 16px;
+    width: 100%;
+    position: relative;
+}
+.dropdown-button::before {
+    content: "\f0dd"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    top: 2px;
+    color: #000;
+}
+.dropdown-button.active-arrow::before { transform: rotate(180deg); top: 7px;}
+.dropdown-content {
+    position: absolute;
+    display: none;
+    border: 1px solid #dcdfe4;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+    min-width: 320px;
+    padding: 16px;
+    border-radius: 5px;
+    z-index: 1000;
+    transition: all .2s;
+    max-width: 400px;
+}
+.dropdown-content.active { display: flex;}
+.dropdown-content-text { width: 100%; max-width: 170px;}
+.participants-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    width: 100%;
+    max-width: 108px;
+}
+.dropdown-content-text h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    padding-bottom: 4px;
+    color: #242424;
+    margin: 0;
+}
+.dropdown-content-text p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 4px;
+    color: #242424;
+    margin: 0;
+}
+.participants-controls button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.participants-controls button:disabled { opacity: 0.5; cursor: not-allowed;}
+.date-picker-container {display: flex; width: 100%; }
+.date-picker-container .flatpickr-input {flex-grow: 1; width: 100%; }
+.at-a-pr-date{ 
+    cursor: pointer;
+    color: #242424;
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    gap: 15px;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.date-picker-container {width: fit-content;}
+
+
+#datePicker { width: 100%; border: 0; color: #242424;}
+.date-picker-container input {
+    border: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none;
+    padding: 0 !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* padding: 0; */
+    color: #242424 !important;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    padding: 0 16px 0 34px !important;
+}
+.date-picker-icon { position: absolute; left: 15px; top: 5px;}
+.date-picker-container::before {
+    content: "\f0dd"; 
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    top: 2px;
+    color: #000;
+}
+.date-picker-container.active::before { transform: rotate(180deg); top: 7px;}
+.date-picker-container input:focus-visible { outline: none !important; box-shadow: none !important;}
+.flatpickr-weekday {
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: #242424 !important;
+    margin: 0 !important;
+    padding-bottom: 4px;
+}
+.flatpickr-current-month .cur-month,
+.numInputWrapper input {
+    font-family: 'Poppins' !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 18px;
+    line-height: 5px;
+    color: #51724A !important;
+    margin: 0;
+    margin-bottom: 0;
+    display: inline-block !important;
+    padding: 0 !important;
+}
+.flatpickr-days .dayContainer .flatpickr-day {
+    font-family: 'Poppins' !important;
+    color: #242424 !important;
+}
+.flatpickr-days .dayContainer .flatpickr-day.selected { color: #fff !important;}
+.dayContainer {justify-content: start !important; gap: 5px ;}
+.at-a-pr-participants-date-btn a {
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    background-color: #0071eb;
+    width: 100%;
+}
+/* Select participants, date, and language End */
+
+
+/* Experience section start */
+.at-a-pr-title {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 45px;
+	color: #51724A;
+	margin: 0;
+	margin-bottom: 15px;
+}
+.at-a-map-wapper { display: flex;}
+.at-a-map-text { width: 100%; max-width: 290px;}
+.at-a-map { width: 100%;}
+.at-a-map iframe { width: 100%; height: 400px;}
+.at-a-map-bottom-item{ display: flex; gap: 5px; align-items: center;}
+.at-a-map-icon svg{ width: 12px; height: 12px;}
+.at-a-map-bottom-item span {
+    display: inline-block;
+    font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+    padding: 0;
+	color: #242424;
+    margin: 0;
+}
+.at-a-pr-list-wapper, .at-a-pr-list-wapper h3 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: #242424;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.at-a-map-text ul { margin: 0; list-style: none; padding: 0;}
+.at-a-map-text ul li { display: flex; gap: 8px; align-items: start; height: 80px;}
+.timeline-item-img {
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 32px #0000000f, 0 4px 8px #00000029;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+    z-index: 11;
+}
+.timeline-item-img.timeline-orange { background-color: #FF7100; border: 2px solid #fff;}
+.timeline-item-img.timeline-white { background-color: #fff; border: 1px solid #fff;}
+.timeline-item-img.timeline-blue { background-color: #1a2b49;     border: none;}
+.timeline-item-text { width: 100%; max-width: 240px; padding-right: 50px;}
+.timeline-item-text h3 {
+    font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+    padding: 0;
+	color: #242424;
+    margin: 0;
+}
+.timeline-item-text p {
+    font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #242424;
+    margin: 0;
+    padding-bottom: 4px;
+}
+.timeline-item-li { position: relative;}
+.timeline-item-dots::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 100%;
+    border-left: 8px dotted #FF7100; 
+    width: 2px; 
+}
+.timeline-item-simple::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 100%;
+    border-left: 10px solid #FF7100; 
+    width: 2px; 
+}
+/* Experience section end */
+
+
+/* sticky start */
+.sticky-participants-date.sticky-desktop {
+    display: block;
+}
+.sticky-participants-date { display: none;  transition: all 0.3s ease-in-out;}
+.sticky-participants-date {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    border-bottom:1px solid #dcdfe4;
+    background-color: #fff;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+.sticky-participants-date-top-row { display: flex;}
+.sticky-participants-date-top { background: #51724A; padding: 20px;}
+.sticky-participants-date-top-row { display: flex; justify-content: space-between; align-items: center;}
+.sticky-participants-date-top-heading h2 {
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #fff;
+    margin: 0;
+}
+.sticky-participants-date-top-btn a {
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    background-color: #0071eb;
+    width: 210px;
+    max-width: 250px;
+}
+.sticky-participants-date-bottom-row ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 10px 0;
+    margin: 0;
+}
+.sticky-participants-date-bottom-row ul li a {
+    font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+    padding: 0;
+	color: #242424;
+    margin: 0;
+}
+.sticky-participants-date.active { display: block; transition: opacity 0.3s ease, top 0.3s ease;}
+/* sticky End */
+
+
+/* at a pr guided rafting Start*/
+.at-a-pr-guided-rafting-heading {padding: 16px 16px 0 16px; position: relative;}
+.at-a-pr-guided-rafting-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 11111;
+    width: 30px;
+    height: 30px;
+}
+.at-a-pr-guided-rafting {
+    border-radius: 10px;
+    border: 2px solid #51724A;
+    margin-top: 40px;
+    display:none;
+    position: relative;
+}
+.at-a-pr-guided-rafting-heading h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #242424;
+    margin:0 0 10px;
+}
+.at-a-pr-guided-rafting-heading ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #242424;
+}
+.at-a-pr-guided-rafting-heading ul li span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    display: inline-block;
+}
+.at-a-pr-guided-rafting-select-time h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+    padding: 0px 0 5px;
+}
+.at-a-pr-guided-rafting-select-time p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.at-a-pr-guided-rafting-select-time-btn button {
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #242424;
+    padding: 5px 12px !important;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+}
+.at-a-pr-guided-rafting-select-time-btn button.selected { background: #51724A; color: #fff; border: 0; }
+.at-a-pr-guided-rafting-select-time { border-bottom: 1px solid #242424; padding: 10px 16px;}
+
+
+.at-a-pr-guided-rafting-select-detils-itmes { display: flex; gap: 50px; padding: 10px 16px;}
+.at-a-pr-guided-rafting-select-detils-itmes ul{ width: 50%;}
+.at-a-pr-guided-rafting-select-detils-right { width: 50%;}
+
+.at-a-pr-guided-rafting-select-detils-itmes ul li p  {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+}
+.at-a-pr-guided-rafting-select-detils-itmes ul li p a { text-decoration: underline; color: #242424;}
+.at-a-pr-guided-rafting-select-detils-text { display: flex; justify-content: space-between;}
+
+.at-a-pr-guided-rafting-select-detils-right h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.at-a-pr-guided-rafting-select-detils-adult h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+}
+.at-a-pr-guided-rafting-select-detils-price span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+}
+
+.at-a-pr-guided-rafting-bottom { padding: 20px; background-color: #ebeef1; border-radius: 0 0 10px 10px ;}
+.at-a-pr-guided-rafting-bottom-left span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #63687A;
+    margin: 0;
+}
+.at-a-pr-guided-rafting-bottom-left h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    margin: 0;
+}
+.at-a-pr-guided-rafting-bottom { display: flex; justify-content: space-between; align-items: center;}
+.at-a-pr-guided-rafting-bottom-right { display: flex; gap: 15px;}
+.at-a-pr-guided-rafting-bottom-right .book-now {
+    border: 2px solid #51724A;
+    padding: 10px 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #51724A;
+    border-radius: 50px;
+}
+.at-a-pr-guided-rafting-bottom-right .add-to-cart {
+    padding: 10px 15px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    background: #51724A;
+    border-radius: 50px;
+    color: #fff;
+}
+/* at a pr guided rafting End*/
+
+@media(max-width:1199px){
+    .at-a-map { order: 0;}
+    .at-a-map-text { order: 1;}
+
+
+    .at-a-map-text { max-width: 100%;}
+    .timeline-item-text { max-width: 300px; padding-right: 50px; }
+    .at-a-map-wapper { flex-direction: column; gap: 15px;}
+    
+}
+
+@media(max-width:767px){
+    .at-a-pr-participants-date-item { grid-template-columns: repeat(1, 1fr);}
+    .dayContainer { justify-content: space-between !important;}
+
+
+    .sticky-participants-date-top-heading { display: none;}
+    .sticky-participants-date-bottom { display: none;}
+    .sticky-participants-date {
+        top: auto;
+        bottom: 0;
+    }
+    .sticky-participants-date.sticky-mobile {
+        display: block;
+    }   
+
+
+    .at-a-pr-participants-date-heading h2 { font-size: 24px; line-height: 36px;}
+    .sticky-participants-date-top { padding: 10px;}
+    .sticky-participants-date-top-btn { width: 100%;}
+    .sticky-participants-date-top-btn a { width: 100%; max-width: 100%; height: 50px;}
+
+    .at-a-pr-guided-rafting-select-detils-itmes { flex-direction: column; gap: 30px;}
+    .at-a-pr-guided-rafting-select-detils-itmes ul {width: 100%;}
+    .at-a-pr-guided-rafting-select-detils-right { width: 100%;}
+    .at-a-pr-guided-rafting-bottom { flex-direction: column; align-items: start; gap: 15px;}
+    .at-a-pr-guided-rafting-bottom-right a { width: 100%; text-align: center;}
+    .at-a-pr-guided-rafting-bottom-right { width: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.at-selected input, .at-people-picker input {
+    max-width: 100%;
+    width: 100%;
+    height: 45px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 52px;
+    color: #2E7439;
+    border: 0;
+    position: relative;
+    cursor: default;
+    padding: 0 46px;
+}
+.date-picker-container input {
+    border: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none;
+    height: 40px;
+    display: flex;
+    width: 220px;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2E7439 !important;
+    margin: 0;
+    position: relative;
+    padding: 0 7px 0 44px !important;
+}
+.date-picker-container::before {
+    content: "\f0dd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    top: 2px;
+    color: #2E7439;
+}
+
+.date-picker-icon {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color: #2E7439 !important;
+}
+.at-a-pr-participants-date-btn a {
+    border-radius: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+    background-color: #0071eb;
+    width: 220px;
+}
+.at-arrow-icon {
+    position: absolute;
+    top: 3px;
+    right: 14px;
+    color: #2E7439;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 10;
+}
+/* replace css */
+
+
+.date-picker-container input::placeholder {
+    color: #51724A !important;
+    opacity: 1 !important;
+}
+.at-user-icon {
+    position: absolute;
+    top: 11px;
+    left: 16px;
+    color: #2E7439;
+    font-size: 14px;
+    font-weight: 900;
+    z-index: 10;
+}
+.qty-container input {
+    width: 100% !important;
+    max-width: 60px !important;
+}
+@media (min-width: 768px) {
+    .at-drop-down.active .at-options {
+        display: block;
+        height: auto;
+        box-shadow: 0px 3px 4px rgb(0 0 0 / 25%);
+    }
+}
+/* add css */
+
+
+
+.date-picker-container::before {
+    content: "\f0dd";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    font-size: 19px;
+    top: 2px;
+    color: #2E7439;
+}
+@media (max-width: 767px) {
+    .at-a-pr-participants-date-item { flex-direction: column;}
+}
+/* repace css */
+
+@media(max-width:767px){
+    .at-a-pr-participants-date-btn a { width: 100%;}
+    #wc-bookings-booking-form {
+        flex-direction: column;
+        margin: 0 !important;
+        gap: 0;
+    }
+    .at-people-picker { max-width: 100%;}
+}
+/* add css */
+
+
+
+@media(max-width:767px){
+    .date-picker-container input { width: 100%;}
+    .at-arrow-icon { top: 4px; right: 21px;}
+}
+/* add css */
+
+@media(max-width:1199px){
+    .at-a-pr-participants-date-btn a { width: 190px;}
+}
+@media(max-width:991px){
+    .at-a-pr-participants-date-btn a { width: 216px;} 
+}
+/* add css */
+
+.date-picker-container { width: 100%;}
+.date-picker-container input {
+    border: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none;
+    height: 45px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #2E7439 !important;
+    margin: 0;
+    position: relative;
+    padding: 0 7px 0 44px !important;
+}
+@media (max-width: 767px) {
+    .at-a-pr-participants-date-btn a {
+        width: 100% !important;
+    }
+}
+/* replace css */
+
+
+
+.timeline-item-img.timeline-orange {
+    background-color: #E02626;
+    border: 2px solid #fff;
+}
+.timeline-item-simple::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 100%;
+    border-left: 10px solid #E02626;
+    width: 2px;
+}
+.timeline-item-dots::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    height: 100%;
+    border-left: 8px dotted #E02626;
+    width: 2px;
+}
+
+
+.timeline-item-img.timeline-white {
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* replace */
+.timeline-item-img.timeline-white i { margin: 0;}
+/* add */

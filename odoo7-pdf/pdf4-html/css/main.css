@@ -1,0 +1,158 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+.sales-order {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px 0;
+}
+
+/* csss Start */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table th,
+table td { border: 1px solid #000; padding: 8px; text-align: left;}
+
+.sales-order-header { display: flex; justify-content: space-between; padding-bottom: 20px;}
+.sales-order-company-logo { margin: 0 30px;}
+.sales-order-heding-content h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    line-height: normal;
+    color: #cf4645; 
+    font-weight: 600;
+    margin:0 0 8px 0;
+}
+.sales-order-heding-content p {
+    margin: 0 0 8px; 
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+
+}
+.sales-order-company-logo img { width: 100%; max-width: 140px;}
+
+/* .text-invoice-wapper {  border: 1px solid #000000;} */
+
+.sales-order-heding-content ul { display: flex; gap: 15px; list-style: none; margin: 0; padding: 0;}
+.sales-order-heding-content ul li i{ font-size: 20px;}
+.sales-order-heding-content ul li {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    font-weight: 500;
+}
+.sales-order-wapper { border: 1px solid #000;}
+.sales-order-section-one table tr:first-child td:first-child  { background: #fb7845;}
+.sales-order-section-one table tr td h2 {
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    line-height: normal;
+    color: #fff;
+}
+.sales-order-section-one table tr td  {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    padding: 5px 1px ;
+    font-weight: 600;
+}
+.sales-order-section-one table tr td:nth-child(1) { width: 15%;}
+/* .sales-order-section-one table tr td:nth-child(2) { width: 40%;} */
+.sales-order-section-one table tr td:nth-child(3) {width: 23%;}
+.sales-order-section-one table tr td:nth-child(4) {width: 25%; }
+
+
+
+.sales-order-section-two table tr th {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    padding: 5px 1px;
+    font-weight: 600;
+    text-align: center;
+}
+.sales-order-section-two table tr td {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    padding: 5px 1px;
+    font-weight: 500;
+    text-align: center;
+}
+.sales-order-section-two table tr td ul { margin: 0; padding: 0 0 0 5px; list-style: none;}
+.sales-order-section-two table tr th:nth-child(1) { width: 3%;}
+.sales-order-section-two table tr th:nth-child(2) { width: 12%;}
+.sales-order-section-two table tr th:nth-child(3) { width: 21%;}
+.sales-order-section-two table tr th:nth-child(4) { width: 16%;}
+.sales-order-section-two table tr th:nth-child(5) { width: 10%;}
+.sales-order-section-two table tr th:nth-child(6) { width: 8%;}
+.sales-order-section-two table tr th:nth-child(7) { width: 10%;}
+.sales-order-section-two table tr th:nth-child(8) { width: 10%;}
+.sales-order-section-two table tr th:nth-child(9) { width: 10%;}
+
+.sales-order-section-grid {display: grid;  grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(2, 50px);}
+.sales-order-section-col {
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sales-order-section-col p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    font-weight: 600;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0;
+}
+
+
+
+.wpc-filters-section.wpc-filters-section-987900107.wpc-filter-layout-submit-button { display: flex !important;}
+.wpc-filters-section.wpc-filters-section-987900107.wpc-filter-layout-submit-button .wpc-filters-submit-button { background: #000;}
+.wpc-filters-section.wpc-filters-section-987900107.wpc-filter-layout-submit-button .wpc-filters-submit-button:hover {
+    opacity: 1;
+    color: #fff !important;
+}
+
+
+.sales-order-section-three table tr th:nth-child(1) { width: 30px;}
+
+.sales-order-section-three table tr th {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    padding: 5px 1px;
+    font-weight: 600;
+    text-align: center
+}
+.sales-order-section-three table tr td {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: normal;
+    color: #000;
+    padding: 5px 1px;
+    font-weight: 600;
+    text-align: center
+}
+/* Css End */ 

@@ -1,0 +1,563 @@
+
+body { margin: 0; padding: 0; }
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+/* PsychicSpotlight article Page Start */
+.psychicspotlight-article-page-main { padding: 32px 0 108px 0;}
+.article-page-row { display:flex; flex-direction:row;justify-content:space-between; gap:40px;  }
+.article-page-left-col { max-width: 900px; width: 100%; display: flex; flex-direction: column; gap: 44px; }
+.article-page-right-col { max-width:296px; width:100%; display: flex; flex-direction: column; gap: 48px;}
+
+/* Left Start */
+.article-the-best-online { display: flex; flex-direction: column; gap: 32px;}
+.article-the-best-online h1{
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.92px;
+    margin: 0;
+}
+.article-the-best-online p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.article-the-best-online img { width: 100%; height: 441px;}
+
+
+.article-our-top-5-picks h2{
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 32px;
+ }
+.article-top-california-psychics { display: flex; flex-direction: column; gap: 12px;}
+.article-top-california-psychics-wapper {
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    background: #FFF;
+    box-shadow: 0px 6.65px 8.446px 0px rgba(0, 0, 0, 0.01), 0px 22.336px 28.367px 0px rgba(0, 0, 0, 0.01);
+    padding: 24px;
+    display: flex;
+    gap: 37px;
+    position: relative;
+    align-items: center;
+}
+.article-top-california-psychics-left { width: 100%; max-width: 647px; display: flex; gap: 24px;}
+.article-top-california-psychics-logo { width: 100%; max-width: 200px; display: flex; flex-direction: column;}
+.article-top-california-psychics-logo span {
+    width: fit-content;
+    border-radius: 93.161px;
+    border: 1.059px solid rgba(20, 12, 50, 0.03);
+    background: #FAFAFB;
+    padding: 11.292px 16.938px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 15.527px; 
+}
+.article-top-california-psychics-logo img {width: 100%; height: 119px;}
+.article-top-california-psychics-center ul { margin: 0; padding: 0; list-style: none; height: 100%; display: flex; flex-direction: column; gap: 6px; justify-content: center;}
+.article-top-california-psychics-center ul li {
+    display: flex; 
+    gap: 14px;
+    align-items: center;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+.article-top-california-psychics-center ul li img { width: 18px; height: 18px;}
+.article-top-california-psychics-right { width: 100%; max-width: 220px; display: flex; flex-direction: column; gap: 12px;}
+.article-top-california-psychics-stars-rating h6 {
+    margin: 0;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    letter-spacing: -0.66px;
+    margin-right: 7px;
+}
+/* STAR REATING */
+.article-top-california-psychics-stars-rating { unicode-bidi:bidi-override; direction:ltr; font-size:20px; display: flex; gap: 5px; justify-content: center; }
+.article-top-california-psychics-stars-rating span.star { font-family:'Font Awesome 5 Free'; font-weight:normal; font-style:normal; display:inline-block; }
+.article-top-california-psychics-stars-rating span.star:hover { cursor:pointer; }
+.article-top-california-psychics-stars-rating span.star:before { content:"\f005"; padding-right:1px; color:#BCA8F4; }
+.article-top-california-psychics-stars-rating span.star.filled:before { font-weight: 900; color:#BCA8F4; content:"\f005"; }
+.article-top-california-psychics-stars-rating span.star.half-filled:before { content:"\f089"; color:#BCA8F4; }
+.article-top-california-psychics-stars-rating span.star.half-filled:after { content:"\f005"; color:#BCA8F4; margin-left:-24px; }
+/* STAR REATING */
+.article-top-california-psychics-right button {
+    color: #FFF;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+    border-radius: 60px;
+    background: #BCA8F4;
+    padding: 16px 24px;
+    border: 0;
+}
+.article-top-california-psychics-right a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 132px;
+    border: 1.5px solid #09121F;
+    padding: 16px 24px;
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 22px;
+}
+
+
+.article-understanding-gold-iras h2 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 24px;
+}
+.article-understanding-gold-iras p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin-bottom: 25px;
+}
+.article-understanding-gold-iras h5 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin-bottom: 8px;
+}
+.article-understanding-gold-iras ul { margin-bottom: 24px; padding-left: 30px;}
+.article-understanding-gold-iras ul li {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+}
+.article-understanding-gold-iras-power { padding: 16px; background: #F1F2F2; display: flex; gap: 12px; }
+.article-understanding-gold-iras-power img{ width: 24px; height: 24px; }
+.article-understanding-gold-iras-power p {
+    color: #09121F;
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+
+
+
+.article-types-of-gold-iras {display: flex; flex-direction: column; gap: 32px;}
+.article-types-of-gold-iras h2 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.article-types-of-gold-iras p {
+    color: #09121F;
+    font-size: 18px;
+    font-family: Sohne;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    margin: 0;
+    letter-spacing: -0.54px;
+}
+.article-types-of-gold-iras-wapper {  padding: 4px 20px; border-right: 2px solid #BCA8F4; border-left: 2px solid #BCA8F4; }
+.article-types-of-gold-iras-wapper p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+} 
+
+
+
+.article-email-subscribe {
+    border-radius: 8px;
+    background: #09121F;
+    padding: 39px 40px;
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+.article-email-subscribe::after {
+    content: "";
+    width: 284px;
+    height: 210px;
+    background: url(../img/article-email-subscribe01.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.article-email-subscribe::before {
+    content: "";
+    width: 122px;
+    height:108px;
+    background: url(../img/article-email-subscribe02.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+.article-email-subscribe-text { width: 100%; max-width: 534px;}
+.article-email-subscribe-text h2 {
+    color: #FFF;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.article-email-subscribe-btn { width: 100%; max-width: 287px; display: flex; flex-direction: column; gap: 12px;}
+.article-email-subscribe-btn input {
+   width: 100%;
+   border-radius: 8px;
+   border: 1px solid #B9B5A9;
+   background: #FFF;
+   padding: 15px 24px;
+   color: rgba(26, 12, 80, 0.66);
+   font-family: "Plus Jakarta Sans";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: -0.48px;
+}
+.article-email-subscribe-btn a {
+    display: block;
+    border-radius: 60px;
+    background: #BCA8F4;
+    color: #FFF;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;  
+    letter-spacing: -0.48px;
+    padding: 16px 24px;
+}
+
+
+
+
+.article-risks-of-gold-iras { display: flex; flex-direction: column; gap: 32px;}
+.article-risks-of-gold-iras h2{ 
+    color: #09121F;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Apple Garamond";
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin: 0;
+}
+.article-risks-of-gold-iras>ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 32px;}
+.article-risks-of-gold-iras>ul>li {  display: flex; gap: 16px;}
+.article-risks-of-gold-iras ul li span {
+    color: #09121F;
+    font-family: "Plus Jakarta Sans";
+    width: 32px;
+    height: 32px;
+    font-size: 14.933px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23.467px;
+    letter-spacing: -0.448px;
+    border-radius: 45.867px;
+    padding: 12.8px;
+    border: 1.067px solid #EAE5D6;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.article-risks-of-gold-iras ul li p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.article-risks-of-gold-iras p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.article-h3-example ul { margin: 0; padding-left: 25px; display: flex; flex-direction: column; gap: 10px;}
+.article-h3-example ul li {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+}
+.article-h3-example ul li a {
+    color: #202247;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    text-decoration-line: underline;
+}
+/* left End */
+
+
+
+
+/*  Right Start */
+.article-table-of-content { border-left: 2px solid #BCA8F4; padding: 0px 24px;}
+.article-table-of-content h3 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.66px;
+    margin-bottom: 32px;
+}
+.article-table-of-content ul { padding: 0 15px; margin: 0; list-style: none; display: flex; flex-direction: column; gap: 24px;}
+.article-table-of-content ul li a{
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+}
+
+
+.article-share {display: flex; justify-content: space-between; gap: 10px;}
+.article-share h3 { 
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.66px;
+    margin: 0;
+}
+.article-share-social-media-icon { display: flex; gap: 16px;}
+.article-share-social-media-icon i {
+    border-radius: 19.857px;
+    background: #F1F2F2;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-banner-ads img { max-width: 296px; width: 100%; height: 386px;}
+
+.article-you-may-like-it { display: flex; flex-direction: column; gap: 24px;}
+.article-you-may-like-it-wapper { display: flex; gap: 16px; align-items: center; } 
+.article-you-may-like-it-wapper img { max-width: 129px; width: 100%; height: 73px;}
+.article-you-may-like-it-wapper h5{
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+    letter-spacing: -0.48px;
+    margin: 0;
+}
+
+/*  Right End */
+
+
+/* More articles about IRA Start */
+.article-more-articles-about-ira { background: #F1F2F2; padding: 92px 0;}
+.article-more-articles-about-ira-heading h2 {
+    color: #09121F;
+    font-family: "Apple Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px; 
+    letter-spacing: -1.44px;
+    margin-bottom: 48px;
+}
+.article-more-articles-about-ira-wapper { display: flex; flex-direction: column; gap: 24px;}
+.article-more-articles-about-ira-img img {width: 100%; height: 224px;}
+.article-more-articles-about-ira-text h3 {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.66px;
+    margin-bottom: 12px;
+}
+.article-more-articles-about-ira-text p {
+    color: #09121F;
+    font-family: Sohne;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: -0.54px;
+    margin: 0;
+}
+.owl-article-about-ira .owl-nav {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    top: -90px;
+    right: 0;
+}
+.arrow-h-left , .arrow-h-right{
+    width: 48px;
+    height: 48px;
+    border-radius: 38px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* More articles about IRA End */
+
+
+/* PsychicSpotlight article Page End */
+
+
+
+@media (max-width:1199px) {
+    .article-page-left-col { max-width: 670px;}
+    .article-page-right-col { max-width: 225px;  width: 100%;}
+
+    .article-top-california-psychics-wapper {  flex-direction: column;}
+    .article-top-california-psychics-right { max-width: 100%; flex-direction: row; align-items: center; gap: 20px;}
+
+    .article-you-may-like-it-wapper { flex-wrap: wrap;}
+    .article-share-social-media-icon { gap: 9px;}
+
+
+    .article-email-subscribe-text h2 { font-size: 37px; line-height: 35px;}
+    .article-email-subscribe { padding: 39px 30px;}
+    .article-email-subscribe-btn { max-width: 234px;}
+}
+
+
+
+@media (max-width:991px) {
+    .article-page-row { flex-wrap: wrap;}
+    .article-page-left-col  { max-width: 100%; width: 100%;}   
+    .article-the-best-online h1 { font-size: 50px; line-height: 50px;}
+
+   .article-page-left-col {order: 0;}
+   .article-page-right-col {order: 1;}
+
+   .article-page-right-col { max-width: 300px; width: 100%;}
+   .article-you-may-like-it-wapper { flex-wrap: unset;}
+
+}
+
+
+@media (max-width:767px){
+    .psychicspotlight-article-page { padding: 22px 0 78px 0;}
+    .article-page-right-col {max-width: 100%; width: 100%;}
+    
+    .article-the-best-online h1 { font-size: 44px; line-height: 44px;}
+
+    .article-top-california-psychics-left { flex-direction: column; gap: 10px;}
+    .article-top-california-psychics-wapper { gap: 25px; flex-direction: column;}
+    .article-top-california-psychics-right { max-width: 100% !important; flex-direction: column; align-items: unset;}
+    .article-top-california-psychics-logo img { width: 100%; height: 100px;}
+    .article-top-california-psychics-center ul li { gap: 10px; font-size: 15px; line-height: 25px; }
+    .article-top-california-card-covard::after { width: 11px; height: 12px;}
+    .article-top-california-card-covard{ left: -12px;; padding: 5px 8px;}
+
+    .article-banner-ads img { max-width: 100%;}
+
+    .article-more-articles-about-ira { background: #F1F2F2; padding: 42px 0;}
+    .owl-article-about-ira .owl-nav { gap: 10px;}
+    .article-more-articles-about-ira-heading h2 { padding-right: 110px; font-size: 38px; line-height: 33px; margin-bottom: 48px;}
+
+    .article-email-subscribe {  flex-direction: column; gap: 30px;}
+    .article-email-subscribe-text h2 { font-size: 34px;}
+    .article-email-subscribe-btn { max-width: 100%;}
+
+}
+
+ 
+@media(min-width:1300px){
+	.container.w-1269 { max-width:1269px!important;  padding: 0; }
+}

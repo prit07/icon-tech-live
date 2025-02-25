@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.hr-note-design-items {
+    border-radius: 10px;
+    border: 3px solid #97141B;
+    background: #FFF;
+    padding: 27px 51px 27px 61px;
+}
+
+.hr-note-design-items h1{
+    color: #111111;
+    font-family: Roboto;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 20px
+}
+.hr-note-design-items { position: relative; counter-reset: item}
+
+
+.hr-note-design-items p {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #595959;
+}
+
+.hr-note-design-items>h3 { margin: 0;}
+.hr-note-design-items>h3 {
+    width: fit-content;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 5px;
+    background: #97141B;
+    display: flex;
+    left: 26px;
+    counter-increment: item;
+    position: relative;
+    margin: 0;
+}
+.hr-note-design-items>h3::before {
+    content: counter(item);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: -29px;
+    top: 0;
+    background: #97141B;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 3px 3px 0 0 #edbec3;
+}
+.hr-note-design-items>ul { padding-left: 35px; padding-top: 9px;}
+.hr-note-design-items ul li {
+    color: #595959;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.1px;
+}
+.hr-note-design-text ul {
+    padding-left: 19px;
+    margin: 0;
+    padding-bottom: 31px
+}
+
+
+@media (max-width:767px) {
+    .hr-note-design .container {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .hr-note-design-items {
+        padding: 27px 18px 27px 18px
+    }
+
+}
+
+@media (max-width:990px) {
+    .hr-note-design .container {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+@media (max-width:667px) {
+    .hr-note-design-items>p>b {
+        left: 14px;
+    }
+}
+
+@media(min-width:1300px) {
+    .container.w-700 {
+        max-width: 700px !important;
+        padding: 0
+    }
+}

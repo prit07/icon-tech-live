@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Resume Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Include FontAwesome for icons -->
+    <style>
+        .resume-tab-title-bottom {
+            display: none;
+            /* Hide section by default */
+        }
+
+        /* Optional styling for the open class */
+
+        .resume-tab-title-top .h4.open {
+            font-size: 40px;
+        }
+
+        .resume-tab-title-top {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .resume-tab-title-top-right {
+            display: flex;
+            gap: 10px;
+        }
+
+        .resume-tab-title-top-right p {
+            margin: 0;
+        }
+
+        .resume-tab-title-top-right .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="et_pb_column_2_2 filters-tab-tabs">
+        <ul class="tabs" role="tablist">
+            <li class="tab-configuracion product_tab tab-title active" id="tab-title-1" role="tab" aria-controls="tab-1">
+            </li>
+            <li class="tab-configuracion _tab tab-title" id="tab-title-2" role="tab" aria-controls="tab-2">
+    
+            </li>
+    
+        </ul>
+    </div>
+      -->
+    <div id="resume-tab-title-1" class="tab-resume">
+        <div class="resume-tab-title-top">
+            <div class="h4">VER RESUMEN DE SELECCION</div>
+            <div class="resume-tab-title-top-right">
+                <div class="resume-tab-title-top-right-text">
+                    <div id="addons" style="">TOTAL</div>
+                    <div id="ms_resume_stock">1.000,00 €</div>
+                </div>
+                <div class="resume-tab-title-top-righ-arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="resume-tab-title-bottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolor sint id sequi saepe maxime, quas,
+                repellendus officia quia exercitationem corrupti. At obcaecati facilis cum quas deleniti natus neque
+                odit?</p>
+        </div>
+    </div>
+    <div id="resume-tab-title-2" class="tab-resume">
+        <div class="resume-tab-title-top">
+            <div class="h4">VER RESUMEN DE SELECCION</div>
+            <div class="resume-tab-title-top-right">
+                <div class="resume-tab-title-top-right-text">
+                    <div id="addons" style="">TOTAL</div>
+                    <div id="ms_resume_stock">1.000,00 €</div>
+                </div>
+                <div class="resume-tab-title-top-righ-arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="resume-tab-title-bottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolor sint id sequi saepe maxime, quas,
+                repellendus officia quia exercitationem corrupti. At obcaecati facilis cum quas deleniti natus neque
+                odit?</p>
+        </div>
+    </div>
+
+    <script>
+        // jQuery(document).ready(function () {
+        //         jQuery('.resume-tab-title-top-righ-arrow').on('click', function () {
+        //             // Toggle the visibility of resume-tab-title-bottom
+        //             jQuery('.resume-tab-title-bottom').toggle();
+
+        //             // Check if resume-tab-title-bottom is visible and add/remove 'open' class
+        //             var title = jQuery('.resume-tab-title-top .h4');
+        //             var title_p = jQuery('.resume-tab-title-top-right-text');
+        //             var heding = jQuery('.resume-tab-title-top');
+
+        //             if (jQuery('.resume-tab-title-bottom').is(':visible')) {
+        //                 title.addClass('open');
+        //                 title.text('RESUMEN DE SELECCION'); // Change text when open
+        //                 title_p.addClass('hide');
+        //                 heding.addClass('heding-border')
+        //             } else {
+        //                 title.removeClass('open');
+        //                 title_p.removeClass('hide');
+        //                 title.text('VER RESUMEN DE SELECCION'); // Change text when closed
+        //                 heding.removeClass('heding-border')
+        //             }
+
+        //             // Toggle the arrow icon between up and down
+        //             jQuery(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+        //         });
+
+        // });
+
+        jQuery(document).ready(function () {
+            jQuery('.resume-tab-title-top-righ-arrow').on('click', function () {
+                // Toggle the visibility of the corresponding resume-tab-title-bottom within this container
+                var container = jQuery(this).closest('.tab-resume');
+                var bottomContent = container.find('.resume-tab-title-bottom');
+                var title = container.find('.resume-tab-title-top .h4');
+                var title_p = container.find('.resume-tab-title-top-right-text');
+                var heading = container.find('.resume-tab-title-top');
+
+                // Toggle visibility and classes for each section independently
+                bottomContent.toggle();
+
+                if (bottomContent.is(':visible')) {
+                    title.addClass('open');
+                    title.text('RESUMEN DE SELECCION'); // Change text when open
+                    title_p.addClass('hide');
+                    heading.addClass('heding-border');
+                } else {
+                    title.removeClass('open');
+                    title_p.removeClass('hide');
+                    title.text('VER RESUMEN DE SELECCION'); // Change text when closed
+                    heading.removeClass('heding-border');
+                }
+
+                // Toggle the arrow icon within this specific container
+                jQuery(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            });
+        });
+        // replace js
+
+    </script>
+    <!-- 
+  <script>
+    jQuery(document).ready(function () {
+    // Function to enable toggle behavior only on mobile (767px or less)
+    function mobileToggle() {
+        if (jQuery(window).width() <= 767) {
+            jQuery('.resume-tab-title-top-righ-arrow').off('click').on('click', function () {
+                // Toggle the visibility of resume-tab-title-bottom
+                jQuery('.resume-tab-title-bottom').toggle();
+
+                // Check if resume-tab-title-bottom is visible and add/remove 'open' class
+                var title = jQuery('.resume-tab-title-top .h4');
+                var title_p = jQuery('.resume-tab-title-top-right p');
+                var heding = jQuery('.resume-tab-title-top');
+
+                if (jQuery('.resume-tab-title-bottom').is(':visible')) {
+                    title.addClass('open');
+                    title.text('RESUMEN DE SELECCION'); // Change text when open
+                    title_p.addClass('hide');
+                    heding.addClass('heding-border');
+                } else {
+                    title.removeClass('open');
+                    title_p.removeClass('hide');
+                    title.text('VER RESUMEN DE SELECCION'); // Change text when closed
+                    heding.removeClass('heding-border');
+                }
+
+                // Toggle the arrow icon between up and down
+                jQuery(this).find('i').toggleClass('fa-chevron-down fa-chevron-up');
+            });
+        } else {
+            // Remove click event on larger screens to avoid unwanted behavior
+            jQuery('.resume-tab-title-top-righ-arrow').off('click');
+        }
+    }
+
+    // Initial check
+    mobileToggle();
+
+    // Check again on window resize
+    jQuery(window).resize(function () {
+        mobileToggle();
+    });
+});
+
+    </script> -->
+
+    <script>
+        jQuery(document).ready(function () {
+            // Handle click event on tabs
+            jQuery(".tab-configuracion").click(function (event) {
+                event.preventDefault();
+
+                // Remove 'tab_active' from all tabs and add 'active' class to clicked tab
+                jQuery(".tab-configuracion").removeClass("tab_active");
+                jQuery(this).addClass("tab_active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

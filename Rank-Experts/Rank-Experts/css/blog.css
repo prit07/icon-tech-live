@@ -1,0 +1,104 @@
+body { margin:0; padding:0; }
+
+/* blog section css start */
+.blog-page-wapper {
+	border-radius: 8px;
+	background: var(--Card-Bg, #FFF);
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-bottom: 20px;
+}
+.blog-search-wapper { max-width:340px; width:100%; position:relative; }
+.blog-search-wapper .has-search { margin:0; }
+.blog-search-wapper .has-search .form-control {
+	padding: 0 16px;
+	padding-left: 52px;
+	height: 40px;
+	color: rgba(32, 29, 35, 0.50);
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+	border-radius: 100px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: #F7F7F7;
+}
+.form-control:focus, .form-control:focus-visible { 
+	outline:unset; 
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	outline: 0;
+	background-color: #F7F7F7;
+	box-shadow: unset;
+}
+.blog-search-wapper .has-search .form-control-feedback {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	text-align: center;
+	pointer-events: none;
+	top: 6px;
+	left: 16px;
+}
+.blog-search-wapper .has-search .form-control-feedback img {
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+}
+.blog-card-wapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	gap: 16px;
+}
+.blog-img-card {
+	border-radius: 16px;
+	border: 1px solid var(--Bg, #F7F7F7);
+	height: 138px;
+	position: relative;
+}
+.blog-img-card img {
+	height: 100%;
+	width: 100%;
+	border-radius: 16px;
+	object-fit: contain;
+	max-width: unset;
+}
+.blog-text-card { display:flex; flex-direction:column; gap:12px; }
+.blog-text-card h3 { line-height:unset; font-size:0; margin:0; }
+.blog-text-card h3 a {
+	color:#000;
+	font-family: Golos Text;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: -0.54px;
+}
+.blog-text-card p {
+	color: rgba(0, 0, 0, 0.60);
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: -0.48px;
+	margin: 0;
+}
+/* blog section css end */
+
+@media(max-width:1300px){
+
+}
+
+@media(max-width:1199px){
+
+}
+
+@media(max-width:991px){
+	
+}

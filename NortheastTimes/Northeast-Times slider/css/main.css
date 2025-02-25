@@ -1,0 +1,76 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.width { width: 340px;}
+
+
+/* Css Start */
+
+
+.owl-northeast-time-top { background-color: #111111;}
+.owl-northeast-time-top p {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.owl-northeast-time-center { background-color: #97141B; padding: 13px 20px;}
+.owl-northeast-time-img  { margin-bottom: 13px;}
+.owl-northeast-time-img img { width: 100%; height: 300px;}
+.owl-northeast-time-text p {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+.owl-northeast-time-bottom {background: #111111;}
+.owl-northeast-time-bottom p {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: auto;
+    color: #FFFFFF;
+    
+}
+
+.owl-northeast-time .owl-nav .owl-prev, .owl-northeast-time .owl-nav .owl-next { position:absolute;     bottom: 14px; }
+.owl-northeast-time .owl-nav .owl-prev { left:40px; }
+.owl-northeast-time .owl-nav .owl-next { right:40px; }
+.owl-northeast-time .owl-stage-outer { padding: 2% 0%;  }
+
+.owl-northeast-time .owl-nav .owl-prev  { display: none;}
+.owl-northeast-time .owl-nav .owl-prev span img , .owl-northeast-time .owl-nav .owl-next span img {
+    width: 15px;
+    height: 14px;
+}
+
+
+.owl-northeast-time-img { position: relative;}
+.owl-northeast-time-img::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background: url(../img/Button.png) no-repeat center;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border-radius: 50%;
+}
+
+
+.owl-northeast-time-bottom {
+    /* display: none; */
+}

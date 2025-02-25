@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/blog-style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/blog-page.js"></script>
+
+</head>
+
+<body>
+    <!-- header html start -->
+    <div class="m-overlay-bg"></div>
+    <header id="h-home" class="h-home-wapper">
+        <div class="h-header-main">
+            <div class="container">
+                <div class="h-header-nav">
+                    <div class="h-header-logo">
+                        <div class="h-logo-img">
+                            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="header-right-wapper">
+                        <div class="header-right-inner">
+                            <div class="header-top">
+                                <ul class="contect-number">
+                                    <li>
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <p>Gujarat, India</p>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-envelope"></i></span>
+                                        <a href="#">info@icontechnology.in</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-phone-square-alt"></i></span>
+                                        <a href="#">24/7 Customer Support</a>
+                                    </li>
+                                </ul>
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="h-header-menu">
+                                <div class="h-header-menu-inner">
+                                    <div class="h-toggle-btn" id="h-toggle-btn">
+                                        <div class="line-card one"></div>
+                                        <div class="line-card two"></div>
+                                        <div class="line-card three"></div>
+                                    </div>
+                                </div>
+                                <div class="h-main-menu" id="h-sidebar-wrapper">
+                                    <div class="h-menu-inner">
+                                        <div class="h-menu-wapper">
+                                            <div class="menu-desk">
+                                                <ul>
+                                                    <li><a href="#">HOME</a></li>
+                                                    <li><a href="#">ABOUT US</a></li>
+                                                    <li class="sub-li">
+                                                        <a href="javascript:void(0)">SERVICE </a>
+                                                        <span class="sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                        <ul class="submenu">
+                                                            <li class="sub-li-card">
+                                                                <a href="#">Website Development</a>
+                                                                <span class="second-sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                                <ul class="menu-third-level">
+                                                                    <li><a href="#">PHP Development</a></li>   
+                                                                    <li><a href="#">Node Js Development</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Oddo ERP Solution</a></li>
+                                                            <li><a href="#">Woocommerce Solution</a></li>
+                                                            <li><a href="#">UI/UX Design</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-li">
+                                                        <a href="javascript:void(0)">HIRE DEVELOPER</a>
+                                                        <span class="sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                        <ul class="submenu">
+                                                            <li>
+                                                                <a href="#">HIRE DEVELOPER1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">HIRE DEVELOPER2</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">PORTFOLIO</a></li>
+                                                    <li><a href="#">BLOG</a></li>
+                                                    <li><a href="#">CONTACT US</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header html end -->
+
+    <!-- page banner section start -->
+    <div class="page-banner-section">
+        <div class="container">
+            <div class="page-banner-wapper">
+                <h2>Blog</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- page banner section end -->
+
+    <!-- Blog section start -->
+    <div class="blog-section">
+        <div class="container">
+            <div class="blog-categories-card">
+                <ul>
+                    <li><a id="all" data-filter="all">ALL</a></li>
+                    <li><a id="eCommerce" data-filter="eCommerce">E-Commerce</a></li>
+                    <li><a id="ERP" data-filter="ERP">ERP</a></li>
+                    <li><a id="Web" data-filter="Web">Web</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all eCommerce">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span class="left-m">admin</span></li>
+                                    <li><span class="right-m">0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all ERP">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all Web">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all eCommerce">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span class="left-m">admin</span></li>
+                                    <li><span class="right-m">0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all ERP">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all Web">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all eCommerce">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span class="left-m">admin</span></li>
+                                    <li><span class="right-m">0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all ERP">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3 blog-filter all Web">
+                    <div class="latest-post-card-wapper">
+                        <div class="latest-post-card-img">
+                            <img src="img/Rectangle80(1).png" alt="Rect">
+                            <div class="post-date">
+                                <span>August 16, 2021</span>
+                            </div>
+                        </div>
+                        <div class="latest-post-card-inner">
+                            <div class="post-by-comment-wapper">
+                                <ul>
+                                    <li>by : <span>admin</span></li>
+                                    <li><span>0 </span>Comments</li>
+                                </ul>
+                            </div>
+                            <h3><a href="#">New Version Of Bootstrap 5 With Top 7 Features</a></h3>
+                            <p>Bootstrap 5: Bootstrap is the CSS framework that helps to develop websites and apps</p>
+
+                            <div class="post-btn">
+                                <a href="#">Read More <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-pagination-wapper">
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-left"></i></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li class="dots-p"><a href="#">...</a></li>
+                    <li><a href="#">16</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Blog section end -->
+
+    <!-- contact us section satrt -->
+    <div class="contact-us-section">
+        <div class="container">
+            <div class="contact-us-row">
+                <div class="contact-us-left">
+                    <div class="contact-us-left-top">
+                        <h2>Get In Touch With 
+                        One Of Our Project Consultants.</h2>
+                        <div class="schedule-appointment-btn">
+                            <a href="#">Schedule an Appointment</a>
+                        </div>
+                    </div>
+                    <div class="contact-us-left-bottom">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117510.5607556165!2d72.51558399999999!3d23.016243199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1720707007423!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact-us-right">
+                    <div class="contact-us-right-form-wapper">
+                        <h4>Request A Quote</h4>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="contact-btn">
+                                <a href="#">Contact Us <span><i class="fab fa-telegram-plane"></i></span></a>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact us section end -->
+
+    <!-- Newsletter section start -->
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-wapper">
+                <div class="newsletter-inner">
+                    <h2>JOIN OUR NEWSLETTER</h2>
+                    <p>Sign up to Our Newsletter & get attractive Offers by <br>
+                    subscribing to our newsletters.</p>
+                    <div class="newsletter-subscribe">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter your email address">
+                            </div>
+                            <div class="subscribe-btn">
+                                <a href="#">Subscribe</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter section end -->
+    
+    <!-- footer section start -->
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-top-wapper">
+                <div class="footer-top-row">
+                    <div class="footer-company">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Hire Developers</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h3>SERVICES</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">ERP Solution</a></li>
+                            <li><a href="#">E-Commerce Solution</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>CONTACT US</h3>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+1) 323 284 6767</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 989 864 4750</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 989 883 5853</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 281 236 5009</a></li>
+                            <li><a href="#"><span><i class="fab fa-whatsapp"></i></span> (+91) 957 494 4940</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-connected">
+                        <h3>LET'S CONNECTED</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-wapper">
+                <div class="footer-bottom-border"></div>
+                <p>COPYRIGHT © 2014-2024 ICON TECHSOFT PVT. LTD. - ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+</body>
+</html>

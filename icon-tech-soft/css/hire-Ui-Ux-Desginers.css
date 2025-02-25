@@ -1,0 +1,2145 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a:hover { text-decoration: none; }
+
+/* page banner section start */
+.page-banner-section { position: relative; background-size: cover; background-position: center; background: #EE3237; }
+.page-banner-section::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(54, 52, 53, 0.8),rgba(54, 52, 53, 0.8)), url(../img/bannerbg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 0px 0px 0px 360px;
+}
+.page-banner-section::before {
+	content: '';
+	width: 150px;
+	height: 160px;
+	position: absolute;
+	left: 25px;
+	bottom: 27px;
+	background: url(../img/Spiral\ 1.png) no-repeat;
+	background-size: cover;
+}
+.page-banner-section .page-banner-wapper {
+	padding: 137px 0;
+	max-width: 1014px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9;
+}
+.page-banner-section .page-banner-wapper h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 80px;
+	line-height: 98px;
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0 0 30px 0;
+	text-align: center;
+}
+.page-banner-section .page-banner-wapper ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 10px;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+.page-banner-section .page-banner-wapper ul li a {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+.page-banner-section .page-banner-wapper ul li {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+/*  page banner section end */
+
+/* Hire Odoo Developers section start */
+.hire-odoo-developers-section { padding: 100px 0; position:relative; }
+.hire-odoo-developers-section .row { align-items: center; }
+.hire-odoo-img { width: 100%; }
+.hire-odoo-img img { width: 100%; }
+.hire-odoo-right-wapper h5 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27px;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.hire-odoo-right-wapper h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.hire-odoo-right-wapper p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.hire-odoo-right-wapper .hire-get-free-btn { display: flex; }
+.hire-odoo-right-wapper .hire-get-free-btn a {
+	padding: 20px 28px;
+	background: #363435;
+	border: 1px solid #363435;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+.hire-odoo-right-wapper .hire-get-free-btn a:hover { background: #EE3237; border: 1px solid #EE3237; }
+.hire-odoo-right-wapper .hire-get-free-btn a span { margin-left: 12px; }
+/* Hire Odoo Developers section end */
+
+/* Advantages of Hiring Odoo section start */
+.advantages-hiring-odoo-section { padding: 60px 0; background: #F2F2F2; }
+.advantages-hiring-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.advantages-hiring-odoo-section .row { row-gap: 30px; }
+.odoo-erp-solutions-card {
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(54, 52, 53, 0.2);
+	border-radius: 8px;
+	height: 100%;
+}
+.odoo-erp-solutions-card-number {
+	padding: 16px 14px;
+	background: #EE3237;
+	border-radius: 8px;
+	margin-bottom: 11px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.odoo-erp-solutions-card-number::after {
+	content: '';
+	position: absolute;
+	right: -10px;
+	bottom: -10px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #EE3237;
+	border-radius: 8px;
+}
+.odoo-erp-solutions-card-inner h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding: 20px 0 16px 0;
+}
+.odoo-erp-solutions-card-inner p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+/* Advantages of Hiring Odoo section end */
+
+/* Technologies and Frameworks section start */
+.technologies-framework-section { padding: 100px 0; position:relative; }
+.technologies-framework-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.technologies-framework-section .technologies-framework-row {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: repeat(6, 1fr);
+}
+.technologies-framework-item {
+	padding: 10px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px rgba(54, 52, 53, 0.3);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+.technologies-framework-item:hover {
+	box-shadow: -5px 5px 15px 3px rgba(117.75, 110.83858695652175, 110.83858695652175, 0.5);
+}
+.technologies-framework-item img {
+	width: 100%;
+	filter: grayscale(100%);
+	transition: filter 0.5s ease-in-out;
+}
+.technologies-framework-item:hover img {
+	filter: grayscale(0%);
+}
+/* Technologies and Frameworks section end */
+
+/* Our Facts section start */
+.our-facts-section {
+	padding: 60px 0;
+	background: url(../img/Our-Facts-bg.png) no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.our-facts-section:before {
+	content: '';
+	background: rgba(54, 52, 53, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+.our-facts-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 60px;
+	position: relative;
+}
+.our-facts-row {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-columns: repeat(3, 1fr);
+	position: relative;
+}
+.our-facts-card-wapper {
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.our-facts-card-img {
+	font-size: 80px;
+	color: #FFFFFF;
+	line-height: 92px;
+}
+.our-facts-card-inner .shiva {
+	text-align: center;
+	padding-bottom: 10px;
+}
+.our-facts-card-inner .shiva span {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 37px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+.our-facts-card-inner .text-fun p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 37px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	margin: 0;
+	text-align: center;
+}
+/* Our Facts section end */
+
+/* Choose Odoo ERP Solution section start */
+.choose-odoo-solution-section { padding: 100px 0; position:relative; }
+.choose-odoo-solution-section .choose-odoo-solution-title { max-width: 808px; margin: 0 auto; }
+.choose-odoo-solution-section .row { row-gap: 30px; }
+.choose-odoo-solution-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.reasons-expertise-card-wapper {
+	padding: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(54, 52, 53, 0.2);
+	border-radius: 16px;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+.reasons-expertise-card-wapper:hover {
+	background: rgb(255, 255, 255);
+	box-shadow: rgba(118, 111, 111, 0.5) -5px 5px 15px 3px;
+}
+.reasons-expertise-card-img {
+	width: 70px;
+	height: 70px;
+	padding: 10px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(54, 52, 53, 0.12);
+	border-radius: 8px;
+}
+.reasons-expertise-card-img img {
+	width: 50px;
+	height: 50px;
+}
+.reasons-expertise-card-inner h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #363435;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+.reasons-expertise-card-inner p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding: 0;
+}
+/* Choose Odoo ERP Solution section end */
+
+/* odoo easy steps section start */
+.odoo-easy-steps-section { padding-top: 60px; position: relative; overflow: hidden; }
+.odoo-easy-steps-section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 75%;
+	background: #363435;
+	z-index: 0;
+}
+.odoo-easy-steps-shap-left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 75%;
+	width: 159px;
+	background: url(../img/easy-shap-left.png) no-repeat;
+	background-size: cover;
+	background-position: right;
+	z-index: 0;
+}
+.odoo-easy-steps-shap-right {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 186px;
+	height: 75%;
+	background: url(../img/easy-shap-right.png) no-repeat;
+	background-size: cover;
+	z-index: 0;
+}
+.odoo-easy-steps-title {
+	max-width: 661px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.odoo-easy-steps-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.odoo-easy-steps-section .easy-steps-row {
+	display: grid;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	grid-template-columns: repeat(5, 1fr);
+	z-index: 1;
+	position: relative;
+}
+.tell-us-card-wapper {
+	padding: 50px 20px;
+	background: #FFFFFF;
+	border: 2px solid #F5F5F5;
+	border-radius: 8px;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+.tell-us-card-wapper:hover {
+	box-shadow: -5px 5px 15px 3px rgba(117.75, 110.83858695652175, 110.83858695652175, 0.5);
+}
+.tell-us-card-wapper .tell-tag-number {
+	position: absolute;
+	top: -3px;
+	left: 20px;
+	width: 31px;
+	height: 34px;
+	background: #EE3237;
+	border-radius: 0px 0px 8px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.tell-us-card-wapper .tell-us-card-img {
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.6);
+	border: 1px solid #F2F2F2;
+	border-radius: 8px;
+}
+.tell-us-card-wapper .tell-us-card-img img {
+	width: 53px;
+	height: 53px;
+}
+.tell-us-card-wapper .tell-us-card-inner h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #363435;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+/* odoo easy steps section end */
+
+/* Pricing Information section start */
+.pricing-information-section { padding: 100px 0; position: relative; }
+.pricing-information-section .pricing-information-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.pricing-information-card-wapper {
+	padding: 30px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 16px rgba(54, 52, 53, 0.16);
+	border-radius: 8px;
+	height: 100%;
+	transition: all 0.5s ease-in-out;
+}
+.pricing-information-card-wapper:hover {
+	background: #FFFFFF;
+	box-shadow: -5px 5px 15px 3px rgba(117.75, 110.83858695652175, 110.83858695652175, 0.5);
+	transform: scale(1.05);
+}
+.pricing-information-card-wapper h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 27px;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 16px;
+}
+.pricing-information-card-wapper h6 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 30px;
+}
+.pricing-information-card-wapper h6 span {
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 61px;
+	color: #EE3237;
+}
+.pricing-information-dt {
+	padding: 20px;
+	background: #F2F2F2;
+	border-radius: 8px;
+}
+.pricing-information-dt ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style: none;
+}
+.pricing-information-dt ul li {
+	display: flex;
+	align-items: start;
+}
+.pricing-information-dt ul li span {
+	margin-right: 9px;
+	font-size: 18px;
+	line-height: 21px;
+	color: #EE3237;
+}
+.pricing-information-dt ul li p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #363435;
+	margin: 0;
+	padding: 0;
+}
+/* Pricing Information section end */
+
+/* Our Work section start */
+.our-work-section {
+	padding: 60px 0;
+	position: relative;
+	overflow: hidden;
+	background: #F2F2F2;
+}
+.our-work-section .our-work-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.our-work-section .our-work-title p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #363435;
+	padding: 0 0 60px 0;
+	margin: 0;
+}
+.ourworkbtn ul li { list-style: none; display: flex; }
+.ourworkbtn ul li a {
+	padding: 15px 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 100px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 29px;
+	color: #363435 !important;
+	cursor: pointer;
+}
+.ourworkbtn ul li a.active-1 { color: #FFFFFF !important; background: #EE3237; }
+.ourworkbtn ul li a:hover { color: #FFFFFF !important; background: #EE3237; }
+.ourworkbtn ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+}
+.ourworkbtn { padding-bottom: 60px; }
+.work-row {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+}
+.work-card img { width: 100%; height: 100%; }
+.work-card {
+	position: relative;
+	transition: all 0.5s ease-in-out 0.5s;
+	padding: 10px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+}
+.work-card .icon {
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	background: rgba(237, 64, 69, 0.6);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 100%;
+	display: none;
+	transition: all 0.5s;
+	border-radius: 10px;
+}
+.work-card .icon a {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.work-card .icon h4 {
+	color: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	font-family: "Montserrat", Sans-serif;
+	font-weight: 600;
+}
+.work-card:hover .icon { display: flex; }
+.work-see-more-btn { display: flex; margin-top: 60px; }
+.work-see-more-btn a {
+	padding: 20px 28px;
+	background: #363435;
+	border: 1px solid #363435;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FFFFFF;
+	margin: 0 auto;
+	transition: all 0.5s ease-in-out;
+}
+.work-see-more-btn a:hover { background: #EE3237; border: 1px solid #EE3237; }
+.work-see-more-btn a span { margin-left: 12px; }
+/* Our Work section end */
+
+/* Our Clients section start */
+.our-clients-section { padding: 60px 0; background: #F2F2F2; position: relative; }
+.our-clients-section .clients-title { max-width: 1080px; margin: 0 auto; }
+.our-clients-section .clients-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.our-clients-section .clients-title p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.clients-card-wapper {
+	padding: 30px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+.clients-card-wapper .clients-card-img-quote-wapper {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	width: 100%;
+}
+.clients-card-img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.clients-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.clients-card-quote { width: 60px; height: 60px; }
+.clients-card-quote img { width: 100%; }
+.clients-card-inner p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	color: #363435;
+	margin: 0;
+	padding: 25px 0;
+}
+.clients-card-inner .clients-name-add h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 5px;
+}
+.clients-card-inner .clients-name-add h6 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #363435;
+}
+#h-clients-slider .owl-item.center .clients-card-wapper {
+	opacity: 1;
+	transform: scaleY(1);
+}
+#h-clients-slider .owl-item .clients-card-wapper {
+	opacity: 0.6;
+	transform: scaleY(0.9);
+}
+#h-clients-slider .owl-dots .owl-dot {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid #EE3237;
+}
+#h-clients-slider .owl-dots .owl-dot.active {
+	background: #EE3237;
+}
+#h-clients-slider .owl-dots {
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+#h-clients-slider .owl-dots .owl-dot:focus {
+	outline: none;
+}
+/* Our Clients section end */
+
+/* Industries We Serve section start */
+.industries-serve-section { padding: 100px 0; position: relative; overflow: hidden; }
+.industries-serve-section .industries-serve-title { max-width: 1080px; margin: 0 auto; }
+.industries-serve-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #EE3237;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.industries-serve-title p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.industries-serve-row {
+	display: grid;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+}
+.industries-card {
+	width: 100%;
+	padding: 20px 20px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 6px rgba(54, 52, 53, 0.1);
+	border-radius: 6px;
+	transition: all 0.5s ease-in-out;
+}
+.industries-card.active-1 { display: flex; }
+.industries-card:hover {
+	background: #fff;
+	box-shadow: -5px 5px 15px 3px rgba(117.75, 110.83858695652175, 110.83858695652175, 0.5);
+}
+.industries-card-img {
+	max-width: 60px;
+	width: 100%;
+	height: 60px;
+	margin: auto;
+	text-align: center;
+	color: #EE3237;
+	transition: all 0.5s ease-in-out;
+}
+.industries-card-img img {
+	width: 100%;
+	height: 100%;
+	max-width: unset;
+	object-fit: contain;
+}
+.industries-card-inner h5 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 27px;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
+}
+.load-more-btn { width: 100%; text-align: center; margin-top: 30px; }
+.load-more-btn button {
+	padding: 20px 28px;
+	background: #363435;
+	border: 1px solid #363435;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+.load-more-btn button:hover { background: #EE3237; border: 1px solid #EE3237; }
+.load-more-btn button:focus { outline: unset; }
+/* Industries We Serve section end */
+
+/* faq section start */
+.faq-section { padding: 100px 0; }
+.faq-section .faq-wapper { max-width: 635px; margin: 0 auto; }
+.faq-section .faq-wapper h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.faq_accordion_item { margin-bottom: 20px; }
+.faq_accordion_wapper a {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #384049 !important;
+}
+.faq_accordion_wapper a { width: 95% !important; }
+.faq_accordion_wapper .faq_content { display: none; padding: 21px 0px 0px; overflow: hidden; }
+.faq_accordion_wapper .faq_content p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #384049;
+	margin: 0;
+	padding: 0;
+}
+.faq_accordion_item .faq_menu::after {
+	font-family: 'Font Awesome\ 5 Free';
+	content: '\f078';
+	position: absolute;
+	right: 23px;
+	top: 20px;
+	font-size: 18px;
+	color: #384049;
+	text-align: center;
+	font-weight: 900;
+}
+.faq_accordion_item.active {
+	padding: 23px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(48, 62, 73, 0.2);
+	border-radius: 4px;
+}
+.faq_accordion_item.active .faq_menu::after { content: '\f077'; }
+.faq_accordion_item {
+	position: relative;
+	padding: 23px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px rgba(48, 62, 73, 0.2);
+	border-radius: 4px;
+}
+.faq_accordion_item.active .faq_menu {
+	background-color: #fff;
+	border-radius: 5px 5px 0px 0px;
+	color: #000000;
+}
+/* faq section end */
+
+/* Latest Post section start */
+.latest-post-section { background: #F2F2F2; padding: 60px 0; position: relative; }
+.latest-post-title { max-width: 1080px; margin: 0 auto; }
+.latest-post-title h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-transform: uppercase;
+	color: #EE3237;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.latest-post-title p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 60px;
+}
+.latest-post-card-wapper {
+	background: #FFFFFF;
+	border: 1px solid rgba(54, 52, 53, 0.1);
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover { background: #EE3237; }
+.latest-post-card-img {
+	position: relative;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-img {
+	border: 1px solid #EE3237;
+}
+.latest-post-card-img img {
+	width: 100%;
+	height: 100%;
+}
+.latest-post-card-img .post-date {
+	padding: 10px 22px;
+	background: #EE3237;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-img .post-date {
+	background: #363435;
+	color: #FFFFFF;
+}
+.post-by-comment-wapper ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.post-by-comment-wapper ul li {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #363435;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-inner .post-by-comment-wapper ul li {
+	color: #FFFFFF;
+}
+.post-by-comment-wapper ul li span.left-m {
+	margin-left: 5px;
+}
+.post-by-comment-wapper ul li span.right-m {
+	margin-right: 5px;
+}
+.latest-post-card-inner h3 {
+	margin: 0;
+	line-height: 0;
+	padding: 20px 0 10px 0;
+}
+.latest-post-card-inner h3 a {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	text-transform: capitalize;
+	color: #363435;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-inner h3 a {
+	color: #FFFFFF;
+}
+.latest-post-card-inner p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: capitalize;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 20px;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-inner p {
+	color: #FFFFFF;
+}
+.latest-post-card-inner .post-btn {
+	display: flex;
+}
+.latest-post-card-inner .post-btn a {
+	padding: 14px 24px;
+	background: #363435;
+	border: 1px solid #363435;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21.94px;
+	color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+.latest-post-card-wapper:hover .latest-post-card-inner .post-btn a {
+	background: #FFFFFF;
+	color: #EE3237;
+	border: 1px solid #FFFFFF;
+}
+.latest-post-card-inner .post-btn a span {
+	margin-left: 12px;
+}
+/* Latest Post section end */
+
+/* New Industries We Serve section start  */
+.new-industries { position: relative; }
+.new-industries::after { content: ''; display: none; }
+.new-industries::before { content: ''; display: none; }
+.new-industries .new-indus-shap-one {
+	width: 50px;
+	height: 147px;
+	position: absolute;
+	bottom: 67px;
+	left: 0;
+	background: url(../img/new-ind4.png) no-repeat;
+	background-size: contain;
+	z-index: -1;
+	animation-name: bounce;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.new-industries .new-indus-shap-two {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 45px;
+	left: 144px;
+	background: url(../img/new-ind3.png) no-repeat;
+	background-size: contain;
+	z-index: -1;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	animation-name: bubbleMover;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.new-industries .new-indus-shap-three {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 67px;
+	right: 349px;
+	background: url(../img/new-ind2.png) no-repeat;
+	background-size: contain;
+	z-index: -1;
+	-webkit-animation-duration: 6s;
+	animation-duration: 6s;
+	animation-name: bubbleMover;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+.new-industries .new-indus-shap-fore {
+	width: 139px;
+	height: 139px;
+	position: absolute;
+	top: 189px;
+	right: 39px;
+	background: url(../img/Group\ 35627.svg) no-repeat;
+	background-size: contain;
+	z-index: -1;
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	animation-name: bubbleMover;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+/* New Industries We Serve section end */
+
+/* contact us section satrt */
+.contact-us-section {
+	padding-top: 120px;
+	position: relative;
+}
+.contact-us-section:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 480px;
+	top: 0;
+	left: 0;
+	background: linear-gradient(90deg, rgba(238, 50, 55, 0) 0%, #EE3237 39.38%);
+}
+.contact-us-section::before {
+	content: '';
+	width: 705px;
+	height: 480px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: url(../img/2181304.jpg) no-repeat;
+	background-size: cover;
+	z-index: -1;
+}
+.contact-us-section .contact-us-row {
+	display: flex;
+	gap: 30px;
+	position: relative;
+	z-index: 100;
+}
+.contact-us-left, .contact-us-right {
+	width: 50%;
+}
+.contact-us-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.contact-us-left-top {
+	padding: 0 25px;
+}
+.contact-us-left-top h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 56px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: 0;
+	padding-bottom: 30px;
+}
+.contact-us-left-top .schedule-appointment-btn {
+	display: flex;
+}
+.contact-us-left-top .schedule-appointment-btn a {
+	padding: 20px 28px;
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #EE3237;
+	margin: 0 auto;
+	transition: all 0.5s ease-in-out;
+}
+.contact-us-left-top .schedule-appointment-btn a:hover {
+	background: #363435;
+	border: 1px solid #363435;
+	color: #FFFFFF;
+}
+.contact-us-left-bottom iframe {
+	width: 100%;
+	height: 282px;
+	margin-bottom: -5px;
+}
+.contact-us-right-form-wapper {
+	padding: 55px;
+	background: #363435;
+	border-radius: 8px;
+}
+.contact-us-right-form-wapper h4 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 41px;
+	color: #FFFFFF;
+	margin: 0;
+	padding-bottom: 27px;
+}
+.contact-us-right-form-wapper form .form-group {
+	margin-bottom: 20px;
+}
+.contact-us-right-form-wapper form .form-group input {
+	padding: 14px 20px;
+	height: 50px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #363435;
+}
+.contact-us-right-form-wapper form .form-group input:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+.contact-us-right-form-wapper form .form-group textarea {
+	padding: 14px 20px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #363435;
+}
+.contact-us-right-form-wapper form .form-group textarea:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+.contact-us-right-form-wapper form .contact-btn {
+	display: flex;
+}
+.contact-us-right-form-wapper form .contact-btn a {
+	padding: 20px 28px;
+	background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 8px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 100%;
+	color: #EE3237;
+	transition: all 0.5s ease-in-out;
+}
+.contact-us-right-form-wapper form .contact-btn a:hover {
+	background: #EE3237;
+	border: 1px solid #EE3237;
+	color: #FFFFFF;
+}
+.contact-us-right-form-wapper form .contact-btn a span {
+	margin-left: 12px;
+}
+/* contact us section end */
+
+/* Newsletter section start */
+.newsletter-section { padding: 100px 0; position: relative; }
+.newsletter-section .newsletter-wapper {
+	width: 100%;
+	padding: 50px 0;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 8px;
+}
+.newsletter-section .newsletter-wapper .newsletter-inner { max-width: 907px; margin: 0 auto; }
+.newsletter-inner h2 {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 61px;
+	text-align: center;
+	color: #EE3237;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.newsletter-inner p {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #363435;
+	margin: 0;
+	padding-bottom: 20px;
+}
+.newsletter-subscribe form {
+	display: flex;
+	align-items: center;
+	padding: 5px 6px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	width: 100%;
+	height: 100px;
+}
+.newsletter-subscribe form .form-group {
+	margin: 0;
+	padding: 0;
+	width: 80%;
+	height: 100%;
+}
+.newsletter-subscribe form .form-group input {
+	border: none;
+	padding: 31px 30px;
+	box-shadow: none;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 38px;
+	color: #363435;
+}
+.newsletter-subscribe form .form-group input::placeholder {
+	opacity: 1;
+	color: #363435;
+}
+.newsletter-subscribe form .subscribe-btn {
+	margin: 0;
+	padding: 0;
+	width: 22%;
+	height: 100%;
+	display: flex;
+}
+.newsletter-subscribe form .subscribe-btn a {
+	background: #363435;
+	border-radius: 6px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 35px;
+	color: #FFFFFF;
+	transition: all 0.5s ease-in-out;
+}
+.newsletter-subscribe form .subscribe-btn a:hover { background: #EE3237; }
+/* Newsletter section end */
+
+@media(max-width: 1399px) {
+	/* Advantages of Hiring Odoo section start */
+	.advantages-hiring-title h2 {
+		font-size: 46px;
+		line-height: 58px;
+		padding-bottom: 60px;
+	}
+	/* Advantages of Hiring Odoo section end */
+
+	/* Our Work section start */
+	.ourworkbtn ul li a { padding: 15px 25px; }
+	/* Our Work section end */
+}
+
+@media(max-width: 1199px) {
+	/* page banner section start */
+	.page-banner-wapper h2 {
+		font-size: 71px;
+		line-height: 84px;
+		padding: 0 0 30px 0;
+	}
+	/* page banner section end */
+
+	/* Hire Odoo Developers section start */
+	.hire-odoo-right-wapper h2 {
+		font-size: 38px;
+		line-height: 47px;
+		padding-bottom: 20px;
+	}
+	/* Hire Odoo Developers section end */
+
+	/* Advantages of Hiring Odoo section start */
+	.advantages-hiring-title h2 {
+		font-size: 38px;
+		line-height: 50px;
+		padding-bottom: 60px;
+	}
+	.odoo-erp-solutions-card { padding: 15px; }
+	.odoo-erp-solutions-card-number { width: 85px; height: 85px; }
+	/* Advantages of Hiring Odoo section end */
+
+	/* Technologies and Frameworks section start */
+	.technologies-framework-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.technologies-framework-title h2 {
+		font-size: 44px;
+		line-height: 54px;
+	}
+	/* Technologies and Frameworks section end */
+
+	/* odoo easy steps section start */
+	.tell-us-card-wapper .tell-us-card-inner h4 {
+		font-size: 14px;
+		line-height: 20px;
+		padding: 20px 0 0 0;
+	}
+	.tell-us-card-wapper { padding: 50px 10px 40px 10px; }
+	.tell-us-card-wapper .tell-tag-number { left: 10px; }
+	/* odoo easy steps section end */
+
+	/* Pricing Information section start */
+	.pricing-information-card-wapper { padding: 20px; }
+	.pricing-information-card-wapper h6 { padding-bottom: 20px; }
+	.pricing-information-dt { padding: 14px; }
+	/* Pricing Information section end */
+
+	/* Our  Work section start */
+	.ourworkbtn ul li a { padding: 15px; font-size: 18px; line-height: 27px; }
+	/* Our  Work section end */
+
+	/* Our Clients section start */
+	.our-clients-section .clients-title { padding: 0 15px; }
+	/* Our Clients section end */
+
+	/* Latest Post section start */
+	.latest-post-section .latest-post-card-wapper { padding: 14px; }
+	/* Latest Post section end */
+
+	/* contact us section start */
+	.contact-us-section::before, .contact-us-section::after { height: 450px; }
+	.contact-us-left .contact-us-left-top { padding: 0px; }
+	.contact-us-left .contact-us-left-top h2 { font-size: 45px; line-height: 55px; padding-bottom: 30px; }
+	.contact-us-right .contact-us-right-form-wapper { padding: 40px; }
+	.contact-us-left .contact-us-left-bottom iframe { margin-bottom: -6px; }
+	/* contact us section end */
+
+	/* Newsletter section start */
+	.newsletter-section .newsletter-wapper .newsletter-inner { max-width: 815px; margin: 0 auto; }
+	/* Newsletter section end */
+}
+
+@media(max-width: 991px) {
+	/* page banner section start */
+	.page-banner-wapper h2 { font-size: 55px; line-height: 60px; padding: 0 0 20px 0; }
+	/* page banner section end */
+
+	/* Hire Odoo Developers section start */
+	.hire-odoo-developers-section .row { flex-direction: column-reverse; row-gap: 30px; }
+	/* Hire Odoo Developers section end */
+
+	/* Advantages of Hiring Odoo section start */
+	.advantages-hiring-title h2 { font-size: 34px; line-height: 46px; padding-bottom: 60px; }
+	/* Advantages of Hiring Odoo section end */
+
+	/* Technologies and Frameworks section start */
+	.technologies-framework-section .technologies-framework-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.technologies-framework-title h2 {
+		font-size: 33px;
+		line-height: 39px;
+		padding-bottom: 45px;
+	}
+	/* Technologies and Frameworks section end */
+
+	/* Our Facts section start */
+	.our-facts-section .our-facts-title h2 {
+		padding-bottom: 30px;
+	}
+	.our-facts-section .our-facts-row {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.our-facts-card-wapper {
+		padding: 20px 0;
+	}
+	/* Our Facts section end */
+
+	/* Choose Odoo ERP Solution section start */
+	.choose-odoo-solution-title h2 {
+		font-size: 42px;
+		line-height: 58px;
+		padding-bottom: 60px;
+	}
+	/* Choose Odoo ERP Solution section end */
+
+	/* odoo easy steps section start */
+	.odoo-easy-steps-section {
+		padding: 60px 0;
+	}
+	.odoo-easy-steps-section::before {
+		width: 100%;
+		height: 100%;
+	}
+	.odoo-easy-steps-section .odoo-easy-steps-shap-right {
+		top: auto;
+		bottom: 0;
+	}
+	.odoo-easy-steps-section .easy-steps-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.easy-steps-row .tell-us-card-wapper:hover {
+		box-shadow: -5px 5px 15px 3px rgba(117.75, 110.83858695652175, 110.83858695652175, 0.5);
+		transform: scale(1.05);
+	}
+	/* odoo easy steps section end */
+
+	/* Pricing Information section start */
+	.pricing-information-section .row {
+		row-gap: 30px;
+	}
+	/* Pricing Information section end */
+
+	/* Our  Work section start */
+	.work-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.our-work-section .our-work-title p br {
+		display: none;
+	}
+	.ourworkbtn ul {
+		flex-wrap: wrap;
+	}
+	/* Our  Work section end */
+
+	/* Industries We Serve section start */
+	.industries-serve-row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	/* Industries We Serve section end */
+
+	/* Latest Post section start */
+	.latest-post-section .latest-post-row {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 20px;
+	}
+	/* Latest Post section end */
+
+	/* contact us section start */
+	.contact-us-section .contact-us-left, .contact-us-section .contact-us-right {
+		width: 100%;
+	}
+	.contact-us-section .contact-us-row {
+		flex-direction: column;
+	}
+	.contact-us-section .contact-us-row .contact-us-left {
+		gap: 20px;
+	}
+	/* contact us section end */
+
+	/* Newsletter section start */
+	.newsletter-section .newsletter-wapper {
+		padding: 50px 30px;
+	}
+	.newsletter-subscribe form {
+		height: 90px;
+	}
+	.newsletter-subscribe form .subscribe-btn a {
+		font-size: 22px;
+	}
+	.newsletter-subscribe form .subscribe-btn {
+		width: 25%;
+	}
+	.newsletter-subscribe form .form-group input {
+		padding: 30px 15px;
+		font-size: 28px;
+	}
+	/* Newsletter section end */
+}
+
+@media(max-width: 767px) {
+	/* page banner section start */
+	.page-banner-section .page-banner-wapper {
+		padding: 100px 0;
+	}
+	.page-banner-section::after {
+		border-radius: 0px 0px 0px 250px;
+	}
+	.page-banner-section::before {
+		width: 130px;
+		height: 150px;
+		left: 15px;
+		bottom: 15px;
+	}
+	.page-banner-section .page-banner-wapper h2 {
+		font-size: 29px;
+		line-height: 34px;
+		padding: 0 0 20px 0;
+	}
+	.page-banner-section .page-banner-wapper ul li a {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.page-banner-section .page-banner-wapper ul li {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	/* page banner section end */
+
+	/* Hire Odoo Developers section start */
+	.hire-odoo-developers-section {
+		padding: 50px 0;
+	}
+	.hire-odoo-developers-section .row {
+		row-gap: 20px;
+	}
+	.hire-odoo-right-wapper h5 {
+		font-size: 20px;
+		line-height: 25px;
+		padding-bottom: 16px;
+	}
+	.hire-odoo-right-wapper h2 {
+		font-size: 29px;
+		line-height: 35px;
+		padding-bottom: 16px;
+	}
+	.hire-odoo-right-wapper p {
+		font-size: 16px;
+		line-height: 22px;
+		padding-bottom: 16px;
+	}
+	.hire-odoo-right-wapper .hire-get-free-btn a {
+		padding: 16px 20px;
+		font-size: 18px;
+	}
+	/* Hire Odoo Developers section end */
+
+	/* Advantages of Hiring Odoo section start */
+	.advantages-hiring-odoo-section {
+		padding: 30px 0;
+	}
+	.advantages-hiring-title h2 {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 30px;
+	}
+	.advantages-hiring-odoo-section .row {
+		row-gap: 20px;
+	}
+	/* Advantages of Hiring Odoo section end */
+
+	/* Technologies and Frameworks section start */
+	.technologies-framework-section {
+		padding: 50px 0;
+	}
+	.technologies-framework-section .technologies-framework-row {
+		grid-column-gap: 15px;
+		grid-row-gap: 15px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.technologies-framework-title h2 {
+		font-size: 29px;
+		line-height: 36px;
+		padding-bottom: 30px;
+	}
+	/* Technologies and Frameworks section end */
+
+	/* Our Facts section start */
+	.our-facts-section {
+		padding: 40px 0;
+	}
+	.our-facts-section .our-facts-title h2 {
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 20px;
+	}
+	.our-facts-section .our-facts-row {
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+	}
+	.our-facts-card-wapper {
+		padding: 0px 0;
+		gap: 10px;
+	}
+	.our-facts-card-inner .shiva {
+		padding-bottom: 6px;
+	}
+	.our-facts-card-inner .text-fun p {
+		font-size: 22px;
+		line-height: 27px;
+	}
+	.our-facts-card-inner .shiva span {
+		font-size: 28px;
+		line-height: 34px;
+	}
+	/* Our Facts section end */
+
+	/* Choose Odoo ERP Solution section start */
+	.choose-odoo-solution-section {
+		padding: 50px 0;
+	}
+	.choose-odoo-solution-title h2 {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 30px;
+	}
+	.reasons-expertise-card-inner h4 {
+		padding: 15px 0 10px 0;
+	}
+	.choose-odoo-solution-section .row {
+		row-gap: 20px;
+	}
+	/* Choose Odoo ERP Solution section end */
+
+	/* odoo easy steps section start */
+	.odoo-easy-steps-section {
+		padding: 30px 0;
+	}
+	.odoo-easy-steps-shap-left {
+		top: 10px;
+		height: 34%;
+		width: 100px;
+	}
+	.odoo-easy-steps-shap-right {
+		width: 120px;
+		height: 30%;
+		bottom: 10px;
+	}
+	.easy-steps-row .tell-us-card-wapper .tell-tag-number {
+		top: -2px;
+	}
+	.odoo-easy-steps-title h2 {
+		font-size: 26px;
+		line-height: 34px;
+		padding-bottom: 30px;
+	}
+	.odoo-easy-steps-section .easy-steps-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.easy-steps-row .tell-us-card-wapper {
+		padding: 40px 10px 30px 10px;
+	}
+	/* odoo easy steps section end */
+
+	/* Pricing Information section start */
+	.pricing-information-section {
+		padding: 50px 0;
+	}
+	.pricing-information-section .pricing-information-title h2 {
+		font-size: 27px;
+		line-height: 33px;
+		padding-bottom: 30px;
+	}
+	.pricing-information-section .row {
+		row-gap: 20px;
+	}
+	.pricing-information-card-wapper h4 {
+		font-size: 20px;
+		line-height: 25px;
+		padding-bottom: 10px;
+	}
+	.pricing-information-card-wapper h6 {
+		font-size: 15px;
+		line-height: 18px;
+		padding-bottom: 15px;
+	}
+	.pricing-information-card-wapper h6 span {
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.pricing-information-dt ul li p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.pricing-information-dt ul li span {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.pricing-information-dt {
+		padding: 10px;
+	}
+	.pricing-information-card-wapper:hover {
+		transform: scale(1.03);
+	}
+	/* Pricing Information section end */
+
+	/* Our  Work section start */
+	.our-work-section {
+		padding: 50px 0;
+		position: relative;
+	}
+	.our-work-section .our-work-title h2 {
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 15px;
+	}
+	.our-work-section .our-work-title p {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 0 0 27px 0;
+	}
+	.ourworkbtn ul li a {
+		padding: 10px 10px;
+		font-size: 16px;
+		line-height: 22px;
+		border-radius: 50px;
+	}
+	.ourworkbtn {
+		padding-bottom: 30px;
+	}
+	.work-row {
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.work-see-more-btn {
+		margin-top: 20px;
+	}
+	.work-see-more-btn button {
+		padding: 12px 20px;
+		font-size: 18px;
+	}
+	.work-card {
+		width: 100%;
+	}
+	/* Our  Work section end */
+
+	/* Our Clients section start */
+	.our-clients-section {
+		padding: 30px 0;
+	}
+	.our-clients-section .clients-title h2 {
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 18px;
+	}
+	.our-clients-section .clients-title p {
+		font-size: 18px;
+		line-height: 22px;
+		padding-bottom: 26px;
+	}
+	.clients-inner-wapper {
+		padding: 0 15px;
+	}
+	#h-clients-slider .owl-item .clients-card-wapper {
+		opacity: 1;
+		transform: scaleY(1);
+	}
+	#h-clients-slider .owl-dots {
+		margin-top: 20px;
+		gap: 10px;
+	}
+	/* Our Clients section end */
+
+	/* Industries We Serve section start */
+	.industries-serve-section {
+		padding: 50px 0;
+	}
+	.industries-serve-title h2 {
+		font-size: 28px;
+		line-height: 34px;
+		padding-bottom: 18px;
+	}
+	.industries-serve-title p {
+		font-size: 18px;
+		line-height: 22px;
+		padding-bottom: 24px;
+	}
+	.industries-serve-row {
+		grid-template-columns: repeat(1, 1fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+	}
+	.industries-card .industries-card-inner h5 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	/* Industries We Serve section end */
+
+	/* faq section start */
+	.faq-section {
+		padding: 50px 0 30px 0;
+	}
+	.faq-section .faq-wapper h2 {
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 20px;
+	}
+	.faq_accordion_item.active {
+		padding: 15px;
+	}
+	.faq_accordion_item {
+		padding: 15px;
+	}
+	.faq_accordion_item .faq_menu::after {
+		right: 15px;
+		top: 12px;
+	}
+	/* faq section end */
+
+	/* Latest Post section start */
+	.latest-post-section {
+		padding: 30px 0;
+	}
+	.latest-post-title h2 {
+		font-size: 30px;
+		line-height: 36px;
+		padding-bottom: 18px;
+	}
+	.latest-post-title p {
+		font-size: 18px;
+		line-height: 22px;
+		padding-bottom: 24px;
+	}
+	.latest-post-row {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	/* Latest Post section end */
+
+	/* New Industries We Serve section start  */
+	.new-indus-shap-one {
+		bottom: 0px;
+		left: 0;
+	}
+	.new-indus-shap-two {
+		top: 20px;
+		left: 10px;
+	}
+	.new-indus-shap-three {
+		bottom: 0px;
+		right: 0px;
+	}
+	.new-indus-shap-fore {
+		top: 300px;
+		right: 10px;
+	}
+	/* New Industries We Serve section end */
+
+	/* contact us section start */
+	.contact-us-section {
+		padding: 50px 0;
+	}
+	.contact-us-section .contact-us-row {
+		gap: 20px;
+	}
+	.contact-us-left .contact-us-left-top h2 {
+		font-size: 25px;
+		line-height: 32px;
+		padding-bottom: 16px;
+	}
+	.contact-us-right .contact-us-right-form-wapper {
+		padding: 20px;
+	}
+	.contact-us-left .contact-us-left-top .schedule-appointment-btn a {
+		padding: 14px 20px;
+		font-size: 18px;
+	}
+	.contact-us-right .contact-us-right-form-wapper form .contact-btn a {
+		padding: 14px 20px;
+		font-size: 18px;
+	}
+	/* contact us section end */
+
+	/* Newsletter section start */
+	.newsletter-section {
+		padding: 50px 0;
+	}
+	.newsletter-wapper {
+		padding: 30px 20px;
+	}
+	.newsletter-wapper .newsletter-inner h2 {
+		font-size: 24px;
+		line-height: 30px;
+		padding-bottom: 14px;
+	}
+	.newsletter-wapper .newsletter-inner p {
+		font-size: 18px;
+		line-height: 24px;
+		padding-bottom: 15px;
+	}
+	.newsletter-subscribe form {
+		height: auto;
+		flex-direction: column;
+		gap: 20px;
+		box-shadow: none;
+	}
+	.newsletter-subscribe form .form-group {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+	}
+	.newsletter-subscribe form .form-group input {
+		padding: 15px 10px;
+		font-size: 18px;
+		box-shadow: 0px 4px 20px 0px #0000001A;
+		border-radius: 10px;
+	}
+	.newsletter-subscribe form .subscribe-btn {
+		width: 100%;
+	}
+	.newsletter-subscribe form .subscribe-btn a {
+		width: auto;
+		height: auto;
+		padding: 12px 20px;
+		margin: 0 auto;
+		font-size: 18px;
+		line-height: 22px;
+	}
+	/* Newsletter section end */
+}
+
+
+@media(min-width:1400px) {
+	.container {
+		max-width: 1240px;
+		width: 100%
+	}
+}

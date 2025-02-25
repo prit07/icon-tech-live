@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+a:hover , a { text-decoration: none; }
+.width { width: 704px; padding: 30px;}
+
+/* css start */
+
+
+.northeast-author-bio  { background: #F7EDEE; border-left: 3px solid #97141B; padding: 10.50px 15px;}
+.northeast-author-bio ul { list-style: none; display: flex; gap: 10px; align-items: center;     flex-wrap: wrap;}
+.northeast-author-bio ul li {font-weight: 500; color: #97141B;}
+
+.northeast-author-bio-main { display: flex; gap: 6px; align-items: center;}
+.northeast-author-bio-img a img { width: 20px; height: 20px; border-radius: 50%; margin: 0;}
+.northeast-author-bio-text-icon { display: flex; gap: 3px; align-items: center;}
+.northeast-author-bio-text-icon p{
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+.northeast-author-bio-text-icon a {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111111;
+}
+.northeast-author-bio-text-icon span {
+    color: #424242;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;   
+}
+.northeast-author-bio-text-icon img {
+    width: 11px;
+    height: 11px;
+    margin: 0;
+}
+
+
+@media(max-width:991px){
+    .width { width: 100%; padding: 10px;}
+}

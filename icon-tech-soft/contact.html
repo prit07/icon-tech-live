@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/custom-animate.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/contact-style-new.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/contact-page.js"></script>
+
+    <style>
+        .page-banner-section::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(54, 52, 53, 0.8),rgba(54, 52, 53, 0.8)), url(img/people-call-center-and-portrait-smile-for-telemar-2023-11-27-05-20-59-utc.jpg) no-repeat;
+            background-size: cover;
+            background-position:50% 27%;
+            border-radius: 0px 0px 0px 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header html start -->
+    <div class="m-overlay-bg"></div>
+    <header id="h-home" class="h-home-wapper">
+        <div class="h-header-main">
+            <div class="container">
+                <div class="h-header-nav">
+                    <div class="h-header-logo">
+                        <div class="h-logo-img">
+                            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="header-right-wapper">
+                        <div class="header-right-inner">
+                            <div class="header-top">
+                                <ul class="contect-number">
+                                    <li>
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <p>Gujarat, India</p>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-envelope"></i></span>
+                                        <a href="#">info@icontechnology.in</a>
+                                    </li>
+                                    <li>
+                                        <span><i class="fas fa-phone-square-alt"></i></span>
+                                        <a href="#">24/7 Customer Support</a>
+                                    </li>
+                                </ul>
+                                <ul class="social-icon">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="h-header-menu">
+                                <div class="h-header-menu-inner">
+                                    <div class="h-toggle-btn" id="h-toggle-btn">
+                                        <div class="line-card one"></div>
+                                        <div class="line-card two"></div>
+                                        <div class="line-card three"></div>
+                                    </div>
+                                </div>
+                                <div class="h-main-menu" id="h-sidebar-wrapper">
+                                    <div class="h-menu-inner">
+                                        <div class="h-menu-wapper">
+                                            <div class="menu-desk">
+                                                <ul>
+                                                    <li><a href="#">HOME</a></li>
+                                                    <li><a href="#">ABOUT US</a></li>
+                                                    <li class="sub-li">
+                                                        <a href="javascript:void(0)">SERVICE </a>
+                                                        <span class="sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                        <ul class="submenu">
+                                                            <li class="sub-li-card">
+                                                                <a href="#">Website Development</a>
+                                                                <span class="second-sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                                <ul class="menu-third-level">
+                                                                    <li><a href="#">PHP Development</a></li>   
+                                                                    <li><a href="#">Node Js Development</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="#">Oddo ERP Solution</a></li>
+                                                            <li><a href="#">Woocommerce Solution</a></li>
+                                                            <li><a href="#">UI/UX Design</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="sub-li">
+                                                        <a href="javascript:void(0)">HIRE DEVELOPER</a>
+                                                        <span class="sub-menu-arrow"><i class="fas fa-angle-down"></i></span>
+                                                        <ul class="submenu">
+                                                            <li>
+                                                                <a href="#">HIRE DEVELOPER1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">HIRE DEVELOPER2</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><a href="#">PORTFOLIO</a></li>
+                                                    <li><a href="#">BLOG</a></li>
+                                                    <li><a href="#">CONTACT US</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header html end -->
+
+    <!-- page banner section start -->
+    <div class="page-banner-section">
+        <div class="container">
+            <div class="page-banner-wapper">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- page banner section end -->
+
+    <!-- Get in touch section start -->
+    <div class="get-in-touch-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="get-in-touch-form-wapper">
+                        <div class="get-in-title">
+                            <h3>Get in touch</h3>
+                        </div>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                            <div class="send-btn">
+                                <a href="#">Send <span><i class="fab fa-telegram-plane"></i></span></a>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <div class="offices-centers-wapper">
+                        <div class="get-in-title">
+                            <h3>Offices and Development Centers</h3>
+                        </div>
+                        <div class="offices-card-wapper">
+                            <div class="offices-city">
+                                <span><img src="img/Group 37.png" alt=""></span>
+                                <h4>Rajkot</h4>
+                            </div>
+                            <div class="offices-address">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>110, Jimmy Tower, Gondal Rd, Opposite Gurukul, Rajkot, Gujarat, 360002</p>
+                            </div>
+                        </div>
+                        <div class="offices-card-wapper">
+                            <div class="offices-city">
+                                <span><img src="img/Group 37.png" alt=""></span>
+                                <h4>Ahmedabad</h4>
+                            </div>
+                            <div class="offices-address">
+                                <span><i class="fas fa-map-marker-alt"></i></span>
+                                <p>A-512, Titanium Heights, Corporate Rd, opp. Vodaphone House, Prahlad Nagar, Ahmedabad, Gujarat, 380015</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Get in touch section end -->
+
+    <!-- contact-us-section start -->
+    <div class="contact-us-section-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-12">
+                    <div class="contact-us-left-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119040.88071947453!2d72.8399872!3d21.191065599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1721047924057!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="contact-us-right-wapper">
+                        <div class="contact-us-right-number">
+                            <h3>Contact Us</h3>
+                            <ul>
+                                <li><span><i class="fas fa-mobile-alt"></i></span><a href="#">(+1) 323 284 6767</a></li>
+                                <li><span><i class="fas fa-mobile-alt"></i></span><a href="#">(+91) 989 864 4750</a></li>
+                                <li><span><i class="fas fa-mobile-alt"></i></span><a href="#">(+91) 989 883 5853</a></li>
+                                <li><span><i class="fas fa-phone"></i></span><a href="#">(+91) 281 236 5009</a></li>
+                                <li><span><i class="fab fa-whatsapp"></i></span><a href="#">(+91) 957 494 4940</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-us-right-email">
+                            <h3>Email</h3>
+                            <ul>
+                                <li><span><i class="far fa-envelope"></i></span><a href="#">info@icontechnology.co.in</a></li>
+                                <li><span><i class="far fa-envelope"></i></span><a href="#">info@icontechnology.co.in</a></li>
+                            </ul>
+                        </div>
+                        <div class="contact-us-right-social">
+                            <ul>
+                                <li><a style="background: #3B5998;" href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                                <li><a style="background: #0077B5;" href="#"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                                <li><a style="background: #1DA1F2;" href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                                <li><a style="background: #262626;" href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+                                <li><a style="background: #BD081C;" href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact-us-section end -->
+
+
+    <!-- Industries We Serve section start -->
+    <div class="industries-serve-section overflow-hidden">
+        <div class="container">
+            <div class="industries-serve-title">
+                <h2>Industries We Serve</h2>
+                <p>We have worked with amazing clients to enable them with robust solutions to which have delivered outstanding results for their businesses.</p>
+            </div>
+            <div class="industries-serve-row">
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Healthcare-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Healthcare</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Finance-and-Banking-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Finance and Banking</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Education-and-E-learning-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Education and E-learning</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/real-estate-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Real Estate</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Travel-and-Hospitality-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Travel and Hospitality</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Manufacturing-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Manufacturing</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Logistics-and-Transportation-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Logistics and Transportation</h5>
+                    </div>
+                </div>
+                <div class="industries-card">
+                    <div class="industries-card-img">
+                        <img src="img/Automotive-icon.png" alt="">
+                    </div>
+                    <div class="industries-card-inner">
+                        <h5>Automotive</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more-btn">
+                <button id="load-more-btn-1">Show More</button>
+            </div>
+        </div>
+    </div>
+    <!-- Industries We Serve section end -->
+
+    <!-- footer section start -->
+    <div class="footer-section overflow-hidden">
+        <div class="container">
+            <div class="footer-top-wapper">
+                <div class="footer-top-row">
+                    <div class="footer-company">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Hire Developers</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-services">
+                        <h3>SERVICES</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">ERP Solution</a></li>
+                            <li><a href="#">E-Commerce Solution</a></li>
+                            <li><a href="#">UI/UX Design</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>CONTACT US</h3>
+                        <ul>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+1) 323 284 6767</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 989 864 4750</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 989 883 5853</a></li>
+                            <li><a href="#"><span><i class="fas fa-mobile-alt"></i></span> (+91) 281 236 5009</a></li>
+                            <li><a href="#"><span><i class="fab fa-whatsapp"></i></span> (+91) 957 494 4940</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-connected">
+                        <h3>LET'S CONNECTED</h3>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-wapper">
+                <div class="footer-bottom-border"></div>
+                <p>COPYRIGHT © 2014-2024 ICON TECHSOFT PVT. LTD. - ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+
+</body>
+</html>

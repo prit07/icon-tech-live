@@ -1,0 +1,81 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+.thesunpapers-sidebar { width: 100%; max-width: 440px; padding: 20px;}
+
+.thesunpapers-sidebar-heading { border-bottom: 2px solid #241B201A; margin-bottom: 15px;}
+.thesunpapers-sidebar-heading h4 {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111111;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.thesunpapers-sidebar-items { display: flex; align-items: start; gap: 15px; padding: 20px 0; border-bottom:  1px solid #241B201A}
+.thesunpapers-sidebar-items:last-child {  border-bottom: 0 !important;}
+.thesunpapers-sidebar-number p {
+    color: #FAB041;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+
+.thesunpapers-sidebar-text h5 {margin-bottom: 10px; line-height: 0;}
+.thesunpapers-sidebar-text h5 a {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #111111;
+    text-decoration: none;
+}
+
+.thesunpapers-sidebar-text span {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #424242;
+    
+}
+
+
+.thesunpapers-sidebar-next-prev  { margin-top: 20px;}
+.thesunpapers-sidebar-next-prev ul { display: flex; gap: 15px;  margin: 0; padding: 0; list-style: none;}
+.thesunpapers-sidebar-next-prev ul li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #989898
+}
+.thesunpapers-sidebar-next-prev ul li.active-li { border: 2px solid #585858 }
+.thesunpapers-sidebar-next-prev ul li.active-li i { color: #585858; }
+.thesunpapers-sidebar-next-prev ul li i {    color: #989898; }
+
+/* #f5f5f5 */
+
+
+
+@media(max-width:767px) {
+    .woocommerce-account-fields {
+        margin-top: -100px !important;
+      }
+}

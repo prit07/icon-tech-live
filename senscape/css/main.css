@@ -1,0 +1,142 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+
+a , a:hover { text-decoration: none;}
+
+/* css Start */
+
+
+.senscape-wapper {  padding: 30px 0;}
+.senscape-wapper-main { display: flex; gap: 10px;}
+.senscape-wapper-sidebar-logo img {
+    width: 100%;
+    max-width: 240px;
+    height: 70px;
+}
+.senscape-wapper-left-ul ul { margin: 0; padding: 0; list-style: none; display: flex; justify-content: center;}
+.senscape-wapper-left-ul ul li a {
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 15px;
+    line-height: normal;
+}
+.senscape-wapper-left-ul ul li a.active { font-weight: 600;}
+
+
+
+
+/* Parent Tabs */
+.senscape-parent-tab-content {  display: none;}
+.senscape-parent-tab-active { display: block;}
+.senscape-parent-tab-menu ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+}
+
+.senscape-parent-tab-menu ul li .senscape-parent-tab-a  { 
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Cera Pro';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 15px;
+    line-height: normal;
+ }
+.senscape-parent-tab-menu ul li .senscape-parent-tab-a.senscape-parent-active { font-weight: 700;}
+.senscape-parent-tab-content {  padding-top: 20px;} 
+
+
+/* Child Tabs */
+.senscape-lawyer-tab { display: none;}
+.senscape-lawyer-tab-active { display: block;}
+
+.senscape-lawyer-tab-menu ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.senscape-lawyer-tab-menu ul li .senscape-lawyer-tab-a {
+    font-family:'Cera Pro';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #504F4F;
+    font-size: 13px;
+    line-height: normal;
+}
+
+.senscape-lawyer-tab-menu ul li .senscape-lawyer-tab-a.senscape-lawyer-active-a { font-weight: 700; color: #000;}
+.senscape-lawyer-tab {  padding-top: 25px;}
+
+
+.senscape-lawyer-grid {
+    display: grid;
+    grid-column-gap: 7px;
+    grid-row-gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.senscape-lawyer-img img { width: 100%; height: 164px; filter: brightness(100%) contrast(100%) saturate(35%) blur(0px) hue-rotate(0deg); transition-duration: 0.3s;}
+
+.senscape-lawyer-contant h3 { margin: 0; line-height: 0; text-align: center; padding: 7px 0;}
+.senscape-lawyer-contant h3 a {
+    font-family:'Cera Pro';
+    font-style: normal;
+    text-transform: uppercase;
+    color: #1E293B;
+    font-size: 14px;
+    text-align: center;
+    line-height: normal;
+}
+.senscape-lawyer-contant p {
+    font-family:'Cera Pro';
+    font-style: oblique;
+    color: #4D4D4D;
+    font-size: 11px;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+}
+.senscape-lawyer-col:hover .senscape-lawyer-img img { filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);}
+
+
+@media(max-width:991px){
+    .senscape-lawyer-tab-menu ul {  flex-wrap: wrap;}
+}
+
+@media(max-width:767px){
+    .senscape-lawyer-grid { grid-template-columns: repeat(1, 1fr);}
+    .senscape-parent-tab-menu ul { gap: 15px;}
+    .senscape-lawyer-tab-menu ul {  flex-wrap: wrap;}
+    .senscape-wapper-main {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+   
+
+
+
+
+
+@media (min-width: 1300px) {
+    .container.w-1240 {
+        max-width: 1240px !important;
+        padding: 0;
+    }
+}
+
+
+/* css End */ 

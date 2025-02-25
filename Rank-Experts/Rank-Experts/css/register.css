@@ -1,0 +1,145 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+/* register form css start */
+.register-wapper {
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.register-form-card {
+	max-width: 370px;
+	width: 100%;
+	margin: auto;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+	padding: 24px;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	display: flex;
+}
+.register-form-logo {
+	max-width: 127.901px;
+	height: 64px;
+	width: 100%;
+	margin: auto;
+}
+.register-form-logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.register-form-card h2 {
+	color: #000;
+	text-align: center;
+	font-family: Golos Text;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 28px;
+	margin: 0;
+}
+.register-form-main {
+	max-width: 100%;
+	width: 100%;
+}
+.register-form-main label {
+	color: #000;
+	font-family: Golos Text;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 14px;
+	margin: 0;
+	margin-bottom: 8px;
+}
+.register-form-main input {
+	height: 40px;
+	padding: 0 16px;
+	border-radius: 100px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: #f7f7f7;
+	color: #201d23;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+}
+.register-form-main .input-group input {
+	border-right: 0;
+}
+.input-group-text {
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	border-left: 0;
+	border-radius: 8px;
+	background: #f7f7f7;
+}
+.submit-btn {
+	margin-top: 20px;
+}
+.submit-btn button {
+	border-radius: 100px;
+	background: #000;
+	border: 0;
+	padding: 0;
+	width: 100%;
+	height: 42px;
+	color: #fff;
+	text-align: center;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 42px;
+	letter-spacing: -0.42px;
+}
+.form-control:focus,
+.form-control:focus-visible {
+	outline: unset;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	outline: 0;
+	background-color: #f7f7f7;
+	box-shadow: unset;
+}
+.iti {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+button:focus,
+button:focus-visible {
+	background: #000;
+	color: #fff;
+	outline: 0;
+}
+.register-form-card p {
+	color: #000;
+	text-align: center;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+}
+.register-form-card p a {
+	color: #09ACF2;
+	font-weight: 500;
+}
+/* register form css end */
+
+@media (max-width: 480px) {
+	.register-wapper {
+		padding: 0 16px;
+	}
+}

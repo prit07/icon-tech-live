@@ -1,0 +1,227 @@
+body { margin: 0; padding: 0; }
+
+:root {
+	--Primary-Color:#0077B6;
+	--secondary-color:#4CAF50;
+	--accent-color:#FF9800;
+	--Text-Color:#333333;
+	--background-color:#E9ECEF;
+	--Button-color:#E76F51;
+	--white-bg-color:#FFFFFF;	
+	--text-white:#FFFFFF;
+    --service-bg:#006AA1;
+ }
+
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+.btn-hover:hover { background: var(--Primary-Color);}
+
+
+/* .footer-newsletter { display: none;} */
+
+
+
+/* About us banner page Start */
+.ab-us-banner {
+    background: var(--Primary-Color);
+    height: 350px;
+    gap: 30px;
+    position: relative;
+    display: flex;
+    z-index: 111;
+} 
+.ab-us-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/service_bg_1.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.ab-us-banner-items { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 111;
+}
+.ab-us-banner-items h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70.7px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+    margin: 0;
+}
+.ab-us-banner-items ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.ab-us-banner-items ul li a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+}
+.ab-us-banner-items ul li {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);   
+}
+/* About us banner page End */
+
+/* contact us Start */
+.contact-us-top { padding: 100px 0;}
+.contact-us-top-items { box-shadow: 0px 0px 12px 0px #33333329; padding: 23px; border-radius: 6px;}
+.contact-us-top-img {
+    width: 100px; 
+    height: 100px; 
+    background: var(--secondary-color); 
+    border-radius: 6px; 
+    margin: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.contact-us-top-text { padding-top: 20px;}
+.contact-us-top-text h5 {line-height: 0; margin: 0; padding-bottom: 10px; text-align: center;}
+.contact-us-top-text h5 a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+}
+.contact-us-top-text p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26.82px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+    margin: 0;
+}
+/* contact us End */
+
+
+
+/* Get In Touch Start */
+.get-in-touch { padding: 60px 0; background: var(--background-color);}
+.get-in-touch-heading { padding-bottom: 50px;}
+.get-in-touch .row { row-gap: 16px;}
+.get-in-touch-heading h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Primary-Color);
+    margin: 0;
+} 
+.get-in-form-group { display: flex; flex-direction: column; gap: 16px;}
+.get-in-form-group label { 
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    margin: 0;
+}
+.get-in-form-group input {
+    border: 1px solid #E9ECEF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    border-radius: 6px;
+    padding: 15px;
+}
+.get-in-form-group textarea {
+    border: 1px solid #E9ECEF;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    padding: 15px ;
+    border-radius: 10px;
+}
+.get-in-checkbox { display: flex; gap: 16px;}
+.get-in-checkbox label {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    margin: 0;
+}
+#saveInfo { accent-color: #FF9800;}
+ 
+.get-in-checkbox input { width: 21px; height: 20px;}
+.get-in-touch-btn a {
+    background: var(--Button-color);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    padding: 18px 30px;
+    display: inline-block;
+    color: var(--text-white);
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.get-in-touch-map iframe { width: 100%;}
+ /* Get In Touch End */
+
+.get-in-touch-map { padding-bottom: 100px;}
+.get-in-touch-map { padding-bottom: 50px;}
+
+@media(max-width:991px){
+  .contact-us-top .row { row-gap: 30px;}
+  .contact-us-top-text p { font-size: 20px; line-height: 24.82px;}
+}
+
+
+@media(max-width:600px){
+    .ab-us-banner-items h1 { font-weight: 700; font-size: 34px;}
+    .ab-us-banner-items { gap: 0px;}
+    .ab-us-banner-items ul li a { font-size: 18px; line-height: 22.38px;}
+    .ab-us-banner-items ul li { font-size: 18px; line-height: 22.38px;}
+
+    .contact-us-top { padding: 50px 0;}
+    .contact-us-top-img { width: 80px; height: 80px;}
+    .contact-us-top-text h5 a { font-size: 20px; line-height: 24.26px;}
+    .contact-us-top-text p { font-size: 18px; line-height: 22.82px;}
+    .contact-us-top-items { padding: 15px;}
+
+
+    .get-in-touch-heading { padding-bottom: 20px;}
+    .get-in-touch-heading h2 { font-size: 34px; line-height: normal;}
+    .get-in-form-group { gap: 10px;}
+    .get-in-form-group label {font-size: 18px; line-height: 21.38px;}
+    .get-in-touch-btn a { width: 100%; font-size: 18px; text-align: center; line-height: 22.38px; padding: 14px 30px; margin-top: 20px;}
+    .get-in-touch { padding: 30px 0;}
+}

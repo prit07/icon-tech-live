@@ -1,0 +1,240 @@
+body { margin: 0; padding: 0; }
+
+:root {
+	--Primary-Color:#0077B6;
+	--secondary-color:#4CAF50;
+	--accent-color:#FF9800;
+	--Text-Color:#333333;
+	--background-color:#E9ECEF;
+	--Button-color:#E76F51;
+	--white-bg-color:#FFFFFF;	
+	--text-white:#FFFFFF;
+    --service-bg:#006AA1;
+ }
+
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+.btn-hover:hover { background: var(--Primary-Color);}
+/* About us banner page Start */
+.ab-us-banner {
+    background: var(--Primary-Color);
+    height: 350px;
+    gap: 30px;
+    position: relative;
+    display: flex;
+    z-index: 111;
+} 
+.ab-us-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/service_bg_1.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.ab-us-banner-items { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 111;
+}
+.ab-us-banner-items h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70.7px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+    margin: 0;
+}
+.ab-us-banner-items ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.ab-us-banner-items ul li a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+}
+.ab-us-banner-items ul li {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);   
+}
+/* About us banner page End *
+
+
+/* Service Start */
+.service { padding: 100px 0 ;}
+.service-items { display: none;}
+/* .service .row { row-gap: 30px;} */
+.service-heading { margin-bottom: 50px;}
+.service-heading h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    color: var(--Primary-Color);
+    margin: 0;
+}
+.service-items { position: relative; margin-bottom: 30px;}
+.service-content { 
+    position: absolute;
+    left: 0px;
+    right: 30px;
+    bottom: 28px;
+    background-color:var(--Primary-Color);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 3;
+}
+.service-items-img img {   width: 100%; height: 378px; border-radius: 6px;}
+.service-content { background: var(--white-bg-color);}
+.service-top { display: flex; gap: 34px;     margin-bottom: 15px;}
+.service-left {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+.service-center { padding-left: 100px;}
+.service-left img { width: 50px ; height: 50px; 
+}
+.service-center h4{ 
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34.13px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    margin: 6px 0;
+}
+.service-right span {
+    font-weight: 700;
+    font-size: 30px; /* Adjust as needed */
+    line-height: normal;
+    -webkit-text-stroke:1px #0077B6;
+    -webkit-text-fill-color:transparent;
+    padding: 10px;
+    display: inline-block;
+}
+.service-content>p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    padding: 0 15px 21px 15px;
+    margin: 0;
+}
+.service-items .service-content::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--Primary-Color);
+    width: 80px;
+    height: 80px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    content: "";
+    z-index: -1;
+}
+.service-items:hover .service-content::before { width: 100%; height: 100%;}
+.service-items:hover .service-content .service-center h4 { color: #FFFFFF;}
+.service-items:hover .service-right span { -webkit-text-stroke:1px  black;}
+.service-items:hover .service-content p{ color: #FFFFFF;}
+/* .service-items:hover .service-content .service-top .service-left { background: var(--service-bg);} */
+
+.service-bottom img{  background: var(--Button-color); padding: 10px;}
+.service-bottom { display: none;}
+.service-items:hover .service-bottom { width: 100%; display: flex; justify-content: end;  transition: all .6s ease;}
+.service-items .service-left::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--service-bg);
+    width: 0;
+    height: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    content: "";
+    z-index: -1;
+}
+.service-items:hover .service-left::after { width: 100%; height: 100%;}
+
+.service-btn { display: flex; justify-content: center; padding-top: 20px;}
+.service-btn a { 
+    display: inline-block;
+    background: var(--Button-color);
+    padding: 18px 30px;
+    border-radius: 6px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+}
+/* Service  End*/
+
+
+
+
+@media(max-width:1199px) {
+    .owl-our-team-img img { height: 380px;}
+
+    .service-items-img img { height: 300px;}
+    .service-items .service-content::before { width: 60px; height: 60px;}
+    .service-center { padding-left: 73px;}
+    .service-left img { width: 38px; height: 38px;}
+    .service-left { padding: 10px; width: 60px; height: 60px;}
+    .service-center h4 { font-size: 24px; line-height: 28.13px;}
+    .service-right span { font-size: 25px; line-height: 30.57px; padding: 11px;}
+    .service-top { gap: 10px;     margin-bottom: 10px;}
+    .service-content>p { font-size: 16px; line-height: 18.94px; padding: 0 10px 15px 10px;}
+}
+
+
+
+@media(max-width:991px){
+
+}
+
+
+@media(max-width:600px){
+    .ab-us-banner-items h1 { font-weight: 700; font-size: 34px;}
+    .ab-us-banner-items { gap: 0px;}
+    .ab-us-banner-items ul li a { font-size: 18px; line-height: 22.38px;}
+    .ab-us-banner-items ul li { font-size: 18px; line-height: 22.38px;}
+
+
+    
+    .service-heading { margin-bottom: 25px;}
+    .service-heading h2 { font-weight: 700; font-size: 34px;  line-height: normal;}
+    .service { padding: 50px 0;}
+    .service-btn { padding-top: 20px;}
+    .service-btn a { padding: 12px 20px; font-size: 17px; line-height: 21.38px;}
+
+}

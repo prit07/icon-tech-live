@@ -1,0 +1,207 @@
+body { margin: 0; padding: 0; }
+
+:root {
+	--Primary-Color:#0077B6;
+	--secondary-color:#4CAF50;
+	--accent-color:#FF9800;
+	--Text-Color:#333333;
+	--background-color:#E9ECEF;
+	--Button-color:#E76F51;
+	--white-bg-color:#FFFFFF;	
+	--text-white:#FFFFFF;
+    --service-bg:#006AA1;
+ }
+
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+.btn-hover:hover { background: var(--Primary-Color);}
+
+/* About us banner page Start */
+.ab-us-banner {
+    background: var(--Primary-Color);
+    height: 350px;
+    gap: 30px;
+    position: relative;
+    display: flex;
+    z-index: 111;
+} 
+.ab-us-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/service_bg_1.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.ab-us-banner-items { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 111;
+}
+.ab-us-banner-items h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70.7px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+    margin: 0;
+}
+.ab-us-banner-items ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.ab-us-banner-items ul li a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+}
+.ab-us-banner-items ul li {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);   
+}
+/* About us banner page End */
+
+
+
+/* Frequently Asked Questions Start */
+.frequently { padding: 100px 0 ;}
+.frequently-tab { display: none; }
+.frequently-tab-active { display: block; }
+.frequently-tab-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+}
+.frequently-tab-menu {padding-bottom: 60px;}
+.frequently-tab-a {
+    border: 1px solid #333333;
+    padding: 15px 30px;
+    border-radius: 6px;
+    display: inline-block;
+}
+.frequently-tab-a.frequently-active-a {
+    background: var(--Button-color, #E76F51);
+    border: 1px solid  #E76F51;
+    padding: 15px 30px;
+    border-radius: 6px;
+    color: #fff;
+}
+.frequently-tab-menu ul li a {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+}
+
+.faq_accordion_wapper { width: 100%; margin: auto;}
+.faqs-heading { padding-bottom: 50px;}
+.faq_accordion_wapper a { width: 95% !important;}
+.faq_accordion_wapper .faq_content { display: none; }
+.faq_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 14px;
+   gap: 5px;
+}
+.faq_accordion_item.active .faq_menu { border-bottom: 1px solid var(--Text-Color);}
+.faq_accordion_item {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 40px 0px #0000001F;
+}
+.faq_menu>a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);    
+}
+.faq_content {padding: 15px;}
+.faq_content p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    margin: 0;
+}
+.faq_menu_img {
+    width: 30px;
+    height: 30px;
+    background: var(--accent-color);
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 0;
+}
+.faq_menu_img.new-class .faq-plus-img  { display: none;}
+.faq_menu_img.new-class .faq-mines-img  { display: block;}
+.faq_menu_img .faq-mines-img { display: none;}
+
+/* Faq End */
+
+
+
+@media(max-width:1199px) {
+    .owl-our-team-img img { height: 380px;}
+
+}
+
+
+
+@media(max-width:991px){
+    .frequently-tab-menu ul { flex-wrap: wrap;}
+}
+
+
+@media(max-width:600px){
+    .ab-us-banner-items h1 { font-weight: 700; font-size: 34px;}
+    .ab-us-banner-items { gap: 0px;}
+    .ab-us-banner-items ul li a { font-size: 18px; line-height: 22.38px;}
+    .ab-us-banner-items ul li { font-size: 18px; line-height: 22.38px;}
+
+
+    .frequently { padding: 50px 0 ;}
+    .frequently-tab-menu { padding-bottom: 30px;}
+    .faq_menu>a { font-size: 16px; line-height: 18.94px;}
+    .faq_content p { font-size: 16px; line-height: 22px;}
+    .faq_menu { padding: 14px 10px;}
+    .faq_content { padding: 10px;}
+    .frequently-tab-menu ul li { width: 100%;}
+    .frequently-tab-menu ul li a {
+        font-size: 17px;
+        line-height: 24px;
+        width: 100%;
+        padding: 10px !important;
+    }
+    
+}

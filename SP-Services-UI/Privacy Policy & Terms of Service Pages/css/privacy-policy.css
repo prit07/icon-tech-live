@@ -1,0 +1,127 @@
+body { margin: 0; padding: 0; }
+
+:root {
+	--Primary-Color:#0077B6;
+	--secondary-color:#4CAF50;
+	--accent-color:#FF9800;
+	--Text-Color:#333333;
+	--background-color:#E9ECEF;
+	--Button-color:#E76F51;
+	--white-bg-color:#FFFFFF;	
+	--text-white:#FFFFFF;
+    --service-bg:#006AA1;
+    --black-color:#000000;
+ }
+
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+.btn-hover:hover { background: var(--Primary-Color);}
+
+
+/* .footer-newsletter { display: none;} */
+
+
+
+/* About us banner page Start */
+.ab-us-banner {
+    background: var(--Primary-Color);
+    height: 350px;
+    gap: 30px;
+    position: relative;
+    display: flex;
+    z-index: 111;
+} 
+.ab-us-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/service_bg_1.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.ab-us-banner-items { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 111;
+}
+.ab-us-banner-items h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70.7px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+    margin: 0;
+}
+.ab-us-banner-items ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.ab-us-banner-items ul li a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+}
+.ab-us-banner-items ul li {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);   
+}
+/* About us banner page End */
+
+
+/* Privacy Policy Start  */
+.privacy-policy { padding: 100px 0;}
+.privacy-policy-items h3 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34.13px;
+    letter-spacing: 0%;
+    color: var(--black-color);
+    margin-bottom: 30px;
+}
+.privacy-policy-items p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+/* Privacy Policy End  */
+
+
+@media(max-width:991px){
+  .contact-us-top .row { row-gap: 30px;}
+  .contact-us-top-text p { font-size: 20px; line-height: 24.82px;}
+}
+
+
+@media(max-width:600px){
+    .ab-us-banner-items h1 { font-weight: 700; font-size: 34px;}
+    .ab-us-banner-items { gap: 0px;}
+    .ab-us-banner-items ul li a { font-size: 18px; line-height: 22.38px;}
+    .ab-us-banner-items ul li { font-size: 18px; line-height: 22.38px;}
+
+
+    .privacy-policy { padding: 50px 0;}
+    .privacy-policy-items h3 { font-size: 22px; line-height: 28.13px; margin-bottom: 20px;}
+    .privacy-policy-items p { font-size: 16px; line-height: 22px; margin-bottom: 10px;}
+}

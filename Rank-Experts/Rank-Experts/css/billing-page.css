@@ -1,0 +1,341 @@
+body { margin:0; padding:0; }
+
+/* checkout page css start */
+.checkout-page-wapper { margin-bottom:20px; }
+.checkout-page-wapper .row { display: flex; flex-flow: row wrap; position: relative; }
+
+/* Billing Information wapper css start */
+.billing-info-wapper { position:relative; margin-bottom:20px; }
+.billing-info-card {
+	border-radius: 8px;
+	background: var(--Card-Bg, #FFF);
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: relative;
+}
+.billing-info-title h3 {
+	margin: 0;
+	color: #000;
+	font-family: Golos Text;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: -0.66px;
+	padding-bottom: 8px;
+}
+.billing-info-title p {
+	margin: 0;
+	color:#000;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}
+.billing-info-form label {
+	color: #000;
+	font-family: Golos Text;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 14px;
+	margin-bottom: 8px;
+}
+.billing-info-form .form-control {
+	height: 40px;
+	border-radius: 100px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: var(--Bg, #F7F7F7);
+	padding: 0 16px;
+	color: #201D23;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+.billing-info-form textarea {
+	padding: 10px 16px !important;
+	width: 100%;
+	color: #201D23;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	border-radius: 8px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: #F7F7F7;
+}
+.payment-form-wapper {
+	margin-top: 24px;
+	border-radius: 8px;
+	background: var(--Card-Bg, #FFF);
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+	padding: 24px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.payment-form-title { display:flex; align-items:center; justify-content:space-between; }
+.payment-form-title h3 {
+	margin: 0;
+	color: #000;
+	text-align: center;
+	font-family: Golos Text;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: -0.66px;
+}
+.payment-form-title img { width: 59px; height: 25px; }
+.payment-form-card label {
+	color: #000;
+	font-family: Golos Text;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 14px;
+	margin-bottom: 8px;
+}
+.payment-form-card .form-control {
+	height: 40px;
+	border-radius: 100px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: var(--Bg, #F7F7F7);
+	padding: 0 16px;
+	color: #201D23;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+}
+/* Billing Information wapper css end */
+
+/* bill order summary css start */
+.bill-order-summary-wapper {
+	border-radius: 8px;
+	border: 1px solid #3ADEE1;
+	background: var(--Card-Bg, #FFF);
+	box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.16);
+	padding: 24px;
+	position: relative;
+}
+.bill-order-summary-title h2 {
+	margin: 0;
+	color: #000;
+	font-family: Golos Text;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: -0.66px;
+	padding-bottom: 18px;
+}
+.po-number-wapper {
+	padding: 16px;
+	border-radius: 8px;
+	border: 1px solid #F7F7F7;
+	background: #FAFAFA;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 8;
+}
+.po-number-wapper h3 {
+	margin: 0;
+	color:  #000;
+	font-family: Golos Text;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 14px;
+}
+.po-number-wapper h3 span { color:rgba(32, 29, 35, 0.50); }
+.po-number-wapper .form-control {
+	border-radius: 100px;
+	height: 40px;
+	border: 1px solid rgba(227, 227, 227, 0.66);
+	background: #FFF;
+	color: rgba(32, 29, 35, 0.50);
+	font-family: Golos Text;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	padding: 0 16px;
+}
+.bill-order-totle-link-add {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 16px;
+}
+.bill-order-totle-link-add h4 {
+	color:#000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
+}
+.bill-order-totle-link-add h6 {
+	margin: 0;
+	color: #000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+.bill-order-totle-link-add img {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+	transform: rotate(180deg);
+}
+.bill-do-follow-wapper { padding:0; margin:0; display:flex; flex-direction:column; gap:12px; padding-bottom:18px; padding-top:12px; }
+.bill-do-follow-wapper li {
+	list-style-type: none;
+	color: #000;
+	font-family: Golos Text;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 18px;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+.bill-do-follow-wapper li img {
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.bill-amount-vat-wapper {
+	padding-top: 18px;
+	padding-bottom: 18px;
+	border-top: 1px solid #F7F7F7;
+	border-bottom: 1px solid #F7F7F7;
+}
+.bill-amount-vat-wapper ul { padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.bill-amount-vat-wapper ul li { display: flex; align-items: center; justify-content: space-between; list-style-type: none; }
+.bill-amount-vat-wapper ul li p {
+	color: #000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0;
+}
+.bill-amount-vat-wapper ul li span {
+	color: #000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+.bill-total-excl-vat-wapper { padding-top:18px; padding-bottom:18px; }
+.bill-total-excl-vat-wapper ul { padding: 0; margin: 0; }
+.bill-total-excl-vat-wapper ul li { display: flex; align-items: center; justify-content: space-between; list-style-type: none; }
+.bill-total-excl-vat-wapper ul li p {
+	color:#000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+	margin: 0;
+}
+.bill-total-excl-vat-wapper ul li span {
+	color: var(--Dark, #000);
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px;
+}
+.email-form-check { position:relative; margin-top:16px; }
+.email-form-check .form-check-input { position: absolute; z-index: -1; opacity: 0; }
+.email-form-check .form-check-label {
+	color:#000;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	padding-left: 30px;
+}
+.email-form-check .form-check-label a {
+	color: #09ACF2;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+}
+.email-form-check .form-check-label:before, .email-form-check .form-check-label:after {
+	content: "";
+	position: absolute;
+	top: 49%;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: -10px;
+	border-radius: 4px;
+}
+.email-form-check .form-check-label:before { left: 0; pointer-events: none; user-select: none; border: 1px solid #3ADEE1; background: linear-gradient(239.63deg, #3ADEE1 -5.06%, #09ACF2 81.92%);}
+.email-form-check .form-check-label:after {
+	left: 2px;
+	width: 14px;
+	height: 14px;
+	border-radius: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+	margin-top: -7px;
+	background-image: url('../img/check-mark.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.email-form-check .form-check-input:checked + .form-check-label:after { opacity: 1; }
+.complete-order-btn { padding-top:16px; }
+.complete-order-btn a{
+	height: 44px;
+	display: block;
+	border-radius: 100px;
+	background: var(--Dark, #000);
+	color: var(--Card-Bg, #FFF);
+	text-align: center;
+	font-family: Golos Text;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 44px;
+	letter-spacing: -0.48px;
+}
+.step_2{display:none;}
+
+/* bill order summary css end */
+
+@media(max-width:1440px){
+
+}
+
+@media(max-width:1199px){
+
+}
+
+@media(max-width:991px){
+	
+}

@@ -1,0 +1,46 @@
+body { margin:0; padding:0; }
+a , a:hover { text-decoration:none; }
+
+
+.width { width: 100%; max-width: 510px;}
+
+/* css start */
+.northeast-time-table table { width: 100%; }
+.northeast-time-table table tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 13.50px 20px;
+}
+.northeast-time-table table tr:nth-child(even) { background-color:#F7EDEE; border-left: 3px solid #97141B;}
+.northeast-time-table table tr td {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+    color: #241B20;
+}
+.northeast-time-table table tr td a {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #97141B;
+}
+
+@media(max-width:767px){
+    .width { max-width: 100%;}
+    .northeast-time-table table tr {
+        padding: 4.5px 20px;
+        gap: 5px;
+        flex-direction: column;
+    }
+}
+/* css End */

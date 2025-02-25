@@ -1,0 +1,33 @@
+body { margin: 0; padding: 0; box-sizing: border-box;}
+
+.header-navigation {
+width: 100%;
+    z-index: 1111111;
+    background-color: #f6f6f6;
+    transition: all 0.3s ease;
+}
+
+.header-navigation.sticky {
+    top: 0;
+    position: fixed;
+}
+
+
+header {
+    width: 100%;
+        z-index: 1111111;
+        background-color: #f6f6f6;
+        transition: all 0.3s ease;
+    }
+    
+    header.sticky {
+        top: 0;
+        position: fixed;
+    }
+    
+/* Make slider-central scrollable */
+
+.sticky-cls {
+    position: fixed;
+    top: 109px;
+}

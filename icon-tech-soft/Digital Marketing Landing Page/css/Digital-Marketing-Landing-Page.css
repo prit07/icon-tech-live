@@ -1,0 +1,211 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a:hover { text-decoration: none; }
+
+
+/* banner section Css Start */
+.dm-danner-section {
+    width: 100%;
+    height: 768px;
+    background: url(../img/digital-marketing-banner.png) no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dm-danner-section::before {
+    content: "";
+    width: 100%;
+    height: 130px;
+    background: url(../img/dm-banner-before.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.dm-danner-section .d-center { height: 100%;}
+
+.dm-danner-section-contant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.dm-danner-section-contant h5 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    padding: 0;
+}
+.dm-danner-section-contant h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.95px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.dm-danner-section-contant>ul { margin: 0; list-style: none; padding: 0px;}
+.dm-danner-section-contant>ul>li {
+    position: relative;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-left: 30px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.dm-danner-section-contant>ul>li::before{
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url(../img/dm-banner-ul-li.png) no-repeat center;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.dm-danner-section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+ 
+}
+.dm-danner-section-form-wapper { background: #EE3237; padding: 38.5px 55px; border-radius: 8px;}
+
+.dm-danner-section-form-wapper h3 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.dm-danner-section-form-wapper form .form-group { margin-bottom: 20px; }
+.dm-danner-section-form-wapper form .form-group input {
+	padding: 14px 20px;
+	height: 50px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #363435;
+}
+.dm-danner-section-form-wapper form .form-group input:focus { outline: none; border: none; box-shadow: none; }
+.dm-danner-section-form-wapper form .form-group textarea {
+	padding: 14px 20px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 22px;
+	color: #363435;
+}
+.dm-danner-section-form-wapper form .form-group textarea:focus {
+	outline: none;
+	border: none;
+	box-shadow: none;
+}
+
+/* btn hover styal css */
+.dm-danner-contact-btn { display: flex; gap: 20px; } 
+.dm-danner-contact-btn a { margin: 0 !important; display:flex; gap: 10px;}
+.dm-danner-contact-btn-wapper {
+    width: 100%;
+    max-width: 323px;
+    height: 60px;
+    background: #FFFFFF;
+	border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    color: #EE3237;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 7;
+    position: relative;
+}
+.dm-danner-contact-btn-wapper:hover { color:#fff; }
+.dm-danner-contact-btn-wapper span { z-index:100; position:relative; display:inline-block; }
+.dm-danner-contact-btn-wapper::before {
+	content: "";
+	background-color: #363435;
+	width: 0;
+	height: 50%;
+	border-radius: 8px 8px 0 0 ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	z-index: -1;
+}
+.dm-danner-contact-btn-wapper::after {
+	content: "";
+	background-color: #363435;
+	width: 0;
+	height: 50%;
+	position: absolute;
+	border-radius: 0 0 8px 8px;
+	bottom: 0;
+	right: 0;
+	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	z-index: -1;
+
+}
+.dm-danner-contact-btn-wapper:hover::before, .dm-danner-contact-btn-wapper:hover::after { width: 100%; }
+.dm-danner-contact-btn-wapper:hover { border: 0; }
+
+/* banner section Css End */
+
+
+
+@media(max-width:991px){
+    .dm-danner-section-contant { margin-bottom: 60px;}
+    .dm-danner-section-form { padding-bottom: 60px;}
+    .dm-danner-section { height: 100%; }
+}
+
+@media(max-width:767px){
+    .dm-danner-section-form-wapper { padding: 25px;}
+    .dm-danner-section-contant h1 { font-size: 30px; line-height: 35.95px; margin-bottom: 10px;}
+    .dm-danner-section-contant h5 { font-size: 18px;  line-height: 22.26px; margin-bottom: 10px;}
+}

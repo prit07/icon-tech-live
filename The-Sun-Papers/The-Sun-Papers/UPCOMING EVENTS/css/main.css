@@ -1,0 +1,42 @@
+body { margin:0; padding:0; }
+a:hover { text-decoration:none; }
+
+
+.width { width: 100%; max-width: 325px;}
+
+
+/* css Start */
+.sun-papers-evenet { background-color: #FAB0411A; padding: 15px 7px;}
+.sun-papers-evenet-item { padding: 15px 31.5px; border-bottom: 2px solid #59595933;}
+.sun-papers-evenet-item:last-child { border: 0;}
+.sun-papers-evenet-date { display: flex; gap: 8px;  align-items: end; margin-bottom: 6px;}
+.sun-papers-evenet-date-calendar-img img { width: 24px ; height: 24px; margin:0; }
+.sun-papers-evenet-date p {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #595959;
+    margin: 0;
+}
+.sun-papers-evenet-text { display: flex; gap: 35px; align-items: center;}
+.sun-papers-evenet-text-title h5 { margin: 0; line-height: 0;}
+.sun-papers-evenet-text-title h5 a {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+     color: #111111;
+} 
+.sun-papers-evenet-arrow-img a img {width: 24px; height: 24px; margin: 0;}
+
+/* css End */
+
+
+

@@ -1,0 +1,455 @@
+body { margin: 0; padding: 0; }
+
+:root {
+	--Primary-Color:#0077B6;
+	--secondary-color:#4CAF50;
+	--accent-color:#FF9800;
+	--Text-Color:#333333;
+	--background-color:#E9ECEF;
+	--Button-color:#E76F51;
+	--white-bg-color:#FFFFFF;	
+	--text-white:#FFFFFF;
+    --service-bg:#006AA1;
+ }
+
+
+a:hover { text-decoration:none; }
+.form-control:focus, button:focus, button:focus-visible, .form-control:focus-visible { outline:unset; box-shadow:unset; }
+
+.btn-hover:hover { background: var(--Primary-Color);}
+/* About us banner page Start */
+.ab-us-banner {
+    background: var(--Primary-Color);
+    height: 350px;
+    gap: 30px;
+    position: relative;
+    display: flex;
+    z-index: 111;
+} 
+.ab-us-banner::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../img/service_bg_1.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.ab-us-banner-items { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    z-index: 111;
+}
+.ab-us-banner-items h1 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70.7px;
+    letter-spacing: 0%;
+    color: var(--text-white);
+    margin: 0;
+}
+.ab-us-banner-items ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 5px;}
+.ab-us-banner-items ul li a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+}
+.ab-us-banner-items ul li {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);   
+}
+/* About us banner page End */
+
+
+/*  Company Overview Start */
+.company-overview { padding: 85px 0 100px 0;}
+.company-overview-img { display: flex; position: relative;}
+.company-overview-left { position: relative; z-index: 11;}
+.company-overview-left::after {
+    content: "";
+    width: 100%;
+    max-width: 194px;
+    height: 65px;
+    background: url(../img/company-overview-after.png) no-repeat center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    right: -81px;
+    z-index: -1;
+}
+.company-overview-left img {  width: 416px; height: 538px;}
+.company-overview-right { position: absolute;  right: 0; top: 70px;}
+.company-overview-right img{ width: 100%; height: 397px; position: relative; z-index: 1111;}
+.company-overview-right::before {
+    content: "";
+    width: 158px;
+    height: 193px;
+    background: url(../img/company-overview-before.png) no-repeat center;
+    position: absolute;
+    background-size: 100% 100%;
+    top: -73px;
+    right: 0;
+}
+.company-overview-items h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    color: var(--Primary-Color);
+    margin-bottom: 30px;
+}
+.company-overview-items p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--Text-Color);
+    margin-bottom: 16px;
+}
+
+/*  Company Overview End */
+
+
+
+/* Who We Are Start */
+.who-we-are {  background: var(--background-color); padding: 60px 0;}
+.who-we-are-heading { margin-bottom: 50px;}
+.who-we-are-heading h2{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Primary-Color);
+    margin: 0;
+}
+.who-we-are-items { 
+    padding: 40px 50px;
+    background: var(--white-bg-color);
+    box-shadow: 0px 0px 14px 0px #3333331F;
+    border-radius: 6px;
+}
+.who-we-are-img { background: var(--background-color); padding: 25px; width: fit-content; margin: auto; margin-bottom: 30px;} 
+.who-we-are-img img { 
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.who-we-are-text h3 { margin: 0; line-height: 0; padding-bottom: 20px;    text-align: center;}
+.who-we-are-text h3 a {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34.13px;
+    text-align: center;
+    letter-spacing: 0%;
+    color: var(--Primary-Color);
+}
+.who-we-are-text p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+    margin: 0;
+}
+/* Who We Are End */
+
+
+/* Our Team Start  */
+.our-team { padding: 100px 0;}
+.our-team-heading { padding-bottom: 60px;}
+.our-team-heading h2{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+    color: var(--Primary-Color);
+}
+.owl-our-team-img { background: var(--background-color); padding: 15px; border-radius: 6px;}
+.owl-our-team-item:hover .owl-our-team-img {
+    background: linear-gradient(180deg, #E76F51 0%, #FF9800 100%);
+
+}
+.owl-our-team-img img { width: 100%; height: 468px;} 
+.owl-our-team-item { position: relative;     transition: all ease-in-out 0.5s;}
+.owl-our-team-content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px;
+}
+.owl-our-team-bottom {
+    background: var(--white-bg-color);
+    width: 100%;
+    height: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.owl-our-team-bottom>h5>a{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29.26px;
+    letter-spacing: 0%;
+    color: var(--Primary-Color);
+    margin-bottom: 10px;
+}
+.owl-our-team-bottom>p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+    margin: 0;
+}
+.owl-our-team-share { display: flex; justify-content: end;}
+.share.bottom>img {
+    width: 30px;
+    height: 30px;
+    background:var(--secondary-color) ;
+    object-fit: contain;
+    padding: 6px;
+    border-radius: 6px;
+}
+.submenu>li {
+    background: var(--Button-color);
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 6px;
+}
+.submenu>li>a>img { height: 20px; object-fit: contain;}
+.menu {
+    z-index: 999;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .share:hover.bottom .submenu li:nth-child(1) { opacity: 1; top: 36px; right: 0; transition-delay: 0.08s;}
+.menu .share:hover.bottom .submenu li:nth-child(2) { opacity: 1; top: 72px; right: 0; transition-delay: 0.16s;}
+.menu .share:hover.bottom .submenu li:nth-child(3) { opacity: 1; top: 108px; right: 0; transition-delay: 0.24s;}
+.menu .share:hover.bottom .submenu li:nth-child(4) { opacity: 1; top: 144px; right: 0; transition-delay: 0.32s;}
+.menu .submenu { list-style-type: none; padding: 0; margin: 0;}
+.menu .submenu li {
+    transition: all ease-in-out 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.menu.topLeft { top: 0; left: 0;} 
+
+
+
+#owl-our-team .owl-nav .owl-prev, #owl-our-team .owl-nav .owl-next {
+    border: 1px solid var(--Button-color);
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+#owl-our-team  .owl-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* Our Team End */
+
+
+
+/* Our Facts Start */
+.our-facts {  background: var(--secondary-color); padding: 60px 0;}
+.our-facts-heading { padding-bottom: 50px;}
+.our-facts-heading h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--text-white);
+    margin: 0;
+}
+.our-facts-items { 
+    width: 100%; 
+    height: 167px; 
+    clip-path: polygon(0 0, 78% 0, 100% 33%, 100% 100%, 21% 100%, 0 68%); 
+    background: var(--white-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.our-facts-items h3{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.88px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Primary-Color);
+    margin: 0;
+    padding-bottom: 13px;
+}
+.our-facts-items p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.94px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+    margin: 0;
+}
+/* Our Facts End */
+
+
+
+
+
+/* About us lst section Start  */
+.about-us-bottom { padding: 100px 0 ;}
+.about-us-bottom-items {
+    padding: 28px 10px;
+    box-shadow: 0px 0px 14px 0px #3333331F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.about-us-bottom-items img { width: 70px; height: 70px ; margin-bottom: 20px;}
+.about-us-bottom-items h5 { margin: 0; line-height: 0; padding-bottom: 7px;}
+.about-us-bottom-items h5 a{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24.38px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Primary-Color);
+    margin-bottom: 5px;
+}
+.about-us-bottom-items>p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--Text-Color);
+    margin: 0;
+}
+
+/* About us lst section End */
+
+
+@media only screen and (min-width:1199px) and (max-width:991px) {
+    /*  Company Overview Start */
+    .company-overview-left img { width: 350px; height: 450px;}
+    .company-overview-right img {  width: 100%; height: 300px;}
+    .company-overview-left::after { max-width: 168px; height: 61px; right: -81px;}
+    .company-overview-right::before { width: 87px; height: 132px; background-size: cover;}
+
+    /*  Company Overview End */
+}
+
+@media(max-width:1199px) {
+    .owl-our-team-img img { height: 380px;}
+}
+
+
+
+@media(max-width:991px){
+    .company-overview .row {row-gap: 30px;}
+
+    .who-we-are-items { padding: 20px;}
+
+
+    .our-facts .row { row-gap: 30px;}
+
+    .about-us-bottom .row { row-gap: 30px;}
+}
+
+
+@media(max-width:600px){
+    .ab-us-banner-items h1 { font-weight: 700; font-size: 34px;}
+    .ab-us-banner-items { gap: 0px;}
+    .ab-us-banner-items ul li a { font-size: 18px; line-height: 22.38px;}
+    .ab-us-banner-items ul li { font-size: 18px; line-height: 22.38px;}
+
+    .company-overview-left::after { display: none;}
+    .company-overview-right { position: relative; right: 0; top: 0;}
+    .company-overview-img { display: flex; position: relative; flex-direction: column; gap: 30px;}
+    .company-overview-right::before {display: none;}
+    .company-overview-left img { width: 100%; height: 350px;}
+    .company-overview-items h2 { font-size: 34px; line-height: normal; margin-bottom: 20px;}
+    .company-overview-items p { font-size: 16px; line-height: 22px; margin-bottom: 10px;}
+    .company-overview { padding: 45px 0 50px 0;}
+
+
+    .who-we-are .row { row-gap: 30px;}
+    .who-we-are-heading { margin-bottom: 20px;}
+    .who-we-are-heading h2 { font-size: 34px;  line-height: normal;}
+    .who-we-are-text p { font-size: 16px; line-height: 24px;}
+    .who-we-are-text h3 { padding-bottom: 10px;}
+    .who-we-are-img { margin-bottom: 10px;}
+    .who-we-are { padding: 40px 0;}
+    .who-we-are-text h3 a { font-size: 22px; line-height: 26.13px;}
+
+
+    #owl-our-team .owl-nav .owl-prev, #owl-our-team .owl-nav .owl-next { width: 40px; height: 40px;}
+    #owl-our-team .owl-nav { margin-top: 20px;}
+    .our-team-heading h2 { font-size: 34px; line-height: normal;}
+    .our-team-heading { padding-bottom: 20px;}
+    .our-team { padding: 50px 0;}
+
+
+
+    .our-facts-items h3 { font-size: 28px; line-height: 36.88px; padding-bottom: 8px;}
+    .our-facts-items p { font-size: 16px; line-height: 19.94px;}
+    .our-facts-heading h2 { font-size: 34px; line-height: normal;}
+    .our-facts-heading { padding-bottom: 20px;}
+    .our-facts { padding: 40px 0;}
+}

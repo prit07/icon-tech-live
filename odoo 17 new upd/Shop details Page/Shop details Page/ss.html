@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Image Slider</title>
+    <style>
+        /* Slider container */
+        .shop-page-detils-left-owl-slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Slider track (all slides) */
+        .shop-page-detils-left-main-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        /* Individual slide (item) */
+        .shop-page-detils-left-main-slider .item {
+            min-width: 100%;
+            flex-shrink: 0;
+            box-sizing: border-box;
+        }
+
+        /* Image styles */
+        .shop-page-detils-left-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shop-page-detils-left-owl-slider">
+        <div class="shop-page-detils-left-main-slider">
+            <!-- Each slide is wrapped in a "item" container -->
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/beluga-belt-comp-01.png" alt="Image 1">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-1.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div>
+            <div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div><div class="item">
+                <div class="shop-page-detils-left-img">
+                    <img src="img/shop-page-2.png" alt="Image 2">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector('.shop-page-detils-left-main-slider');
+            const items = document.querySelectorAll('.shop-page-detils-left-main-slider .item');
+            let currentIndex = 0;
+
+            // Function to update the slider position
+            function updateSliderPosition() {
+                const offset = -currentIndex * 100; // Calculate offset based on currentIndex
+                slider.style.transform = `translateX(${offset}%)`;
+            }
+
+            // Add click event to images
+            document.querySelectorAll('.shop-page-detils-left-img img').forEach((img) => {
+                img.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % items.length; // Increment index with wrap-around
+                    updateSliderPosition();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

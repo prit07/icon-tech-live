@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/shop-page.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/shop-page.js"></script>
+
+</head>
+
+<body>
+
+    <div class="shop-page-top-row"></div>
+    <div class="shop-page-wapper">
+        <div class="shop-page-siderbar-wapper">
+            <div class="shop-page-sidebar ">
+                <div class="shop-page-toggle-img" id="filter-toggle-btn">
+                    <img src="img/page_info.png" alt="toggle">
+                </div>
+                <div class="shop-page-toggle-close-btn">
+                    <img src="img/close_small.png" alt="close_small" id="close-sidebar">
+                </div>
+            </div>
+            <div class="shop-page-sidebar-wrapper " id="shop-page-sidebar-wrapper">
+                <div class="filter-sidebar_accordion_wapper">
+                    <div class="filter-sidebar_accordion_item">
+                        <div class="filter-sidebar_menu">
+                            <a>categories</a>
+                        </div>
+                        <div class="filter-sidebar_content" style="display: none;">
+                            <ul>
+                                <li>
+                                    <div class="filter-sidebar_content-search">
+                                        <img src="img/search.png" alt="search">
+                                        <input type="text" placeholder="search for category...">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="filter-sub-faq_accordion_item ">
+                                        <div class="filter-sub-faq_menu">
+                                            <a>Chairs</a>
+                                        </div>
+                                        <div class="filter-sub-faq_content" style="display: none;">
+                                            <ul class="filter-sub-faq-valu">
+                                                <li>
+                                                    <input type="checkbox" id="Chairs_1">
+                                                    <label for="Chairs_1"><span>Dining Chairs</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="Chairs_2">
+                                                    <label for="Chairs_2"><span>Armchairs</span></label>
+                                                </li>
+
+                                                <li><input type="checkbox" id="Chairs_3">
+                                                    <label for="Chairs_3"><span>High Stolls</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="Chairs_4">
+                                                    <label for="Chairs_4"><span>Lounge Chairs</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="Chairs_5">
+                                                    <label for="Chairs_5"><span>Office Chairs</span></label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="filter-sub-faq_accordion_item ">
+                                        <div class="filter-sub-faq_menu">
+                                            <a>tables</a>
+                                        </div>
+                                        <div class="filter-sub-faq_content" style="display: none;">
+                                            <ul class="filter-sub-faq-valu">
+                                                <li>
+                                                    <input type="checkbox" id="tables_1">
+                                                    <label for="tables_1"><span>Dining Chairs</span></label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="tables_2">
+                                                    <label for="tables_2"><span>Armchairs</span></label>
+                                                </li>
+
+                                                <li><input type="checkbox" id="tables_3">
+                                                    <label for="tables_3"><span>High Stolls</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="tables_4">
+                                                    <label for="tables_4"><span>Lounge Chairs</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="tables_5">
+                                                    <label for="tables_5"><span>Office Chairs</span></label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="filter-sub-faq_accordion_item ">
+                                        <div class="filter-sub-faq_menu">
+                                            <a>sofas</a>
+                                        </div>
+                                        <div class="filter-sub-faq_content" style="display: none;">
+                                            <ul class="filter-sub-faq-valu">
+                                                <li>
+                                                    <input type="checkbox" id="sofas_1">
+                                                    <label for="sofas_1"><span>Dining Chairs</span></label>
+                                                </li>
+
+                                                <li>
+                                                    <input type="checkbox" id="sofas_2">
+                                                    <label for="sofas_2"><span>Armchairs</span></label>
+                                                </li>
+
+                                                <li><input type="checkbox" id="sofas_3">
+                                                    <label for="sofas_3"><span>High Stolls</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="sofas_4">
+                                                    <label for="sofas_4"><span>Lounge Chairs</span></label>
+                                                </li>
+                                                <li><input type="checkbox" id="sofas_5">
+                                                    <label for="sofas_5"><span>Office Chairs</span></label>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar_accordion_item">
+                        <div class="filter-sidebar_menu">
+                            <a>Brands</a>
+                        </div>
+                        <div class="filter-sidebar_content" style="display: none;">
+                            <ul class="filter-sub-faq-valu filter-sub-faq-main-input">
+                                <li>
+                                    <input type="checkbox" id="Brands_1">
+                                    <label for="Brands_1"><span>Brands 1</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Brands_2">
+                                    <label for="Brands_2"><span>Brands 2</span></label>
+                                </li>
+
+                                <li><input type="checkbox" id="Brands_3">
+                                    <label for="Brands_3"><span>Brands 3</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Brands_4">
+                                    <label for="Brands_4"><span>Brands 4</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Brands_5">
+                                    <label for="Brands_5"><span>Brands 5</span></label>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar_accordion_item">
+                        <div class="filter-sidebar_menu">
+                            <a>Origin</a>
+                        </div>
+                        <div class="filter-sidebar_content" style="display: none;">
+                            <ul class="filter-sub-faq-valu  filter-sub-faq-main-input">
+                                <li>
+                                    <div class="filter-sidebar_content-search">
+                                        <img src="img/search.png" alt="search">
+                                        <input type="text" placeholder="search for category...">
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Origin_1">
+                                    <label for="Origin_1"><span>Origin 1</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Origin_2">
+                                    <label for="Origin_2"><span>Origin 2</span></label>
+                                </li>
+
+                                <li><input type="checkbox" id="Origin_3">
+                                    <label for="Origin_3"><span>Origin 3</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Origin_4">
+                                    <label for="Origin_4"><span>Origin 4</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Origin_5">
+                                    <label for="Origin_5"><span>Origin 5</span></label>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar_accordion_item">
+                        <div class="filter-sidebar_menu">
+                            <a>tages</a>
+                        </div>
+                        <div class="filter-sidebar_content" style="display: none;">
+                            <ul>
+                                <li>
+                                    <p>lore </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar_accordion_item">
+                        <div class="filter-sidebar_menu">
+                            <a>Material</a>
+                        </div>
+                        <div class="filter-sidebar_content" style="display: none;">
+                            <ul class="filter-sub-faq-valu  filter-sub-faq-main-input">
+                                <li>
+                                    <div class="filter-sidebar_content-search">
+                                        <img src="img/search.png" alt="search">
+                                        <input type="text" placeholder="search for category...">
+                                    </div>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Material_1">
+                                    <label for="Material_1"><span>Material 1</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="Material_2">
+                                    <label for="Material_2"><span>Material 2</span></label>
+                                </li>
+
+                                <li><input type="checkbox" id="Material_3">
+                                    <label for="Material_3"><span>Material 3</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Material_4">
+                                    <label for="Material_4"><span>Material 4</span></label>
+                                </li>
+                                <li><input type="checkbox" id="Material_5">
+                                    <label for="Material_5"><span>Material 5</span></label>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop-page-contant">
+            <div class="shop-page-contant-row">
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-1.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-2.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-3.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-4.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-4.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-5.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-6.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-page-contant-col">
+                    <div class="shop-page-contant-col-item">
+                        <div class="shop-page-contant-col-img">
+                            <img src="img/shop-page-7.png" alt="shop-page">
+                        </div>
+                        <div class="shop-page-contant-col-text">
+                            <h2><a href="#">beluga Belt</a></h2>
+                            <p>code: j5536</p>
+                            <div class="shop-page-contant-col-text-hover">
+                                <p>by: Jacobo ventura</p>
+                                <ul>
+                                    <li><a href="#">alexandra</a></li>
+                                    <li><a href="#">sofa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
